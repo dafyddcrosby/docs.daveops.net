@@ -1,0 +1,6 @@
+*.py[co]
+output
+env
+config.py
+plugins
+notmyidea
