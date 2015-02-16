@@ -24,7 +24,6 @@ See how commands are parsed
 
 Abort on thread errors
 ----------------------
-
 .. code-block:: ruby
 
  Thread.abort_on_exception = true
@@ -36,6 +35,15 @@ Abort on thread errors
  loop do
    sleep
  end
+
+Gem source
+--------------
+::
+
+ # Add a source
+ gem source -a http://example.com
+ # Delete a source
+ gem source -r http://example.com
 
 Syntax cheatsheet
 -----------------

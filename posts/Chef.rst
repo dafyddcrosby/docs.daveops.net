@@ -2,7 +2,6 @@
 Chef
 ----
 
-
 Handle EC2 instance
 ==============================
 ec2 plugin installed with
