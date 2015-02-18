@@ -1,6 +1,11 @@
 Mac OS X
 --------
 
+Keyboard shortcuts
+==================
+
+| Shortcut | Desc |
+| cmd + option + escape | bring up 'force quit applications' menu |
 
 list kernel extensions
 ==============================
