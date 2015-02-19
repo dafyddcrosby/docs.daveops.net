@@ -4,17 +4,19 @@ SQL
 
 To add a row
 ==============================
-{{{
-INSERT INTO table_name (column1, column2, column3,...)
-VALUES (value1, value2, value3,...)
-}}}
+.. code-block:: sql
+
+ INSERT INTO table_name (column1, column2, column3,...)
+ VALUES (value1, value2, value3,...)
+
 To update a row
 ==============================
-{{{
-UPDATE table_name
-SET column1=value, column2=value2,...
-WHERE some_column=some_value
-}}}
+.. code-block:: sql
+
+ UPDATE table_name
+ SET column1=value, column2=value2,...
+ WHERE some_column=some_value
+
 To sort a table
 ==============================
 {{{
