@@ -1,15 +1,22 @@
 Riak
 ----
-
+:date: 2015-02-19
 
 Get stats
-==============================
-{{{
-curl -H "Accept: text/plain" http://127.0.0.1:8098/stats
-}}}
-Add a server to Riak pool
-==============================
-{{{
-riak-admin cluster join ${NODE}
-}}}
+=========
+::
 
+ curl -H "Accept: text/plain" http://127.0.0.1:8098/stats
+
+Add a server to Riak pool
+=========================
+::
+
+ riak-admin cluster join ${NODE}
+
+Restarting a node
+=================
+.. code-block:: bash
+
+ riak-admin transfers # ensure cluster is in good state
+ riak-admin member-status # get status of all cluster members
