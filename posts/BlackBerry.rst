@@ -9,8 +9,6 @@ Compile via command-line
  source bbndk-env.sh
  export PROJECT_DIR=<project directory>
  qcc main.c -o main
- blackberry-nativepackager -package <package>.bar bar-descriptor.xml -devMode -debugToken ~/rim/debug_token.bar
- blackberry-deploy -installApp 169.254.0.1 -password <device_pw> <package>.bar
 
 View logs via SSH
 -----------------
@@ -49,3 +47,10 @@ Deploy native app
 ::
 
  blackberry-deploy -installApp 169.254.0.1 -password <device_pw> <package>.bar
+
+Reference documentation
+-----------------------
+
+* `Native API Reference <https://developer.blackberry.com/playbook/native/reference/>`_
+
+
