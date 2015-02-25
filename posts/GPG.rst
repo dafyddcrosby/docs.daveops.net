@@ -25,6 +25,15 @@ Show key fingerprints
 
  gpg --list-keys --fingerprint
 
+Verify signature of document
+----------------------------
+::
+
+ # Compressed, signed doc
+ gpg --output doc --decrypt doc.sig
+ # Detached signature
+ gpg --verify doc.sig doc
+
 Links
 -----
 
