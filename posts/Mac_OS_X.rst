@@ -28,3 +28,12 @@ Update software
 Search help
 ===========
 apple key + ? , search for the help menu
+
+Remove launch agents
+====================
+::
+
+ # get launch list
+ launchctl list
+ # remove item
+ launchctl remove <svc>

@@ -4,7 +4,9 @@ PostgreSQL
 
 Configuration
 ==============================
-{{{/var/lib/pgsql/data/postgresql.conf}}}
+::
+ 
+ /var/lib/pgsql/data/postgresql.conf
 
 Tuning
 ==============================
@@ -33,17 +35,24 @@ For really bad table bloat, use CLUSTER (not VACUUM FULL). It requires space for
 
 Dump database to tar file
 ==============================
-{{{
-pg_dump -O -x -F t -b -f [filename.tar] [db name]
-}}}
+::
+
+ pg_dump -O -x -F t -b -f [filename.tar] [db name]
+
 Restore database from tar file
 ==============================
-{{{
-pg_restore -F t -d [db name] [filename.tar]
-}}}
+::
+
+ pg_restore -F t -d [db name] [filename.tar]
+
 List databases
 ==============================
-{{{
-psql -l
-}}}
+::
 
+ psql -l
+
+Create database
+===============
+::
+
+ create database <db_name>

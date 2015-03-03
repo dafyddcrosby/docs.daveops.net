@@ -1,11 +1,9 @@
 SSH
 ---
-
+:date: 2015-03-02
 
 Getting key fingerprint
-==============================
-{{{ssh-keygen -lf .ssh/id_rsa.pub}}}
-Set time on machine that doesn't have NTP
-=========================================
-{{{date --set="$(ssh user@server date)"}}}
+=======================
+::
 
+ ssh-keygen -lf .ssh/id_rsa.pub
