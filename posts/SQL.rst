@@ -1,6 +1,6 @@
 SQL
 ---
-
+:date: 2015-03-06
 
 To add a row
 ==============================
@@ -19,24 +19,27 @@ To update a row
 
 To sort a table
 ==============================
-{{{
-SELECT row1, row2
-FROM table
-ORDER BY row2 (ASC|DESC)
-}}}
+.. code-block:: sql
+   
+ SELECT row1, row2
+ FROM table
+ ORDER BY row2 (ASC|DESC)
+
 Delete rows
 ==============================
-{{{
-DELETE FROM table_name
-WHERE some_column=some_value
-}}}
+.. code-block:: sql
+
+ DELETE FROM table_name
+ WHERE some_column=some_value
+
 Search in fields
 ==============================
-{{{
-SELECT *
-FROM Persons
-WHERE City LIKE '%ville'
-}}}
+.. code-block:: sql
+
+ SELECT *
+ FROM Persons
+ WHERE City LIKE '%ville'
+
 Conditional statements
 ==============================
 .. code-block:: sql
@@ -46,28 +49,26 @@ Conditional statements
  [ELSE result]
  END
 
-Dates
-==============================
 Format a date
 ==============================
-{{{
-SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
-FROM table
-}}}
+.. code-block:: sql
+
+ SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
+ FROM table
+
 Retrieve records within 90 days of stamp
 ==============================
-{{{
-SELECT expirationdate 
-FROM stockserialitems
-WHERE expirationdate < utc_timestamp() + interval 90 day
-}}}
+.. code-block:: sql
+
+ FROM stockserialitems
+ WHERE expirationdate < utc_timestamp() + interval 90 day
+
 Check for duplicate rows
 ==============================
-{{{
-SELECT a, b, count(*) cnt 
-FROM table
-GROUP BY a, b 
-HAVING cnt > 1
-ORDER BY cnt asc;
-}}}
+.. code-block:: sql
 
+ SELECT a, b, count(*) cnt 
+ FROM table
+ GROUP BY a, b 
+ HAVING cnt > 1
+ ORDER BY cnt asc;

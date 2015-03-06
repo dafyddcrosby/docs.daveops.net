@@ -1,17 +1,20 @@
 RSpec
 -----
-@[[Ruby on Rails]] 
+:tags: Ruby on Rails
 
 http://rspec.info/
 http://rubydoc.info/gems/rspec-rails/frames
+
 Using RSpec
 ==============================
 Add to Gemfile:
-{{{
-gem 'rspec-rails'
-gem 'guard-rspec'
-}}}
-{{{
-rails generate rspec:install
-}}}
+
+.. code-block:: ruby
+
+ gem 'rspec-rails'
+ gem 'guard-rspec'
+
+::
+
+ rails generate rspec:install
 

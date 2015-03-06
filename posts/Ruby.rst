@@ -66,3 +66,12 @@ Syntax cheatsheet
  ensure
    # do this no matter what
  end
+
+ case thing
+ when 3
+   puts 'fizz'
+ when 5
+   puts 'buzz'
+ else
+   puts thing
+ end

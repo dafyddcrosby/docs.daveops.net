@@ -1,10 +1,11 @@
 Python
 ------
-
+:date: 2015-03-06
 
 Essential third-party tools
 ==============================
 [[autopep8|http://pypi.python.org/pypi/autopep8]]
+
 Getopts
 ==============================
 .. code-block:: python
@@ -57,46 +58,55 @@ Syntax cheatsheet
 
 Remove duplicates from a list
 ==============================
-{{{
-the_list = list(set(the_list))
-}}}
+.. code-block:: python
+
+ the_list = list(set(the_list))
+
 Profile a program
 ==============================
 http://docs.python.org/library/profile.html
-{{{
-import profile
-profile.run("main()")
-}}}
+.. code-block:: python
+   
+ import profile
+ profile.run("main()")
+
 Usiing the Python debugger
 ==============================
 CLI
 -----------------------------------
-{{{
-python -m pdb file.py
-}}}
+::
+
+ python -m pdb file.py
+
 Invoke debugger when line is hit
 -----------------------------------
-{{{
-import pdb; pdb.set_trace()
-}}}
+.. code-block:: python
+
+ import pdb
+ pdb.set_trace()
+
 Launch REPL when line is hit
 ==============================
-{{{
-import code; code.interact(local=locals())
-}}}
+.. code-block:: python
+
+ import code
+ code.interact(local=locals())
+
 Disassemple a code object
 ==============================
-{{{
-import dis
-dis.dis(func)
-}}}
+.. code-block:: python
+
+ import dis
+ dis.dis(func)
+
 Logging
 ==============================
-{{{
-import logging
-logging.basicConfig(filename='myapp.log', level=logging.INFO)
-logging.warning('%s before you %s', 'Look', 'leap!')
-}}}
+.. code-block:: python
+
+ import logging
+ logging.basicConfig(filename='myapp.log', level=logging.INFO)
+ logging.warning('%s before you %s', 'Look', 'leap!')
+
 Named tuples (ghetto classes)
 ==============================
 .. code-block:: python
@@ -115,10 +125,10 @@ Named tuples (ghetto classes)
 Tab completion in Python shell
 ==============================
 If you don't have access to IPython,
-{{{
-import rlcompleter, readline
-readline.parse_and_bind('tab: complete')
-}}}
+.. code-block:: python
+
+ import rlcompleter, readline
+ readline.parse_and_bind('tab: complete')
 
 Tar a bunch of files
 ==============================
@@ -133,9 +143,11 @@ Tar a bunch of files
 
 Run a simple webserver
 ==============================
-{{{
-python -m SimpleHTTPServer
-}}}
+
+::
+
+ python -m SimpleHTTPServer
+
 Check Python version
 ==============================
 .. code-block:: python
@@ -170,13 +182,13 @@ Get Linux distribution
 
 Inspect the stack
 ==============================
-{{{
-import inspect
-print " << ".join([i[3] for i in inspect.stack()])
-}}}
+.. code-block:: python
+   
+ import inspect
+ print " << ".join([i[3] for i in inspect.stack()])
+
 Get Python documentation through the browser
 ==============================
-{{{
-pydoc -p <port>
-}}}
+::
 
+ pydoc -p <port>

@@ -4,19 +4,19 @@ Mac OS X
 Keyboard shortcuts
 ==================
 
-| Shortcut | Desc |
++-----------------------+-----------------------------------------+
+| Shortcut              | Desc                                    |
++=======================+=========================================+
 | cmd + option + escape | bring up 'force quit applications' menu |
++-----------------------+-----------------------------------------+
 
-list kernel extensions
-==============================
+kernel extensions
+=================
 ::
 
+ # list kernel extensions
  kextstat -l
-
-unload kernel extensions
-==============================
-::
-  
+ # unload kernel extensions
   kextunload -b <id>
 
 Update software

@@ -4,15 +4,15 @@ GNU Screen
 
 Reattach a terminal
 ==============================
-{{{
-screen -r
-}}}
+::
+
+ screen -r
 
 Attach to a non-detached session (pair-programming)
 ===================================================
-{{{
-screen -x
-}}}
+::
+
+ screen -x
 
 Keyboard shortcuts
 ==============================

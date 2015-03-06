@@ -5,20 +5,22 @@ PHP
 
 Datestamps
 ==============================
-{{{
-<?php
-//mktime(hour,minute,second,month,day,year)
+.. code-block:: php
 
-echo date("Y/m/d", mktime(0,0,0,11,11,2011));
-//2011/11/11
-?> 
-}}}
+ <?php
+ //mktime(hour,minute,second,month,day,year)
+
+ echo date("Y/m/d", mktime(0,0,0,11,11,2011));
+ //2011/11/11
+ ?> 
 
 Turn off error reporting
 ==============================
-{{{
-error_reporting(0)
-}}}
+.. code-block:: php
+
+ <?php
+ error_reporting(0)
+ ?>
 
 Check if domain resolves
 ==============================

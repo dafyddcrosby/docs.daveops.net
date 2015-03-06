@@ -1,26 +1,38 @@
 OpenSSL
 -------
 
+RSA key processing
+==================
+::
 
-Make a new private key
-==============================
-{{{openssl genrsa -out private_key.pem 1024}}}
-Make a new public key
-==============================
-{{{openssl rsa -pubout -in private_key.pem -out public_key.pem}}}
-Get info on private key
-==============================
-{{{openssl rsa -text -in private_key.pem}}}
+ # Generate a private key
+ openssl genrsa -out private_key.pem 2048
+ # Make a new public key
+ openssl rsa -pubout -in private_key.pem -out public_key.pem
+ # Get info on private key
+ openssl rsa -text -in private_key.pem
+
 Generate Certificate Signing Request
-==============================
-{{{openssl req -new -key private_key.pem -out cert.csr}}}
+====================================
+::
+
+ openssl req -new -key private_key.pem -out cert.csr
+
 Self-sign a certificate
 ==============================
-{{{openssl req -x509 -key private_key.pem -in cert.csr -out cert.crt}}}
+::
+
+ openssl req -x509 -key private_key.pem -in cert.csr -out cert.crt
+
 Get certificate details
 ==============================
-{{{openssl x509 -in certificate.crt -text -noout}}}
+::
+
+ openssl x509 -in certificate.crt -text -noout
+
 Create a CA
 ==============================
-{{{/etc/pki/tls/misc/CA -newca}}}
+::
+
+ /etc/pki/tls/misc/CA -newca
 
