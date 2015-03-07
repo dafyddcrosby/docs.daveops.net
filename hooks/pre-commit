@@ -1,0 +1,8 @@
+#!/bin/sh
+DATE=$(date +%Y-%m-%d)
+
+FILES=$(git diff --cached --name-status | sed 's/.\s*//' | tr "\n" " ")
+for f in $FILES; do
+  sed -i "s/:date:.*$/:date: $DATE/" $f
+  git add $f
+done
