@@ -1,12 +1,12 @@
 Sphinx
 ------
-
+:tags: Python
 
 Create new project
 ==============================
-{{{
-sphinx-quickstart
-}}}
+::
+
+ sphinx-quickstart
 
 Removing extra blank pages from PDF
 ===================================

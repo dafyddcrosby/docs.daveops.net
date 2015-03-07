@@ -1,12 +1,11 @@
 Python - subprocess
 -------------------
-@Python 
+:tags: Python 
 
 
 Popen
-==============================
-{{{
-pipe = subprocess.Popen(args_list, shell=True, stdout=subprocess.PIPE)
-output - pipe.communicate()[0]
-}}}
+=====
+.. code-block:: python
 
+ pipe = subprocess.Popen(args_list, shell=True, stdout=subprocess.PIPE)
+ output - pipe.communicate()[0]

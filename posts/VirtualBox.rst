@@ -1,10 +1,7 @@
-==========
 VirtualBox
 ==========
 
-
 Installing VirtualBox Extension Pack
-====================================
+------------------------------------
 * https://www.virtualbox.org/wiki/Downloads
-* (as root) {{{VBoxManage extpack install <tarball>}}}
-
+* (as root) ``VBoxManage extpack install <tarball>``

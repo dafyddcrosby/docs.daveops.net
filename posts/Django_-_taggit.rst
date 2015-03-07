@@ -2,12 +2,11 @@ Django - taggit
 ---------------
 :tags: django 
 
-
 Installing in a project
 ==============================
-* {{{pip install django-taggit}}}
+* ``pip install django-taggit``
 * add 'taggit' to ~INSTALLED_APPS
-* {{{./manage.py syncdb}}}
+* ``./manage.py syncdb``
 
 .. code-block:: python
 

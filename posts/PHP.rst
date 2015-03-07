@@ -24,9 +24,11 @@ Turn off error reporting
 
 Check if domain resolves
 ==============================
-{{{
-checkdnsrr($host)
-}}}
+.. code-block:: php
+
+ <?php
+ checkdnsrr($host)
+ ?>
 
 Authenticating users
 ==============================
@@ -53,40 +55,46 @@ Authenticating users
 
 Run a server instance with a script
 ===================================
-Requires PHP >= 5.4
-http://php.net/manual/en/features.commandline.webserver.php
-{{{
-php -S localhost:8000 router.php
-}}}
+Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.php
+
+::
+
+ php -S localhost:8000 router.php
 
 Validation
 ==============================
 Numeric validation
 -----------------------------------
-{{{
-is_int($var)
-is_numeric($var)
-}}}
+.. code-block:: php
+
+ <?php
+ is_int($var)
+ is_numeric($var)
+ ?>
 
 Export to CSV
-==============================
-{{{
-header("Expires: 0");
-header("Cache-control: private");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header("Content-Description: File Transfer");
-header("Content-Type: text/csv");
-header("Content-disposition: attachment; filename=rawlogs.csv");
-}}}
+=============
+.. code-block:: php
+
+ <?php
+ header("Expires: 0");
+ header("Cache-control: private");
+ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+ header("Content-Description: File Transfer");
+ header("Content-Type: text/csv");
+ header("Content-disposition: attachment; filename=rawlogs.csv");
+ ?>
 
 Get filename
-==============================
-{{{
-$FILE_NAME = basename($_SERVER["PHP_SELF"]);
-}}}
+============
+.. code-block:: php
+
+ <?php
+ $FILE_NAME = basename($_SERVER["PHP_SELF"]);
+ ?>
 
 Return multiple values
-==============================
+======================
 .. code-block:: php
 
  <?php
@@ -119,33 +127,42 @@ Create an array of objects
 
 
 Include PEAR (Dreamhost)
-==============================
-{{{
-//Include my PEAR path
-set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
-}}}
+========================
+.. code-block:: php
+
+ <?php
+ //Include my PEAR path
+ set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
+ ?>
 
 Scrape $_GET parameters
-==============================
+=======================
 If mod_rewrite or some other mechanism is preventing the filling of the $_GET array, use this:
-{{{
-parse_str($_SERVER['QUERY_STRING'], $_GET);
-}}}
+
+.. code-block:: php
+
+ <?php
+ parse_str($_SERVER['QUERY_STRING'], $_GET);
+ ?>
 
 Convert command line arguments into GET variables
 =================================================
-{{{
-parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
-}}}
+.. code-block:: php
+
+ <?php
+ parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
+ ?>
 
 Redirect to a different URL
-==============================
-{{{
-header("Location: http://www.example.com/"); 
-}}}
+===========================
+.. code-block:: php
+
+ <?php
+ header("Location: http://www.example.com/"); 
+ ?>
 
 Syntax cheatsheet
-==============================
+=================
 .. code-block:: php
 
  <?php

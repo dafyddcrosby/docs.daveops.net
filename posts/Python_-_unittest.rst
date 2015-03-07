@@ -1,17 +1,16 @@
 Python - unittest
 -----------------
-@Python 
+:tags: Python 
 
-
-Up to 2.7, use {{{unittest2}}} since it's got more assert tests than {{{unittest}}} (they were all backported from the 2.7 release).
+Up to 2.7, use ``unittest2`` since it's got more assert tests than ``unittest`` (they were all backported from the 2.7 release).
 Running tests
-==============================
+=============
 ::
 
  python -m unittest discover -s project_directory -p '*_test.py'
 
 Example
-==============================
+=======
 .. code-block:: python
  import random
  import unittest

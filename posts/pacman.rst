@@ -1,11 +1,10 @@
 pacman
 ------
-:tags: arch_linux
+:tags: Arch Linux
 
 
 Installing
 ==============================
-{{{
-pacman -S [package]
-}}}
+::
 
+ pacman -S [package]

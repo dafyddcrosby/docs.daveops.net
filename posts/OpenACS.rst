@@ -2,7 +2,6 @@
 OpenACS
 =======
 
-
 ad_proc documentation metadata
 ------------------------------
 
@@ -13,18 +12,21 @@ ad_proc documentation metadata
 * @error
 
 Return a file
-==============================
-{{{
-set file [open $file_path "r"]
-ns_set update [ns_conn outputheaders] content-disposition "attachment; filename=$filename"
-ns_returnfile 200 [ns_guesstype $file] $file_path
+=============
+.. code-block:: tcl
+
+ set file [open $file_path "r"]
+ ns_set update [ns_conn outputheaders] content-disposition "attachment; filename=$filename"
+ ns_returnfile 200 [ns_guesstype $file] $file_path
 
 Make your OpenACS form’s checkbox be selected by default
 ========================================================
 In ad_page_contract:
-{{{
-{fries "t"}
-}}}
+
+::
+
+ {fries "t"}
+
 In ad_form:
 
 ::
@@ -36,7 +38,7 @@ In ad_form:
  }
 
 ADP tags
-==============================
+========
 ::
 
   <if @datasource.variable@ eq "blue">

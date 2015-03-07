@@ -1,7 +1,7 @@
 ===
 RVM
 ===
-:tags: ruby, ruby_on_rails
+:tags: Ruby, Ruby on Rails
 
 
 Install RVM with Ruby

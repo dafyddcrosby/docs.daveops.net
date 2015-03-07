@@ -1,39 +1,45 @@
 -------------
 Ruby on Rails
 -------------
-@Ruby 
-
+:date: 2015-03-06
+:tags: ruby 
 
 Installing Rails
-==============================
-{{{
-gem install rails
-}}}
+================
+::
+
+ gem install rails
 
 Setting up Rails
-==============================
-# {{{rails new app_name}}}
-# {{{cd app_name}}}
-# {{{rake db:create}}}
-# {{{rails server}}} (on standalone machine)
-# {{{rails generate controller home index}}}
-# {{{rm public/index.html}}}
-# Modify {{{config/routes.rb}}} and uncomment the ''root :to => "home#index"'' line
+================
+::
+
+ rails new app_name
+ cd app_name
+ rake db:create
+ rails server # (on standalone machine)
+ rails generate controller home index
+ rm public/index.html
+ # Uncomment the ''root :to => "home#index"'' line
+ $EDITOR config/routes.rb
 
 Scaffolding
-==============================
-# {{{rails generate scaffold Post user:references title:string{50} content:text}}}
+===========
+::
+
+ rails generate scaffold Post user:references title:string{50} content:text
 
 Add indexes to migration
 ==============================
-{{{
-rails g resource user name:index email:uniq
-}}}
+::
+
+ rails g resource user name:index email:uniq
+
 Using Dreamhost
-==============================
+===============
 - Passenger must be enabled for domain/subdomain
 - Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
-- For database {{{rake db:migrate RAILS_ENV=production}}}
+- For database ``rake db:migrate RAILS_ENV=production``
 
 Validating Active Records
 ==============================
@@ -49,21 +55,23 @@ Validating Active Records
 
 Ensure uniqueness at the db level
 -----------------------------------
-# {{{rails generate migration add_index_to_users_email}}}
-# add to migration file under def change: {{{add_index :users, :email, unique: true}}}
-# {{{bundle exec rake db:migrate}}}
+# ``rails generate migration add_index_to_users_email``
+# add to migration file under def change: ``add_index :users, :email, unique: true``
+# ``bundle exec rake db:migrate``
+
 Database
-==============================
+========
 Migrate to new model
------------------------------------
-{{{
-rake db:migrate
-}}}
+--------------------
+::
+
+ rake db:migrate
+
 Return to previous model
 -----------------------------------
-{{{
-rake db:rollback
-}}}
+::
+
+ rake db:rollback
 
 Automated testing with guard and spork
 ======================================
@@ -88,11 +96,11 @@ Automated testing with guard and spork
  bundle exec spork --bootstrap
  bundle exec guard init spork
 
-- Add {{{:cli => '--drb'}}} to guard 'rspec'
+- Add ``:cli => '--drb'`` to guard 'rspec'
 - ``bundle exec guard``
 
 Creating tables
-==============================
+===============
 .. code-block:: ruby
 
  create_table "contacts" do |t|
@@ -103,20 +111,20 @@ Creating tables
  end
 
 Reset test database
-==============================
-{{{
-bundle exec rake db:test:prepare
-}}}
+===================
+::
+
+ bundle exec rake db:test:prepare
 
 Find code comment dev tags
 ==============================
-To find TODO, FIXME, and OPTIMIZE comment tags, use {{{rake notes}}}
+To find TODO, FIXME, and OPTIMIZE comment tags, use ``rake notes``
 
 Simple wins
-==============================
-* Use {{{find_each}}} instead of {{{each}}} when searching through large sets of iterables
-* Use {{{content_tag}}} to avoid XSS hacks
+===========
+* Use ``find_each`` instead of ``each`` when searching through large sets of iterables
+* Use ``content_tag`` to avoid XSS hacks
 
 Get versions
-==============================
+============
 ``rake about``

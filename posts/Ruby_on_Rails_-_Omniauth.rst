@@ -1,23 +1,24 @@
 ------------------------
 Ruby on Rails - Omniauth
 ------------------------
-@[[Ruby on Rails]] Twitter Facebook Linkedin 
+:tags: Ruby on Rails, Twitter, Facebook, Linkedin 
 
 
 Installing
-==============================
+==========
 These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
-{{{
-rails generate model Authorization provider:string uid:string user_id:integer
-}}}
+::
+
+ rails generate model Authorization provider:string uid:string user_id:integer
+
 Gemfile
------------------------------------
-{{{
-gem 'omniauth'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'omniauth-linkedin'
-}}}
+-------
+.. code-block:: ruby
+
+ gem 'omniauth'
+ gem 'omniauth-twitter'
+ gem 'omniauth-facebook'
+ gem 'omniauth-linkedin'
 
 config/initializers/omniauth.rb
 -----------------------------------
@@ -88,7 +89,7 @@ app/models/authorization.rb
  end
 
 config/routes.rb
-==============================
+================
 .. code-block:: ruby
 
  match '/auth/:provider/callback', to: 'sessions#create'

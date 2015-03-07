@@ -4,33 +4,38 @@ Django
 
 Start project
 ==============================
-{{{
-django-admin.py startproject project_name
-}}}
+::
+
+ django-admin.py startproject project_name
+
 Start demo server
 ==============================
-{{{
-python manage.py runserver
-}}}
+::
+
+ python manage.py runserver
+
 Check for construction errors in models
 =======================================
-{{{
-python manage.py validate
-}}}
+::
+
+ python manage.py validate
+
 Put models in database
 ==============================
-{{{
-python manage.py syncdb
-}}}
-Shell
-==============================
-{{{
-python manage.py shell
-}}}
-Permanent redirect
-==============================
-in urls.py's urlpatterns
-{{{
-url(r'^$', lambda x: HttpResponsePermanentRedirect('/newsite/'))
-}}}
+::
 
+ python manage.py syncdb
+
+Shell
+=====
+::
+
+ python manage.py shell
+
+Permanent redirect
+==================
+in urls.py's urlpatterns
+
+.. code-block:: python
+
+ url(r'^$', lambda x: HttpResponsePermanentRedirect('/n

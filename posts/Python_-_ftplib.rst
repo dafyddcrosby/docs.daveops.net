@@ -1,11 +1,9 @@
 Python - ftplib
 ---------------
-@Python 
+:tags: Python 
 
+.. code-block:: python
 
-{{{
-from ftplib import FTP
-server = FTP('ftp.example.com')
-server.login()
-}}}
-
+ from ftplib import FTP
+ server = FTP('ftp.example.com')
+ server.login()

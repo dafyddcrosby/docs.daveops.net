@@ -1,11 +1,9 @@
 Python - Idioms
 ---------------
-@Python 
-
+:tags: Python 
 
 Python zen
-==============================
-{{{
-import this
-}}}
-
+==========
+.. code-block:: python
+ 
+ import this

@@ -1,6 +1,6 @@
 RPM
 ---
-:tags: redhat
+:tags: Red Hat
 
 `List of RPM macros <http://www.zarb.org/~jasonc/macros.php>`_
 
@@ -18,7 +18,7 @@ Find packages that depend on a particular package
 
 Get grepable info from RPM
 ==============================
-Use {{{rpm --querytags}}} to get a list of tags
+Use ``rpm --querytags`` to get a list of tags
 
 ::
  

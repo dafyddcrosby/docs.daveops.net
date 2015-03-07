@@ -57,7 +57,7 @@ Format a date
  FROM table
 
 Retrieve records within 90 days of stamp
-==============================
+========================================
 .. code-block:: sql
 
  FROM stockserialitems
