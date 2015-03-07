@@ -1,11 +1,21 @@
 Postfix
 -------
+:date: 2015-03-06
 
 Retry delivery
-==============================
-postqueue -f
+==============
+::
+
+ postqueue -f
 
 Drop queue
-==============================
-postsuper -d ALL
+==========
+::
 
+ postsuper -d ALL
+
+Print non-default configuration values
+======================================
+::
+
+ postconf -n
