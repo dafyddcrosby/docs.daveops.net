@@ -128,6 +128,12 @@ Load my dotfiles to the home directory
  git remote add origin git@github.com:dafyddcrosby/dotfiles.git
  git pull origin master
 
+Get list of staged files for commit
+===================================
+::
+
+ git diff --cached --name-status | sed 's/.\s*//'
+
 zlol
 ====
 http://whatthecommit.com/

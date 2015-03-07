@@ -1,6 +1,7 @@
+-----
 Linux
 -----
-:date: 2015-03-02
+:date: 2015-03-07
 
 Force filesystem check on next boot
 ===================================
@@ -106,3 +107,24 @@ Set time on machine that doesn't have NTP
 ::
 
  date --set="$(ssh user@server date)"
+
+Inter-user communication
+------------------------
+::
+
+ # Get list of logged in users
+ who
+ # S whoend message to all users
+ wall [message]
+ # Send message to another user's terminal
+ write user [ttyname]
+ # Enable/disable terminal message
+ mesg [n|y]
+
+Assembly
+--------
+System call table located at ``/usr/include/asm/unistd.h``
+Red Hat syscall man pages installed with ``man-pages`` RPM. ``man 2 syscalls`` for a list, ``man 2 <syscall>`` for the syscall.
+
+Put syscall in EAX, put arguments in other ExX registers, call the interrupt, result usually in EAX
+
