@@ -1,6 +1,6 @@
 Sun OpenBoot
 ------------
-
+:tags: Sun
 
 Boot from CDROM
 ==============================

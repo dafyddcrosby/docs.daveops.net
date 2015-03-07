@@ -1,5 +1,6 @@
-Makefiles
----------
+Makefile
+--------
+:date: 2015-03-07
 
 .. code-block:: make
 

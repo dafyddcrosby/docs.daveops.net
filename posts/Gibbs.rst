@@ -1,6 +1,7 @@
-Gibbs
------
-
+Paul Gibbs
+----------
+:date: 2015-03-07
+:tags: People
 
 Learning Contract
 ==============================
