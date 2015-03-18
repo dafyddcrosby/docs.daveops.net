@@ -45,3 +45,10 @@ knife search
 ==============================
 ::
  knife search -a ATTR
+
+common node attributes
+======================
+
+| description | attribute |
+| version of chef | chef_packages.chef.version |
+| nodes's environment | chef.environment |

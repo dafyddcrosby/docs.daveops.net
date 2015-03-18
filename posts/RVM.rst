@@ -16,7 +16,7 @@ Create a per-project rvmrc
 
  rvm --rvmrc --create 1.9.3@projectname
 
-Gemsets
+gemsets
 ==============================
 ::
 
@@ -41,3 +41,8 @@ Automatic gemset initialization
 ===============================
 Add gems to ``~/.rvm/gemsets/global.gems``
 
+Set default Ruby
+================
+::
+
+ rvm --default use 2.2.0

@@ -56,7 +56,10 @@ Syntax cheatsheet
  else
    #do stuff
  end
- 
+
+ # Ternary operator
+ exp ? true : false
+
  begin
    # try to do this
  rescue Exception
