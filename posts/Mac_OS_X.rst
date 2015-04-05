@@ -1,5 +1,6 @@
 Mac OS X
 --------
+:date: 2015-04-05
 
 Keyboard shortcuts
 ==================
@@ -37,3 +38,16 @@ Remove launch agents
  launchctl list
  # remove item
  launchctl remove <svc>
+
+Use particular nameservers for a domain
+---------------------------------------
+Create hosts-style file in `/etc/resolver/<domain>`
+
+See `man 5 resolver`
+
+Flush DNS cache
+---------------
+::
+
+ # On Yosemite+
+ sudo discoveryutil mdnsflushcache

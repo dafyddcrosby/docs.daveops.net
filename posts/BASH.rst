@@ -75,3 +75,22 @@ A temporary named pipe
 
  diff <(grep lines file1) <(grep lines file2)
  thing --output >(gzip > output.txt.gz)
+
+Syntax cheatsheet
+=================
+.. code-block:: bash
+
+ case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+    ...
+ esac
+
+ for VARIABLE in 1 2 3 4 5 .. N
+ do
+        command1
+        command2
+        commandN
+ done

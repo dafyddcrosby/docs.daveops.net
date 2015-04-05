@@ -1,12 +1,15 @@
 Android
 -------
+:date: 2015-04-05
 
-
-Create keystore
-==============================
+Keystore
+========
 ::
 
+ # Create a keystore
  keytool -genkey -v -keystore /path/to/example-key.keystore -keyalg RSA -keysize 2048 -alias alias_name -validity 10000
+ # Get expiration dats in the store
+ keytool -list -v -keystore keystore.jks
 
 Auto-sign release
 ==============================

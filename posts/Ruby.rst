@@ -1,7 +1,7 @@
 Ruby
 ====
 :tags: ruby
-:date: 2015-02-14
+:date: 2015-04-05
 
 TODO
 ----
@@ -56,7 +56,10 @@ Syntax cheatsheet
  else
    #do stuff
  end
- 
+
+ # Ternary operator
+ exp ? true : false
+
  begin
    # try to do this
  rescue Exception
