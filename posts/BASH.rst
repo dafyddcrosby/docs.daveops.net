@@ -1,6 +1,6 @@
 BASH
 ----
-
+:date: 2015-04-05
 
 Go immediately to $EDITOR
 ==============================
@@ -66,3 +66,12 @@ Redirect STDERR to STDOUT
 .. code-block:: bash
 
  command 2>&1
+
+Process Substitution
+====================
+A temporary named pipe
+
+.. code-block:: bash
+
+ diff <(grep lines file1) <(grep lines file2)
+ thing --output >(gzip > output.txt.gz)
