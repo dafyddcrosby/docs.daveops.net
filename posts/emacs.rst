@@ -1,0 +1,16 @@
+Emacs
+=====
+:date:
+
+packages
+--------
+
+| ks | desc |
+| M-x list-packages | lists installed packages and packages available from repos |
+| C-h P <package> | describe package |
+
+misc
+----
+
+| ks | desc |
+| C-h C-t | show Emacs TODO |
