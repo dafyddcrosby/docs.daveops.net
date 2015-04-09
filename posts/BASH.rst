@@ -34,7 +34,8 @@ Replace filename spaces with underscores
 ========================================
 .. code-block:: bash
 
- for i in *; do mv "$i" "`echo $i| tr ' ' '_'`"; done
+ # util-linux-ng
+ rename " " _ *
 
 "Press any key to continue"
 ==============================
@@ -94,3 +95,14 @@ Syntax cheatsheet
         command2
         commandN
  done
+
+set
+===
+https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+
+| flag | desc |
+| -e | exit if a pipeline returns non-zero |
+| -n | read commands but do not execute (used for checking syntax) |
+| -u | treat unset variables and parameters as an error when performing parameter expansion |
+| -x | print trace of commands as they are executed |
+| -C | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files |
