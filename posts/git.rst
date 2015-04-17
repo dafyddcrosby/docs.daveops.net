@@ -1,6 +1,7 @@
 ---
 Git
 ---
+:date:
 
 Create bare repository
 ==============================
@@ -13,6 +14,14 @@ Create bare repository
  [remote "origin"]
         fetch = +refs/heads/*:refs/remotes/origin/*
         url = git.example.com:/path/project.git
+
+Checkout remote repository
+==========================
+::
+
+ git fetch
+ git checkout -b local_branch_name remote/branch_name
+
 
 Sequential versioning
 ==============================

@@ -1,6 +1,6 @@
 GNU Screen
 ----------
-
+:date:
 
 Reattach a terminal
 ==============================
@@ -27,5 +27,7 @@ Keyboard shortcuts
 | C-a C-d  | detach        | detach from screen back to the terminal |
 +----------+---------------+-----------------------------------------+
 | C-a k    | kill          | kill window                             |
++----------+---------------+-----------------------------------------+
+| C-a H    | log           | log the current window                  |
 +----------+---------------+-----------------------------------------+
 
