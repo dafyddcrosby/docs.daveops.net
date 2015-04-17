@@ -14,6 +14,13 @@ Attach to a non-detached session (pair-programming)
 
  screen -x
 
+Share session
+=============
+::
+
+ screen -d -m -S (session name)
+ screen -x (session name)
+
 Keyboard shortcuts
 ==============================
 
@@ -31,3 +38,10 @@ Keyboard shortcuts
 | C-a H    | log           | log the current window                  |
 +----------+---------------+-----------------------------------------+
 
+Scrollback
+==========
+::
+
+ C-a :
+ scrollback <lines>
+ C-a [
