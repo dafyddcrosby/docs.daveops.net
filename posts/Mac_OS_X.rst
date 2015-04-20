@@ -52,3 +52,9 @@ Flush DNS cache
 
  # On Yosemite+
  sudo discoveryutil mdnsflushcache
+
+Burn ISO
+--------
+::
+
+ hdiutil burn <image>
