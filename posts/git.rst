@@ -143,6 +143,12 @@ Get list of staged files for commit
 
  git diff --cached --name-status | sed 's/.\s*//'
 
+Diff remote repo
+================
+::
+
+ git diff <branch> <remote>/<branch>
+
 zlol
 ====
 http://whatthecommit.com/
