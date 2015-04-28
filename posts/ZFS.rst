@@ -2,6 +2,20 @@ ZFS
 ===
 :date: 2015-02-23
 
+Compression
+-----------
+caveat - compression is *not* retroactive, so you should set it on the pool
+immediately after creation
+
+::
+
+ # See compression settings
+ zfs get compression
+ # See compression efficiency
+ zfs get compressratio
+ # Set compression (types: lzjb, lz4, gzip-[1-9])
+ zfs set compression=<type> <pool>
+
 References
 ----------
 

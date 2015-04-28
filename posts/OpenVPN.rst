@@ -1,5 +1,6 @@
 OpenVPN
 -------
+:date:
 
 Setting up an OpenVPN server
 ==============================
@@ -17,3 +18,20 @@ Setting up an OpenVPN server
  ./build-key client1
  # Build Diffie Hellman parameters
  ./build-dh
+
+Using a static key
+==================
+::
+
+ # generate static key
+ openvpn --genkey --secret static.key
+
+In configuration files:
+
+::
+
+ secret static.key
+ # or
+ <tls-auth>
+ Key contents
+ </tls-auth>

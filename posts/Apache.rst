@@ -1,11 +1,18 @@
 Apache
 ======
+:date: 2015-04-24
 
 Disable SSL 2/3
 ---------------
 ::
 
  SSLProtocol All -SSLv2 -SSLv3
+
+Rotate logs
+-----------
+::
+
+ kill -SIGHUP httpd
 
 Misc
 ----

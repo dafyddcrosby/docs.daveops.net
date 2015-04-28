@@ -108,3 +108,11 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 | -u | treat unset variables and parameters as an error when performing parameter expansion |
 | -x | print trace of commands as they are executed |
 | -C | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files |
+
+Using regex for variable testing
+================================
+.. code-block:: bash
+
+ if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
+        echo "yay"
+ fi

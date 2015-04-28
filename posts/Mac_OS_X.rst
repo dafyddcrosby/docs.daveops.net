@@ -58,3 +58,9 @@ Burn ISO
 ::
 
  hdiutil burn <image>
+
+List disks
+----------
+::
+
+ diskutil list
