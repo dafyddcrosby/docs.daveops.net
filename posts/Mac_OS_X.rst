@@ -1,7 +1,7 @@
 --------
 Mac OS X
 --------
-:date: 2015-04-08
+:date: 2015-04-28
 
 Keyboard shortcuts
 ==================
@@ -52,3 +52,15 @@ Flush DNS cache
 
  # On Yosemite+
  sudo discoveryutil mdnsflushcache
+
+Burn ISO
+--------
+::
+
+ hdiutil burn <image>
+
+List disks
+----------
+::
+
+ diskutil list
