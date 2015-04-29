@@ -1,6 +1,7 @@
 ----
 Chef
 ----
+:date: 2015-04-28
 
 Handle EC2 instance
 ==============================
@@ -49,6 +50,10 @@ knife search
 common node attributes
 ======================
 
-| description | attribute |
-| version of chef | chef_packages.chef.version |
-| nodes's environment | chef.environment |
++---------------------+----------------------------+
+| description         | attribute                  |
++=====================+============================+
+| version of chef     | chef_packages.chef.version |
++---------------------+----------------------------+
+| nodes's environment | chef.environment           |
++---------------------+----------------------------+
