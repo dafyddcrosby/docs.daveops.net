@@ -1,6 +1,6 @@
 BASH
 ----
-:date: 2015-04-05
+:date: 2015-04-28
 
 Go immediately to $EDITOR
 ==============================
@@ -100,11 +100,20 @@ set
 ===
 https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
-| flag | desc |
-| -e | exit if a pipeline returns non-zero |
-| -o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status |
-| -o posix | match POSIX standard behaviour (https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode) |
-| -n | read commands but do not execute (used for checking syntax) |
-| -u | treat unset variables and parameters as an error when performing parameter expansion |
-| -x | print trace of commands as they are executed |
-| -C | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| flag        | desc                                                                                                                     |
++=============+==========================================================================================================================+
+| -e          | exit if a pipeline returns non-zero                                                                                      |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status                   |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -o posix    | match POSIX standard behaviour (https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode) |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -n          | read commands but do not execute (used for checking syntax)                                                              |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -u          | treat unset variables and parameters as an error when performing parameter expansion                                     |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -x          | print trace of commands as they are executed                                                                             |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
+| -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                         |
++-------------+--------------------------------------------------------------------------------------------------------------------------+
