@@ -16,6 +16,14 @@ immediately after creation
  # Set compression (types: lzjb, lz4, gzip-[1-9])
  zfs set compression=<type> <pool>
 
+Delegate administrative tasks
+-----------------------------
+https://blogs.oracle.com/marks/entry/zfs_delegated_administration
+
+::
+
+ zfs allow
+
 References
 ----------
 
