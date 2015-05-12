@@ -53,6 +53,12 @@ Delete database
 
  drop database <databasename>;
 
+Create a user
+=============
+.. code-block:: mysql
+
+ CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
+
 Resetting root password
 =======================
 ::
