@@ -149,6 +149,13 @@ Diff remote repo
 
  git diff <branch> <remote>/<branch>
 
+Import Sourceforge CVS repo
+===========================
+::
+
+ rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
+ git cvsimport -p x -v -d /absolute/path/to/w3m w3m
+
 zlol
 ====
 http://whatthecommit.com/

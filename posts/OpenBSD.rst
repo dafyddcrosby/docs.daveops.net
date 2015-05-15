@@ -24,3 +24,10 @@ Delete an IP alias
 ::
 
  ifconfig carp0 delete 192.0.1.2
+
+Download ports
+==============
+::
+
+ cd /usr
+ cvs get ports
