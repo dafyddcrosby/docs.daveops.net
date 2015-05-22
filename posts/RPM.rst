@@ -1,5 +1,6 @@
 RPM
 ---
+:date: 2015-05-22
 :tags: Red Hat
 
 `List of RPM macros <http://www.zarb.org/~jasonc/macros.php>`_
@@ -45,8 +46,18 @@ Extract RPM contents
 
 Signing RPM's with GPG
 ======================
+In `.rpmmacros`
+
 ::
 
+ %_signature gpg
+ %_gpg_name Joe Example <joe@example.org>
+
+::
+
+ # Replace existing signature
+ rpm --resign package1.rpm package2.rpm ...
+ # Add additional sig (pre-4.1 ?)
  rpm --resign package1.rpm package2.rpm ...
 
 RPM DB rebuild
