@@ -24,6 +24,20 @@ SSL Config
 General Apache Config
 ^^^^^^^^^^^^^^^^^^^^^
 ::
+ 
+ # Deny access to root dir
+ <Directory />
+    Options None
+    Order deny,allow
+    Deny from all
+ </Directory>
+
+ # Disable indexes
+ Options -Indexes
+
+ # Disable server-side includes and CGI scripts
+ Options -Includes
+ Options -ExecCGI
 
  # Disable product version
  ServerTokens Prod
