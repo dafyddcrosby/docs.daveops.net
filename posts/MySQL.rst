@@ -93,6 +93,15 @@ See what engine the table uses
  show table status
  like 'table_name' \G
 
+See running processes
+=====================
+.. code-block:: mysql
+
+ -- Quick glance
+ show processlist ;
+ -- sort by user
+ select * from information_schema.processlist where user='foobar';
+
 Isolation Levels
 ================
 

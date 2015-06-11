@@ -81,6 +81,8 @@ Syntax cheatsheet
 =================
 .. code-block:: bash
 
+ fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
+
  case expression in
     pattern1 )
         statements ;;
