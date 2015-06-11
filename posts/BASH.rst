@@ -117,7 +117,7 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 | -x          | print trace of commands as they are executed                                                                             |
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
-| -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                         |
+| -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                                     |
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 
 Using regex for variable testing
