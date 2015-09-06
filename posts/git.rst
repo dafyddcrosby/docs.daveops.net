@@ -1,7 +1,7 @@
 ---
 Git
 ---
-:date: 2015-04-28
+:date: 2015-07-06
 
 Create bare repository
 ==============================
@@ -155,6 +155,16 @@ Import Sourceforge CVS repo
 
  rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
  git cvsimport -p x -v -d /absolute/path/to/w3m w3m
+
+Import another repo as a subtree
+================================
+::
+
+ git remote add -f remote_name git@example.com:remote_repo.git
+ git merge -s ours --no-commit remote_name/master
+ git read-tree --prefix=newpath/ -u remote_name/master
+ git commit -m "Subtree merged in newpath"
+ 
 
 zlol
 ====
