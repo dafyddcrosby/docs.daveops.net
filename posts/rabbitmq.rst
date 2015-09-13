@@ -1,6 +1,6 @@
 RabbitMQ
 ========
-:date:
+:date: 2015-09-13
 
 add/restart/remove cluster node
 -------------------------------

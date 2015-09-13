@@ -1,6 +1,6 @@
 autoconf
 ========
-:date:
+:date: 2015-09-13
 
 Check library for function
 --------------------------
