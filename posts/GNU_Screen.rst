@@ -1,6 +1,6 @@
 GNU Screen
 ----------
-:date:
+:date: 2015-09-13
 
 Reattach a terminal
 ==============================
