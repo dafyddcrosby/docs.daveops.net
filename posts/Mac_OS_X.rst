@@ -1,7 +1,7 @@
 --------
 Mac OS X
 --------
-:date: 2015-04-28
+:date: 2015-08-21
 
 Keyboard shortcuts
 ==================
@@ -71,3 +71,16 @@ Create a RAM disk
 
  # Replace XXXXX with MB * 2048 (eg a 4 gig is 8388608 (4096 * 2048))
  diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount ram://XXXXX`
+
+Boot Options
+============
+
+| keypress | action |
+| Cmd + r | Recovery Mode |
+| Cmd + v | Verbose Mode |
+| Cmd + s | Single-user Mode |
+| Shift | Safe Mode |
+| D | Apple Diagnostics / Hardware Test |
+| C | Boot removable device |
+| N | Boot from network |
+| Option | Startup Manager |
