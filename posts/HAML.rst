@@ -1,10 +1,12 @@
 HAML
 ====
-:date:
+:date: 2015-09-13
 
 http://haml.info
 
 Syntax Cheatsheet
+-----------------
+
 .. code-block:: haml
 
  -# This is a comment line, !!! 5 does the HTML 5 doctype

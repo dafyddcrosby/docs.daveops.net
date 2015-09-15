@@ -10,7 +10,7 @@ THEME = 'notmyidea'
 TYPOGRIFY = True
 
 DEFAULT_DATE = (2015, 02, 15, 0, 0, 0)
-DIRECT_TEMPLATES = ('index', 'archives', 'search', 'tags')
+DIRECT_TEMPLATES = ('index', 'archives', 'tags')
 
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
