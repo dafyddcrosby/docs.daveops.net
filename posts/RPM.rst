@@ -5,6 +5,16 @@ RPM
 
 `List of RPM macros <http://www.zarb.org/~jasonc/macros.php>`_
 
+Rebuild SRPM
+============
+::
+
+ # Centos 6
+ rpmbuild --rebuild <SRPM>
+ # also
+ rpm -i <SRPM>
+ rpmbuild -ba rpmbuild/SPECS/<spec file>
+
 List files in an RPM
 ==============================
 ::
