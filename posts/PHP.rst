@@ -153,6 +153,15 @@ Convert command line arguments into GET variables
  parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
  ?>
 
+Get PHP config info
+===================
+::
+
+ # Get configuration (like phpinfo())
+ php -i
+ # Get location of php.ini
+ php --ini
+
 Redirect to a different URL
 ===========================
 .. code-block:: php
