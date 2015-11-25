@@ -1,7 +1,7 @@
 --------
 Mac OS X
 --------
-:date: 2015-08-21
+:date: 2015-10-15
 
 Keyboard shortcuts
 ==================
@@ -10,6 +10,8 @@ Keyboard shortcuts
 | Shortcut              | Desc                                    |
 +=======================+=========================================+
 | cmd + option + escape | bring up 'force quit applications' menu |
++-----------------------+-----------------------------------------+
+| cmd + shift + 4       | take a partial screenshot               |
 +-----------------------+-----------------------------------------+
 
 kernel extensions
@@ -84,3 +86,4 @@ Boot Options
 | C | Boot removable device |
 | N | Boot from network |
 | Option | Startup Manager |
+| Cmd + Option + P + R | Reset NVRAM |
