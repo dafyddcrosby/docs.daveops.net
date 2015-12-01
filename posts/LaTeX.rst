@@ -1,9 +1,23 @@
 LaTeX
------
+=====
+:date: 2015-12-01
 
+bibtex
+------
+..code-block:: latex
+
+  % Add to the preamble:
+  % Load biblatex package
+  \usepackage{biblatex}
+  % Load bibTeX file
+  \addbibresource{file.bib}
+  % Add a citation somewhere in your file
+  Blah blah \autocite{<key>}
+  % In the backmatter),
+  \printbibliography
 
 document classes
-==============================
+----------------
 - book
 - article
 - report
