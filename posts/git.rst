@@ -1,7 +1,7 @@
 ---
 Git
 ---
-:date: 2015-07-06
+:date: 2015-12-01
 
 Create bare repository
 ==============================
@@ -165,6 +165,11 @@ Import another repo as a subtree
  git read-tree --prefix=newpath/ -u remote_name/master
  git commit -m "Subtree merged in newpath"
  
+Search git history
+==================
+::
+
+ git log -S <search term>
 
 zlol
 ====
