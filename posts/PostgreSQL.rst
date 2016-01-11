@@ -1,15 +1,44 @@
 PostgreSQL
 ----------
+:date: 2016-01-03
 
+Connect to a shell
+==================
+::
+
+ psql
+
+List databases
+==============
+::
+
+ $ psql -l
+
+ # in psql shell
+ \l
 
 Configuration
-==============================
+=============
 ::
  
  /var/lib/pgsql/data/postgresql.conf
 
+View current queries
+====================
+.. code-block ::sql
+
+ SELECT * FROM pg_stat_activity ;
+
+Killing long running queries
+============================
+Don't use SIGKILL, it will shut down the rest of PostgreSQL, and require a replay
+.. code-block:: sql
+
+   pg_cancel_backend(pid int) 
+   pg_terminate_backend(pid int)
+
 Tuning
-==============================
+======
 
 +----------------------+----------------------------------------------+
 | config               | set                                          |
@@ -45,14 +74,21 @@ Restore database from tar file
 
  pg_restore -F t -d [db name] [filename.tar]
 
-List databases
-==============================
-::
-
- psql -l
-
 Create database
 ===============
 ::
 
  create database <db_name>
+
+Reindexing
+==========
+::
+
+ REINDEX { INDEX | TABLE | DATABASE | SYSTEM } name
+
+Handy URLs
+==========
+
+http://www.postgresql.org/docs/9.2/static/functions-admin.html
+http://www.postgresql.org/docs/9.2/static/monitoring-stats.html
+

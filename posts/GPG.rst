@@ -1,5 +1,6 @@
 GPG
 ===
+:date: 2015-12-07
 
 Generate GPG keypair
 --------------------
@@ -24,6 +25,9 @@ Show key fingerprints
 ::
 
  gpg --list-keys --fingerprint
+ # Show 32-bit fingerprints
+ gpg --list-keys --fingerprint --keyid-format=short
+
 
 Verify signature of document
 ----------------------------
