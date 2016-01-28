@@ -59,6 +59,15 @@ Create a user
 
  CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
 
+Show variables
+=====================
+.. code-block:: mysql
+
+  -- session variables
+  SHOW SESSION VARIABLES;
+  -- global variables
+  SHOW GLOBAL VARIABLES;
+
 Resetting root password
 =======================
 ::
