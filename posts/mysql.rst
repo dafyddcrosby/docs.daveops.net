@@ -59,6 +59,15 @@ Create a user
 
  CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
 
+Show grants
+===========
+.. code-block:: mysql
+
+   -- show grants for current user
+   show grants;
+   -- show grants for particular user
+   show grants for 'user'@'example.com';
+
 Show variables
 =====================
 .. code-block:: mysql
