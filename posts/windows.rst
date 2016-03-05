@@ -1,6 +1,6 @@
 Windows (Microsoft)
 ===================
-:date: 2015-05-07
+:date: 2016-03-04
 
 Export certificates
 -------------------
@@ -11,3 +11,6 @@ On Win7
  certmgr.msc
  # Find cert, right-click, point to All Tasks, click Export
 
+Links
+-----
+- https://technet.microsoft.com/en-us/sysinternals/bb963890
