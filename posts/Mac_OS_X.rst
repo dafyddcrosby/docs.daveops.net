@@ -1,10 +1,9 @@
---------
 Mac OS X
---------
-:date: 2015-10-15
+========
+:date: 2016-03-04
 
 Keyboard shortcuts
-==================
+------------------
 
 +-----------------------+-----------------------------------------+
 | Shortcut              | Desc                                    |
@@ -15,7 +14,7 @@ Keyboard shortcuts
 +-----------------------+-----------------------------------------+
 
 kernel extensions
-=================
+-----------------
 ::
 
  # list kernel extensions
@@ -24,17 +23,17 @@ kernel extensions
   kextunload -b <id>
 
 Update software
-===============
+---------------
 ::
 
  softwareupdate -h
 
 Search help
-===========
+-----------
 apple key + ? , search for the help menu
 
 Remove launch agents
-====================
+--------------------
 ::
 
  # get launch list
@@ -75,7 +74,7 @@ Create a RAM disk
  diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount ram://XXXXX`
 
 Boot Options
-============
+------------
 
 | keypress | action |
 | Cmd + r | Recovery Mode |
@@ -87,3 +86,8 @@ Boot Options
 | N | Boot from network |
 | Option | Startup Manager |
 | Cmd + Option + P + R | Reset NVRAM |
+
+Links
+-----
+
+https://opensource.apple.com/
