@@ -1,9 +1,9 @@
 ld
 ==
-:date: 2015-03-09
+:date: 2016-03-04
 
 The GNU linker
-
+--------------
 ::
 
  # Link object file into an executable file
@@ -14,3 +14,12 @@ The GNU linker
  ld -S ...
  # Mark stack as non executable
  ld -z noexecstack
+
+OpenBSD ld.so
+-------------
+::
+
+ # get documentation
+ man ld.so
+ # get information about what is getting loaded at run-time
+ LD_DEBUG=1 ./a.out
