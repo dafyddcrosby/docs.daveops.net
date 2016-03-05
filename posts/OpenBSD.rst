@@ -31,3 +31,9 @@ Download ports
 
  cd /usr
  cvs get ports
+
+USB snapshots
+=============
+::
+
+  dd if=install*.fs of=/dev/sd1c bs=1m
