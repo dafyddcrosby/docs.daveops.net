@@ -52,6 +52,12 @@ Simple IP masquerading
  echo "1" > /proc/sys/net/ipv4/ip_forward
  iptables -t nat -A POSTROUTING -o $EXT_IFACE -j MASQUERADE
 
+Backup, reload iptables rules
+=============================
+::
+
+ iptables-save > ./file
+ iptables-restore < ./file
 
 File location
 =============
