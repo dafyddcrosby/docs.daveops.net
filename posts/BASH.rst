@@ -1,6 +1,7 @@
 BASH
 ----
 :date: 2015-04-28
+:modified: 2016-01-28
 
 Go immediately to $EDITOR
 ==============================
@@ -127,3 +128,18 @@ Using regex for variable testing
  if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
         echo "yay"
  fi
+
+Temporary directory/file
+========================
+.. code-block:: bash
+
+   mktemp -d
+
+
+Show the functions declared in the shell
+========================================
+.. code-block:: bash
+
+   declare -F
+   # on ancient shells:
+   typeset -F
