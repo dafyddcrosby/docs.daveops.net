@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://www.daveops.net'
+SITEURL = 'https://www.daveops.net'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -19,7 +19,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Social media stuff
-GITHUB_URL = 'http://github.com/dafyddcrosby/'
+GITHUB_URL = 'https://github.com/dafyddcrosby/'
 TWITTER_USERNAME = 'dafyddcrosby'
-SOCIAL = (('twitter', 'http://twitter.com/dafyddcrosby'),
-          ('github', 'http://github.com/dafyddcrosby'),)
+SOCIAL = (('twitter', 'https://twitter.com/dafyddcrosby'),
+          ('github', 'https://github.com/dafyddcrosby'),)
