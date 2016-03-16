@@ -9,8 +9,8 @@ out by *talking* to the manufacturers.
 
 Some notes on NOP
 -----------------
-
 ::
+
   if you want to get technical, there isn't really any difference between
   those two. Since the processor doesn't stop, a NOP does *something*, regardless
   of how its implemented — at the bare minimum, it increments the instruction
@@ -23,6 +23,7 @@ Some notes on NOP
   -Jeroen Mostert
 
 ::
+
   Why not just use two NOP instructions at the entry point?
   
   Well, because a NOP instruction consumes one clock cycle and one pipe, so two
