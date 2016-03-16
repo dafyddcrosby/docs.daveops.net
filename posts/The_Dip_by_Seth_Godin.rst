@@ -1,5 +1,5 @@
-Seth Godin's "The Dip"
-======================
+The Dip by Seth Godin
+=====================
 :date: 2016-03-15
 :tags: books
 
