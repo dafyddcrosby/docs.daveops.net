@@ -127,3 +127,8 @@ Red Hat syscall man pages installed with ``man-pages`` RPM. ``man 2 syscalls`` f
 
 Put syscall in EAX, put arguments in other ExX registers, call the interrupt, result usually in EAX
 
+Get filesystems kernel can use
+------------------------------
+::
+
+ cat /proc/filesystems
