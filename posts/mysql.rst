@@ -1,6 +1,7 @@
 -----
 MySQL
 -----
+:date: 2016-03-14
 
 Monitor queries
 ===============
@@ -68,14 +69,16 @@ Show grants
    -- show grants for particular user
    show grants for 'user'@'example.com';
 
-Show variables
-=====================
+Variables
+=========
 .. code-block:: mysql
 
   -- session variables
   SHOW SESSION VARIABLES;
+  SET SESSION sort_buffer_size=1000000;
   -- global variables
   SHOW GLOBAL VARIABLES;
+  SET GLOBAL sort_buffer_size=1000000;
 
 Resetting root password
 =======================
@@ -256,3 +259,9 @@ Run profiling
  set profiling = 1;
  * run query *
  show profile;
+
+Get timezone config
+-------------------
+.. code-block:: mysql
+ 
+ SELECT @@global.time_zone, @@session.time_zone;
