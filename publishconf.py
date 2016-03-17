@@ -19,7 +19,6 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Social media stuff
-GITHUB_URL = 'https://github.com/dafyddcrosby/'
 TWITTER_USERNAME = 'dafyddcrosby'
 SOCIAL = (('twitter', 'https://twitter.com/dafyddcrosby'),
           ('github', 'https://github.com/dafyddcrosby'),)
