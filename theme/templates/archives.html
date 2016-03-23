@@ -4,8 +4,7 @@
 <h1>Archives for {{ SITENAME }}</h1>
 
 <dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
+{% for article in articles|sort(case_sensitive=False, attribute='slug') %}
     <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
 {% endfor %}
 </dl>
