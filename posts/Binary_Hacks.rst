@@ -1,9 +1,9 @@
 Binary Hacks
-------------
+============
 
 
 Determine if integer is odd
-==============================
+---------------------------
 .. code-block:: c
 
  if ((x & 1) == 0) {
@@ -12,8 +12,8 @@ Determine if integer is odd
    //x is odd
  }
 
-Determine if nth bit is set
-==============================
+determine if nth bit is set
+---------------------------
 .. code-block:: c
 
  if (x & (1<<n)) {
@@ -23,20 +23,20 @@ Determine if nth bit is set
  }
 
 Set the nth bit
-==============================
+---------------
 .. code-block:: c
  
  y = x | (1<<n)
 
 
 Unset the nth bit
-==============================
+-----------------
 .. code-block:: c
 
  y = x & ~(1<<n)
 
 Toggle the nth bit
-==============================
+------------------
 .. code-block:: c
 
  y = x ^ (1<<n)

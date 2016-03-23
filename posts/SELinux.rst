@@ -1,5 +1,6 @@
 SELinux
 -------
+:tags: Linux
 
 Show available SELinux booleans
 ===============================

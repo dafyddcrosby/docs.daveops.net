@@ -2,9 +2,10 @@
 Git
 ---
 :date: 2015-12-01
+:tags: version control
 
 Create bare repository
-==============================
+======================
 ::
 
  mkdir -p project.git && cd project.git && git --bare init
@@ -24,7 +25,7 @@ Checkout remote repository
 
 
 Sequential versioning
-==============================
+=====================
 ::
 
  git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"

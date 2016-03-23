@@ -1,11 +1,10 @@
-==
 pf
 ==
 :date: 2015-04-05
-:tags: openbsd
+:tags: OpenBSD, firewalls
 
 pfctl
-=====
+-----
 
 +------------+----------------------------+
 | !flag      | !command                   |
@@ -28,7 +27,7 @@ pfctl
 +------------+----------------------------+
 
 General rule syntax
-==============================
+-------------------
 ::
 
  action [direction] [log] [quick] [on interface] [af] [proto protocol] \
@@ -48,14 +47,14 @@ General rule syntax
 +---------------------+------------------------------------------------------------+
 
 Default deny
-==============================
+------------
 ::
 
  block in  all
  block out all 
 
 Table containing all IP addresses to firewall
-=============================================
+---------------------------------------------
 ::
 
  table <firewall> const { self }

@@ -1,6 +1,7 @@
 Ruby - Benchmarking
 ===================
 :date: 2015-06-10
+:tags: Ruby
 
 .. code-block:: ruby
 

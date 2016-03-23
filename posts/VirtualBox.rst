@@ -1,5 +1,6 @@
 VirtualBox
 ==========
+:tags: virtualization
 
 Installing VirtualBox Extension Pack
 ------------------------------------

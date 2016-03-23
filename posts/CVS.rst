@@ -1,6 +1,7 @@
 CVS
 ===
 :date: 2015-12-01
+:tags: version control
 
 Tagging an instance
 -------------------

@@ -1,6 +1,6 @@
 Yukihiro Matsumoto
 ==================
-:tags: people, ruby
+:tags: people, Ruby
 :date: 2015-02-15
 
 "...computers don't mind if I must make effort to communicate with them

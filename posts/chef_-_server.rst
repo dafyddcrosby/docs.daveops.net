@@ -1,6 +1,7 @@
 Chef - Server
 =============
 :date: 2015-12-01
+:tags: Chef
 
 Add a user
 ----------

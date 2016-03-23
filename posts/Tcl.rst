@@ -1,8 +1,9 @@
 Tcl
----
+===
+:tags: Tcl
 
 Syntax cheatsheet
-==============================
+-----------------
 .. code-block:: tcl
    
  } elseif {blah == 1} {
@@ -26,20 +27,20 @@ Syntax cheatsheet
  set true 1
 
 Namespaces
-==============================
+----------
 .. code-block:: tcl
  
  namespace eval blah {}
 
 Profiling statements
-==============================
+--------------------
 .. code-block:: tcl
 
  puts "unbraced: [time { expr 15 * 20 } 1000]"
  puts "braced:   [time { expr {15 * 20} } 1000]"
 
 Disassemble statement
-==============================
+---------------------
 This is fun, because it shows just how much of a difference there is in optimizing statements
 
 .. code-block:: tcl
@@ -48,8 +49,7 @@ This is fun, because it shows just how much of a difference there is in optimizi
  ::tcl::unsupported::disassemble script {expr {$a eq $b}}
 
 Creating tests
-==============================
-
+--------------
 .. code-block:: tcl
 
  package require tcltest

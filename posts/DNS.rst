@@ -1,17 +1,17 @@
 DNS
----
+===
 :date: 2015-04-05
 
 Reverse lookup
-==============================
+--------------
 ``dig -x [ip addr]``
 
 Query name server for IP addresses
-==================================
+----------------------------------
 ``nslookup [name] [dns server]``
 
 Get nameserver glue records
-===========================
+---------------------------
 ::
 
  # get root servers

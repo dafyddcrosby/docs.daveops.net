@@ -1,6 +1,7 @@
 Riak
 ----
 :date: 2015-02-19
+:tags: Erlang
 
 Get stats
 =========

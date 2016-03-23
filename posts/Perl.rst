@@ -1,13 +1,8 @@
-====
 Perl
 ====
 
-
-Trim a string
-==============================
-
 Syntax Cheatsheet
-==============================
+-----------------
 .. code-block:: perl
  #!/usr/local/bin/perl -wT
  use strict

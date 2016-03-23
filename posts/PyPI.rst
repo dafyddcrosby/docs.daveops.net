@@ -1,6 +1,6 @@
 PyPI
 ----
-:tags: python 
+:tags: Python 
 
 * http://pypi.python.org/pypi?%3Aaction=list_classifiers
 

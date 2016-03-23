@@ -2,6 +2,7 @@
 MySQL
 -----
 :date: 2016-03-14
+:tags: databases
 
 Monitor queries
 ===============

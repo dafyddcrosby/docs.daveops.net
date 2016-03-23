@@ -1,11 +1,7 @@
 Ruby
 ====
-:tags: ruby
+:tags: Ruby
 :date: 2015-04-05
-
-TODO
-----
-- http://camping.rubyforge.org/
 
 Running the profiler
 ---------------------
@@ -37,7 +33,8 @@ Abort on thread errors
  end
 
 Gem source
---------------
+----------
+.. TODO - move to gem page
 ::
 
  # Add a source
@@ -47,6 +44,7 @@ Gem source
 
 Syntax cheatsheet
 -----------------
+.. TODO - flesh out
 .. code-block:: ruby
 
  if val = 42

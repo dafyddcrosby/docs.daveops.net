@@ -1,6 +1,7 @@
 RabbitMQ
 ========
 :date: 2015-12-01
+:tags: Erlang
 
 add/restart/remove cluster node
 -------------------------------

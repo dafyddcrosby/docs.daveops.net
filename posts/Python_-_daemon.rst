@@ -1,6 +1,6 @@
 Python - daemon
 ---------------
-:tags: python
+:tags: Python
 
 .. code-block:: python
 

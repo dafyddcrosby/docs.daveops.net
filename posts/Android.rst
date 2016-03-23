@@ -1,9 +1,9 @@
 Android
--------
+=======
 :date: 2015-04-05
 
 Keystore
-========
+--------
 ::
 
  # Create a keystore
@@ -12,7 +12,7 @@ Keystore
  keytool -list -v -keystore keystore.jks
 
 Auto-sign release
-==============================
+-----------------
 Add to ant.properties
 
 ::

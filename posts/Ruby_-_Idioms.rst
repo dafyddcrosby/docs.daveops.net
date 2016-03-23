@@ -1,6 +1,6 @@
 Ruby - Idioms
 =============
-:tags: ruby
+:tags: Ruby
 :date: 2015-02-14
 
 Naming

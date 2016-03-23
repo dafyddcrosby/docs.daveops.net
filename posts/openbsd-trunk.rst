@@ -1,6 +1,6 @@
 OpenBSD - trunk
 ===============
-:tags: openbsd 
+:tags: OpenBSD
 
 
 Setup

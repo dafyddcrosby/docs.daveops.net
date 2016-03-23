@@ -1,6 +1,7 @@
 PostgreSQL
 ----------
 :date: 2016-01-03
+:tags: databases
 
 Connect to a shell
 ==================

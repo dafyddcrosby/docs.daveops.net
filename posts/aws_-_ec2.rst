@@ -1,6 +1,7 @@
 AWS - EC2
 =========
 :date: 2015-09-13
+:tags: AWS
 
 Get instance metadata from within VM
 ------------------------------------

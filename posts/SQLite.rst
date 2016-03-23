@@ -1,20 +1,21 @@
 SQLite
-------
+======
+:tags: databases
 
 Show all tables
-==============================
+---------------
 .. code-block:: sqlite
 
  .tables
 
 Show table schema
-==============================
+-----------------
 .. code-block:: sqlite
 
  .schema tablename
 
 See if table exists
-==============================
+-------------------
 .. code-block:: sqlite
 
  SELECT name 
@@ -22,7 +23,7 @@ See if table exists
  WHERE type='table'
 
 Datatypes
-=========
+---------
 * NULL. The value is a NULL value.
 * INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
 * REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.

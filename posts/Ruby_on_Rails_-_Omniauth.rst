@@ -1,7 +1,7 @@
 ------------------------
 Ruby on Rails - Omniauth
 ------------------------
-:tags: Ruby on Rails, Twitter, Facebook, Linkedin 
+:tags: Ruby, Ruby on Rails, Twitter, Facebook, Linkedin 
 
 
 Installing

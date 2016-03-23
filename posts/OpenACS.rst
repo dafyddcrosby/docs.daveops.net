@@ -1,6 +1,7 @@
 =======
 OpenACS
 =======
+:tags: Tcl
 
 ad_proc documentation metadata
 ------------------------------

@@ -1,15 +1,16 @@
 Graphviz
---------
+========
 
 http://graphviz.org
+
 Output SVG
-==============================
+----------
 ::
 
  dot file.dot -Tsvg -o output.svg
 
 Plain graph
-==============================
+-----------
 ::
 
  digraph graph_name {

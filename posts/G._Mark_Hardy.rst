@@ -1,6 +1,7 @@
 G. Mark Hardy
 =============
 :date: 2016-03-04
+:tags: people
 
 http://gmark.com
 

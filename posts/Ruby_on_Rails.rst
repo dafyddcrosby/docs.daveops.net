@@ -2,7 +2,9 @@
 Ruby on Rails
 -------------
 :date: 2015-03-06
-:tags: ruby 
+:tags: Ruby, Ruby on Rails
+
+.. TODO - http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2
 
 Installing Rails
 ================

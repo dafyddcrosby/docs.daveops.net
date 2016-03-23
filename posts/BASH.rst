@@ -1,51 +1,51 @@
 BASH
-----
+====
 :date: 2015-04-28
 :modified: 2016-01-28
 
 Go immediately to $EDITOR
-==============================
+-------------------------
 ctrl-x, e
 
 Most commonly used commands
-==============================
+---------------------------
 .. code-block:: bash
 
  history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
 Delete files that are not extension
-===================================
+-----------------------------------
 .. code-block:: bash
 
   rm !(*.foo|*.bar|*.baz)
 
 Find, delete empty directories
-==============================
+------------------------------
 .. code-block:: bash
 
  find . -type d -empty -exec rmdir {} \;
 
 Show your shell from a port
-==============================
+---------------------------
 .. code-block:: bash
 
  script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 
 Replace filename spaces with underscores
-========================================
+----------------------------------------
 .. code-block:: bash
 
  # util-linux-ng
  rename " " _ *
 
 "Press any key to continue"
-==============================
+---------------------------
 .. code-block:: bash
 
  read -sn 1 -p "Press any key to continue..."
 
 Conditional Expressions
-==============================
+-----------------------
 
  +-----------+----------------------------------+
  | code      | desc                             |
@@ -64,13 +64,13 @@ Conditional Expressions
  +-----------+----------------------------------+
 
 Redirect STDERR to STDOUT
-==============================
+-------------------------
 .. code-block:: bash
 
  command 2>&1
 
 Process Substitution
-====================
+--------------------
 A temporary named pipe
 
 .. code-block:: bash
@@ -79,7 +79,7 @@ A temporary named pipe
  thing --output >(gzip > output.txt.gz)
 
 Syntax cheatsheet
-=================
+-----------------
 .. code-block:: bash
 
  fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
@@ -100,7 +100,7 @@ Syntax cheatsheet
  done
 
 set
-===
+---
 https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -122,7 +122,7 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 
 Using regex for variable testing
-================================
+--------------------------------
 .. code-block:: bash
 
  if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
@@ -130,14 +130,14 @@ Using regex for variable testing
  fi
 
 Temporary directory/file
-========================
+------------------------
 .. code-block:: bash
 
    mktemp -d
 
 
 Show the functions declared in the shell
-========================================
+----------------------------------------
 .. code-block:: bash
 
    declare -F

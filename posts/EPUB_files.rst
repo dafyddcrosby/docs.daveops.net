@@ -1,5 +1,5 @@
 EPUB files
-----------
+==========
 
 http://code.google.com/p/epubcheck/
 

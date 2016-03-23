@@ -1,11 +1,10 @@
-================
 W. Edward Deming
 ================
 :tags: people 
 
 
 14 Principles of Management
-==============================
+---------------------------
 - Create constancy of purpose toward improvement of product and service, with the aim to become competitive and stay in business, and to provide jobs.
 - Adopt the new philosophy. We are in a new economic age. Western management must awaken to the challenge, must learn their responsibilities, and take on leadership for change.
 - Cease dependence on inspection to achieve quality. Eliminate the need for inspection on a mass basis by building quality into the product in the first place.
@@ -30,7 +29,7 @@ W. Edward Deming
 - Put everybody in the company to work to accomplish the transformation. The transformation is everybody's job.
 
 The "Seven Deadly Diseases of Business"
-=======================================
+---------------------------------------
 - Lack of constancy of purpose
 - Emphasis on short-term profits
 - Evaluation by performance, merit rating, or annual review of performance
@@ -40,7 +39,7 @@ The "Seven Deadly Diseases of Business"
 - Excessive costs of warranty, fueled by lawyers who work for contingency fees
 
 "A Lesser Category of Obstacles"
-================================
+--------------------------------
 - Neglecting long-range planning
 - Relying on technology to solve problems
 - Seeking examples to follow rather than developing solutions

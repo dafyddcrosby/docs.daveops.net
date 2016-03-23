@@ -1,5 +1,6 @@
 Chef - Knife
 ============
+:tags: Chef
 
 Return chef versions 
 --------------------

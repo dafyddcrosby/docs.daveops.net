@@ -1,7 +1,7 @@
 Cisco - CIMC
 ============
 :date: 2015-07-08
-
+:tags: Cisco
 
 Resources
 ---------

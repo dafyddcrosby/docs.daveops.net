@@ -1,6 +1,6 @@
 Python - PyGTK
 --------------
-:tags: python 
+:tags: Python 
 
 .. code-block:: python
 

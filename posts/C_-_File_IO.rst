@@ -1,6 +1,6 @@
 C - File IO
 ===========
-:tags: c
+:tags: C
 
 
 Open and read file

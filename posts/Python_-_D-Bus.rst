@@ -1,6 +1,6 @@
 Python - D-Bus
 --------------
-:tags: python 
+:tags: Python 
 
 
 Connecting to D-Bus

@@ -1,6 +1,7 @@
 AWS - IAM
 =========
 :date: 2016-01-23
+:tags: AWS
 
 Create a user
 -------------

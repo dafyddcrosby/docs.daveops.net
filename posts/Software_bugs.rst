@@ -1,8 +1,8 @@
 Software bugs
--------------
+=============
 
 Design Bugs
-==============================
+-----------
 * Don't Repeat Yourself violation
 * Bad API usage
 * Using deprecated functions
@@ -17,14 +17,14 @@ Design Bugs
 * Incorrect business rules
 
 UI Bugs
-==============================
+-------
 * Missing/bad information
 * Insufficient performance
 * Inappropriate error message
 * Expectation failure
 
 Code Bugs
-==============================
+---------
 * Syntax error
 * Off-by-one
 * Division-by-zero
@@ -44,7 +44,7 @@ Code Bugs
 * Incorrect file handling
 
 Testing Errors
-==============================
+--------------
 * Did not provide steps to reproduce
 * Misunderstanding of documentation
 * Failed to notice or report problem

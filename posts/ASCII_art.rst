@@ -1,7 +1,9 @@
 ASCII art
----------
+=========
+:date: 2016-03-22
 
 Convert JPG to ASCII art
-==============================
-``jp2a -b --colors --fill``
+------------------------
+::
 
+ jp2a -b --colors --fill

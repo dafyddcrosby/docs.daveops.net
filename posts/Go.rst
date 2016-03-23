@@ -1,6 +1,8 @@
 Go
 ==
 
-https://golang.org/
+.. TODO - syntax cheatsheet
 
-TODO - syntax cheatsheet
+Resources
+---------
+- https://golang.org/

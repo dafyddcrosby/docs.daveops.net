@@ -1,6 +1,7 @@
 C
 =
 :date: 2015-05-28
+:tags: C
 
 Resources
 ---------

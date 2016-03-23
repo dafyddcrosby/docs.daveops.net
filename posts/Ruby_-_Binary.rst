@@ -1,6 +1,7 @@
 Ruby - Binary
 =============
 :date: 2015-02-28
+:tags: Ruby
 
 pack/unpack
 -----------

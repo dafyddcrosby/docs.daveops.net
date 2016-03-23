@@ -1,10 +1,10 @@
 Paul Gibbs
-----------
+==========
 :date: 2015-04-28
 :tags: People
 
 Learning Contract
-==============================
+-----------------
 
 - Diagnose your learning needs
 - Specify your learning objectives (why you are learning them)
@@ -16,7 +16,7 @@ Learning Contract
 - Evaluate your learning
 
 Reflective Cycle
-==============================
+----------------
 
 +-------------+
 | Description |

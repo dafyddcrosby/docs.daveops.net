@@ -1,9 +1,9 @@
 Python - XMLRPC
----------------
+===============
 :tags: Python 
 
 Connecting to an XMLRPC server
-==============================
+------------------------------
 .. code-block:: python
 
  import xmlrpclib

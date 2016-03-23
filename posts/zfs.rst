@@ -2,6 +2,7 @@ ZFS
 ===
 :date: 2015-04-28
 :modified: 2016-03-15
+:tags: SmartOS
 
 Compression
 -----------

@@ -2,6 +2,14 @@
 Python
 ------
 :date: 2015-03-06
+:tags: Python
+
+.. TODO - ConfigParser
+.. TODO - gdchart
+.. TODO - asyncore/asynchat
+.. TODO - shlex
+.. TODO - paramiko
+.. TODO - threading, multiprocessing
 
 Essential third-party tools
 ==============================

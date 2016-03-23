@@ -113,7 +113,7 @@ Inter-user communication
 
  # Get list of logged in users
  who
- # S whoend message to all users
+ # Send message to all users
  wall [message]
  # Send message to another user's terminal
  write user [ttyname]

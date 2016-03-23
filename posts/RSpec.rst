@@ -1,12 +1,12 @@
 RSpec
------
-:tags: Ruby on Rails
+=====
+:tags: Ruby, Ruby on Rails
 
 http://rspec.info/
 http://rubydoc.info/gems/rspec-rails/frames
 
 Using RSpec
-==============================
+-----------
 Add to Gemfile:
 
 .. code-block:: ruby

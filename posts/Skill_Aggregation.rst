@@ -1,17 +1,16 @@
-=================
 Skill Aggregation
 =================
 
 
-Level 1: Beginner
-==============================
+level 1: beginner
+-----------------
 * Little or no previous experience
 * Doesn't want to learn: wants to accomplish a goal
 * No discretionary judgement
 * Rigid adherence to rules 
 
 Level 2: Advanced Beginner
-==============================
+--------------------------
 * Starts trying tasks on their own
 * Has difficulty troubleshooting
 * Wants information fast
@@ -19,14 +18,14 @@ Level 2: Advanced Beginner
 * Uses guidelines, but without holistic understanding 
 
 Level 3: Competent
-==============================
+------------------
 * Develops conceptual models
 * Troubleshoots on their own
 * Seeks out expert advice
 * Sees actions at least partially in terms of long-term plans and goals 
 
 Level 4: Proficient
-==============================
+-------------------
 * Guided by maxims applied to the current situation
 * Sees situations holistically
 * Will self-correct based on previous performance
@@ -34,7 +33,7 @@ Level 4: Proficient
 * Frustrated by oversimplified information 
 
 Level 5: Expert
-==============================
+---------------
 * No longer relies on rules, guidelines, or maxims
 * Works primarily from intuition
 * Analytic approaches only used in novel situations or when problems occur

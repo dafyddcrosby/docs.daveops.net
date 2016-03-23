@@ -1,10 +1,10 @@
 Python - HTTPServer
--------------------
-@Python 
+===================
+:tags: Python
 
 
 Basic HTTP server
-==============================
+-----------------
 .. code-block:: python
 
  from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler

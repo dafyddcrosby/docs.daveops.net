@@ -1,6 +1,7 @@
 Berkshelf
 =========
 :date: 2015-04-05
+:tags: Chef
 
 .. code-block:: ruby
 

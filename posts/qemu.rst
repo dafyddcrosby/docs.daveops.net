@@ -1,6 +1,7 @@
 QEMU
 ====
 :date: 2016-03-15
+:tags: virtualization
 
 http://www.qemu-advent-calendar.org/
 

@@ -1,10 +1,10 @@
 Ruby on Rails - Gravatar
-------------------------
-@[[Ruby on Rails]] Gravatar 
+========================
+:tags: Ruby, Ruby on Rails
 
 
 Helper to return Gravatar image
-===============================
+-------------------------------
 .. code-block:: ruby
 
  # Returns the Gravatar (http://gravatar.com/) for the given user.

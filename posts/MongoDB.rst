@@ -1,6 +1,7 @@
 MongoDB
 =======
 :date: 2015-06-04
+:tags: databases
 
 Queries
 -------

@@ -1,6 +1,7 @@
 AWS (command line tool)
 =======================
 :date: 2015-04-28
+:tags: AWS
 
 ELB certs
 --------------------

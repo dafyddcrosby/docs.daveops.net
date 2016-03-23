@@ -1,6 +1,7 @@
 YUM
 ===
 :date: 2016-02-08
+:tags: Red Hat
 
 Create a group
 --------------

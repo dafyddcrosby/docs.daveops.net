@@ -1,14 +1,18 @@
 JavaScript
-----------
+==========
+:tags: JavaScript
 
+.. TODO - http://matt.might.net/articles/learning-javascript-in-small-bites-part-2/
+.. TODO - http://matt.might.net/articles/learning-javascript-in-small-bites-part-3/
+.. TODO - http://matt.might.net/articles/learning-javascript-in-small-bites-part-4/
 
 Sweet libraries
-==============================
+---------------
 http://jquery.com
 http://code.google.com/p/iui/
 
 Classes
-==============================
+-------
 .. code-block:: javascript
  function Building(x,y,z) {
    this.x = x;

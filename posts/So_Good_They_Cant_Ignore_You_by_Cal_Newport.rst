@@ -1,6 +1,7 @@
 So Good They Can't Ignore You by Cal Newport
 ============================================
 :date: 2016-03-15
+:tags: books
 
 three disqualifiers for applying the craftsman mindset
 -------------------------------------------------------

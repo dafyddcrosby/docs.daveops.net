@@ -2,9 +2,10 @@
 Chef
 ----
 :date: 2015-04-28
+:tags: Chef
 
 Handle EC2 instance
-==============================
+===================
 ec2 plugin installed with
 
 ::
@@ -22,16 +23,16 @@ Use the omnibus installer if you can!
  gem install chef --no-ri --no-rdoc
 
 Using chef-solo
-==============================
+===============
 
 /etc/chef/solo.rb
------------------------------------
+-----------------
 .. code-block:: ruby
 
  json_attribs "/etc/chef/node.json"
 
 /etc/chef/node.json
------------------------------------
+-------------------
 .. code-block:: json
 
  {
@@ -43,7 +44,7 @@ Using chef-solo
  }
 
 knife search
-==============================
+============
 ::
  knife search -a ATTR
 

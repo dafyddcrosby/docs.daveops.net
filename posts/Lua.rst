@@ -1,15 +1,15 @@
 Lua
----
+===
 
 
 Iterate through file
-==============================
+--------------------
 .. code-block:: lua
 
  for line in io.lines("my.txt") do print(line) end
 
 Syntax cheatsheet
-==============================
+-----------------
 .. code-block:: lua
    
  function function_name ( args ) body end

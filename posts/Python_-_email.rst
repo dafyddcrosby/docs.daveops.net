@@ -1,15 +1,15 @@
 Python - email
---------------
-:tags: python 
+==============
+:tags: Python 
 
 Run a simple SMTP server
-========================
+------------------------
 ::
 
  python -m smtpd -n -c DebuggingServer localhost:1025
 
 Send email
-==========
+----------
 .. code-block:: python
 
  import smtplib
@@ -32,8 +32,8 @@ Send email
  s.quit()
 
 Retrieve mail with imaplib
-==============================
-TODO - ensure this works...
+--------------------------
+.. TODO - ensure this works...
 
 .. code-block:: python
 

@@ -1,6 +1,6 @@
 Ruby - FileIO
 =============
-:tags: ruby
+:tags: Ruby
 :date: 2015-02-14
 
 .. code-block:: ruby

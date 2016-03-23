@@ -1,10 +1,10 @@
 Ruby on Rails - ActiveRecord
-----------------------------
-@[[Ruby on Rails]] 
+============================
+:tags: Ruby, Ruby on Rails
 
 
 Supported database column types
-===============================
+-------------------------------
 * binary
 * boolean
 * date
@@ -19,7 +19,5 @@ Supported database column types
 * timestamp
 
 Misc.
-==============================
+-----
 * Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
-
-

@@ -1,6 +1,6 @@
 pfsync
 ======
-
+:tags: OpenBSD, firewalls
 
 sysctl:
 -------
