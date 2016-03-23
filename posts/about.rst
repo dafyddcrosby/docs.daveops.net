@@ -1,6 +1,5 @@
------
 About
------
+=====
 
 This is where I keep the bits of information that I pick up over time
 on computer stuff, so that way I don't have to search around on Google
