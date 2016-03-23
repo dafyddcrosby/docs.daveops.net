@@ -6,7 +6,7 @@ TIMEZONE = "America/Edmonton"
 
 PATH = 'posts/'
 DELETE_OUTPUT_DIRECTORY = True
-THEME = 'notmyidea'
+THEME = 'theme'
 TYPOGRIFY = True
 
 DEFAULT_DATE = (2015, 02, 15, 0, 0, 0)
@@ -49,8 +49,8 @@ MENUITEMS = [
 
 # Blogroll
 LINKS = (('Kernel Who?', 'https://kernelwho.wordpress.com'),
-         ("David T. Crosby", 'http://dafyddcrosby.com'),
-         ('Lonesome Cosmonaut', "http://lonesomecosmonaut.com/"),)
+         ("David T. Crosby", 'https://dafyddcrosby.com'),
+         ('Lonesome Cosmonaut', "https://lonesomecosmonaut.com/"),)
 
 from os.path import expanduser
 PLUGIN_PATH = 'plugins/'
