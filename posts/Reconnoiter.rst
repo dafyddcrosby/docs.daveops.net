@@ -8,3 +8,6 @@ Interactive console
 ::
 
  telnet localhost 32322
+
+ # get a list of checks from the broker
+ show checks
