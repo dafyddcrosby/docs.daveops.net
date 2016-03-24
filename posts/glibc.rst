@@ -1,0 +1,18 @@
+glibc
+=====
+:date: 2016-03-23
+
+Get version
+-----------
+::
+
+  /lib/libc.so.6
+
+or
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <gnu/libc-version.h>
+   int main (void) { puts (gnu_get_libc_version ()); return 0; }
+
