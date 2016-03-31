@@ -1,6 +1,7 @@
 Mac OS X
 ========
 :date: 2016-03-04
+:modified: 2016-03-30
 
 Keyboard shortcuts
 ------------------
@@ -10,9 +11,10 @@ Keyboard shortcuts
 +=======================+=========================================+
 | cmd + option + escape | bring up 'force quit applications' menu |
 +-----------------------+-----------------------------------------+
+| cmd + shift + 3       | take screenshot of all screens          |
++-----------------------+-----------------------------------------+
 | cmd + shift + 4       | take a partial screenshot               |
 +-----------------------+-----------------------------------------+
-
 kernel extensions
 -----------------
 ::
