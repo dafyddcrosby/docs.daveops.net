@@ -29,7 +29,9 @@ https://blogs.oracle.com/marks/entry/zfs_delegated_administration
 Snapshots
 ---------
 ::
-  
+
+  # List snapshots
+  zfs list -t snapshot
   # Delete a snapshot
   zfs destroy tank/home/thing@tuesday
 
