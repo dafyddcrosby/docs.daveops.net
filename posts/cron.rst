@@ -4,7 +4,7 @@ cron
 
 Command line
 ------------
-.. code-block::bash
+.. code-block:: bash
 
   # List crontab
   crontab -l 
