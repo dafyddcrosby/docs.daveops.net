@@ -33,3 +33,8 @@ Using ASCII protocol through telnet
 | <data block>\r\n                                                                                       |                   |
 +--------------------------------------------------------------------------------------------------------+-------------------+
 
+Resources
+---------
+- `memcached site <http://memcached.org/>`_
+- `libmemcached site <http://libmemcached.org/>`_
+- `memdump <http://docs.libmemcached.org/bin/memdump.html>`_

@@ -14,6 +14,7 @@ What's a crucial convo?
 The results of a crucial conversation have high impact on quality of life
 
 Given choices on approach, we can:
+
 - avoid them
 - face them, handle poorly
 - face them, handle well
@@ -23,6 +24,7 @@ Given choices on approach, we can:
 Crucial conversations are frequently spontaneous, catching you off-guard
 
 Common crucial conversations include:
+
 - Ending a relationship
 - Talking to a coworker who behaves offensively or makes suggestive comments
 - Asking a friend to repay a loan
