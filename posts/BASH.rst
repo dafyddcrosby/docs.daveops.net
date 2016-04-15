@@ -92,7 +92,8 @@ Syntax cheatsheet
     ...
  esac
 
- for VARIABLE in 1 2 3 4 5 .. N
+ # for VARIABLE in 1 2 3 4 5
+ for VARIABLE in {1..5}
  do
         command1
         command2
