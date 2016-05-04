@@ -1,6 +1,14 @@
 Chef - Knife
 ============
+:date: 2016-5-1
+:modified: 2016-5-1
 :tags: Chef
+
+Bootstrap a node
+----------------
+::
+
+ knife bootstrap FQDN_OR_IP -E ENVIRONMENT -N NAME -x USER -r RUN_LIST [ --sudo | -G GATEWAY ]
 
 Return chef versions 
 --------------------
