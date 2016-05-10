@@ -2,6 +2,7 @@
 Chef
 ----
 :date: 2015-04-28
+:modified: 2016-5-10
 :tags: Chef
 
 Handle EC2 instance
@@ -46,6 +47,7 @@ Using chef-solo
 knife search
 ============
 ::
+
  knife search -a ATTR
 
 common node attributes
@@ -58,3 +60,8 @@ common node attributes
 +---------------------+----------------------------+
 | nodes's environment | chef.environment           |
 +---------------------+----------------------------+
+
+Compile time notes
+==================
+
+Use `lazy` so that the code block isn't evaluated until execution phase.
