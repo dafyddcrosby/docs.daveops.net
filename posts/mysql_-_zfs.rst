@@ -1,6 +1,7 @@
 MySQL - ZFS
 ===========
 :date: 2016-4-29
+:tags: MySQL, ZFS
 
 Set the ZFS recordsizes to match InnoDB page size
 -------------------------------------------------
