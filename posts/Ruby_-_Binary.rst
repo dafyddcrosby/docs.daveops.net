@@ -117,10 +117,10 @@ String
 +-----------+------------------------------------------------------------------+
 | u         | UU-encoded string                                                |
 +-----------+------------------------------------------------------------------+
-| M         | quoted-printable, MIME encoding (see RFC2045)                    |
+| M         | quoted-printable, MIME encoding (:RFC:`2045`)                    |
 +-----------+------------------------------------------------------------------+
-| m         | base64 encoded string (RFC 2045) (default)                       |
-|           | base64 encoded string (RFC 4648) if followed by 0                |
+| m         | base64 encoded string (:RFC:`2045`) (default)                    |
+|           | base64 encoded string (:RFC:`4648`) if followed by 0             |
 +-----------+------------------------------------------------------------------+
 | P         | pointer to a structure (fixed-length string)                     |
 +-----------+------------------------------------------------------------------+
