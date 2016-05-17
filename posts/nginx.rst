@@ -1,6 +1,8 @@
 nginx
 =====
 :date: 2016-01-25
+:modified: 2016-5-17
+:tags: HTTP
 
 Rotate logs
 -----------
@@ -49,7 +51,13 @@ Check for recent config at https://mozilla.github.io/server-side-tls/ssl-config-
     ....
   }
  
+Disable nginx version in header
+-------------------------------
+In http, server, or location
 
+::
+
+  server_tokens off
 
 A funny aside
 -------------
