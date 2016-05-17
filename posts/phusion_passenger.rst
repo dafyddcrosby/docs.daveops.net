@@ -1,7 +1,8 @@
 Phusion Passenger
 =================
 :date: 2016-03-24
-:tags: Ruby
+:modified: 2016-5-17
+:tags: Ruby, HTTP
 
 CLI
 ---
@@ -13,6 +14,17 @@ CLI
   passenger-status --show=requests
   # restart app
   passenger-config restart-app
+
+Hiding Version Headers
+----------------------
+::
+
+  # Apache
+  LoadModule headers_module modules/mod_headers.so # if not already loaded
+  Header always unset "X-Powered-By"
+  Header always unset "X-Runtime"
+  # nginx (in http context)
+  passenger_show_version_in_header off;
 
 Resources
 ---------
