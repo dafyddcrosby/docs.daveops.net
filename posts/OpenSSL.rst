@@ -1,8 +1,9 @@
 OpenSSL
--------
+=======
+:date: 2016-05-30
 
 RSA key processing
-==================
+------------------
 ::
 
  # Generate a private key
@@ -13,26 +14,32 @@ RSA key processing
  openssl rsa -text -in private_key.pem
 
 Generate Certificate Signing Request
-====================================
+------------------------------------
 ::
 
  openssl req -new -key private_key.pem -out cert.csr
 
 Self-sign a certificate
-==============================
+-----------------------
 ::
 
  openssl req -x509 -key private_key.pem -in cert.csr -out cert.crt
 
 Get certificate details
-==============================
+-----------------------
 ::
 
  openssl x509 -in certificate.crt -text -noout
 
 Create a CA
-==============================
+-----------
 ::
 
  /etc/pki/tls/misc/CA -newca
+
+Testing an SNI certificate
+--------------------------
+::
+
+ openssl s_client -servername example.com -connect example.com:443
 
