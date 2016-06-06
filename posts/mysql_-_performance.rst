@@ -44,10 +44,14 @@ Good ways to benchmark
 
 * Single component tools:
 
-  * mysqlslap
   * Database Test Suite (made by OSDL)
   * sql-bench
   * Super Smack
+
+mysqlslap
+---------
+
+Emulates client load
 
 Run profiling
 -------------
