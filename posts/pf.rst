@@ -1,6 +1,7 @@
 pf
 ==
 :date: 2015-04-05
+:modified: 2016-05-30
 :tags: OpenBSD, firewalls
 
 pfctl
@@ -46,6 +47,9 @@ General rule syntax
 | protocol            | udp/tcp/icmp                                               |
 +---------------------+------------------------------------------------------------+
 
+($ext_if) is shorthand for "use the IP address for the rule" (handy with NAT)
+
+
 Default deny
 ------------
 ::
@@ -58,3 +62,8 @@ Table containing all IP addresses to firewall
 ::
 
  table <firewall> const { self }
+
+Resources
+---------
+
+- https://www.openbsd.org/faq/pf/

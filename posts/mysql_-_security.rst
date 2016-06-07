@@ -1,6 +1,7 @@
 MySQL - Security
 ================
 :date: 2016-5-10
+:tags: MySQL
 
 Don't place DB on same instance as application
 ----------------------------------------------

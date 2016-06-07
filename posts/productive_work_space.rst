@@ -1,13 +1,24 @@
 Productive Work Space
 =====================
 :date: 2016-01-23
+:modified: 2016-05-19
+
+The Office
+----------
 
 - Quiet, minimum of noise
 - Comfortable temperature
-- Ergonomic chair
-- Lots of monitor space
 - Natural light
-- Desk with minimal clutter
+- Kitchenette/kitchen should be a separate space (eg no microwave smell/noise)
+
+The Desk
+--------
+
+- Adjustable desk (ie allows for sitting and standing)
+- Deskspace should allow for work material to be comfortably spread out
+- Ergonomic chair
 - Water carafe
-- Necessary stationary within reach
 - Easy-to-consume calories hidden away
+- Desk clear of clutter
+- Necessary stationary within reach
+- Lots of monitor space
