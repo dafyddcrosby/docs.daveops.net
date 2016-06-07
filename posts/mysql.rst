@@ -2,7 +2,7 @@
 MySQL
 -----
 :date: 2016-03-14
-:tags: databases
+:tags: databases, MySQL
 
 Monitor queries
 ===============
@@ -30,6 +30,22 @@ Describe table contents
  describe <table>;
  -- Schema
  show create table <table>;
+ -- Indexes
+ show index from <table>;
+
+Server-side help
+================
+.. code-block:: mysql
+
+ -- contents
+ help contents
+
+Check if a server is up
+=======================
+::
+
+ mysqladmin ping
+
 
 Create a database
 =================
@@ -102,7 +118,7 @@ Resetting root password
  service mysql start
 
 Create prefix index
-==============================
+===================
 .. code-block:: mysql
 
  alter table TABLENAME.COLUMN
@@ -151,11 +167,7 @@ Autocommit
  SET AUTOCOMMIT=[0|1]
 
 Storage engines
-==============================
-MyISAM
------------------------------------
-* uses table-level locking and lacks transactions, but has low overhead and is platform neutral
-* excellent for read-only tables
+===============
 
 Repairing
 ~~~~~~~~~
@@ -216,7 +228,7 @@ Maria
 * (needs to be looked into)
 
 Good ways to benchmark
-==============================
+======================
 * Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run
 * Use fresh snapshots between benchmarks
 * Full stack tools:
@@ -254,7 +266,7 @@ Check the slow query log
  log-slow-queries = file_name
 
 Run profiling
------------------------------------
+-------------
 ::
 
  set profiling = 1;
@@ -266,3 +278,19 @@ Get timezone config
 .. code-block:: mysql
  
  SELECT @@global.time_zone, @@session.time_zone;
+
+Get version
+-----------
+::
+
+ mysqladmin version
+
+Rotate logs
+===========
+::
+
+ mysqladmin flush-logs
+
+Good books
+----------
+- High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko

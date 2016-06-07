@@ -172,6 +172,12 @@ Search git history
 
  git log -S <search term>
 
+Retrieve single file from a specific revision in git
+====================================================
+::
+
+ git checkout <HASH> -- ./path/to/file
+
 zlol
 ====
 http://whatthecommit.com/

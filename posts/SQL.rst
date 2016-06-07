@@ -73,3 +73,12 @@ Check for duplicate rows
  GROUP BY a, b 
  HAVING cnt > 1
  ORDER BY cnt asc;
+
+Standards
+---------
+
+1992
+1999
+2003
+2008
+new ones?

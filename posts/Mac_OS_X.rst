@@ -15,6 +15,9 @@ Keyboard shortcuts
 +-----------------------+-----------------------------------------+
 | cmd + shift + 4       | take a partial screenshot               |
 +-----------------------+-----------------------------------------+
+| cmd + shift + eject   | lock screen                             | 
++-----------------------+-----------------------------------------+
+
 kernel extensions
 -----------------
 ::
@@ -67,6 +70,15 @@ List disks
 ::
 
  diskutil list
+
+Get linked libraries/object files
+---------------------------------
+::
+
+ # List shared libraries
+ otool -L <executable>
+
+.. TODO look more into otool's operations
 
 Create a RAM disk
 -----------------
