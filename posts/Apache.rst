@@ -1,12 +1,20 @@
 Apache
 ======
 :date: 2015-04-28
+:modified: 2016-06-09
 
-Rotate logs
------------
+Signals
+-------
 ::
 
+ # Rotate logs, kill children, reload configuration
  kill -SIGHUP httpd
+ # Graceful stop
+ kill -SIGWINCH httpd
+ # Graceful restart
+ kill -SIGUSR1 httpd
+ # Immediate stop
+ kill -SIGTERM httpd
 
 General Hardening
 -----------------
@@ -47,3 +55,6 @@ Misc
 ----
 
 * `Mozilla SSL Configuration Generator <https://mozilla.github.io/server-side-tls/ssl-config-generator>`_
+
+.. todo
+   https://httpd.apache.org/docs/current/misc/security_tips.html
