@@ -2,6 +2,7 @@
 MySQL
 -----
 :date: 2016-03-14
+:modified: 2016-06-16
 :tags: databases, MySQL
 
 Monitor queries
@@ -71,11 +72,16 @@ Delete database
 
  drop database <databasename>;
 
-Create a user
-=============
+User management
+===============
 .. code-block:: mysql
 
+ -- Create a user
  CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
+ -- Revoke permissions for user
+ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
+ -- Delete a user
+ DROP USER 'example_user'@'localhost';
 
 Show grants
 ===========
