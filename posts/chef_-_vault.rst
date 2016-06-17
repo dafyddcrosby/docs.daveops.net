@@ -13,3 +13,6 @@ Knife
   # Update the search for hosts on a vault
   knife vault update passwords root -S "role:webserver"
 
+.. todo
+   http://www.pburkholder.com/blog/2015/12/04/why-chef-vault-and-autoscaling-dont-mix/
+   http://engineering.ooyala.com/blog/keeping-secrets-chef
