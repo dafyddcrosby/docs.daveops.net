@@ -1,6 +1,7 @@
 Mutt
 ====
 :date: 2015-05-12
+:modified: 2016-06-20
 
 Manual - http://www.mutt.org/doc/manual/
 
@@ -23,6 +24,7 @@ Search
 | command | desc |
 | ~b EXPR | Search for messages containing EXPR in the body |
 | ~C EXPR | To: or CC:
+| ~f EXPR | From:
 | ~d [MIN]-[MAX] | messages with date-sent in date range |
 | ~l | mailing lists |
 | ~s | Subject: |
