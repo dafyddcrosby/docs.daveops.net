@@ -77,6 +77,13 @@ Syntax cheatsheet
    puts thing
  end
 
+Running proceses
+----------------
+
+- `system() <http://ruby-doc.org/core/Kernel.html#method-i-system>`_ - return value of true (zero exit), false (non-zero), and nil (failed execution)
+- `backticks <http://ruby-doc.org/core/Kernel.html#method-i-60>`_ - returns STDOUT, sets $? to the process status
+- `exec() <http://ruby-doc.org/core/Kernel.html#method-i-exec>`_ - replace current process by running command
+
 % Notation
 ----------
 
