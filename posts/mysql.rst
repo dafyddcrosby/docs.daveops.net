@@ -1,30 +1,29 @@
------
 MySQL
------
+=====
 :date: 2016-03-14
 :modified: 2016-06-16
 :tags: databases, MySQL
 
 Monitor queries
-===============
+---------------
 ::
 
  watch -n 1 mysqladmin --user=<user> --password=<password> processlist
 
 List all databases
-==================
+------------------
 .. code-block:: mysql
 
  show databases;
 
 List all tables
-===============
+---------------
 .. code-block:: mysql
 
  show tables;
 
 Describe table contents
-=======================
+-----------------------
 .. code-block:: mysql
 
  -- Column names
@@ -35,45 +34,45 @@ Describe table contents
  show index from <table>;
 
 Server-side help
-================
+----------------
 .. code-block:: mysql
 
  -- contents
  help contents
 
 Check if a server is up
-=======================
+-----------------------
 ::
 
  mysqladmin ping
 
 
 Create a database
-=================
+-----------------
 .. code-block:: mysql
    
  create database <databasename>;
 
 Import database
-===============
+---------------
 ::
 
  mysql -u username -p<password> database < filename.sql
 
 Export database
-===============
+---------------
 ::
 
  mysqldump -u username -p<password> database > filename.sql 
 
 Delete database
-===============
+---------------
 .. code-block:: mysql
 
  drop database <databasename>;
 
 User management
-===============
+---------------
 .. code-block:: mysql
 
  -- Create a user
@@ -84,7 +83,7 @@ User management
  DROP USER 'example_user'@'localhost';
 
 Show grants
-===========
+-----------
 .. code-block:: mysql
 
    -- show grants for current user
@@ -93,7 +92,7 @@ Show grants
    show grants for 'user'@'example.com';
 
 Variables
-=========
+---------
 .. code-block:: mysql
 
   -- session variables
@@ -104,7 +103,7 @@ Variables
   SET GLOBAL sort_buffer_size=1000000;
 
 Resetting root password
-=======================
+-----------------------
 ::
 
  /etc/init.d/mysql stop
@@ -124,21 +123,21 @@ Resetting root password
  service mysql start
 
 Create prefix index
-===================
+-------------------
 .. code-block:: mysql
 
  alter table TABLENAME.COLUMN
  add key (COLUMN(n));
 
 See what engine the table uses
-==============================
+------------------------------
 .. code-block:: mysql
 
  show table status
  like 'table_name' \G
 
 See running processes
-=====================
+---------------------
 .. code-block:: mysql
 
  -- Quick glance
@@ -147,7 +146,7 @@ See running processes
  select * from information_schema.processlist where user='foobar';
 
 Isolation Levels
-================
+----------------
 
 +------------------+-----------------------+-------------------------------+-------------------------+----------------+
 | !Isolation level | !dirty reads possible | !nonrepeatable reads possible | !phantom reads possible | !locking reads |
@@ -166,24 +165,21 @@ Isolation Levels
  SET SESSION TRANSACTION ISOLATION LEVEL [level];
 
 Autocommit
-==========
+----------
 .. code-block:: mysql
 
  SHOW VARIABLES LIKE 'AUTOCOMMIT';
  SET AUTOCOMMIT=[0|1]
 
-Storage engines
-===============
-
 Repairing
-~~~~~~~~~
+---------
 .. code-block:: mysql
 
  check table [tablename]
  repair table [tablename]
 
-InnoDB
-------
+InnoDB engine
+-------------
 has high overhead, but row-level locking with multiversion concurrency control (MVCC)
 
 Memory engine
@@ -202,7 +198,7 @@ CSV engine
 * Reads, writes to CSV files
 
 Federated engine
------------------------------------
+----------------
 (need to look into)
 
 Blackhole engine
@@ -211,7 +207,7 @@ Blackhole engine
 * Useful for replication setups and audit logging
 
 NDB Cluster Engine
------------------------------------
+------------------
 * Consists of data nodes, management nodes, and SQL nodes
 * Real-time performance with redunancy and load-balancing capabilities
 * Complex joins are slow, but single table lookups can be fast
@@ -226,7 +222,7 @@ soliddb engine
 * similar to InnoDB
 
 PBXT (Primebase XT) engine
------------------------------------
+--------------------------
 * Has high write concurrency
 
 Maria
@@ -234,7 +230,7 @@ Maria
 * (needs to be looked into)
 
 Good ways to benchmark
-======================
+----------------------
 * Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run
 * Use fresh snapshots between benchmarks
 * Full stack tools:
@@ -254,12 +250,13 @@ Good ways to benchmark
   * Super Smack
 
 Optimizing
-==========
+----------
 * Avoid NULL when possible
 * ``optimize table``
 
 indexing
 --------
+
 * Isolate the query column
 * Try to simplify any math, and use literals when possible
 * When indexing char colums, try using just a few letters
@@ -292,10 +289,16 @@ Get version
  mysqladmin version
 
 Rotate logs
-===========
+-----------
 ::
 
  mysqladmin flush-logs
+
+Search for foreign key use
+--------------------------
+::
+
+ select * from KEY_COLUMN_USAGE where REFERENCED_TABLE_NAME = 'tbl_name';
 
 Good books
 ----------
