@@ -1,6 +1,7 @@
 DNS
 ===
 :date: 2015-04-05
+:modified: 2016-09-14
 
 Reverse lookup
 --------------
@@ -18,3 +19,14 @@ Get nameserver glue records
  dig NS com
  # get glue records
  dig NS example.com @b.gtld-servers.net
+
+Add Route53 subdomain to zone file
+----------------------------------
+::
+
+   ; drop this in the example.com zone file
+   $ORIGIN subdomain.example.com.
+   @ IN NS ns-x.awsdns-x.net.
+   @ IN NS ns-x.awsdns-x.com.
+   @ IN NS ns-x.awsdns-x.co.uk.
+   @ IN NS ns-x.awsdns-x.org.
