@@ -1,7 +1,7 @@
 Productivity
 ============
 :date: 2015-12-01
-:modified: 2016-03-14
+:modified: 2016-09-13
 :tags: advice
 
 General life hacks
@@ -19,10 +19,13 @@ Computing
 
 * Learn your editor inside out
 
+- Use the best tools you can for your development machine. Waiting for compiles suck time and money.
+
 Delegation
 ----------
 
-- Assistants generally excel at maintaining systems, not creating them. *You* should have the big picture in your head.
+- Assistants generally excel at maintaining systems, not creating them. *You*
+  should have the big picture in your head.
 - Have a documented process. Questions mean the process isn't documented well enough.
 
 Time Management
