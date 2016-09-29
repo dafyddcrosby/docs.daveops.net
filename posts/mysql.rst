@@ -193,19 +193,6 @@ Archive engine
 * Low disk I/O
 * Ideal for logging
 
-CSV engine
-----------
-* Reads, writes to CSV files
-
-Federated engine
-----------------
-(need to look into)
-
-Blackhole engine
-----------------
-* No storage mechanism at all
-* Useful for replication setups and audit logging
-
 NDB Cluster Engine
 ------------------
 * Consists of data nodes, management nodes, and SQL nodes
