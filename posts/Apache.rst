@@ -16,6 +16,12 @@ Signals
  # Immediate stop
  kill -SIGTERM httpd
 
+Test the configuration
+----------------------
+::
+
+  apachectl configtest
+
 General Hardening
 -----------------
 
