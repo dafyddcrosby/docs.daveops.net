@@ -1,8 +1,8 @@
 ZFS
 ===
 :date: 2015-04-28
-:modified: 2016-03-15
-:tags: SmartOS
+:modified: 2016-09-21
+:tags: SmartOS, Solaris, FreeBSD
 
 Compression
 -----------
@@ -39,3 +39,4 @@ References
 ----------
 
 * http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide
+* http://jrs-s.net/2015/02/03/will-zfs-and-non-ecc-ram-kill-your-data/
