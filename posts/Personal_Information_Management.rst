@@ -49,6 +49,8 @@ A task is an action, a project is the interdependency of those tasks
 Finding is where a need demands information
 Keeping is figuring out what to do with information 'in hand'
 
+In the creation of a project, does how we categorize and file drive the success of a project?
+
 Resources
 ---------
 - Keeping Found Things Found: The Study and Practice of Personal Information Management by William Jones
