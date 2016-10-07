@@ -35,6 +35,14 @@ Snapshots
   # Delete a snapshot
   zfs destroy tank/home/thing@tuesday
 
+Rollback
+--------
+By default, ZFS rollback cannot revert to anything beyond the most recent snapshot. -r lets you go earlier, although this is a destructive operation and deletes the intermediate snapshots
+
+::
+
+  zfs rollback tanks/home/dave@tuesday
+
 References
 ----------
 
