@@ -11,6 +11,13 @@ On Win7
  certmgr.msc
  # Find cert, right-click, point to All Tasks, click Export
 
+Recursive copy of files
+-----------------------
+On XP
+::
+
+ xcopy /E <src> <dest>
+
 Links
 -----
 - https://technet.microsoft.com/en-us/sysinternals/bb963890
