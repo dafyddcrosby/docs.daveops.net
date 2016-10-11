@@ -1,6 +1,7 @@
 Linux
 =====
 :date: 2015-03-07
+:updated: 2016-10-11
 
 force filesystem check on next boot
 -----------------------------------
@@ -133,6 +134,12 @@ Get filesystems kernel can use
 
  cat /proc/filesystems
 
+Remove older kernels
+--------------------
+::
+
+  # For redhat, install yum-utils and run:
+  package-cleanup --oldkernels --count=1
 
 .. TODO
    https://perf.wiki.kernel.org/index.php/Tutorial
