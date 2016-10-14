@@ -1,26 +1,33 @@
 SQLite
 ======
+:date: 2016-10-14
 :tags: databases
 
 Show all tables
 ---------------
-.. code-block:: sqlite
+.. code-block:: sqlite3
 
  .tables
 
 Show table schema
 -----------------
-.. code-block:: sqlite
+.. code-block:: sqlite3
 
  .schema tablename
 
 See if table exists
 -------------------
-.. code-block:: sqlite
+.. code-block:: sqlite3
 
  SELECT name 
  FROM sqlite_master
  WHERE type='table'
+
+Export tables
+-------------
+::
+
+  sqlite3 my.db .dump
 
 Datatypes
 ---------
