@@ -1,5 +1,6 @@
 Graphviz
 ========
+:date: 2016-10-18
 
 http://graphviz.org
 
@@ -14,9 +15,10 @@ Plain graph
 ::
 
  digraph graph_name {
- A [label="Node A"] // sample comment
- B [label="Node B"]
- A->B [label="commands", fontcolor=red]
+   A [label="Node A"] // sample comment
+   B [label="Node B"]
+   A->B [label="commands", fontcolor=red]
+   X->Y->Z
  }
 
 
