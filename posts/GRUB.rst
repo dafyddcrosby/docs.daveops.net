@@ -2,8 +2,21 @@ GRUB
 ====
 :date: 2016-10-25
 
-Grub2 grub.cfg creation
------------------------
+Except where noted, this is for GRUB 2+
+
+Console
+-------
+::
+
+  # Turn on the pager in console mode
+  set pager=1
+  # See what the variables are
+  set
+  # Find devices available
+  ls
+
+Grub grub.cfg creation
+----------------------
 ::
 
   grub2-mkconfig -o /boot/grub2/grub.cfg
