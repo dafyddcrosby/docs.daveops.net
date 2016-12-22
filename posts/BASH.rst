@@ -144,3 +144,12 @@ Show the functions declared in the shell
    declare -F
    # on ancient shells:
    typeset -F
+
+Use heredocs
+------------
+.. code-block:: bash
+
+  cat <<EOM > file.out
+  blah
+  blah
+  EOM
