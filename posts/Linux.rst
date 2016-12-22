@@ -43,11 +43,14 @@ Get reboot/shutdown history
 
  last -x
 
-Get time from Unix timestamp
-----------------------------
+Date utility
+------------
 ::
 
+ # Get the date from a timestamp
  date -d @$TIMESTAMP
+ # Get the current time as a timestamp
+ date +%s
 
 Find all files with a setuid/setgid bit set
 -------------------------------------------
@@ -143,3 +146,25 @@ Remove older kernels
 
 .. TODO
    https://perf.wiki.kernel.org/index.php/Tutorial
+
+ip command
+----------
+
+ifconfig is deprecated, ip was added in Linux 2.2
+
+::
+
+  # Get IP address
+  ip addr
+  # Get network interface stats
+  ip link
+  # Get network interface packet stats
+  ip -s link
+
+  # Enable interface
+  ip link set eth0 up
+  # Set IP address
+  ip address add 192.168.1.23 dev eth0
+
+  # Show routing table
+  ip route show
