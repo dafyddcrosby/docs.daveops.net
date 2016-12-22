@@ -97,7 +97,8 @@ Signs that a conversation is about to get Crucial
 - emotions (feel hurt, scared, angry)
 - behaviour (raise voice, point a finger, become quiet)
 
-Look for safety problems. Safe conversations let the things that need to be said be said. Unsafe convos are ugly.
+Look for safety problems. Safe conversations let the things that need to be
+said be said. Unsafe convos are ugly.
 
 Silence
 -------
@@ -173,20 +174,24 @@ Here are two crucial questions to help us determine when Mutual Purpose is at ri
    preparing the report each month. It’s going to be a bit of a sensitive
    conversation—but I think it will help a great deal if we can talk about it.”
 
+::
 
- "The instant people perceive disrespect in a conversation, the interaction is no longer about the original purpose—it is now about defending dignity."
+  The instant people perceive disrespect in a conversation, the interaction is
+  no longer about the original purpose—it is now about defending dignity.
 
+::
 
- Telltale signs. To spot when respect is violated and safety takes a turn south, watch for signs that people are defending their dignity. Emotions are the key. When people feel disrespected, they become highly charged. Their emotions turn from fear to anger. Then they resort to pouting, name-calling, yelling, and making threats. Ask the following question to determine when Mutual Respect is at risk:
- Do others believe I respect them?
-
-
+  Telltale signs. To spot when respect is violated and safety takes a turn
+  south, watch for signs that people are defending their dignity. Emotions are
+  the key. When people feel disrespected, they become highly charged. Their
+  emotions turn from fear to anger. Then they resort to pouting, name-calling,
+  yelling, and making threats. Ask the following question to determine when
+  Mutual Respect is at risk: Do others believe I respect them?
 
 Three good skills that the best dialogues use:
 - apologize
 - contrast
 - create a mutual purpose
-
 
 contrasting provides context, proportion, and can fix misunderstandings of scope or severity
 
@@ -229,12 +234,14 @@ Clever stories:
 
 watch for double standard with victim/villain
 
-clever stories can
+clever stories can:
+
 - match reality (it does sometimes happen)
 - get us off the hook (still partially responsible)
 - keep us from acknowledging our own sellouts
 
 Sellouts:
+
 - You believe you should help someone, but don’t.
 - You believe you should apologize, but don’t.
 - You believe you should stay late to finish up on a commitment, but go home instead.
@@ -249,6 +256,7 @@ Sellouts:
 Clever stories omit crucial information about us, about others
 
 Broaching uncomfortable topics requires:
+
 - confidence
 - humility
 - skill
@@ -329,16 +337,24 @@ Agree -> Build -> Compare
 
 ::
 
-   Most arguments consist of battles over the 5 to 10 percent of the facts and stories that people disagree over. And while it’s true that people eventually need to work through differences, you shouldn’t start there. Start with an area of agreement.
+   Most arguments consist of battles over the 5 to 10 percent of the facts and
+   stories that people disagree over. And while it’s true that people
+   eventually need to work through differences, you shouldn’t start there.
+   Start with an area of agreement.
 
-   So here’s the take-away. If you completely agree with the other person’s path, say so and move on. Agree when you agree. Don’t turn an agreement into an argument.
+   So here’s the take-away. If you completely agree with the other person’s
+   path, say so and move on. Agree when you agree. Don’t turn an agreement into
+   an argument.
 
 
-Don't get caught up in trivial differences, making a mole hill into a mountain. Say "I agree," and then build.
+Don't get caught up in trivial differences, making a mole hill into a mountain.
+Say "I agree," and then build.
 
 ::
 
-   If you agree with what has been said but the information is incomplete, build. Point out areas of agreement, and then add elements that were left out of the discussion.
+   If you agree with what has been said but the information is incomplete,
+   build. Point out areas of agreement, and then add elements that were left
+   out of the discussion.
 
 Compare your path with the other person, determine what they're trying to accomplish
 
@@ -363,7 +379,9 @@ Write down the details of conclusions, decisions, and assignments.
 
 Don't get pulled into any one instance or your concern will seem trivial. Talk about overall pattern.
 
-"Look for those areas that are most grievous to you and might not be all that hard to talk about. Pick one element and work on it. Establish Mutual Purpose. Frame the conversation in a way that the other person will care about."
+"Look for those areas that are most grievous to you and might not be all that
+hard to talk about. Pick one element and work on it. Establish Mutual Purpose.
+Frame the conversation in a way that the other person will care about."
 
 Stress
 ------
