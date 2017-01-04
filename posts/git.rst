@@ -178,6 +178,15 @@ Retrieve single file from a specific revision in git
 
  git checkout <HASH> -- ./path/to/file
 
+Signing a commit
+================
+
+In the commit message
+
+::
+
+  Signed-off-by: David Crosby <email@example.com>
+
 zlol
 ====
 http://whatthecommit.com/
