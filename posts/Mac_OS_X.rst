@@ -1,7 +1,7 @@
 Mac OS X
 ========
 :date: 2016-03-04
-:modified: 2016-03-30
+:modified: 2017-01-19
 
 Keyboard shortcuts
 ------------------
@@ -36,6 +36,12 @@ Update software
 Search help
 -----------
 apple key + ? , search for the help menu
+
+Increase maxfiles for session
+-----------------------------
+::
+
+  ulimit -n 4096
 
 Remove launch agents
 --------------------
