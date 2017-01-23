@@ -1,12 +1,16 @@
 SSH
 ===
 :date: 2015-07-20
+:modified: 2017-01-23
 
 Generating a new key
 --------------------
 ::
 
- ssh-keygen -b 4096
+ # Generate a new RSA keypair
+ ssh-keygen -t rsa -b 4096 -C "<username> generated <date>"
+ # Generate a new ed25519 keypair
+ ssh-keygen -t ed25519 -C "<username> generated <date>"
 
 Getting key fingerprint
 -----------------------
