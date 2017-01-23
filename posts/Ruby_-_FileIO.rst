@@ -2,9 +2,24 @@ Ruby - FileIO
 =============
 :tags: Ruby
 :date: 2015-02-14
+:modified: 2017-01-03
+
+Write to a file
+---------------
 
 .. code-block:: ruby
 
   fp = File.open(filename, mode)
   fp.write('bloop')
+  fp.close
+
+Read individual chars
+---------------------
+
+.. code-block:: ruby
+
+  fp = File.open(filename, mode)
+  fp.each_char do |char|
+    puts char
+  end
   fp.close
