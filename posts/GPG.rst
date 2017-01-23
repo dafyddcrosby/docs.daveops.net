@@ -1,6 +1,7 @@
 GPG
 ===
 :date: 2015-12-07
+:modified: 2017-01-23
 
 Generate GPG keypair
 --------------------
@@ -19,6 +20,12 @@ Encrypt a file
 ::
 
  gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
+
+Decrypt a file
+--------------
+::
+
+  gpg --output <file> --decrypt <file>.gpg
 
 Show key fingerprints
 ---------------------
