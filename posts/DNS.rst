@@ -1,7 +1,7 @@
 DNS
 ===
 :date: 2015-04-05
-:modified: 2016-09-14
+:modified: 2017-01-25
 
 Reverse lookup
 --------------
@@ -19,6 +19,12 @@ Get nameserver glue records
  dig NS com
  # get glue records
  dig NS example.com @b.gtld-servers.net
+
+Get SOA (serial, refresh, retry, expiry, minimum)
+-------------------------------------------------
+::
+ 
+  dig +short example.com soa
 
 Add Route53 subdomain to zone file
 ----------------------------------
