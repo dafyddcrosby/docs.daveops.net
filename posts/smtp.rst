@@ -1,9 +1,18 @@
 SMTP
 ====
 :date: 2015-05-04
+:modified: 2017-01-27
 
-Simple telnet email
--------------------
+Connect via command line
+------------------------
+
+::
+
+ # Connect via telnet
+ telnet example.com 25
+ # Encrypted connection
+ openssl s_client -connect example.com:587 -starttls smtp
+
 ::
 
  HELO example.com
@@ -15,3 +24,9 @@ Simple telnet email
  <CR-LF>
  <CR-LF>
 
+Ports
+-----
+
+- 25: SMTP, typically used for MTA to MTA
+- 465: SMTPS
+- 587
