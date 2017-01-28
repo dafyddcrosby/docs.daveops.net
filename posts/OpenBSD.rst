@@ -1,5 +1,7 @@
 OpenBSD
 -------
+:date: 2016-4-24
+:modified: 2016-4-24
 :tags: OpenBSD
 
 List PCI devices
@@ -38,3 +40,9 @@ USB snapshots
 ::
 
   dd if=install*.fs of=/dev/sd1c bs=1m
+
+
+Building from source
+====================
+
+See `man 8 release`
