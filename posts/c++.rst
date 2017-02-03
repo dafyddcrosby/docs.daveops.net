@@ -1,5 +1,6 @@
 C++
 ===
+:slug: c-plus-plus
 :date: 2016-03-16
 
 .. TODO Read the latest spec

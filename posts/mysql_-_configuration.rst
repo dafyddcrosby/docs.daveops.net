@@ -4,7 +4,7 @@ MySQL - Configuration
 :tags: MySQL
 
 Variables
-=========
+---------
 .. code-block:: mysql
 
   -- session variables
