@@ -11,6 +11,12 @@ Mold your life so that the path of least resistance is the path of maximum produ
 * `LeechBlock <https://addons.mozilla.org/en-US/firefox/addon/leechblock/>`_
   - Good if you want to stop checking slashdot 30 times a day
 
+Recognize the default actions in your life, and find ways to change those defaults
+
+Spend the first 30 minutes of your day on what you want to accomplish the most
+
+Use 'bright lines' to avoid ambiguities that keep you doing things you don't want. "I don't do X. I only drink Y twice a week."
+
 Computing
 ---------
 
@@ -37,3 +43,12 @@ Office organization
 -------------------
 
 - Identify problem spots first.
+
+
+Ivy Lee Method
+--------------
+
+- Each night before you go to bed, write down the 6 most important tasks for the next day.
+- Order by importance.
+- Do the tasks by importance.
+- Repeat.
