@@ -1,6 +1,6 @@
 SELinux
 -------
-:tags: Linux
+:tags: Linux, security
 
 Show available SELinux booleans
 ===============================

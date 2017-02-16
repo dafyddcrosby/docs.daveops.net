@@ -1,6 +1,7 @@
 SystemD
 =======
 :date: 2016-03-07
+:tags: init, Linux, Red Hat
 
 | Command | Notes |
 | systemctl | List services |

@@ -1,6 +1,7 @@
 Linux - kernel modules
 ======================
 :date: 2016-03-31
+:tags: Linux
 
 basic commands
 --------------
