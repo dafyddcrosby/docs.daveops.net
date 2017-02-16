@@ -1,11 +1,11 @@
 MySQL - performance
 ===================
 :data: 2016-5-9
+:modified: 2017-02-15
 :tags: MySQL
 
 .. TODO
   Avoid NULL when possible (forget why)
-  ``optimize table`` section
 
 indexing
 --------
@@ -26,6 +26,14 @@ Dealing with fragmentation
 
   -- size in MB
   select ENGINE, TABLE_NAME, Round(DATA_LENGTH/1024/1024) as data_length, round(INDEX_LENGTH/1024/1024) as index_length, round(DATA_FREE/1024/1024) as data_free, (data_free/(index_length+data_length)) as frag_ratio from information_schema.tables where DATA_FREE > 0 order by frag_ratio desc;
+
+Optimize table
+--------------
+.. code-block:: mysql
+
+   optimize table <tbl>;
+
+https://dev.mysql.com/doc/refman/5.7/en/optimize-table.html
 
 Good ways to benchmark
 ----------------------
