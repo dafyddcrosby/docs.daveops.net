@@ -34,6 +34,16 @@ Google SRE is an eng with a few extra skills, usually UNIX + L1-L3 networking
 
 Google SRE's also write application code, to prevent dev/ops split
 
+The SRE Team is responsible for:
+
+- availability
+- latency
+- performance
+- efficiency
+- change management
+- monitoring
+- emergency response
+- capacity planning
 
 Misc
 ----
