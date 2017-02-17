@@ -1,7 +1,8 @@
-Mac OS X
-========
+macOS
+=====
 :date: 2016-03-04
 :modified: 2017-01-19
+:tags: macOS
 
 Keyboard shortcuts
 ------------------
