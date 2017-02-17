@@ -110,4 +110,5 @@ Boot Options
 Links
 -----
 
-https://opensource.apple.com/
+- https://opensource.apple.com/
+- https://github.com/herrbischoff/awesome-osx-command-line
