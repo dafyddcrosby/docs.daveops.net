@@ -1,7 +1,7 @@
 nginx
 =====
 :date: 2016-01-25
-:modified: 2016-5-17
+:modified: 2017-02-15
 :tags: HTTP
 
 Rotate logs
@@ -50,7 +50,15 @@ Check for recent config at https://mozilla.github.io/server-side-tls/ssl-config-
     
     ....
   }
- 
+
+Redirect only / query
+---------------------
+::
+
+  location = / {
+    # this matches only the / query.
+  }
+
 Disable nginx version in header
 -------------------------------
 In http, server, or location
@@ -58,6 +66,12 @@ In http, server, or location
 ::
 
   server_tokens off
+
+Resources
+---------
+
+- https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return
+- https://nginx.org/en/docs/http/ngx_http_core_module.html#location
 
 A funny aside
 -------------

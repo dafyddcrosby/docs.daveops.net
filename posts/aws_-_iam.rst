@@ -1,6 +1,7 @@
 AWS - IAM
 =========
 :date: 2016-01-23
+:modified: 2017-02-13
 :tags: AWS
 
 Create a user
@@ -15,4 +16,8 @@ Create an access key
 
   aws iam create-access-key --user-name <user>
 
+Attaching IAM roles to an instance
+----------------------------------
+::
 
+   aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile

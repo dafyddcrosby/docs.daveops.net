@@ -2,6 +2,7 @@ Linux
 =====
 :date: 2015-03-07
 :updated: 2016-10-11
+:tags: Linux
 
 force filesystem check on next boot
 -----------------------------------

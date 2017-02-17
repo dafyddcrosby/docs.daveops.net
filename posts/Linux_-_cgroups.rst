@@ -1,5 +1,6 @@
 Linux - cgroups
 ===============
+:tags: Linux
 
 https://www.kernel.org/doc/Documentation/cgroup-v1/
 https://www.kernel.org/doc/Documentation/cgroup-v2.txt
