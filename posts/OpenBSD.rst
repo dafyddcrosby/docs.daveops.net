@@ -1,7 +1,7 @@
 OpenBSD
 -------
 :date: 2016-4-24
-:modified: 2016-4-24
+:modified: 2017-02-18
 :tags: OpenBSD
 
 List PCI devices
@@ -41,6 +41,15 @@ USB snapshots
 
   dd if=install*.fs of=/dev/sd1c bs=1m
 
+Securelevels
+============
+
+Edit /etc/rc.securelevel or `sysctl kern.securelevel`
+
+- -1 - permanently insecure
+- 0 - insecure
+- 1 - secure
+- 2 - highly secure
 
 Building from source
 ====================
