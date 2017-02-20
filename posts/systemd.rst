@@ -1,6 +1,7 @@
 SystemD
 =======
 :date: 2016-03-07
+:modified: 2017-02-20
 :tags: init, Linux, Red Hat
 
 | Command | Notes |
@@ -21,3 +22,7 @@ Directories
 -----------
 
 - /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this service is configured on or off
+
+Single User Mode
+----------------
+Add the following to the kerneel arguments `systemd.unit=rescue.target`
