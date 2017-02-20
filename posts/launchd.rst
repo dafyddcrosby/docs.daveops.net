@@ -1,7 +1,7 @@
 Launchd
 =======
 :date: 2016-03-23
-:tags: Mac OS X
+:tags: macOS
 
 Get system resource limits
 --------------------------

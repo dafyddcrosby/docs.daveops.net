@@ -1,5 +1,7 @@
 Mount
 =====
+:date: 2017-02-17
+:tags: Linux
 
 Mounting an ISO
 ---------------
@@ -12,3 +14,11 @@ Create a RAM disk
 ::
 
  mount -t tmpfs tmpfs /mnt -o size=1024m
+
+Lazy unmount of a partition
+---------------------------
+Linux 2.4.11+
+
+::
+
+  umount -l <mount>

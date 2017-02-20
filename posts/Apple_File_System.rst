@@ -1,7 +1,7 @@
 Apple File System
 =================
 :date: 2016-06-21
-:tags: filesystems, Mac OS X
+:tags: filesystems, macOS
 
 Replaces HFS+
 

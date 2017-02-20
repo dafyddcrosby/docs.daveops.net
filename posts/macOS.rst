@@ -1,7 +1,8 @@
-Mac OS X
-========
+macOS
+=====
 :date: 2016-03-04
 :modified: 2017-01-19
+:tags: macOS
 
 Keyboard shortcuts
 ------------------
@@ -110,4 +111,5 @@ Boot Options
 Links
 -----
 
-https://opensource.apple.com/
+- https://opensource.apple.com/
+- https://github.com/herrbischoff/awesome-osx-command-line
