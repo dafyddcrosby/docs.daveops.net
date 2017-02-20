@@ -63,8 +63,10 @@ PLUGINS = [
 ]
 
 STATIC_PATHS = [
+    'Static/',
 ]
 
 # A list of files to copy from the source to the destination
 EXTRA_PATH_METADATA = {
+    'Static/.htaccess': {'path': '.htaccess'},
 }
