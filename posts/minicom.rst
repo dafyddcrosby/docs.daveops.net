@@ -1,0 +1,12 @@
+Minicom
+=======
+:date: 2017-02-17
+
+Attach to a serial console
+--------------------------
+::
+
+  # ensure that the dev node has correct permissions
+  minicom -s
+  # select "Serial port setup"
+  # save
