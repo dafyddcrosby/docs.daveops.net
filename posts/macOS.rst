@@ -1,7 +1,7 @@
 macOS
 =====
 :date: 2016-03-04
-:modified: 2017-01-19
+:modified: 2017-01-22
 :tags: macOS
 
 Keyboard shortcuts
@@ -107,6 +107,16 @@ Boot Options
 | N | Boot from network |
 | Option | Startup Manager |
 | Cmd + Option + P + R | Reset NVRAM |
+
+Wireless diagnostics
+--------------------
+
+All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window' tab
+
+::
+
+  /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
+
 
 Links
 -----
