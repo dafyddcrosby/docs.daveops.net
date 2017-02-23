@@ -1,7 +1,20 @@
 Go
 ==
+:date: 2017-02-23
 
-.. TODO - syntax cheatsheet
+Syntax cheatsheet
+-----------------
+.. code-block:: go
+
+   package main
+
+   import(
+       "fmt"
+   )
+
+   func main() {
+       fmt.Println("hello world")
+   }
 
 Resources
 ---------
