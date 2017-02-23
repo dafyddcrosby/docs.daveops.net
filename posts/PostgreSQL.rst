@@ -33,6 +33,7 @@ View current queries
 Killing long running queries
 ============================
 Don't use SIGKILL, it will shut down the rest of PostgreSQL, and require a replay
+
 .. code-block:: sql
 
    pg_cancel_backend(pid int) 

@@ -11,6 +11,7 @@ Application Name
 Launcher icon (iOS 1.1.3+)
 --------------------------
 Rounded corners, no added shiny (iOS 4.2):
+
 .. code-block:: html
 
  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
@@ -42,6 +43,7 @@ Have standalone look
 Hide top status bar
 -------------------
 NB - must have standalone mode on.
+
 .. code-block:: html
 
  <meta name="apple-mobile-web-app-status-bar-style" content="black" />

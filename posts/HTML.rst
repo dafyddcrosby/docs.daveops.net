@@ -110,6 +110,7 @@ Editable content
 Link for phone numbers (mobile)
 ===============================
 International calling code is required
+
 .. code-block:: html
 
  <a href="tel:+14035555555">403-555-5555</a>

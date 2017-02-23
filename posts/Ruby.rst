@@ -45,7 +45,6 @@ Gem source
 
 Syntax cheatsheet
 -----------------
-.. TODO - flesh out
 .. code-block:: ruby
 
  if val = 42

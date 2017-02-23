@@ -1,4 +1,3 @@
-======
 webERP
 ======
 
@@ -11,8 +10,9 @@ stockserialitems (shows the lots)
 locstock (stock levels at location)
 
 Adding new script
-==============================
+-----------------
 MySQL:
+
 .. code-block:: sql
 
  -- add script permissions

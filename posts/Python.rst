@@ -135,6 +135,7 @@ Named tuples (ghetto classes)
 Tab completion in Python shell
 ==============================
 If you don't have access to IPython,
+
 .. code-block:: python
 
  import rlcompleter, readline
