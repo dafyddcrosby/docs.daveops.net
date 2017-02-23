@@ -13,7 +13,7 @@ Python
 
 Essential third-party tools
 ==============================
-[[autopep8|http://pypi.python.org/pypi/autopep8]]
+`autopep8 <http://pypi.python.org/pypi/autopep8>`_
 
 Getopts
 ==============================
@@ -74,6 +74,7 @@ Remove duplicates from a list
 Profile a program
 ==============================
 http://docs.python.org/library/profile.html
+
 .. code-block:: python
    
  import profile
