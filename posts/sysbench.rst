@@ -1,14 +1,14 @@
 sysbench
---------
+========
 
 benchmark CPU
-==============================
+-------------
 ::
 
  sysbench --test=cpu --cpu-max-prime=20000 run
 
 benchmark I/O
-==============================
+-------------
 :: 
 
  sysbench --test=fileio --file-total-size=10G prepare
