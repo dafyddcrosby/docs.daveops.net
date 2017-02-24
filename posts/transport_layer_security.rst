@@ -1,7 +1,7 @@
 Transport Layer Security
 ========================
 :date: 2016-5-9
-:modified: 2017-1-30
+:modified: 2017-02-23
 
 Here's a quick checklist of best practices as of this writing. It is by no
 means complete, but should get you well on your way.
@@ -19,6 +19,7 @@ Stop using
 - DES (deprecated Data Encryption Standard)
 - 3DES (`Sweet32 attack <https://sweet32.info/>`_)
 - Weak Diffie-Hellman parameters (`Logjam attack <https://weakdh.org>`_)
+- SHA1 (`SHAttered attack <https://shattered.io>`_)
 
 Start using
 -----------
