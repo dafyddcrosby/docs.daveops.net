@@ -1,5 +1,5 @@
 Life stuff
-----------
+==========
 :tags: advice 
 
 * It's easier to hold to your principles 100% of the time than it is to hold to them 98% of the time -Clayton M. Christensen

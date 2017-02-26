@@ -1,6 +1,22 @@
 Intel x86
 =========
 :date: 2015-04-05
+:modified: 2017-02-26
+
+Real Mode
+---------
+- less than 1MB of RAM
+- no virtual memory
+- no hardware memory protection
+
+Bootstrapping
+-------------
+
+Starts in 16-bit Real Mode, for compatibility reasons
+
+Zero the data segment registers first thing, since their content is unknown.
+
+The BIOS transfers the first 512 bytes of data from the device into 0x7c00. The last two bytes need to be 0x55 and then 0xAA to be considered a valid bootsector.
 
 Factoids
 --------
