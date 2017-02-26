@@ -18,12 +18,19 @@ Interview: http://shmuplations.com/megaman/
   
   Kitamura: I also created some rules for myself about enemy placement and design.
   
-  #1: Single, weak little enemies would appear in “waves” of 3 or 4 individuals (and to the extent possible, I’d avoid mixing up multiple enemies);
+  #1: Single, weak little enemies would appear in "waves" of 3 or 4 individuals (and to the extent possible, I’d avoid mixing up multiple enemies);
   
   #2: they would all use the same attacks;
   
   #3: I would use differences in terrain and enemy placement to adjust the difficulty of a given section;
   
   #4: The difficulty of each enemy in the wave would gradually rise, but the last enemy to appear would be easier.
+
+  ...
+
+  Kitamura: Making the last enemy encounter in the wave easier was a key idea. It leaves the player with a softer impression of the game’s difficulty. I think the reason that people don’t replay games—even good ones—is that when they remember playing the game, their minds go back to the extremely difficult parts and enemies, and then replaying the game starts to seem like tedious work. I wanted the player to feel like he was improving at the game too, and that was another reason to make that last enemy easier, I think.
+  
+  These weren’t my only "tricks" for how to get more replayability, but they were some of the big ones. 
+
 
 Players like little secrets
