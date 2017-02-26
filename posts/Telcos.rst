@@ -1,0 +1,11 @@
+Telcos
+======
+:date: 2017-02-18
+
+When connecting to a telco, ask for:
+
+- Serial IP addresses
+- circuit ID
+- customer #
+- line encapsulation
+- Ethernet IP address
