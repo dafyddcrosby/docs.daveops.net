@@ -1,6 +1,7 @@
 MongoDB
 =======
 :date: 2015-06-04
+:modified: 2017-02-18
 :tags: databases
 
 Queries
@@ -13,6 +14,13 @@ Queries
  db.currentOp()['inprog'].filter(function(x) {return x.secs_running > 10})
  // Kill a query
  db.killOp(12345)
+
+Administration
+--------------
+.. code-block:: javascript
+
+   // Drop database
+   db.dropDatabase();
 
 Rotate logs
 -----------
