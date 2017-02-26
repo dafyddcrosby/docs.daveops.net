@@ -13,5 +13,89 @@ Mail
 ----
 * Mutt
 * `Alpine <http://www.washington.edu/alpine/>`_
+* Elm
 
+Addresses
+---------
+- abook
 
+Twitter
+-------
+- turses
+- t
+
+RSS
+---
+- newsbeuter
+- snownews
+
+IM
+--
+- finch
+
+IRC
+---
+- irssi
+
+FTP
+---
+- lftp
+- ncftp
+
+Music
+-----
+- mplayer
+- cmus
+- abcde
+- metaflac
+- id3v2
+- beet
+
+WWW
+---
+- lynx
+- links
+- w3m
+- elinks
+- curl
+
+spreadsheet
+-----------
+- sc
+
+typing
+------
+- typespeed
+
+dictionary
+----------
+- dict
+
+books
+-----
+- fbgs
+- booklist
+
+NNTP
+----
+- tin
+
+Torrents
+--------
+- rtorrent
+- transmission-cli
+
+Games
+-----
+- bsd-games
+
+Finger
+------
+- finger
+- pinky
+
+Text editing
+------------
+- vim
+- emacs
+- nano
