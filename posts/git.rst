@@ -46,7 +46,7 @@ If you just need to amend last commit,
  git commit --amend
 
 Handy hooks
-==============================
+===========
 Push to website on git push
 -----------------------------------
 on server, put this in ``hooks/post-receive``
@@ -102,13 +102,13 @@ Show nicely formatted changelog
  git log --graph --oneline --abbrev-commit --decorate
 
 Get list of contributors
-==============================
+========================
 ::
 
  git shortlog -s -n
 
 Remove non-tracked files
-==============================
+========================
 ::
 
  git clean -n  # dry run
