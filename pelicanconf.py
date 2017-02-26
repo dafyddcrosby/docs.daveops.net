@@ -48,8 +48,7 @@ MENUITEMS = [
 ]
 
 # Blogroll
-LINKS = (('Kernel Who?', 'https://kernelwho.wordpress.com'),
-         ("David T. Crosby", 'https://dafyddcrosby.com'),
+LINKS = (("David T. Crosby", 'https://dafyddcrosby.com'),
          ('Lonesome Cosmonaut', "https://lonesomecosmonaut.com/"),)
 
 from os.path import expanduser
