@@ -7,3 +7,29 @@ Header always set Strict-Transport-Security "max-age=15768000; includeSubDomains
 Header always set X-Content-Type-Options "nosniff"
 Header always set X-Frame-Options "DENY"
 Header always set X-XSS-Protection "1; mode=block"
+
+# cache images for 4 weeks
+<FilesMatch "\.(gif|jpe?g|png|ico)$">
+Header set Cache-Control: "max-age=2419200"
+</FilesMatch>
+
+# cache scripts, CSS For 1 week
+<FilesMatch "\.(js|css)$">
+Header set Cache-Control: "max-age=604800"
+</FilesMatch>
+
+<ifModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif "access plus 1 weeks"
+ExpiresByType image/jpg "access plus 1 weeks"
+ExpiresByType image/jpeg "access plus 1 weeks"
+ExpiresByType image/png "access plus 1 weeks"
+ExpiresByType image/vnd.microsoft.icon "access plus 1 weeks"
+ExpiresByType image/x-icon "access plus 1 weeks"
+ExpiresByType image/ico "access plus 1 weeks"
+ExpiresByType application/javascript "now plus 1 weeks"
+ExpiresByType application/x-javascript "now plus 1 weeks"
+ExpiresByType text/javascript "now plus 1 weeks"
+ExpiresByType text/css "now plus 1 weeks"
+ExpiresDefault "access plus 1 days"
+</ifModule>
