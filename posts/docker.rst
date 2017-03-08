@@ -1,6 +1,7 @@
 Docker
 ======
 :date: 2016-11-22
+:modified: 2017-03-07
 
 CLI
 ---
@@ -10,6 +11,8 @@ CLI
   docker ps -a
   # remove a container
   docker rm [container_id|name]
+  # restart a container
+  docker restart [container]
 
 Dockerfile syntax
 -----------------

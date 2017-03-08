@@ -1,5 +1,7 @@
 VNC
 ===
+:date: 2017-03-08
+:modified: 2017-03-08
 
 ::
 
@@ -7,4 +9,9 @@ VNC
  x11vnc -display :0 -nopw
  vncviewer :0
 
+Testing a connection
+--------------------
+::
 
+  nc -v <host> <port>
+  # should return "RFB ..."
