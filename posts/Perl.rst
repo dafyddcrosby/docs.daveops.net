@@ -1,9 +1,12 @@
 Perl
 ====
+:date: 2017-03-08
+:modified: 2017-03-08
 
 Syntax Cheatsheet
 -----------------
 .. code-block:: perl
+
  #!/usr/local/bin/perl -wT
  use strict
  
@@ -17,3 +20,22 @@ Syntax Cheatsheet
  }
  
  hw();
+
+LWP - HTTP Get
+--------------
+`get($url)`
+
+To save to a file
+~~~~~~~~~~~~~~~~~
+`getstore($url, $file)`
+
+See if LWP is installed
+~~~~~~~~~~~~~~~~~~~~~~~
+`perl -MLWP -le "print(LWP->VERSION)"`
+
+Parsing JSON
+------------
+::
+
+  use JSON;
+  decode_json($json);
