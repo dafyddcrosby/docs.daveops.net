@@ -1,10 +1,10 @@
 CSS
----
+===
 
 http://www.cssbuttongenerator.com/
 
 Media types
-==============================
+-----------
 * all
 * braille
 * embossed
@@ -17,14 +17,14 @@ Media types
 * tv
 
 Mobile browsers
-==============================
+---------------
 .. code-block:: html
 
  <link rel='stylesheet' media='all' href='base.css'
  <link rel='stylesheet' media='screen and (max-width: 320px)' href='mobile.css'>
 
 Use a custom font (CSS3)
-==============================
+------------------------
 .. code-block:: css
 
   @font-face {
@@ -34,20 +34,20 @@ Use a custom font (CSS3)
   selector { font-family: MyFont; }
 
 Rounded corners (CSS3)
-==============================
+----------------------
 .. code-block:: css
 
  border: width style color;
  border-radius: radius;
 
 Box shadow (CSS 3)
-==============================
+------------------
 .. code-block:: css
 
  box-shadow: xpos ypos blur spread color, ...;
 
 Change an element's background image (CSS 3)
-============================================
+--------------------------------------------
 .. code-block:: css
 
  selector {
@@ -55,7 +55,7 @@ Change an element's background image (CSS 3)
  }
 
 Translucent elements (CSS 3)
-==============================
+----------------------------
 .. code-block:: css
 
  selector {
@@ -64,14 +64,14 @@ Translucent elements (CSS 3)
  }
 
 Create custom borders (CSS 3)
-==============================
+-----------------------------
 .. code-block:: css
 
  border-image: source slice repeat;
  border-width: width;
 
 Center an element
-==============================
+-----------------
 Give it a width and set the margin
 
 .. code-block:: css
