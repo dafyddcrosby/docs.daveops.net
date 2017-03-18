@@ -1,12 +1,11 @@
-----
 Chef
-----
+====
 :date: 2015-04-28
 :modified: 2016-5-10
 :tags: Chef
 
 Handle EC2 instance
-===================
+-------------------
 ec2 plugin installed with
 
 ::
@@ -14,7 +13,7 @@ ec2 plugin installed with
  knife ec2 server create "role[ubuntu]" -I ami_id -f instance_type -S knife -i ~/.ssh/knife.pem --ssh-user ubuntu --region eu-west-1 -Z eu-west-1a
 
 Install chef on RHEL 6 using gems
-=================================
+---------------------------------
 Use the omnibus installer if you can!
 
 ::
@@ -24,16 +23,16 @@ Use the omnibus installer if you can!
  gem install chef --no-ri --no-rdoc
 
 Using chef-solo
-===============
+---------------
 
 /etc/chef/solo.rb
------------------
+~~~~~~~~~~~~~~~~~
 .. code-block:: ruby
 
  json_attribs "/etc/chef/node.json"
 
 /etc/chef/node.json
--------------------
+~~~~~~~~~~~~~~~~~~~
 .. code-block:: json
 
  {
@@ -45,13 +44,13 @@ Using chef-solo
  }
 
 knife search
-============
+------------
 ::
 
  knife search -a ATTR
 
 common node attributes
-======================
+----------------------
 
 +---------------------+----------------------------+
 | description         | attribute                  |
@@ -62,6 +61,6 @@ common node attributes
 +---------------------+----------------------------+
 
 Compile time notes
-==================
+------------------
 
 Use `lazy` so that the code block isn't evaluated until execution phase.

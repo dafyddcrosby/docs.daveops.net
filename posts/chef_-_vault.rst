@@ -1,6 +1,7 @@
 Chef - Vault
 ============
 :date: 2016-4-26
+:tags: Chef
 
 Knife
 -----

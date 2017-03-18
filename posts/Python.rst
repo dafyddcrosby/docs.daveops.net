@@ -80,21 +80,6 @@ http://docs.python.org/library/profile.html
  import profile
  profile.run("main()")
 
-Usiing the Python debugger
-==============================
-CLI
------------------------------------
-::
-
- python -m pdb file.py
-
-Invoke debugger when line is hit
------------------------------------
-.. code-block:: python
-
- import pdb
- pdb.set_trace()
-
 Launch REPL when line is hit
 ==============================
 .. code-block:: python

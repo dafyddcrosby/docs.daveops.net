@@ -1,6 +1,7 @@
 Chef - provisioning
 ===================
 :date: 2017-01-04
+:tags: Chef
 
 CLI
 ---
