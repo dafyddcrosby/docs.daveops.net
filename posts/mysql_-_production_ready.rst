@@ -1,7 +1,7 @@
 MySQL - Production Ready
 ========================
 :date: 2016-5-16
-:modified: 2017-03-07
+:modified: 2017-03-17
 
 Remove all anonymous accounts
 -----------------------------
@@ -23,6 +23,9 @@ Remove test databases
 
 Set timezone to UTC
 -------------------
+::
+
+  default-time-zone=UTC
 
 Change the default prompt
 -------------------------
