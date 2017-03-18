@@ -23,6 +23,8 @@ Remove test databases
 
 Set timezone to UTC
 -------------------
+For safe measure, don't just set the time zone in MySQL, but also set the system time zone to UTC
+
 ::
 
   default-time-zone=UTC
