@@ -1,7 +1,7 @@
 MySQL
 =====
 :date: 2016-03-14
-:modified: 2016-06-16
+:modified: 2017-03-17
 :tags: databases, MySQL
 
 Monitor queries
@@ -263,11 +263,16 @@ Run profiling
  * run query *
  show profile;
 
-Get timezone config
--------------------
+Timezones
+---------
 .. code-block:: mysql
- 
+
+ -- see what time zones are in use
  SELECT @@global.time_zone, @@session.time_zone;
+ -- set global time zone
+ SET GLOBAL time_zone = <timezone>;
+ -- set session time zone
+ SET time_zone = <timezone>;
 
 Get version
 -----------
