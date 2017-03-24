@@ -1,7 +1,7 @@
 Linux
 =====
 :date: 2015-03-07
-:updated: 2016-10-11
+:updated: 2017-03-24
 :tags: Linux
 
 force filesystem check on next boot
@@ -162,3 +162,11 @@ ifconfig is deprecated, ip was added in Linux 2.2
 
   # Show routing table
   ip route show
+
+Sneaking around the open file limit
+-----------------------------------
+https://www.youtube.com/watch?v=_XgXCVULj0o
+
+Open a pair of domain sockets (with socketpair) that connect to the same
+process. Throw the FD in one end, close the FD, then read it out of the other
+end. Recursively add the ring buffers...
