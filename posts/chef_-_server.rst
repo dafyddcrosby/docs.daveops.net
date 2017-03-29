@@ -1,6 +1,7 @@
 Chef - Server
 =============
 :date: 2015-12-01
+:modified: 2017-03-29
 :tags: Chef
 
 Users
@@ -13,6 +14,17 @@ Users
   chef-server-ctl user-edit USER_NAME
   # Delete a user
   chef-server-ctl user-delete USER_NAME
+
+Organizations
+-------------
+::
+
+  # List orgs
+  chef-server-ctl org-list
+  # Create an org
+  chef-server-ctl org-create ORG_NAME ORG_FULL_NAME
+  # Add a user to an org
+  chef-server-ctl org-user-add ORG_NAME USER_NAME [--admin]
 
 Links
 -----
