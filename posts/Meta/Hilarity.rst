@@ -1,10 +1,15 @@
 Hilarity
 ========
+:date: 2017-03-26
 
 Painting the Bike Shed
 ----------------------
-https://bugzilla.mozilla.org/show_bug.cgi?id=678775
+- https://bugzilla.mozilla.org/show_bug.cgi?id=678775
 
 Databases
 ---------
-`Gay Marriage: the database engineering perspective <http://qntm.org/gay>`_
+- `Gay Marriage: the database engineering perspective <http://qntm.org/gay>`_
+
+Unix
+----
+- https://www.bell-labs.com/usr/dmr/www/odd.html
