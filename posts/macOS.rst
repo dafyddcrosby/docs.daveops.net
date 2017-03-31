@@ -1,7 +1,7 @@
 macOS
 =====
 :date: 2016-03-04
-:modified: 2017-01-22
+:modified: 2017-03-31
 :tags: macOS
 
 Keyboard shortcuts
@@ -117,6 +117,11 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 
   /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
 
+Virtual Memory Stats
+--------------------
+::
+
+  vmstat
 
 Links
 -----

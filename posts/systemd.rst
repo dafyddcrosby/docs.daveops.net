@@ -1,7 +1,7 @@
 SystemD
 =======
 :date: 2016-03-07
-:modified: 2017-02-20
+:modified: 2017-03-31
 :tags: init, Linux, Red Hat
 
 systemctl
@@ -43,3 +43,7 @@ Directories
 Single User Mode
 ----------------
 Add the following to the kerneel arguments `systemd.unit=rescue.target`
+
+Links
+-----
+- https://cgit.freedesktop.org/systemd/systemd/

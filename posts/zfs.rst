@@ -1,7 +1,7 @@
 ZFS
 ===
 :date: 2015-04-28
-:modified: 2016-09-21
+:modified: 2017-03-31
 :tags: SmartOS, Solaris, FreeBSD
 
 Compression
@@ -42,6 +42,12 @@ By default, ZFS rollback cannot revert to anything beyond the most recent snapsh
 ::
 
   zfs rollback tanks/home/dave@tuesday
+
+See disks
+---------
+::
+
+  zpool list
 
 References
 ----------

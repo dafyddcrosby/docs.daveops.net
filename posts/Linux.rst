@@ -1,7 +1,7 @@
 Linux
 =====
 :date: 2015-03-07
-:updated: 2017-03-24
+:updated: 2017-03-31
 :tags: Linux
 
 force filesystem check on next boot
@@ -170,3 +170,9 @@ https://www.youtube.com/watch?v=_XgXCVULj0o
 Open a pair of domain sockets (with socketpair) that connect to the same
 process. Throw the FD in one end, close the FD, then read it out of the other
 end. Recursively add the ring buffers...
+
+Kernel resources
+----------------
+- https://kernel.org
+- https://lwn.net/
+- https://kernelnewbies.org/
