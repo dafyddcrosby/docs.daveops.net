@@ -1,7 +1,7 @@
 GPG
 ===
 :date: 2015-12-07
-:modified: 2017-01-23
+:modified: 2017-04-28
 
 Generate GPG keypair
 --------------------
@@ -44,6 +44,20 @@ Verify signature of document
  gpg --output doc --decrypt doc.sig
  # Detached signature
  gpg --verify doc.sig doc
+
+Generate a subkey
+-----------------
+::
+
+  gpg --edit-key KEYNAME
+  gpg> addkey
+
+List private keys
+-----------------
+::
+
+  gpg --list-secret-keys
+  # A # after the letters sec means that the secret key is not usable
 
 Links
 -----

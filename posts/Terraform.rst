@@ -1,6 +1,7 @@
 Terraform
 =========
 :date: 2017-02-23
+:modified: 2017-04-28
 
 Syntax
 ------
@@ -10,6 +11,15 @@ Syntax
   variable "ami" {
     description = "the AMI to use"
   }
+
+
+CLI
+---
+::
+
+  # taint/untaint a resource
+  terraform taint RESOURCE
+  terraform untaint RESOURCE
 
 Links
 -----
