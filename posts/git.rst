@@ -2,6 +2,7 @@
 Git
 ---
 :date: 2015-12-01
+:modified: 2017-05-05
 :tags: version control
 
 Create bare repository
@@ -177,6 +178,12 @@ Retrieve single file from a specific revision in git
 ::
 
  git checkout <HASH> -- ./path/to/file
+
+GPG signing
+===========
+::
+
+  git commit -S -m MESSAGE
 
 Signing a commit
 ================
