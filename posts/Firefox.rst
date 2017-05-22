@@ -1,6 +1,16 @@
 Firefox
 =======
 :date: 2015-04-05
+:modified: 2017-05-19
+
+list of about: pages
+--------------------
+::
+
+  about:about
+
+https://developer.mozilla.org/en-US/Firefox/The_about_protocol
+
 
 Debug logging
 -------------

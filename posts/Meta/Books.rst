@@ -1,7 +1,11 @@
 Books
 =====
 :date: 2016-04-15
+:modified: 2017-03-12
 :tags: books
+
+I know there's more good books out there, this is just a list of stuff I've
+read personally and found good advice in
 
 Code / Systems
 --------------
@@ -29,6 +33,10 @@ Computer History
 - Hackers - Steven Levy
 - The Cuckoo’s Egg - Clifford Stoll
 - Man and the Computer - John G. Kemeny
+
+System Administration
+---------------------
+- The Practice of System and Network Administration - Thomas Limoncelli
 
 Life in IT
 ----------

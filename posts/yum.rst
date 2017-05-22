@@ -1,6 +1,7 @@
 YUM
 ===
 :date: 2016-02-08
+:modified: 2017-05-02
 :tags: Red Hat
 
 Create a group
@@ -9,6 +10,12 @@ Create a group
 
   yum-groups-manager -n "My Group" --id=mygroup --save=mygroups.xml --mandatory yum glibc rpm
   createrepo -g /path/to/mygroups.xml /srv/my/repo
+
+Find the package that provides a library
+----------------------------------------
+::
+
+  yum whatprovides *Xlib.h
 
 versionlock
 -----------
