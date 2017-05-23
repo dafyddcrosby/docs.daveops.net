@@ -1,11 +1,14 @@
 Tcl
 ===
+:date: 2017-05-19
 :tags: Tcl
 
 Syntax cheatsheet
 -----------------
 .. code-block:: tcl
-   
+
+ if {blah == 0} {
+     # blah
  } elseif {blah == 1} {
      # blah!
  } else {
