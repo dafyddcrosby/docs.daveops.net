@@ -1,7 +1,7 @@
 Hipchat
 =======
 :date: 2015-04-28
-:modified: 2016-06-09
+:modified: 2017-05-23
 
 Message commands
 ----------------
@@ -26,3 +26,15 @@ Keyboard shortcuts
  cmd+shift+n - create room
  cmd+w - close room
  cmd+n - search for room, user
+ option+up - put last line in your text box
+
+Modify last line
+----------------
+::
+
+  s/search/replace/
+
+Links
+-----
+
+- `Emoticons list <https://www.hipchat.com/emoticons>`_
