@@ -1,7 +1,7 @@
 BASH
 ====
 :date: 2015-04-28
-:modified: 2016-01-28
+:modified: 2017-05-25
 
 Go immediately to $EDITOR
 -------------------------
@@ -37,6 +37,14 @@ Replace filename spaces with underscores
 
  # util-linux-ng
  rename " " _ *
+
+Search for Unicode use in a tree
+--------------------------------
+.. todo I think this could be done with one 'find' command, no need to loop...
+
+.. code-block:: bash
+
+ for FILE in $(find . -type f) ; do echo File: ${FILE};   perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 
 "Press any key to continue"
 ---------------------------
