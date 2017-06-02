@@ -1,6 +1,13 @@
 vim
 ===
 :date: 2015-02-26
+:modified: 2017-06-02
+
+Sort on a virtual column
+------------------------
+::
+
+ :sort /.*\%10v/
 
 Get filetype
 ------------
