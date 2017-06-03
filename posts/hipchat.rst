@@ -10,7 +10,7 @@ Message commands
   /part - leave room
   /available <msg> - green bubble
   /away <msg> - yellow bubble
-  /dnd <msg> - green bubble
+  /dnd <msg> - red bubble
   /topic <msg> - set room topic
   /quote <msg> - monospace font
   /code <msg> - syntax highlighting
