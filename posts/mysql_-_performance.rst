@@ -1,7 +1,7 @@
 MySQL - performance
 ===================
 :data: 2016-5-9
-:modified: 2017-02-15
+:modified: 2017-06-16
 :tags: MySQL
 
 .. TODO
@@ -16,9 +16,19 @@ indexing
 
 Check the slow query log
 ------------------------
+Enable this for debugging, don't leave it running if you don't need it.
+
+.. code-block:: mysql
+
+ set global slow_query_log = ON|OFF
+ set global slow_query_log_file = file_name
+
 ::
 
- log-slow-queries = file_name
+  # Plain-jane MySQL
+  mysqldumpslow /var/log/mysql/mysql-slow.log
+  # Percona toolkit (https://www.percona.com/software/database-tools/percona-toolkit)
+  pt-query-digest /var/log/mysql/mysql-slow.log
 
 Dealing with fragmentation
 --------------------------
