@@ -1,7 +1,7 @@
 BASH
 ====
 :date: 2015-04-28
-:modified: 2017-05-25
+:modified: 2017-06-15
 
 Go immediately to $EDITOR
 -------------------------
@@ -161,3 +161,9 @@ Use heredocs
   blah
   blah
   EOM
+
+Quit without saving history
+---------------------------
+::
+
+  unest HISFILE && exit
