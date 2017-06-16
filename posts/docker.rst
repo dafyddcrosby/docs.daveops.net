@@ -13,6 +13,9 @@ CLI
   docker rm [container_id|name]
   # restart a container
   docker restart [container]
+  # build from a Dockerfile
+  docker build -t TAGNAME . # in dir of Dockerfile
+
 
 Dockerfile syntax
 -----------------
