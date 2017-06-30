@@ -10,3 +10,10 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
 ::
 
  curl http://169.254.169.254/
+
+ # Get list of IAM roles
+ curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
+
+ # Get role credentials
+ curl http://169.254.169.254/latest/meta-data/iam/security-credentials/ROLE_NAME
+ # You'll likely want AccessKeyID, SecretAccessKey, and Token

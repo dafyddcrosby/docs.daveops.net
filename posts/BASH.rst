@@ -166,4 +166,4 @@ Quit without saving history
 ---------------------------
 ::
 
-  unest HISFILE && exit
+  unset HISFILE && exit
