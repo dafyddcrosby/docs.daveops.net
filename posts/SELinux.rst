@@ -2,7 +2,7 @@ SELinux
 =======
 :tags: Linux, security
 :date: 2017-06-15
-:modified: 2017-07-05
+:modified: 2017-07-07
 
 Security Enhanced Linux
 
@@ -26,6 +26,8 @@ generally speaking, you're concerned with type enforcement
   restorecon
   # manage login, user, port, interface, module, node, file context, boolean, permissive state, dontaudit
   semanage
+  # Get the context type for a file
+  secon -t --file FILE
 
 ::
 

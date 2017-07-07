@@ -1,6 +1,7 @@
 Windows (Microsoft)
 ===================
 :date: 2016-03-04
+:modified: 2017-07-06
 
 Export certificates
 -------------------
@@ -21,3 +22,8 @@ On XP
 Links
 -----
 - https://technet.microsoft.com/en-us/sysinternals/bb963890
+
+Hosts file
+----------
+
+c:\Windows\System32\Drivers\etc\hosts

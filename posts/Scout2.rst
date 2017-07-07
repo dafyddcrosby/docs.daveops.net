@@ -1,0 +1,9 @@
+Scout2
+======
+:date: 2017-07-06
+:tags: AWS
+
+::
+
+  python Scout2.py --region REGION --force --no-browser
+
