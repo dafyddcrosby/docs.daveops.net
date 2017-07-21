@@ -1,6 +1,6 @@
 GDB
 ===
-
+:date: 2017-07-19
 
 +----------------------------+---------------------------------------------------------+
 | !cmd                       | !desc                                                   |
@@ -77,3 +77,7 @@ Check a core dump
 ::
 
  gdb executable coredump
+
+Extensions
+----------
+http://rr-project.org/

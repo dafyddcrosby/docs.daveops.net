@@ -59,6 +59,13 @@ List private keys
   gpg --list-secret-keys
   # A # after the letters sec means that the secret key is not usable
 
+Deleting keys
+-------------
+::
+
+  gpg --delete-key USERNAME
+  gpg --delete-secret-key USERNAME
+
 Links
 -----
 
