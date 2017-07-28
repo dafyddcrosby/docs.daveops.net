@@ -128,3 +128,11 @@ Links
 
 - https://opensource.apple.com/
 - https://github.com/herrbischoff/awesome-osx-command-line
+
+Power report
+------------
+A bunch of dtrace under the hood
+
+::
+
+  /usr/bin/power_report.sh
