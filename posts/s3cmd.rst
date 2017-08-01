@@ -1,9 +1,10 @@
 s3cmd
 =====
 :date: 2017-01-24
+:modified: 2017-08-01
 
 ::
 
   # set new ACL
-  s3cmd setacl s3://BUCKET/OBJECT --acl-grant=PERM:USER_CANONICAL_ID
+  s3cmd setacl s3://BUCKET/OBJECT --acl-grant=[read|write|read_acp|write_acp|full_control|all]:USER_CANONICAL_ID [--recursive]
 
