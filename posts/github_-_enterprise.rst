@@ -1,7 +1,7 @@
 GitHub - Enterprise
 ===================
 :date: 2016-5-10
-:modified: 2016-5-16
+:modified: 2017-08-02
 
 CLI
 ---
@@ -11,6 +11,8 @@ CLI
  ghe-announce -s MESSAGE
  # Remove previously set message
  ghe-announce -u
+ # Get webhook fails for a certain day
+ ghe-webhook-logs -f -a YYYYMMDD
 
 Documentation
 -------------

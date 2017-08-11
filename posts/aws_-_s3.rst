@@ -1,0 +1,8 @@
+AWS - S3
+========
+:date: 2017-08-03
+
+::
+
+  # Get object ACL
+  aws s3api get-bucket-acl --bucket BUCKET --key KEY
