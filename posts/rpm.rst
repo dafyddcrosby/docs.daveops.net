@@ -1,6 +1,7 @@
 RPM
 ---
 :date: 2015-05-22
+:modified: 2017-08-25
 :tags: Red Hat
 
 `List of RPM macros <http://www.zarb.org/~jasonc/macros.php>`_
@@ -74,5 +75,5 @@ RPM DB rebuild
 ==============
 ::
 
- rm /var/lib/rpm/__db*
+ rm -f /var/lib/rpm/__db*
  rpm --rebuilddb

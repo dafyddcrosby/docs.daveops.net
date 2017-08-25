@@ -1,9 +1,26 @@
 nmap
 ====
 :date: 2016-03-30
+:modified: 2017-08-24
 
 Get list of available server ciphers
 ------------------------------------
 ::
 
   nmap --script ssl-enum-ciphers -p PORT SERVER
+
+Specifying hosts
+----------------
+::
+
+  # Input from list
+  nmap -iL file ...
+
+Output
+------
+::
+
+  # Grepable
+  nmap -oG file ...
+  # XML
+  nmap -oX file ...
