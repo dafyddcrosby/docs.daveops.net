@@ -1,13 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 Crucial Conversations
 =====================
 :date: 2016-04-04
 :modified: 2016-12-22
-:tags: books
+@books
 
 By: Kerry Patterson; Joseph Grenny; Ron McMillan; Al Switzler
 
 What's a crucial convo?
------------------------
+--------------------
 
 - different opinions
 - stakes are high
@@ -101,7 +104,7 @@ Look for safety problems. Safe conversations let the things that need to be
 said be said. Unsafe convos are ugly.
 
 Silence
--------
+--------------------
 
 - masking (sarcasm, sugarcoating)
 - avoiding (steering away from sensitive subjects)
@@ -117,7 +120,7 @@ Silence
    accepting the information.
 
 Violence
---------
+--------------------
 
 - controlling (coercion, using directive questions)
 - labeling (stereotyping)
@@ -318,7 +321,7 @@ Look for opportunities to be curious about others
 Every sentence has a history - find out what's lead to this
 
 Disagreement
-------------
+--------------------
 
 Break the cycle, encourage other person to step away from their harsh feelings, anger
 
@@ -359,7 +362,7 @@ Say "I agree," and then build.
 Compare your path with the other person, determine what they're trying to accomplish
 
 Decision making
----------------
+--------------------
 
 Dialogue is not decision making
 
@@ -384,12 +387,12 @@ hard to talk about. Pick one element and work on it. Establish Mutual Purpose.
 Frame the conversation in a way that the other person will care about."
 
 Stress
-------
+--------------------
 
 What is your Style under Stress? Your family? Coworkers?
 
 Trust
------
+--------------------
 
 Trust is not binary, there are degrees of trust
 
