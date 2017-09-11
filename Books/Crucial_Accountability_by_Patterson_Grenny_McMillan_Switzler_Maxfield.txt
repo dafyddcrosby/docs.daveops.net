@@ -1,16 +1,14 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield
-=========================================================================
+====== Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield ======
 :date: 2016-06-15
 @books
 
 How do I speak up about infractions so that dangerous behaviour is avoided
 Find a polite way to interject - positive deviance
 
-Know *what* convo to hold and *if* you should hold it
---------------------
+===== Know *what* convo to hold and *if* you should hold it =====
 
 If you find yourself having the same convo again and again, there's another, larger violation that needs to be addressed.
 
