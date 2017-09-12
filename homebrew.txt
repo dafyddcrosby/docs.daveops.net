@@ -1,9 +1,11 @@
-Homebrew
-========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Homebrew ======
 :date: 2015-12-01
 
-List outdated Homebrew packages
--------------------------------
-::
+===== List outdated Homebrew packages =====
 
-  brew outdated
+'''
+brew outdated
+'''

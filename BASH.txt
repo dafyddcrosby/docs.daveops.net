@@ -1,45 +1,47 @@
-BASH
-====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== BASH ======
 :date: 2015-04-28
 :modified: 2017-06-15
 
 Go immediately to $EDITOR
--------------------------
+--------------------
 ctrl-x, e
 
 Most commonly used commands
----------------------------
+--------------------
 .. code-block:: bash
 
  history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
 Delete files that are not extension
------------------------------------
+--------------------
 .. code-block:: bash
 
   rm !(*.foo|*.bar|*.baz)
 
 Find, delete empty directories
-------------------------------
+--------------------
 .. code-block:: bash
 
  find . -type d -empty -exec rmdir {} \;
 
 Show your shell from a port
----------------------------
+--------------------
 .. code-block:: bash
 
  script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 
 Replace filename spaces with underscores
-----------------------------------------
+--------------------
 .. code-block:: bash
 
  # util-linux-ng
  rename " " _ *
 
 Search for Unicode use in a tree
---------------------------------
+--------------------
 .. todo I think this could be done with one 'find' command, no need to loop...
 
 .. code-block:: bash
@@ -47,13 +49,13 @@ Search for Unicode use in a tree
  for FILE in $(find . -type f) ; do echo File: ${FILE};   perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 
 "Press any key to continue"
----------------------------
+--------------------
 .. code-block:: bash
 
  read -sn 1 -p "Press any key to continue..."
 
 Conditional Expressions
------------------------
+--------------------
 
  +-----------+----------------------------------+
  | code      | desc                             |
@@ -72,7 +74,7 @@ Conditional Expressions
  +-----------+----------------------------------+
 
 Redirect STDERR to STDOUT
--------------------------
+--------------------
 .. code-block:: bash
 
  command 2>&1
@@ -87,25 +89,25 @@ A temporary named pipe
  thing --output >(gzip > output.txt.gz)
 
 Syntax cheatsheet
------------------
+--------------------
 .. code-block:: bash
 
  fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
  case expression in
-    pattern1 )
-        statements ;;
-    pattern2 )
-        statements ;;
-    ...
+	pattern1 )
+		statements ;;
+	pattern2 )
+		statements ;;
+	...
  esac
 
  # for VARIABLE in 1 2 3 4 5
  for VARIABLE in {1..5}
  do
-        command1
-        command2
-        commandN
+		command1
+		command2
+		commandN
  done
 
 set
@@ -131,22 +133,22 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 
 Using regex for variable testing
---------------------------------
+--------------------
 .. code-block:: bash
 
  if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
-        echo "yay"
+		echo "yay"
  fi
 
 Temporary directory/file
-------------------------
+--------------------
 .. code-block:: bash
 
    mktemp -d
 
 
 Show the functions declared in the shell
-----------------------------------------
+--------------------
 .. code-block:: bash
 
    declare -F
@@ -154,7 +156,7 @@ Show the functions declared in the shell
    typeset -F
 
 Use heredocs
-------------
+--------------------
 .. code-block:: bash
 
   cat <<EOM > file.out
@@ -163,7 +165,16 @@ Use heredocs
   EOM
 
 Quit without saving history
----------------------------
+--------------------
 ::
 
   unset HISFILE && exit
+
+===== I/O Redirection =====
+
+|    | description                     |
+|:---|:--------------------------------|
+| 1> | Redirect stdout                 |
+| 2> | Redirect stderr                 |
+| &> | Redirect both stderr and stdout |
+
