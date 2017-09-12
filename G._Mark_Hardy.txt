@@ -1,12 +1,14 @@
-G. Mark Hardy
-=============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+G. ====== Mark Hardy ======
+
 :date: 2016-03-04
 :tags: people
 
 http://gmark.com
 
-G Mark's Observations on Life
------------------------------
+===== G Mark's Observations on Life =====
 - Just ask.
 - Don't wait for perfection.
 - Become a master.
