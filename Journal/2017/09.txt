@@ -1,8 +1,8 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2017-09-12T11:55:17-06:00
+Creation-Date: 2017-09-12T12:29:48-06:00
 
-====== Tuesday 12 Sep 2017 ======
+====== September 2017 ======
 
 ===== BlueBorne attack =====
 https://arstechnica.com/information-technology/2017/09/bluetooth-bugs-open-billions-of-devices-to-attacks-no-clicking-required/

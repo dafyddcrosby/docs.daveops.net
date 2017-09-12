@@ -1,9 +1,10 @@
-WISE Installer
-==============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-Extract files from installer
-----------------------------
+====== WISE Installer ======
 
-::
-   installer.exe /x
+===== Extract files from installer =====
 
+'''
+installer.exe /x
+'''

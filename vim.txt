@@ -1,23 +1,22 @@
-vim
-===
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== vim ======
 :date: 2015-02-26
 :modified: 2017-06-02
 
-Sort on a virtual column
-------------------------
-::
+===== Sort on a virtual column =====
 
- :sort /.*\%10v/
+ '':sort /.*\%10v/''
 
-Get filetype
-------------
-::
+===== Get filetype =====
 
- :set filetype?
+ '':set filetype?''
 
-Delete all lines containing a pattern
--------------------------------------
-::
+===== Delete all lines containing a pattern =====
 
- :g/profile/d
- :g/^\s*$/d
+'''
+:g/profile/d
+:g/^\s*$/d
+'''
+
