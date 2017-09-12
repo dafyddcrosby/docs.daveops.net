@@ -1,5 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 PHP - Barcodes
---------------
+--------------------
 :tags: php
 
 
@@ -9,11 +12,11 @@ Get a UPC check digit
 
  <?php
  function get_ean_checkdigit($barcode){
-     $sum = 0;
-     for($i=(strlen($barcode));$i>0;$i--){
-         $sum += (($i % 2) * 2 + 1 ) * substr($barcode,$i-1,1);
-     }
-     return (10 - ($sum % 10));
+	 $sum = 0;
+	 for($i=(strlen($barcode));$i>0;$i--){
+		 $sum += (($i % 2) * 2 + 1 ) * substr($barcode,$i-1,1);
+	 }
+	 return (10 - ($sum % 10));
  }
  ?>
 

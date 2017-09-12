@@ -1,7 +1,2 @@
 *.swp
-*.py[co]
-output
-env
-config.py
-plugins
-notmyidea
+html
