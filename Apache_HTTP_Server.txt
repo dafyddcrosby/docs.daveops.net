@@ -1,10 +1,12 @@
-Apache
-======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Apache HTTP Server ======
 :date: 2015-04-28
 :modified: 2016-06-09
 
 Signals
--------
+--------------------
 ::
 
  # Rotate logs, kill children, reload configuration
@@ -17,13 +19,13 @@ Signals
  kill -SIGTERM httpd
 
 Test the configuration
-----------------------
+--------------------
 ::
 
   apachectl configtest
 
 General Hardening
------------------
+--------------------
 
 SSL Config
 ^^^^^^^^^^
@@ -41,9 +43,9 @@ General Apache Config
  
  # Deny access to root dir
  <Directory />
-    Options None
-    Order deny,allow
-    Deny from all
+	Options None
+	Order deny,allow
+	Deny from all
  </Directory>
 
  # Disable indexes
@@ -62,5 +64,4 @@ Misc
 
 * `Mozilla SSL Configuration Generator <https://mozilla.github.io/server-side-tls/ssl-config-generator>`_
 
-.. todo
-   https://httpd.apache.org/docs/current/misc/security_tips.html
+[ ] https://httpd.apache.org/docs/current/misc/security_tips.html

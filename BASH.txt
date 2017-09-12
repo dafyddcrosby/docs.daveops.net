@@ -172,9 +172,10 @@ Quit without saving history
 
 ===== I/O Redirection =====
 
-|    | description                     |
-|:---|:--------------------------------|
-| 1> | Redirect stdout                 |
-| 2> | Redirect stderr                 |
-| &> | Redirect both stderr and stdout |
+|      | description                     |
+|:-----|:--------------------------------|
+| &>   | Redirect both stderr and stdout |
+| 1>   | Redirect stdout                 |
+| 2>   | Redirect stderr                 |
+| 2>&1 | Redirect stderr to stdout       |
 

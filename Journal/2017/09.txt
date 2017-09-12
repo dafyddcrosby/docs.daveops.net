@@ -14,3 +14,10 @@ http://cva.stanford.edu/classes/cs99s/papers/myer-sutherland-design-of-display-p
 
 ===== Distrusting Symantec Certs =====
 https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html
+
+===== ABI Compliance Checker =====
+http://ispras.linuxbase.org/index.php/ABI_compliance_checker
+
+===== Sandsifter =====
+[[https://www.youtube.com/watch?v=KrksBdWcZgQ|Black Hat presentation]]
+https://github.com/xoreaxeaxeax/sandsifter
