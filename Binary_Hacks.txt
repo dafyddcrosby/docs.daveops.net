@@ -1,9 +1,10 @@
-Binary Hacks
-============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
+===== Binary Hacks =====
 
-Determine if integer is odd
----------------------------
+===== Determine if integer is odd =====
+--------------------
 .. code-block:: c
 
  if ((x & 1) == 0) {
@@ -12,8 +13,8 @@ Determine if integer is odd
    //x is odd
  }
 
-determine if nth bit is set
----------------------------
+===== determine if nth bit is set =====
+--------------------
 .. code-block:: c
 
  if (x & (1<<n)) {
@@ -22,21 +23,21 @@ determine if nth bit is set
    //  n-th bit is not set
  }
 
-Set the nth bit
----------------
+===== Set the nth bit =====
+--------------------
 .. code-block:: c
  
  y = x | (1<<n)
 
 
-Unset the nth bit
------------------
+===== Unset the nth bit =====
+--------------------
 .. code-block:: c
 
  y = x & ~(1<<n)
 
-Toggle the nth bit
-------------------
+===== Toggle the nth bit =====
+--------------------
 .. code-block:: c
 
  y = x ^ (1<<n)
