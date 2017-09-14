@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-14T07:40:52-06:00
+
+====== Vagrant ======
+Created Thursday 14 September 2017
+
+https://www.vagrantup.com/
+
+===== Install CentOS =====
+
+{{{code: linenumbers="True"
+vagrant init centos/7
+vagrant up
+vagrant ssh
+}}}
