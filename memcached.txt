@@ -1,9 +1,10 @@
-memcached
-=========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== memcached ======
 :date: 2016-03-30
 
-Get a list of keys
-------------------
+===== Get a list of keys =====
 Note - this is an undocumented interface in the C memcached server
 
 ::
@@ -13,8 +14,7 @@ Note - this is an undocumented interface in the C memcached server
   # get dump of slab
   stats cachedump SLAB LIMIT
 
-Using ASCII protocol through telnet
------------------------------------
+===== Using ASCII protocol through telnet =====
 ::
 
  telnet host 11211
@@ -33,8 +33,7 @@ Using ASCII protocol through telnet
 | <data block>\r\n                                                                                       |                   |
 +--------------------------------------------------------------------------------------------------------+-------------------+
 
-Resources
----------
+===== Resources =====
 - `memcached site <http://memcached.org/>`_
 - `libmemcached site <http://libmemcached.org/>`_
 - `memdump <http://docs.libmemcached.org/bin/memdump.html>`_

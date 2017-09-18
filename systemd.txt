@@ -1,11 +1,12 @@
-SystemD
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SystemD ======
 :date: 2016-03-07
 :modified: 2017-03-31
 :tags: init, Linux, Red Hat
 
-systemctl
----------
+===== systemctl =====
 
 +--------------------------------+------------------------------------------------------------------------------------------+
 | Command                        | Notes                                                                                    |
@@ -35,15 +36,12 @@ systemctl
 | daemon-reload                  | Used when you create a new service file or modify any configuration                      |
 +--------------------------------+------------------------------------------------------------------------------------------+
 
-Directories
------------
+===== Directories =====
 
 - /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this service is configured on or off
 
-Single User Mode
-----------------
-Add the following to the kerneel arguments `systemd.unit=rescue.target`
+===== Single User Mode =====
+Add the following to the kernel arguments `systemd.unit=rescue.target`
 
-Links
------
+===== Links =====
 - https://cgit.freedesktop.org/systemd/systemd/

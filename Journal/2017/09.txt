@@ -21,3 +21,10 @@ http://ispras.linuxbase.org/index.php/ABI_compliance_checker
 ===== Sandsifter =====
 [[https://www.youtube.com/watch?v=KrksBdWcZgQ|Black Hat presentation]]
 https://github.com/xoreaxeaxeax/sandsifter
+
+===== Root Causes of Chrome Certificate Errors =====
+https://research.google.com/pubs/pub46359.html
+'''
+To our surprise, we find that more than half of errors are caused by client-side or
+network issues instead of server misconfigurations.
+'''
