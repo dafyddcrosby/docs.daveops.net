@@ -1,12 +1,11 @@
-Web Development Resources
-=========================
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
+====== Web Development Resources ======
 
-Graphics/Icons
---------------
+===== Graphics/Icons =====
 http://subtlepatterns.com/
 
-Themes
-------
+====== Themes ======
 http://themeforest.net/
 
