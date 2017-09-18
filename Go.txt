@@ -1,21 +1,22 @@
-Go
-==
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Go ======
 :date: 2017-02-23
 
-Syntax cheatsheet
------------------
+===== Syntax cheatsheet =====
 .. code-block:: go
 
    package main
 
    import(
-       "fmt"
+	   "fmt"
    )
 
    func main() {
-       fmt.Println("hello world")
+	   fmt.Println("hello world")
    }
 
-Resources
----------
-- https://golang.org/
+===== Resources =====
+* https://golang.org/
+* [[https://golang.org/ref/spec|Language Specification]]

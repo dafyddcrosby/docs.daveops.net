@@ -1,10 +1,11 @@
-Firefox
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+===== Firefox =====
 :date: 2015-04-05
 :modified: 2017-05-19
 
-list of about: pages
---------------------
+===== list of about: pages =====
 ::
 
   about:about
@@ -12,8 +13,7 @@ list of about: pages
 https://developer.mozilla.org/en-US/Firefox/The_about_protocol
 
 
-Debug logging
--------------
+===== Debug logging =====
 https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/HTTP_logging
 
 ::
@@ -21,3 +21,6 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/HTTP_logging
  export NSPR_LOG_MODULES=timestamp,nsHttp:5,nsSocketTransport:5,nsStreamPump:5,nsHostResolver:5
  export NSPR_LOG_FILE=~/Desktop/log.txt
  ./firefox
+
+===== Disable new tab page =====
+browser.newtabpage.enabled -> false

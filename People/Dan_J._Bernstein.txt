@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-17T10:20:53-06:00
+
+====== Dan J. Bernstein ======
+Created Sunday 17 September 2017
+
+https://cr.yp.to/
+http://loup-vaillant.fr/tutorials/poly1305-design
+http://loup-vaillant.fr/tutorials/chacha20-design
