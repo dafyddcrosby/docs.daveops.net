@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-18T11:28:51-06:00
+
+====== Test Kitchen ======
+Created Monday 18 September 2017
+
+===== Setting RAM on Vagrant =====
+'''
+driver:
+  name: vagrant
+  customize:
+    memory: 2048
+'''
+
+
+===== Setting environment in chef-zero =====
+
+'''
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  environments_path: path/to/environments
+  client_rb:
+    environment: production
+'''

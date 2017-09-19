@@ -1,7 +1,9 @@
-Chef - Foodcritic
-=================
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Foodcritic ======
 :date: 2017-01-09
-:tags: Chef
+@Chef
 
 ::
 

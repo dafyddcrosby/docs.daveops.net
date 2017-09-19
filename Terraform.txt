@@ -1,28 +1,27 @@
-Terraform
-=========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Terraform ======
 :date: 2017-02-23
 :modified: 2017-04-28
 
-Syntax
-------
+===== Syntax =====
 ::
 
   # This is a comment
   variable "ami" {
-    description = "the AMI to use"
+	description = "the AMI to use"
   }
 
 
-CLI
----
+===== CLI =====
 ::
 
   # taint/untaint a resource
   terraform taint RESOURCE
   terraform untaint RESOURCE
 
-Links
------
+===== Links =====
 
 - https://github.com/hashicorp/terraform
 - https://www.terraform.io/docs/

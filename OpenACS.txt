@@ -1,10 +1,11 @@
-=======
-OpenACS
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== OpenACS ======
 :tags: Tcl
 
-ad_proc documentation metadata
-------------------------------
+===== ad_proc documentation metadata =====
+
 
 * @return
 * @see
@@ -33,9 +34,9 @@ In ad_form:
 ::
 
  {fries:text(checkbox),optional
-     {label {"Would you like fries with that?"}}
-     {html {[if {$fries=="t"} {return "checked checked"}]}}
-     {options {{"" t}}}
+	 {label {"Would you like fries with that?"}}
+	 {html {[if {$fries=="t"} {return "checked checked"}]}}
+	 {options {{"" t}}}
  }
 
 ADP tags
@@ -43,11 +44,11 @@ ADP tags
 ::
 
   <if @datasource.variable@ eq "blue">
-    <td bgcolor=#0000ff>
+	<td bgcolor=#0000ff>
   </if>
   <elseif @datasource.variable@ eq "red">
-    <td bgcolor=red>
+	<td bgcolor=red>
   </elseif>
   <else>
-    <td bgcolor=#ffffff>
+	<td bgcolor=#ffffff>
   </else>

@@ -44,9 +44,9 @@ Search for Unicode use in a tree
 --------------------
 .. todo I think this could be done with one 'find' command, no need to loop...
 
-.. code-block:: bash
-
- for FILE in $(find . -type f) ; do echo File: ${FILE};   perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
+{{{code: linenumbers="True"
+for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
+}}}
 
 "Press any key to continue"
 --------------------

@@ -1,8 +1,9 @@
-COBOL
-=====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== COBOL ======
 :date: 2017-05-16
 
-Links
------
+===== Links =====
 
-- http://www.coboloncogs.org
+* http://www.coboloncogs.org
