@@ -1,23 +1,22 @@
-AWS - IAM
-=========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== IAM ======
 :date: 2016-01-23
 :modified: 2017-02-13
 :tags: AWS
 
-Create a user
--------------
+===== Create a user =====
 ::
 
   aws iam create-user --user-name <user>
 
-Create an access key
---------------------
+===== Create an access key =====
 ::
 
   aws iam create-access-key --user-name <user>
 
-Attaching IAM roles to an instance
-----------------------------------
+===== Attaching IAM roles to an instance =====
 ::
 
    aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile

@@ -1,9 +1,10 @@
-Android
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Android ======
 :date: 2015-04-05
 
-Keystore
---------
+===== Keystore =====
 ::
 
  # Create a keystore
@@ -11,8 +12,7 @@ Keystore
  # Get expiration dats in the store
  keytool -list -v -keystore keystore.jks
 
-Auto-sign release
------------------
+===== Auto-sign release =====
 Add to ant.properties
 
 ::

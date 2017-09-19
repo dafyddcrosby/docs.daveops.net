@@ -1,8 +1,9 @@
-OpenLDAP
-========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== OpenLDAP ======
 :date: 2016-03-16
 
-Links
------
+===== Links =====
 - http://www.openldap.org/
 - `Admin Guide (2.4) <http://www.openldap.org/doc/admin24/guide.html>`_

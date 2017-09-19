@@ -5,42 +5,42 @@ Wiki-Format: zim 0.4
 :date: 2015-04-28
 :modified: 2017-06-15
 
-Go immediately to $EDITOR
+===== Go immediately to $EDITOR =====
 --------------------
 ctrl-x, e
 
-Most commonly used commands
+===== Most commonly used commands =====
 --------------------
 .. code-block:: bash
 
  history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
-Delete files that are not extension
+===== Delete files that are not extension =====
 --------------------
 .. code-block:: bash
 
   rm !(*.foo|*.bar|*.baz)
 
-Find, delete empty directories
+===== Find, delete empty directories =====
 --------------------
 .. code-block:: bash
 
  find . -type d -empty -exec rmdir {} \;
 
-Show your shell from a port
+===== Show your shell from a port =====
 --------------------
 .. code-block:: bash
 
  script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 
-Replace filename spaces with underscores
+===== Replace filename spaces with underscores =====
 --------------------
 .. code-block:: bash
 
  # util-linux-ng
  rename " " _ *
 
-Search for Unicode use in a tree
+===== Search for Unicode use in a tree =====
 --------------------
 .. todo I think this could be done with one 'find' command, no need to loop...
 
@@ -48,13 +48,14 @@ Search for Unicode use in a tree
 for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 }}}
 
-"Press any key to continue"
+
+===== "Press any key to continue" =====
 --------------------
 .. code-block:: bash
 
  read -sn 1 -p "Press any key to continue..."
 
-Conditional Expressions
+===== Conditional Expressions =====
 --------------------
 
  +-----------+----------------------------------+
@@ -73,13 +74,7 @@ Conditional Expressions
  | -z string | true if length of string is zero |
  +-----------+----------------------------------+
 
-Redirect STDERR to STDOUT
---------------------
-.. code-block:: bash
-
- command 2>&1
-
-Process Substitution
+===== Process Substitution =====
 --------------------
 A temporary named pipe
 
@@ -88,7 +83,7 @@ A temporary named pipe
  diff <(grep lines file1) <(grep lines file2)
  thing --output >(gzip > output.txt.gz)
 
-Syntax cheatsheet
+===== Syntax cheatsheet =====
 --------------------
 .. code-block:: bash
 
@@ -110,8 +105,7 @@ Syntax cheatsheet
 		commandN
  done
 
-set
----
+===== set =====
 https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -132,7 +126,7 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 | -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                                     |
 +-------------+--------------------------------------------------------------------------------------------------------------------------+
 
-Using regex for variable testing
+===== Using regex for variable testing =====
 --------------------
 .. code-block:: bash
 
@@ -140,14 +134,14 @@ Using regex for variable testing
 		echo "yay"
  fi
 
-Temporary directory/file
+===== Temporary directory/file =====
 --------------------
 .. code-block:: bash
 
    mktemp -d
 
 
-Show the functions declared in the shell
+===== Show the functions declared in the shell =====
 --------------------
 .. code-block:: bash
 
@@ -155,7 +149,7 @@ Show the functions declared in the shell
    # on ancient shells:
    typeset -F
 
-Use heredocs
+===== Use heredocs =====
 --------------------
 .. code-block:: bash
 
@@ -164,7 +158,7 @@ Use heredocs
   blah
   EOM
 
-Quit without saving history
+===== Quit without saving history =====
 --------------------
 ::
 

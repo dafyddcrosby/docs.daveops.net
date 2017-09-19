@@ -5,8 +5,7 @@ Wiki-Format: zim 0.4
 :date: 2015-04-28
 :modified: 2016-06-09
 
-Signals
---------------------
+===== Signals =====
 ::
 
  # Rotate logs, kill children, reload configuration
@@ -18,17 +17,14 @@ Signals
  # Immediate stop
  kill -SIGTERM httpd
 
-Test the configuration
---------------------
+===== Test the configuration =====
 ::
 
   apachectl configtest
 
-General Hardening
---------------------
+===== General Hardening =====
 
-SSL Config
-^^^^^^^^^^
+==== SSL Config ====
 ::
 
  SSLProtocol          All -SSLv2 -SSLv3
@@ -37,8 +33,7 @@ SSL Config
  # HSTS (mod_headers is required) (15768000 seconds = 6 months)
  Header always set Strict-Transport-Security "max-age=15768000"
 
-General Apache Config
-^^^^^^^^^^^^^^^^^^^^^
+==== General Apache Config ====
 ::
  
  # Deny access to root dir
@@ -59,8 +54,7 @@ General Apache Config
  ServerTokens Prod
  ServerSignature Off
 
-Misc
-----
+===== Misc =====
 
 * `Mozilla SSL Configuration Generator <https://mozilla.github.io/server-side-tls/ssl-config-generator>`_
 

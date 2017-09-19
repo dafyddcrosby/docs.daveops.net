@@ -1,16 +1,16 @@
-TIS-100
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== TIS-100 ======
 :date: 2016-05-20
 
 Tessellated Intelligence System
 
-System details
---------------
+===== System details =====
 Massively parallel computer architecture comprised of non-uniformly interconnected heterogeneous nodes
 
 
-Node Type T21 - Basic Execution Node
-------------------------------------
+===== Node Type T21 - Basic Execution Node =====
 
 - After executing the last instruction of the program, execution automatically continues to the first instruction.
 - All registers store integer values between -999 and 999 (inclusive).
@@ -21,66 +21,63 @@ Node Type T21 - Basic Execution Node
    :header-rows: 1
 
    * - Register
-     - Notes
+	 - Notes
    * - ACC
-     - Accumulator register.
+	 - Accumulator register.
    * - BAK
-     - Non-addressible temporary storage for values in ACC.
+	 - Non-addressible temporary storage for values in ACC.
 
 .. list-table:: TIS-100 Ports
    :header-rows: 1
 
    * - Port
-     - Notes
+	 - Notes
    * - LEFT, RIGHT, UP, DOWN
-     - Communication register for topologically adjacent nodes. Blocks indefinitely if used until transaction with other node occurs.
+	 - Communication register for topologically adjacent nodes. Blocks indefinitely if used until transaction with other node occurs.
    * - ANY
-     - Reads or writes a value that becomes available on ANY port. (TODO - deterministic which node reads ANY value first?)
+	 - Reads or writes a value that becomes available on ANY port. (TODO - deterministic which node reads ANY value first?)
    * - LAST
-     - Refers to the port last read or written using the ANY pseudo-port.
+	 - Refers to the port last read or written using the ANY pseudo-port.
 
 .. list-table:: TIS-100 Instructions
    :header-rows: 1
 
    * - Instruction
-     - Description
+	 - Description
    * - NOP
-     - pseudo-intruction converted to ADD NIL.
+	 - pseudo-intruction converted to ADD NIL.
    * - MOV <SRC>, <DST>
-     - SRC is read and written to DST.
+	 - SRC is read and written to DST.
    * - SWP
-     - Exchange ACC and BAK.
+	 - Exchange ACC and BAK.
    * - SAV
-     - Write ACC to BAK.
+	 - Write ACC to BAK.
    * - ADD <SRC>
-     - Add SRC to ACC, store result in ACC. (TODO - overflow behaviour?)
+	 - Add SRC to ACC, store result in ACC. (TODO - overflow behaviour?)
    * - SUB <SRC>
-     - Subtract SRC from ACC, store result in ACC. (TODO - underflow behaviour?)
+	 - Subtract SRC from ACC, store result in ACC. (TODO - underflow behaviour?)
    * - NEG
-     - The value of ACC is arithmetically negated. Zero remains the same.
+	 - The value of ACC is arithmetically negated. Zero remains the same.
    * - JMP <LABEL>
-     - Transfer execution to instruction after LABEL.
+	 - Transfer execution to instruction after LABEL.
    * - JEZ <LABEL>
-     - Transfer execution to instruction after LABEL if value of ACC is zero.
+	 - Transfer execution to instruction after LABEL if value of ACC is zero.
    * - JNZ <LABEL>
-     - Transfer execution to instruction after LABEL if value of ACC is not zero.
+	 - Transfer execution to instruction after LABEL if value of ACC is not zero.
    * - JGZ <LABEL>
-     - Transfer execution to instruction after LABEL if value of ACC is greater than zero.
+	 - Transfer execution to instruction after LABEL if value of ACC is greater than zero.
    * - JLZ <LABEL>
-     - Transfer execution to instruction after LABEL if value of ACC is less than zero.
+	 - Transfer execution to instruction after LABEL if value of ACC is less than zero.
    * - JRO <SRC>
-     - Transfer execution to instruction at offset specified by SRC relative to current instruction.
+	 - Transfer execution to instruction at offset specified by SRC relative to current instruction.
    * - HCF (undocumented)
-     - Halt and Catch Fire
+	 - Halt and Catch Fire
 
-Node Type T30 - Stack Memory Node
----------------------------------
 
-Node Type T31 - Random Access Memory Node
------------------------------------------
+===== Node Type T30 - Stack Memory Node =====
 
-Debugger
---------
+===== Node Type T31 - Random Access Memory Node =====
 
-Visualization Module
---------------------
+===== Debugger =====
+
+===== Visualization Module =====

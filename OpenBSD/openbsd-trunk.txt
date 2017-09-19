@@ -1,10 +1,11 @@
-OpenBSD - trunk
-===============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== OpenBSD - trunk ======
 :tags: OpenBSD
 
 
-Setup
------
+===== Setup =====
 ::
 
  ifconfig bge0 up

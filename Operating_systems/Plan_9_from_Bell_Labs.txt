@@ -5,4 +5,4 @@ Creation-Date: 2017-09-11T14:13:03-06:00
 ====== Plan 9 from Bell Labs ======
 Created Monday 11 September 2017
 
-Plan 9 Progammer's Manual: http://doc.cat-v.org/plan_9/1st_edition/manual.pdf
+[[http://doc.cat-v.org/plan_9/1st_edition/manual.pdf|Plan 9 Programmer's Manual]]

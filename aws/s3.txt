@@ -1,5 +1,7 @@
-AWS - S3
-========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== S3 ======
 :date: 2017-08-03
 
 ::

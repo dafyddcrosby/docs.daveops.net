@@ -1,12 +1,12 @@
-ARP
-===
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-Running arpwatch
-----------------
+====== ARP ======
+
+===== Running arpwatch =====
 ``arpwatch -i <interface> -u <non-root username>``
 
-Use a static ARP table
-----------------------
+===== Use a static ARP table =====
 Single address:
 ``arp -s <ip> <mac>``
 

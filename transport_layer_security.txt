@@ -1,13 +1,14 @@
-Transport Layer Security
-========================
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Transport Layer Security ======
 :date: 2016-5-9
 :modified: 2017-02-23
 
 Here's a quick checklist of best practices as of this writing. It is by no
 means complete, but should get you well on your way.
 
-Stop using
-----------
+===== Stop using =====
 
 - aNULL non-authenticated DH exchanges (MITM attack)
 - eNULL (cleartext)
@@ -21,12 +22,10 @@ Stop using
 - Weak Diffie-Hellman parameters (`Logjam attack <https://weakdh.org>`_)
 - SHA1 (`SHAttered attack <https://shattered.io>`_)
 
-Start using
------------
+===== Start using =====
 
 - HTTP Strict Transport Security (RFC 6797)
 
-Links
------
+===== Links =====
 
 - https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model

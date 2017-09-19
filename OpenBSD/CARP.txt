@@ -1,11 +1,12 @@
-OpenBSD - CARP
---------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== OpenBSD - CARP ======
 :tags: OpenBSD
 
 master advertises on port 112
 
-ifconfig synax
-==============================
+===== ifconfig synax =====
 ::
 
  ifconfig carpN create
@@ -13,8 +14,7 @@ ifconfig synax
  [carpnodes vhid:advskew,vhid:advskew,...] [carpdev iface] \
  [[-]carppeer peer_address] [pass passphrase] [state state] [vhid host-id]
 
-Try to become master
-==============================
+===== Try to become master =====
 ::
 
  sysctl net.inet.carp.preempt=1

@@ -1,21 +1,20 @@
-Postfix
--------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Postfix ======
 :date: 2015-03-06
 
-Retry delivery
-==============
+===== Retry delivery =====
 ::
 
  postqueue -f
 
-Drop queue
-==========
+===== Drop queue =====
 ::
 
  postsuper -d ALL
 
-Print non-default configuration values
-======================================
+==== Print non-default configuration values ====
 ::
 
  postconf -n

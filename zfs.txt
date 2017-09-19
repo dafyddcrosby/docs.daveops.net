@@ -1,11 +1,12 @@
-ZFS
-===
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== ZFS ======
 :date: 2015-04-28
 :modified: 2017-03-31
 :tags: SmartOS, Solaris, FreeBSD
 
-Compression
------------
+===== Compression =====
 caveat - compression is *not* retroactive, so you should set it on the pool
 immediately after creation
 
@@ -18,16 +19,14 @@ immediately after creation
  # Set compression (types: lzjb, lz4, gzip-[1-9])
  zfs set compression=<type> <pool>
 
-Delegate administrative tasks
------------------------------
+===== Delegate administrative tasks =====
 https://blogs.oracle.com/marks/entry/zfs_delegated_administration
 
 ::
 
  zfs allow
 
-Snapshots
----------
+===== Snapshots =====
 ::
 
   # List snapshots
@@ -35,22 +34,20 @@ Snapshots
   # Delete a snapshot
   zfs destroy tank/home/thing@tuesday
 
-Rollback
---------
+===== Rollback =====
+
 By default, ZFS rollback cannot revert to anything beyond the most recent snapshot. -r lets you go earlier, although this is a destructive operation and deletes the intermediate snapshots
 
 ::
 
   zfs rollback tanks/home/dave@tuesday
 
-See disks
----------
+===== See disks =====
 ::
 
   zpool list
 
-References
-----------
+===== References =====
 
 * http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide
 * http://jrs-s.net/2015/02/03/will-zfs-and-non-ecc-ram-kill-your-data/

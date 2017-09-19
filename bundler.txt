@@ -1,15 +1,15 @@
-Bundler
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Bundler ======
 :date: 2017-02-16
 :tags: Ruby
 
-Install gems to dir
--------------------
+===== Install gems to dir =====
 ::
 
   bundle install --path dir
 
-Resources
----------
+===== Resources =====
 
-- https://bundler.io
+* https://bundler.io
