@@ -1,9 +1,10 @@
-ld
-==
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== ld ======
 :date: 2016-03-04
 
-The GNU linker
---------------
+===== The GNU linker =====
 ::
 
  # Link object file into an executable file
@@ -15,8 +16,7 @@ The GNU linker
  # Mark stack as non executable
  ld -z noexecstack
 
-OpenBSD ld.so
--------------
+===== OpenBSD ld.so =====
 ::
 
  # get documentation

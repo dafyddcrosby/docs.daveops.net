@@ -1,11 +1,11 @@
-EMail
-=====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== EMail ======
 :date: 2016-04-15
 
-See also
---------
-- `SMTP <smtp.rst>`_
+===== See also =====
+* [[smtp]]
 
-Videos
-------
+===== Videos =====
 - `Email Hates the Living (Ricardo Signes, rjbs) <https://www.youtube.com/watch?v=4s9IjkMAmns>`_

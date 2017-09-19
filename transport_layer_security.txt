@@ -19,7 +19,7 @@ means complete, but should get you well on your way.
 - EXPORT ciphers (deliberately weakened)
 - DES (deprecated Data Encryption Standard)
 - 3DES (`Sweet32 attack <https://sweet32.info/>`_)
-- Weak Diffie-Hellman parameters (`Logjam attack <https://weakdh.org>`_)
+- Weak Diffie-Hellman parameters ([[https://weakdh.org|Logjam attack]])
 - SHA1 (`SHAttered attack <https://shattered.io>`_)
 
 ===== Start using =====

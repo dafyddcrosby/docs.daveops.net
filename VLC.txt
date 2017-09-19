@@ -1,9 +1,10 @@
-VLC
-===
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== VLC ======
 :date: 2017-05-22
 
-Subtitles
----------
+===== Subtitles =====
 ::
 
   # Add a subtitle file
@@ -15,8 +16,7 @@ Subtitles
  soverlay
  scodec
 
-Transcoding
------------
+===== Transcoding =====
 ::
 
   # only transcode a few seconds (for testing)

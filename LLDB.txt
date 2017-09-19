@@ -6,3 +6,9 @@ Creation-Date: 2017-09-15T13:02:39-06:00
 Created Friday 15 September 2017
 
 [[https://lldb.llvm.org/lldb-gdb.html|LLDB <-> GDB Cheatsheet]]
+
+| command | description                  |
+|---------|------------------------------|
+| env     | set environment variable     |
+| r ARGS  | run program (with arguments) |
+

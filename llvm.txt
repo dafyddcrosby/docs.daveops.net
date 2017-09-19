@@ -1,8 +1,9 @@
-llvm
-====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-List available targets
-----------------------
+====== llvm ======
+
+===== List available targets =====
 ::
 
   llc -version

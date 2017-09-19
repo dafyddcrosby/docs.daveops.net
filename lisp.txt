@@ -1,9 +1,10 @@
-lisp
-====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== lisp ======
 :date: 2015-04-08
 
-Streams
--------
+===== Streams =====
 .. code-block:: lisp
 
  ;; check if it's a stream
@@ -16,10 +17,10 @@ Streams
  (read-char *standard-input*)
  ;; write to file
  (with-open-file (file-handle "example.txt" :direction :output)
-     (print "text to write" file-handle))
+	 (print "text to write" file-handle))
  ;; read from file
  (with-open-file (file-handle "example.txt" :direction :input)
-     (read file-handle))
+	 (read file-handle))
  ;; file exists?
  (probe-file "/path/to/file")
  ;; mkdir -p
