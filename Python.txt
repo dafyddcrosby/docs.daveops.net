@@ -1,6 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 ------
 Python
-------
+--------------------
 :date: 2015-03-06
 :tags: Python
 
@@ -22,48 +25,48 @@ Getopts
  import getopt, sys
  
  try:
-     opts, args = getopt.getopt(sys.argv[1:], 'eq', ["session=", "server="])
+	 opts, args = getopt.getopt(sys.argv[1:], 'eq', ["session=", "server="])
  except getopt.GetoptError, err:
-     # print help information and exit:
-     print str(err)
-     sys.exit(1)
+	 # print help information and exit:
+	 print str(err)
+	 sys.exit(1)
  for opt, val in opts:
-     if opt in ('-e'):
-         extend = True
-     elif opt in ('-q'):
-         query = True
-     elif opt in ('--session'):
-         session = val
-     elif opt in ('--server'):
-         server = val
+	 if opt in ('-e'):
+		 extend = True
+	 elif opt in ('-q'):
+		 query = True
+	 elif opt in ('--session'):
+		 session = val
+	 elif opt in ('--server'):
+		 server = val
 
 Opening a file
 ==============================
 .. code-block:: python
 
  try:
-     with open(filepath, "r") as file_handle:
-         for line in file_handle:
-             ...
+	 with open(filepath, "r") as file_handle:
+		 for line in file_handle:
+			 ...
  except IOError, err:
-     print(err)
+	 print(err)
 
 Syntax cheatsheet
 ==============================
 .. code-block:: python
 
  if blah == 0:
-     print "0"
+	 print "0"
  elif == 1:
-     print "1"
+	 print "1"
  else:
-     print "else"
+	 print "else"
  
  def printarg (arg):
-     print arg
+	 print arg
  
  if __name__ == "__main__":
-     main()
+	 main()
 
 Remove duplicates from a list
 ==============================
@@ -87,12 +90,7 @@ Launch REPL when line is hit
  import code
  code.interact(local=locals())
 
-Disassemple a code object
-==============================
-.. code-block:: python
 
- import dis
- dis.dis(func)
 
 Logging
 ==============================
@@ -115,7 +113,7 @@ Named tuples (ghetto classes)
  print 'Name:', lebeau.name
  
  for prisoner in [ hogan, lebeau ]:
-     print '%s is a %d, serial: %s' % prisoner
+	 print '%s is a %d, serial: %s' % prisoner
 
 Tab completion in Python shell
 ==============================
@@ -134,7 +132,7 @@ Tar a bunch of files
   import tarfile
   tar = tarfile.open("sample.tar", "w")
   for name in ["foo", "bar", "quux"]:
-      tar.add(name)
+	  tar.add(name)
   tar.close()
 
 Run a simple webserver
@@ -149,11 +147,11 @@ Check Python version
 .. code-block:: python
 
  if sys.hexversion >= 0x020502F0:
-     # use some advanced feature
-     ...
+	 # use some advanced feature
+	 ...
  else:
-     # use an alternative implementation or warn the user
-     ...
+	 # use an alternative implementation or warn the user
+	 ...
 
 +-------+---------------------------------------------------------------------------------------------+
 | 1-8   | PY_MAJOR_VERSION (the 2 in 2.1.0a3)                                                         |
@@ -172,9 +170,9 @@ Get Linux distribution
 .. code-block:: python
 
  if sys.hexversion < 0x020600F0:
-     platform.dist()
+	 platform.dist()
  else:
-     platform.linux_distribution()
+	 platform.linux_distribution()
 
 Inspect the stack
 ==============================

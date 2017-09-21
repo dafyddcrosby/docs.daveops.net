@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-20T17:56:55-06:00
+
+====== Disassembly ======
+Created Wednesday 20 September 2017
+
+===== Disassemble a code object =====
+
+{{{code: lang="python" linenumbers="True"
+import dis
+dis.dis(func)
+}}}
+
+
+===== Links =====
+
+http://akaptur.com/blog/2013/08/14/python-bytecode-fun-with-dis/
+
