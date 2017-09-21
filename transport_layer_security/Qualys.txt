@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-21T15:56:25-06:00
+
+====== Qualys ======
+Created Thursday 21 September 2017
+
+* [[https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide|SSL Server Raiting Guide]]

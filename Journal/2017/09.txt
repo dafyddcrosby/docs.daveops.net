@@ -28,3 +28,13 @@ https://research.google.com/pubs/pub46359.html
 To our surprise, we find that more than half of errors are caused by client-side or
 network issues instead of server misconfigurations.
 '''
+
+
+===== CLKSCREW =====
+https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/tang
+
+===== More Intel ME 0wnage =====
+https://www.blackhat.com/eu-17/briefings/schedule/#how-to-hack-a-turned-off-computer-or-running-unsigned-code-in-intel-management-engine-8668
+
+===== Fake packages in PyPI =====
+http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/

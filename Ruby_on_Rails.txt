@@ -1,6 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 -------------
 Ruby on Rails
--------------
+--------------------
 :date: 2015-03-06
 :tags: Ruby, Ruby on Rails
 
@@ -52,11 +55,11 @@ Validating Active Records
  
    validates :name,  :presence => true
    validates :title, :presence => true,
-                     :length => { :minimum => 5 }
+					 :length => { :minimum => 5 }
  end
 
 Ensure uniqueness at the db level
------------------------------------
+--------------------
 # ``rails generate migration add_index_to_users_email``
 # add to migration file under def change: ``add_index :users, :email, unique: true``
 # ``bundle exec rake db:migrate``
@@ -70,7 +73,7 @@ Migrate to new model
  rake db:migrate
 
 Return to previous model
------------------------------------
+--------------------
 ::
 
  rake db:rollback
@@ -130,3 +133,6 @@ Simple wins
 Get versions
 ============
 ``rake about``
+
+===== Links =====
+* https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/

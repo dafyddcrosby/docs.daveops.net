@@ -24,8 +24,9 @@ means complete, but should get you well on your way.
 
 ===== Start using =====
 
-- HTTP Strict Transport Security (RFC 6797)
+* HTTP Strict Transport Security (RFC 6797)
 
 ===== Links =====
 
-- https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model
+* https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model
+* [[https://lists.debian.org/debian-devel-announce/2017/08/msg00004.html|OpenSSL disables TLS 1.0. and 1.1]]

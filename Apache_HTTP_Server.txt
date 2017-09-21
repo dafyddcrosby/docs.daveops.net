@@ -55,7 +55,7 @@ Wiki-Format: zim 0.4
  ServerSignature Off
 
 ===== Misc =====
+* [[https://httpd.apache.org/docs/|Apache docs]]
+* [[https://mozilla.github.io/server-side-tls/ssl-config-generator|Mozilla SSL Configuration Generator]]
+* https://httpd.apache.org/docs/current/misc/security_tips.html
 
-* `Mozilla SSL Configuration Generator <https://mozilla.github.io/server-side-tls/ssl-config-generator>`_
-
-[ ] https://httpd.apache.org/docs/current/misc/security_tips.html
