@@ -1,5 +1,7 @@
-Life stuff
-==========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Life stuff ======
 :tags: advice 
 
 * It's easier to hold to your principles 100% of the time than it is to hold to them 98% of the time -Clayton M. Christensen

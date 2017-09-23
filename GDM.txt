@@ -1,8 +1,9 @@
-GDM
-===
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== GDM ======
 :date: 2015-02-19
 :tags: X Windows
 
-Add a WM to GDM dropdown
-------------------------
+===== Add a WM to GDM dropdown =====
 Add a ``.desktop`` file to ``/usr/share/xsessions``

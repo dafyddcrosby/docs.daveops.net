@@ -5,13 +5,13 @@ Ruby - Idioms
 
 Naming
 ------
-.. code-block:: ruby
 
-  local_variable
-  @instance_variable
-  @@class_variable
-  CONSTANT_VARIABLE
-  ClassName
-  ModuleName
-  $global
-
+{{{code: type="ruby"
+local_variable
+@instance_variable
+@@class_variable
+CONSTANT_VARIABLE
+ClassName
+ModuleName
+$global
+}}}

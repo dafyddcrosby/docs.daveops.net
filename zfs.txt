@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== ZFS ======
 :date: 2015-04-28
 :modified: 2017-03-31
-:tags: SmartOS, Solaris, FreeBSD
+@SmartOS, @Solaris, @FreeBSD
 
 ===== Compression =====
 caveat - compression is *not* retroactive, so you should set it on the pool

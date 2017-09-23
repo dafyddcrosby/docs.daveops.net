@@ -5,8 +5,8 @@ Perl
 
 Syntax Cheatsheet
 -----------------
-.. code-block:: perl
 
+{{{code: type="perl"
  #!/usr/local/bin/perl -wT
  use strict
  
@@ -20,6 +20,7 @@ Syntax Cheatsheet
  }
  
  hw();
+}}}
 
 LWP - HTTP Get
 --------------

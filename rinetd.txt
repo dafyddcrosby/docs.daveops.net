@@ -1,16 +1,15 @@
-rinetd
-======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-Caveats
--------
+====== rinetd ======
+
+===== Caveats =====
 Doesn't redirect UDP or FTP
 
-Source
-------
+===== Source =====
 http://www.boutell.com/rinetd/
 
-/etc/rinetd.conf
-----------------
+===== /etc/rinetd.conf =====
 ::
 
  bindaddress bindport connectaddress connectport

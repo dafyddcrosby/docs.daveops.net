@@ -1,5 +1,7 @@
-Hotpatching
-===========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Hotpatching ======
 :date: 2016-03-15
 
 `MOV EDI, EDI` is used because it's a safe two-byte NOP that can be used across
@@ -7,8 +9,7 @@ x86-compatible manufactures - according to Raymond Chen, this was even figured
 out by *talking* to the manufacturers.
 
 
-Some notes on NOP
------------------
+===== Some notes on NOP =====
 ::
 
   if you want to get technical, there isn't really any difference between
@@ -48,13 +49,11 @@ Some notes on NOP
   second half of your JMP $-5 as the start of a new instruction.
   -Raymond Chen
 
-Windows
--------
+===== Windows =====
 
 Add `/hotpatch` to the compiler flags.
 
-Links
------
+===== Links =====
 - https://blogs.msdn.microsoft.com/ishai/2004/06/24/why-does-the-compiler-generate-a-mov-edi-edi-instruction-at-the-beginning-of-functions/
 - https://blogs.msdn.microsoft.com/oldnewthing/20110921-00/?p=9583/
 - https://blogs.msdn.microsoft.com/oldnewthing/20130102-00/?p=5663/

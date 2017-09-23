@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-22T20:58:00-06:00
+
+====== Conferences ======
+Created Friday 22 September 2017
+
+- DefCon
+- BlackHat
+- ShmooCon
+- HOPE
+- CanSecWest

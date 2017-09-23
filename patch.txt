@@ -1,14 +1,14 @@
-patch
--------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-To create patch
-===============
+====== patch ======
+
+===== To create patch =====
 ::
 
  diff -Naur oldfile newfile >new-patch
 
-To add patch
-============
+===== To add patch =====
 ::
 
  patch <new-patch

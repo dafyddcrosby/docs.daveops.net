@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== pip ======
+:tags: Python 
+
+===== Create a package list =====
+::
+
+ pip freeze > requirements.txt
+
+===== Upgrade package =====
+
+'''
+pip install -U package
+'''
+
+
+===== Install a package list =====
+::
+
+ pip install -r requirements.txt

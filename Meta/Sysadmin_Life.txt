@@ -1,12 +1,13 @@
-Sysadmin Life
-=============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Sysadmin Life ======
 :date: 2016-4-17
 
 - Write great documentation, not necessarily for others, but for your own sanity
 - Assume that you typing something in is the weakest link in any chain. If it can be automated, it should be.
 
-Outside of work
----------------
+===== Outside of work =====
 
 - Sleep is precious. Invest in a nice bed, keep light out of the room, keep caffeinated substance consumption to a minimum.
 - If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier. Usually the most inconvenient time.

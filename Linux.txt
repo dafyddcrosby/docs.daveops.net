@@ -126,7 +126,7 @@ Put syscall in EAX, put arguments in other ExX registers, call the interrupt, re
 ===== Get kernel command line arguments =====
 @proc
 {{{code: lang="sh" linenumbers="True"
-cat /prod/cmdline
+cat /proc/cmdline
 }}}
 
 

@@ -1,30 +1,32 @@
-Mutt
-====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Mutt ======
 :date: 2015-05-12
 :modified: 2016-06-20
 
 Manual - http://www.mutt.org/doc/manual/
 
-Add header to messages
-----------------------
+===== Add header to messages =====
+--------------------
 ::
 
  my_hdr X-Operating-System: TempleOS
 
-Whitelist TLS fingerprint
--------------------------
+===== Whitelist TLS fingerprint =====
+--------------------
 ::
 
  tls on
  tls_fingerprint <fingerprint>
 
-Search
-------
+===== Search =====
 
 | command | desc |
 | ~b EXPR | Search for messages containing EXPR in the body |
-| ~C EXPR | To: or CC:
-| ~f EXPR | From:
-| ~d [MIN]-[MAX] | messages with date-sent in date range |
-| ~l | mailing lists |
-| ~s | Subject: |
+| ~C EXPR | To: or CC: |
+| ~f EXPR          | From:                                   |
+| ~d [MIN]-[MAX]   | messages with date-sent in date range   |
+| ~l               | mailing lists                           |
+| ~s               | Subject:                                |
+

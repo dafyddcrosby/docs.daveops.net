@@ -1,9 +1,10 @@
-Netflix
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Netflix ======
 :date: 2017-02-26
 
-Secret category #s
-------------------
+===== Secret category #s =====
 
 - Action & Adventure: 1365
 - Action Comedies: 43040
