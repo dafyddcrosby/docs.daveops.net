@@ -1,13 +1,13 @@
-Ruby - Binary
-=============
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Ruby - Binary ======
 :date: 2015-02-28
 :tags: Ruby
 
-pack/unpack
------------
+===== pack/unpack =====
 
-Integer
-~~~~~~~
+==== Integer ====
 
 +-------------+--------------------------------------------------+
 |Directive    | Meaning                                          |
@@ -75,67 +75,42 @@ Integer
 |   w         | BER-compressed integer (see Array.pack)          |
 +-------------+--------------------------------------------------+
 
-Float
-~~~~~
+==== Float ====
 
-+-----------+---------------------------------------------------+
 | Directive | Meaning                                           |
-+===========+===================================================+
+|-----------|---------------------------------------------------|
 | D, d      | double-precision, native format                   |
-+-----------+---------------------------------------------------+
 | F, f      | single-precision, native format                   |
-+-----------+---------------------------------------------------+
 | E         | double-precision, little-endian byte order        |
-+-----------+---------------------------------------------------+
 | e         | single-precision, little-endian byte order        |
-+-----------+---------------------------------------------------+
 | G         | double-precision, network (big-endian) byte order |
-+-----------+---------------------------------------------------+
 | g         | single-precision, network (big-endian) byte order |
-+-----------+---------------------------------------------------+
 
-String
-~~~~~~
 
-+-----------+------------------------------------------------------------------+
-| Directive | Meaning                                                          |
-+===========+==================================================================+
-| A         | arbitrary binary string                                          |
-|           | (remove trailing nulls and ASCII spaces)                         |
-+-----------+------------------------------------------------------------------+
-| a         | arbitrary binary string                                          |
-+-----------+------------------------------------------------------------------+
-| Z         | null-terminated string                                           |
-+-----------+------------------------------------------------------------------+
-| B         | bit string (MSB first)                                           |
-+-----------+------------------------------------------------------------------+
-| b         | bit string (LSB first)                                           |
-+-----------+------------------------------------------------------------------+
-| H         | hex string (high nibble first)                                   |
-+-----------+------------------------------------------------------------------+
-| h         | hex string (low nibble first)                                    |
-+-----------+------------------------------------------------------------------+
-| u         | UU-encoded string                                                |
-+-----------+------------------------------------------------------------------+
-| M         | quoted-printable, MIME encoding (:RFC:`2045`)                    |
-+-----------+------------------------------------------------------------------+
-| m         | base64 encoded string (:RFC:`2045`) (default)                    |
-|           | base64 encoded string (:RFC:`4648`) if followed by 0             |
-+-----------+------------------------------------------------------------------+
-| P         | pointer to a structure (fixed-length string)                     |
-+-----------+------------------------------------------------------------------+
-| p         | pointer to a null-terminated string                              |
-+-----------+------------------------------------------------------------------+
+==== String ====
 
-Misc
-~~~~
+| Directive | Meaning                                                                                             |
+|-----------|-----------------------------------------------------------------------------------------------------|
+| A         | arbitrary binary string (remove trailing nulls and ASCII spaces)                                    |
+| a         | arbitrary binary string                                                                             |
+| Z         | null-terminated string                                                                              |
+| B         | bit string (MSB first)                                                                              |
+| b         | bit string (LSB first)                                                                              |
+| H         | hex string (high nibble first)                                                                      |
+| h         | hex string (low nibble first)                                                                       |
+| u         | UU-encoded string                                                                                   |
+| M         | quoted-printable, MIME encoding (:RFC:`2045`)                                                       |
+| m         | base64 encoded string (:RFC:`2045`) (default)  base64 encoded string (:RFC:`4648`) if followed by 0 |
+| P         | pointer to a structure (fixed-length string)                                                        |
+| p         | pointer to a null-terminated string                                                                 |
 
-+-----------+-------------------------------------------------+
+
+==== Misc ====
+
 | Directive | Meaning                                         |
-+===========+=================================================+
+|-----------|-------------------------------------------------|
 | @         | skip to the offset given by the length argument |
-+-----------+-------------------------------------------------+
 | X         | skip backward one byte                          |
-+-----------+-------------------------------------------------+
 | x         | skip forward one byte                           |
-+-----------+-------------------------------------------------+
+
+

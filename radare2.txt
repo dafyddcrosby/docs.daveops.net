@@ -1,12 +1,13 @@
-Radare2
-=======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Radare2 ======
 :date: 2016-03-04
 
-+-----+-------------+
 | key | thing       |
-+-----+-------------+
+|-----|-------------|
 | V   | visual mode |
-+-----+-------------+
 
 
+===== Resources =====
 https://radare.gitbooks.io/radare2book/content/

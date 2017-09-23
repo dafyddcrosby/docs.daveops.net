@@ -1,9 +1,11 @@
-strace
-======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== strace ======
 :date: 2016-08-30
 
-+----+--------------------------------------+
-| -f | trace child processes                |
-+----+--------------------------------------+
-| -e | trace=file show only file operations |
-+----+--------------------------------------+
+| flag | description                          |
+|------|--------------------------------------|
+| -f   | trace child processes                |
+| -e   | trace=file show only file operations |
+

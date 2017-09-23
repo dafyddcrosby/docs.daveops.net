@@ -1,4 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 ====
+HTML
 HTML
 ====
 
@@ -51,14 +55,14 @@ Code samples
 Canvas (HTML 5)
 ==============================
 initialization
------------------------------------
+--------------------
 .. code-block:: html
 
  <canvas id='id' height='600' width='800'>fallback</canvas>
  <script type='text/javascript'>
    var canvas = document.getElementById(id)
    if (canvas.getContext) {
-     var context = canvas.getContext(type)
+	 var context = canvas.getContext(type)
    }
  </script>
 
@@ -86,7 +90,7 @@ Autofocus input (HTML 5)
 Patterned input (HTML 5)
 ==============================
 Enter 15 digits
----------------
+--------------------
 .. code-block:: html
 
  <input type='text' pattern='[0-9]{15}'>
@@ -116,13 +120,13 @@ International calling code is required
  <a href="tel:+14035555555">403-555-5555</a>
 
 To handle an extension
------------------------------------
+--------------------
 .. code-block:: html
 
  <a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
 
 To use a fax line:
------------------------------------
+--------------------
 .. code-block:: html
 
  <a href="fax:+14035555555">403-555-5555</a>
@@ -144,8 +148,8 @@ Semantic tags (HTML 5)
 
  <article>
    <hgroup>
-      <h1>Title</h1>
-      <h2>Byline</h2>
+	  <h1>Title</h1>
+	  <h2>Byline</h2>
    </hgroup>
  </article>
 
@@ -157,19 +161,12 @@ Semantic tags (HTML 5)
 HTML entities for accents
 ==============================
 
-+------------+---------+----------+
 | Modifier   | Example | HTML     |
-+============+=========+==========+
+|------------|---------|----------|
 | Grave      | à       | &agrave; |
-+------------+---------+----------+
 | Acute      | á       | &aacute; |
-+------------+---------+----------+
 | Circumflex | â       | &acirc;  |
-+------------+---------+----------+
 | Tilde      | ã       | &atilde; |
-+------------+---------+----------+
 | Umlaut     | ä       | &auml;   |
-+------------+---------+----------+
 | Cedil      | ç       | &ccedil; |
-+------------+---------+----------+
 

@@ -18,17 +18,10 @@ Learning Contract
 Reflective Cycle
 ----------------
 
-+-------------+
-| Description |
-+-------------+
-| Feelings    |
-+-------------+
-| Evaluation  |
-+-------------+
-| Analysis    |
-+-------------+
-| Conclusions |
-+-------------+
-| Action plan |
-+-------------+
+* Description
+* Feelings
+* Evaluation
+* Analysis
+* Conclusions
+* Action plan
 

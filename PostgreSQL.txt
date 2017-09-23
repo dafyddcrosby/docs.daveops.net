@@ -42,17 +42,11 @@ Don't use SIGKILL, it will shut down the rest of PostgreSQL, and require a repla
 Tuning
 ------
 
-+----------------------+----------------------------------------------+
 | config               | set                                          |
-+======================+==============================================+
 | shared_buffers       | About 1/4 of the memory in the system        |
-+----------------------+----------------------------------------------+
 | effective_cache_size | should be ~ 2/3 of //available// RAM         |
-+----------------------+----------------------------------------------+
 | work_mem             | Depends on max_connections                   |
-+----------------------+----------------------------------------------+
 | maintenance_work_mem | Used for vacuum, etc. "256 MB is reasonable" |
-+----------------------+----------------------------------------------+
 
 * https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
 

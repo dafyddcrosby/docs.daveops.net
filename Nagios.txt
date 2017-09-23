@@ -1,16 +1,14 @@
-Nagios
-======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-Plugin levels
--------------
+====== Nagios ======
 
-+---+----------+
+===== Plugin levels =====
+
+| # | level    |
+|---|----------|
 | 0 | OK       |
-+---+----------+
 | 1 | WARNING  |
-+---+----------+
 | 2 | CRITICAL |
-+---+----------+
 | 3 | UNKNOWN  |
-+---+----------+
 
