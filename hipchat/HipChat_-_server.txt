@@ -1,9 +1,10 @@
-HipChat - server
-================
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== HipChat - server ======
 :date: 2017-03-14
 
-XMPP
-----
+===== XMPP =====
 ::
 
   # See if XMPP enabled

@@ -1,14 +1,14 @@
-sysbench
-========
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
 
-benchmark CPU
--------------
+====== sysbench ======
+
+===== benchmark CPU =====
 ::
 
  sysbench --test=cpu --cpu-max-prime=20000 run
 
-benchmark I/O
--------------
+===== benchmark I/O =====
 :: 
 
  sysbench --test=fileio --file-total-size=10G prepare

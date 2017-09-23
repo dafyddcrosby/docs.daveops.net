@@ -1,5 +1,7 @@
-Tangle
-======
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Tangle ======
 :date: 2016-03-04
 
 http://worrydream.com/Tangle/guide.html

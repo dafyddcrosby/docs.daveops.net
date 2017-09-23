@@ -1,12 +1,13 @@
-diff
-====
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== diff ======
 :date: 2017-01-26
 
 ::
 
   --patience  # use the patience algorithm
 
-Links
------
+===== Links =====
 http://bramcohen.livejournal.com/73318.html
 
