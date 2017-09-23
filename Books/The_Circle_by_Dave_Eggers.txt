@@ -1,13 +1,11 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-The Circle by Dave Eggers
-=========================
+====== The Circle by Dave Eggers ======
 :date: 2016-03-15
 @books
 
-The Rights of Humans in a Digital Age
---------------------
+===== The Rights of Humans in a Digital Age =====
 
 - We must all have the right to anonymity
 - Not every human activity can be measured
