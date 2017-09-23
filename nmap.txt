@@ -5,10 +5,21 @@ Wiki-Format: zim 0.4
 :date: 2016-03-30
 :modified: 2017-08-24
 
-===== Get list of available server ciphers =====
-::
+===== Handy scripts =====
 
-  nmap --script ssl-enum-ciphers -p PORT SERVER
+| Script             | Description                           |
+|--------------------|---------------------------------------|
+| ssl-enum-ciphers   | get list of available SSL/TLS headers |
+| http-trace         | see if server has a TRACE method      |
+| http-server-header | get details from the Server: header   |
+
+
+===== Get list of available server ciphers =====
+
+'''
+nmap --script ssl-enum-ciphers -p PORT SERVER
+'''
+
 
 ===== Specifying hosts =====
 
@@ -17,10 +28,12 @@ Wiki-Format: zim 0.4
 nmap -iL file ...
 '''
 
-===== Output =====
-::
 
-  # Grepable
-  nmap -oG file ...
-  # XML
-  nmap -oX file ...
+===== Output =====
+
+'''
+# Grepable
+nmap -oG file ...
+# XML
+nmap -oX file ...
+'''

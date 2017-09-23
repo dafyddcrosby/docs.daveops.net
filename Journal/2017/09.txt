@@ -38,3 +38,7 @@ https://www.blackhat.com/eu-17/briefings/schedule/#how-to-hack-a-turned-off-comp
 
 ===== Fake packages in PyPI =====
 http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/
+
+===== Optionsbleed =====
+CVE-2017-9798
+https://blog.fuzzing-project.org/60-Optionsbleed-HTTP-OPTIONS-method-can-leak-Apaches-server-memory.html
