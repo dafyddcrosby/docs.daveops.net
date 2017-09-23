@@ -25,17 +25,19 @@ Wiki-Format: zim 0.4
 ===== General Hardening =====
 
 ==== SSL Config ====
-::
 
+'''
  SSLProtocol          All -SSLv2 -SSLv3
  SSLHonorCipherOrder  on
  SSLCompression       off
  # HSTS (mod_headers is required) (15768000 seconds = 6 months)
  Header always set Strict-Transport-Security "max-age=15768000"
+'''
+
 
 ==== General Apache Config ====
-::
- 
+
+'''
  # Deny access to root dir
  <Directory />
 	Options None
@@ -53,9 +55,11 @@ Wiki-Format: zim 0.4
  # Disable product version
  ServerTokens Prod
  ServerSignature Off
+'''
+
 
 ===== Misc =====
+* [[https://httpd.apache.org/docs/|Apache docs]]
+* [[https://mozilla.github.io/server-side-tls/ssl-config-generator|Mozilla SSL Configuration Generator]]
+* https://httpd.apache.org/docs/current/misc/security_tips.html
 
-* `Mozilla SSL Configuration Generator <https://mozilla.github.io/server-side-tls/ssl-config-generator>`_
-
-[ ] https://httpd.apache.org/docs/current/misc/security_tips.html
