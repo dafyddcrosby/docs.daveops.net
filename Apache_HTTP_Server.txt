@@ -7,22 +7,25 @@ Wiki-Format: zim 0.4
 
 ===== Signals =====
 
-'''
-# Rotate logs, kill children, reload configuration
-kill -SIGHUP httpd
-# Graceful stop
-kill -SIGWINCH httpd
-# Graceful restart
-kill -SIGUSR1 httpd
-# Immediate stop
-kill -SIGTERM httpd
-'''
+| Signal   | Description                                      |
+|----------|--------------------------------------------------|
+| SIGHUP   | Rotate logs, kill children, reload configuration |
+| SIGWINCH | Graceful stop                                    |
+| SIGUSR1  | Graceful restart                                 |
+| SIGTERM  | Immediate stop                                   |
 
-===== Test the configuration =====
 
-'''
-apachectl configtest
-'''
+===== Apachectl options =====
+
+| Option        | Description                                                       |
+|---------------|-------------------------------------------------------------------|
+| start         | start daemon                                                      |
+| stop          | stop daemon                                                       |
+| restart       | restarts after checking configtest                                |
+| graceful      | graceful restart (checks configtest)                              |
+| graceful-stop | graceful stop of the daemon                                       |
+| fullstatus    | display full status report (mod_status and text browser required) |
+| configtest    | test the configuration                                            |
 
 ===== General Hardening =====
 
@@ -35,6 +38,7 @@ SSLCompression       off
 # HSTS (mod_headers is required) (15768000 seconds = 6 months)
 Header always set Strict-Transport-Security "max-age=15768000"
 '''
+
 
 ==== General Apache Config ====
 
@@ -57,6 +61,7 @@ Options -ExecCGI
 ServerTokens Prod
 ServerSignature Off
 '''
+
 
 ===== Misc =====
 * [[https://httpd.apache.org/docs/|Apache docs]]
