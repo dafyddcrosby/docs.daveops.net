@@ -1,10 +1,13 @@
-Phusion Passenger
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Phusion Passenger ======
 =================
 :date: 2016-03-24
 :modified: 2016-5-17
 :tags: Ruby, HTTP
 
-CLI
+===== CLI =====
 ---
 ::
 
@@ -15,8 +18,8 @@ CLI
   # restart app
   passenger-config restart-app
 
-Hiding Version Headers
-----------------------
+===== Hiding Version Headers =====
+--------------------
 ::
 
   # Apache
@@ -26,6 +29,6 @@ Hiding Version Headers
   # nginx (in http context)
   passenger_show_version_in_header off;
 
-Resources
----------
+===== Resources =====
+--------------------
 https://www.phusionpassenger.com/library/admin/apache/

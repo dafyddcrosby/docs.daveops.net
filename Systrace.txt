@@ -1,8 +1,11 @@
-Systrace
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Systrace ======
 ========
 
-Automatically generate systrace profile
----------------------------------------
+===== Automatically generate systrace profile =====
+--------------------
 ::
 
  systrace -A /path/to/executable

@@ -1,15 +1,18 @@
-Hilarity
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Hilarity ======
 ========
 :date: 2017-03-26
 
-Painting the Bike Shed
-----------------------
+===== Painting the Bike Shed =====
+--------------------
 - https://bugzilla.mozilla.org/show_bug.cgi?id=678775
 
-Databases
----------
+===== Databases =====
+--------------------
 - `Gay Marriage: the database engineering perspective <http://qntm.org/gay>`_
 
-Unix
+===== Unix =====
 ----
 - https://www.bell-labs.com/usr/dmr/www/odd.html

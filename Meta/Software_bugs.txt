@@ -1,8 +1,11 @@
-Software bugs
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Software bugs ======
 =============
 
-Design Bugs
------------
+===== Design Bugs =====
+--------------------
 * Don't Repeat Yourself violation
 * Bad API usage
 * Using deprecated functions
@@ -16,15 +19,15 @@ Design Bugs
 * Incorrect database query
 * Incorrect business rules
 
-UI Bugs
--------
+===== UI Bugs =====
+--------------------
 * Missing/bad information
 * Insufficient performance
 * Inappropriate error message
 * Expectation failure
 
-Code Bugs
----------
+===== Code Bugs =====
+--------------------
 * Syntax error
 * Off-by-one
 * Division-by-zero
@@ -43,8 +46,8 @@ Code Bugs
 * incorrect data type handling
 * Incorrect file handling
 
-Testing Errors
---------------
+===== Testing Errors =====
+--------------------
 * Did not provide steps to reproduce
 * Misunderstanding of documentation
 * Failed to notice or report problem

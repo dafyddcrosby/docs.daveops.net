@@ -1,10 +1,13 @@
-Interviews
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Interviews ======
 ==========
 :date: 2017-03-22
 
-Interviewer
------------
+===== Interviewer =====
+--------------------
 
-Interviewee
------------
+===== Interviewee =====
+--------------------
 - http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/

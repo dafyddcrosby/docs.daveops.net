@@ -1,10 +1,13 @@
-Hipchat
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Hipchat ======
 =======
 :date: 2015-04-28
 :modified: 2017-05-23
 
-Message commands
-----------------
+===== Message commands =====
+--------------------
 ::
 
   /part - leave room
@@ -16,8 +19,8 @@ Message commands
   /code <msg> - syntax highlighting
   /me <msg> - emote command
 
-Keyboard shortcuts
-------------------
+===== Keyboard shortcuts =====
+--------------------
 ::
 
  cmd+f - search
@@ -28,13 +31,13 @@ Keyboard shortcuts
  cmd+n - search for room, user
  option+up - put last line in your text box
 
-Modify last line
-----------------
+===== Modify last line =====
+--------------------
 ::
 
   s/search/replace/
 
-Links
------
+===== Links =====
+--------------------
 
 - `Emoticons list <https://www.hipchat.com/emoticons>`_

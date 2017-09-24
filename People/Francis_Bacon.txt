@@ -1,10 +1,13 @@
-Francis Bacon
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Francis Bacon ======
 =============
 :date: 2016-11-29
 :tags: people
 
-4 idols
--------
+===== 4 idols =====
+--------------------
 
 - tribe (opinion)
 - cave (intellect coloured by experience)

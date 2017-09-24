@@ -1,13 +1,16 @@
-------------
-PHP - SQLite
-------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== PHP - SQLite ======
+--------------------
 :tags: php
 
 
-SQLite
+===== SQLite =====
 ==============================
-Initializing
------------------------------------
+
+==== Initializing ====
+--------------------
 .. code-block:: php
 
  <?php
@@ -17,10 +20,10 @@ Initializing
   */
  class MyDB extends SQLite3
  {
-     function __construct()
-     {
-         $this->open('mysqlitedb.db');
-     }
+	 function __construct()
+	 {
+		 $this->open('mysqlitedb.db');
+	 }
  }
  
  $db = new MyDB();
@@ -32,8 +35,8 @@ Initializing
  var_dump($result->fetchArray());
  ?>
 
-Reading values
------------------------------------
+==== Reading values ====
+--------------------
 .. code-block:: php
 
  <?php
@@ -43,9 +46,9 @@ Reading values
  {
    while($row = $result->fetch())
    {
-     print("Title: {$row['Title']} <br />" .
-           "Director: {$row['Director']} <br />".
-           "Year: {$row['Year']} <br /><br />");
+	 print("Title: {$row['Title']} <br />" .
+		   "Director: {$row['Director']} <br />".
+		   "Year: {$row['Year']} <br /><br />");
    }
  }
  else

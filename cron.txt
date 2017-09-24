@@ -1,9 +1,12 @@
-cron
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== cron ======
 ====
 :date: 2016-04-01
 
-Command line
-------------
+===== Command line =====
+--------------------
 .. code-block:: bash
 
   # List crontab
@@ -13,8 +16,8 @@ Command line
   # Edit another user's crontab
   crontab -e -u USER
 
-Syntax
-------
+===== Syntax =====
+--------------------
 ::
 
  ┌───────────── min (0 - 59) 

@@ -6,7 +6,7 @@ Wiki-Format: zim 0.4
 :modified: 2016-09-13
 :tags: advice
 
-General life hacks
+===== General life hacks =====
 --------------------
 Mold your life so that the path of least resistance is the path of maximum productivity -Matt Might
 
@@ -19,7 +19,7 @@ Spend the first 30 minutes of your day on what you want to accomplish the most
 
 Use 'bright lines' to avoid ambiguities that keep you doing things you don't want. "I don't do X. I only drink Y twice a week."
 
-Computing
+===== Computing =====
 --------------------
 
 * `Learn to touch type <http://10fastfingers.com/>`_
@@ -29,25 +29,25 @@ Computing
 
 - Use the best tools you can for your development machine. Waiting for compiles suck time and money.
 
-Delegation
+===== Delegation =====
 --------------------
 
 - Assistants generally excel at maintaining systems, not creating them. *You*
   should have the big picture in your head.
 - Have a documented process. Questions mean the process isn't documented well enough.
 
-Time Management
+===== Time Management =====
 --------------------
 
 - Set 3 important tasks for the day, every day. Guard your time so that these three things always get done
 
-Office organization
+===== Office organization =====
 --------------------
 
 - Identify problem spots first.
 
 
-Ivy Lee Method
+===== Ivy Lee Method =====
 --------------------
 
 - Each night before you go to bed, write down the 6 most important tasks for the next day.

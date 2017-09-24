@@ -1,10 +1,13 @@
-Practice programming
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Practice programming ======
 ====================
 :date: 2015-02-15
 :modified: 2017-05-23
 
-Puzzles
--------
+===== Puzzles =====
+--------------------
 
 - http://codekata.pragprog.com
 - `Project Euler <http://projecteuler.net/>`_
@@ -16,8 +19,8 @@ Puzzles
 - https://sites.google.com/site/prologsite/prolog-problems
 - `Regex Golf <https://alf.nu/RegexGolf>`_
 
-Competitions
-------------
+===== Competitions =====
+--------------------
 
 - http://topcoder.com
 - http://vimgolf.com/

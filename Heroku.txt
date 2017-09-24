@@ -1,28 +1,31 @@
-heroku
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== heroku ======
 ======
 
-.. TODO - this might be quite out of date
+[ ] this might be quite out of date
 
-Creating a new heroku site
---------------------------
+===== Creating a new heroku site =====
+--------------------
 ::
 
  heroku create --stack cedar
 
-Renaming a site
----------------
+===== Renaming a site =====
+--------------------
 ::
 
  heroku rename newsitename
 
-Adding keys
------------
+===== Adding keys =====
+--------------------
 ::
 
  heroku keys:add
 
-Installing CLI
---------------
+===== Installing CLI =====
+--------------------
 ::
 
  gem install heroku

@@ -1,10 +1,13 @@
-MySQL - Configuration
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== MySQL - Configuration ======
 =====================
 :date: 2016-5-10
 :tags: MySQL
 
-Variables
----------
+===== Variables =====
+--------------------
 .. code-block:: mysql
 
   -- session variables
@@ -15,8 +18,8 @@ Variables
   SET GLOBAL sort_buffer_size=1000000;
 
 
-Get timezone config
--------------------
+===== Get timezone config =====
+--------------------
 .. code-block:: mysql
  
  SELECT @@global.time_zone, @@session.time_zone;

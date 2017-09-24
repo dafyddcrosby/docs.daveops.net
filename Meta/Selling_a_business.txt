@@ -1,4 +1,7 @@
-Selling a business
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Selling a business ======
 ==================
 :date: 2016-06-27
 
@@ -12,7 +15,7 @@ Use a broker to sell the business:
 
 Avoid cross-contamination with other businesses
 
-What buyers look for
+===== What buyers look for =====
 --------------------
 
 - Established business (6+ years)
@@ -21,16 +24,16 @@ What buyers look for
 - Low market risk (will remain valuable over the coming years)
 - Good documentation (solid bookkeeping, guide to running the business)
 
-Avoid
------
+===== Avoid =====
+--------------------
 
 - "no money down"
 - anonymous sales
 - people who aren't capable of running the business
 - people who negotiate for weeks then demand a discount right before contract signing
 
-Brokers
--------
+===== Brokers =====
+--------------------
 
 Take a 10-15% cut (generally worth it - much lower risk, higher negotiated price)
 

@@ -1,9 +1,12 @@
-Django - i18n
--------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Django - i18n ======
+--------------------
 :tags: django 
 
 
-To translate views
+===== To translate views =====
 ==============================
 ::
 

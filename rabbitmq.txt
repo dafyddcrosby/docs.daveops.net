@@ -1,10 +1,13 @@
-RabbitMQ
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== RabbitMQ ======
 ========
 :date: 2015-12-01
 :tags: Erlang
 
-add/restart/remove cluster node
--------------------------------
+===== add/restart/remove cluster node =====
+--------------------
 ::
 
  # Add a node
@@ -22,14 +25,14 @@ add/restart/remove cluster node
  rabbitmqctl forget_cluster_node rabbit@rabbit1
  
 
-Rotate logs
------------
+===== Rotate logs =====
+--------------------
 ::
 
  rabbitmqctl rotate_logs <suffix>
 
-General tuning tips
--------------------
+===== General tuning tips =====
+--------------------
 * Set ulimit -n and fs.file-max to 500,000
 * Set low keepalives
   * net.ipv4.tcp_keepalive_time = 6

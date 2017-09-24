@@ -1,51 +1,50 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-Console Fun
+====== Console Fun ======
 ===========
 
-Accounting
+===== Accounting =====
 --------------------
 * `Ledger <http://ledger-cli.org/>`_
 
-Calendar
+===== Calendar =====
 --------------------
 * `Calcurse <http://calcurse.org/>`_
 
-Mail
+===== Mail =====
 ----
 * [[Mutt]]
 * `Alpine <http://www.washington.edu/alpine/>`_
 * Elm
 
-Addresses
+===== Addresses =====
 --------------------
 - abook
 
-Twitter
+===== Twitter =====
 --------------------
 - turses
 - t
 
-RSS
----
+===== RSS =====
 - newsbeuter
 - snownews
 
-IM
+===== IM =====
 --
 - finch
 
-IRC
+===== IRC =====
 ---
 - irssi
 
-FTP
+===== FTP =====
 ---
 - lftp
 - ncftp
 
-Music
+===== Music =====
 --------------------
 - mplayer
 - cmus
@@ -54,7 +53,7 @@ Music
 - id3v2
 - beet
 
-WWW
+===== WWW =====
 ---
 - lynx
 - links
@@ -62,42 +61,42 @@ WWW
 - elinks
 - [[curl]]
 
-spreadsheet
+===== spreadsheet =====
 --------------------
 - sc
 
-typing
+===== typing =====
 --------------------
 - typespeed
 
-dictionary
+===== dictionary =====
 --------------------
 - dict
 
-books
+===== books =====
 --------------------
 - fbgs
 - booklist
 
-NNTP
+===== NNTP =====
 ----
 - tin
 
-Torrents
+===== Torrents =====
 --------------------
 - rtorrent
 - transmission-cli
 
-Games
+===== Games =====
 --------------------
 - bsd-games
 
-Finger
+===== Finger =====
 --------------------
 - finger
 - pinky
 
-Text editing
+===== Text editing =====
 --------------------
 - [[vim]]
 - [[emacs]]

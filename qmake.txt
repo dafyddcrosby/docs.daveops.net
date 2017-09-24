@@ -1,9 +1,12 @@
-qmake
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== qmake ======
 =====
 :date: 2015-02-23
 
-Generate Makefile
------------------
+===== Generate Makefile =====
+--------------------
 ::
 
   qmake -o Makefile hello.pro

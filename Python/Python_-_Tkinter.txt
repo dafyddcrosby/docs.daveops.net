@@ -1,5 +1,8 @@
-Python - Tkinter
-----------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Python - Tkinter ======
+--------------------
 :tags: Python 
 
 .. code-block:: python
@@ -7,21 +10,21 @@ Python - Tkinter
  from Tkinter import *
  
  class MyDialog:
-     def __init__(self, parent):
-         self.top = Frame(parent)
-         self.top.pack()
+	 def __init__(self, parent):
+		 self.top = Frame(parent)
+		 self.top.pack()
  
-         Label(self.top, text="Value").pack()
+		 Label(self.top, text="Value").pack()
  
-         self.e = Entry(self.top)
-         self.e.pack(padx=5)
+		 self.e = Entry(self.top)
+		 self.e.pack(padx=5)
  
-         b = Button(self.top, text="OK", command=self.ok)
-         b.pack(pady=5)
+		 b = Button(self.top, text="OK", command=self.ok)
+		 b.pack(pady=5)
  
-     def ok(self):
-         print "value is", self.e.get()
-         self.top.destroy()
+	 def ok(self):
+		 print "value is", self.e.get()
+		 self.top.destroy()
  
  root = Tk()
  root.title("Some title!")

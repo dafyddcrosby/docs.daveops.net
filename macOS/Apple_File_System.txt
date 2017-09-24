@@ -1,4 +1,7 @@
-Apple File System
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Apple File System ======
 =================
 :date: 2016-06-21
 :tags: filesystems, macOS
@@ -7,8 +10,8 @@ Replaces HFS+
 
 OS X 10.12+
 
-Features
---------
+===== Features =====
+--------------------
 
 - Container is base storage unit, generally 1:1 mapping to GPT
 - 64-bit inaode numbers
@@ -21,8 +24,8 @@ Features
 - Native encryption support, with multi-key encryption support
 - SMB compatible
 
-Links
------
+===== Links =====
+--------------------
 
 https://developer.apple.com/library/prerelease/content/documentation/FileManagement/Conceptual/APFS_Guide/GeneralCharacteristics/GeneralCharacteristics.html#//apple_ref/doc/uid/TP40016999-CH2-SW1
 

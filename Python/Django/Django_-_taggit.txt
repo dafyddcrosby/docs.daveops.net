@@ -1,8 +1,11 @@
-Django - taggit
----------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Django - taggit ======
+--------------------
 :tags: django 
 
-Installing in a project
+===== Installing in a project =====
 ==============================
 * ``pip install django-taggit``
 * add 'taggit' to ~INSTALLED_APPS
@@ -14,6 +17,6 @@ Installing in a project
  from taggit.managers import TaggableManager
  
  class Thing(models.Model):
-     # ... fields here
+	 # ... fields here
  
-     tags = TaggableManager()
+	 tags = TaggableManager()

@@ -1,4 +1,7 @@
-Edgar W. Dijkstra
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Edgar W. Dijkstra ======
 =================
 :tags: people 
 

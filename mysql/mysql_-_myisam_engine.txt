@@ -1,4 +1,7 @@
-MySQL - MyISAM engine
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== MySQL - MyISAM engine ======
 =====================
 :date: 2016-5-10
 :tags: MySQL
@@ -10,8 +13,8 @@ MySQL - MyISAM engine
 - uses table-level locking and lacks transactions, but has low overhead and is platform neutral
 - excellent for read-only tables
 
-Tools
------
+===== Tools =====
+--------------------
 
  myisam_ftdump
  A utility that displays information about full-text indexes in MyISAM tables. See Section 4.6.2, “myisam_ftdump — Display Full-Text Index information”.

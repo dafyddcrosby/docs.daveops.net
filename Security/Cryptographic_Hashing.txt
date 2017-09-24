@@ -1,4 +1,7 @@
-Cryptographic Hashing
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Cryptographic Hashing ======
 =====================
 :date: 2017-05-30
 

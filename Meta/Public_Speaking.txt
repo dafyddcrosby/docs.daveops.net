@@ -1,4 +1,7 @@
-Public Speaking
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Public Speaking ======
 ===============
 :date: 2017-01-26
 

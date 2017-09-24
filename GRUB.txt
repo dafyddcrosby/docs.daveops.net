@@ -1,11 +1,14 @@
-GRUB
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== GRUB ======
 ====
 :date: 2016-10-25
 
 Except where noted, this is for GRUB 2+
 
-Console
--------
+===== Console =====
+--------------------
 ::
 
   # Turn on the pager in console mode
@@ -15,8 +18,8 @@ Console
   # Find devices available
   ls
 
-Grub grub.cfg creation
-----------------------
+===== Grub grub.cfg creation =====
+--------------------
 ::
 
   grub2-mkconfig -o /boot/grub2/grub.cfg

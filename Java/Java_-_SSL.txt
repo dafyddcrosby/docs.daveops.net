@@ -1,23 +1,26 @@
-Java - SSL
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Java - SSL ======
 ==========
 :date: 2017-03-14
 
-Debugging
----------
+===== Debugging =====
+--------------------
 ::
 
   # print each handshake message
   java -Djavax.net.debug=ssl:handshake MyApp
 
-AES intrinsics
---------------
+===== AES intrinsics =====
+--------------------
 Requires Java 8 and Intel 2010+ Westmere
 
 ::
 
   -XX:+UseAES -XX:+UseAESIntrinsics
 
-Links
------
+===== Links =====
+--------------------
 - https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html
 - https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/JSSERefGuide.html#Debug

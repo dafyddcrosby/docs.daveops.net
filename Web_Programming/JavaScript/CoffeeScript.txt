@@ -1,4 +1,7 @@
-CoffeeScript
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== CoffeeScript ======
 ============
 :tags: JavaScript
 

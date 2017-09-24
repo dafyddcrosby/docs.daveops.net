@@ -1,11 +1,11 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-Python - Idioms
+====== Python - Idioms ======
 --------------------
 :tags: Python 
 
-Python zen
+===== Python zen =====
 ==========
 .. code-block:: python
  

@@ -1,4 +1,7 @@
-webERP
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== webERP ======
 ======
 
 Site: http://www.weberp.org
@@ -9,8 +12,8 @@ Tables:
 stockserialitems (shows the lots)
 locstock (stock levels at location)
 
-Adding new script
------------------
+===== Adding new script =====
+--------------------
 MySQL:
 
 .. code-block:: sql

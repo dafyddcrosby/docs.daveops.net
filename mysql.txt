@@ -1,29 +1,32 @@
-MySQL
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== MySQL ======
 =====
 :date: 2016-03-14
 :modified: 2017-03-17
 :tags: databases, MySQL
 
-Monitor queries
----------------
+===== Monitor queries =====
+--------------------
 ::
 
  watch -n 1 mysqladmin --user=<user> --password=<password> processlist
 
-List all databases
-------------------
+===== List all databases =====
+--------------------
 .. code-block:: mysql
 
  show databases;
 
-List all tables
----------------
+===== List all tables =====
+--------------------
 .. code-block:: mysql
 
  show tables;
 
-Describe table contents
------------------------
+===== Describe table contents =====
+--------------------
 .. code-block:: mysql
 
  -- Column names
@@ -33,46 +36,46 @@ Describe table contents
  -- Indexes
  show index from <table>;
 
-Server-side help
-----------------
+===== Server-side help =====
+--------------------
 .. code-block:: mysql
 
  -- contents
  help contents
 
-Check if a server is up
------------------------
+===== Check if a server is up =====
+--------------------
 ::
 
  mysqladmin ping
 
 
-Create a database
------------------
+===== Create a database =====
+--------------------
 .. code-block:: mysql
    
  create database <databasename>;
 
-Import database
----------------
+===== Import database =====
+--------------------
 ::
 
  mysql -u username -p<password> database < filename.sql
 
-Export database
----------------
+===== Export database =====
+--------------------
 ::
 
  mysqldump -u username -p<password> database > filename.sql 
 
-Delete database
----------------
+===== Delete database =====
+--------------------
 .. code-block:: mysql
 
  drop database <databasename>;
 
-User management
----------------
+===== User management =====
+--------------------
 .. code-block:: mysql
 
  -- Create a user
@@ -82,8 +85,8 @@ User management
  -- Delete a user
  DROP USER 'example_user'@'localhost';
 
-Show grants
------------
+===== Show grants =====
+--------------------
 .. code-block:: mysql
 
    -- show grants for current user
@@ -91,8 +94,8 @@ Show grants
    -- show grants for particular user
    show grants for 'user'@'example.com';
 
-Variables
----------
+===== Variables =====
+--------------------
 .. code-block:: mysql
 
   -- session variables
@@ -102,8 +105,8 @@ Variables
   SHOW GLOBAL VARIABLES;
   SET GLOBAL sort_buffer_size=1000000;
 
-Resetting root password
------------------------
+===== Resetting root password =====
+--------------------
 ::
 
  /etc/init.d/mysql stop
@@ -122,22 +125,22 @@ Resetting root password
  # (ctrl-c to kill mysql)
  service mysql start
 
-Create prefix index
--------------------
+===== Create prefix index =====
+--------------------
 .. code-block:: mysql
 
  alter table TABLENAME.COLUMN
  add key (COLUMN(n));
 
-See what engine the table uses
-------------------------------
+===== See what engine the table uses =====
+--------------------
 .. code-block:: mysql
 
  show table status
  like 'table_name' \G
 
-See running processes
----------------------
+===== See running processes =====
+--------------------
 .. code-block:: mysql
 
  -- Quick glance
@@ -145,10 +148,11 @@ See running processes
  -- sort by user
  select * from information_schema.processlist where user='foobar';
 
-Isolation Levels
-----------------
+===== Isolation Levels =====
+--------------------
 
 | Isolation level  | dirty reads possible | nonrepeatable reads possible | phantom reads possible | locking reads |
+|------------------|----------------------|------------------------------|------------------------|---------------|
 | READ UNCOMMITTED | t                    | t                            | t                      | f             |
 | READ COMMITTED   | f                    | t                            | t                      | f             |
 | REPEATABLE READ  | f                    | f                            | t                      | f             |
@@ -158,60 +162,60 @@ Isolation Levels
 
  SET SESSION TRANSACTION ISOLATION LEVEL [level];
 
-Autocommit
-----------
+===== Autocommit =====
+--------------------
 .. code-block:: mysql
 
  SHOW VARIABLES LIKE 'AUTOCOMMIT';
  SET AUTOCOMMIT=[0|1]
 
-Repairing
----------
+===== Repairing =====
+--------------------
 .. code-block:: mysql
 
  check table [tablename]
  repair table [tablename]
 
-InnoDB engine
--------------
+===== InnoDB engine =====
+--------------------
 has high overhead, but row-level locking with multiversion concurrency control (MVCC)
 
-Memory engine
--------------
+===== Memory engine =====
+--------------------
 uses table-locking, but is speedy
 
-Archive engine
---------------
+===== Archive engine =====
+--------------------
 * Only uses INSERT and SELECT
 * Compresses each new row with zlib
 * Low disk I/O
 * Ideal for logging
 
-NDB Cluster Engine
-------------------
+===== NDB Cluster Engine =====
+--------------------
 * Consists of data nodes, management nodes, and SQL nodes
 * Real-time performance with redunancy and load-balancing capabilities
 * Complex joins are slow, but single table lookups can be fast
 
-Falcon Engine
--------------
+===== Falcon Engine =====
+--------------------
 * Uses MVCC, tries to keep transactions in memory
 * (need to see where it's development is at now)
 
-soliddb engine
---------------
+===== soliddb engine =====
+--------------------
 * similar to InnoDB
 
-PBXT (Primebase XT) engine
---------------------------
+===== PBXT (Primebase XT) engine =====
+--------------------
 * Has high write concurrency
 
-Maria
------
+===== Maria =====
+--------------------
 * (needs to be looked into)
 
-Good ways to benchmark
-----------------------
+===== Good ways to benchmark =====
+--------------------
 * Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run
 * Use fresh snapshots between benchmarks
 * Full stack tools:
@@ -219,7 +223,7 @@ Good ways to benchmark
   * ab
   * http_load
 
-    * ``http_load -rate [requests_per_sec] -parallel [num_processes] -seconds [time] [url_file]``
+	* ``http_load -rate [requests_per_sec] -parallel [num_processes] -seconds [time] [url_file]``
 
   * JMeter
 
@@ -230,35 +234,35 @@ Good ways to benchmark
   * sql-bench
   * Super Smack
 
-Optimizing
-----------
+===== Optimizing =====
+--------------------
 * Avoid NULL when possible
 * ``optimize table``
 
-indexing
---------
+===== indexing =====
+--------------------
 
 * Isolate the query column
 * Try to simplify any math, and use literals when possible
 * When indexing char colums, try using just a few letters
   * good target is ``count(distinct name) / count(*)``
 
-Check the slow query log
-------------------------
+===== Check the slow query log =====
+--------------------
 ::
 
  log-slow-queries = file_name
 
-Run profiling
--------------
+===== Run profiling =====
+--------------------
 ::
 
  set profiling = 1;
  * run query *
  show profile;
 
-Timezones
----------
+===== Timezones =====
+--------------------
 .. code-block:: mysql
 
  -- see what time zones are in use
@@ -268,24 +272,24 @@ Timezones
  -- set session time zone
  SET time_zone = <timezone>;
 
-Get version
------------
+===== Get version =====
+--------------------
 ::
 
  mysqladmin version
 
-Rotate logs
------------
+===== Rotate logs =====
+--------------------
 ::
 
  mysqladmin flush-logs
 
-Search for foreign key use
---------------------------
+===== Search for foreign key use =====
+--------------------
 ::
 
  select * from KEY_COLUMN_USAGE where REFERENCED_TABLE_NAME = 'tbl_name';
 
-Good books
-----------
+===== Good books =====
+--------------------
 - High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko

@@ -1,14 +1,17 @@
-sed
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== sed ======
 ===
 
-Delete all lines matching a pattern
------------------------------------
+===== Delete all lines matching a pattern =====
+--------------------
 ::
 
  sed -i '/pattern to match/d' ./infile
 
-Prepend a file
---------------
+===== Prepend a file =====
+--------------------
 ::
 
  sed -i '1i header line' ./infile

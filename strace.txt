@@ -5,7 +5,7 @@ Wiki-Format: zim 0.4
 :date: 2016-08-30
 
 | flag | description                          |
-|------|--------------------------------------|
+|:-----|:-------------------------------------|
 | -f   | trace child processes                |
 | -e   | trace=file show only file operations |
 

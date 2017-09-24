@@ -1,9 +1,12 @@
-Django - admin mode
--------------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Django - admin mode ======
+--------------------
 :tags: django 
 
 
-Enabling admin mode
+===== Enabling admin mode =====
 ==============================
 * Uncomment "django.contrib.admin" in the ~INSTALLED_APPS setting.
 * ./manage.py syncdb
@@ -17,7 +20,7 @@ Enabling admin mode
 
  admin.site.register(Thing)
 
-Reset admin password w/o password reset
+===== Reset admin password w/o password reset =====
 =======================================
 ::
  ./manage.py shell

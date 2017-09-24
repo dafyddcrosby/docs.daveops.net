@@ -1,5 +1,8 @@
-SmartOS
--------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SmartOS ======
+--------------------
 :tags: SmartOS
 
 * vmadm - start, stop, etc virtual machines

@@ -1,10 +1,13 @@
-Paul Gibbs
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Paul Gibbs ======
 ==========
 :date: 2015-04-28
 :tags: People
 
-Learning Contract
------------------
+===== Learning Contract =====
+--------------------
 
 - Diagnose your learning needs
 - Specify your learning objectives (why you are learning them)
@@ -15,8 +18,8 @@ Learning Contract
 - Carry out contract
 - Evaluate your learning
 
-Reflective Cycle
-----------------
+===== Reflective Cycle =====
+--------------------
 
 * Description
 * Feelings

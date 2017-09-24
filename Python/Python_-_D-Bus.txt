@@ -1,9 +1,12 @@
-Python - D-Bus
---------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Python - D-Bus ======
+--------------------
 :tags: Python 
 
 
-Connecting to D-Bus
+===== Connecting to D-Bus =====
 ==============================
 .. code-block:: python
 
@@ -11,6 +14,6 @@ Connecting to D-Bus
  
  bus = dbus.SystemBus()
  try:
-     thing = bus.get_object('com.tech.Thing', '/com/tech/Thing')
+	 thing = bus.get_object('com.tech.Thing', '/com/tech/Thing')
  except:
-     print("Oh snap, couldn't connect")
+	 print("Oh snap, couldn't connect")

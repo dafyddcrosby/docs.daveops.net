@@ -1,4 +1,7 @@
-MySQL - CSV Engine
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== MySQL - CSV Engine ======
 ==================
 :date: 2016-09-29
 

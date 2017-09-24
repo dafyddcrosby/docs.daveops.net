@@ -1,4 +1,7 @@
-Selling software
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Selling software ======
 ================
 
 Customers want ''benefits'', not features. Users do not have a "software" problem

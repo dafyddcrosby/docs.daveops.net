@@ -5,31 +5,31 @@ Wiki-Format: zim 0.4
 :date: 2015-12-07
 :modified: 2017-04-28
 
-Generate GPG keypair
+===== Generate GPG keypair =====
 --------------------
 ::
 
  gpg --gen-key
 
-Export the public key
+===== Export the public key =====
 --------------------
 ::
 
  gpg --armor --export user@example.com > user.gpg.pub
 
-Encrypt a file
+===== Encrypt a file =====
 --------------------
 ::
 
  gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
 
-Decrypt a file
+===== Decrypt a file =====
 --------------------
 ::
 
   gpg --output <file> --decrypt <file>.gpg
 
-Show key fingerprints
+===== Show key fingerprints =====
 --------------------
 ::
 
@@ -38,7 +38,7 @@ Show key fingerprints
  gpg --list-keys --fingerprint --keyid-format=short
 
 
-Verify signature of document
+===== Verify signature of document =====
 --------------------
 ::
 
@@ -47,28 +47,28 @@ Verify signature of document
  # Detached signature
  gpg --verify doc.sig doc
 
-Generate a subkey
+===== Generate a subkey =====
 --------------------
 ::
 
   gpg --edit-key KEYNAME
   gpg> addkey
 
-List private keys
+===== List private keys =====
 --------------------
 ::
 
   gpg --list-secret-keys
   # A # after the letters sec means that the secret key is not usable
 
-Deleting keys
+===== Deleting keys =====
 --------------------
 ::
 
   gpg --delete-key USERNAME
   gpg --delete-secret-key USERNAME
 
-Links
+===== Links =====
 --------------------
 
 `GNU Privacy Handbook <https://www.gnupg.org/gph/en/manual.html>`_

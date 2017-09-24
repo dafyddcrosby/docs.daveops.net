@@ -1,9 +1,12 @@
-PHP - Binary
-------------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== PHP - Binary ======
+--------------------
 :tags: php
 
 
-Read a binary file
+===== Read a binary file =====
 ==============================
 .. code-block:: php
 
@@ -13,7 +16,7 @@ Read a binary file
  fclose($handle);
  ?>
 
-Binary craziness
+===== Binary craziness =====
 ==============================
 .. code-block:: php
 
@@ -22,7 +25,7 @@ Binary craziness
  decbin();
  ?>
 
-Playing with endianness
+===== Playing with endianness =====
 ==============================
 .. code-block:: php
 
@@ -32,7 +35,7 @@ Playing with endianness
  strrev(sprintf("%016b", $int));
  ?>
 
-Unpacking binary file formats
+===== Unpacking binary file formats =====
 ==============================
 .. code-block:: php
 
@@ -42,31 +45,31 @@ Unpacking binary file formats
  function get_gif_header($image_file)
  {
   
-     /* Open the image file in binary mode */
-     if(!$fp = fopen ($image_file, 'rb')) return 0;
+	 /* Open the image file in binary mode */
+	 if(!$fp = fopen ($image_file, 'rb')) return 0;
   
-     /* Read 20 bytes from the top of the file */
-     if(!$data = fread ($fp, 20)) return 0;
+	 /* Read 20 bytes from the top of the file */
+	 if(!$data = fread ($fp, 20)) return 0;
   
-     /* Create a format specifier */
-     $header_format = 
-             'A6Version/' . # Get the first 6 bytes
-             'C2Width/' .   # Get the next 2 bytes
-             'C2Height/' .  # Get the next 2 bytes
-             'C1Flag/' .    # Get the next 1 byte
-             '@11/' .       # Jump to the 12th byte
-             'C1Aspect';    # Get the next 1 byte
+	 /* Create a format specifier */
+	 $header_format = 
+			 'A6Version/' . # Get the first 6 bytes
+			 'C2Width/' .   # Get the next 2 bytes
+			 'C2Height/' .  # Get the next 2 bytes
+			 'C1Flag/' .    # Get the next 1 byte
+			 '@11/' .       # Jump to the 12th byte
+			 'C1Aspect';    # Get the next 1 byte
  
-     /* Unpack the header data */
-     $header = unpack ($header_format, $data);
+	 /* Unpack the header data */
+	 $header = unpack ($header_format, $data);
   
-     $ver = $header['Version'];
+	 $ver = $header['Version'];
   
-     if($ver == 'GIF87a' || $ver == 'GIF89a') {
-         return $header;
-     } else {
-         return 0;
-     }
+	 if($ver == 'GIF87a' || $ver == 'GIF89a') {
+		 return $header;
+	 } else {
+		 return 0;
+	 }
  }
   
  /* Run our example */
@@ -75,13 +78,13 @@ Unpacking binary file formats
  /*
  Array
  (
-     [Version] => GIF89a
-     [Width1] => 97
-     [Width2] => 0
-     [Height1] => 33
-     [Height2] => 0
-     [Flag] => 247
-     [Aspect] => 0
+	 [Version] => GIF89a
+	 [Width1] => 97
+	 [Width2] => 0
+	 [Height1] => 33
+	 [Height2] => 0
+	 [Flag] => 247
+	 [Aspect] => 0
  )
  */
  ?>

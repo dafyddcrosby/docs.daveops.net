@@ -1,22 +1,25 @@
-SmartDataCenter
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SmartDataCenter ======
 ===============
 :date: 2015-02-26
 :tags: SmartOS
 
-Find VM by alias
-----------------
+===== Find VM by alias =====
+--------------------
 ::
 
  sdc-vmapi /vms | json -H -c "this.alias &amp;&amp; this.alias.match(/riak/)"
 
-Output fwapi rules
-------------------
+===== Output fwapi rules =====
+--------------------
 ::
 
  sdc-fwapi /rules
 
-Update resolvers
-----------------
+===== Update resolvers =====
+--------------------
 ::
 
  sdc-vmapi  /vms/<uuid>?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"] }'

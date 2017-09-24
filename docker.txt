@@ -1,9 +1,12 @@
-Docker
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Docker ======
 ======
 :date: 2016-11-22
 :modified: 2017-03-07
 
-CLI
+===== CLI =====
 ---
 ::
 
@@ -17,8 +20,8 @@ CLI
   docker build -t TAGNAME . # in dir of Dockerfile
 
 
-Dockerfile syntax
------------------
+===== Dockerfile syntax =====
+--------------------
 ::
 
   FROM image_name:image_tag

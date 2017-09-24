@@ -1,12 +1,15 @@
-CVsync
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== CVsync ======
 ======
 :date: 2016-03-04
 :tags: OpenBSD, version control
 
 http://www.openbsd.org/cvsync.html
 
-Check available modules
------------------------
+===== Check available modules =====
+--------------------
 ::
 
   cvsync cvsync://<host>[:<port>]/</port></host>

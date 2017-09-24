@@ -1,10 +1,13 @@
-PyPI
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== PyPI ======
 ----
 :tags: Python 
 
 * http://pypi.python.org/pypi?%3Aaction=list_classifiers
 
-Uploading a new package
+===== Uploading a new package =====
 =======================
 ::
 

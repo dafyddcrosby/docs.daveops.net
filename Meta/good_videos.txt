@@ -1,4 +1,7 @@
-Good Videos
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Good Videos ======
 ===========
 :date: 2015-02-20
 

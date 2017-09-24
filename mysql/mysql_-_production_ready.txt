@@ -1,36 +1,39 @@
-MySQL - Production Ready
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== MySQL - Production Ready ======
 ========================
 :date: 2016-5-16
 :modified: 2017-03-17
 
-Remove all anonymous accounts
------------------------------
+===== Remove all anonymous accounts =====
+--------------------
 ::
 
   DROP USER ''@'localhost';
   DROP USER ''@'hostname';
 
-Remove all non-localhost root users
------------------------------------
+===== Remove all non-localhost root users =====
+--------------------
 
-Remove test databases
----------------------
+===== Remove test databases =====
+--------------------
 ::
 
   DELETE FROM mysql.db WHERE Db LIKE 'test%';
   FLUSH PRIVILEGES;
   DROP DATABASE test;
 
-Set timezone to UTC
--------------------
+===== Set timezone to UTC =====
+--------------------
 For safe measure, don't just set the time zone in MySQL, but also set the system time zone to UTC
 
 ::
 
   default-time-zone=UTC
 
-Change the default prompt
--------------------------
+===== Change the default prompt =====
+--------------------
 ::
 
   [mysql]

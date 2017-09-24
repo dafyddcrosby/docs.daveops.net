@@ -1,9 +1,12 @@
-Python - XMLRPC
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Python - XMLRPC ======
 ===============
 :tags: Python 
 
-Connecting to an XMLRPC server
-------------------------------
+===== Connecting to an XMLRPC server =====
+--------------------
 .. code-block:: python
 
  import xmlrpclib

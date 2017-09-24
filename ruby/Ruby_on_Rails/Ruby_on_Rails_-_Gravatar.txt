@@ -1,10 +1,13 @@
-Ruby on Rails - Gravatar
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Ruby on Rails - Gravatar ======
 ========================
 :tags: Ruby, Ruby on Rails
 
 
-Helper to return Gravatar image
--------------------------------
+===== Helper to return Gravatar image =====
+--------------------
 .. code-block:: ruby
 
  # Returns the Gravatar (http://gravatar.com/) for the given user.

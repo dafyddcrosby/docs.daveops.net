@@ -1,4 +1,7 @@
-Refactorings
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Refactorings ======
 ============
 
 - Extract method -> move block of code into a separate function

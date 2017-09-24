@@ -1,9 +1,12 @@
-glibc
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== glibc ======
 =====
 :date: 2016-03-23
 
-Get version
------------
+===== Get version =====
+--------------------
 ::
 
   /lib/libc.so.6

@@ -1,4 +1,7 @@
-EPUB files
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== EPUB files ======
 ==========
 
 http://code.google.com/p/epubcheck/

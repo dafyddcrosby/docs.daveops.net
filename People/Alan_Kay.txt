@@ -1,11 +1,14 @@
-Alan Kay
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Alan Kay ======
 ========
 :date: 2017-04-19
 :tags: People
 
 https://www.quora.com/profile/Alan-Kay-11
 
-Xerox PARC Principles
+===== Xerox PARC Principles =====
 --------------------
 
 1. Visions not goals

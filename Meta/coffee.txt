@@ -1,4 +1,7 @@
-Coffee
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Coffee ======
 ======
 :date: 2016-03-04
 

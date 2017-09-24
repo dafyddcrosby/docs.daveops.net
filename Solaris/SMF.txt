@@ -6,24 +6,24 @@ Wiki-Format: zim 0.4
 :modified: 2017-03-08
 :tags: init
 
-Clear maintenance mode and restart
+===== Clear maintenance mode and restart =====
 --------------------
 ::
 
  svcadm clear <FMRI>
 
-List services
+===== List services =====
 --------------------
 ::
 
  svcs -a
 
-Logs
+===== Logs =====
 ----
 
 /var/svc/log
 
-Links
+===== Links =====
 --------------------
 
 - http://bnsmb.de/solaris/My_Little_SMF_FAQ.html

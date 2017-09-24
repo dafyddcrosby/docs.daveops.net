@@ -1,8 +1,7 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-------
-Python
+====== Python ======
 --------------------
 :date: 2015-03-06
 :tags: Python
@@ -14,11 +13,11 @@ Python
 .. TODO - paramiko
 .. TODO - threading, multiprocessing
 
-Essential third-party tools
+===== Essential third-party tools =====
 ==============================
 `autopep8 <http://pypi.python.org/pypi/autopep8>`_
 
-Getopts
+===== Getopts =====
 ==============================
 .. code-block:: python
 
@@ -40,7 +39,8 @@ Getopts
 	 elif opt in ('--server'):
 		 server = val
 
-Opening a file
+
+===== Opening a file =====
 ==============================
 .. code-block:: python
 
@@ -51,7 +51,8 @@ Opening a file
  except IOError, err:
 	 print(err)
 
-Syntax cheatsheet
+
+===== Syntax cheatsheet =====
 ==============================
 .. code-block:: python
 
@@ -68,13 +69,14 @@ Syntax cheatsheet
  if __name__ == "__main__":
 	 main()
 
-Remove duplicates from a list
+
+===== Remove duplicates from a list =====
 ==============================
 .. code-block:: python
 
  the_list = list(set(the_list))
 
-Profile a program
+===== Profile a program =====
 ==============================
 http://docs.python.org/library/profile.html
 
@@ -83,7 +85,7 @@ http://docs.python.org/library/profile.html
  import profile
  profile.run("main()")
 
-Launch REPL when line is hit
+===== Launch REPL when line is hit =====
 ==============================
 .. code-block:: python
 
@@ -92,7 +94,7 @@ Launch REPL when line is hit
 
 
 
-Logging
+===== Logging =====
 ==============================
 .. code-block:: python
 
@@ -100,7 +102,7 @@ Logging
  logging.basicConfig(filename='myapp.log', level=logging.INFO)
  logging.warning('%s before you %s', 'Look', 'leap!')
 
-Named tuples (ghetto classes)
+===== Named tuples (ghetto classes) =====
 ==============================
 .. code-block:: python
 
@@ -115,7 +117,8 @@ Named tuples (ghetto classes)
  for prisoner in [ hogan, lebeau ]:
 	 print '%s is a %d, serial: %s' % prisoner
 
-Tab completion in Python shell
+
+===== Tab completion in Python shell =====
 ==============================
 If you don't have access to IPython,
 
@@ -124,7 +127,7 @@ If you don't have access to IPython,
  import rlcompleter, readline
  readline.parse_and_bind('tab: complete')
 
-Tar a bunch of files
+===== Tar a bunch of files =====
 ==============================
 
 .. code-block:: python
@@ -135,14 +138,14 @@ Tar a bunch of files
 	  tar.add(name)
   tar.close()
 
-Run a simple webserver
+===== Run a simple webserver =====
 ==============================
 
 ::
 
  python -m SimpleHTTPServer
 
-Check Python version
+===== Check Python version =====
 ==============================
 .. code-block:: python
 
@@ -153,14 +156,16 @@ Check Python version
 	 # use an alternative implementation or warn the user
 	 ...
 
-| bit | description |
+| bit   | description                                                                                 |
+|-------|---------------------------------------------------------------------------------------------|
 | 1-8   | PY_MAJOR_VERSION (the 2 in 2.1.0a3)                                                         |
 | 9-16  | PY_MINOR_VERSION (the 1 in 2.1.0a3)                                                         |
 | 17-24 | PY_MICRO_VERSION (the 0 in 2.1.0a3)                                                         |
 | 25-28 | PY_RELEASE_LEVEL (0xA for alpha, 0xB for beta, 0xC for release candidate and 0xF for final) |
 | 29-32 | PY_RELEASE_SERIAL (the 3 in 2.1.0a3, zero for final releases)                               |
 
-Get Linux distribution
+
+===== Get Linux distribution =====
 ==============================
 .. code-block:: python
 
@@ -169,14 +174,15 @@ Get Linux distribution
  else:
 	 platform.linux_distribution()
 
-Inspect the stack
+
+===== Inspect the stack =====
 ==============================
 .. code-block:: python
    
  import inspect
  print " << ".join([i[3] for i in inspect.stack()])
 
-Get Python documentation through the browser
+===== Get Python documentation through the browser =====
 ============================================
 ::
 

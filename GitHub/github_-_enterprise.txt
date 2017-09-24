@@ -1,9 +1,12 @@
-GitHub - Enterprise
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== GitHub - Enterprise ======
 ===================
 :date: 2016-5-10
 :modified: 2017-08-02
 
-CLI
+===== CLI =====
 ---
 ::
 
@@ -14,8 +17,8 @@ CLI
  # Get webhook fails for a certain day
  ghe-webhook-logs -f -a YYYYMMDD
 
-Documentation
--------------
+===== Documentation =====
+--------------------
 
 - https://help.github.com/enterprise/2.6/admin/articles/command-line-utilities/
 - https://help.github.com/enterprise/2.6/admin/guides/

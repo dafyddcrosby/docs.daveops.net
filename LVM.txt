@@ -1,10 +1,13 @@
-LVM
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== LVM ======
 ===
 :date: 2016-11-28
 :modified: 2017-03-30
 
-Cheatsheet
----------------------------
+===== Cheatsheet =====
+--------------------
 ::
 
   # Initialize a disk for LVM
@@ -19,6 +22,6 @@ Cheatsheet
   # Create a logical volume with 100% free space
   lvcreate -l 100%free -n VOLUME_NAME GROUP_NAME
 
-Links
------
+===== Links =====
+--------------------
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Logical_Volume_Manager_Administration/LVM_examples.html

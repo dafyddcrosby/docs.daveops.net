@@ -1,4 +1,7 @@
-swift
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== swift ======
 =====
 :date: 2017-02-18
 

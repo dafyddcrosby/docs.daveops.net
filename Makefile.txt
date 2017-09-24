@@ -1,8 +1,10 @@
-Makefile
---------
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Makefile ======
 :date: 2015-03-07
 
-{{{code: type="Makefile"
+{{{code: linenumbers="True"
 name= project_name
 version= 3.3
 

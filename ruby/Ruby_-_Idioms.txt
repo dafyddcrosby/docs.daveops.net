@@ -1,12 +1,15 @@
-Ruby - Idioms
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Ruby - Idioms ======
 =============
 :tags: Ruby
 :date: 2015-02-14
 
-Naming
-------
+===== Naming =====
+--------------------
 
-{{{code: type="ruby"
+{{{code: linenumbers="True"
 local_variable
 @instance_variable
 @@class_variable

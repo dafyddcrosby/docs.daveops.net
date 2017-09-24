@@ -1,48 +1,51 @@
-SQL
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SQL ======
 ===
 :date: 2015-03-06
 :tags: databases
 
-To add a row
-------------
+===== To add a row =====
+--------------------
 .. code-block:: sql
 
  INSERT INTO table_name (column1, column2, column3,...)
  VALUES (value1, value2, value3,...)
 
-To update a row
----------------
+===== To update a row =====
+--------------------
 .. code-block:: sql
 
  UPDATE table_name
  SET column1=value, column2=value2,...
  WHERE some_column=some_value
 
-To sort a table
----------------
+===== To sort a table =====
+--------------------
 .. code-block:: sql
    
  SELECT row1, row2
  FROM table
  ORDER BY row2 (ASC|DESC)
 
-Delete rows
------------
+===== Delete rows =====
+--------------------
 .. code-block:: sql
 
  DELETE FROM table_name
  WHERE some_column=some_value
 
-Search in fields
-----------------
+===== Search in fields =====
+--------------------
 .. code-block:: sql
 
  SELECT *
  FROM Persons
  WHERE City LIKE '%ville'
 
-Conditional statements
-----------------------
+===== Conditional statements =====
+--------------------
 .. code-block:: sql
 
  CASE WHEN condition THEN result
@@ -50,22 +53,22 @@ Conditional statements
  [ELSE result]
  END
 
-Format a date
--------------
+===== Format a date =====
+--------------------
 .. code-block:: sql
 
  SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
  FROM table
 
-Retrieve records within 90 days of stamp
-----------------------------------------
+===== Retrieve records within 90 days of stamp =====
+--------------------
 .. code-block:: sql
 
  FROM stockserialitems
  WHERE expirationdate < utc_timestamp() + interval 90 day
 
-Check for duplicate rows
-------------------------
+===== Check for duplicate rows =====
+--------------------
 .. code-block:: sql
 
  SELECT a, b, count(*) cnt 
@@ -74,8 +77,8 @@ Check for duplicate rows
  HAVING cnt > 1
  ORDER BY cnt asc;
 
-Standards
----------
+===== Standards =====
+--------------------
 
 1992
 1999

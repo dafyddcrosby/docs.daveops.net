@@ -1,21 +1,20 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
--------------
-Ruby on Rails
+====== Ruby on Rails ======
 --------------------
 :date: 2015-03-06
 :tags: Ruby, Ruby on Rails
 
 .. TODO - http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2
 
-Installing Rails
+===== Installing Rails =====
 ================
 ::
 
  gem install rails
 
-Setting up Rails
+===== Setting up Rails =====
 ================
 ::
 
@@ -28,25 +27,25 @@ Setting up Rails
  # Uncomment the ''root :to => "home#index"'' line
  $EDITOR config/routes.rb
 
-Scaffolding
+===== Scaffolding =====
 ===========
 ::
 
  rails generate scaffold Post user:references title:string{50} content:text
 
-Add indexes to migration
+===== Add indexes to migration =====
 ==============================
 ::
 
  rails g resource user name:index email:uniq
 
-Using Dreamhost
+===== Using Dreamhost =====
 ===============
 - Passenger must be enabled for domain/subdomain
 - Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
 - For database ``rake db:migrate RAILS_ENV=production``
 
-Validating Active Records
+===== Validating Active Records =====
 ==============================
 .. code-block:: ruby
 
@@ -58,27 +57,28 @@ Validating Active Records
 					 :length => { :minimum => 5 }
  end
 
-Ensure uniqueness at the db level
+==== Ensure uniqueness at the db level ====
 --------------------
 # ``rails generate migration add_index_to_users_email``
 # add to migration file under def change: ``add_index :users, :email, unique: true``
 # ``bundle exec rake db:migrate``
 
-Database
+===== Database =====
 ========
-Migrate to new model
+
+==== Migrate to new model ====
 --------------------
 ::
 
  rake db:migrate
 
-Return to previous model
+==== Return to previous model ====
 --------------------
 ::
 
  rake db:rollback
 
-Automated testing with guard and spork
+===== Automated testing with guard and spork =====
 ======================================
 -Add to Gemfile:
 
@@ -104,7 +104,7 @@ Automated testing with guard and spork
 - Add ``:cli => '--drb'`` to guard 'rspec'
 - ``bundle exec guard``
 
-Creating tables
+===== Creating tables =====
 ===============
 .. code-block:: ruby
 
@@ -115,22 +115,22 @@ Creating tables
    t.string   "email"
  end
 
-Reset test database
+===== Reset test database =====
 ===================
 ::
 
  bundle exec rake db:test:prepare
 
-Find code comment dev tags
+===== Find code comment dev tags =====
 ==============================
 To find TODO, FIXME, and OPTIMIZE comment tags, use ``rake notes``
 
-Simple wins
+===== Simple wins =====
 ===========
 * Use ``find_each`` instead of ``each`` when searching through large sets of iterables
 * Use ``content_tag`` to avoid XSS hacks
 
-Get versions
+===== Get versions =====
 ============
 ``rake about``
 

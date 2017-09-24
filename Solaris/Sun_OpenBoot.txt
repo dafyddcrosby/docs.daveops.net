@@ -1,33 +1,36 @@
-Sun OpenBoot
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Sun OpenBoot ======
 ============
 :tags: Sun
 
-Boot from CDROM
----------------
+===== Boot from CDROM =====
+--------------------
 ::
 
  boot cdrom
 
-Test hardware
--------------
+===== Test hardware =====
+--------------------
 ::
 
  test-all
 
-Show banner
------------
+===== Show banner =====
+--------------------
 ::
 
  banner
 
-Get ethernet address
+===== Get ethernet address =====
 --------------------
 ::
 
  .enet-addr
 
-Show hardware devices
----------------------
+===== Show hardware devices =====
+--------------------
 ::
 
  show-devs

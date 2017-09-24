@@ -1,9 +1,11 @@
----
-PHP
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== PHP ======
 ---
 :tags: php
 
-Datestamps
+===== Datestamps =====
 ==============================
 .. code-block:: php
 
@@ -14,7 +16,7 @@ Datestamps
  //2011/11/11
  ?> 
 
-Turn off error reporting
+===== Turn off error reporting =====
 ==============================
 .. code-block:: php
 
@@ -22,7 +24,7 @@ Turn off error reporting
  error_reporting(0)
  ?>
 
-Check if domain resolves
+===== Check if domain resolves =====
 ==============================
 .. code-block:: php
 
@@ -30,7 +32,7 @@ Check if domain resolves
  checkdnsrr($host)
  ?>
 
-Authenticating users
+===== Authenticating users =====
 ==============================
 
 .. code-block:: php
@@ -39,21 +41,21 @@ Authenticating users
  session_start();
  // Check for session injection
  if (isset($_REQUEST['_SESSION'])) {
-     session_destroy();
-     die('');
+	 session_destroy();
+	 die('');
  } elseif (isset($_SESSION['HTTP_USER_AGENT'])) {
-     if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
-         session_destroy();
-         die('');
-     }
+	 if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
+		 session_destroy();
+		 die('');
+	 }
  }
  // At end of page, let's regenerate the session ID
  if(isset($_SESSION['username'])) {
-     session_regenerate_id(TRUE);
+	 session_regenerate_id(TRUE);
  } 
  ?>
 
-Run a server instance with a script
+===== Run a server instance with a script =====
 ===================================
 Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.php
 
@@ -61,10 +63,11 @@ Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.ph
 
  php -S localhost:8000 router.php
 
-Validation
+===== Validation =====
 ==============================
-Numeric validation
------------------------------------
+
+==== Numeric validation ====
+--------------------
 .. code-block:: php
 
  <?php
@@ -72,7 +75,7 @@ Numeric validation
  is_numeric($var)
  ?>
 
-Export to CSV
+====== Export to CSV ======
 =============
 .. code-block:: php
 
@@ -85,7 +88,7 @@ Export to CSV
  header("Content-disposition: attachment; filename=rawlogs.csv");
  ?>
 
-Get filename
+====== Get filename ======
 ============
 .. code-block:: php
 
@@ -93,19 +96,19 @@ Get filename
  $FILE_NAME = basename($_SERVER["PHP_SELF"]);
  ?>
 
-Return multiple values
+====== Return multiple values ======
 ======================
 .. code-block:: php
 
  <?php
  function mult() {
-     return array(0, 1);
+	 return array(0, 1);
  }
  
  list ($zero, $one) = mult();
  ?>
 
-Create an array of objects
+====== Create an array of objects ======
 ==============================
 .. code-block:: php
 
@@ -126,7 +129,7 @@ Create an array of objects
  ?>
 
 
-Include PEAR (Dreamhost)
+====== Include PEAR (Dreamhost) ======
 ========================
 .. code-block:: php
 
@@ -135,7 +138,7 @@ Include PEAR (Dreamhost)
  set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
  ?>
 
-Scrape $_GET parameters
+====== Scrape $_GET parameters ======
 =======================
 If mod_rewrite or some other mechanism is preventing the filling of the $_GET array, use this:
 
@@ -145,7 +148,7 @@ If mod_rewrite or some other mechanism is preventing the filling of the $_GET ar
  parse_str($_SERVER['QUERY_STRING'], $_GET);
  ?>
 
-Convert command line arguments into GET variables
+====== Convert command line arguments into GET variables ======
 =================================================
 .. code-block:: php
 
@@ -153,7 +156,7 @@ Convert command line arguments into GET variables
  parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
  ?>
 
-Get PHP config info
+====== Get PHP config info ======
 ===================
 ::
 
@@ -162,7 +165,7 @@ Get PHP config info
  # Get location of php.ini
  php --ini
 
-Redirect to a different URL
+====== Redirect to a different URL ======
 ===========================
 .. code-block:: php
 
@@ -170,7 +173,7 @@ Redirect to a different URL
  header("Location: http://www.example.com/"); 
  ?>
 
-Syntax cheatsheet
+====== Syntax cheatsheet ======
 =================
 .. code-block:: php
 
@@ -185,19 +188,19 @@ Syntax cheatsheet
  
  $arr = array(1, 2, 3, 4);
  foreach ($arr as $value) {
-     print $value;
+	 print $value;
  }
  
  switch ($blah) {
    case 0:
-     // code
-     break;
+	 // code
+	 break;
    case 1:
-     // code
-     break;
+	 // code
+	 break;
    default:
-     // code
-     break;
+	 // code
+	 break;
  
  function foo () {
    return 0;

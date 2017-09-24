@@ -1,9 +1,12 @@
-Exiftool
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Exiftool ======
 ========
 :date: 2016-03-28
 
-Modify PDF metadata
--------------------
+===== Modify PDF metadata =====
+--------------------
 ::
 
   exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"

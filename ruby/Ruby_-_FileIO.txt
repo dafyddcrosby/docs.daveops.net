@@ -1,11 +1,14 @@
-Ruby - FileIO
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Ruby - FileIO ======
 =============
 :tags: Ruby
 :date: 2015-02-14
 :modified: 2017-01-03
 
-Write to a file
----------------
+===== Write to a file =====
+--------------------
 
 .. code-block:: ruby
 
@@ -13,13 +16,13 @@ Write to a file
   fp.write('bloop')
   fp.close
 
-Read individual chars
----------------------
+===== Read individual chars =====
+--------------------
 
 .. code-block:: ruby
 
   fp = File.open(filename, mode)
   fp.each_char do |char|
-    puts char
+	puts char
   end
   fp.close

@@ -6,57 +6,57 @@ Wiki-Format: zim 0.4
 :modified: 2016-06-09
 
 ===== Signals =====
-::
 
- # Rotate logs, kill children, reload configuration
- kill -SIGHUP httpd
- # Graceful stop
- kill -SIGWINCH httpd
- # Graceful restart
- kill -SIGUSR1 httpd
- # Immediate stop
- kill -SIGTERM httpd
+'''
+# Rotate logs, kill children, reload configuration
+kill -SIGHUP httpd
+# Graceful stop
+kill -SIGWINCH httpd
+# Graceful restart
+kill -SIGUSR1 httpd
+# Immediate stop
+kill -SIGTERM httpd
+'''
 
 ===== Test the configuration =====
-::
 
-  apachectl configtest
+'''
+apachectl configtest
+'''
 
 ===== General Hardening =====
 
 ==== SSL Config ====
 
 '''
- SSLProtocol          All -SSLv2 -SSLv3
- SSLHonorCipherOrder  on
- SSLCompression       off
- # HSTS (mod_headers is required) (15768000 seconds = 6 months)
- Header always set Strict-Transport-Security "max-age=15768000"
+SSLProtocol          All -SSLv2 -SSLv3
+SSLHonorCipherOrder  on
+SSLCompression       off
+# HSTS (mod_headers is required) (15768000 seconds = 6 months)
+Header always set Strict-Transport-Security "max-age=15768000"
 '''
-
 
 ==== General Apache Config ====
 
 '''
- # Deny access to root dir
- <Directory />
-	Options None
-	Order deny,allow
-	Deny from all
- </Directory>
+# Deny access to root dir
+<Directory />
+       Options None
+       Order deny,allow
+       Deny from all
+</Directory>
 
- # Disable indexes
- Options -Indexes
+# Disable indexes
+Options -Indexes
 
- # Disable server-side includes and CGI scripts
- Options -Includes
- Options -ExecCGI
+# Disable server-side includes and CGI scripts
+Options -Includes
+Options -ExecCGI
 
- # Disable product version
- ServerTokens Prod
- ServerSignature Off
+# Disable product version
+ServerTokens Prod
+ServerSignature Off
 '''
-
 
 ===== Misc =====
 * [[https://httpd.apache.org/docs/|Apache docs]]

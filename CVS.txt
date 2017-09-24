@@ -5,13 +5,13 @@ Wiki-Format: zim 0.4
 :date: 2015-12-01
 :tags: version control
 
-Tagging an instance
+===== Tagging an instance =====
 --------------------
 ::
 
   cvs rtag -D "2010-1-28" tag_name module_name
 
-Untagging an instance
+===== Untagging an instance =====
 --------------------
 ::
 

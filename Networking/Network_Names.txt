@@ -1,4 +1,7 @@
-Network Names
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Network Names ======
 =============
 :date: 2017-03-29
 
@@ -13,7 +16,7 @@ Use CNAMEs to wean off old names
 
 Pre-derive all current names before committing to a name scheme
 
-Links
------
+===== Links =====
+--------------------
 - https://www.nanog.org/meetings/nanog31/presentations/ringel.pdf
 

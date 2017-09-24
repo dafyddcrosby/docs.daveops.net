@@ -1,9 +1,12 @@
-Outsourcing
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Outsourcing ======
 ===========
 :date: 2017-05-29
 
-Tom Limoncelli
---------------
+===== Tom Limoncelli =====
+--------------------
 http://everythingsysadmin.com/2015/10/outsourcing-was-such-a-mistake.html
 
 ::

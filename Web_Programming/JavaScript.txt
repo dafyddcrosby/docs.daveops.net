@@ -1,4 +1,7 @@
-JavaScript
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== JavaScript ======
 ==========
 :tags: JavaScript
 
@@ -6,13 +9,13 @@ JavaScript
 .. TODO - http://matt.might.net/articles/learning-javascript-in-small-bites-part-3/
 .. TODO - http://matt.might.net/articles/learning-javascript-in-small-bites-part-4/
 
-Sweet libraries
----------------
+===== Sweet libraries =====
+--------------------
 http://jquery.com
 http://code.google.com/p/iui/
 
-Classes
--------
+===== Classes =====
+--------------------
 .. code-block:: javascript
  function Building(x,y,z) {
    this.x = x;

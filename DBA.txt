@@ -1,9 +1,12 @@
-DBA
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== DBA ======
 ===
 :date: 2016-06-06
 
-Responsibilities
-----------------
+===== Responsibilities =====
+--------------------
 
 - installs/configures/updates/migrates databases
 - develops and implements a backup strategy

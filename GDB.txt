@@ -4,7 +4,9 @@ Wiki-Format: zim 0.4
 ====== GDB ======
 :date: 2017-07-19
 
+[ ] clean up
 | !cmd                       | !desc                                                   |
+|----------------------------|---------------------------------------------------------|
 | !controlling execution     |                                                         |
 | r //arg1 ...//             | run program                                             |
 | s                          | step through program                                    |
@@ -34,10 +36,11 @@ Wiki-Format: zim 0.4
 | info registers             | show registers (excluding floating point)               |
 | macro expand //macro//     | expands a macro (requires -gdwarf-2 -g3 compiler flags) |
 
-| code | print type  |
-| x     | hexadecimal  |
-| u     | unsigned int |
-| d     | signed int   |
+| code | print type   |
+|------|--------------|
+| x    | hexadecimal  |
+| u    | unsigned int |
+| d    | signed int   |
 
 Check a core dump
 --------------------

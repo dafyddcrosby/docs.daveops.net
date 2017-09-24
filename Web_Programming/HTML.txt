@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== HTML ======
 
-Shim for old IE browsers
+===== Shim for old IE browsers =====
 ==============================
 .. code-block:: html
 
@@ -11,7 +11,7 @@ Shim for old IE browsers
  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
  <![endif]-->
 
-Forms
+===== Forms =====
 ==============================
 .. code-block:: html
 
@@ -25,7 +25,7 @@ Forms
  <input type="submit" value="Submit" />
  </form>
 
-Input attributes (HTML 5)
+===== Input attributes (HTML 5) =====
 ==============================
 * email
 * color
@@ -43,15 +43,16 @@ Input attributes (HTML 5)
 
 use {{{<input ... required>}}} to have the browser whine
 
-Code samples
+===== Code samples =====
 ==============================
 .. code-block:: html
 
  <code>print 'hello world'</code> prints <samp>hello world</samp>
 
-Canvas (HTML 5)
+===== Canvas (HTML 5) =====
 ==============================
-initialization
+
+==== initialization ====
 --------------------
 .. code-block:: html
 
@@ -63,13 +64,13 @@ initialization
    }
  </script>
 
-Fixed-meter bar (HTML 5)
+===== Fixed-meter bar (HTML 5) =====
 ==============================
 .. code-block:: html
 
  <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
 
-Progress bar (HTML 5)
+===== Progress bar (HTML 5) =====
 ==============================
 .. code-block:: html
 
@@ -77,22 +78,23 @@ Progress bar (HTML 5)
 
 Use JavaScript to move it around
 
-Autofocus input (HTML 5)
+===== Autofocus input (HTML 5) =====
 ==============================
 
 .. code-block:: html
  
  <input ... autofocus>
 
-Patterned input (HTML 5)
+===== Patterned input (HTML 5) =====
 ==============================
-Enter 15 digits
+
+==== Enter 15 digits ====
 --------------------
 .. code-block:: html
 
  <input type='text' pattern='[0-9]{15}'>
 
-Dropdown list for text input (HTML 5)
+===== Dropdown list for text input (HTML 5) =====
 =====================================
 .. code-block:: html
 
@@ -102,13 +104,13 @@ Dropdown list for text input (HTML 5)
    <option label='label2' value='value2'>
  </datalist>
 
-Editable content
+===== Editable content =====
 ==============================
 .. code-block:: html
 
  <p contenteditable="true">
 
-Link for phone numbers (mobile)
+===== Link for phone numbers (mobile) =====
 ===============================
 International calling code is required
 
@@ -116,25 +118,25 @@ International calling code is required
 
  <a href="tel:+14035555555">403-555-5555</a>
 
-To handle an extension
+==== To handle an extension ====
 --------------------
 .. code-block:: html
 
  <a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
 
-To use a fax line:
+==== To use a fax line: ====
 --------------------
 .. code-block:: html
 
  <a href="fax:+14035555555">403-555-5555</a>
 
-Doctype (HTML 5)
+===== Doctype (HTML 5) =====
 ==============================
 .. code-block:: html
 
  <!doctype html>
 
-Semantic tags (HTML 5)
+===== Semantic tags (HTML 5) =====
 ==============================
 * <section>
 * <nav>
@@ -155,7 +157,7 @@ Semantic tags (HTML 5)
 * <figcaption> (for figure tag)
 * <aside> (for p tags)
 
-HTML entities for accents
+===== HTML entities for accents =====
 ==============================
 
 | Modifier   | Example | HTML     |

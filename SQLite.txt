@@ -1,36 +1,39 @@
-SQLite
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SQLite ======
 ======
 :date: 2016-10-14
 :tags: databases
 
-Show all tables
----------------
+===== Show all tables =====
+--------------------
 .. code-block:: sqlite3
 
  .tables
 
-Show table schema
------------------
+===== Show table schema =====
+--------------------
 .. code-block:: sqlite3
 
  .schema tablename
 
-See if table exists
--------------------
+===== See if table exists =====
+--------------------
 .. code-block:: sqlite3
 
  SELECT name 
  FROM sqlite_master
  WHERE type='table'
 
-Export tables
--------------
+===== Export tables =====
+--------------------
 ::
 
   sqlite3 my.db .dump
 
-Datatypes
----------
+===== Datatypes =====
+--------------------
 * NULL. The value is a NULL value.
 * INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
 * REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.

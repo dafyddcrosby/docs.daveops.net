@@ -1,4 +1,7 @@
-Yukihiro Matsumoto
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== Yukihiro Matsumoto ======
 ==================
 :tags: people, Ruby
 :date: 2015-02-15

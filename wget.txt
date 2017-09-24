@@ -1,9 +1,12 @@
-wget
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== wget ======
 ====
 :date: 2016-03-29
 
-Mirror a website
-----------------
+===== Mirror a website =====
+--------------------
 ::
 
   wget -mk <site>

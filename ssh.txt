@@ -1,9 +1,12 @@
-SSH
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== SSH ======
 ===
 :date: 2015-07-20
 :modified: 2017-01-23
 
-Generating a new key
+===== Generating a new key =====
 --------------------
 ::
 
@@ -12,28 +15,28 @@ Generating a new key
  # Generate a new ed25519 keypair
  ssh-keygen -t ed25519 -C "<username> generated <date>"
 
-Getting key fingerprint
------------------------
+===== Getting key fingerprint =====
+--------------------
 ::
 
  ssh-keygen -lf .ssh/id_rsa.pub
 
-Security notes
---------------
+===== Security notes =====
+--------------------
 
-General
+==== General ====
 ~~~~~~~
 * Use protocol 2
 * Use a key strength of at least 4096 bits
 
-Client
+==== Client ====
 ~~~~~~
 
 * If using ssh-add (ie the ssh-agent), also use `-c` and `-t <seconds>`
   arguments, and use an askpass program to confirm connections
 * Use HashKnownHosts to obscure which hosts you connect to. To retroactively do this on an existing file `ssh-keygen -H`
 
-Server
+==== Server ====
 ~~~~~~
 
 * Use something like fail2ban, and rate limit incoming connections

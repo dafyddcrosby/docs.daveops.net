@@ -1,13 +1,16 @@
-GitHub - Markdown
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== GitHub - Markdown ======
 =================
 :date: 2016-02-03
 
-Headings
---------
+===== Headings =====
+--------------------
 1 to 6 # symbols
 
-Emphasis
---------
+===== Emphasis =====
+--------------------
 ::
 
    *This text will be italic*
@@ -16,8 +19,8 @@ Emphasis
    __This will also be bold__
    _You **can** combine them_
 
-Links
------
+===== Links =====
+--------------------
 ::
 
    http://example.com - automatic
