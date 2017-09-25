@@ -2,7 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Forth ======
-=====
 
 | words | action                        |
 |-------|-------------------------------|
@@ -16,7 +15,6 @@ words | action
 include <filename> | includes a forth source file
 
 ===== colon definitions =====
---------------------
 ::
 
  : funcname ( stack effect comment )

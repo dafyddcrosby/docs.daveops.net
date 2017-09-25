@@ -8,4 +8,7 @@ Wiki-Format: zim 0.4
 * [[+smtp]]
 
 ===== Videos =====
-- `Email Hates the Living (Ricardo Signes, rjbs) <https://www.youtube.com/watch?v=4s9IjkMAmns>`_
+* [[https://www.youtube.com/watch?v=4s9IjkMAmns|Email Hatest the Living (Ricardo Signes, rjbs)]]
+
+===== Links =====
+* [[https://www.jwz.org/blog/2017/09/html-email-was-that-your-fault/|jwz: "HTML email, was that your fault?"]]

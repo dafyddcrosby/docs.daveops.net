@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-25T06:36:02-06:00
+
+====== X Windows ======
+Created Monday 25 September 2017
+
+===== Links =====
+* [[http://minnie.tuhs.org/pipermail/tuhs/2017-September/010471.html|X and NeWS history]]
