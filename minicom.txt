@@ -3,6 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Minicom ======
 :date: 2017-02-17
+@SerialConsole
 
 ===== Attach to a serial console =====
 ::

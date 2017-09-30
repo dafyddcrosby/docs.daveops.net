@@ -12,3 +12,4 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 * [[https://www.jwz.org/blog/2017/09/html-email-was-that-your-fault/|jwz: "HTML email, was that your fault?"]]
+* [[https://mxtoolbox.com/SuperTool.aspx|blacklist checking]]

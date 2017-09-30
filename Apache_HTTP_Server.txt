@@ -27,6 +27,7 @@ Wiki-Format: zim 0.4
 | fullstatus    | display full status report (mod_status and text browser required) |
 | configtest    | test the configuration                                            |
 
+
 ===== General Hardening =====
 
 ==== SSL Config ====
@@ -60,6 +61,9 @@ Options -ExecCGI
 # Disable product version
 ServerTokens Prod
 ServerSignature Off
+
+# Disable TRACE
+TraceEnable Off
 '''
 
 

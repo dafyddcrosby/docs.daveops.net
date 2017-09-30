@@ -2,13 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MySQL - Replication ======
-===================
 :date: 2016-01-13
 :date: 2016-05-16
 :tags: MySQL, databases
 
 ===== Set the replica binlog coordinates =====
---------------------
 ::
 
   CHANGE MASTER TO
@@ -17,7 +15,6 @@ Wiki-Format: zim 0.4
 
 
 ===== Check the binlog in a human readable way =====
---------------------
 ::
 
   mysqlbinlog <binlog file>

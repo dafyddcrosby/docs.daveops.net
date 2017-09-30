@@ -8,6 +8,8 @@ Creation-Date: 2017-09-12T12:29:48-06:00
 https://arstechnica.com/information-technology/2017/09/bluetooth-bugs-open-billions-of-devices-to-attacks-no-clicking-required/
 http://go.armis.com/hubfs/BlueBorne%20Technical%20White%20Paper.pdf
 
+It turns out most Bluetooth stacks are terrible.
+
 ===== Design of Display Processors =====
 https://twitter.com/rob_pike/status/907164275965255685
 http://cva.stanford.edu/classes/cs99s/papers/myer-sutherland-design-of-display-processors.pdf
@@ -42,3 +44,13 @@ http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/
 ===== Optionsbleed =====
 CVE-2017-9798
 https://blog.fuzzing-project.org/60-Optionsbleed-HTTP-OPTIONS-method-can-leak-Apaches-server-memory.html
+
+===== FIN7 Group Uses JavaScript and Stealer DLL Variant in New Attacks =====
+http://blog.talosintelligence.com/2017/09/fin7-stealer.html
+What makes this one interesting is the obfuscation techniques
+
+''The function body of the evaluated JavaScript appears to be within a multi-line comment, however, in reality this is evaluated as a multi-line string.''
+
+===== Linux PIE/stack corruption (CVE-2017-1000253) =====
+
+https://www.qualys.com/2017/09/26/cve-2017-1000253/cve-2017-1000253.txt

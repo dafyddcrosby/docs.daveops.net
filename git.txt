@@ -7,7 +7,6 @@ Wiki-Format: zim 0.4
 :tags: version control
 
 ===== Create bare repository =====
-======================
 ::
 
  mkdir -p project.git && cd project.git && git --bare init
@@ -20,7 +19,6 @@ Wiki-Format: zim 0.4
 
 
 ===== Checkout remote repository =====
-==========================
 ::
 
  git fetch
@@ -28,7 +26,6 @@ Wiki-Format: zim 0.4
 
 
 ===== Sequential versioning =====
-=====================
 ::
 
  git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
@@ -104,6 +101,13 @@ on server, put this in ``hooks/post-receive``
 ::
 
  git log --graph --oneline --abbrev-commit --decorate
+
+===== See commits from individual =====
+
+'''
+git log --author="david"
+'''
+
 
 ===== Get list of contributors =====
 ========================
