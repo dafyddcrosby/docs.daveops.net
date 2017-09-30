@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== memcached ======
-:date: 2016-03-30
+
 
 ===== Get a list of keys =====
 Note - this is an undocumented interface in the C memcached server

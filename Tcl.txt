@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Tcl ======
 ===
-:date: 2017-05-19
+
 :tags: Tcl
 
 ===== Syntax cheatsheet =====

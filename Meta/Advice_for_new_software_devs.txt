@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Advice for new software devs ======
-:date: 2015-12-01
+
 :tags: advice 
 
 * Build the right *it* before you build it *right*. Do a [[http://www.pretotyping.org|pretotype]] before a prototype to see if it's even worth the effort (you'll find often it's not).

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== MySQL - Configuration ======
 =====================
-:date: 2016-5-10
+
 :tags: MySQL
 
 ===== Variables =====

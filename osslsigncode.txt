@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== osslsigncode ======
 ============
-:date: 2015-12-17
+
 
 ===== Sign a binary =====
 --------------------

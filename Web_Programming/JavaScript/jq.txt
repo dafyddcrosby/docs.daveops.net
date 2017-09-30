@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== jq ======
-:date: 2016-03-24
+
 :tags: JavaScript
 
 https://jqplay.org/

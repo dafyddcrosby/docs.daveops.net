@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Scout2 ======
 ======
-:date: 2017-07-06
+
 :tags: AWS
 
 ::

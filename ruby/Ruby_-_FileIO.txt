@@ -4,8 +4,8 @@ Wiki-Format: zim 0.4
 ====== Ruby - FileIO ======
 =============
 :tags: Ruby
-:date: 2015-02-14
-:modified: 2017-01-03
+
+
 
 ===== Write to a file =====
 --------------------

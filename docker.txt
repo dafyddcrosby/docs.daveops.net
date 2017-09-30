@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Docker ======
 ======
-:date: 2016-11-22
-:modified: 2017-03-07
+
+
 
 ===== CLI =====
 ---

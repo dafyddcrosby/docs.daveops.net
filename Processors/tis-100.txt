@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== TIS-100 ======
-:date: 2016-05-20
+
 
 Tessellated Intelligence System
 

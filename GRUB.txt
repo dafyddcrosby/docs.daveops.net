@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== GRUB ======
 ====
-:date: 2016-10-25
+
 
 Except where noted, this is for GRUB 2+
 

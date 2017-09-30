@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MongoDB ======
-:date: 2015-06-04
-:modified: 2017-02-18
+
+
 :tags: databases
 
 ===== Queries =====

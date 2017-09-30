@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== reStructuredText ======
 ================
-:date: 2016-4-15
+
 
 ===== Convert rst to HTML =====
 --------------------

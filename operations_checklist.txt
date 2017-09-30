@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Operations checklist ======
-:date: 2016-04-07
+
 
 This is a checklist of things that I think an operations team needs to get to a
 pretty good state. By no means exhaustive, and a bit opinionated. What I think

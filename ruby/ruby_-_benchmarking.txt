@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Ruby - Benchmarking ======
 ===================
-:date: 2015-06-10
+
 :tags: Ruby
 
 {{{code: linenumbers="True"

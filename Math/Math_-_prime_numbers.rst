@@ -1,6 +1,6 @@
 Math - Prime Numbers
 ====================
-:date: 2016-06-08
+
 
 A prime number is divisible only by one and itself
 

@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== nmap ======
-:date: 2016-03-30
-:modified: 2017-08-24
+
+
 
 ===== Handy scripts =====
 

@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield ======
-:date: 2016-06-15
+
 @books
 
 How do I speak up about infractions so that dangerous behaviour is avoided

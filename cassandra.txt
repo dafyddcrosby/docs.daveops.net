@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Cassandra ======
 =========
-:date: 2016-05-27
+
 
 Based on the Amazon Dynamo paper
 Ring topology

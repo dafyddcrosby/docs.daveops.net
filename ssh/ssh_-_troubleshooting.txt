@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== SSH - Troubleshooting ======
 =====================
-:date: 2016-03-24
+
 
 As silly as some of these seem, I've seen them all apply at one point or another.
 

@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GNOME ======
-:date: 2017-01-02
+
 
 ===== Turn caps lock into control key =====
 '''

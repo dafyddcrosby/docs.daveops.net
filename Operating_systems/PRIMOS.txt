@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== PRIMOS ======
 ======
-:date: 2016-05-31
+
 
 OS built in FORTRAN
 

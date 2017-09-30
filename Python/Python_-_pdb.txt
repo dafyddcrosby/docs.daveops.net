@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Python - pdb ======
 ============
-:date: 2017-03-11
+
 :tags: Python
 
 ===== CLI =====

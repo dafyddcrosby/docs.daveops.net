@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Mount ======
 =====
-:date: 2017-02-17
+
 :tags: Linux
 
 ===== Mounting an ISO =====

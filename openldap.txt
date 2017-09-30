@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== OpenLDAP ======
-:date: 2016-03-16
+
 
 ===== Links =====
 - http://www.openldap.org/

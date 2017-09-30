@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== MySQL ======
 =====
-:date: 2016-03-14
-:modified: 2017-03-17
+
+
 :tags: databases, MySQL
 
 ===== Monitor queries =====

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== FFmpeg ======
 ======
-:date: 2015-02-19
+
 
 ===== Encode a video from WAV and PNG =====
 --------------------

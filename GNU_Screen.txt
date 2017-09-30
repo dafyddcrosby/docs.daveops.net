@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== GNU Screen ======
 ==========
-:date: 2015-09-13
+
 
 ===== Reattach a terminal =====
 --------------------

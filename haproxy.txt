@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== HAProxy ======
 =======
-:date: 2016-5-6
+
 
 ===== Setting ciphers on an SSL listener =====
 --------------------

@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Linux - kernel modules ======
-:date: 2016-03-31
+
 :tags: Linux
 
 ===== basic commands =====

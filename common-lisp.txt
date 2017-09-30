@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Common Lisp ======
 ===========
-:date: 2015-02-27
+
 
 ===== Compile a file =====
 --------------------

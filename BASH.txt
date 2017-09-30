@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== BASH ======
-:date: 2015-04-28
-:modified: 2017-06-15
+
+
 
 ===== Go immediately to $EDITOR =====
 --------------------

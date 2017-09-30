@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Windows (Microsoft) ======
 ===================
-:date: 2016-03-04
-:modified: 2017-07-06
+
+
 
 ===== Export certificates =====
 --------------------

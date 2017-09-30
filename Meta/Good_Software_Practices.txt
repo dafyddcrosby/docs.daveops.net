@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Good Software Practices ======
 =======================
-:date: 2016-10-11
+
 :tags: advice 
 
 ===== Don't reinvent the wheel =====

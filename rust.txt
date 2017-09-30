@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Rust ======
 ====
-:date: 2016-06-06
+
 
 https://doc.rust-lang.org/core/
 

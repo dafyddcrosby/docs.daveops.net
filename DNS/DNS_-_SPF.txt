@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== DNS - SPF ======
 =========
-:date: 2017-01-26
+
 
 ===== Check the SPF record of a domain =====
 --------------------

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Apple File System ======
 =================
-:date: 2016-06-21
+
 :tags: filesystems, macOS
 
 Replaces HFS+

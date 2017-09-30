@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Selling a business ======
 ==================
-:date: 2016-06-27
+
 
 Sell for 2-4x trailing-twelve-months revenue minus expenses
 

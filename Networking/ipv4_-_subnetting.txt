@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== IPv4 - subnetting ======
-:date: 2015-09-13
+
 
 ===== Natural mask =====
 

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== mplayer ======
 =======
-:date: 2016-03-22
+
 
 ===== Speed up playback =====
 --------------------

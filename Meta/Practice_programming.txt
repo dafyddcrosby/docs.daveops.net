@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Practice programming ======
 ====================
-:date: 2015-02-15
-:modified: 2017-05-23
+
+
 
 ===== Puzzles =====
 --------------------

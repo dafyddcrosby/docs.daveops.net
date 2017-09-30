@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Makefile ======
-:date: 2015-03-07
+
 
 {{{code: linenumbers="True"
 name= project_name

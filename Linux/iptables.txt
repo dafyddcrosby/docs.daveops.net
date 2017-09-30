@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== iptables ======
 ========
-:date: 2015-02-23
+
 :tags: firewalls
 
 ===== Set up default DROP rule for eth0 =====

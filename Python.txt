@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Python ======
 --------------------
-:date: 2015-03-06
+
 :tags: Python
 
 .. TODO - ConfigParser

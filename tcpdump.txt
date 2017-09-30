@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== tcpdump ======
-:date: 2017-02-07
-:modified: 2017-03-24
+
+
 
 ===== Get all ICMP packets =====
 ::

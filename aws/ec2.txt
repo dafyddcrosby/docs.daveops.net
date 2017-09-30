@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== EC2 ======
-:date: 2015-09-13
+
 :tags: AWS
 
 ===== Get instance metadata from within VM =====

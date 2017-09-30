@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Cisco - Spark ======
-:date: 2017-03-17
+
 
 ===== Get all messages in a room =====
 ::

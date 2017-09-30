@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== MySQL - network ======
 ===============
-:date: 2016-04-15
+
 :tags: MySQL
 
 Port 3306

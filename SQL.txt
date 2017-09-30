@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== SQL ======
 ===
-:date: 2015-03-06
+
 :tags: databases
 
 ===== To add a row =====

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Launchd ======
 =======
-:date: 2016-03-23
+
 :tags: macOS
 
 ===== Get system resource limits =====

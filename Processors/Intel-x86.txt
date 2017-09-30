@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Intel x86 ======
-:date: 2015-04-05
-:modified: 2017-02-26
+
+
 
 ===== Real Mode =====
 - less than 1MB of RAM

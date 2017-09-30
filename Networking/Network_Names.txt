@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Network Names ======
 =============
-:date: 2017-03-29
+
 
 Have a formal grammar for parsing
 

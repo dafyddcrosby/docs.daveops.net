@@ -4,8 +4,8 @@ Wiki-Format: zim 0.4
 ====== SELinux ======
 =======
 :tags: Linux, security
-:date: 2017-06-15
-:modified: 2017-07-07
+
+
 
 Security Enhanced Linux
 

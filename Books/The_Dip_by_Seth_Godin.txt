@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== The Dip by Seth Godin ======
 =====================
-:date: 2016-03-15
+
 @books
 
 "Never quit something with great long-term potential just because you can't deal with the stress of the moment" - Seth Godin (p. 64)

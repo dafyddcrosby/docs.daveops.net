@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Automatic Quantum Computer Programming by Lee Spector ======
 =====================================================
 @books
-:date: 2016-03-15
+
 
 When we get to the point of storing bits in things the size of atoms, we're dealing with quantum mechanical effects.
 

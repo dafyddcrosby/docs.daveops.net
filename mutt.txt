@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Mutt ======
-:date: 2015-05-12
-:modified: 2016-06-20
+
+
 
 Manual - http://www.mutt.org/doc/manual/
 

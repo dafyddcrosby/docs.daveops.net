@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Homebrew ======
-:date: 2015-12-01
+
 
 https://brew.sh/
 http://formulae.brew.sh/

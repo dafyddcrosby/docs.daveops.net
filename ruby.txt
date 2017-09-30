@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Ruby ======
 :tags: Ruby
-:date: 2015-04-05
+
 
 ===== Running the profiler =====
 --------------------

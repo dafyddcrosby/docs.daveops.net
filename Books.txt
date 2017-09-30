@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Books ======
-:date: 2016-04-15
-:modified: 2017-03-12
+
+
 :tags: books
 
 I know there's more good books out there, this is just a list of stuff I've

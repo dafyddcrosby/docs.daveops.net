@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Cisco - Serial ======
 ==============
-:date: 2015-06-10
+
 :tags: Cisco
 
 * 9600 baud

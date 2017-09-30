@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== ncdu ======
 ====
-:date: 2016-5-17
+
 
 ===== Only count files on same mounted filesystem =====
 --------------------

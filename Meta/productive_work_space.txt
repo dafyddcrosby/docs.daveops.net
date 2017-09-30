@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Productive Work Space ======
-:date: 2016-01-23
-:modified: 2016-05-19
+
+
 
 ===== The Office =====
 

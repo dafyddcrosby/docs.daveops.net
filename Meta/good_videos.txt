@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Good Videos ======
 ===========
-:date: 2015-02-20
+
 
 This is a list of talks, etc. that are quite good
 

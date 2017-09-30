@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Graphviz ======
 ========
-:date: 2016-10-18
+
 
 http://graphviz.org
 

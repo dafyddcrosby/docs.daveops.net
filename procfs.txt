@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== procfs ======
-:date: 2017-03-30
+
 
 The process information pseudo-file system
 

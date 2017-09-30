@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Git ======
-:date: 2015-12-01
-:modified: 2017-05-05
+
+
 :tags: version control
 
 ===== Create bare repository =====

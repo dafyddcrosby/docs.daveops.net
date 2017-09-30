@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== CentOS ======
-:date: 2016-10-24
+
 
 * [[https://git.centos.org/project/rpms|RPM package sources]]
 * [[https://git.centos.org/sources/kernel/|kernel sources]]

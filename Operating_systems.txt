@@ -2,6 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Operating systems ======
-:date: 2016-06-17
+
 
 http://wiki.osdev.org

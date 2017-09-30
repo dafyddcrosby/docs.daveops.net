@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Quicklisp ======
 =========
-:date: 2015-02-24
+
 
 ===== Load a system =====
 --------------------

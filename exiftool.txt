@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Exiftool ======
 ========
-:date: 2016-03-28
+
 
 ===== Modify PDF metadata =====
 --------------------

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== So Good They Can't Ignore You by Cal Newport ======
 ============================================
-:date: 2016-03-15
+
 @books
 
 ===== three disqualifiers for applying the craftsman mindset =====

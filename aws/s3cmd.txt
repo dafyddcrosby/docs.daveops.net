@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== s3cmd ======
 =====
-:date: 2017-01-24
-:modified: 2017-08-01
+
+
 
 ::
 

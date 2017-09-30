@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Public Speaking ======
 ===============
-:date: 2017-01-26
+
 
 - Don't make hesitation noises, just pause
 - Rotate eye contact between 3 people

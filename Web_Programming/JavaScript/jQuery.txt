@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== jQuery ======
 ======
-:date: 2016-08-31
+
 
 ===== No-conflict mode =====
 --------------------

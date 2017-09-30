@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== OpenBSD ======
-:date: 2016-4-24
-:modified: 2017-02-18
+
+
 @OpenBSD
 
 ===== List PCI devices =====

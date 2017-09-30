@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== pkgin ======
-:date: 2016-5-10
-:modified: 2017-03-08
+
+
 
 ===== Update pkgin database =====
 ::

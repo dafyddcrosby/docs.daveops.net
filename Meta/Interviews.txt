@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Interviews ======
 ==========
-:date: 2017-03-22
+
 
 ===== Interviewer =====
 --------------------

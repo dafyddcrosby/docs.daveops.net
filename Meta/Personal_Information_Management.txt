@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Personal Information Management ======
-:date: 2017-04-21
+
 
 How to always have the right information to meet our need.
 

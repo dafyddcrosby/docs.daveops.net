@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== lisp ======
-:date: 2015-04-08
+
 
 ===== Streams =====
 .. code-block:: lisp

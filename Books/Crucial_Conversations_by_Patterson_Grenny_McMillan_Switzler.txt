@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Crucial Conversations ======
 =====================
-:date: 2016-04-04
-:modified: 2016-12-22
+
+
 @books
 
 By: Kerry Patterson; Joseph Grenny; Ron McMillan; Al Switzler

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Flynn's Taxonomy ======
 ================
-:date: 2016-06-21
+
 
 http://arith.stanford.edu/~flynn/
 

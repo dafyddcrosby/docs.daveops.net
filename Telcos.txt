@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Telcos ======
-:date: 2017-02-18
+
 
 When connecting to a telco, ask for:
 

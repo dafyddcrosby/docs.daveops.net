@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Joe Armstrong ======
 =============
-:date: 2017-03-29
+
 :tags: people
 
 ===== Seven Deadly Sins =====

@@ -3,8 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Chef ======
 ====
-:date: 2015-04-28
-:modified: 2016-5-10
+
+
 :tags: Chef
 
 ===== Handle EC2 instance =====

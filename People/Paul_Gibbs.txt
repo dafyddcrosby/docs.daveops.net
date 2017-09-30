@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Paul Gibbs ======
 ==========
-:date: 2015-04-28
+
 :tags: People
 
 ===== Learning Contract =====

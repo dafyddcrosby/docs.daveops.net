@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== OpenVPN ======
-:date: 2015-04-28
-:modified: 2017-01-23
+
+
 
 ===== Setting up an OpenVPN server =====
 ::

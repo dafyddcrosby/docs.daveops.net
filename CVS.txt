@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== CVS ======
-:date: 2015-12-01
+
 :tags: version control
 
 ===== Tagging an instance =====
