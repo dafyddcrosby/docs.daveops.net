@@ -18,3 +18,9 @@ http://rakeroutes.com/blog/lets-write-a-gem-part-one/
 
 http://www.html5rocks.com/en/tutorials/appcache/beginner/
 
+===== Website =====
+
+[ ] fix tags
+[ ] remove date/modified bits
+[ ] fix verbatim/code blocks
+[ ] fix links
