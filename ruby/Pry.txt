@@ -8,7 +8,7 @@ http://pryrepl.org/
 
 ===== Cheatsheet =====
 
-{{{code: linenumbers="True"
+{{{code: lang="ruby" linenumbers="True"
 require 'pry'
 
 # ...

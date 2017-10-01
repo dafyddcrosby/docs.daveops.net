@@ -27,9 +27,9 @@ Use the omnibus installer if you can!
 
 ==== /etc/chef/solo.rb ====
 
-.. code-block:: ruby
-
- json_attribs "/etc/chef/node.json"
+{{{code: lang="ruby"
+json_attribs "/etc/chef/node.json"
+}}}
 
 ==== /etc/chef/node.json ====
 
@@ -50,7 +50,6 @@ Use the omnibus installer if you can!
  knife search -a ATTR
 
 ===== common node attributes =====
-
 
 | description         | attribute                  |
 |---------------------|----------------------------|

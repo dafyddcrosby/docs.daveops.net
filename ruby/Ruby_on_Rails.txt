@@ -45,15 +45,15 @@ Wiki-Format: zim 0.4
 
 ===== Validating Active Records =====
 
-.. code-block:: ruby
+{{{code: lang="ruby"
+class Post < ActiveRecord::Base
+  # ...
 
- class Post < ActiveRecord::Base
-   # ...
- 
-   validates :name,  :presence => true
-   validates :title, :presence => true,
-					 :length => { :minimum => 5 }
- end
+  validates :name,  :presence => true
+  validates :title, :presence => true,
+       				 :length => { :minimum => 5 }
+end
+}}}
 
 ==== Ensure uniqueness at the db level ====
 
@@ -80,17 +80,17 @@ Wiki-Format: zim 0.4
 
 *Add to Gemfile:
 
-.. code-block:: ruby
-
- group :test, :development do
-   gem 'guard-spork'
-   gem 'spork'
-   gem 'guard-rspec'
- end
- group :test do
-   gem 'rb-inotify'
-   gem 'libnotify'
- end
+{{{code: lang="ruby"
+group :test, :development do
+  gem 'guard-spork'
+  gem 'spork'
+  gem 'guard-rspec'
+end
+group :test do
+  gem 'rb-inotify'
+  gem 'libnotify'
+end
+}}}
 
 * run the following
 
@@ -104,14 +104,14 @@ Wiki-Format: zim 0.4
 
 ===== Creating tables =====
 
-.. code-block:: ruby
-
- create_table "contacts" do |t|
-   t.integer  "user_id", :null => false
-   t.string   "name", :null => false
-   t.string   "phone", :limit => 40
-   t.string   "email"
- end
+{{{code: lang="ruby"
+create_table "contacts" do |t|
+  t.integer  "user_id", :null => false
+  t.string   "name", :null => false
+  t.string   "phone", :limit => 40
+  t.string   "email"
+end
+}}}
 
 ===== Reset test database =====
 

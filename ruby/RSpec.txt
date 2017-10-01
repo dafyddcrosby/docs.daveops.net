@@ -12,10 +12,10 @@ http://rubydoc.info/gems/rspec-rails/frames
 
 Add to Gemfile:
 
-.. code-block:: ruby
-
- gem 'rspec-rails'
- gem 'guard-rspec'
+{{{code: lang="ruby"
+gem 'rspec-rails'
+gem 'guard-rspec'
+}}}
 
 ::
 

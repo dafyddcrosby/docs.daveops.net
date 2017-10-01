@@ -5,7 +5,7 @@ Wiki-Format: zim 0.4
 
 @Chef
 
-.. code-block:: ruby
-
- # Use specific directory in git repo
- cookbook "rightscale", git: "https://github.com/rightscale/rightscale_cookbooks.git", rel: "cookbooks/rightscale"
+{{{code: lang="ruby"
+# Use specific directory in git repo
+cookbook "rightscale", git: "https://github.com/rightscale/rightscale_cookbooks.git", rel: "cookbooks/rightscale"
+}}}

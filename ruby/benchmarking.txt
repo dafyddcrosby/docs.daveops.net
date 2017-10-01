@@ -1,7 +1,7 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Ruby - Benchmarking ======
+====== benchmarking ======
 @Ruby
 
 {{{code: lang="ruby" linenumbers="True"
