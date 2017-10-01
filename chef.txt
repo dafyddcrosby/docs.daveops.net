@@ -27,14 +27,14 @@ Use the omnibus installer if you can!
 
 ==== /etc/chef/solo.rb ====
 
-{{{code: lang="ruby"
+{{{code: lang="ruby" linenumbers="True"
 json_attribs "/etc/chef/node.json"
 }}}
 
+
 ==== /etc/chef/node.json ====
 
-.. code-block:: json
-
+{{{code: lang="js" linenumbers="True"
  {
   "resolver": {
 	"nameservers": [ "10.0.0.1" ],
@@ -42,6 +42,8 @@ json_attribs "/etc/chef/node.json"
    },
    "run_list": [ "recipe[resolver]" ]
  }
+}}}
+
 
 ===== knife search =====
 

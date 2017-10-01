@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== SQL ======
-
-
 @databases
 
 ===== To add a row =====
@@ -78,7 +76,6 @@ Wiki-Format: zim 0.4
  ORDER BY cnt asc;
 
 ===== Standards =====
-
 
 1992
 1999

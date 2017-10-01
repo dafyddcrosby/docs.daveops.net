@@ -1,23 +1,19 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Linux - kernel modules ======
-
+====== kernel modules ======
 @Linux
 
 ===== basic commands =====
-::
 
-  # list modules
-  lsmod
-  # get info about a module
-  modinfo MODULE
-  # load a module
-  modprobe MODULE
-  # load kernel module by filename
-  insmod FILE
-  # unload a module
-  rmmod MODULE
+| desc                           | command         |
+|--------------------------------|-----------------|
+| list modules                   | lsmod           |
+| get info about a module        | modinfo MODULE  |
+| load a module                  | modprobe MODULE |
+| load kernel module by filename | insmod FILE     |
+| unload a module                | rmmod MODULE    |
+
 
 ===== Resources =====
 

@@ -6,32 +6,28 @@ Wiki-Format: zim 0.4
 
 ===== Boot from CDROM =====
 
-::
-
- boot cdrom
+'''
+boot cdrom
+'''
 
 ===== Test hardware =====
 
-::
-
- test-all
+'''
+test-all
+'''
 
 ===== Show banner =====
-
-::
-
- banner
+'''
+banner
+'''
 
 ===== Get ethernet address =====
-
-::
-
- .enet-addr
+'''
+.enet-addr
+'''
 
 ===== Show hardware devices =====
-
-::
-
- show-devs
-
+'''
+show-devs
+'''
 

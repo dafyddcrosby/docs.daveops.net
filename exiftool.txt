@@ -3,10 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Exiftool ======
 
-
-
 ===== Modify PDF metadata =====
 
-::
-
-  exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"
+'''
+exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"
+'''

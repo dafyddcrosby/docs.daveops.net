@@ -13,9 +13,8 @@ Wiki-Format: zim 0.4
 
 or
 
-.. code-block:: c
-
-   #include <stdio.h>
-   #include <gnu/libc-version.h>
-   int main (void) { puts (gnu_get_libc_version ()); return 0; }
-
+{{{code: lang="c"
+#include <stdio.h>
+#include <gnu/libc-version.h>
+int main (void) { puts (gnu_get_libc_version ()); return 0; }
+}}}

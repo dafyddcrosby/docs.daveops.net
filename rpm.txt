@@ -2,19 +2,19 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== RPM ======
-Red Hat
+@Red_Hat
 
-`List of RPM macros <http://www.zarb.org/~jasonc/macros.php>`_
+[[http://www.zarb.org/~jasonc/macros.php|List of RPM macros]]
 
 ===== Rebuild SRPM =====
 
-::
-
- # Centos 6
- rpmbuild --rebuild <SRPM>
- # also
- rpm -i <SRPM>
- rpmbuild -ba rpmbuild/SPECS/<spec file>
+'''
+# Centos 6
+rpmbuild --rebuild <SRPM>
+# also
+rpm -i <SRPM>
+rpmbuild -ba rpmbuild/SPECS/<spec file>
+'''
 
 ===== List files in an RPM =====
 

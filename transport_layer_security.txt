@@ -14,7 +14,7 @@ means complete, but should get you well on your way.
 * eNULL (cleartext)
 * SSL2 (DROWN attack)
 * SSL3 (POODLE attack)
-* RC4 (see: RFC 7465 and https://blog.cloudflare.com/killing-rc4-the-long-goodbye/ )
+* RC4 (see: RFC 7465 and https://blog.cloudflare.com/killing-rc4-the-long-goodbye/)
 * MD5 (collisions are trivial)
 * EXPORT ciphers (deliberately weakened)
 * DES (deprecated Data Encryption Standard)

@@ -4,6 +4,6 @@ Wiki-Format: zim 0.4
 ====== llvm ======
 
 ===== List available targets =====
-::
-
-  llc -version
+'''
+llc -version
+'''

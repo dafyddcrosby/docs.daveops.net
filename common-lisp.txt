@@ -3,13 +3,12 @@ Wiki-Format: zim 0.4
 
 ====== Common Lisp ======
 
-
-
 ===== Compile a file =====
 
-.. code-block:: lisp
+{{{code: linenumbers="True"
+(compile-file "file.lisp")
+}}}
 
-   (compile-file "file.lisp")
 
 ===== Format directives =====
 

@@ -4,9 +4,7 @@ Wiki-Format: zim 0.4
 ====== pacman ======
 @Arch_Linux
 
-
 ===== Installing =====
-
-::
-
- pacman -S [package]
+'''
+pacman -S [package]
+'''

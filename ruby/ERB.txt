@@ -1,8 +1,5 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Ruby - ERB ======
-
-
+====== ERB ======
 http://ruby-doc.org/stdlib-2.4.0/libdoc/erb/rdoc/ERB.html
-

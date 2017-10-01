@@ -3,8 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== vim ======
 
-
-
 ===== Sort on a virtual column =====
 
  '':sort /.*\%10v/''

@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Cisco - Serial ======
-
-
 @Cisco
 
 * 9600 baud

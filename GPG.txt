@@ -3,13 +3,10 @@ Wiki-Format: zim 0.4
 
 ====== GPG ======
 
-
-
 ===== Generate GPG keypair =====
-
-::
-
- gpg --gen-key
+'''
+gpg --gen-key
+'''
 
 ===== Export the public key =====
 

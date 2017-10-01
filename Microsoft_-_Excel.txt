@@ -3,7 +3,9 @@ Wiki-Format: zim 0.4
 
 ====== Microsoft - Excel ======
 
-
 ===== Keyboard shortcuts =====
 
-ctrl-; | insert today's date
+| keystroke | desc                |
+|-----------|---------------------|
+| ctrl-;    | insert today's date |
+

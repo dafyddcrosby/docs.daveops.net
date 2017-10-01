@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== webERP ======
 
-
 Site: http://www.weberp.org
 
 Requires PHP multibyte extension

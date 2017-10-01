@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Red Hat ======
 
-
 ===== Installing with a kickstart =====
 
 * Press ESC

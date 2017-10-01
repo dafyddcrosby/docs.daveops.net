@@ -3,11 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Perl ======
 
-
-
-
 ===== Syntax Cheatsheet =====
-
 
 {{{code: linenumbers="True"
  #!/usr/local/bin/perl -wT

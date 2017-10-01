@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Scheme ======
 
-
 ===== Syntax cheatsheet =====
 '''
 "This is a string"
@@ -15,6 +14,7 @@ CaseSensitiveIdentifiers
 
 (load "filename.ss")
 '''
+
 
 ===== Resources =====
 * http://www.scheme.com

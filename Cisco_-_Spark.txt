@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Cisco - Spark ======
 
-
 ===== Get all messages in a room =====
 ::
 

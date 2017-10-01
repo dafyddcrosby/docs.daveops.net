@@ -5,10 +5,18 @@ Wiki-Format: zim 0.4
 @databases
 
 ===== get list of databases =====
-``curl localhost:5984/_all_dbs``
+'''
+curl localhost:5984/_all_dbs
+'''
+
 
 ===== get database details =====
-``curl localhost:5984/db_name``
+'''
+curl localhost:5984/db_name
+'''
+
 
 ===== access futon =====
-``curl localhost:5984/_utils``
+'''
+curl localhost:5984/_utils
+'''

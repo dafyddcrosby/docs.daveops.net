@@ -3,8 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== S3 ======
 
-
-::
-
-  # Get object ACL
-  aws s3api get-bucket-acl --bucket BUCKET --key KEY
+'''
+# Get object ACL
+aws s3api get-bucket-acl --bucket BUCKET --key KEY
+'''

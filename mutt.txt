@@ -2,10 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Mutt ======
-
-
-
-Manual - http://www.mutt.org/doc/manual/
+[[http://www.mutt.org/doc/manual/|Manual]]
 
 ===== Add header to messages =====
 
@@ -22,11 +19,12 @@ Manual - http://www.mutt.org/doc/manual/
 
 ===== Search =====
 
-| command | desc |
-| ~b EXPR | Search for messages containing EXPR in the body |
-| ~C EXPR | To: or CC: |
-| ~f EXPR          | From:                                   |
-| ~d [MIN]-[MAX]   | messages with date-sent in date range   |
-| ~l               | mailing lists                           |
-| ~s               | Subject:                                |
+| command        | desc                                            |
+|----------------|-------------------------------------------------|
+| ~b EXPR        | Search for messages containing EXPR in the body |
+| ~C EXPR        | To: or CC:                                      |
+| ~f EXPR        | From:                                           |
+| ~d [MIN]-[MAX] | messages with date-sent in date range           |
+| ~l             | mailing lists                                   |
+| ~s             | Subject:                                        |
 

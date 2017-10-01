@@ -2,46 +2,46 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MySQL ======
-
-
-
 @databases, @MySQL
 
 ===== Monitor queries =====
-
 ::
 
  watch -n 1 mysqladmin --user=<user> --password=<password> processlist
 
 ===== List all databases =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+show databases;
+}}}
 
- show databases;
 
 ===== List all tables =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+show tables;
+}}}
 
- show tables;
 
 ===== Describe table contents =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- Column names
+describe TABLE_NAME;
+-- Schema
+show create table TABLE_NAME;
+-- Indexes
+show index from TABLE_NAME;
+}}}
 
- -- Column names
- describe <table>;
- -- Schema
- show create table <table>;
- -- Indexes
- show index from <table>;
 
 ===== Server-side help =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- contents
+help contents
+}}}
 
- -- contents
- help contents
 
 ===== Check if a server is up =====
 
@@ -52,9 +52,10 @@ Wiki-Format: zim 0.4
 
 ===== Create a database =====
 
-.. code-block:: mysql
-   
- create database <databasename>;
+{{{code: lang="sql" linenumbers="False"
+create database DATABASE_NAME;
+}}}
+
 
 ===== Import database =====
 
@@ -70,40 +71,44 @@ Wiki-Format: zim 0.4
 
 ===== Delete database =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+drop database DATABASE_NAME;
+}}}
 
- drop database <databasename>;
 
 ===== User management =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- Create a user
+CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
+-- Revoke permissions for user
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
+-- Delete a user
+DROP USER 'example_user'@'localhost';
+}}}
 
- -- Create a user
- CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
- -- Revoke permissions for user
- REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
- -- Delete a user
- DROP USER 'example_user'@'localhost';
 
 ===== Show grants =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- show grants for current user
+show grants;
+-- show grants for particular user
+show grants for 'user'@'example.com';
+}}}
 
-   -- show grants for current user
-   show grants;
-   -- show grants for particular user
-   show grants for 'user'@'example.com';
 
 ===== Variables =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- session variables
+SHOW SESSION VARIABLES;
+SET SESSION sort_buffer_size=1000000;
+-- global variables
+SHOW GLOBAL VARIABLES;
+SET GLOBAL sort_buffer_size=1000000;
+}}}
 
-  -- session variables
-  SHOW SESSION VARIABLES;
-  SET SESSION sort_buffer_size=1000000;
-  -- global variables
-  SHOW GLOBAL VARIABLES;
-  SET GLOBAL sort_buffer_size=1000000;
 
 ===== Resetting root password =====
 
@@ -113,11 +118,10 @@ Wiki-Format: zim 0.4
  /usr/bin/mysqld_safe --skip-grant-tables &
  mysql --user=root mysql
 
-.. code-block:: mysql
-   
- update user set Password=PASSWORD('new-password-here') WHERE User='root';
- flush privileges;
- exit
+{{{code: lang="sql" linenumbers="False"
+update user set Password=PASSWORD('new-password-here') WHERE User='root';
+flush privileges;
+}}}
 
 ::
 
@@ -127,29 +131,31 @@ Wiki-Format: zim 0.4
 
 ===== Create prefix index =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+alter table TABLENAME.COLUMN
+add key (COLUMN(n));
+}}}
 
- alter table TABLENAME.COLUMN
- add key (COLUMN(n));
 
 ===== See what engine the table uses =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+show table status
+like 'table_name' \G
+}}}
 
- show table status
- like 'table_name' \G
 
 ===== See running processes =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- Quick glance
+show processlist ;
+-- sort by user
+select * from information_schema.processlist where user='foobar';
+}}}
 
- -- Quick glance
- show processlist ;
- -- sort by user
- select * from information_schema.processlist where user='foobar';
 
 ===== Isolation Levels =====
-
 
 | Isolation level  | dirty reads possible | nonrepeatable reads possible | phantom reads possible | locking reads |
 |------------------|----------------------|------------------------------|------------------------|---------------|
@@ -158,23 +164,26 @@ Wiki-Format: zim 0.4
 | REPEATABLE READ  | f                    | f                            | t                      | f             |
 | SERIALIZABLE     | f                    | f                            | f                      | t             |
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+SET SESSION TRANSACTION ISOLATION LEVEL [level];
+}}}
 
- SET SESSION TRANSACTION ISOLATION LEVEL [level];
 
 ===== Autocommit =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+SHOW VARIABLES LIKE 'AUTOCOMMIT';
+SET AUTOCOMMIT=[0|1]
+}}}
 
- SHOW VARIABLES LIKE 'AUTOCOMMIT';
- SET AUTOCOMMIT=[0|1]
 
 ===== Repairing =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+check table [tablename]
+repair table [tablename]
+}}}
 
- check table [tablename]
- repair table [tablename]
 
 ===== InnoDB engine =====
 
@@ -214,26 +223,6 @@ uses table-locking, but is speedy
 
 * (needs to be looked into)
 
-===== Good ways to benchmark =====
-
-* Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run
-* Use fresh snapshots between benchmarks
-* Full stack tools:
-
-  * ab
-  * http_load
-
-	* ``http_load -rate [requests_per_sec] -parallel [num_processes] -seconds [time] [url_file]``
-
-  * JMeter
-
-* Single component tools:
-
-  * mysqlslap
-  * Database Test Suite (made by OSDL)
-  * sql-bench
-  * Super Smack
-
 ===== Optimizing =====
 
 * Avoid NULL when possible
@@ -263,14 +252,15 @@ uses table-locking, but is speedy
 
 ===== Timezones =====
 
-.. code-block:: mysql
+{{{code: lang="sql" linenumbers="False"
+-- see what time zones are in use
+SELECT @@global.time_zone, @@session.time_zone;
+-- set global time zone
+SET GLOBAL time_zone = <timezone>;
+-- set session time zone
+SET time_zone = <timezone>;
+}}}
 
- -- see what time zones are in use
- SELECT @@global.time_zone, @@session.time_zone;
- -- set global time zone
- SET GLOBAL time_zone = <timezone>;
- -- set session time zone
- SET time_zone = <timezone>;
 
 ===== Get version =====
 

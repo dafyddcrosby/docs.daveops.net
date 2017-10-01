@@ -3,10 +3,9 @@ Wiki-Format: zim 0.4
 
 ====== logrotate ======
 
-
 ===== Syntax =====
 
-{{{code:
+{{{code: linenumbers="False"
  /path/to/file.log {
 	 rotate 30
 	 daily

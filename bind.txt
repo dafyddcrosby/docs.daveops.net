@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== BIND ======
 
-
 ===== Production ready =====
 
 * Rate limiting is set in the options

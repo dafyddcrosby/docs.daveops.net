@@ -2,9 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GRUB ======
-
-
-
 Except where noted, this is for GRUB 2+
 
 ===== Console =====

@@ -3,8 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== OfflineIMAP ======
 
-
-
 ===== Signals =====
 
 * SIGUSR1 - aborts current sleep, triggering a full sync

@@ -3,8 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== curl ======
 
-
-
 ===== Use client cert =====
 
 ::
