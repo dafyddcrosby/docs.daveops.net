@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Alan Kay ======
 
 
-:tags: People
+@People
 
 https://www.quora.com/profile/Alan-Kay-11
 

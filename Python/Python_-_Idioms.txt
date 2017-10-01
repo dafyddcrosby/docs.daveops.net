@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Python - Idioms ======
 
-:tags: Python 
+@Python 
 
 ===== Python zen =====
 

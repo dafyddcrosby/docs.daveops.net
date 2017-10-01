@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== macOS ======
 
 
-:tags: macOS
+@macOS
 
 ===== Keyboard shortcuts =====
 

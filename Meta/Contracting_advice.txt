@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Contracting advice ======
 
-:tags: advice 
+@advice 
 
 Wisdom pulled from a variety of sources
 
@@ -50,11 +50,9 @@ Wisdom pulled from a variety of sources
 * Don't start work before you've signed a contract. You will lose critical leverage.
 * Don't blindly accept the client's terms. Often they are just boilerplate, and sometimes just wrong.
 * Don't back down on the important stuff:
-
-  * IP transfers on full payment (if they use your work before full payment, you can sue for that).
-  * A kill fee for project termination (amount the client will have to pay for an unreasonable termination of project - ensures no wasted time) - be sure to have multiple phases written in the contract.
-  * Liability (transferred after project acceptance by client)
-
+	* IP transfers on full payment (if they use your work before full payment, you can sue for that).
+	* A kill fee for project termination (amount the client will have to pay for an unreasonable termination of project - ensures no wasted time) - be sure to have multiple phases written in the contract.
+	* Liability (transferred after project acceptance by client)
 * Have the project deemed 'accepted' after the deliverable has been given for 5-10 business days
 * Be specific and confident about money. Sound like you know what you're talking about, even when you don't.
 * Have penalties after non-payment (net-d)

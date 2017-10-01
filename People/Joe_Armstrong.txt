@@ -2,12 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Joe Armstrong ======
-
-
-:tags: people
+@people
 
 ===== Seven Deadly Sins =====
-
 
 1. Code even you cannot understand a week after you wrote it - no comments
 2. Code with no specifications

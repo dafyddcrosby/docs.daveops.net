@@ -2,8 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== xterm ======
-
-:tags: X Windows
+@X_Windows
 
 | Command         | Keys               |
 |-----------------|--------------------|

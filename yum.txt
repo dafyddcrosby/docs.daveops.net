@@ -2,10 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== YUM ======
-
-
-
-:tags: Red Hat
+@Red_Hat
 
 ===== Create a group =====
 

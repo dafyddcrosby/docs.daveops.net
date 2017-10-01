@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Cisco - CIMC ======
 
 
-:tags: Cisco
+@Cisco
 
 ===== Resources =====
 

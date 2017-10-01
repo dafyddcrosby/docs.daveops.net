@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== xrandr ======
-:tags: X Windows
+@X_Windows
 
 ===== Make PAL card output NTSC =====
 After the first two lines in ``/etc/gdm/Init/Default`` , put:

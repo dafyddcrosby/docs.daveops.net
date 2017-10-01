@@ -5,7 +5,7 @@ Wiki-Format: zim 0.4
 
 
 
-:tags: MySQL, databases
+@MySQL, @databases
 
 ===== Set the replica binlog coordinates =====
 

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Bundler ======
 
-:tags: Ruby
+@Ruby
 
 ===== Writing a Gemfile =====
 

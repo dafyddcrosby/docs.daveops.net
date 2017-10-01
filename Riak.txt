@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Riak ======
 
-:tags: Erlang
+@Erlang
 
 ===== Get stats =====
 ::

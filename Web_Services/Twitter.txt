@@ -3,6 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Twitter ======
 
-:tags: Twitter
+@Twitter
 
 http://dev.twitter.com

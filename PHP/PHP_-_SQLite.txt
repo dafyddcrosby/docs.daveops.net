@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== PHP - SQLite ======
 
-:tags: php
+@php
 
 
 ===== SQLite =====

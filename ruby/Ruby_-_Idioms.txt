@@ -3,13 +3,13 @@ Wiki-Format: zim 0.4
 
 ====== Ruby - Idioms ======
 
-:tags: Ruby
+@Ruby
 
 
 ===== Naming =====
 
 
-{{{code: linenumbers="True"
+{{{code: lang="ruby" linenumbers="True"
 local_variable
 @instance_variable
 @@class_variable

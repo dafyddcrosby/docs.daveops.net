@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== CouchDB ======
-:tags: databases
+@databases
 
 ===== get list of databases =====
 ``curl localhost:5984/_all_dbs``

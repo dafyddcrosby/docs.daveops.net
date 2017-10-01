@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== PHP - Binary ======
 
-:tags: php
+@php
 
 
 ===== Read a binary file =====

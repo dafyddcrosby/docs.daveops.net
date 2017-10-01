@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Ruby on Rails - Omniauth ======
 
-:tags: Ruby, Ruby on Rails, Twitter, Facebook, Linkedin 
+@Ruby, @Ruby_on_Rails, @Twitter, @Facebook, @Linkedin 
 
 
 ===== Installing =====

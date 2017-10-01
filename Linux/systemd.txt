@@ -2,13 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== SystemD ======
-
-
-:tags: init, Linux, Red Hat
+@init, @Linux, @Red_Hat
 
 ===== systemctl =====
 
 | Command                        | Notes                                                                                    |
+|--------------------------------|------------------------------------------------------------------------------------------|
 | systemctl                      | List services                                                                            |
 | start SERVICE                  | Used to start a service (not reboot persistent)                                          |
 | stop SERVICE                   | Used to stop a service (not reboot persistent)                                           |
@@ -21,6 +20,7 @@ Wiki-Format: zim 0.4
 | is-enabled SERVICE             | Used to check whether a service is configured to start or not in the current environment |
 | list-unit-files --type=service | Print a table of services that lists which runlevels each is configured on or off        |
 | daemon-reload                  | Used when you create a new service file or modify any configuration                      |
+
 
 ===== Directories =====
 

@@ -3,6 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Arduino ======
 
-:tags: C
+@C
 
 http://ardx.org/src/code/

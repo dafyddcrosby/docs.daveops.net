@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== SQLite ======
 
 
-:tags: databases
+@databases
 
 ===== Show all tables =====
 

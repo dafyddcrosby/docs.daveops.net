@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== James Bach ======
-:tags: people 
+@people 
 
 ===== Level 0: I overcame obliviousness =====
 I now realize there is something here to learn.

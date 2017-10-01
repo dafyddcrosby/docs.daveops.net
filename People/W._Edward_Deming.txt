@@ -1,10 +1,8 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-W. ====== Edward Deming ======
-
-
-:tags: people 
+====== W. Edward Deming ======
+@people 
 
 
 ===== 14 Principles of Management =====
@@ -19,10 +17,10 @@ W. ====== Edward Deming ======
 * Drive out fear, so that everyone may work effectively for the company. (See Ch. 3 of "Out of the Crisis")
 * Break down barriers between departments. People in research, design, sales, and production must work as a team, to foresee problems of production and in use that may be encountered with the product or service.
 * Eliminate slogans, exhortations, and targets for the work force asking for zero defects and new levels of productivity. Such exhortations only create adversarial relationships, as the bulk of the causes of low quality and low productivity belong to the system and thus lie beyond the power of the work force.
-  * Eliminate work standards (quotas) on the factory floor. Substitute leadership.
-  * Eliminate management by objective. Eliminate management by numbers, numerical goals. Substitute leadership.
-  * Remove barriers that rob the hourly worker of his right to pride of workmanship. The responsibility of supervisors must be changed from sheer numbers to quality.
-  * Remove barriers that rob people in management and in engineering of their right to pride of workmanship. This means, inter alia," abolishment of the annual or merit rating and of management by objective (See Ch. 3 of "Out of the Crisis").
+	* Eliminate work standards (quotas) on the factory floor. Substitute leadership.
+	* Eliminate management by objective. Eliminate management by numbers, numerical goals. Substitute leadership.
+	* Remove barriers that rob the hourly worker of his right to pride of workmanship. The responsibility of supervisors must be changed from sheer numbers to quality.
+	* Remove barriers that rob people in management and in engineering of their right to pride of workmanship. This means, inter alia," abolishment of the annual or merit rating and of management by objective (See Ch. 3 of "Out of the Crisis").
 
 * Institute a vigorous program of education and self-improvement.
 * Put everybody in the company to work to accomplish the transformation. The transformation is everybody's job.

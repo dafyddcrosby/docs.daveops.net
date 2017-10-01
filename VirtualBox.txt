@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== VirtualBox ======
-:tags: virtualization
+@virtualization
 
 ===== Installing VirtualBox Extension Pack =====
 * https://www.virtualbox.org/wiki/Downloads

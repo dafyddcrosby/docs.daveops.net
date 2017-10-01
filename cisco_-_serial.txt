@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Cisco - Serial ======
 
 
-:tags: Cisco
+@Cisco
 
 * 9600 baud
 * no parity

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Python - HTTPServer ======
 
-:tags: Python
+@Python
 
 
 ===== Basic HTTP server =====

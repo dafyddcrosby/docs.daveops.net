@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Apple File System ======
 
 
-:tags: filesystems, macOS
+@filesystems, @macOS
 
 Replaces HFS+
 

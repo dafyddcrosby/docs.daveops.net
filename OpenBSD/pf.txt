@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== pf ======
 
 
-:tags: OpenBSD, firewalls
+@OpenBSD, @firewalls
 
 ===== pfctl =====
 

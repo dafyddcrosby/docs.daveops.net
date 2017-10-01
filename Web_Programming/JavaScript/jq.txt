@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== jq ======
 
-:tags: JavaScript
+@JavaScript
 
 https://jqplay.org/
 https://stedolan.github.io/jq/

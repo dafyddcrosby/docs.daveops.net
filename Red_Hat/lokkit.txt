@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Lokkit ======
 
 
-:tags: firewalls
+@firewalls
 
 ===== Get list of services =====
 

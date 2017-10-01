@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Yukihiro Matsumoto ======
 
-:tags: people, Ruby
+@people, @Ruby
 
 
 "...computers don't mind if I must make effort to communicate with them

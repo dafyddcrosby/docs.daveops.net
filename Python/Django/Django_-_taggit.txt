@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Django - taggit ======
 
-:tags: django 
+@django 
 
 ===== Installing in a project =====
 

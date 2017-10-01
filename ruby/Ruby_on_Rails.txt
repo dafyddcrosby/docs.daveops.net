@@ -2,9 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby on Rails ======
-
-
-:tags: Ruby, Ruby on Rails
+@Ruby, @Ruby_on_Rails
 
 .. TODO - http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2
 

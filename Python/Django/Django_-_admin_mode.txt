@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Django - admin mode ======
 
-:tags: django 
+@django 
 
 
 ===== Enabling admin mode =====

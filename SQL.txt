@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== SQL ======
 
 
-:tags: databases
+@databases
 
 ===== To add a row =====
 

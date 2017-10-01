@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== QEMU ======
 
 
-:tags: virtualization
+@virtualization
 
 http://www.qemu-advent-calendar.org/
 

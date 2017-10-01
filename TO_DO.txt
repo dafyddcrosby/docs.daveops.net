@@ -20,6 +20,5 @@ http://www.html5rocks.com/en/tutorials/appcache/beginner/
 
 ===== Website =====
 
-[ ] fix tags
 [ ] fix verbatim/code blocks
 [ ] fix links

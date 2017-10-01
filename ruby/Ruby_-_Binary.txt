@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Ruby - Binary ======
 
-:tags: Ruby
+@Ruby
 
 ===== pack/unpack =====
 

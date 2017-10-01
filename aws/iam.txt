@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== IAM ======
 
 
-:tags: AWS
+@AWS
 
 ===== Create a user =====
 ::

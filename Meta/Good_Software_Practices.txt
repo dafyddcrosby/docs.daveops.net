@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Good Software Practices ======
 
 
-:tags: advice 
+@advice 
 
 ===== Don't reinvent the wheel =====
 

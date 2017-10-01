@@ -2,8 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== CVS ======
-
-:tags: version control
+@version_control
 
 ===== Tagging an instance =====
 

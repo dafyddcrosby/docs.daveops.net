@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Ruby on Rails - Gravatar ======
 
-:tags: Ruby, Ruby on Rails
+@Ruby, @Ruby_on_Rails
 
 
 ===== Helper to return Gravatar image =====

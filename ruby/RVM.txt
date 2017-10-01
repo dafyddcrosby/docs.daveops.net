@@ -3,8 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== RVM ======
 
-:tags: Ruby, Ruby on Rails
-
+@Ruby, @Ruby_on_Rails
 
 ===== Install RVM with Ruby =====
 

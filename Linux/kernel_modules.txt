@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Linux - kernel modules ======
 
-:tags: Linux
+@Linux
 
 ===== basic commands =====
 ::

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Linux - cgroups ======
 
-:tags: Linux
+@Linux
 
 https://www.kernel.org/doc/Documentation/cgroup-v1/
 https://www.kernel.org/doc/Documentation/cgroup-v2.txt

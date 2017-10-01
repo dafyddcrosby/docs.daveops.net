@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Productivity ======
 
 
-:tags: advice
+@advice
 
 ===== General life hacks =====
 

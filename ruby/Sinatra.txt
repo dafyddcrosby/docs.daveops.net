@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Sinatra ======
 
-:tags: Ruby 
+@Ruby 
 
 http://www.sinatrarb.com
 

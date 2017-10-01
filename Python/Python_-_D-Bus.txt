@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== Python - D-Bus ======
 
-:tags: Python 
+@Python 
 
 
 ===== Connecting to D-Bus =====

@@ -2,8 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Sun OpenBoot ======
-
-:tags: Sun
+@Sun
 
 ===== Boot from CDROM =====
 

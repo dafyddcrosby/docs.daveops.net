@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== MySQL - ZFS ======
 
-:tags: MySQL, ZFS
+@MySQL, @ZFS
 
 ===== Set the ZFS recordsizes to match InnoDB page size =====
 

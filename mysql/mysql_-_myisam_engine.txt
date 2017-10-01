@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== MySQL - MyISAM engine ======
 
 
-:tags: MySQL
+@MySQL
 
 .. TODO
    more technical details

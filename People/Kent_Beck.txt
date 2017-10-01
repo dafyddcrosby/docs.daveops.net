@@ -2,9 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Kent Beck ======
-
-:tags: people 
-
+@people 
 
 "Software features that can't be demonstrated by automated tests simply don't exist."
 

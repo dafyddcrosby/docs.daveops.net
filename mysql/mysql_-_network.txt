@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== MySQL - network ======
 
 
-:tags: MySQL
+@MySQL
 
 Port 3306
 Plaintext protocol

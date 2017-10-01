@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== MySQL - Security ======
 
 
-:tags: MySQL
+@MySQL
 
 ===== Don't place DB on same instance as application =====
 

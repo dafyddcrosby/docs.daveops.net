@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 
 ====== EC2 ======
 
-:tags: AWS
+@AWS
 
 ===== Get instance metadata from within VM =====
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
