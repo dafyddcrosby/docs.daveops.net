@@ -41,9 +41,9 @@ Wiki-Format: zim 0.4
 
 ===== Using Dreamhost =====
 
-- Passenger must be enabled for domain/subdomain
-- Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
-- For database ``rake db:migrate RAILS_ENV=production``
+* Passenger must be enabled for domain/subdomain
+* Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
+* For database ``rake db:migrate RAILS_ENV=production``
 
 ===== Validating Active Records =====
 
@@ -80,7 +80,7 @@ Wiki-Format: zim 0.4
 
 ===== Automated testing with guard and spork =====
 
--Add to Gemfile:
+*Add to Gemfile:
 
 .. code-block:: ruby
 
@@ -94,15 +94,15 @@ Wiki-Format: zim 0.4
    gem 'libnotify'
  end
 
-- run the following
+* run the following
 
 ::
  bundle exec guard init rspec
  bundle exec spork --bootstrap
  bundle exec guard init spork
 
-- Add ``:cli => '--drb'`` to guard 'rspec'
-- ``bundle exec guard``
+* Add ``:cli => '--drb'`` to guard 'rspec'
+* ``bundle exec guard``
 
 ===== Creating tables =====
 

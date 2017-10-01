@@ -24,10 +24,10 @@ Wiki-Format: zim 0.4
 
 ===== Directories =====
 
-- /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this service is configured on or off
+* /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this service is configured on or off
 
 ===== Single User Mode =====
 Add the following to the kernel arguments `systemd.unit=rescue.target`
 
 ===== Links =====
-- https://cgit.freedesktop.org/systemd/systemd/
+* https://cgit.freedesktop.org/systemd/systemd/

@@ -3,9 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Windows (Microsoft) ======
 
-
-
-
 ===== Export certificates =====
 
 On Win7
@@ -24,7 +21,7 @@ On XP
 
 ===== Links =====
 
-- https://technet.microsoft.com/en-us/sysinternals/bb963890
+* https://technet.microsoft.com/en-us/sysinternals/bb963890
 
 ===== Hosts file =====
 

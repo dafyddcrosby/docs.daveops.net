@@ -26,5 +26,5 @@ Wiki-Format: zim 0.4
 ===== Links =====
 
 
-- http://bnsmb.de/solaris/My_Little_SMF_FAQ.html
-- `Ben Rockwood's cheatsheet <http://www.cuddletech.com/blog/pivot/entry.php?id=182>`_
+* http://bnsmb.de/solaris/My_Little_SMF_FAQ.html
+* `Ben Rockwood's cheatsheet <http://www.cuddletech.com/blog/pivot/entry.php?id=182>`_

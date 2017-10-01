@@ -21,5 +21,5 @@ Wiki-Format: zim 0.4
 
 ===== Resources =====
 
-- `Linux Loadable Kernel Module HOWTO <http://www.tldp.org/HOWTO/Module-HOWTO/>`_
-- `Linux Kernel Module Programming Guide <http://www.tldp.org/LDP/lkmpg/2.6/html/>`_
+* `Linux Loadable Kernel Module HOWTO <http://www.tldp.org/HOWTO/Module-HOWTO/>`_
+* `Linux Kernel Module Programming Guide <http://www.tldp.org/LDP/lkmpg/2.6/html/>`_

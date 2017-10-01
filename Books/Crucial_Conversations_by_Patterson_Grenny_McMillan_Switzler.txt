@@ -12,17 +12,17 @@ By: Kerry Patterson; Joseph Grenny; Ron McMillan; Al Switzler
 ===== What's a crucial convo? =====
 
 
-- different opinions
-- stakes are high
-- emotions run strong
+* different opinions
+* stakes are high
+* emotions run strong
 
 The results of a crucial conversation have high impact on quality of life
 
 Given choices on approach, we can:
 
-- avoid them
-- face them, handle poorly
-- face them, handle well
+* avoid them
+* face them, handle poorly
+* face them, handle well
 
 (I suspect there's actually a larger spectrum than 3 choices ;-)
 
@@ -30,22 +30,22 @@ Crucial conversations are frequently spontaneous, catching you off-guard
 
 Common crucial conversations include:
 
-- Ending a relationship
-- Talking to a coworker who behaves offensively or makes suggestive comments
-- Asking a friend to repay a loan
-- Giving the boss feedback about her behavior
-- Approaching a boss who is breaking his own safety or quality policies
-- Critiquing a colleague's work
-- Asking a roommate to move out
-- Resolving custody or visitation issues with an ex-spouse
-- Dealing with a rebellious teen
-- Talking to a team member who isn't keeping commitments
-- Discussing problems with sexual intimacy
-- Confronting a loved one about a substance abuse problem
-- Talking to a colleague who is hoarding information or resources
-- Giving an unfavorable performance review
-- Asking in-laws to quit interfering
-- Talking to a coworker about a personal hygiene problem
+* Ending a relationship
+* Talking to a coworker who behaves offensively or makes suggestive comments
+* Asking a friend to repay a loan
+* Giving the boss feedback about her behavior
+* Approaching a boss who is breaking his own safety or quality policies
+* Critiquing a colleague's work
+* Asking a roommate to move out
+* Resolving custody or visitation issues with an ex-spouse
+* Dealing with a rebellious teen
+* Talking to a team member who isn't keeping commitments
+* Discussing problems with sexual intimacy
+* Confronting a loved one about a substance abuse problem
+* Talking to a colleague who is hoarding information or resources
+* Giving an unfavorable performance review
+* Asking in-laws to quit interfering
+* Talking to a coworker about a personal hygiene problem
 
 "How can I be 100 percent honest with <person>, and at the same time be 100 percent respectful?"
 
@@ -63,14 +63,14 @@ sharing of meaning.
 
 Maintain your focus:
 
-- What are your motives? What do you actually want?
-- Don't make an either/or choice - talk until you find another option.
+* What are your motives? What do you actually want?
+* Don't make an either/or choice - talk until you find another option.
 
 Killers of honest dialogue:
 
-- trying to "win"
-- punishment
-- keeping the peace (ie silence)
+* trying to "win"
+* punishment
+* keeping the peace (ie silence)
 
 When a conversation turns crucial, ask "What do I *really* want here?"
 
@@ -96,19 +96,18 @@ Watch for content *and* conditions
 You want to be alert for the moment a convo goes from routine to Crucial
 
 Signs that a conversation is about to get Crucial
-- physical signals (stomach gets tight, shoulders tense, hairs stand up)
-- emotions (feel hurt, scared, angry)
-- behaviour (raise voice, point a finger, become quiet)
+* physical signals (stomach gets tight, shoulders tense, hairs stand up)
+* emotions (feel hurt, scared, angry)
+* behaviour (raise voice, point a finger, become quiet)
 
 Look for safety problems. Safe conversations let the things that need to be
 said be said. Unsafe convos are ugly.
 
 ===== Silence =====
 
-
-- masking (sarcasm, sugarcoating)
-- avoiding (steering away from sensitive subjects)
-- withdrawing (running away altogether)
+* masking (sarcasm, sugarcoating)
+* avoiding (steering away from sensitive subjects)
+* withdrawing (running away altogether)
 
 ::
 
@@ -121,10 +120,9 @@ said be said. Unsafe convos are ugly.
 
 ===== Violence =====
 
-
-- controlling (coercion, using directive questions)
-- labeling (stereotyping)
-- attacking
+* controlling (coercion, using directive questions)
+* labeling (stereotyping)
+* attacking
 
 ::
 
@@ -159,8 +157,8 @@ said be said. Unsafe convos are ugly.
 
 
 Here are two crucial questions to help us determine when Mutual Purpose is at risk:
-- Do others believe I care about their goals in this conversation?
-- Do they trust my motives?
+* Do others believe I care about their goals in this conversation?
+* Do they trust my motives?
 
 ::
 
@@ -192,9 +190,9 @@ Here are two crucial questions to help us determine when Mutual Purpose is at ri
   Mutual Respect is at risk: Do others believe I respect them?
 
 Three good skills that the best dialogues use:
-- apologize
-- contrast
-- create a mutual purpose
+* apologize
+* contrast
+* create a mutual purpose
 
 contrasting provides context, proportion, and can fix misunderstandings of scope or severity
 
@@ -205,10 +203,10 @@ higher objective which you agree on.
 ===== CRIB =====
 
 
-- Commit to seek Mutual Purpose
-- Recognize the purpose behind the strategy
-- Invent a Mutual Purpose
-- Brainstorm New Strategies
+* Commit to seek Mutual Purpose
+* Recognize the purpose behind the strategy
+* Invent a Mutual Purpose
+* Brainstorm New Strategies
 
 
 Don't treat your emotions as if they are the only valid response.
@@ -231,45 +229,45 @@ Don't confuse stories with facts
 
 Clever stories:
 
-- victim stories (exaggeration of own innocence)
-- villain stories (overemphasize other's guilt/stupidity)
-- helpless ('there's nothing I could do') 
+* victim stories (exaggeration of own innocence)
+* villain stories (overemphasize other's guilt/stupidity)
+* helpless ('there's nothing I could do') 
 
 watch for double standard with victim/villain
 
 clever stories can:
 
-- match reality (it does sometimes happen)
-- get us off the hook (still partially responsible)
-- keep us from acknowledging our own sellouts
+* match reality (it does sometimes happen)
+* get us off the hook (still partially responsible)
+* keep us from acknowledging our own sellouts
 
 Sellouts:
 
-- You believe you should help someone, but don’t.
-- You believe you should apologize, but don’t.
-- You believe you should stay late to finish up on a commitment, but go home instead.
-- You say yes when you know you should say no, then hope no one follows up to see if you keep your commitment.
-- You believe you should talk to someone about concerns you have with him or her, but don’t.
-- You do less than your share and think you should acknowledge it, but say nothing knowing no one else will bring it up either.
-- You believe you should listen respectfully to feedback, but become defensive instead.
-- You see problems with a plan someone presents and think you should speak up, but don’t.
-- You fail to complete an assignment on time and believe you should let others know, but don’t.
-- You know you have information a coworker could use, but keep it to yourself.
+* You believe you should help someone, but don’t.
+* You believe you should apologize, but don’t.
+* You believe you should stay late to finish up on a commitment, but go home instead.
+* You say yes when you know you should say no, then hope no one follows up to see if you keep your commitment.
+* You believe you should talk to someone about concerns you have with him or her, but don’t.
+* You do less than your share and think you should acknowledge it, but say nothing knowing no one else will bring it up either.
+* You believe you should listen respectfully to feedback, but become defensive instead.
+* You see problems with a plan someone presents and think you should speak up, but don’t.
+* You fail to complete an assignment on time and believe you should let others know, but don’t.
+* You know you have information a coworker could use, but keep it to yourself.
 
 Clever stories omit crucial information about us, about others
 
 Broaching uncomfortable topics requires:
 
-- confidence
-- humility
-- skill
+* confidence
+* humility
+* skill
 
 STATE:
-- Share your facts
-- Tell your story
-- Ask for others' paths
-- Talk tentatively
-- Encourage testing
+* Share your facts
+* Tell your story
+* Ask for others' paths
+* Talk tentatively
+* Encourage testing
 
 Facts are the least controversial, and they are the most persuasive
 
@@ -369,10 +367,10 @@ Dialogue is not decision making
 Before making a decision, decide how to decide
 
 Decision Making styles
-- Command (outside forces)
-- Consult (1 person decides, fills pool)
-- Vote (consensus with 2 or more options)
-- Consensus (talk until everyone honestly agrees to one decision)
+* Command (outside forces)
+* Consult (1 person decides, fills pool)
+* Vote (consensus with 2 or more options)
+* Consensus (talk until everyone honestly agrees to one decision)
 
 Before making decisions: Who cares? Who knows? Who must agree? How many people is it worth involving?
 When making decisions: Who? Does what? By when? How will you follow up?

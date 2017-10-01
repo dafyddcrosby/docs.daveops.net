@@ -10,8 +10,8 @@ Wiki-Format: zim 0.4
    more technical details
    links section
 
-- uses table-level locking and lacks transactions, but has low overhead and is platform neutral
-- excellent for read-only tables
+* uses table-level locking and lacks transactions, but has low overhead and is platform neutral
+* excellent for read-only tables
 
 ===== Tools =====
 

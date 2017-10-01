@@ -2,14 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== So Good They Can't Ignore You by Cal Newport ======
-
-
 @books
 
 ===== three disqualifiers for applying the craftsman mindset =====
-- job presents few opportunities to distinguish yourself by developing relevant skills that are rare and valuable
-- job focuses on something you think is useless or perhaps even actively bad for the world
-- job forces you to work with people you really dislike
+* job presents few opportunities to distinguish yourself by developing relevant skills that are rare and valuable
+* job focuses on something you think is useless or perhaps even actively bad for the world
+* job forces you to work with people you really dislike
 
 ===== Control traps =====
 1. Control that is acquired without career capital is unsustainable

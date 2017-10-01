@@ -36,8 +36,8 @@ When data is inserted/changed, the top level fills up and its data is copied int
 LevelDB, Apache HBase, Hyperdex, Cassandra, RocksDB, WiredTiger, Riak
 
 Advantages:
-- immutable storage segments easily cached+backed up
-- writes are append-only, no need for read
-- fragmentation not an issue (or replaced by simpler problems)
-- less wear on SSDs (can't update data in-place)
+* immutable storage segments easily cached+backed up
+* writes are append-only, no need for read
+* fragmentation not an issue (or replaced by simpler problems)
+* less wear on SSDs (can't update data in-place)
 

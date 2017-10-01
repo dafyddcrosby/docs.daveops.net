@@ -12,4 +12,4 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 
-- https://developer.ciscospark.com/
+* https://developer.ciscospark.com/

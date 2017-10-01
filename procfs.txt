@@ -2,13 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== procfs ======
-
-
 The process information pseudo-file system
 
 ===== Linux =====
 
 man 5 proc
 
-- /proc/partitions
+* /proc/partitions
   list of partitions

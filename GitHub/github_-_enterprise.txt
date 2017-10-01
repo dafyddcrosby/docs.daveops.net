@@ -3,9 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== GitHub - Enterprise ======
 
-
-
-
 ===== CLI =====
 
 ::
@@ -19,7 +16,6 @@ Wiki-Format: zim 0.4
 
 ===== Documentation =====
 
-
-- https://help.github.com/enterprise/2.6/admin/articles/command-line-utilities/
-- https://help.github.com/enterprise/2.6/admin/guides/
-- https://help.github.com/enterprise/2.6/user/
+* https://help.github.com/enterprise/2.6/admin/articles/command-line-utilities/
+* https://help.github.com/enterprise/2.6/admin/guides/
+* https://help.github.com/enterprise/2.6/user/

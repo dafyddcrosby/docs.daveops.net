@@ -3,12 +3,10 @@ Wiki-Format: zim 0.4
 
 ====== Intel x86 ======
 
-
-
 ===== Real Mode =====
-- less than 1MB of RAM
-- no virtual memory
-- no hardware memory protection
+* less than 1MB of RAM
+* no virtual memory
+* no hardware memory protection
 
 ===== Bootstrapping =====
 Starts in 16-bit Real Mode, for compatibility reasons

@@ -27,6 +27,6 @@ Wiki-Format: zim 0.4
 
 ===== Ports =====
 
-- 25: SMTP, typically used for MTA to MTA
-- 465: SMTPS
-- 587
+* 25: SMTP, typically used for MTA to MTA
+* 465: SMTPS
+* 587

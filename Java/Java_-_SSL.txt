@@ -22,5 +22,5 @@ Requires Java 8 and Intel 2010+ Westmere
 
 ===== Links =====
 
-- https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html
-- https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/JSSERefGuide.html#Debug
+* https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html
+* https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/JSSERefGuide.html#Debug

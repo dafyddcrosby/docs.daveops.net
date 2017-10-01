@@ -126,11 +126,11 @@ Take an active role in perfecting the process wherever you work.
 
 ===== Nail the basic process to avoid certain failure =====
 
-- Do an analysis, capture the requirements, and create a design document
-- Review the design - catch errors before the coding stage
-- Code review
-- Use automated code analysis
-- Unit and component tests to stress-test and ensure edge cases are properly handled
+* Do an analysis, capture the requirements, and create a design document
+* Review the design - catch errors before the coding stage
+* Code review
+* Use automated code analysis
+* Unit and component tests to stress-test and ensure edge cases are properly handled
 
 ===== Velocity is a good measure of project health =====
 

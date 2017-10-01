@@ -39,14 +39,14 @@ Google SRE's also write application code, to prevent dev/ops split
 
 The SRE Team is responsible for:
 
-- availability
-- latency
-- performance
-- efficiency
-- change management
-- monitoring
-- emergency response
-- capacity planning
+* availability
+* latency
+* performance
+* efficiency
+* change management
+* monitoring
+* emergency response
+* capacity planning
 
 ::
  The use of an error budget resolves the structural conflict of incentives
@@ -110,14 +110,13 @@ with service growth.
 
 ===== Service Reliability Hierarchy =====
 
-
-- Monitoring
-- Incident Response
-- Postmortem / Root Cause Analysis
-- Testing + Release Procedures
-- Capacity Planning
-- Development
-- Product
+* Monitoring
+* Incident Response
+* Postmortem / Root Cause Analysis
+* Testing + Release Procedures
+* Capacity Planning
+* Development
+* Product
 
 (Not sure the argument that this makes a pyramid holds up...)
 
@@ -125,9 +124,9 @@ with service growth.
 
 
 An incident is when something:
-- involves a second team
-- is customer-facing
-- goes unsolved after an hour of concentrated analysis
+* involves a second team
+* is customer-facing
+* goes unsolved after an hour of concentrated analysis
 
 Declare early before details get hazy
 

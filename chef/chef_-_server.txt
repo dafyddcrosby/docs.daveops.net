@@ -32,5 +32,5 @@ Wiki-Format: zim 0.4
 ===== Links =====
 
 
-- `chef-server-ctl <https://docs.chef.io/ctl_chef_server.html>`_
+* `chef-server-ctl <https://docs.chef.io/ctl_chef_server.html>`_
 

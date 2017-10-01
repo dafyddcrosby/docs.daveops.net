@@ -2,9 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Rust ======
-
-
-
 https://doc.rust-lang.org/core/
 
 ===== Writing tests =====
@@ -42,7 +39,7 @@ https://doc.rust-lang.org/stable/book/testing.html
 ===== Resources =====
 
 
-- https://www.rust-lang.org/documentation.html
-- https://rust-lang.github.io/book/ / https://doc.rust-lang.org/book/
-- http://rustbyexample.com/
-- `vim plugin <https://github.com/rust-lang/rust.vim>`_
+* https://www.rust-lang.org/documentation.html
+* https://rust-lang.github.io/book/ / https://doc.rust-lang.org/book/
+* http://rustbyexample.com/
+* `vim plugin <https://github.com/rust-lang/rust.vim>`_

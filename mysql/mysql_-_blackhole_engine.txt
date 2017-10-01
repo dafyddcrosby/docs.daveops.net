@@ -5,5 +5,5 @@ Wiki-Format: zim 0.4
 
 
 
-- No storage mechanism at all
-- Useful for replication setups and audit logging
+* No storage mechanism at all
+* Useful for replication setups and audit logging

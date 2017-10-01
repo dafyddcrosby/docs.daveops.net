@@ -18,5 +18,5 @@ Pre-derive all current names before committing to a name scheme
 
 ===== Links =====
 
-- https://www.nanog.org/meetings/nanog31/presentations/ringel.pdf
+* https://www.nanog.org/meetings/nanog31/presentations/ringel.pdf
 

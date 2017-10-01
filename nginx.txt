@@ -2,9 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== nginx ======
-
-
-
 :tags: HTTP
 
 ===== Rotate logs =====
@@ -72,9 +69,8 @@ In http, server, or location
 
 ===== Resources =====
 
-
-- https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return
-- https://nginx.org/en/docs/http/ngx_http_core_module.html#location
+* https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return
+* https://nginx.org/en/docs/http/ngx_http_core_module.html#location
 
 ===== A funny aside =====
 

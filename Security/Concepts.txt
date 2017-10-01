@@ -41,13 +41,13 @@ tolerate failure so that business continues with little/no affect.
 
 A hardened system has these characteristics:
 
-- Minimal amount of software (and hardware) installed and running - *only* what is needed
-- Regular updates
-- Privileges only for what is needed
+* Minimal amount of software (and hardware) installed and running - *only* what is needed
+* Regular updates
+* Privileges only for what is needed
 
 ===== References =====
 
-- SP800-12 "An Introduction to Computer Security: The NIST Handbook
-- SP800-14 "Generally Accepted Principles and Practices for Securing Information Technology Systems"
-- `OECD Digital Security Risk Management <https://www.oecd.org/sti/ieconomy/digital-security-risk-management.htm>`_
-- Generally Accepted System Security Principles by International Information Security Foundation
+* SP800-12 "An Introduction to Computer Security: The NIST Handbook
+* SP800-14 "Generally Accepted Principles and Practices for Securing Information Technology Systems"
+* `OECD Digital Security Risk Management <https://www.oecd.org/sti/ieconomy/digital-security-risk-management.htm>`_
+* Generally Accepted System Security Principles by International Information Security Foundation

@@ -7,4 +7,4 @@ Wiki-Format: zim 0.4
 .. TODO - read the microkernel source
 
 ===== Resources =====
-- http://www.minix3.org/
+* http://www.minix3.org/

@@ -23,17 +23,17 @@ Wiki-Format: zim 0.4
 
 ===== Hardening =====
 
-- Explicitly set the server `cipher`, `tls-cipher` and `auth`
-- Use at least 2048-bit keys
-- Use `tls-auth` to mitigate DDoS
-- Keep CA PKI secure. If the CA key is compromised, you'll need to reissue
-- Generate private keys on the target system
-- Use strong key passphrases
-- Avoid sharing keys across targets
-- Generate a CRL at the creation of a VPN
-- Use Diffie-Hellman parameters of 2048-bit+
-- Set the `script-security` level to what is appropriate
-- If you've got servers+clients greater than OpenVPN 2.3.2, set `tls-version-min` to 1.2
+* Explicitly set the server `cipher`, `tls-cipher` and `auth`
+* Use at least 2048-bit keys
+* Use `tls-auth` to mitigate DDoS
+* Keep CA PKI secure. If the CA key is compromised, you'll need to reissue
+* Generate private keys on the target system
+* Use strong key passphrases
+* Avoid sharing keys across targets
+* Generate a CRL at the creation of a VPN
+* Use Diffie-Hellman parameters of 2048-bit+
+* Set the `script-security` level to what is appropriate
+* If you've got servers+clients greater than OpenVPN 2.3.2, set `tls-version-min` to 1.2
 
 ===== CLI misc =====
 ::

@@ -67,9 +67,9 @@ Booleans allow you to enable/disable privileges for when you hit edge-cases or n
 
 The modes used by SELinux:
 
-- Enforcing
-- Permissive
-- Disabled
+* Enforcing
+* Permissive
+* Disabled
 
 ===== semodule =====
 
@@ -104,9 +104,9 @@ matchpathcon
 
 ===== Resources =====
 
-- https://github.com/SELinuxProject
-- http://www.selinuxproject.org
-- `CentOS SELinux wiki <https://wiki.centos.org/HowTos/SELinux>`_
-- `Debian SELinux wiki <https://wiki.debian.org/SELinux/Setup>`_
-- `Fedora SELinux wiki <https://fedoraproject.org/wiki/SELinux>`_
-- `Arch SELinux wiki <https://wiki.archlinux.org/index.php/SELinux>`_
+* https://github.com/SELinuxProject
+* http://www.selinuxproject.org
+* `CentOS SELinux wiki <https://wiki.centos.org/HowTos/SELinux>`_
+* `Debian SELinux wiki <https://wiki.debian.org/SELinux/Setup>`_
+* `Fedora SELinux wiki <https://fedoraproject.org/wiki/SELinux>`_
+* `Arch SELinux wiki <https://wiki.archlinux.org/index.php/SELinux>`_

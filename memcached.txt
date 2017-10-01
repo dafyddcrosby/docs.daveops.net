@@ -32,6 +32,6 @@ Note - this is an undocumented interface in the C memcached server
 
 
 ===== Resources =====
-- `memcached site <http://memcached.org/>`_
-- `libmemcached site <http://libmemcached.org/>`_
-- `memdump <http://docs.libmemcached.org/bin/memdump.html>`_
+* `memcached site <http://memcached.org/>`_
+* `libmemcached site <http://libmemcached.org/>`_
+* `memdump <http://docs.libmemcached.org/bin/memdump.html>`_

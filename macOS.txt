@@ -121,8 +121,8 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 ===== Links =====
 
 
-- https://opensource.apple.com/
-- https://github.com/herrbischoff/awesome-osx-command-line
+* https://opensource.apple.com/
+* https://github.com/herrbischoff/awesome-osx-command-line
 
 ===== Power report =====
 

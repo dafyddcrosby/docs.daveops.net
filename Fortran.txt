@@ -3,8 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Fortran ======
 
-
-
 ===== Links =====
 
-- https://fortran.io/
+* https://fortran.io/

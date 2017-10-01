@@ -87,7 +87,6 @@ For really bad table bloat, use CLUSTER (not VACUUM FULL). It requires space for
 
 ===== Handy URLs =====
 
-
-- http://www.postgresql.org/docs/9.2/static/functions-admin.html
-- http://www.postgresql.org/docs/9.2/static/monitoring-stats.html
+* http://www.postgresql.org/docs/9.2/static/functions-admin.html
+* http://www.postgresql.org/docs/9.2/static/monitoring-stats.html
 

@@ -13,4 +13,4 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 
-- `Website <http://www.haproxy.org/>`_
+* `Website <http://www.haproxy.org/>`_

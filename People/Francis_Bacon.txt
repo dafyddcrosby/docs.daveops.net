@@ -9,7 +9,7 @@ Wiki-Format: zim 0.4
 ===== 4 idols =====
 
 
-- tribe (opinion)
-- cave (intellect coloured by experience)
-- marketplace (semantics)
-- theater (sophistry)
+* tribe (opinion)
+* cave (intellect coloured by experience)
+* marketplace (semantics)
+* theater (sophistry)

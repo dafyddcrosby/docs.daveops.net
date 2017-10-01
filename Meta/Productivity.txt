@@ -27,30 +27,30 @@ Use 'bright lines' to avoid ambiguities that keep you doing things you don't wan
 
 * Learn your editor inside out
 
-- Use the best tools you can for your development machine. Waiting for compiles suck time and money.
+* Use the best tools you can for your development machine. Waiting for compiles suck time and money.
 
 ===== Delegation =====
 
 
-- Assistants generally excel at maintaining systems, not creating them. *You*
+* Assistants generally excel at maintaining systems, not creating them. *You*
   should have the big picture in your head.
-- Have a documented process. Questions mean the process isn't documented well enough.
+* Have a documented process. Questions mean the process isn't documented well enough.
 
 ===== Time Management =====
 
 
-- Set 3 important tasks for the day, every day. Guard your time so that these three things always get done
+* Set 3 important tasks for the day, every day. Guard your time so that these three things always get done
 
 ===== Office organization =====
 
 
-- Identify problem spots first.
+* Identify problem spots first.
 
 
 ===== Ivy Lee Method =====
 
 
-- Each night before you go to bed, write down the 6 most important tasks for the next day.
-- Order by importance.
-- Do the tasks by importance.
-- Repeat.
+* Each night before you go to bed, write down the 6 most important tasks for the next day.
+* Order by importance.
+* Do the tasks by importance.
+* Repeat.

@@ -21,9 +21,9 @@ Wiki-Format: zim 0.4
 
 ===== document classes =====
 
-- book
-- article
-- report
-- letter
-- slides
+* book
+* article
+* report
+* letter
+* slides
 

@@ -21,8 +21,8 @@ If you find yourself having the same convo again and again, there's another, lar
   violation to a clear sentence before you talk, the issue almost never becomes
   more understandable and focused as a conversation unfolds.
 
-- Content - 'You did x,y,z'
-- Pattern - 'This is Nth occurance'
-- Relationship - 'This is putting a strain on our (work|friendship|marriage)'
+* Content - 'You did x,y,z'
+* Pattern - 'This is Nth occurance'
+* Relationship - 'This is putting a strain on our (work|friendship|marriage)'
 
 Do you actually know the intention? Don't leap to conclusions

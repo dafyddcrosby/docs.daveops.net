@@ -17,4 +17,4 @@ CaseSensitiveIdentifiers
 '''
 
 ===== Resources =====
-- http://www.scheme.com
+* http://www.scheme.com

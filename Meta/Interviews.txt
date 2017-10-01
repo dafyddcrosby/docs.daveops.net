@@ -3,11 +3,9 @@ Wiki-Format: zim 0.4
 
 ====== Interviews ======
 
-
-
 ===== Interviewer =====
 
 
 ===== Interviewee =====
 
-- http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/
+* http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/

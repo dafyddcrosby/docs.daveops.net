@@ -292,4 +292,4 @@ uses table-locking, but is speedy
 
 ===== Good books =====
 
-- High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko
+* High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko

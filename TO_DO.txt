@@ -8,7 +8,7 @@ Wiki-Format: zim 0.4
 http://sijinjoseph.com/programmer-competency-matrix/
 http://petr-mitrichev.blogspot.ca/
 
-- http://travis-ci.org
+* http://travis-ci.org
 
 http://courses.csail.mit.edu/6.006/spring11/notes.shtml
 http://programmedlessons.org/AssemblyTutorial/index.html

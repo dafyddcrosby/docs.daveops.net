@@ -11,10 +11,10 @@ Massively parallel computer architecture comprised of non-uniformly interconnect
 
 ===== Node Type T21 - Basic Execution Node =====
 
-- After executing the last instruction of the program, execution automatically continues to the first instruction.
-- All registers store integer values between -999 and 999 (inclusive).
-- Comments start with #, text after ## is used as the title of the program.
-- Labels are used for jump instructions.
+* After executing the last instruction of the program, execution automatically continues to the first instruction.
+* All registers store integer values between -999 and 999 (inclusive).
+* Comments start with #, text after ## is used as the title of the program.
+* Labels are used for jump instructions.
 
 ==== TIS-100 Registers ====
 | Register | Notes                                                |
