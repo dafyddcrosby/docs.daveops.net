@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Interviews ======
-==========
+
 
 
 ===== Interviewer =====
---------------------
+
 
 ===== Interviewee =====
---------------------
+
 - http://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/

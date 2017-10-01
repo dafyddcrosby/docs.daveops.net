@@ -2,14 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== RSpec ======
-=====
+
 :tags: Ruby, Ruby on Rails
 
 http://rspec.info/
 http://rubydoc.info/gems/rspec-rails/frames
 
 ===== Using RSpec =====
---------------------
+
 Add to Gemfile:
 
 .. code-block:: ruby

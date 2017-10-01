@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Python - platform ======
---------------------
+
 :tags: Python 
 
 ===== Examples =====
-========
+
 .. code-block:: python
 
  # Get machine type

@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== nginx ======
-=====
+
 
 
 :tags: HTTP
 
 ===== Rotate logs =====
---------------------
+
 ::
 
  mv access.log access.log.0
@@ -17,7 +17,7 @@ Wiki-Format: zim 0.4
  gzip access.log.0    # do something with access.log.0
 
 ===== Basic TLS config =====
---------------------
+
 Check for recent config at https://mozilla.github.io/server-side-tls/ssl-config-generator/
 
 ::
@@ -55,7 +55,7 @@ Check for recent config at https://mozilla.github.io/server-side-tls/ssl-config-
   }
 
 ===== Redirect only / query =====
---------------------
+
 ::
 
   location = / {
@@ -63,7 +63,7 @@ Check for recent config at https://mozilla.github.io/server-side-tls/ssl-config-
   }
 
 ===== Disable nginx version in header =====
---------------------
+
 In http, server, or location
 
 ::
@@ -71,13 +71,13 @@ In http, server, or location
   server_tokens off
 
 ===== Resources =====
---------------------
+
 
 - https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return
 - https://nginx.org/en/docs/http/ngx_http_core_module.html#location
 
 ===== A funny aside =====
---------------------
+
 
 One of my coworkers said that "nginx is just a hipster Apache". I *wish* that's the most ignorant thing he's ever said (sit down with me for a beer, and I'll give a few other gems).
 

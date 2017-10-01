@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Practice programming ======
-====================
+
 
 
 
 ===== Puzzles =====
---------------------
+
 
 - http://codekata.pragprog.com
 - `Project Euler <http://projecteuler.net/>`_
@@ -20,7 +20,7 @@ Wiki-Format: zim 0.4
 - `Regex Golf <https://alf.nu/RegexGolf>`_
 
 ===== Competitions =====
---------------------
+
 
 - http://topcoder.com
 - http://vimgolf.com/

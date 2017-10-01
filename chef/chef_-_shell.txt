@@ -2,19 +2,19 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Chef - Shell ======
-============
+
 
 
 :tags: Chef
 
 ===== Debug attributes =====
---------------------
+
 ::
 
  pp node.debug_value('system', 'repo')
 
 ===== Get the resources used =====
---------------------
+
 ::
  
  # in chef-shell

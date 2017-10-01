@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Python ======
---------------------
+
 
 :tags: Python
 
@@ -14,11 +14,11 @@ Wiki-Format: zim 0.4
 .. TODO - threading, multiprocessing
 
 ===== Essential third-party tools =====
-==============================
+
 `autopep8 <http://pypi.python.org/pypi/autopep8>`_
 
 ===== Getopts =====
-==============================
+
 .. code-block:: python
 
  import getopt, sys
@@ -41,7 +41,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Opening a file =====
-==============================
+
 .. code-block:: python
 
  try:
@@ -53,7 +53,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Syntax cheatsheet =====
-==============================
+
 .. code-block:: python
 
  if blah == 0:
@@ -71,13 +71,13 @@ Wiki-Format: zim 0.4
 
 
 ===== Remove duplicates from a list =====
-==============================
+
 .. code-block:: python
 
  the_list = list(set(the_list))
 
 ===== Profile a program =====
-==============================
+
 http://docs.python.org/library/profile.html
 
 .. code-block:: python
@@ -86,7 +86,7 @@ http://docs.python.org/library/profile.html
  profile.run("main()")
 
 ===== Launch REPL when line is hit =====
-==============================
+
 .. code-block:: python
 
  import code
@@ -95,7 +95,7 @@ http://docs.python.org/library/profile.html
 
 
 ===== Logging =====
-==============================
+
 .. code-block:: python
 
  import logging
@@ -103,7 +103,7 @@ http://docs.python.org/library/profile.html
  logging.warning('%s before you %s', 'Look', 'leap!')
 
 ===== Named tuples (ghetto classes) =====
-==============================
+
 .. code-block:: python
 
  import collections
@@ -119,7 +119,7 @@ http://docs.python.org/library/profile.html
 
 
 ===== Tab completion in Python shell =====
-==============================
+
 If you don't have access to IPython,
 
 .. code-block:: python
@@ -128,7 +128,7 @@ If you don't have access to IPython,
  readline.parse_and_bind('tab: complete')
 
 ===== Tar a bunch of files =====
-==============================
+
 
 .. code-block:: python
 
@@ -139,14 +139,14 @@ If you don't have access to IPython,
   tar.close()
 
 ===== Run a simple webserver =====
-==============================
+
 
 ::
 
  python -m SimpleHTTPServer
 
 ===== Check Python version =====
-==============================
+
 .. code-block:: python
 
  if sys.hexversion >= 0x020502F0:
@@ -166,7 +166,7 @@ If you don't have access to IPython,
 
 
 ===== Get Linux distribution =====
-==============================
+
 .. code-block:: python
 
  if sys.hexversion < 0x020600F0:
@@ -176,14 +176,14 @@ If you don't have access to IPython,
 
 
 ===== Inspect the stack =====
-==============================
+
 .. code-block:: python
    
  import inspect
  print " << ".join([i[3] for i in inspect.stack()])
 
 ===== Get Python documentation through the browser =====
-============================================
+
 ::
 
  pydoc -p <port>

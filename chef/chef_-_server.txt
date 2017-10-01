@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Chef - Server ======
-=============
+
 
 
 :tags: Chef
 
 ===== Users =====
---------------------
+
 ::
 
   # Create a user
@@ -19,7 +19,7 @@ Wiki-Format: zim 0.4
   chef-server-ctl user-delete USER_NAME
 
 ===== Organizations =====
---------------------
+
 ::
 
   # List orgs
@@ -30,7 +30,7 @@ Wiki-Format: zim 0.4
   chef-server-ctl org-user-add ORG_NAME USER_NAME [--admin]
 
 ===== Links =====
---------------------
+
 
 - `chef-server-ctl <https://docs.chef.io/ctl_chef_server.html>`_
 

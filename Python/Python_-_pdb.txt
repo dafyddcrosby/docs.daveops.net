@@ -2,18 +2,18 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Python - pdb ======
-============
+
 
 :tags: Python
 
 ===== CLI =====
----
+
 ::
 
  python -m pdb file.py
 
 ===== Invoke debugger when line is hit =====
---------------------
+
 .. code-block:: python
 
  import pdb

@@ -6,22 +6,22 @@ Wiki-Format: zim 0.4
 
 
 ===== Running the profiler =====
---------------------
+
 
 ``ruby -rprofile script.rb``
 
 ===== get machine instructions =====
---------------------
+
 
 ``ruby --dump insns script.rb``
 
 ===== See how commands are parsed =====
---------------------
+
 
 ``ruby --dump parsetree_with_comment script.rb``
 
 ===== Abort on thread errors =====
---------------------
+
 .. code-block:: ruby
 
  Thread.abort_on_exception = true
@@ -36,7 +36,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Syntax cheatsheet =====
---------------------
+
 .. code-block:: ruby
 
  if val = 42
@@ -70,14 +70,14 @@ Wiki-Format: zim 0.4
  end
 
 ===== Running proceses =====
---------------------
+
 
 - `system() <http://ruby-doc.org/core/Kernel.html#method-i-system>`_ - return value of true (zero exit), false (non-zero), and nil (failed execution)
 - `backticks <http://ruby-doc.org/core/Kernel.html#method-i-60>`_ - returns STDOUT, sets $? to the process status
 - `exec() <http://ruby-doc.org/core/Kernel.html#method-i-exec>`_ - replace current process by running command
 
 ===== % Notation =====
---------------------
+
 
 | Modifier | Meaning                                                            |
 |----------|--------------------------------------------------------------------|

@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Contracting advice ======
-==================
+
 :tags: advice 
 
 Wisdom pulled from a variety of sources
 
 ===== Technical =====
---------------------
+
 - Always have the technology installed and comprehended before making estimates
 - Don't reinvent the wheel.
 - If the customer has given you full access to the site, straight up mirror it. Download everything and just change the configuration file that connects the database.
@@ -21,7 +21,7 @@ Wisdom pulled from a variety of sources
 - If you patched anything, try to send that upstream. It shows familiarity with project to potential employers.
 
 ===== Business =====
---------------------
+
 - Always ask for double or more the rate you would get working full-time at a company
 - Documentation, documentation, documentation
 - If you think you offer $100/hr service, then CHARGE $100/hr service
@@ -41,7 +41,7 @@ Wisdom pulled from a variety of sources
 - When firing a client, it is important that you do it in writing and mention which part of the contract has been violated.
 
 ===== Contract =====
---------------------
+
 - Set clear expectations and clear definitions. Put them in a contract.
 - If the customer refuses to pay, don't appeal to emotion. Get a lawyer, instead.
 - If the project changes, either amend the existing contract or settle up the existing contract and create a new one.

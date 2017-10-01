@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Sinatra ======
-=======
+
 :tags: Ruby 
 
 http://www.sinatrarb.com
 
 ===== Using haml =====
---------------------
+
 * Add haml to Gemfile
 * To add partials use: ``= haml :footer``

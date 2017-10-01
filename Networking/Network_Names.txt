@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Network Names ======
-=============
+
 
 
 Have a formal grammar for parsing
@@ -17,6 +17,6 @@ Use CNAMEs to wean off old names
 Pre-derive all current names before committing to a name scheme
 
 ===== Links =====
---------------------
+
 - https://www.nanog.org/meetings/nanog31/presentations/ringel.pdf
 

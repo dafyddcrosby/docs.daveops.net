@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== The Five Dysfunctions of a Team by Patrick Lencioni ======
-===================================================
+
 @books
 
 * Inattention to results - status and ego

@@ -19,13 +19,13 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 ===== HTTP response codes =====
 
 ==== 1xx Informational ====
---------------------
+
 - 100 Continue
 - 101 Switching Protocols
 - 102 Processing (WebDAV; RFC 2518)
 
 ==== 2xx Success ====
---------------------
+
 - 200 OK
 - 201 Created
 - 202 Accepted
@@ -38,7 +38,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 - 226 IM Used (RFC 3229)
 
 ==== 3xx Redirection ====
---------------------
+
 - 300 Multiple Choices
 - 301 Moved Permanently
 - 302 Found
@@ -50,7 +50,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 - 308 Permanent Redirect
 
 ==== 4xx Client Error ====
---------------------
+
 - 400 Bad Request
 - 401 Unauthorized
 - 402 Payment Required
@@ -92,7 +92,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 - 499 Client Closed Request (Nginx)
 
 ==== 5xx Server Error ====
---------------------
+
 - 500 Internal Server Error
 - 501 Not Implemented
 - 502 Bad Gateway

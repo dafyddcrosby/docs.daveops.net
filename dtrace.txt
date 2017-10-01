@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== dtrace ======
-======
+
 
 
 
@@ -16,6 +16,6 @@ Wiki-Format: zim 0.4
   dtrace -n syscall:::'{ trace(execname) ;}'
 
 ===== Links =====
---------------------
+
 
 http://www.brendangregg.com/DTrace/dtrace_oneliners.txt

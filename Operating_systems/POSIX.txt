@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== POSIX ======
-=====
+
 
 
 ===== Standards =====
---------------------
+
 
 - `POSIX 1003.1 2013 <http://pubs.opengroup.org/onlinepubs/9699919799/>`_
 

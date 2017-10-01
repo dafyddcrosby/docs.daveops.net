@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Selling a business ======
-==================
+
 
 
 Sell for 2-4x trailing-twelve-months revenue minus expenses
@@ -16,7 +16,7 @@ Use a broker to sell the business:
 Avoid cross-contamination with other businesses
 
 ===== What buyers look for =====
---------------------
+
 
 - Established business (6+ years)
 - Recurring revenue
@@ -25,7 +25,7 @@ Avoid cross-contamination with other businesses
 - Good documentation (solid bookkeeping, guide to running the business)
 
 ===== Avoid =====
---------------------
+
 
 - "no money down"
 - anonymous sales
@@ -33,7 +33,7 @@ Avoid cross-contamination with other businesses
 - people who negotiate for weeks then demand a discount right before contract signing
 
 ===== Brokers =====
---------------------
+
 
 Take a 10-15% cut (generally worth it - much lower risk, higher negotiated price)
 

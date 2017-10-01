@@ -2,24 +2,24 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== SQLite ======
-======
+
 
 :tags: databases
 
 ===== Show all tables =====
---------------------
+
 .. code-block:: sqlite3
 
  .tables
 
 ===== Show table schema =====
---------------------
+
 .. code-block:: sqlite3
 
  .schema tablename
 
 ===== See if table exists =====
---------------------
+
 .. code-block:: sqlite3
 
  SELECT name 
@@ -27,13 +27,13 @@ Wiki-Format: zim 0.4
  WHERE type='table'
 
 ===== Export tables =====
---------------------
+
 ::
 
   sqlite3 my.db .dump
 
 ===== Datatypes =====
---------------------
+
 * NULL. The value is a NULL value.
 * INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
 * REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.

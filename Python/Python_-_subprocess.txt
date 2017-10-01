@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Python - subprocess ======
---------------------
+
 :tags: Python 
 
 
 ===== Popen =====
-=====
+
 .. code-block:: python
 
  pipe = subprocess.Popen(args_list, shell=True, stdout=subprocess.PIPE)

@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== mdadm ======
-=====
+
 
 
 ===== Get details of RAID setup =====
---------------------
+
 .. code-block:: bash
  
  mdadm --detail /dev/md0

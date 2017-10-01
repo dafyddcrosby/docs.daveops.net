@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Docker ======
-======
+
 
 
 
 ===== CLI =====
----
+
 ::
 
   # list all containers
@@ -21,7 +21,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Dockerfile syntax =====
---------------------
+
 ::
 
   FROM image_name:image_tag

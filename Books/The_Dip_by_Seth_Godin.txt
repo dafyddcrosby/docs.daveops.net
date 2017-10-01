@@ -2,14 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== The Dip by Seth Godin ======
-=====================
+
 
 @books
 
 "Never quit something with great long-term potential just because you can't deal with the stress of the moment" - Seth Godin (p. 64)
 
 ===== Several curves =====
---------------------
+
 - The dip - where there is a barrier to great success
 - The cul-de-sac - where nothing will change when you reach a certain point
 - The cliff - when you can't quit until you fall off
@@ -26,7 +26,7 @@ Who are you trying to influence? If you're trying to influence a single person, 
 Measuring your progress means you can see if you're pulling ahead or not.
 
 ===== Questions to ask before quitting (p 75-76) =====
---------------------
+
 
 - Is this a Dip, a Cliff, or a Cul-de-Sac?
 - If it's a Cul-de-Sac, how can I change it into a Dip?

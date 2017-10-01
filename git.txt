@@ -7,7 +7,7 @@ Wiki-Format: zim 0.4
 :tags: version control
 
 ===== Create bare repository =====
-======================
+
 ::
 
  mkdir -p project.git && cd project.git && git --bare init
@@ -20,7 +20,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Checkout remote repository =====
-==========================
+
 ::
 
  git fetch
@@ -28,13 +28,13 @@ Wiki-Format: zim 0.4
 
 
 ===== Sequential versioning =====
-=====================
+
 ::
 
  git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
 
 ===== Reset git to a specific commit =====
-==============================
+
 ::
 
  git reset [hash]
@@ -49,10 +49,10 @@ If you just need to amend last commit,
  git commit --amend
 
 ===== Handy hooks =====
-===========
+
 
 ==== Push to website on git push ====
---------------------
+
 on server, put this in ``hooks/post-receive``
 
 ::
@@ -61,20 +61,20 @@ on server, put this in ``hooks/post-receive``
  GIT_WORK_TREE=/path/to/www.example.org git checkout -f
 
 ===== Push branch to remote server =====
-==============================
+
 ::
 
  git push origin branch_name
 
 ===== Delete remote branch =====
-==============================
+
 ::
 
  git push origin :branch_to_delete
  git branch -d branch_to_delete
 
 ===== Tagging =====
-==============================
+
 ::
 
  git tag  # list tags
@@ -83,7 +83,7 @@ on server, put this in ``hooks/post-receive``
  git push --tags  # push tags to remote
 
 ===== Stashing =====
-==============================
+
 ::
 
  git stash list  # list stashes
@@ -94,38 +94,38 @@ on server, put this in ``hooks/post-receive``
  git stash clear  # delete all stashes
 
 ===== Add remote branch =====
-==============================
+
 ::
 
  git remote add upstream git://github.com/user/repo.git
 
 ===== Show nicely formatted changelog =====
-===============================
+
 ::
 
  git log --graph --oneline --abbrev-commit --decorate
 
 ===== Get list of contributors =====
-========================
+
 ::
 
  git shortlog -s -n
 
 ===== Remove non-tracked files =====
-========================
+
 ::
 
  git clean -n  # dry run
  git clean -f  # delete the files
 
 ===== Squash commits into single commit =====
-=================================
+
 ::
 
  git rebase -i <hash>
 
 ===== Untrack files without deletion =====
-==============================
+
 ::
 
  echo "filename" >> .gitignore
@@ -134,7 +134,7 @@ on server, put this in ``hooks/post-receive``
  git commit -m "removing filename from version control"
 
 ===== Load my dotfiles to the home directory =====
-======================================
+
 ::
 
  cd ~
@@ -143,26 +143,26 @@ on server, put this in ``hooks/post-receive``
  git pull origin master
 
 ===== Get list of staged files for commit =====
-===================================
+
 ::
 
  git diff --cached --name-status | sed 's/.\s*//'
 
 ===== Diff remote repo =====
-================
+
 ::
 
  git diff <branch> <remote>/<branch>
 
 ===== Import Sourceforge CVS repo =====
-===========================
+
 ::
 
  rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
  git cvsimport -p x -v -d /absolute/path/to/w3m w3m
 
 ===== Import another repo as a subtree =====
-================================
+
 ::
 
  git remote add -f remote_name git@example.com:remote_repo.git
@@ -172,25 +172,25 @@ on server, put this in ``hooks/post-receive``
  
 
 ===== Search git history =====
-==================
+
 ::
 
  git log -S <search term>
 
 ===== Retrieve single file from a specific revision in git =====
-====================================================
+
 ::
 
  git checkout <HASH> -- ./path/to/file
 
 ===== GPG signing =====
-===========
+
 ::
 
   git commit -S -m MESSAGE
 
 ===== Signing a commit =====
-================
+
 
 In the commit message
 
@@ -199,6 +199,6 @@ In the commit message
   Signed-off-by: David Crosby <email@example.com>
 
 ===== zlol =====
-====
+
 http://whatthecommit.com/
 

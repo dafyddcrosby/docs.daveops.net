@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Phusion Passenger ======
-=================
+
 
 
 :tags: Ruby, HTTP
 
 ===== CLI =====
----
+
 ::
 
   # Get overall status
@@ -19,7 +19,7 @@ Wiki-Format: zim 0.4
   passenger-config restart-app
 
 ===== Hiding Version Headers =====
---------------------
+
 ::
 
   # Apache
@@ -30,5 +30,5 @@ Wiki-Format: zim 0.4
   passenger_show_version_in_header off;
 
 ===== Resources =====
---------------------
+
 https://www.phusionpassenger.com/library/admin/apache/

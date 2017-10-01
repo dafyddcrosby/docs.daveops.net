@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== DBA ======
-===
+
 
 
 ===== Responsibilities =====
---------------------
+
 
 - installs/configures/updates/migrates databases
 - develops and implements a backup strategy

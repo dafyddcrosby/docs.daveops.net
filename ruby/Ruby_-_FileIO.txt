@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby - FileIO ======
-=============
+
 :tags: Ruby
 
 
 
 ===== Write to a file =====
---------------------
+
 
 .. code-block:: ruby
 
@@ -17,7 +17,7 @@ Wiki-Format: zim 0.4
   fp.close
 
 ===== Read individual chars =====
---------------------
+
 
 .. code-block:: ruby
 

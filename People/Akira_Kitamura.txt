@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Akira Kitamura ======
-==============
+
 :tags: people
 
 Game designer of Mega Man

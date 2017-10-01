@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Refactorings ======
-============
+
 
 - Extract method -> move block of code into a separate function
 - Move method -> move function to class that uses it most, removing or delegating it in the old class

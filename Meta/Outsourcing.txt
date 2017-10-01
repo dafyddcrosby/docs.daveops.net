@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Outsourcing ======
-===========
+
 
 
 ===== Tom Limoncelli =====
---------------------
+
 http://everythingsysadmin.com/2015/10/outsourcing-was-such-a-mistake.html
 
 ::

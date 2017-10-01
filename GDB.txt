@@ -43,11 +43,11 @@ Wiki-Format: zim 0.4
 | d    | signed int   |
 
 Check a core dump
---------------------
+
 ::
 
  gdb executable coredump
 
 Extensions
---------------------
+
 http://rr-project.org/

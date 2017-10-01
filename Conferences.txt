@@ -2,14 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Conferences ======
-===========
+
 
 .. TODO - add links
 
 http://lanyrd.com/
 
 ===== Security =====
---------------------
+
 - DefCon
 - BlackHat
 - ShmooCon
@@ -17,12 +17,12 @@ http://lanyrd.com/
 - CanSecWest
 
 ===== BSD =====
----
+
 - `AsiaBSDCon <asiabsdcon.org>`_
 - BSDCan
 
 ===== Ruby =====
-----
+
 - http://rubythere.com/
 - Rails Conf
 

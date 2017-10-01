@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MySQL - MyISAM engine ======
-=====================
+
 
 :tags: MySQL
 
@@ -14,7 +14,7 @@ Wiki-Format: zim 0.4
 - excellent for read-only tables
 
 ===== Tools =====
---------------------
+
 
  myisam_ftdump
  A utility that displays information about full-text indexes in MyISAM tables. See Section 4.6.2, “myisam_ftdump — Display Full-Text Index information”.

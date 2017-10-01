@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby on Rails - ActiveRecord ======
-============================
+
 :tags: Ruby, Ruby on Rails
 
 
 ===== Supported database column types =====
---------------------
+
 * binary
 * boolean
 * date
@@ -22,5 +22,5 @@ Wiki-Format: zim 0.4
 * timestamp
 
 ===== Misc. =====
---------------------
+
 * Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration

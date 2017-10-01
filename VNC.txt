@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== VNC ======
-===
+
 
 
 
@@ -13,7 +13,7 @@ Wiki-Format: zim 0.4
  vncviewer :0
 
 ===== Testing a connection =====
---------------------
+
 ::
 
   nc -v <host> <port>

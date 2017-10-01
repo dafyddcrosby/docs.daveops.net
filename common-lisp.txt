@@ -2,17 +2,17 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Common Lisp ======
-===========
+
 
 
 ===== Compile a file =====
---------------------
+
 .. code-block:: lisp
 
    (compile-file "file.lisp")
 
 ===== Format directives =====
---------------------
+
 (format destination control-string args) => result
 
 destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer

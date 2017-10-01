@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== PHP - Binary ======
---------------------
+
 :tags: php
 
 
 ===== Read a binary file =====
-==============================
+
 .. code-block:: php
 
  <?php
@@ -17,7 +17,7 @@ Wiki-Format: zim 0.4
  ?>
 
 ===== Binary craziness =====
-==============================
+
 .. code-block:: php
 
  <?php
@@ -26,7 +26,7 @@ Wiki-Format: zim 0.4
  ?>
 
 ===== Playing with endianness =====
-==============================
+
 .. code-block:: php
 
  <?php
@@ -36,7 +36,7 @@ Wiki-Format: zim 0.4
  ?>
 
 ===== Unpacking binary file formats =====
-==============================
+
 .. code-block:: php
 
  <?php

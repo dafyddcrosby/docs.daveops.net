@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby - Idioms ======
-=============
+
 :tags: Ruby
 
 
 ===== Naming =====
---------------------
+
 
 {{{code: linenumbers="True"
 local_variable

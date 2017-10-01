@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MySQL - Upgrading ======
-=================
+
 
 If using InnoDB:
 set global innodb_fast_shutdown=0

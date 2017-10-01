@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MySQL - Configuration ======
-=====================
+
 
 :tags: MySQL
 
 ===== Variables =====
---------------------
+
 .. code-block:: mysql
 
   -- session variables
@@ -19,7 +19,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Get timezone config =====
---------------------
+
 .. code-block:: mysql
  
  SELECT @@global.time_zone, @@session.time_zone;

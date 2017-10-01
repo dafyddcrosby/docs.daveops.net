@@ -2,15 +2,15 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== PHP - SQLite ======
---------------------
+
 :tags: php
 
 
 ===== SQLite =====
-==============================
+
 
 ==== Initializing ====
---------------------
+
 .. code-block:: php
 
  <?php
@@ -36,7 +36,7 @@ Wiki-Format: zim 0.4
  ?>
 
 ==== Reading values ====
---------------------
+
 .. code-block:: php
 
  <?php

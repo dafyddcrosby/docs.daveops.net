@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== SSH - Troubleshooting ======
-=====================
+
 
 
 As silly as some of these seem, I've seen them all apply at one point or another.
 
 ===== Client-side =====
---------------------
+
 
 - Are you using the correct key?
   - confirm this using the -i flag
@@ -22,7 +22,7 @@ As silly as some of these seem, I've seen them all apply at one point or another
   - does the fingerprint match?
 
 ===== Server-side =====
---------------------
+
 
 - Is sshd running?
 - Is the firewall open?

@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== ImageMagick ======
---------------------
+
 
 
 ===== Create a PDF from image files =====
-==============================
+
 ::
 
   # single image per page

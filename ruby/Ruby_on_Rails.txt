@@ -2,20 +2,20 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby on Rails ======
---------------------
+
 
 :tags: Ruby, Ruby on Rails
 
 .. TODO - http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2
 
 ===== Installing Rails =====
-================
+
 ::
 
  gem install rails
 
 ===== Setting up Rails =====
-================
+
 ::
 
  rails new app_name
@@ -28,25 +28,25 @@ Wiki-Format: zim 0.4
  $EDITOR config/routes.rb
 
 ===== Scaffolding =====
-===========
+
 ::
 
  rails generate scaffold Post user:references title:string{50} content:text
 
 ===== Add indexes to migration =====
-==============================
+
 ::
 
  rails g resource user name:index email:uniq
 
 ===== Using Dreamhost =====
-===============
+
 - Passenger must be enabled for domain/subdomain
 - Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
 - For database ``rake db:migrate RAILS_ENV=production``
 
 ===== Validating Active Records =====
-==============================
+
 .. code-block:: ruby
 
  class Post < ActiveRecord::Base
@@ -58,28 +58,28 @@ Wiki-Format: zim 0.4
  end
 
 ==== Ensure uniqueness at the db level ====
---------------------
+
 # ``rails generate migration add_index_to_users_email``
 # add to migration file under def change: ``add_index :users, :email, unique: true``
 # ``bundle exec rake db:migrate``
 
 ===== Database =====
-========
+
 
 ==== Migrate to new model ====
---------------------
+
 ::
 
  rake db:migrate
 
 ==== Return to previous model ====
---------------------
+
 ::
 
  rake db:rollback
 
 ===== Automated testing with guard and spork =====
-======================================
+
 -Add to Gemfile:
 
 .. code-block:: ruby
@@ -105,7 +105,7 @@ Wiki-Format: zim 0.4
 - ``bundle exec guard``
 
 ===== Creating tables =====
-===============
+
 .. code-block:: ruby
 
  create_table "contacts" do |t|
@@ -116,22 +116,22 @@ Wiki-Format: zim 0.4
  end
 
 ===== Reset test database =====
-===================
+
 ::
 
  bundle exec rake db:test:prepare
 
 ===== Find code comment dev tags =====
-==============================
+
 To find TODO, FIXME, and OPTIMIZE comment tags, use ``rake notes``
 
 ===== Simple wins =====
-===========
+
 * Use ``find_each`` instead of ``each`` when searching through large sets of iterables
 * Use ``content_tag`` to avoid XSS hacks
 
 ===== Get versions =====
-============
+
 ``rake about``
 
 ===== Links =====
