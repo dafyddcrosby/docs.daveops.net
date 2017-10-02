@@ -2,9 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== macOS ======
-:date: 2016-03-04
-:modified: 2017-03-31
-:tags: macOS
+
+
+@macOS
 
 ===== Keyboard shortcuts =====
 
@@ -33,7 +33,7 @@ Wiki-Format: zim 0.4
 apple key + ? , search for the help menu
 
 ===== Increase maxfiles for session =====
---------------------
+
 ::
 
   ulimit -n 4096
@@ -47,32 +47,32 @@ apple key + ? , search for the help menu
  launchctl remove <svc>
 
 ===== Use particular nameservers for a domain =====
---------------------
+
 Create hosts-style file in `/etc/resolver/<domain>`
 
 See `man 5 resolver`
 
 ===== Flush DNS cache =====
---------------------
+
 ::
 
  # On Yosemite+
  sudo discoveryutil mdnsflushcache
 
 ===== Burn ISO =====
---------------------
+
 ::
 
  hdiutil burn <image>
 
 ===== List disks =====
---------------------
+
 ::
 
  diskutil list
 
 ===== Get linked libraries/object files =====
---------------------
+
 ::
 
  # List shared libraries
@@ -81,14 +81,14 @@ See `man 5 resolver`
 .. TODO look more into otool's operations
 
 ===== Create a RAM disk =====
---------------------
+
 ::
 
  # Replace XXXXX with MB * 2048 (eg a 4 gig is 8388608 (4096 * 2048))
  diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount ram://XXXXX`
 
 ===== Boot Options =====
---------------------
+
 
 | keypress             | action                            |
 |----------------------|-----------------------------------|
@@ -104,7 +104,7 @@ See `man 5 resolver`
 
 
 ===== Wireless diagnostics =====
---------------------
+
 
 All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window' tab
 
@@ -113,19 +113,19 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
   /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
 
 ===== Virtual Memory Stats =====
---------------------
+
 ::
 
   vmstat
 
 ===== Links =====
---------------------
 
-- https://opensource.apple.com/
-- https://github.com/herrbischoff/awesome-osx-command-line
+
+* https://opensource.apple.com/
+* https://github.com/herrbischoff/awesome-osx-command-line
 
 ===== Power report =====
---------------------
+
 A bunch of dtrace under the hood
 
 ::

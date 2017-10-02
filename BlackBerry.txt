@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== BlackBerry ======
-:date: 2015-02-21
+
 
 ===== Compile via command-line =====
 ::

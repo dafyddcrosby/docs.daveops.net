@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Scapy ======
-=====
-:tags: Python
+
+@Python
 
 http://www.secdev.org/projects/scapy/
 

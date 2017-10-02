@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== APT ======
-:date: 2015-07-09
-
 
 ===== Get package version =====
 ::

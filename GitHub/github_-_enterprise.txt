@@ -2,12 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GitHub - Enterprise ======
-===================
-:date: 2016-5-10
-:modified: 2017-08-02
 
 ===== CLI =====
----
+
 ::
 
  # Set a message that's visible to everyone
@@ -18,8 +15,7 @@ Wiki-Format: zim 0.4
  ghe-webhook-logs -f -a YYYYMMDD
 
 ===== Documentation =====
---------------------
 
-- https://help.github.com/enterprise/2.6/admin/articles/command-line-utilities/
-- https://help.github.com/enterprise/2.6/admin/guides/
-- https://help.github.com/enterprise/2.6/user/
+* https://help.github.com/enterprise/2.6/admin/articles/command-line-utilities/
+* https://help.github.com/enterprise/2.6/admin/guides/
+* https://help.github.com/enterprise/2.6/user/

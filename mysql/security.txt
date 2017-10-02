@@ -1,9 +1,8 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== MySQL - Security ======
-:date: 2016-5-10
-:tags: MySQL
+====== security ======
+@MySQL
 
 ===== Don't place DB on same instance as application =====
 

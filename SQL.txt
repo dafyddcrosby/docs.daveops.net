@@ -2,19 +2,17 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== SQL ======
-===
-:date: 2015-03-06
-:tags: databases
+@databases
 
 ===== To add a row =====
---------------------
+
 .. code-block:: sql
 
  INSERT INTO table_name (column1, column2, column3,...)
  VALUES (value1, value2, value3,...)
 
 ===== To update a row =====
---------------------
+
 .. code-block:: sql
 
  UPDATE table_name
@@ -22,7 +20,7 @@ Wiki-Format: zim 0.4
  WHERE some_column=some_value
 
 ===== To sort a table =====
---------------------
+
 .. code-block:: sql
    
  SELECT row1, row2
@@ -30,14 +28,14 @@ Wiki-Format: zim 0.4
  ORDER BY row2 (ASC|DESC)
 
 ===== Delete rows =====
---------------------
+
 .. code-block:: sql
 
  DELETE FROM table_name
  WHERE some_column=some_value
 
 ===== Search in fields =====
---------------------
+
 .. code-block:: sql
 
  SELECT *
@@ -45,7 +43,7 @@ Wiki-Format: zim 0.4
  WHERE City LIKE '%ville'
 
 ===== Conditional statements =====
---------------------
+
 .. code-block:: sql
 
  CASE WHEN condition THEN result
@@ -54,21 +52,21 @@ Wiki-Format: zim 0.4
  END
 
 ===== Format a date =====
---------------------
+
 .. code-block:: sql
 
  SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
  FROM table
 
 ===== Retrieve records within 90 days of stamp =====
---------------------
+
 .. code-block:: sql
 
  FROM stockserialitems
  WHERE expirationdate < utc_timestamp() + interval 90 day
 
 ===== Check for duplicate rows =====
---------------------
+
 .. code-block:: sql
 
  SELECT a, b, count(*) cnt 
@@ -78,7 +76,6 @@ Wiki-Format: zim 0.4
  ORDER BY cnt asc;
 
 ===== Standards =====
---------------------
 
 1992
 1999

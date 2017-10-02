@@ -2,9 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== MongoDB ======
-:date: 2015-06-04
-:modified: 2017-02-18
-:tags: databases
+@databases
 
 ===== Queries =====
 .. code-block:: javascript
@@ -28,6 +26,6 @@ Wiki-Format: zim 0.4
  kill -SIGUSR1 <mongod pid>
 
 ===== Documentation =====
---------------------
+
 
 * http://docs.mongodb.org/manual/administration/production-notes/

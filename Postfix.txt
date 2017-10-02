@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Postfix ======
-:date: 2015-03-06
+
 
 ===== Retry delivery =====
 ::

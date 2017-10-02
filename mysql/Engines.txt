@@ -3,5 +3,4 @@ Wiki-Format: zim 0.4
 Creation-Date: 2017-09-27T08:08:05-06:00
 
 ====== Engines ======
-Created Wednesday 27 September 2017
 

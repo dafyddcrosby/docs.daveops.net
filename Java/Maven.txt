@@ -2,6 +2,5 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Maven ======
-:date: 2017-02-14
 
 https://maven.apache.org/what-is-maven.html

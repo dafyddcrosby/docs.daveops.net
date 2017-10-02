@@ -2,11 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Jet Propulsion Laboratory ======
-=========================
-:date: 2017-01-02
 
 ===== Pi =====
---
 
 3.141592653589793
 

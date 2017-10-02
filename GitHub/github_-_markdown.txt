@@ -2,15 +2,15 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GitHub - Markdown ======
-=================
-:date: 2016-02-03
+
+
 
 ===== Headings =====
---------------------
+
 1 to 6 # symbols
 
 ===== Emphasis =====
---------------------
+
 ::
 
    *This text will be italic*
@@ -20,7 +20,7 @@ Wiki-Format: zim 0.4
    _You **can** combine them_
 
 ===== Links =====
---------------------
+
 ::
 
    http://example.com - automatic

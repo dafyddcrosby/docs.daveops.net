@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== HTML ======
 
 ===== Shim for old IE browsers =====
-==============================
+
 .. code-block:: html
 
  <!--[if lt IE 9]>
@@ -12,7 +12,7 @@ Wiki-Format: zim 0.4
  <![endif]-->
 
 ===== Forms =====
-==============================
+
 .. code-block:: html
 
  <form name="input" action="script.php" method="get">
@@ -26,7 +26,7 @@ Wiki-Format: zim 0.4
  </form>
 
 ===== Input attributes (HTML 5) =====
-==============================
+
 * email
 * color
 * seach
@@ -44,16 +44,16 @@ Wiki-Format: zim 0.4
 use {{{<input ... required>}}} to have the browser whine
 
 ===== Code samples =====
-==============================
+
 .. code-block:: html
 
  <code>print 'hello world'</code> prints <samp>hello world</samp>
 
 ===== Canvas (HTML 5) =====
-==============================
+
 
 ==== initialization ====
---------------------
+
 .. code-block:: html
 
  <canvas id='id' height='600' width='800'>fallback</canvas>
@@ -65,13 +65,13 @@ use {{{<input ... required>}}} to have the browser whine
  </script>
 
 ===== Fixed-meter bar (HTML 5) =====
-==============================
+
 .. code-block:: html
 
  <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
 
 ===== Progress bar (HTML 5) =====
-==============================
+
 .. code-block:: html
 
  <progress value='num' max='num'>fallback display</progress>
@@ -79,23 +79,23 @@ use {{{<input ... required>}}} to have the browser whine
 Use JavaScript to move it around
 
 ===== Autofocus input (HTML 5) =====
-==============================
+
 
 .. code-block:: html
  
  <input ... autofocus>
 
 ===== Patterned input (HTML 5) =====
-==============================
+
 
 ==== Enter 15 digits ====
---------------------
+
 .. code-block:: html
 
  <input type='text' pattern='[0-9]{15}'>
 
 ===== Dropdown list for text input (HTML 5) =====
-=====================================
+
 .. code-block:: html
 
  <input type='text' ... list='listid'>
@@ -105,13 +105,13 @@ Use JavaScript to move it around
  </datalist>
 
 ===== Editable content =====
-==============================
+
 .. code-block:: html
 
  <p contenteditable="true">
 
 ===== Link for phone numbers (mobile) =====
-===============================
+
 International calling code is required
 
 .. code-block:: html
@@ -119,25 +119,25 @@ International calling code is required
  <a href="tel:+14035555555">403-555-5555</a>
 
 ==== To handle an extension ====
---------------------
+
 .. code-block:: html
 
  <a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
 
 ==== To use a fax line: ====
---------------------
+
 .. code-block:: html
 
  <a href="fax:+14035555555">403-555-5555</a>
 
 ===== Doctype (HTML 5) =====
-==============================
+
 .. code-block:: html
 
  <!doctype html>
 
 ===== Semantic tags (HTML 5) =====
-==============================
+
 * <section>
 * <nav>
 * <article>
@@ -158,7 +158,7 @@ International calling code is required
 * <aside> (for p tags)
 
 ===== HTML entities for accents =====
-==============================
+
 
 | Modifier   | Example | HTML     |
 |------------|---------|----------|

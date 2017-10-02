@@ -2,12 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Perl ======
-====
-:date: 2017-03-08
-:modified: 2017-03-08
 
 ===== Syntax Cheatsheet =====
---------------------
 
 {{{code: linenumbers="True"
  #!/usr/local/bin/perl -wT
@@ -27,19 +23,19 @@ Wiki-Format: zim 0.4
 
 
 ===== LWP - HTTP Get =====
---------------------
+
 `get($url)`
 
 ==== To save to a file ====
-~~~~~~~~~~~~~~~~~
+
 `getstore($url, $file)`
 
 ==== See if LWP is installed ====
-~~~~~~~~~~~~~~~~~~~~~~~
+
 `perl -MLWP -le "print(LWP->VERSION)"`
 
 ===== Parsing JSON =====
---------------------
+
 ::
 
   use JSON;

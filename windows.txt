@@ -2,12 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Windows (Microsoft) ======
-===================
-:date: 2016-03-04
-:modified: 2017-07-06
 
 ===== Export certificates =====
---------------------
+
 On Win7
 ::
 
@@ -16,17 +13,17 @@ On Win7
  # Find cert, right-click, point to All Tasks, click Export
 
 ===== Recursive copy of files =====
---------------------
+
 On XP
 ::
 
  xcopy /E <src> <dest>
 
 ===== Links =====
---------------------
-- https://technet.microsoft.com/en-us/sysinternals/bb963890
+
+* https://technet.microsoft.com/en-us/sysinternals/bb963890
 
 ===== Hosts file =====
---------------------
+
 
 c:\Windows\System32\Drivers\etc\hosts

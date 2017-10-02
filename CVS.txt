@@ -2,17 +2,16 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== CVS ======
-:date: 2015-12-01
-:tags: version control
+@version_control
 
 ===== Tagging an instance =====
---------------------
+
 ::
 
   cvs rtag -D "2010-1-28" tag_name module_name
 
 ===== Untagging an instance =====
---------------------
+
 ::
 
   cvs rtag -d tag_name module_name

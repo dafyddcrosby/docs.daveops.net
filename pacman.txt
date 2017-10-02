@@ -2,12 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== pacman ======
-======
-:tags: Arch Linux
-
+@Arch_Linux
 
 ===== Installing =====
---------------------
-::
-
- pacman -S [package]
+'''
+pacman -S [package]
+'''

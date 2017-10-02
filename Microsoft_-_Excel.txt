@@ -2,8 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Microsoft - Excel ======
-:date: 2016-09-30
 
 ===== Keyboard shortcuts =====
 
-ctrl-; | insert today's date
+| keystroke | desc                |
+|-----------|---------------------|
+| ctrl-;    | insert today's date |
+

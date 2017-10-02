@@ -2,12 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== C++ ======
-:slug: c-plus-plus
-:date: 2016-03-16
 
 [ ] TODO Read the latest spec
 
 ===== To verify =====
 
-- A C++ compiler requires explicit declaration of all functions (language requirement)
+* A C++ compiler requires explicit declaration of all functions (language requirement)
 

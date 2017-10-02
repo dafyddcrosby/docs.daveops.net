@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== FileIO ======
+@Ruby
+
+===== Write to a file =====
+
+{{{code: lang="ruby"
+fp = File.open(filename, mode)
+fp.write('bloop')
+fp.close
+}}}
+
+===== Read individual chars =====
+
+{{{code: lang="ruby"
+fp = File.open(filename, mode)
+fp.each_char do |char|
+      puts char
+end
+fp.close
+}}}

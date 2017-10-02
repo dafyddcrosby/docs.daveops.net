@@ -2,24 +2,24 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== OpenBSD ======
-:date: 2016-4-24
-:modified: 2017-02-18
+
+
 @OpenBSD
 
 ===== List PCI devices =====
-================
+
 ::
 
  pcidump -v
 
 ===== Install package =====
-===============
+
 ::
 
  pkg_add <package>
 
 ===== Add an IP alias to a network interface =====
-======================================
+
 ::
 
  ifconfig carp0 inet alias 192.0.1.2 netmask 255.255.255.255

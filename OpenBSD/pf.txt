@@ -2,9 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== pf ======
-:date: 2015-04-05
-:modified: 2016-05-30
-:tags: OpenBSD, firewalls
+
+
+@OpenBSD, @firewalls
 
 ===== pfctl =====
 

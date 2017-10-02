@@ -2,14 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Site Reliability Engineering (book) ======
-:date: 2017-02-16
-:modified: 2017-06-02
+
+
 @books
 
 The book: https://landing.google.com/sre/book/
 
 ===== Foreward =====
---------------------
+
 ::
 
   The tribal nature of IT culture often entrenches practitioners in dogmatic positions that hold the industry back.
@@ -17,7 +17,7 @@ The book: https://landing.google.com/sre/book/
 Just a *touch* self-serving. But I guess if Google pays you to write a book, you kind of have to glorify it just a smidge.
 
 ===== Preface =====
---------------------
+
 
 ::
 
@@ -25,7 +25,7 @@ Just a *touch* self-serving. But I guess if Google pays you to write a book, you
 
 
 ===== Introduction =====
---------------------
+
 
 "Hope is not a strategy." -Traditional SRE saying
 
@@ -39,14 +39,14 @@ Google SRE's also write application code, to prevent dev/ops split
 
 The SRE Team is responsible for:
 
-- availability
-- latency
-- performance
-- efficiency
-- change management
-- monitoring
-- emergency response
-- capacity planning
+* availability
+* latency
+* performance
+* efficiency
+* change management
+* monitoring
+* emergency response
+* capacity planning
 
 ::
  The use of an error budget resolves the structural conflict of incentives
@@ -57,7 +57,7 @@ The SRE Team is responsible for:
  occurrence that both development and SRE teams manage rather than fear. 
 
 ===== Monitoring =====
---------------------
+
 ::
 
  Monitoring should never require a human to interpret any part of the alerting
@@ -76,7 +76,7 @@ The SRE Team is responsible for:
  engineer armed with a playbook works much better.
 
 ===== Uptime =====
---------------------
+
 
 Aiming for 100% uptime doesn't make sense outside of life-critical systems.
 Determine the tolerance, and create a period-based error budget (ie 99.95%
@@ -95,7 +95,7 @@ understanding of system stability.
  specify "user delight" with an SLO.
 
 ===== Reducing Toil =====
---------------------
+
 
 Automate tasks that are repetitive, no enduring value (ie don't help the
 service beyond after the work is done), are reactive in nature (ie pages), O(n)
@@ -109,25 +109,24 @@ with service growth.
  additional work, other than some one-time efforts to add resources. 
 
 ===== Service Reliability Hierarchy =====
---------------------
 
-- Monitoring
-- Incident Response
-- Postmortem / Root Cause Analysis
-- Testing + Release Procedures
-- Capacity Planning
-- Development
-- Product
+* Monitoring
+* Incident Response
+* Postmortem / Root Cause Analysis
+* Testing + Release Procedures
+* Capacity Planning
+* Development
+* Product
 
 (Not sure the argument that this makes a pyramid holds up...)
 
 ===== Managing Incidents =====
---------------------
+
 
 An incident is when something:
-- involves a second team
-- is customer-facing
-- goes unsolved after an hour of concentrated analysis
+* involves a second team
+* is customer-facing
+* goes unsolved after an hour of concentrated analysis
 
 Declare early before details get hazy
 
@@ -150,7 +149,7 @@ Distinct roles:
 Incident commander hand-off is explicitly confirmed by person taking over.
 
 ===== Misc =====
-----
+
 
 `Dan Luu's notes <https://danluu.com/google-sre-book/>`_
 

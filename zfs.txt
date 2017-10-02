@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== ZFS ======
-:date: 2015-04-28
-:modified: 2017-03-31
 @SmartOS, @Solaris, @FreeBSD
 
 ===== Compression =====

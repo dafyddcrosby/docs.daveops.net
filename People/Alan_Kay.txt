@@ -2,14 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Alan Kay ======
-========
-:date: 2017-04-19
-:tags: People
+
+
+@People
 
 https://www.quora.com/profile/Alan-Kay-11
 
 ===== Xerox PARC Principles =====
---------------------
+
 
 1. Visions not goals
 2. Fund people not projects — the scientists find the problems not the funders.

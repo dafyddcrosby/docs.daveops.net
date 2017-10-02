@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Profanity ======
-:date: 2015-04-08
+
 
 ===== OTR =====
 http://www.profanity.im/otr.html

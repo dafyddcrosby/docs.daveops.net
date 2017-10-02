@@ -2,7 +2,4 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ===== DKMS =====
-====
-:date: 2017-04-01
-
 Dynamic Kernel Module System

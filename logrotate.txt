@@ -2,11 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== logrotate ======
-:date: 2015-03-04
 
 ===== Syntax =====
 
-{{{code:
+{{{code: linenumbers="False"
  /path/to/file.log {
 	 rotate 30
 	 daily

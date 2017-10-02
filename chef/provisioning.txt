@@ -1,13 +1,11 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Chef - provisioning ======
-===================
-:date: 2017-01-04
-:tags: Chef
+====== provisioning ======
+@Chef
 
 ===== CLI =====
----
+
 
 ::
 

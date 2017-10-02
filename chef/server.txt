@@ -1,12 +1,11 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Chef - Server ======
-:date: 2015-12-01
-:modified: 2017-03-29
-:tags: Chef
+====== server ======
+@Chef
 
 ===== Users =====
+
 ::
 
   # Create a user
@@ -28,5 +27,6 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 
-- `chef-server-ctl <https://docs.chef.io/ctl_chef_server.html>`_
+
+* `chef-server-ctl <https://docs.chef.io/ctl_chef_server.html>`_
 

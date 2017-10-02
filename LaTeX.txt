@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== LaTeX ======
-=====
-:date: 2015-12-01
+
+
 
 ===== bibtex =====
---------------------
+
 ..code-block:: latex
 
   % Add to the preamble:
@@ -20,10 +20,10 @@ Wiki-Format: zim 0.4
   \printbibliography
 
 ===== document classes =====
---------------------
-- book
-- article
-- report
-- letter
-- slides
+
+* book
+* article
+* report
+* letter
+* slides
 

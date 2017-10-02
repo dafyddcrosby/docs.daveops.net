@@ -2,13 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== fdisk ======
-:date: 2017-02-26
 
-::
+''show partition table from CLI - fdisk -l <disk>''
 
-  show partition table - p
-  show partition table from CLI - fdisk -l <disk>
-  create a new partition - n
-  change filesystem type - t
-  list filesystem types - l
-  write partition table - w
+| description            | command |
+|------------------------|---------|
+| show partition table   | p       |
+| create a new partition | n       |
+| change filesystem type | t       |
+| list filesystem types  | l       |
+| write partition table  | w       |
+

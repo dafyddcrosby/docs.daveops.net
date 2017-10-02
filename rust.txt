@@ -2,13 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Rust ======
-====
-:date: 2016-06-06
-
 https://doc.rust-lang.org/core/
 
 ===== Writing tests =====
---------------------
+
 If the function passes, the test passes
 
 .. code-block:: rust
@@ -30,7 +27,7 @@ To compile the tests and replace main with test runner:
 https://doc.rust-lang.org/stable/book/testing.html
 
 ===== Syntax cheatsheet =====
---------------------
+
 .. code-block:: rust
 
   fn main() {
@@ -40,9 +37,9 @@ https://doc.rust-lang.org/stable/book/testing.html
   }
 
 ===== Resources =====
---------------------
 
-- https://www.rust-lang.org/documentation.html
-- https://rust-lang.github.io/book/ / https://doc.rust-lang.org/book/
-- http://rustbyexample.com/
-- `vim plugin <https://github.com/rust-lang/rust.vim>`_
+
+* https://www.rust-lang.org/documentation.html
+* https://rust-lang.github.io/book/ / https://doc.rust-lang.org/book/
+* http://rustbyexample.com/
+* `vim plugin <https://github.com/rust-lang/rust.vim>`_

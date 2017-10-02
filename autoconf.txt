@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== autoconf ======
-:date: 2015-09-13
+
 
 ===== Check library for function =====
 ::

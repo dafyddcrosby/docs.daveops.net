@@ -2,6 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Mesos ======
-:date: 2017-05-29
+
 
 https://mesos.apache.org/

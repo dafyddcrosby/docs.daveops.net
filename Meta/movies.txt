@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Movies ======
-:date: 2016-03-15
+
 
 Good movies for the computer geek
 

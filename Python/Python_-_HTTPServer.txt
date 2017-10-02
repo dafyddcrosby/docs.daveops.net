@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Python - HTTPServer ======
-===================
-:tags: Python
+
+@Python
 
 
 ===== Basic HTTP server =====
---------------------
+
 .. code-block:: python
 
  from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler

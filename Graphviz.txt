@@ -2,19 +2,16 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Graphviz ======
-========
-:date: 2016-10-18
-
 http://graphviz.org
 
 ===== Output SVG =====
---------------------
+
 ::
 
  dot file.dot -Tsvg -o output.svg
 
 ===== Plain graph =====
---------------------
+
 ::
 
  digraph graph_name {

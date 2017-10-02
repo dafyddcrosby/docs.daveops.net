@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Ruby - Binary ======
-:date: 2015-02-28
-:tags: Ruby
+
+@Ruby
 
 ===== pack/unpack =====
 

@@ -2,13 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== OfflineIMAP ======
-===========
-:date: 2016-5-1
 
 ===== Signals =====
---------------------
-- SIGUSR1 - aborts current sleep, triggering a full sync
+
+* SIGUSR1 - aborts current sleep, triggering a full sync
 
 ===== Links =====
---------------------
-- `Manual <http://docs.offlineimap.org/en/latest/MANUAL.html>`_
+
+* `Manual <http://docs.offlineimap.org/en/latest/MANUAL.html>`_

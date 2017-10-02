@@ -1,12 +1,11 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Production ready ======
 :date: 2016-5-16
 :modified: 2017-03-17
 @mysql
 
+====== MySQL - Production Ready ======
+
 ===== Remove all anonymous accounts =====
+
 ::
 
   DROP USER ''@'localhost';
@@ -15,6 +14,7 @@ Wiki-Format: zim 0.4
 ===== Remove all non-localhost root users =====
 
 ===== Remove test databases =====
+
 ::
 
   DELETE FROM mysql.db WHERE Db LIKE 'test%';

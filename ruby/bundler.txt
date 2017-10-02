@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Bundler ======
-:date: 2017-02-16
-:tags: Ruby
+
+@Ruby
 
 ===== Writing a Gemfile =====
 

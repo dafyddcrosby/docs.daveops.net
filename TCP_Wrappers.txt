@@ -2,17 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== TCP Wrappers ======
-============
-:date: 2017-07-07
-:date: 2017-07-26
-
 ::
   
   # blank lines and lines starting with '#' ignored
   <daemon list> : <client list> [: <option> : <option> : ...]
 
-/etc/hosts.allow
-/etc/hosts.deny
+* /etc/hosts.allow
+* /etc/hosts.deny
 
 https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Security_Guide/sect-Security_Guide-TCP_Wrappers_and_xinetd.html
 https://jamalahmed.wordpress.com/2010/03/19/using-etchosts-allow-and-etchosts-deny-to-secure-unix/

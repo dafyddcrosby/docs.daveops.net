@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== memcached ======
-:date: 2016-03-30
+
 
 ===== Get a list of keys =====
 Note - this is an undocumented interface in the C memcached server
@@ -32,6 +32,6 @@ Note - this is an undocumented interface in the C memcached server
 
 
 ===== Resources =====
-- `memcached site <http://memcached.org/>`_
-- `libmemcached site <http://libmemcached.org/>`_
-- `memdump <http://docs.libmemcached.org/bin/memdump.html>`_
+* `memcached site <http://memcached.org/>`_
+* `libmemcached site <http://libmemcached.org/>`_
+* `memdump <http://docs.libmemcached.org/bin/memdump.html>`_

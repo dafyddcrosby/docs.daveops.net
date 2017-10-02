@@ -2,30 +2,30 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GNU Screen ======
-==========
-:date: 2015-09-13
+
+
 
 ===== Reattach a terminal =====
---------------------
+
 ::
 
  screen -r
 
 ===== Attach to a non-detached session (pair-programming) =====
---------------------
+
 ::
 
  screen -x
 
 ===== Share session =====
---------------------
+
 ::
 
  screen -d -m -S (session name)
  screen -x (session name)
 
 ===== Keyboard shortcuts =====
---------------------
+
 
 | Shortcut | Command       | Description                             |
 |----------|---------------|-----------------------------------------|
@@ -37,7 +37,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Scrollback =====
---------------------
+
 ::
 
  C-a :

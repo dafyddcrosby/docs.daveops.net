@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Hipchat ======
-=======
-:date: 2015-04-28
-:modified: 2017-05-23
+
+
+
 
 ===== Message commands =====
---------------------
+
 ::
 
   /part - leave room
@@ -20,7 +20,7 @@ Wiki-Format: zim 0.4
   /me <msg> - emote command
 
 ===== Keyboard shortcuts =====
---------------------
+
 ::
 
  cmd+f - search
@@ -32,12 +32,12 @@ Wiki-Format: zim 0.4
  option+up - put last line in your text box
 
 ===== Modify last line =====
---------------------
+
 ::
 
   s/search/replace/
 
 ===== Links =====
---------------------
 
-- `Emoticons list <https://www.hipchat.com/emoticons>`_
+
+* `Emoticons list <https://www.hipchat.com/emoticons>`_

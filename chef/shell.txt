@@ -1,20 +1,17 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Chef - Shell ======
-============
-:date: 2015-02-15
-:modified: 2016-05-30
-:tags: Chef
+====== shell ======
+@Chef
 
 ===== Debug attributes =====
---------------------
+
 ::
 
  pp node.debug_value('system', 'repo')
 
 ===== Get the resources used =====
---------------------
+
 ::
  
  # in chef-shell

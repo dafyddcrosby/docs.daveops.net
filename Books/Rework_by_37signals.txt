@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Rework by 37signals ======
-:date: 2016-03-15
+
 @books
 
 p 10 "Starting a business on the side while keeping your day job can provide all the cash flow you need."

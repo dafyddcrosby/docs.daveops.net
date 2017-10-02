@@ -2,11 +2,11 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== PHP - PDO ======
-=========
-:tags: php
+
+@php
 
 ===== simple query =====
---------------------
+
 .. code-block:: php
 
  <?php

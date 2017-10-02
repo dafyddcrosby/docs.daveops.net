@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== vault ======
-:date: 2016-4-26
+
 @Chef
 
 ===== Knife =====

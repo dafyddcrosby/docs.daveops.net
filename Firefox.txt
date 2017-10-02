@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ===== Firefox =====
-:date: 2015-04-05
-:modified: 2017-05-19
+
+
 
 ===== list of about: pages =====
 ::

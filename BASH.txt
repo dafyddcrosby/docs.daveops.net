@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== BASH ======
-:date: 2015-04-28
-:modified: 2017-06-15
 
 ===== Go immediately to $EDITOR =====
 ctrl-x, e
@@ -24,20 +22,20 @@ ctrl-x, e
  find . -type d -empty -exec rmdir {} \;
 
 ===== Show your shell from a port =====
---------------------
+
 .. code-block:: bash
 
  script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 
 ===== Replace filename spaces with underscores =====
---------------------
+
 .. code-block:: bash
 
  # util-linux-ng
  rename " " _ *
 
 ===== Search for Unicode use in a tree =====
---------------------
+
 .. todo I think this could be done with one 'find' command, no need to loop...
 
 {{{code: linenumbers="True"
@@ -46,7 +44,7 @@ for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:
 
 
 ===== "Press any key to continue" =====
---------------------
+
 .. code-block:: bash
 
  read -sn 1 -p "Press any key to continue..."
@@ -107,7 +105,7 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
 
 ===== Using regex for variable testing =====
---------------------
+
 .. code-block:: bash
 
  if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
@@ -115,7 +113,7 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
  fi
 
 ===== Temporary directory/file =====
---------------------
+
 .. code-block:: bash
 
    mktemp -d

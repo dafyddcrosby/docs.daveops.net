@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== mtr ======
-:date: 2015-02-26
+
 
 ===== Look for UDP packet loss =====
 ::

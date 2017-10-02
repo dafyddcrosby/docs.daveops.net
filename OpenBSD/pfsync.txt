@@ -2,17 +2,17 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== pfsync ======
-======
-:tags: OpenBSD, firewalls
+
+@OpenBSD, @firewalls
 
 ===== sysctl: =====
---------------------
+
 ::
 
  net.inet.carp.preempt=1
 
 ===== ifconfig: =====
---------------------
+
 ::
 
  ifconfig em1 10.10.10.2 netmask 255.255.255.0

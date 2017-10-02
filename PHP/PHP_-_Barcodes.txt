@@ -2,12 +2,12 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== PHP - Barcodes ======
---------------------
-:tags: php
+
+@php
 
 
 ===== Get a UPC check digit =====
-==============================
+
 .. code-block:: php
 
  <?php
@@ -21,7 +21,7 @@ Wiki-Format: zim 0.4
  ?>
 
 ===== Create a barcode with Image_Barcode2 (PEAR) =====
-===========================================
+
 .. code-block:: php
 
  <?php

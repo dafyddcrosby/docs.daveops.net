@@ -2,13 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Pry ======
-:date: 2017-01-06
+
 
 http://pryrepl.org/
 
 ===== Cheatsheet =====
 
-{{{code: linenumbers="True"
+{{{code: lang="ruby" linenumbers="True"
 require 'pry'
 
 # ...

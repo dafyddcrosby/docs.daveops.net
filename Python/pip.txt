@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== pip ======
-:tags: Python 
+@Python 
 
 ===== Create a package list =====
 ::

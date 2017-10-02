@@ -2,8 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Riak ======
-:date: 2015-02-19
-:tags: Erlang
+
+@Erlang
 
 ===== Get stats =====
 '''

@@ -2,13 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== GRUB ======
-====
-:date: 2016-10-25
-
 Except where noted, this is for GRUB 2+
 
 ===== Console =====
---------------------
+
 ::
 
   # Turn on the pager in console mode
@@ -19,7 +16,7 @@ Except where noted, this is for GRUB 2+
   ls
 
 ===== Grub grub.cfg creation =====
---------------------
+
 ::
 
   grub2-mkconfig -o /boot/grub2/grub.cfg

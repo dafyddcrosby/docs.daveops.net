@@ -2,12 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== RabbitMQ ======
-========
-:date: 2015-12-01
-:tags: Erlang
+@Erlang
 
 ===== add/restart/remove cluster node =====
---------------------
+
 ::
 
  # Add a node
@@ -26,25 +24,25 @@ Wiki-Format: zim 0.4
  
 
 ===== Rotate logs =====
---------------------
+
 ::
 
  rabbitmqctl rotate_logs <suffix>
 
 ===== General tuning tips =====
---------------------
+
 * Set ulimit -n and fs.file-max to 500,000
 * Set low keepalives
-  * net.ipv4.tcp_keepalive_time = 6
-  * net.ipv4.tcp_keepalive_intvl = 3
-  * net.ipv4.tcp_keepalive_probes = 3
+	* net.ipv4.tcp_keepalive_time = 6
+	* net.ipv4.tcp_keepalive_intvl = 3
+	* net.ipv4.tcp_keepalive_probes = 3
 * For higher throughput, use larger TCP buffers
-  * net.core.rmem_max = 16777216
-  * net.core.wmem_max = 16777216
+	* net.core.rmem_max = 16777216
+	* net.core.wmem_max = 16777216
 * For more concurrent connections, smaller TCP buffers
-  * low tcp_fin_timeout
-  * tcp_tw_reuse = 2
+	* low tcp_fin_timeout
+	* tcp_tw_reuse = 2
 * Reduce per connection RAM use (drops throughput)
-  * rabbit.tcp_listen_options.sndbuf = 16384
-  * rabbit.tcp_listen_options.recbuf = 16384
+	* rabbit.tcp_listen_options.sndbuf = 16384
+	* rabbit.tcp_listen_options.recbuf = 16384
 * Don't use 32-bit Erlang

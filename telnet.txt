@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Telnet ======
-:date: 2016-03-15
-:modified: 2017-03-24
 
 ===== Neat things to connect to =====
 
