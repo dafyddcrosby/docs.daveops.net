@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-02T13:28:46-06:00
+
+====== October 2017 ======
+
+===== CommonMark =====
+It turns out having 20+ Markdown implementations with no spec is a bad idea. Let's see how long before there's a competing spec ;-)
+http://commonmark.org/
+
+===== dnsmasq RCEs =====
+Wouldn't it be nice if we stopped writing critical system services in C? Nah.
+https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html
+
+===== Google teapot =====
+https://www.google.com/teapot
