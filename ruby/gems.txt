@@ -25,3 +25,11 @@ Wiki-Format: zim 0.4
   gem source -r SOURCE
   # update source cache
   gem source -u
+
+===== Environment variables =====
+
+| var      | description              |
+|----------|--------------------------|
+| GEM_PATH | where gems can be loaded |
+| GEM_HOME | where gems are installed |
+
