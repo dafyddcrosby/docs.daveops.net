@@ -158,6 +158,9 @@ Open a pair of domain sockets (with socketpair) that connect to the same
 process. Throw the FD in one end, close the FD, then read it out of the other
 end. Recursively add the ring buffers...
 
+===== PipeFS, SockFS, DebugFS, SecurityFS =====
+https://www.linux.org/threads/pipefs-sockfs-debugfs-and-securityfs.9638/
+
 ===== Kernel resources =====
 * https://kernel.org
 * https://lwn.net/

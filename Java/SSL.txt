@@ -1,14 +1,14 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
-====== Java - SSL ======
+====== SSL ======
 
 ===== Debugging =====
 
-::
-
-  # print each handshake message
-  java -Djavax.net.debug=ssl:handshake MyApp
+'''
+# print each handshake message
+java -Djavax.net.debug=ssl:handshake MyApp
+'''
 
 ===== Links =====
 * https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html
