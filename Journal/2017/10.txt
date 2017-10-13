@@ -14,3 +14,7 @@ https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html
 
 ===== Google teapot =====
 https://www.google.com/teapot
+
+===== Macro-less code exec in MS Word =====
+https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/
+

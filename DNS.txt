@@ -38,3 +38,8 @@ $ORIGIN subdomain.example.com.
 @ IN NS ns-x.awsdns-x.co.uk.
 @ IN NS ns-x.awsdns-x.org.
 '''
+
+
+===== Links =====
+
+* [[http://www.unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html|Kaminsky DNS Vulnerability]]

@@ -8,6 +8,7 @@ Wiki-Format: zim 0.4
 gpg --gen-key
 '''
 
+
 ===== Export the public key =====
 
 ::
@@ -68,4 +69,5 @@ gpg --gen-key
 ===== Links =====
 
 
-`GNU Privacy Handbook <https://www.gnupg.org/gph/en/manual.html>`_
+* [[https://www.gnupg.org/gph/en/manual.html|GNU Privacy Handbook]]
+* [[https://riseup.net/en/security/message-security/openpgp/best-practices|best practices]]

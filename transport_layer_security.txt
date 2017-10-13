@@ -21,10 +21,12 @@ means complete, but should get you well on your way.
 * 3DES (`Sweet32 attack <https://sweet32.info/>`_)
 * Weak Diffie-Hellman parameters ([[https://weakdh.org|Logjam attack]])
 * SHA1 (`SHAttered attack <https://shattered.io>`_)
+* SSL Compression (CRIME attack)
 
 ===== Start using =====
 
 * HTTP Strict Transport Security (RFC 6797)
+* OCSP Stapling
 
 ===== Links =====
 

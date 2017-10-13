@@ -5,9 +5,9 @@ Wiki-Format: zim 0.4
 @databases, @MySQL
 
 ===== Monitor queries =====
-::
-
- watch -n 1 mysqladmin --user=<user> --password=<password> processlist
+'''
+watch -n 1 mysqladmin --user=<user> --password=<password> processlist
+'''
 
 ===== List all databases =====
 {{{code: lang="sql" linenumbers="False"
@@ -32,6 +32,15 @@ show create table TABLE_NAME;
 -- Indexes
 show index from TABLE_NAME;
 }}}
+
+
+===== Dump the database schema =====
+
+'''
+mysqldump --all-databases --no-data
+# --skip-add-drop-table 
+# --skip-comments
+'''
 
 
 ===== Server-side help =====
@@ -125,6 +134,7 @@ flush privileges;
  # (ctrl-c to kill mysql)
  service mysql start
 '''
+
 
 ===== Create prefix index =====
 

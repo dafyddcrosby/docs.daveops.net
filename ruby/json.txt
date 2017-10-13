@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-11T10:26:12-06:00
+
+====== json ======
+Created Wednesday 11 October 2017
+
+''require 'json'''

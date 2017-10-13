@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-13T11:51:34-06:00
+
+====== proc ======
+Created Friday 13 October 2017
+
+http://man7.org/linux/man-pages/man5/proc.5.html
