@@ -16,6 +16,9 @@ knife vault refresh passwords root
 
 # Update the search for hosts on a vault
 knife vault update passwords root -S "role:webserver"
+
+# Create a vault from a file
+knife vault create certs example.com --file example.crt
 '''
 
 
