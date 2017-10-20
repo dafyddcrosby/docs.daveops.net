@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-20T07:50:56-06:00
+
+====== Google ======
+Created Friday 20 October 2017
+
+===== Don't redirect based on country =====
+https://google.com/ncr
+
