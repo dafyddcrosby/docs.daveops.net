@@ -3,12 +3,16 @@ Wiki-Format: zim 0.4
 
 ====== Homebrew ======
 
+===== CLI =====
 
-https://brew.sh/
-http://formulae.brew.sh/
+| command  | desc                                |
+|----------|-------------------------------------|
+| outdated | list outdated homebrew packages     |
+| pin      | pin to a particular version         |
+| services | formulae integration with launchctl |
 
-===== List outdated Homebrew packages =====
 
-'''
-brew outdated
-'''
+===== Links =====
+
+* https://brew.sh/
+* http://formulae.brew.sh/
