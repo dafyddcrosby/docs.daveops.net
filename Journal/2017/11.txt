@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-02T09:01:48-06:00
+
+====== November 2017 ======
+
+===== Fooling Neural Networks/Machine Learning =====
+https://arxiv.org/abs/1708.05207
+http://www.labsix.org/physical-objects-that-fool-neural-nets/
+https://cvdazzle.com/
+http://dismagazine.com/dystopia/evolved-lifestyles/8115/anti-surveillance-how-to-hide-from-machines/
