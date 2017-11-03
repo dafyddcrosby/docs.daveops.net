@@ -27,3 +27,8 @@ Requires Java 8 and Intel 2010+ Westmere
 '''
 -XX:+UseAES -XX:+UseAESIntrinsics
 '''
+
+===== Zero copy =====
+Avoid copying the file data across user/kernel boundary, instead have the kernel put the file in a buffer and use DMA to pass the data directly.
+
+https://www.ibm.com/developerworks/linux/library/j-zerocopy/

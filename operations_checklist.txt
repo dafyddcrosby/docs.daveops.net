@@ -9,14 +9,17 @@ pretty good state. By no means exhaustive, and a bit opinionated. What I think
 is most important is at the top, but really should try to have all of them.
 
 * Bug tracker/task manager
+	* How do you track WIP (work-in-progress) tasks?
+	* Customer can easily create a useful ticket?
 * Version control
-  CVS, SVN, git, doesn't matter which. Can you see when a file was changed, and by whom?
-* Monitoring systems
+	* CVS, SVN, git, doesn't matter which. Can you see when a file was changed, and by whom?
 * Configuration management
-* Inventory system
-  Can you, in less than 5 minutes, say how many machines (physical and virtual) you have running?
 * *Fully* automatic installs
-* clear deliverables
+* CI/CD system
+	* Deployment to production is fully automated
+* Monitoring systems
+* Inventory system
+	* Can you, in less than 5 minutes, say how many machines (physical and virtual) you have running?
 * Have an update process
   It is extremely important to have everything patched and up-to-date. This
   includes all hardware, networking devices, you name it. You'll want to know

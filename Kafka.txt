@@ -9,12 +9,13 @@ by default listens on port 9092
 
 ===== broker properties =====
 
-| property                   | desc                                                  |
-|----------------------------|-------------------------------------------------------|
-| broker.id                  | unique non-negative integer to be used as broker name |
-| host.name                  | hostname of the broker                                |
-| num.partitions             | default number of partitions per topic                |
-| default.replication.factor | default replication factor for topics                 |
+| property                       | desc                                                                               |
+|--------------------------------|------------------------------------------------------------------------------------|
+| broker.id                      | unique non-negative integer to be used as broker name                              |
+| host.name                      | hostname of the broker                                                             |
+| num.partitions                 | default number of partitions per topic                                             |
+| default.replication.factor     | default replication factor for topics                                              |
+| unclean.leader.election.enable | choose between consistency and availability in event of an unclean leader election |
 
 
 ===== kafka-topics =====

@@ -18,6 +18,9 @@ http://rakeroutes.com/blog/lets-write-a-gem-part-one/
 
 http://www.html5rocks.com/en/tutorials/appcache/beginner/
 
+https://www.synalysis.net/
+https://www.sweetscape.com/download/
+
 ===== Website =====
 
 [ ] fix verbatim/code blocks
