@@ -30,3 +30,6 @@ Wiki-Format: zim 0.4
 | M-x report-emacs-bug | report a bug       |
 | M-x calc             | calc mode          |
 
+
+===== Links =====
+* [[http://www.informatimago.com/linux/emacs-on-user-mode-linux.html?repost|Emacs standing alone on a Linux Kernel]]

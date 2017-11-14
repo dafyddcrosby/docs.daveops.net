@@ -25,9 +25,9 @@ Wiki-Format: zim 0.4
   kextunload -b <id>
 
 ===== Update software =====
-::
-
- softwareupdate -h
+'''
+softwareupdate -h
+'''
 
 ===== Search help =====
 apple key + ? , search for the help menu
@@ -93,6 +93,7 @@ See `man 5 resolver`
 | keypress             | action                            |
 |----------------------|-----------------------------------|
 | Cmd + r              | Recovery Mode                     |
+| Option + Cmd + r     | Upgrade to latest compatible macOS |
 | Cmd + v              | Verbose Mode                      |
 | Cmd + s              | Single-user Mode                  |
 | Shift                | Safe Mode                         |

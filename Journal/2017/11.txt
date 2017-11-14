@@ -9,3 +9,8 @@ https://arxiv.org/abs/1708.05207
 http://www.labsix.org/physical-objects-that-fool-neural-nets/
 https://cvdazzle.com/
 http://dismagazine.com/dystopia/evolved-lifestyles/8115/anti-surveillance-how-to-hide-from-machines/
+
+===== So... MINIX is everywhere =====
+Turns out there's a lot of garbage hidden on CPU's these days. Work is underway to defang the nastiness
+https://www.networkworld.com/article/3236064/servers/minix-the-most-popular-os-in-the-world-thanks-to-intel.html
+https://schd.ws/hosted_files/osseu17/84/Replace%20UEFI%20with%20Linux.pdf

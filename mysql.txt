@@ -9,6 +9,7 @@ Wiki-Format: zim 0.4
 watch -n 1 mysqladmin --user=<user> --password=<password> processlist
 '''
 
+
 ===== List all databases =====
 {{{code: lang="sql" linenumbers="False"
 show databases;
@@ -243,7 +244,7 @@ uses table-locking, but is speedy
 ===== Optimizing =====
 
 * Avoid NULL when possible
-* ``optimize table``
+* ''optimize table''
 
 ===== indexing =====
 
@@ -264,15 +265,14 @@ SET time_zone = <timezone>;
 }}}
 
 
-===== Get version =====
-::
+===== mysqladmin =====
+mysqladmin COMMAND
 
- mysqladmin version
+| command    | desc        |
+|------------|-------------|
+| flush-logs | rotate logs |
+| version    | get version |
 
-===== Rotate logs =====
-::
-
- mysqladmin flush-logs
 
 ===== Search for foreign key use =====
 '''

@@ -16,10 +16,9 @@ gpg --gen-key
  gpg --armor --export user@example.com > user.gpg.pub
 
 ===== Encrypt a file =====
-
-::
-
- gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
+'''
+gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
+'''
 
 ===== Decrypt a file =====
 
