@@ -17,12 +17,12 @@ Wiki-Format: zim 0.4
 
 
 ===== kernel extensions =====
-::
-
- # list kernel extensions
- kextstat -l
- # unload kernel extensions
-  kextunload -b <id>
+'''
+# list kernel extensions
+kextstat -l
+# unload kernel extensions
+kextunload -b <id>
+'''
 
 ===== Update software =====
 '''
