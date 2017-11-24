@@ -25,3 +25,5 @@ https://www.sweetscape.com/download/
 
 [ ] fix verbatim/code blocks
 [ ] fix links
+[ ] tagging
+[ ] nicer export output?

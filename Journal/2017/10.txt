@@ -28,3 +28,8 @@ http://queue.acm.org/detail.cfm?id=1563874
 
 ''"... big data should be defined at any point in time as “data whose size forces us to look beyond the tried-and-true methods that are prevalent at that time.”''
 
+===== KRACK Attack =====
+WPA2 is broken, hum-de-dum
+https://www.krackattacks.com/
+https://github.com/vanhoefm/krackattacks
+{{~/Desktop/Strip-Faille-WP2-650-finalenglish.jpg}}

@@ -19,10 +19,9 @@ end
 
 
 ===== Install gems to dir =====
-::
-
-  bundle install --path dir
-
+'''
+bundle install --path dir
+'''
 
 
 ===== Resources =====

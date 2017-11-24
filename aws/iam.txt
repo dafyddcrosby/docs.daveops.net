@@ -7,16 +7,15 @@ Wiki-Format: zim 0.4
 @AWS
 
 ===== Create a user =====
-::
-
-  aws iam create-user --user-name <user>
+''aws iam create-user --user-name <user>''
 
 ===== Create an access key =====
-::
-
-  aws iam create-access-key --user-name <user>
+''aws iam create-access-key --user-name <user>''
 
 ===== Attaching IAM roles to an instance =====
-::
 
-   aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile
+''aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile''
+
+===== Links =====
+
+* [[https://iam.cloudonaut.io/|Complete IAM Reference]]

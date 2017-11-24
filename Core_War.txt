@@ -21,5 +21,5 @@ Originally called //Darwin//,  ran on a PDP-1 in Bell Labs
 Moves 1 address forward each cycle
 
 ===== Sources =====
-[[Books:The Art of Computer Virus Research and Defense by Peter Szor]]
-http://www.corewar.info/
+* [[Books:The Art of Computer Virus Research and Defense by Peter Szor]]
+* http://www.corewar.info/

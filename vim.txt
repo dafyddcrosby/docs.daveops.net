@@ -18,3 +18,8 @@ Wiki-Format: zim 0.4
 :g/^\s*$/d
 '''
 
+
+===== Show line numbers =====
+'''
+:set number
+'''
