@@ -109,9 +109,9 @@ See `man 5 resolver`
 
 All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window' tab
 
-::
-
-  /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
+'''
+/System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
+'''
 
 ===== Virtual Memory Stats =====
 

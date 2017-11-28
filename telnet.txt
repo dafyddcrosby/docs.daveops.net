@@ -7,3 +7,5 @@ Wiki-Format: zim 0.4
 
 * http://www.livingcomputermuseum.org
 * http://www.telnet.org/htm/places.htm
+* towel.blinkenlights.nl - ASCII Star Wars
+* nyancat.dakko.us - Nyan cat

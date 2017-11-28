@@ -24,3 +24,8 @@ Wiki-Format: zim 0.4
 '''
 knife search node "(NOT kernel_machine:x86_64)"
 '''
+
+===== Generate new keypair for client =====
+'''
+knife client reregister CLIENT
+'''

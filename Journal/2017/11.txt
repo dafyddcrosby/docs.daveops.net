@@ -31,3 +31,14 @@ pretty different deal.
 
 https://lkml.org/lkml/2017/11/21/356
 http://lkml.iu.edu/hypermail/linux/kernel/1711.2/01701.html
+
+===== instant root on macOS High Sierra =====
+I honestly have no words for how dumb this is.
+
+http://www.theregister.co.uk/2017/11/28/root_access_bypass_macos_high_sierra/
+
+fix:
+'''
+sudo passwd -u root
+dsenableroot -d
+'''
