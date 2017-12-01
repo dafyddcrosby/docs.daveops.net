@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T11:23:19-07:00
+
+====== December 2017 ======
+
+===== Advent calendar season =====
+* [[http://adventofcode.com/2017|Advent of Code]]
+* [[http://sysadvent.blogspot.ca/|Sys Advent]]

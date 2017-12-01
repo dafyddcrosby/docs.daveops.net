@@ -22,7 +22,7 @@ Wiki-Format: zim 0.4
 
 ===== Abort on thread errors =====
 
-{{{code: lang="ruby"
+{{{code: lang="ruby" linenumbers="True"
 Thread.abort_on_exception = true
 
 Thread.new do
@@ -34,9 +34,23 @@ loop do
 end
 }}}
 
+
 ===== Syntax cheatsheet =====
 
-{{{code: lang="ruby"
+{{{code: lang="ruby" linenumbers="True"
+class Thing
+  attr_accessort :foo
+  def initialize(foo = 0)
+    @foo = foo
+  end
+  
+  private
+  
+  def bar
+    puts "whoa"
+  end
+end
+
 if val = 42
   #do stuff
 elsif val = 33
@@ -67,6 +81,7 @@ else
   puts thing
 end
 }}}
+
 
 ===== Running proceses =====
 
