@@ -7,3 +7,35 @@ Creation-Date: 2017-12-01T11:23:19-07:00
 ===== Advent calendar season =====
 * [[http://adventofcode.com/2017|Advent of Code]]
 * [[http://sysadvent.blogspot.ca/|Sys Advent]]
+
+===== Avast open-sources their decompiler =====
+https://blog.avast.com/avast-open-sources-its-machine-code-decompiler
+
+===== ROBOT Attack =====
+It has been X many days since last TLS disaster
+https://robotattack.org/
+
+===== Microsoft Quantum Development Kit =====
+https://www.microsoft.com/en-us/quantum/development-kit
+[[https://docs.microsoft.com/en-us/quantum/quantum-writeaquantumprogram?view=qsharp-preview|Writing a Quantum Program]]
+
+===== AP Christmas Tree =====
+https://imgur.com/gallery/DZRTr
+
+===== BrickerBot update =====
+Dude destroys tons of equipment, points out internet is broken.
+http://archive.is/PQAnU
+'''
+Amazingly, the ISP didn't try to cover up the outage as 
+  some kind of network issue, power spike or a bad firmware upgrade. They 
+  didn't lie to their customers at all. Instead, they promptly published 
+  a press release about their modems having been vulnerable which allowed 
+  their customers to assess their potential risk exposure. What did the 
+  most honest ISP in the world get for its laudable transparency? Sadly 
+  it got little more than criticism and bad press. It's still the most 
+  depressing case of 'why we can't have nice things' to me, and probably 
+  the main reason for why 99% of security mistakes get covered up and the 
+  actual victims get left in the dark. Too often 'responsible disclosure'
+  simply becomes a euphemism for 'coverup.'
+'''
+
