@@ -6,10 +6,9 @@ Wiki-Format: zim 0.4
 
 
 ===== CLI =====
-
-::
-
- # Connect to a single VPN
- osascript -e 'Tell app "Tunnelblick" to connect "example-vpn"'
- # Disconnect all VPNs
- osascript -e 'Tell app "Tunnelblick" to disconnect all'
+'''
+# Connect to a single VPN
+osascript -e 'Tell app "Tunnelblick" to connect "example-vpn"'
+# Disconnect all VPNs
+osascript -e 'Tell app "Tunnelblick" to disconnect all'
+'''

@@ -22,5 +22,8 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/HTTP_logging
  export NSPR_LOG_FILE=~/Desktop/log.txt
  ./firefox
 
+===== Disable screenshots =====
+extensions.screenshots.disabled -> true
+
 ===== Disable new tab page =====
 browser.newtabpage.enabled -> false

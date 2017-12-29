@@ -134,10 +134,20 @@ blah
 EOM
 '''
 
-===== Quit without saving history =====
-::
 
-  unset HISFILE && exit
+===== Quit without saving history =====
+'''
+unset HISFILE && exit
+'''
+
+
+===== Regex change over files returned from grep =====
+
+==== macOS ====
+'''
+grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
+'''
+
 
 ===== I/O Redirection =====
 

@@ -6,9 +6,18 @@ Wiki-Format: zim 0.4
 
 ===== Get system resource limits =====
 
-::
+'''
+launchctl limit
+'''
 
-  launchctl limit
+===== periodic =====
+
+Called by launchd to execute shell scripts (very cron)
+
+/etc/periodic/ - scripts
+
+/etc/periodic.conf - override the default periodic config
+
 
 ===== Resources =====
 
