@@ -16,6 +16,12 @@ Wiki-Format: zim 0.4
 | cmd + shift + eject   | lock screen                             |
 
 
+===== Open application bundle =====
+'''
+open -a APPLICATION
+'''
+
+
 ===== kernel extensions =====
 '''
 # list kernel extensions
@@ -24,10 +30,12 @@ kextstat -l
 kextunload -b <id>
 '''
 
+
 ===== Update software =====
 '''
 softwareupdate -h
 '''
+
 
 ===== Search help =====
 apple key + ? , search for the help menu
@@ -90,18 +98,18 @@ See `man 5 resolver`
 ===== Boot Options =====
 
 
-| keypress             | action                            |
-|----------------------|-----------------------------------|
-| Cmd + r              | Recovery Mode                     |
+| keypress             | action                             |
+|----------------------|------------------------------------|
+| Cmd + r              | Recovery Mode                      |
 | Option + Cmd + r     | Upgrade to latest compatible macOS |
-| Cmd + v              | Verbose Mode                      |
-| Cmd + s              | Single-user Mode                  |
-| Shift                | Safe Mode                         |
-| D                    | Apple Diagnostics / Hardware Test |
-| C                    | Boot removable device             |
-| N                    | Boot from network                 |
-| Option               | Startup Manager                   |
-| Cmd + Option + P + R | Reset NVRAM                       |
+| Cmd + v              | Verbose Mode                       |
+| Cmd + s              | Single-user Mode                   |
+| Shift                | Safe Mode                          |
+| D                    | Apple Diagnostics / Hardware Test  |
+| C                    | Boot removable device              |
+| N                    | Boot from network                  |
+| Option               | Startup Manager                    |
+| Cmd + Option + P + R | Reset NVRAM                        |
 
 
 ===== Wireless diagnostics =====
@@ -113,11 +121,14 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
 '''
 
+
 ===== Virtual Memory Stats =====
 
-::
+'''
+vmstat
 
-  vmstat
+'''
+
 
 ===== Links =====
 
@@ -125,10 +136,49 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 * https://opensource.apple.com/
 * https://github.com/herrbischoff/awesome-osx-command-line
 
+===== Power management =====
+
+''man pmset''
+
+Use ''caffeinate'' to prevent the system from sleeping
+
 ===== Power report =====
 
 A bunch of dtrace under the hood
 
-::
+'''
+/usr/bin/power_report.sh
+'''
 
-  /usr/bin/power_report.sh
+
+===== System/Application defaults =====
+
+/Library/Preferences and ~/Library/Preferences
+
+''man defaults''
+
+===== launch services database =====
+'''
+dump database
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump
+
+#Remove Open With entries
+lsregister -kill -r -domain local -domain system -domain user
+'''
+
+
+===== System Preference Panes =====
+PreferencePanes framework
+
+/System/Library/PreferencePanes
+
+===== System config =====
+scutil - system config utility
+- help command in the shell has lots of goodies
+- use ''n.add KEY'' + ''n.watch'' to get notified of config changes
+
+===== Look for memory leaks =====
+leaks(1)
+
+===== System Integrity Protection =====
+csrutil(1)

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-31T19:17:49-07:00
+
+====== Filesystems ======
+Created Sunday 31 December 2017
+
+
+
+===== See filesystem attributes =====
+
+'''
+ls -lO
+'''

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+===== Property List Format =====
+
+''man plist''
+
+plutil - manipulate/check plist files
