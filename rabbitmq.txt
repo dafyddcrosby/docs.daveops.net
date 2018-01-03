@@ -20,13 +20,29 @@ rabbitmq-server -detached
 rabbitmqctl stop_app
 # Remove a node (remotely)
 rabbitmqctl forget_cluster_node rabbit@rabbit1
-''' 
+'''
+
 
 ===== Rotate logs =====
 
 '''
 rabbitmqctl rotate_logs <suffix>
 '''
+
+
+===== Re-syncing mirrors in HA mode =====
+'''
+rabbitmqctl list_queues name slave_pids synchronised_slave_pids
+# to see where it's not being synced:
+rabbitmqctl list queues name synchronised_slave_pids | grep -v node_name > output
+'''
+
+'''
+rabbitmqctl sync_queue name
+# can do a sad little bash loop after cleaning the output file to just queue names
+for i in `cat output` ; do sudo rabbitmqctl sync_queue $i ; done
+'''
+
 
 ===== General tuning tips =====
 
