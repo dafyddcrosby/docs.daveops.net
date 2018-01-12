@@ -135,6 +135,7 @@ vmstat
 
 * https://opensource.apple.com/
 * https://github.com/herrbischoff/awesome-osx-command-line
+* https://www.raywenderlich.com/151741/macos-development-beginners-part-1
 
 ===== Power management =====
 

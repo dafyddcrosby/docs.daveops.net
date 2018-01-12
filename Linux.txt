@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Linux ======
-
-:updated: 2017-03-31
 @Linux
 
 ===== force filesystem check on next boot =====
@@ -165,3 +163,4 @@ https://www.linux.org/threads/pipefs-sockfs-debugfs-and-securityfs.9638/
 * https://kernel.org
 * https://lwn.net/
 * https://kernelnewbies.org/
+* [[https://syscalls.kernelgrok.com/|Kernel syscalls]]
