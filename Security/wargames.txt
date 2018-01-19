@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== wargames ======
 
-
 Learning how to break software helps you build more robust software.
 
 * `OverTheWire <http://overthewire.org/wargames/>`_
