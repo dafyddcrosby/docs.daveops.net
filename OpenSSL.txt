@@ -5,14 +5,14 @@ Wiki-Format: zim 0.4
 
 
 ===== RSA key processing =====
-::
-
- # Generate a private key
- openssl genrsa -out private_key.pem 2048
- # Make a new public key
- openssl rsa -pubout -in private_key.pem -out public_key.pem
- # Get info on private key
- openssl rsa -text -in private_key.pem
+'''
+# Generate a private key
+openssl genrsa -out private_key.pem 2048
+# Make a new public key
+openssl rsa -pubout -in private_key.pem -out public_key.pem
+# Get info on private key
+openssl rsa -text -in private_key.pem
+'''
 
 ===== Generate Certificate Signing Request =====
 ::

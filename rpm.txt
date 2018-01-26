@@ -16,25 +16,27 @@ rpm -i <SRPM>
 rpmbuild -ba rpmbuild/SPECS/<spec file>
 '''
 
+
 ===== List files in an RPM =====
+'''
+rpm -qlp [file].rpm
+'''
 
-::
-
- rpm -qlp [file].rpm
 
 ===== Find packages that depend on a particular package =====
 
-::
-
- rpm -q --whatrequires ${PACKAGE}
+'''
+rpm -q --whatrequires ${PACKAGE}
+'''
 
 ===== Get grepable info from RPM =====
 
-Use ``rpm --querytags`` to get a list of tags
+Use ''rpm --querytags'' to get a list of tags
 
-::
- 
- rpm -q --queryformat="%{NAME}: %{LICENSE}\n" package_name
+'''
+rpm -q --queryformat="%{NAME}: %{LICENSE}\n" package_name
+'''
+
 
 ===== Verify package integrity =====
 
@@ -77,3 +79,8 @@ In `.rpmmacros`
 
  rm -f /var/lib/rpm/__db*
  rpm --rebuilddb
+
+===== Install obsolete RPM =====
+'''
+rpm -i --nodeps ./RPM
+'''

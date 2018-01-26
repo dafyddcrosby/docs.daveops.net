@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== IAM ======
 
-
 @AWS
 
 ===== Create a user =====
@@ -15,6 +14,15 @@ Wiki-Format: zim 0.4
 ===== Attaching IAM roles to an instance =====
 
 ''aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile''
+
+===== Signing Certificates =====
+
+'''
+aws iam upload-signing-certificate --user-name user-name --certificate-body file://path/to/certificate.pem
+aws iam list-signing-certificates --user-name user-name
+'''
+
+
 
 ===== Links =====
 

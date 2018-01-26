@@ -5,11 +5,11 @@ Wiki-Format: zim 0.4
 
 
 ===== Compile via command-line =====
-::
-
- source bbndk-env.sh
- export PROJECT_DIR=<project directory>
- qcc main.c -o main
+'''
+source bbndk-env.sh
+export PROJECT_DIR=<project directory>
+qcc main.c -o main
+'''
 
 ===== View logs via SSH =====
 ::
