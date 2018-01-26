@@ -5,10 +5,10 @@ Wiki-Format: zim 0.4
 
 
 ===== XMPP =====
-::
+'''
+# See if XMPP enabled
+hipchat network --show
 
-  # See if XMPP enabled
-  hipchat network --show
-  # Enable XMPP
-  hipchat network --enable-xmpp-ports
-
+# Enable XMPP
+hipchat network --enable-xmpp-ports
+'''
