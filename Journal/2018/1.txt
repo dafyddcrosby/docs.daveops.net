@@ -14,6 +14,8 @@ Throw out all your computers. Again.
 [[https://twitter.com/aionescu/status/948609809540046849|Apple deals with KPTI with DoubleMap]]
 [[https://www.fool.com/investing/2017/12/19/intels-ceo-just-sold-a-lot-of-stock.aspx|As expected, Intel's CEO dumps his stock]]
 [[https://support.google.com/faqs/answer/7625886|Retpoline]]
+[[https://marc.info/?l=openbsd-misc&m=118296441702631&w=2|Theo De Raadt talking about Intel flaws back in 2007]]
+
 
 ===== IOHIDeous =====
 

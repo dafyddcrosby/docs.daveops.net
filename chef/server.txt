@@ -25,6 +25,13 @@ chef-server-ctl org-create ORG_NAME ORG_FULL_NAME
 chef-server-ctl org-user-add ORG_NAME USER_NAME [--admin]
 '''
 
+===== Groups =====
+[[https://github.com/chef/knife-acl|knife acl plugin]]
+
+'''
+knife group create GROUP
+knife group add MEMBERTYPE MEMBER GROUP
+'''
 
 ===== Links =====
 

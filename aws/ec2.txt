@@ -34,3 +34,11 @@ aws --region us-east-1 ec2 describe-images --owners aws-marketplace --filters Na
 
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-instance-store-ami.html
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ConvertingS3toEBS.html
+
+===== Hypervisors =====
+http://www.brendangregg.com/blog/2017-11-29/aws-ec2-virtualization-2017.html
+
+==== Nitro ====
+[[https://www.youtube.com/watch?v=LabltEXk0VQ|Nitro virtualization (YT)]]
+
+==== Xen ====

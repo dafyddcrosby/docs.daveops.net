@@ -23,6 +23,18 @@ aws iam list-signing-certificates --user-name user-name
 '''
 
 
+===== Server certificates =====
+'''
+# get cert names
+aws iam list-server-certificates
+# get cert details
+aws iam get-server-certificate --server-certificate-name NAME
+# upload cert
+aws iam upload-server-certificate --server-certificate-name NAME --certificate-body file://public_key_cert_file.pem --private-key file://my_private_key.pem --certificate-chain file://my_certificate_chain_file.pem
+# delete a cert
+aws iam delete-server-certificate --server-certificate-name NAME
+'''
+
 
 ===== Links =====
 
