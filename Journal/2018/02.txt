@@ -13,3 +13,4 @@ https://www.theregister.co.uk/AMP/2018/02/06/openvms_vulnerability/
 
 ===== Meltdown/Spectre (continued) =====
 http://www.brendangregg.com/blog/2018-02-09/kpti-kaiser-meltdown-performance.html
+https://cyber.wtf/2017/07/28/negative-result-reading-kernel-memory-from-user-mode/

@@ -42,3 +42,6 @@ http://www.brendangregg.com/blog/2017-11-29/aws-ec2-virtualization-2017.html
 [[https://www.youtube.com/watch?v=LabltEXk0VQ|Nitro virtualization (YT)]]
 
 ==== Xen ====
+
+===== IPv6 =====
+https://aws.amazon.com/blogs/aws/new-ipv6-support-for-ec2-instances-in-virtual-private-clouds/
