@@ -32,7 +32,6 @@ How do you protect against
 * corruption
 * fragmentation
 * age (keeping information up-to-date)
-
 Money/Energy/Time
 
 Things that make personal information personal:

@@ -7,7 +7,7 @@ Wiki-Format: zim 0.4
 
 '''
 # Generate a new RSA keypair
-ssh-keygen -t rsa -b 4096 -C "<username> generated <date>" -f output_filename
+ssh-keygen -t rsa -b 4096 -C "<username> generated <date>" -f id_rsa
 # Generate a new ed25519 keypair
 ssh-keygen -t ed25519 -C "<username> generated <date>"
 '''

@@ -24,3 +24,4 @@ The BIOS transfers the first 512 bytes of data from the device into 0x7c00. The 
 * [[http://blog.ptsecurity.com/2017/08/disabling-intel-me.html|Disabling Intel Management Engine]]
 * http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html
 * http://www.cirosantilli.com/x86-paging/
+* [[https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf|Intel x86 considered harmful (PDF)]]
