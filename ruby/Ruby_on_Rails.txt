@@ -41,7 +41,7 @@ Wiki-Format: zim 0.4
 
 * Passenger must be enabled for domain/subdomain
 * Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
-* For database ``rake db:migrate RAILS_ENV=production``
+* For database ''rake db:migrate RAILS_ENV=production''
 
 ===== Validating Active Records =====
 
@@ -57,9 +57,9 @@ end
 
 ==== Ensure uniqueness at the db level ====
 
-# ``rails generate migration add_index_to_users_email``
-# add to migration file under def change: ``add_index :users, :email, unique: true``
-# ``bundle exec rake db:migrate``
+# ''rails generate migration add_index_to_users_email''
+# add to migration file under def change: ''add_index :users, :email, unique: true''
+# ''bundle exec rake db:migrate''
 
 ===== Database =====
 
@@ -99,8 +99,8 @@ end
  bundle exec spork --bootstrap
  bundle exec guard init spork
 
-* Add ``:cli => '--drb'`` to guard 'rspec'
-* ``bundle exec guard``
+* Add '':cli => '--drb''' to guard 'rspec'
+* ''bundle exec guard''
 
 ===== Creating tables =====
 
@@ -121,16 +121,16 @@ end
 
 ===== Find code comment dev tags =====
 
-To find TODO, FIXME, and OPTIMIZE comment tags, use ``rake notes``
+To find TODO, FIXME, and OPTIMIZE comment tags, use ''rake notes''
 
 ===== Simple wins =====
 
-* Use ``find_each`` instead of ``each`` when searching through large sets of iterables
-* Use ``content_tag`` to avoid XSS hacks
+* Use ''find_each'' instead of ''each'' when searching through large sets of iterables
+* Use ''content_tag'' to avoid XSS hacks
 
 ===== Get versions =====
 
-``rake about``
+''rake about''
 
 ===== Links =====
 * https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/

@@ -40,7 +40,7 @@ Wiki-Format: zim 0.4
 
 ===== Automatic gemset initialization =====
 
-Add gems to ``~/.rvm/gemsets/global.gems``
+Add gems to ''~/.rvm/gemsets/global.gems''
 
 ===== set default ruby =====
 
