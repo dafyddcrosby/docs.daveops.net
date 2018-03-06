@@ -25,7 +25,7 @@ and debug the program later on.
 
 ===== Your build system should *never* be more than 1 step =====
 
-``configure && make && make install`` should be the most complicated build
+''configure && make && make install'' should be the most complicated build
 setup you have.
 
 Get it to one-step-to-build - instant feedback is awesome, and the time saved

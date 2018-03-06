@@ -109,8 +109,8 @@ or
  mesg [n|y]
 
 ===== Assembly =====
-System call table located at ``/usr/include/asm/unistd.h``
-Red Hat syscall man pages installed with ``man-pages`` RPM. ``man 2 syscalls`` for a list, ``man 2 <syscall>`` for the syscall.
+System call table located at ''/usr/include/asm/unistd.h''
+Red Hat syscall man pages installed with ''man-pages'' RPM. ''man 2 syscalls'' for a list, ''man 2 <syscall>'' for the syscall.
 
 Put syscall in EAX, put arguments in other ExX registers, call the interrupt, result usually in EAX
 

@@ -8,17 +8,17 @@ Wiki-Format: zim 0.4
 ===== Running the profiler =====
 
 
-``ruby -rprofile script.rb``
+''ruby -rprofile script.rb''
 
 ===== get machine instructions =====
 
 
-``ruby --dump insns script.rb``
+''ruby --dump insns script.rb''
 
 ===== See how commands are parsed =====
 
 
-``ruby --dump parsetree_with_comment script.rb``
+''ruby --dump parsetree_with_comment script.rb''
 
 ===== Abort on thread errors =====
 

@@ -48,7 +48,7 @@ If you just need to amend last commit,
 
 ==== Push to website on git push ====
 
-on server, put this in ``hooks/post-receive``
+on server, put this in ''hooks/post-receive''
 
 ::
 
