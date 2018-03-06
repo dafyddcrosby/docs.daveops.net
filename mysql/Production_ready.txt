@@ -1,3 +1,6 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
 :date: 2016-5-16
 :modified: 2017-03-17
 @mysql
@@ -24,9 +27,7 @@
 ===== Set timezone to UTC =====
 For safe measure, don't just set the time zone in MySQL, but also set the system time zone to UTC
 
-::
-
-  default-time-zone=UTC
+''default-time-zone=UTC''
 
 ===== Change the default prompt =====
 ::

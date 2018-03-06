@@ -12,14 +12,12 @@ ctrl-x, e
  history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
 ===== Delete files that are not extension =====
-.. code-block:: bash
 
-  rm !(*.foo|*.bar|*.baz)
+''rm !(*.foo|*.bar|*.baz)''
 
 ===== Find, delete empty directories =====
-.. code-block:: bash
 
- find . -type d -empty -exec rmdir {} \;
+''find . -type d -empty -exec rmdir {} \;''
 
 ===== Show your shell from a port =====
 
@@ -29,10 +27,11 @@ ctrl-x, e
 
 ===== Replace filename spaces with underscores =====
 
-.. code-block:: bash
+'''
+# util-linux-ng
+rename " " _ *
+'''
 
- # util-linux-ng
- rename " " _ *
 
 ===== Search for Unicode use in a tree =====
 
@@ -45,9 +44,7 @@ for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:
 
 ===== "Press any key to continue" =====
 
-.. code-block:: bash
-
- read -sn 1 -p "Press any key to continue..."
+''read -sn 1 -p "Press any key to continue..."''
 
 ===== Conditional Expressions =====
 

@@ -2,14 +2,16 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== ARP ======
+@networking
 
 ===== Running arpwatch =====
-``arpwatch -i <interface> -u <non-root username>``
+''arpwatch -i <interface> -u <non-root username>''
 
 ===== Use a static ARP table =====
-Single address:
-``arp -s <ip> <mac>``
+'''
+# Single address:
+arp -s <ip> <mac>
 
-File:
-``arp -f <filepath>``
-
+# File:
+arp -f <filepath>
+'''
