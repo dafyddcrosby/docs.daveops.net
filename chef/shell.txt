@@ -6,14 +6,13 @@ Wiki-Format: zim 0.4
 
 ===== Debug attributes =====
 
-::
-
- pp node.debug_value('system', 'repo')
+'''
+pp node.debug_value('system', 'repo')
+'''
 
 ===== Get the resources used =====
-
-::
- 
- # in chef-shell
- recipe_mode
- resources
+'''
+# in chef-shell
+recipe_mode
+resources
+'''

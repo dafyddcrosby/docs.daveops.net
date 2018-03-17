@@ -18,7 +18,7 @@ means complete, but should get you well on your way.
 * MD5 (collisions are trivial)
 * EXPORT ciphers (deliberately weakened)
 * DES (deprecated Data Encryption Standard)
-* 3DES (`Sweet32 attack <https://sweet32.info/>`_)
+* 3DES ([[https://sweet32.info|Sweet 32 Attack]])
 * Weak Diffie-Hellman parameters ([[https://weakdh.org|Logjam attack]])
 * SHA1 (`SHAttered attack <https://shattered.io>`_)
 * SSL Compression (CRIME attack)
@@ -32,3 +32,4 @@ means complete, but should get you well on your way.
 
 * https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model
 * [[https://lists.debian.org/debian-devel-announce/2017/08/msg00004.html|OpenSSL disables TLS 1.0. and 1.1]]
+* [[https://www.imperialviolet.org/2018/03/10/tls13.html|TLS 1.3 and Proxies]]

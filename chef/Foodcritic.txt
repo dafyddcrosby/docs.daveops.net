@@ -5,7 +5,7 @@ Wiki-Format: zim 0.4
 
 @Chef
 
-::
-
-  # Run rules that match the tags
-  foodcritic -t annoyances,deprecated,correctness
+'''
+# Run rules that match the tags
+foodcritic -t annoyances,deprecated,correctness
+'''

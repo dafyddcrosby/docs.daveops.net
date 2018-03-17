@@ -10,7 +10,13 @@ Wiki-Format: zim 0.4
 | outdated | list outdated homebrew packages     |
 | pin      | pin to a particular version         |
 | services | formulae integration with launchctl |
+| cleanup  | remove old versions of packages     |
 
+
+===== Installing from source =====
+'''
+brew install FORMULA.rb --build-from-source
+'''
 
 ===== Links =====
 
