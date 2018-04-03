@@ -143,6 +143,12 @@ vmstat
 
 Use ''caffeinate'' to prevent the system from sleeping
 
+===== Power management =====
+
+''man pmset''
+
+Use ''caffeinate'' to prevent the system from sleeping
+
 ===== Power report =====
 
 A bunch of dtrace under the hood
