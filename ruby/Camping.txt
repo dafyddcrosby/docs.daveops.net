@@ -4,6 +4,5 @@ Wiki-Format: zim 0.4
 ===== Camping =====
 @Ruby 
 
-* http://camping.io/
-* http://camping.rubyforge.org/
+* http://www.ruby-camping.com/
 
