@@ -10,7 +10,7 @@ Wiki-Format: zim 0.4
 
 Mold your life so that the path of least resistance is the path of maximum productivity -Matt Might
 
-* `LeechBlock <https://addons.mozilla.org/en-US/firefox/addon/leechblock/>`_
+* [[https://addons.mozilla.org/en-US/firefox/addon/leechblock/|LeechBlock]]
   - Good if you want to stop checking slashdot 30 times a day
 
 Recognize the default actions in your life, and find ways to change those defaults
@@ -22,7 +22,7 @@ Use 'bright lines' to avoid ambiguities that keep you doing things you don't wan
 ===== Computing =====
 
 
-* `Learn to touch type <http://10fastfingers.com/>`_
+* [[http://10fastfingers.com/|Learn to touch type]]
   - The effort you spend getting to 70-80 WPM is far outweighed in time saved over your life.
 
 * Learn your editor inside out

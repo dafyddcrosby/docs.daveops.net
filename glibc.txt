@@ -3,13 +3,11 @@ Wiki-Format: zim 0.4
 
 ====== glibc ======
 
-
-
 ===== Get version =====
 
-::
-
-  /lib/libc.so.6
+'''
+/lib/libc.so.6
+'''
 
 or
 

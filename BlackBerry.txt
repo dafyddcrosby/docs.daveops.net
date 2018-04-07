@@ -45,4 +45,4 @@ qcc main.c -o main
 
 ===== Reference documentation =====
 
-* `Native API Reference <https://developer.blackberry.com/playbook/native/reference/>`_
+* [[https://developer.blackberry.com/playbook/native/reference/|Native API Reference]]

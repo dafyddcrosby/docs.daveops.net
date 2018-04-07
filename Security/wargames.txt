@@ -5,6 +5,6 @@ Wiki-Format: zim 0.4
 
 Learning how to break software helps you build more robust software.
 
-* `OverTheWire <http://overthewire.org/wargames/>`_
-* `Stockfighter <https://www.stockfighter.io/#jailbreak>`_
-* `Cryptopals <https://cryptopals.com/>`_
+* [[http://overthewire.org/wargames/|OverTheWire]]
+* [[https://www.stockfighter.io/#jailbreak|Stockfighter]]
+* [[https://cryptopals.com/|Cryptopals]]

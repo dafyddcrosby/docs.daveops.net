@@ -4,8 +4,9 @@ Wiki-Format: zim 0.4
 ====== awk ======
 
 ===== Get a specific column =====
-::
 
-  # print second column
-  awk '{print $2}'
+'''
+# print second column
+awk '{print $2}'
+'''
 

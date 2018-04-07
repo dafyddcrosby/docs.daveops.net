@@ -85,9 +85,9 @@ end
 
 ===== Running proceses =====
 
-* `system() <http://ruby-doc.org/core/Kernel.html#method-i-system>`_ - return value of true (zero exit), false (non-zero), and nil (failed execution)
-* `backticks <http://ruby-doc.org/core/Kernel.html#method-i-60>`_ - returns STDOUT, sets $? to the process status
-* `exec() <http://ruby-doc.org/core/Kernel.html#method-i-exec>`_ - replace current process by running command
+* [[http://ruby-doc.org/core/Kernel.html#method-i-system|system()]] - return value of true (zero exit), false (non-zero), and nil (failed execution)
+* [[http://ruby-doc.org/core/Kernel.html#method-i-60|backticks]] - returns STDOUT, sets $? to the process status
+* [[http://ruby-doc.org/core/Kernel.html#method-i-exec|exec()]] - replace current process by running command
 
 ===== % Notation =====
 

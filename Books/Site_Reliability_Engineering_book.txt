@@ -151,5 +151,5 @@ Incident commander hand-off is explicitly confirmed by person taking over.
 ===== Misc =====
 
 
-`Dan Luu's notes <https://danluu.com/google-sre-book/>`_
+[[https://danluu.com/google-sre-book/|Dan Luu's notes]]
 

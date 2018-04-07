@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== memcached ======
 
-
 ===== Get a list of keys =====
 Note - this is an undocumented interface in the C memcached server
 
@@ -16,9 +15,10 @@ stats cachedump SLAB LIMIT
 
 
 ===== Using ASCII protocol through telnet =====
-::
 
- telnet host 11211
+'''
+telnet host 11211
+'''
 
 | command                                                                                                                                                                    | description       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
@@ -29,6 +29,6 @@ stats cachedump SLAB LIMIT
 
 
 ===== Resources =====
-* `memcached site <http://memcached.org/>`_
-* `libmemcached site <http://libmemcached.org/>`_
-* `memdump <http://docs.libmemcached.org/bin/memdump.html>`_
+* [[http://memcached.org/|memcached site]]
+* [[http://libmemcached.org/|libmemcached site]]
+* [[http://docs.libmemcached.org/bin/memdump.html|memdump]]

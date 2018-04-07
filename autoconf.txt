@@ -5,8 +5,7 @@ Wiki-Format: zim 0.4
 
 
 ===== Check library for function =====
-::
 
- AC_CHECK_LIB (library, function, [action-if-found], [action-if-not-found], [other-libraries])
+''AC_CHECK_LIB (library, function, [action-if-found], [action-if-not-found], [other-libraries])''
 
 

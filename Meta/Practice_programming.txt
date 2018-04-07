@@ -4,20 +4,18 @@ Wiki-Format: zim 0.4
 ====== Practice programming ======
 
 
-
-
 ===== Puzzles =====
 
 
 * http://codekata.pragprog.com
-* `Project Euler <http://projecteuler.net/>`_
+* [[http://projecteuler.net/|Project Euler]]
 * http://programmingpraxis.com/
 * http://www.rubyquiz.com/
 * http://www.pythonchallenge.com/
 * http://www.gowrikumar.com/c/index.html
 * http://rosettacode.org/
 * https://sites.google.com/site/prologsite/prolog-problems
-* `Regex Golf <https://alf.nu/RegexGolf>`_
+* [[https://alf.nu/RegexGolf|Regex Golf]]
 
 ===== Competitions =====
 

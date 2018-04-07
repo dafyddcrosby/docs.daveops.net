@@ -4,6 +4,6 @@ Wiki-Format: zim 0.4
 ====== Multimedia ======
 
 ===== Radio stations: =====
-* `Big Up Radio Dub station <http://radio.bigupradio.com:8013>`_
-* `Radio Canada Alberta <http://premierechaineedmonton-64.akacast.akamaistream.net/7/508/94045/v1/rc.akacast.akamaistream.net/premierechaineedmonton-64>`_
+* [[http://radio.bigupradio.com:8013|Big Up Radio Dub station]]
+* [[http://premierechaineedmonton-64.akacast.akamaistream.net/7/508/94045/v1/rc.akacast.akamaistream.net/premierechaineedmonton-64|Radio Canada Alberta]]
 

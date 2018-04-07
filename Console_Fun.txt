@@ -6,16 +6,16 @@ Wiki-Format: zim 0.4
 
 ===== Accounting =====
 
-* `Ledger <http://ledger-cli.org/>`_
+* [[http://ledger-cli.org/|Ledger]]
 
 ===== Calendar =====
 
-* `Calcurse <http://calcurse.org/>`_
+* [[http://calcurse.org/|Calcurse]]
 
 ===== Mail =====
 
 * [[Mutt]]
-* `Alpine <http://www.washington.edu/alpine/>`_
+* [[http://www.washington.edu/alpine/|Alpine]]
 * Elm
 
 ===== Addresses =====

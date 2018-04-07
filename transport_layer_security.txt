@@ -3,8 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Transport Layer Security ======
 
-
-
 Here's a quick checklist of best practices as of this writing. It is by no
 means complete, but should get you well on your way.
 
@@ -20,7 +18,7 @@ means complete, but should get you well on your way.
 * DES (deprecated Data Encryption Standard)
 * 3DES ([[https://sweet32.info|Sweet 32 Attack]])
 * Weak Diffie-Hellman parameters ([[https://weakdh.org|Logjam attack]])
-* SHA1 (`SHAttered attack <https://shattered.io>`_)
+* SHA1 ([[https://shattered.io|SHAttered attack]])
 * SSL Compression (CRIME attack)
 
 ===== Start using =====

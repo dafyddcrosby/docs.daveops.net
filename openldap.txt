@@ -5,4 +5,4 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 * http://www.openldap.org/
-* `Admin Guide (2.4) <http://www.openldap.org/doc/admin24/guide.html>`_
+* [[http://www.openldap.org/doc/admin24/guide.html|Admin Guide (2.4)]]

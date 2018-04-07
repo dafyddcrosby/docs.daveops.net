@@ -13,7 +13,7 @@ Wiki-Format: zim 0.4
 
 ===== Essential third-party tools =====
 
-`autopep8 <http://pypi.python.org/pypi/autopep8>`_
+[[http://pypi.python.org/pypi/autopep8|autopep8]]
 
 ===== Getopts =====
 

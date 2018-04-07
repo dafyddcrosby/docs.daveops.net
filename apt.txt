@@ -4,6 +4,5 @@ Wiki-Format: zim 0.4
 ====== APT ======
 
 ===== Get package version =====
-::
 
- apt-cache showpkg <package>
+''apt-cache showpkg <package>''

@@ -3,6 +3,5 @@ Wiki-Format: zim 0.4
 
 ====== OpenPGP ======
 
-
-* `OpenPGP Best Practices <https://riseup.net/en/security/message-security/openpgp/best-practices>`_
-* `OpenPGP User ID Comments considered harmful <https://debian-administration.org/users/dkg/weblog/97>`_
+* [[https://riseup.net/en/security/message-security/openpgp/best-practices|OpenPGP Best Practices]]
+* [[https://debian-administration.org/users/dkg/weblog/97|OpenPGP User ID Comments]]

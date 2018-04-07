@@ -48,25 +48,25 @@ AddType audio/mp3 mp3
 
 (note - scripts should be 755)
 
-::
-
- Options +ExecCGI
- AddHandler cgi-script .py
+'''
+Options +ExecCGI
+AddHandler cgi-script .py
+'''
 
 ===== Do not allow access to .htaccess file =====
 
-::
-
- <Files .htaccess>
- order allow,deny
- deny from all
- </Files>
+'''
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+'''
 
 ===== Prevent directory indexing =====
 
-::
-
- Options -Indexes
+'''
+Options -Indexes
+'''
 
 ===== Adding user authentication =====
 
@@ -81,6 +81,6 @@ Require valid-user
 
 ===== To create an htpasswd file =====
 
-::
-
- htpasswd -c .htpasswd username
+'''
+htpasswd -c .htpasswd username
+'''

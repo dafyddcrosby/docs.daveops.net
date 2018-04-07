@@ -5,8 +5,6 @@ Wiki-Format: zim 0.4
 
 @Linux, @security
 
-
-
 Security Enhanced Linux
 
 The cache for SELinux messages is known as the Access Vector Cache (AVC)
@@ -106,7 +104,7 @@ matchpathcon
 
 * https://github.com/SELinuxProject
 * http://www.selinuxproject.org
-* `CentOS SELinux wiki <https://wiki.centos.org/HowTos/SELinux>`_
-* `Debian SELinux wiki <https://wiki.debian.org/SELinux/Setup>`_
-* `Fedora SELinux wiki <https://fedoraproject.org/wiki/SELinux>`_
-* `Arch SELinux wiki <https://wiki.archlinux.org/index.php/SELinux>`_
+* [[https://wiki.centos.org/HowTos/SELinux|CentOS SELinux guide]]
+* [[https://wiki.debian.org/SELinux/Setup|Debian SELinux guide]]
+* [[https://fedoraproject.org/wiki/SELinux|Fedora SELinux guide]]
+* [[https://wiki.archlinux.org/index.php/SELinux|Arch SELinux wiki]]

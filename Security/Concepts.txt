@@ -49,5 +49,5 @@ A hardened system has these characteristics:
 
 * SP800-12 "An Introduction to Computer Security: The NIST Handbook
 * SP800-14 "Generally Accepted Principles and Practices for Securing Information Technology Systems"
-* `OECD Digital Security Risk Management <https://www.oecd.org/sti/ieconomy/digital-security-risk-management.htm>`_
+* [[https://www.oecd.org/sti/ieconomy/digital-security-risk-management.htm|OECD Digital Security Risk Management]]
 * Generally Accepted System Security Principles by International Information Security Foundation

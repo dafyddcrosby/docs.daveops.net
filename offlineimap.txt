@@ -9,5 +9,5 @@ Wiki-Format: zim 0.4
 
 ===== Links =====
 
-* `Manual <http://docs.offlineimap.org/en/latest/MANUAL.html>`_
+* [[http://docs.offlineimap.org/en/latest/MANUAL.html|OfflineIMAP Manual]]
 * [[http://grantlucas.com/posts/2012/10/setting-launchd-offlineimap|Setting up Launchd for OfflineIMAP]]
