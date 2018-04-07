@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-21T08:13:16-06:00
+
+====== RubyVM ======
+Created Wednesday 21 March 2018
+
+https://ruby-doc.org/core-2.2.0/RubyVM/InstructionSequence.html
