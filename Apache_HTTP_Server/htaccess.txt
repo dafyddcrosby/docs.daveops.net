@@ -70,14 +70,14 @@ AddType audio/mp3 mp3
 
 ===== Adding user authentication =====
 
-::
-
- <Limit GET PUT POST>
- AuthName "Please enter credentials"
- AuthType Basic
- AuthUserFile /path/personal-htpasswd
- Require valid-user
- </Limit>
+'''
+<Limit GET PUT POST>
+AuthName "Please enter credentials"
+AuthType Basic
+AuthUserFile /path/personal-htpasswd
+Require valid-user
+</Limit>
+'''
 
 ===== To create an htpasswd file =====
 
