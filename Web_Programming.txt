@@ -3,6 +3,8 @@ Wiki-Format: zim 0.4
 
 ====== Web Programming ======
 
+[[https://extensiblewebmanifesto.org/|Extensible Web Manifesto]]
+
 ===== Graphics/Icons =====
 http://subtlepatterns.com/
 

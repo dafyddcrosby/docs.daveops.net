@@ -7,16 +7,13 @@ Wiki-Format: zim 0.4
 
 ===== Running the profiler =====
 
-
 ''ruby -rprofile script.rb''
 
 ===== get machine instructions =====
 
-
 ''ruby --dump insns script.rb''
 
 ===== See how commands are parsed =====
-
 
 ''ruby --dump parsetree_with_comment script.rb''
 
