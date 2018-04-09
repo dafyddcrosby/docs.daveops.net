@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-04-07T13:32:11-06:00
+
+====== Virtual Reality ======
+Created Saturday 07 April 2018
+
+===== Best Practices =====
+[[https://developer.oculus.com/design/latest/concepts/book-bp/?_fb_noscript=1|Oculus VR best practices]]
+[[https://www.iso.org/standard/56350.html|ISO 9241-391:2016]]
+* Users should always be able to pause and return
+* Incorporate resting positions
+* Always test with newcomers
+	* Those experienced with VR become accustomed to it, don't notice what would be discomfortable to newcomer
+* Always start easy - not with hectic action
+* Don't waste time - folks in VR can't log off for 5 seconds while waiting
