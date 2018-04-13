@@ -14,3 +14,7 @@ Created Saturday 07 April 2018
 	* Those experienced with VR become accustomed to it, don't notice what would be discomfortable to newcomer
 * Always start easy - not with hectic action
 * Don't waste time - folks in VR can't log off for 5 seconds while waiting
+* Present VR immediately on load (don't use loading screen)
+* Show hands (or something else that provides presence points)
+* Add audio (for better immersion)
+* Don't limit to one browser (this goes beyond VR ;-)
