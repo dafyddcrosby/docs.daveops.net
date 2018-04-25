@@ -18,7 +18,7 @@ http://lanyrd.com/
 
 ===== BSD =====
 
-* [[AsiaBSDCon <asiabsdcon.org|AsiaBSDCon]]
+* [[asiabsdcon.org|AsiaBSDCon]]
 * BSDCan
 
 ===== Ruby =====

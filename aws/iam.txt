@@ -40,3 +40,4 @@ aws iam delete-server-certificate --server-certificate-name NAME
 
 * [[https://iam.cloudonaut.io/|Complete IAM Reference]]
 * https://www1.amazonian.io/post/list-iam-actions/
+* [[https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html|ARNs and namespaces]]

@@ -23,5 +23,13 @@ xcopy /E <src> <dest>
 
 ===== Hosts file =====
 
-
 c:\Windows\System32\Drivers\etc\hosts
+
+===== Command Prompt =====
+
+| command | description          |
+|---------|----------------------|
+| move    | move a file          |
+| xcopy   | copy files + folders |
+
+https://ss64.com/nt/
