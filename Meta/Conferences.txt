@@ -4,7 +4,7 @@ Wiki-Format: zim 0.4
 ====== Conferences ======
 
 
-.. TODO - add links
+[ ] add links
 
 http://lanyrd.com/
 
@@ -18,7 +18,7 @@ http://lanyrd.com/
 
 ===== BSD =====
 
-* [[asiabsdcon.org|AsiaBSDCon]]
+* [[http://asiabsdcon.org|AsiaBSDCon]]
 * BSDCan
 
 ===== Ruby =====
