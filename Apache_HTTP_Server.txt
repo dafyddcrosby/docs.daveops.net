@@ -15,15 +15,16 @@ Wiki-Format: zim 0.4
 
 ===== Apachectl options =====
 
-| Option        | Description                                                       |
-|---------------|-------------------------------------------------------------------|
-| start         | start daemon                                                      |
-| stop          | stop daemon                                                       |
-| restart       | restarts after checking configtest                                |
-| graceful      | graceful restart (checks configtest)                              |
-| graceful-stop | graceful stop of the daemon                                       |
-| fullstatus    | display full status report (mod_status and text browser required) |
-| configtest    | test the configuration                                            |
+| Option        | ShortOption | Description                                                       |
+|---------------|:------------|-------------------------------------------------------------------|
+| start         |             | start daemon                                                      |
+| stop          |             | stop daemon                                                       |
+| restart       |             | restarts after checking configtest                                |
+| graceful      |             | graceful restart (checks configtest)                              |
+| graceful-stop |             | graceful stop of the daemon                                       |
+| fullstatus    |             | display full status report (mod_status and text browser required) |
+| configtest    | -t          | test the configuration                                            |
+|               | -S          | parse the config, show what IPs are used for virtual hosts        |
 
 
 ===== General Hardening =====

@@ -4,9 +4,9 @@ Wiki-Format: zim 0.4
 ====== diff ======
 
 
-::
-
-  --patience  # use the patience algorithm
+'''
+--patience  # use the patience algorithm
+'''
 
 ===== Links =====
 http://bramcohen.livejournal.com/73318.html
