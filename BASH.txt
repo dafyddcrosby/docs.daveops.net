@@ -21,9 +21,9 @@ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
 ===== Show your shell from a port =====
 
-.. code-block:: bash
-
- script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
+{{{code: lang="bash"
+script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
+}}}
 
 ===== Replace filename spaces with underscores =====
 
@@ -61,31 +61,31 @@ for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:
 ===== Process Substitution =====
 A temporary named pipe
 
-.. code-block:: bash
-
- diff <(grep lines file1) <(grep lines file2)
- thing --output >(gzip > output.txt.gz)
+{{{code: lang="bash"
+diff <(grep lines file1) <(grep lines file2)
+thing --output >(gzip > output.txt.gz)
+}}}
 
 ===== Syntax cheatsheet =====
-.. code-block:: bash
+{{{code: lang="bash"
+fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
- fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
+case expression in
+       pattern1 )
+       	statements ;;
+       pattern2 )
+       	statements ;;
+       ...
+esac
 
- case expression in
-	pattern1 )
-		statements ;;
-	pattern2 )
-		statements ;;
-	...
- esac
-
- # for VARIABLE in 1 2 3 4 5
- for VARIABLE in {1..5}
- do
-		command1
-		command2
-		commandN
- done
+# for VARIABLE in 1 2 3 4 5
+for VARIABLE in {1..5}
+do
+       	command1
+       	command2
+       	commandN
+done
+}}}
 
 ===== set =====
 https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
@@ -103,26 +103,24 @@ https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
 ===== Using regex for variable testing =====
 
-.. code-block:: bash
-
- if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
-		echo "yay"
- fi
+{{{code: lang="bash"
+if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
+    echo "yay"
+fi
+}}}
 
 ===== Temporary directory/file =====
 
-.. code-block:: bash
-
-   mktemp -d
-
+{{{code: lang="bash"
+mktemp -d
+}}}
 
 ===== Show the functions declared in the shell =====
-.. code-block:: bash
-
-   declare -F
-   # on ancient shells:
-   typeset -F
-
+{{{code: lang="bash"
+declare -F
+# on ancient shells:
+typeset -F
+}}}
 ===== Use heredocs =====
 '''
 cat <<EOM > file.out
