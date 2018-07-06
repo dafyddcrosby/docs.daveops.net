@@ -189,3 +189,6 @@ leaks(1)
 
 ===== System Integrity Protection =====
 csrutil(1)
+
+==== Installing fonts =====
+copy to ~/Library/Fonts

@@ -7,17 +7,18 @@ Wiki-Format: zim 0.4
 
 ===== bibtex =====
 
-..code-block:: latex
+{{{code: lang="latex" linenumbers="True"
+% Add to the preamble:
+% Load biblatex package
+\usepackage{biblatex}
+% Load bibTeX file
+\addbibresource{file.bib}
+% Add a citation somewhere in your file
+Blah blah \autocite{<key>}
+% In the backmatter),
+\printbibliography
+}}}
 
-  % Add to the preamble:
-  % Load biblatex package
-  \usepackage{biblatex}
-  % Load bibTeX file
-  \addbibresource{file.bib}
-  % Add a citation somewhere in your file
-  Blah blah \autocite{<key>}
-  % In the backmatter),
-  \printbibliography
 
 ===== document classes =====
 
@@ -27,3 +28,7 @@ Wiki-Format: zim 0.4
 * letter
 * slides
 
+===== ePub =====
+* https://www.tug.org/TUGboat/tb32-3/tb102rishi.pdf
+* http://pandoc.org/
+* https://tex2ebook.wordpress.com/

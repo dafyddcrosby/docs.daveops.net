@@ -6,11 +6,12 @@ Wiki-Format: zim 0.4
 
 ===== Set the replica binlog coordinates =====
 
-::
-
-  CHANGE MASTER TO
-	MASTER_LOG_FILE='mysqld-bin.123456',
-	MASTER_LOG_POS=123456;
+'''
+CHANGE MASTER TO
+  MASTER_HOST='example.com',
+  MASTER_LOG_FILE='mysqld-bin.123456',
+  MASTER_LOG_POS=123456;
+'''
 
 
 ===== Check the binlog in a human readable way =====
@@ -21,3 +22,4 @@ Wiki-Format: zim 0.4
 .. todo
    https://dev.mysql.com/doc/refman/5.6/en/replication-gtids-concepts.html
 
+===== Links =====

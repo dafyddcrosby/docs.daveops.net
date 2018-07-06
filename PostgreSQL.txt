@@ -35,11 +35,11 @@ Wiki-Format: zim 0.4
 
 Don't use SIGKILL, it will shut down the rest of PostgreSQL, and require a replay
 
-.. code-block:: sql
+{{{code: lang="sql"
 
    pg_cancel_backend(pid int) 
    pg_terminate_backend(pid int)
-
+}}}
 ===== Tuning =====
 
 

@@ -7,7 +7,7 @@ Wiki-Format: zim 0.4
 
 ===== Datestamps =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  //mktime(hour,minute,second,month,day,year)
@@ -15,27 +15,29 @@ Wiki-Format: zim 0.4
  echo date("Y/m/d", mktime(0,0,0,11,11,2011));
  //2011/11/11
  ?> 
-
+}}}
 ===== Turn off error reporting =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  error_reporting(0)
  ?>
+}}}
 
 ===== Check if domain resolves =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  checkdnsrr($host)
  ?>
+}}}
 
 ===== Authenticating users =====
 
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  session_start();
@@ -54,6 +56,7 @@ Wiki-Format: zim 0.4
 	 session_regenerate_id(TRUE);
  } 
  ?>
+}}}
 
 ===== Run a server instance with a script =====
 
@@ -68,16 +71,17 @@ Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.ph
 
 ==== Numeric validation ====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  is_int($var)
  is_numeric($var)
  ?>
+}}}
 
 ====== Export to CSV ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  header("Expires: 0");
@@ -87,18 +91,20 @@ Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.ph
  header("Content-Type: text/csv");
  header("Content-disposition: attachment; filename=rawlogs.csv");
  ?>
+}}}
 
 ====== Get filename ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  $FILE_NAME = basename($_SERVER["PHP_SELF"]);
  ?>
+}}}
 
 ====== Return multiple values ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  function mult() {
@@ -107,10 +113,11 @@ Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.ph
  
  list ($zero, $one) = mult();
  ?>
+}}}
 
 ====== Create an array of objects ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  $allCars=array();
@@ -128,33 +135,37 @@ Requires PHP >= 5.4 - http://php.net/manual/en/features.commandline.webserver.ph
  }
  ?>
 
+}}}
 
 ====== Include PEAR (Dreamhost) ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  //Include my PEAR path
  set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
  ?>
+}}}
 
 ====== Scrape $_GET parameters ======
 
 If mod_rewrite or some other mechanism is preventing the filling of the $_GET array, use this:
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  parse_str($_SERVER['QUERY_STRING'], $_GET);
  ?>
+}}}
 
 ====== Convert command line arguments into GET variables ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
  ?>
+}}}
 
 ====== Get PHP config info ======
 
@@ -167,15 +178,16 @@ If mod_rewrite or some other mechanism is preventing the filling of the $_GET ar
 
 ====== Redirect to a different URL ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  header("Location: http://www.example.com/"); 
  ?>
+}}}
 
 ====== Syntax cheatsheet ======
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  if ($blah == 0) {
@@ -206,4 +218,5 @@ If mod_rewrite or some other mechanism is preventing the filling of the $_GET ar
    return 0;
  }
  ?>
+}}}
 

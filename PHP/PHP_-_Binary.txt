@@ -8,36 +8,36 @@ Wiki-Format: zim 0.4
 
 ===== Read a binary file =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  $handle = fopen('/path/to/file', 'rb');
  $contents = fread($handle, filesize($filename));
  fclose($handle);
  ?>
-
+}}}
 ===== Binary craziness =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  bindec();
  decbin();
  ?>
-
+}}}
 ===== Playing with endianness =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  // For changing endianness, just use strrev()
  // %016b for 16-bit, %032b for 32-bit
  strrev(sprintf("%016b", $int));
  ?>
-
+}}}
 ===== Unpacking binary file formats =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  // For parsing binary file formats,
@@ -88,3 +88,4 @@ Wiki-Format: zim 0.4
  )
  */
  ?>
+}}}

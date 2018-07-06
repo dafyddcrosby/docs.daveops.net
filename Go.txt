@@ -4,17 +4,17 @@ Wiki-Format: zim 0.4
 ====== Go ======
 
 ===== Syntax cheatsheet =====
-.. code-block:: go
+{{{code: lang="go"
+package main
 
-   package main
+import(
+        "fmt"
+)
 
-   import(
-	   "fmt"
-   )
-
-   func main() {
-	   fmt.Println("hello world")
-   }
+func main() {
+        fmt.Println("hello world")
+}
+}}}
 
 ===== Resources =====
 * https://golang.org/

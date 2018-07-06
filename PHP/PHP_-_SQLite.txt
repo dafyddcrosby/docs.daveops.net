@@ -11,7 +11,7 @@ Wiki-Format: zim 0.4
 
 ==== Initializing ====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  /**
@@ -34,10 +34,11 @@ Wiki-Format: zim 0.4
  $result = $db->query('SELECT bar FROM foo');
  var_dump($result->fetchArray());
  ?>
+}}}
 
 ==== Reading values ====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  //read data from database
@@ -56,3 +57,4 @@ Wiki-Format: zim 0.4
    die($error);
  }
  ?>
+}}}

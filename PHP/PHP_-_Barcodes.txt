@@ -8,7 +8,7 @@ Wiki-Format: zim 0.4
 
 ===== Get a UPC check digit =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  function get_ean_checkdigit($barcode){
@@ -19,13 +19,14 @@ Wiki-Format: zim 0.4
 	 return (10 - ($sum % 10));
  }
  ?>
-
+}}}
 ===== Create a barcode with Image_Barcode2 (PEAR) =====
 
-.. code-block:: php
+{{{code: lang="php"
 
  <?php
  require_once 'Image/Barcode2.php';
  $bc = new Image_Barcode2;
  $bc->draw($_GET['bctext'], "int25", "png");
  ?>
+}}}

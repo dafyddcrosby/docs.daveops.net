@@ -25,6 +25,10 @@ xcopy /E <src> <dest>
 
 c:\Windows\System32\Drivers\etc\hosts
 
+===== Writing a batch file =====
+
+Save as FILENAME.bat
+
 ===== Command Prompt =====
 
 | command | description          |

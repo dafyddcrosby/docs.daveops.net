@@ -3,28 +3,34 @@ Wiki-Format: zim 0.4
 
 ====== Docker ======
 
-
-
+===== Installing on Mac =====
+'''
+brew install docker docker-machine docker-machine-driver-xhyve
+brew services start docker-machine
+docker-machine create main
+eval $(docker-machine env main)
+'''
 
 ===== CLI =====
 
-::
-
-  # list all containers
-  docker ps -a
-  # remove a container
-  docker rm [container_id|name]
-  # restart a container
-  docker restart [container]
-  # build from a Dockerfile
-  docker build -t TAGNAME . # in dir of Dockerfile
-
+'''
+# list all containers
+docker ps -a
+# remove a container
+docker rm [container_id|name]
+# restart a container
+docker restart [container]
+# build a docker image from a Dockerfile
+docker build -t TAGNAME . # in dir of Dockerfile
+# create a docker container
+docker create TAGNAME
+'''
 
 ===== Dockerfile syntax =====
 
-::
-
-  FROM image_name:image_tag
-  MAINTAINER person <person@example.org>
-  RUN install_things
-  CMD ['executable', '--to', '--run']
+'''
+FROM image_name:image_tag
+MAINTAINER person <person@example.org>
+RUN install_things
+CMD ['executable', '--to', '--run']
+'''
