@@ -2,8 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Productivity ======
-
-
 @advice
 
 ===== General life hacks =====
@@ -54,3 +52,7 @@ Use 'bright lines' to avoid ambiguities that keep you doing things you don't wan
 * Order by importance.
 * Do the tasks by importance.
 * Repeat.
+
+===== Links =====
+https://timemanagementninja.com/2015/01/10-productivity-questions-to-ask-yourself-every-day/
+https://www.inc.com/john-rampton/15-ways-to-increase-productivity-at-work.html

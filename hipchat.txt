@@ -30,6 +30,7 @@ Wiki-Format: zim 0.4
 | cmd+n       | search for room, user          |
 | option+up   | put last line in your text box |
 
+
 ===== Modify last line =====
 
 
@@ -38,3 +39,4 @@ s/search/replace/
 ===== Links =====
 
 * [[https://www.hipchat.com/emoticons|Emoticons list]]
+* https://community.atlassian.com/t5/Hipchat-articles/A-Simple-Hack-Sorting-rooms-and-people/ba-p/650964

@@ -5,6 +5,7 @@ Wiki-Format: zim 0.4
 
 
 http://www.elidedbranches.com/2015/11/the-manager-as-debugger.html
+http://www.dummies.com/business/human-resources/employee-relations/employee-appraisal-phrases-productivity-and-timeliness/
 
 ===== Does Management Matter? =====
 https://people.stanford.edu/nbloom/sites/default/files/dmm.pdf

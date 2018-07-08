@@ -204,3 +204,5 @@ In the commit message
 
 http://whatthecommit.com/
 
+===== Misc =====
+https://gitea.io

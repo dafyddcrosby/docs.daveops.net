@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-06T15:53:03-06:00
+
+====== Add to Home Screen ======
+Created Friday 06 July 2018
+
+https://developer.mozilla.org/en-US/Apps/Progressive/Add_to_home_screen

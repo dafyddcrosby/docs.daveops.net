@@ -3,6 +3,9 @@ Wiki-Format: zim 0.4
 
 ====== vim ======
 
+http://www.vimninjas.com/
+
+
 ===== Sort on a virtual column =====
 
  '':sort /.*\%10v/''
