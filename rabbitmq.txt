@@ -20,6 +20,9 @@ rabbitmq-server -detached
 rabbitmqctl stop_app
 # Remove a node (remotely)
 rabbitmqctl forget_cluster_node rabbit@rabbit1
+
+# Get cluster status
+rabbitmqctl cluster_status
 '''
 
 
@@ -29,6 +32,10 @@ rabbitmqctl forget_cluster_node rabbit@rabbit1
 rabbitmqctl rotate_logs <suffix>
 '''
 
+===== Ports =====
+* 4369 - EPMD
+* 5672 - AMQP connections
+* 15672 - mgmt interface
 
 ===== Re-syncing mirrors in HA mode =====
 '''
