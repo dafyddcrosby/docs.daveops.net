@@ -4,7 +4,6 @@ Wiki-Format: zim 0.4
 ====== DNS ======
 
 
-
 ===== Reverse lookup =====
 
 ''dig -x [ip addr]''
@@ -41,3 +40,4 @@ $ORIGIN subdomain.example.com.
 ===== Links =====
 
 * [[http://www.unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html|Kaminsky DNS Vulnerability]]
+* [[http://ww2.infoblox.com/services/dns_advisor_tool.cfm|Cricket Liu's DNS Advisor]]

@@ -16,6 +16,10 @@ http://2017.js13kgames.com/
 http://jquery.com
 http://code.google.com/p/iui/
 
+===== Strict Mode =====
+
+[[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode|Strict Mode]]
+
 ===== Classes =====
 
 {{{code: linenumbers="True"

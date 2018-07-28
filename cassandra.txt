@@ -3,16 +3,16 @@ Wiki-Format: zim 0.4
 
 ====== Cassandra ======
 
-Based on the Amazon Dynamo paper
+Based on the [[https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html|Amazon Dynamo]] paper
 Ring topology
 peer-to-peer, gossip protocol
 no special nodes
 Distributed Hash Table
 eventually consistent, tunable
 
-::
-
-  Use vnodes whenever possible to avoid issues with topology changes, node rebuilds, hotspots, and heterogeneous clusters.
+'''
+Use vnodes whenever possible to avoid issues with topology changes, node rebuilds, hotspots, and heterogeneous clusters.
+'''
 
 vnodes mean more ranges, which makes it easier to give a range to a new node
 
@@ -32,11 +32,12 @@ port 9042
 
 https://docs.datastax.com/en/cassandra/2.1/cassandra/tools/toolsNodetool_r.html
 
-::
+'''
+#  Checking node repair
+nodetool netstats
+nodetool compactionstats
+'''
 
-  # Checking node repair
-  nodetool netstats
-  nodetool compactionstats
 
 ===== Topologies =====
 
@@ -49,7 +50,6 @@ Uses 'snitches'
 * EC2Snitch (discovers AWS AZ/regions)
 
 ===== Per-Query Consistency =====
-
 
 ANY/ONE/QUORUM/LOCAL_QUORUM/ALL
 
