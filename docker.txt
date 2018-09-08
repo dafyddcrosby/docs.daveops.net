@@ -28,9 +28,11 @@ docker create TAGNAME
 
 ===== Dockerfile syntax =====
 
+Must use ", not '
+
 '''
 FROM image_name:image_tag
 MAINTAINER person <person@example.org>
 RUN install_things
-CMD ['executable', '--to', '--run']
+CMD ["executable", "--to", "--run"]
 '''

@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-10T19:35:37-06:00
+
+====== Speed Optimization ======
+Created Tuesday 10 July 2018
+
+* Use the latest language/server/platform/library versions?
+* Enable caching
+* Minify your resources
+* Optimiize your images
+* Check out your database
+	* When was it last vacuumed?
+* Use a CDN
+
+===== Links =====
+* https://www.dreamhost.com/blog/optimize-wordpress-website-speed/
