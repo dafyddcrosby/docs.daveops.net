@@ -41,3 +41,5 @@ Advantages:
 * fragmentation not an issue (or replaced by simpler problems)
 * less wear on SSDs (can't update data in-place)
 
+==== Links =====
+* http://jepsen.io

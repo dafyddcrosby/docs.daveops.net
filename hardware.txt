@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T09:07:25-06:00
+
+====== hardware ======
+Created Friday 07 September 2018
+
+https://opencores.org
+http://www.fpgaarcade.com/

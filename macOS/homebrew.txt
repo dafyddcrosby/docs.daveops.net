@@ -11,6 +11,7 @@ Wiki-Format: zim 0.4
 | pin      | pin to a particular version         |
 | services | formulae integration with launchctl |
 | cleanup  | remove old versions of packages     |
+| switch   | switch between installed versions   |
 
 
 ===== Installing from source =====
