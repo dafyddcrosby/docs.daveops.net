@@ -3,8 +3,13 @@ Wiki-Format: zim 0.4
 
 ====== LaTeX ======
 
+===== adding quotes =====
 
-
+'''
+\begin{quote}
+...
+\end{quote}
+'''
 ===== bibtex =====
 
 {{{code: lang="latex" linenumbers="True"
