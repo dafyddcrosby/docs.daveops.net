@@ -3,7 +3,14 @@ Wiki-Format: zim 0.4
 
 ====== LaTeX ======
 
+===== Cheatsheet =====
 
+'''
+\documentclass{book}
+\begin{document}
+\maketitle
+\end{document}
+'''
 
 ===== bibtex =====
 
@@ -32,3 +39,12 @@ Blah blah \autocite{<key>}
 * https://www.tug.org/TUGboat/tb32-3/tb102rishi.pdf
 * http://pandoc.org/
 * https://tex2ebook.wordpress.com/
+
+===== installing on Fedora =====
+
+* texlive
+* pdflatex
+* texlive-xetex
+* texlive-cm
+* texlive-hyphen-base
+* texlive-mfware
