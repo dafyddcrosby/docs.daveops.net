@@ -1,4 +1,7 @@
-apk (alpine linux)
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+
+====== apk (alpine linux) ======
 
 apk add
 apk del

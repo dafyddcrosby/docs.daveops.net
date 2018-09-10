@@ -5,5 +5,15 @@ Creation-Date: 2018-09-07T09:07:25-06:00
 ====== hardware ======
 Created Friday 07 September 2018
 
-https://opencores.org
-http://www.fpgaarcade.com/
+* [[https://www.hnsa.org/resources/manuals-documents/2575-2/|Navy Electricity and Electronics Training Series]]
+* https://hackaday.com/
+
+===== FPGA =====
+* https://opencores.org
+* http://www.fpgaarcade.com/
+
+===== Parts manufacturers/distributors/sellers =====
+* https://www.mouser.com/
+* https://www.digikey.ca
+* https://www.jameco.com
+* https://solarbotics.com/

@@ -13,10 +13,10 @@ Wiki-Format: zim 0.4
 
 ===== Find the package that provides a library =====
 
-::
-
-  yum whatprovides *Xlib.h
-
+'''
+yum whatprovides *Xlib.h
+'''
+ 
 ===== versionlock =====
 
 RPM is either yum-versionlock or yum-plugin-versionlock

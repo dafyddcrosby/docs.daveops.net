@@ -5,9 +5,9 @@ Wiki-Format: zim 0.4
 @SerialConsole
 
 ===== Attach to a serial console =====
-::
-
+'''
   # ensure that the dev node has correct permissions
   minicom -s
   # select "Serial port setup"
   # save
+'''
