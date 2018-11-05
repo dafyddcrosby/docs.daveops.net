@@ -3,7 +3,6 @@ Wiki-Format: zim 0.4
 
 ====== Operations checklist ======
 
-
 This is a checklist of things that I think an operations team needs to get to a
 pretty good state. By no means exhaustive, and a bit opinionated. What I think
 is most important is at the top, but really should try to have all of them.
@@ -12,9 +11,9 @@ is most important is at the top, but really should try to have all of them.
 	* How do you track WIP (work-in-progress) tasks?
 	* Customer can easily create a useful ticket?
 * Version control
-	* CVS, SVN, git, doesn't matter which. Can you see when a file was changed, and by whom?
+	* Can you see when a file was changed, and by whom? What you choose isn't necessarily important (e.g. git), but you'll likely never change the system once you start using it, so choose carefully. 
 * Configuration management
-* *Fully* automatic installs
+* **Fully** automatic installs
 * CI/CD system
 	* Deployment to production is fully automated
 * Monitoring systems

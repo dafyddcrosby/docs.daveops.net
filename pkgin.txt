@@ -4,10 +4,9 @@ Wiki-Format: zim 0.4
 ====== pkgin ======
 
 ===== Update pkgin database =====
-::
+''pkgin -y up''
 
- pkgin -y up
- # DB located at /var/db/pkg
+DB located at /var/db/pkg
 
 ===== Links =====
 * https://wiki.smartos.org/display/DOC/Working+with+Packages

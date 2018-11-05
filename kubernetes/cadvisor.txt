@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-11-03T05:45:31-06:00
+
+====== cadvisor ======
+Created Saturday 03 November 2018
+
+https://hub.docker.com/r/google/cadvisor/
+collects resource/perf metrics from running containers
+UI - port was 4194
+in Kubernetes 1.11, UI turned off by default

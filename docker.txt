@@ -2,6 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== Docker ======
+@containers
 
 ===== Installing on Mac =====
 '''
@@ -10,6 +11,7 @@ brew services start docker-machine
 docker-machine create main
 eval $(docker-machine env main)
 '''
+
 
 ===== CLI =====
 
@@ -25,6 +27,16 @@ docker build -t TAGNAME . # in dir of Dockerfile
 # create a docker container
 docker create TAGNAME
 '''
+
+
+===== Docker compose =====
+
+https://docs.docker.com/compose/compose-file/
+
+===== Docker stack =====
+
+https://docs.docker.com/engine/reference/commandline/stack/
+
 
 ===== Dockerfile syntax =====
 
