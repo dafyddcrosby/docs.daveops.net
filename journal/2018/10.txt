@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-17T07:05:01-06:00
+
+====== 2018-10 ======
+Created Wednesday 17 October 2018
+
+===== libssh causes massive freakout =====
+https://arstechnica.com/information-technology/2018/10/bug-in-libssh-makes-it-amazingly-easy-for-hackers-to-gain-root-access/
+https://www.libssh.org/security/advisories/CVE-2018-10933.txt
