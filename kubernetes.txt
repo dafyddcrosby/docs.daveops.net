@@ -89,6 +89,14 @@ kubectl config use-context NAMESPACE
 # Get current context
 kubectl config current-context
 
+
+=== Misc ===
+
+'''
+# Check control plane health
+kubectl get componentstatus
+'''
+
 ===== Links =====
 * https://kubernetes.io/
 * https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips
