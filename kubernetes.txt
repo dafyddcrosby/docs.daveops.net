@@ -59,10 +59,12 @@ kubectl logs $POD_NAME
 === Services ===
 A logical collection of pods
 
-* ClusterIP
-* NodePort
-* LoadBalancer
-* ExternalName
+| Type         | Description     |
+|--------------|-----------------|
+| ClusterIP    |                 |
+| NodePort     |                 |
+| LoadBalancer | A load balancer |
+| ExternalName |                 |
 
 '''
 # list services
@@ -84,11 +86,19 @@ kubectl describe namespace NAMESPACE
 # create context from namespace
 kubectl config set-context ...
 # Switch context
-'''
 kubectl config use-context NAMESPACE
 # Get current context
 kubectl config current-context
+'''
 
+
+=== Secrets ===
+'''
+# Create generic secret from literal value
+kubectl create secret generic OBJECTNAME --from-literal=KEYNAME=LITERAL_VALUE
+
+'''
+https://kubernetes.io/docs/concepts/configuration/secret/
 
 === Misc ===
 
@@ -96,6 +106,7 @@ kubectl config current-context
 # Check control plane health
 kubectl get componentstatus
 '''
+
 
 ===== Links =====
 * https://kubernetes.io/
