@@ -2,7 +2,8 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 
 ====== 12 Factor App ======
-http://www.12factor.net/
+* http://www.12factor.net/
+* https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c
 
 * Codebase
 	* One codebase tracked in revision control, many deploys (i.e. it's all in Git)
