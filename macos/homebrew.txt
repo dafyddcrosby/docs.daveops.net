@@ -12,6 +12,7 @@ Wiki-Format: zim 0.4
 | services | formulae integration with launchctl |
 | cleanup  | remove old versions of packages     |
 | switch   | switch between installed versions   |
+| leaves   | Show installed formulae with no deps |
 
 
 ===== Installing from source =====
