@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2017-09-17T07:42:10-06:00
-
-====== Control Flow Integrity ======
-Created Sunday 17 September 2017
-
-https://blog.trailofbits.com/2016/10/17/lets-talk-about-cfi-clang-edition/
-https://clang.llvm.org/docs/ControlFlowIntegrity.html

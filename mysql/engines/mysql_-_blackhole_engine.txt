@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== MySQL - Blackhole Engine ======
-========================
-:date: 2016-09-29
-
-- No storage mechanism at all
-- Useful for replication setups and audit logging

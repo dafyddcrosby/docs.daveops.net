@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2017-09-17T10:07:54-06:00
-
-====== Solaris ======
-Created Sunday 17 September 2017
-
-http://www.brendangregg.com/blog/2017-09-05/solaris-to-linux-2017.html

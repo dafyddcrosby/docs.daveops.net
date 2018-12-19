@@ -1,0 +1,42 @@
+# November 2017
+Fooling Neural Networks/Machine Learning
+----------------------------------------
+<https://arxiv.org/abs/1708.05207>
+<http://www.labsix.org/physical-objects-that-fool-neural-nets/>
+<https://cvdazzle.com/>
+<http://dismagazine.com/dystopia/evolved-lifestyles/8115/anti-surveillance-how-to-hide-from-machines/>
+
+So... MINIX is everywhere
+-------------------------
+Turns out there's a lot of garbage hidden on CPU's these days. Work is underway to defang the nastiness
+<https://www.networkworld.com/article/3236064/servers/minix-the-most-popular-os-in-the-world-thanks-to-intel.html>
+<https://schd.ws/hosted_files/osseu17/84/Replace%20UEFI%20with%20Linux.pdf>
+
+Code exec from VMWare guest
+---------------------------
+``VMware Workstation and Fusion contain a heap buffer-overflow vulnerability in VMNAT device. This issue may allow a guest to execute code on the host.``
+<https://www.vmware.com/ca/security/advisories/VMSA-2017-0018.html>
+
+Intel ME is unsurprisingly vulnerable
+-------------------------------------
+<https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr>
+
+Linus Rant du Jour
+------------------
+	If it's been on a random cellphone for a few months, and real users
+	used it, and had facebook and candy crush running on it, that's a
+	pretty different deal.
+
+<https://lkml.org/lkml/2017/11/21/356>
+<http://lkml.iu.edu/hypermail/linux/kernel/1711.2/01701.html>
+
+instant root on macOS High Sierra
+---------------------------------
+I honestly have no words for how dumb this is.
+
+<http://www.theregister.co.uk/2017/11/28/root_access_bypass_macos_high_sierra/>
+
+fix:
+	sudo passwd -u root
+	dsenableroot -d
+

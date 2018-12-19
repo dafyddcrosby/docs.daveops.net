@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== SmartOS ======
-@SmartOS
-
-* vmadm - start, stop, etc virtual machines
-* imgadm - find, download, install images

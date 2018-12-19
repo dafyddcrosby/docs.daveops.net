@@ -1,0 +1,28 @@
+# March 2018
+Exim pre-auth RCE
+-----------------
+<https://devco.re/blog/2018/03/06/exim-off-by-one-RCE-exploiting-CVE-2018-6789-en/>
+
+Juggling with packets
+---------------------
+	  As such, the Internet has a non-zero momentary data storage capacity.
+	  It is possible to push out a piece of information and effectively have
+	  it stored until echoed back. By establishing a mechanism for cyclic
+	  transmission and reception of chunks of data to and from a number of
+	  remote hosts, it is possible to maintain an arbitrary amount of data
+	  constantly `on the wire', thus establishing a high-capacity volatile
+	  medium.
+<http://lcamtuf.coredump.cx/juggling_with_packets.txt>
+
+Temporal Return Addresses (2005)
+--------------------------------
+[Paper (PDF)](http://www.hick.org/code/skape/papers/temporal-return-addresses.pdf)
+	An exploitation chronomancer is one who is capable of divining the best time to
+	exploit something based on the alignment of certain bytes that occur naturally
+	in a process’ address space
+
+
+Abusing Certificate Transparency logs
+-------------------------------------
+<https://github.com/UnaPibaGeek/ctfr>
+

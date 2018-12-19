@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2017-09-22T19:48:49-06:00
-
-====== GitHub ======
-Created Friday 22 September 2017
-

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Chromium ======
-
-
-SHIFT-ESC - see which tabs are chewing up the most CPU/memory

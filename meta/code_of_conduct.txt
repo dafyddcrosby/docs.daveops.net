@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2018-09-18T07:31:00-06:00
-
-====== code of conduct ======
-Created Tuesday 18 September 2018
-
-https://www.contributor-covenant.org/

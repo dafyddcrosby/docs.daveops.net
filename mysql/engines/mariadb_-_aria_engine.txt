@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== MariaDB - Aria Engine ======
-
-
-https://en.wikipedia.org/wiki/Aria_%28storage_engine%29

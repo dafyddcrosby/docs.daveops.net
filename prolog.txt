@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Prolog ======
-
-
-
-https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/

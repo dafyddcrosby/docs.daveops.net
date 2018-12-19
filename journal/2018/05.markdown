@@ -1,0 +1,15 @@
+# May 2018
+Throwhammer
+-----------
+I wonder how long before Rowhammer-style attacks make their way to networking equipment...
+<https://www.cs.vu.nl/~herbertb/download/papers/throwhammer_atc18.pdf>
+
+EFail
+-----
+A broken embargo, and lots of finger pointing. Security is awesome!
+<https://efail.de/>
+
+Nethammer
+---------
+<https://arxiv.org/pdf/1805.04956.pdf>
+

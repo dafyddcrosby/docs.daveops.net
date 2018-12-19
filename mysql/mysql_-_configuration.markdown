@@ -1,0 +1,23 @@
+# MySQL - Configuration
+@MySQL
+
+Variables
+---------
+
+.. code-block:: mysql
+
+  -- session variables
+  SHOW SESSION VARIABLES;
+  SET SESSION sort_buffer_size=1000000;
+  -- global variables
+  SHOW GLOBAL VARIABLES;
+  SET GLOBAL sort_buffer_size=1000000;
+
+
+Get timezone config
+-------------------
+
+.. code-block:: mysql
+ 
+ SELECT @@global.time_zone, @@session.time_zone;
+

@@ -1,0 +1,20 @@
+# August 2018
+Another Struts RCE
+------------------
+<https://semmle.com/news/apache-struts-CVE-2018-11776>
+
+RANSOM
+------
+Routing Around Nation-States: Overlays and Measurements
+<https://ransom.cs.princeton.edu/>
+
+OpenSSH user oracle
+-------------------
+<http://www.openwall.com/lists/oss-security/2018/08/15/5>
+<http://www.openwall.com/lists/oss-security/2018/08/24/1>
+
+Intel L1 bug
+------------
+<https://www.theregister.co.uk/2018/08/14/intel_l1_terminal_fault_bugs/>
+<https://lwn.net/Articles/762570/>
+
