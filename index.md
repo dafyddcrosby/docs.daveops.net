@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 This is daveops.net, my little repo of code snippets and chunks of wisdom
