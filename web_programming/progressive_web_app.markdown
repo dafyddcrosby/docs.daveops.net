@@ -1,7 +1,9 @@
-# Progressive Web Apps
+---
+title: Progressive Web Apps
+---
+
 Tools
 -----
-
 
 * <https://developers.google.com/web/tools/lighthouse/>
 * <http://mobilehtml5.org/>
@@ -9,7 +11,6 @@ Tools
 
 Supported versions
 ------------------
-
 
 * Windows/Edge (does it need to be on their app store?)
 
@@ -28,7 +29,6 @@ iOS
 
 ### Capabilities
 
-
 * Geolocation
 * Sensors (Magnetometer, Accelerometer, Gyroscope)
 * Camera
@@ -36,7 +36,6 @@ iOS
 * Speech Synthesis (with headsets connected only)
 * Apple Pay
 * WebAssembly, WebRTC, WebGL as well as many other experimental features under a flag.
-
 
 Links
 -----
