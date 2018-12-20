@@ -5,11 +5,9 @@ layout: default
 <ul class="post-list">
   {%- for page in site.pages -%}
   <li>
-    <h3>
-      <a class="post-link" href="{{ page.url | relative_url }}">
-        {{ page.title | escape }}
-      </a>
-    </h3>
+    <a class="post-link" href="{{ page.url | relative_url }}">
+      {{ page.title | escape }}
+    </a>
   </li>
   {%- endfor -%}
 </ul>
