@@ -1,4 +1,7 @@
-# lsof
+---
+title: lsof
+---
+
 | desc                            | command        |
 |---------------------------------|----------------|
 | List open files by user         | lsof -u <USER> |
