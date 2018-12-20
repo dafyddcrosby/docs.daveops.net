@@ -2,6 +2,6 @@
 ## File layout
 
 ```
-%artist - {%album/}{disc %disc/}{%track - }%title.%extension
+%artist -{ %album/}{disc %disc/}{ %track - }%title.%extension
 ```
 
