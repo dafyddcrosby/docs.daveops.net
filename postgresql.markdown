@@ -1,5 +1,7 @@
-# PostgreSQL
-@databases
+---
+title: PostgreSQL
+tags: ["databases"]
+---
 
 Connect to a shell
 ------------------
@@ -28,9 +30,9 @@ Configuration
 View current queries
 --------------------
 
-.. code-block ::sql
-
- SELECT * FROM pg_stat_activity ;
+```sql
+SELECT * FROM pg_stat_activity ;
+```
 
 Killing long running queries
 ----------------------------
@@ -42,7 +44,6 @@ Don't use SIGKILL, it will shut down the rest of PostgreSQL, and require a repla
 	   pg_terminate_backend(pid int)
 Tuning
 ------
-
 
 | config               | set                                          |
 |----------------------|----------------------------------------------|

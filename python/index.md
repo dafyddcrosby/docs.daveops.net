@@ -16,85 +16,80 @@ Essential third-party tools
 Getopts
 -------
 
-.. code-block:: python
+```python
+import getopt, sys
 
- import getopt, sys
- 
- try:
- opts, args = getopt.getopt(sys.argv[1:], 'eq', ["session=", "server="])
- except getopt.GetoptError, err:
- # print help information and exit:
- print str(err)
- sys.exit(1)
- for opt, val in opts:
- if opt in ('-e'):
- extend = True
- elif opt in ('-q'):
- query = True
- elif opt in ('--session'):
- session = val
- elif opt in ('--server'):
- server = val
-
+try:
+    opts, args = getopt.getopt(sys.argv[1:], 'eq', ["session=", "server="])
+except getopt.GetoptError, err:
+    # print help information and exit:
+    print str(err)
+    sys.exit(1)
+for opt, val in opts:
+    if opt in ('-e'):
+        extend = True
+    elif opt in ('-q'):
+        query = True
+    elif opt in ('--session'):
+        session = val
+    elif opt in ('--server'):
+        server = val
+```
 
 Opening a file
 --------------
 
-.. code-block:: python
-
- try:
- with open(filepath, "r") as file_handle:
- for line in file_handle:
- ...
- except IOError, err:
- print(err)
-
+```python
+try:
+with open(filepath, "r") as file_handle:
+for line in file_handle:
+...
+except IOError, err:
+print(err)
+```
 
 Syntax cheatsheet
 -----------------
 
-.. code-block:: python
+```python
+if blah == 0:
+print "0"
+elif == 1:
+print "1"
+else:
+print "else"
 
- if blah == 0:
- print "0"
- elif == 1:
- print "1"
- else:
- print "else"
- 
- def printarg (arg):
- print arg
- 
- if __name__ == "__main__":
- main()
+def printarg (arg):
+print arg
 
+if __name__ == "__main__":
+main()
+```
 
 Remove duplicates from a list
 -----------------------------
 
-.. code-block:: python
-
- the_list = list(set(the_list))
+```python
+the_list = list(set(the_list))
+```
 
 Profile a program
 -----------------
 
 <http://docs.python.org/library/profile.html>
 
-.. code-block:: python
-   
- import profile
- profile.run("main()")
+```python
+import profile
+profile.run("main()")
+```
 
 Launch REPL when line is hit
 ----------------------------
 
-.. code-block:: python
-
- import code
- code.interact(local=locals())
-
-
+```python
+import code
+code.interact(local=locals())
+```
 
 Logging
 -------

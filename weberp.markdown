@@ -12,8 +12,7 @@ Adding new script
 
 MySQL:
 
-.. code-block:: sql
-
- -- add script permissions
- insert into scripts values ('ZeroLots.php', 10, '');
-
+```sql
+-- add script permissions
+insert into scripts values ('ZeroLots.php', 10, '');
+```

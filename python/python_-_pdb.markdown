@@ -11,8 +11,7 @@ CLI
 Invoke debugger when line is hit
 --------------------------------
 
-.. code-block:: python
-
- import pdb
- pdb.set_trace()
-
+```python
+import pdb
+pdb.set_trace()
+```

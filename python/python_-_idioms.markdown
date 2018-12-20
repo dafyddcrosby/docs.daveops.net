@@ -4,7 +4,6 @@
 Python zen
 ----------
 
-.. code-block:: python
- 
- import this
-
+```python
+import this
+```

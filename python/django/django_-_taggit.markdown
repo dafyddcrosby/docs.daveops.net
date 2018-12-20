@@ -10,13 +10,12 @@ Installing in a project
 * ``./manage.py syncdb``
 
 
-.. code-block:: python
+```python
+from django.db import models
+from taggit.managers import TaggableManager
 
- from django.db import models
- from taggit.managers import TaggableManager
- 
- class Thing(models.Model):
- # ... fields here
- 
- tags = TaggableManager()
+class Thing(models.Model):
+# ... fields here
 
+tags = TaggableManager()
+```

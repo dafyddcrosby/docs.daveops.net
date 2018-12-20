@@ -1,5 +1,6 @@
-# Django
-@django
+---
+title: Django
+tags: ["django"]
 
 Start project
 -------------
@@ -41,7 +42,6 @@ Permanent redirect
 
 in urls.py's urlpatterns
 
-.. code-block:: python
-
- url(r'^$', lambda x: HttpResponsePermanentRedirect('/n
-
+```python
+url(r'^$', lambda x: HttpResponsePermanentRedirect('/n
+```

@@ -1,5 +1,7 @@
-# performance
-@MySQL
+---
+title: performance
+tags: ["MySQL"]
+---
 
 .. TODO
   Avoid NULL when possible (forget why)
@@ -17,10 +19,10 @@ Check the slow query log
 ------------------------
 Enable this for debugging, don't leave it running if you don't need it.
 
-.. code-block:: mysql
-
- set global slow_query_log = ON|OFF
- set global slow_query_log_file = file_name
+```mysql
+set global slow_query_log = ON|OFF
+set global slow_query_log_file = file_name
+```
 
 ::
 
@@ -31,16 +33,18 @@ Enable this for debugging, don't leave it running if you don't need it.
 
 Dealing with fragmentation
 --------------------------
-.. code-block:: mysql
 
-  -- size in MB
-  select ENGINE, TABLE_NAME, Round(DATA_LENGTH/1024/1024) as data_length, round(INDEX_LENGTH/1024/1024) as index_length, round(DATA_FREE/1024/1024) as data_free, (data_free/(index_length+data_length)) as frag_ratio from information_schema.tables where DATA_FREE > 0 order by frag_ratio desc;
+```mysql
+-- size in MB
+select ENGINE, TABLE_NAME, Round(DATA_LENGTH/1024/1024) as data_length, round(INDEX_LENGTH/1024/1024) as index_length, round(DATA_FREE/1024/1024) as data_free, (data_free/(index_length+data_length)) as frag_ratio from information_schema.tables where DATA_FREE > 0 order by frag_ratio desc;
+```
 
 Optimize table
 --------------
-.. code-block:: mysql
 
-   optimize table <tbl>;
+```mysql
+optimize table <tbl>;
+```
 
 <https://dev.mysql.com/doc/refman/5.7/en/optimize-table.html>
 
@@ -69,11 +73,12 @@ Emulates client load
 
 Run profiling
 -------------
-::
 
- set profiling = 1;
- * run query *
- show profile;
+```
+set profiling = 1;
+* run query *
+show profile;
+```
 
 Resources
 ---------

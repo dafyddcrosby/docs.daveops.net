@@ -4,82 +4,82 @@
 To add a row
 ------------
 
-.. code-block:: sql
-
- INSERT INTO table_name (column1, column2, column3,...)
- VALUES (value1, value2, value3,...)
+```sql
+INSERT INTO table_name (column1, column2, column3,...)
+VALUES (value1, value2, value3,...)
+```
 
 To update a row
 ---------------
 
-.. code-block:: sql
-
- UPDATE table_name
- SET column1=value, column2=value2,...
- WHERE some_column=some_value
+```sql
+UPDATE table_name
+SET column1=value, column2=value2,...
+WHERE some_column=some_value
+```
 
 To sort a table
 ---------------
 
-.. code-block:: sql
-   
- SELECT row1, row2
- FROM table
- ORDER BY row2 (ASC|DESC)
+```sql
+SELECT row1, row2
+FROM table
+ORDER BY row2 (ASC|DESC)
+```
 
 Delete rows
 -----------
 
-.. code-block:: sql
-
- DELETE FROM table_name
- WHERE some_column=some_value
+```sql
+DELETE FROM table_name
+WHERE some_column=some_value
+```
 
 Search in fields
 ----------------
 
-.. code-block:: sql
-
- SELECT *
- FROM Persons
- WHERE City LIKE '%ville'
+```sql
+SELECT *
+FROM Persons
+WHERE City LIKE '%ville'
+```
 
 Conditional statements
 ----------------------
 
-.. code-block:: sql
-
- CASE WHEN condition THEN result
- [WHEN ...]
- [ELSE result]
- END
+```sql
+CASE WHEN condition THEN result
+[WHEN ...]
+[ELSE result]
+END
+```
 
 Format a date
 -------------
 
-.. code-block:: sql
-
- SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
- FROM table
+```sql
+SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
+FROM table
+```
 
 Retrieve records within 90 days of stamp
 ----------------------------------------
 
-.. code-block:: sql
-
- FROM stockserialitems
- WHERE expirationdate < utc_timestamp() + interval 90 day
+```sql
+FROM stockserialitems
+WHERE expirationdate < utc_timestamp() + interval 90 day
+```
 
 Check for duplicate rows
 ------------------------
 
-.. code-block:: sql
-
- SELECT a, b, count(*) cnt 
- FROM table
- GROUP BY a, b 
- HAVING cnt > 1
- ORDER BY cnt asc;
+```sql
+SELECT a, b, count(*) cnt 
+FROM table
+GROUP BY a, b 
+HAVING cnt > 1
+ORDER BY cnt asc;
+```
 
 Standards
 ---------
