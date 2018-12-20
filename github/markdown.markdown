@@ -7,7 +7,7 @@ Headings
 Emphasis
 --------
 
-::
+
 
    *This text will be italic*
    _This will also be italic_
@@ -18,7 +18,7 @@ Emphasis
 Links
 -----
 
-::
+
 
    <http://example.com> - automatic
    [Example](<http://example.com>)

@@ -18,7 +18,7 @@ pfctl
 
 General rule syntax
 -------------------
-::
+
 
  action [direction] [log] [quick] [on interface] [af] [proto protocol] \
  [from src_addr [port src_port]] [to dst_addr [port dst_port]] \
@@ -36,14 +36,14 @@ General rule syntax
 
 Default deny
 ------------
-::
+
 
  block in  all
  block out all 
 
 Table containing all IP addresses to firewall
 ---------------------------------------------
-::
+
 
  table <firewall> const { self }
 

@@ -3,7 +3,7 @@ noitd operation - <https://labs.omniti.com/labs/reconnoiter/docs/operation.noitd
 
 Interactive console
 -------------------
-::
+
 
  telnet localhost 32322
 

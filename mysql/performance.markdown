@@ -24,7 +24,7 @@ set global slow_query_log = ON|OFF
 set global slow_query_log_file = file_name
 ```
 
-::
+
 
   # Plain-jane MySQL
   mysqldumpslow /var/log/mysql/mysql-slow.log

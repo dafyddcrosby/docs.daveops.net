@@ -2,7 +2,7 @@
 CLI
 ---
 
-::
+
 
  # Set a message that's visible to everyone
  ghe-announce -s MESSAGE

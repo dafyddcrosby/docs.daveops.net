@@ -6,14 +6,14 @@ tags: ["databases"]
 Connect to a shell
 ------------------
 
-::
+
 
  psql
 
 List databases
 --------------
 
-::
+
 
  $ psql -l
 
@@ -23,7 +23,7 @@ List databases
 Configuration
 -------------
 
-::
+
  
  /var/lib/pgsql/data/postgresql.conf
 
@@ -67,28 +67,28 @@ For really bad table bloat, use CLUSTER (not VACUUM FULL). It requires space for
 Dump database to tar file
 -------------------------
 
-::
+
 
  pg_dump -O -x -F t -b -f [filename.tar] [db name]
 
 Restore database from tar file
 ------------------------------
 
-::
+
 
  pg_restore -F t -d [db name] [filename.tar]
 
 Create database
 ---------------
 
-::
+
 
  create database <db_name>
 
 Reindexing
 ----------
 
-::
+
 
  REINDEX { INDEX | TABLE | DATABASE | SYSTEM } name
 

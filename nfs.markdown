@@ -7,7 +7,7 @@ Install NFS
 	mount -t nfs4 -o proto=tcp,port=2049 host:/repo /repo
 Show exports
 ------------
-::
+
 
  showmount -e [host]
 

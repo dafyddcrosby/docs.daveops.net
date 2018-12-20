@@ -27,7 +27,7 @@ See if table exists
 Export tables
 -------------
 
-::
+
 
   sqlite3 my.db .dump
 

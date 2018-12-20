@@ -1,7 +1,7 @@
 # EPUB files
 <http://code.google.com/p/epubcheck/>
 
-::
+
 
  zip -X ../spm.epub mimetype css/style.css META-INF/container.xml book.ncx book.opf solplayaymar.xhtml
 

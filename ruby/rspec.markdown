@@ -12,7 +12,7 @@ Add to Gemfile:
 	gem 'rspec-rails'
 	gem 'guard-rspec'
 
-::
+
 
  rails generate rspec:install
 

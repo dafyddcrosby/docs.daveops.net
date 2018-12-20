@@ -4,14 +4,14 @@
 Output SVG
 ----------
 
-::
+
 
  dot file.dot -Tsvg -o output.svg
 
 Plain graph
 -----------
 
-::
+
 
  digraph graph_name {
    A [label="Node A"] // sample comment

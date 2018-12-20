@@ -11,7 +11,7 @@ If you find yourself having the same convo again and again, there's another, lar
 
 ".. [S]peed rarely leads to careful thought."
 
-::
+
 
   You have to distill the issue to a single sentence. Lengthy descriptions of
   violated expectations only obscure the real issue. If you can’t reduce a

@@ -4,7 +4,7 @@
 Create new project
 ------------------
 
-::
+
 
  sphinx-quickstart
 

@@ -50,7 +50,7 @@ Common crucial conversations include:
 
 "How can I be 100 percent honest with <person>, and at the same time be 100 percent respectful?"
 
-::
+
 
    At the core of every successful conversation lies the free flow of relevant
    information. People openly and honestly express their opinions, share their
@@ -79,7 +79,7 @@ Killers of honest dialogue:
 
 When a conversation turns crucial, ask "What do I *really* want here?"
 
-::
+
 
    Also, as the conversation unfolds and you find yourself starting to, say,
    defer to the boss or give your spouse the cold shoulder, pay attention to
@@ -119,7 +119,7 @@ Silence
 * withdrawing (running away altogether)
 
 
-::
+
 
    Conversely, when people aren’t involved, when they sit back quietly during
    touchy conversations, they’re rarely committed to the final decision. Since
@@ -137,7 +137,7 @@ Violence
 * attacking
 
 
-::
+
 
    The best don’t play games. Period. They know that in order to solve their
    problem, they’ll need to talk about their problem—with no pretending,
@@ -145,7 +145,7 @@ Violence
    step out of the content of the conversation, make it safe, and then step
    back in. Once safety is restored, they can talk about nearly anything.
 
-::
+
 
    Remember the last time someone gave you difficult feedback and you didn’t
    become defensive? Say a friend said some things to you that most people
@@ -175,7 +175,7 @@ Here are two crucial questions to help us determine when Mutual Purpose is at ri
 * Do they trust my motives?
 
 
-::
+
 
    If your only reason for approaching the boss is to get what you want, the
    boss will hear you as critical and selfish—which is what you are. In
@@ -190,12 +190,12 @@ Here are two crucial questions to help us determine when Mutual Purpose is at ri
    preparing the report each month. It’s going to be a bit of a sensitive
    conversation—but I think it will help a great deal if we can talk about it.”
 
-::
+
 
   The instant people perceive disrespect in a conversation, the interaction is
   no longer about the original purpose—it is now about defending dignity.
 
-::
+
 
   Telltale signs. To spot when respect is violated and safety takes a turn
   south, watch for signs that people are defending their dignity. Emotions are
@@ -233,7 +233,7 @@ Don't treat your emotions as if they are the only valid response.
 
 See + Hear -> Tell a Story -> Feel -> Act
 
-::
+
 
    If we can find a way to control the stories we tell, by rethinking or
    retelling them, we can master our emotions and, therefore, master our
@@ -301,7 +301,7 @@ STATE:
 
 Facts are the least controversial, and they are the most persuasive
 
-::
+
 
    When we start with shocking or offensive conclusions (“Quit groping me with
    your eyes!” or “I think we should declare bankruptcy”), we actually
@@ -331,7 +331,7 @@ Hold to your belief, but be nice about it.
 
 Look for opportunities to be curious about others
 
-::
+
 
    When others are acting out their feelings and opinions through silence or
    violence, it’s a good bet they’re starting to feel the effects of
@@ -356,7 +356,7 @@ Break the cycle, encourage other person to step away from their harsh feelings, 
 
 Ask to get things rolling -> Mirror to confirm feelings -> Paraphrase to acknowledge the story -> Prime when you're getting nowhere
 
-::
+
 
    To keep ourselves from feeling nervous while exploring others’ paths—no
    matter how different or wrong they seem—remember we’re trying to understand
@@ -367,7 +367,7 @@ Ask to get things rolling -> Mirror to confirm feelings -> Paraphrase to acknowl
 
 Agree -> Build -> Compare
 
-::
+
 
    Most arguments consist of battles over the 5 to 10 percent of the facts and
    stories that people disagree over. And while it’s true that people
@@ -382,7 +382,7 @@ Agree -> Build -> Compare
 Don't get caught up in trivial differences, making a mole hill into a mountain.
 Say "I agree," and then build.
 
-::
+
 
    If you agree with what has been said but the information is incomplete,
    build. Point out areas of agreement, and then add elements that were left

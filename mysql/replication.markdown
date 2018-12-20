@@ -12,7 +12,7 @@ Set the replica binlog coordinates
 
 Check the binlog in a human readable way
 ----------------------------------------
-::
+
 
   mysqlbinlog <binlog file>
 

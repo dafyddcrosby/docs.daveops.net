@@ -5,7 +5,7 @@ master advertises on port 112
 
 ifconfig synax
 --------------
-::
+
 
  ifconfig carpN create
  ifconfig carpN [advbase n] [advskew n] [balancing mode]   \
@@ -14,7 +14,7 @@ ifconfig synax
 
 Try to become master
 --------------------
-::
+
 
  sysctl net.inet.carp.preempt=1
 

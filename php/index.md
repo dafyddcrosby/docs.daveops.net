@@ -55,7 +55,7 @@ Run a server instance with a script
 
 Requires PHP >= 5.4 - <http://php.net/manual/en/features.commandline.webserver.php>
 
-::
+
 
  php -S localhost:8000 router.php
 
@@ -155,7 +155,7 @@ Convert command line arguments into GET variables
 Get PHP config info
 ===================
 
-::
+
 
  # Get configuration (like phpinfo())
  php -i

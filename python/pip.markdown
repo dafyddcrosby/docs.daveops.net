@@ -3,7 +3,7 @@
 
 Create a package list
 ---------------------
-::
+
 
  pip freeze > requirements.txt
 
@@ -15,7 +15,7 @@ Upgrade package
 
 Install a package list
 ----------------------
-::
+
 
  pip install -r requirements.txt
 

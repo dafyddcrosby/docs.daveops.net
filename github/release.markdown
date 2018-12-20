@@ -1,7 +1,7 @@
 # GitHub - Release
 signing releases
 ----------------
-::
+
 
   git tag -s software-0.1
   git push --tags

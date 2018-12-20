@@ -19,14 +19,14 @@ Encrypt a file
 Decrypt a file
 --------------
 
-::
+
 
   gpg --output <file> --decrypt <file>.gpg
 
 Show key fingerprints
 ---------------------
 
-::
+
 
  gpg --list-keys --fingerprint
  # Show 32-bit fingerprints
@@ -36,7 +36,7 @@ Show key fingerprints
 Verify signature of document
 ----------------------------
 
-::
+
 
  # Compressed, signed doc
  gpg --output doc --decrypt doc.sig
@@ -46,7 +46,7 @@ Verify signature of document
 Generate a subkey
 -----------------
 
-::
+
 
   gpg --edit-key KEYNAME
   gpg> addkey
@@ -54,7 +54,7 @@ Generate a subkey
 List private keys
 -----------------
 
-::
+
 
   gpg --list-secret-keys
   # A # after the letters sec means that the secret key is not usable
@@ -62,7 +62,7 @@ List private keys
 Deleting keys
 -------------
 
-::
+
 
   gpg --delete-key USERNAME
   gpg --delete-secret-key USERNAME

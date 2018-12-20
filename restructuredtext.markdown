@@ -2,7 +2,7 @@
 Convert rst to HTML
 -------------------
 
-::
+
 
   rst2html FILE ...
 

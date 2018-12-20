@@ -143,7 +143,7 @@ Run a simple webserver
 ----------------------
 
 
-::
+
 
  python -m SimpleHTTPServer
 
@@ -189,7 +189,7 @@ print " << ".join([i[3] for i in inspect.stack()])
 Get Python documentation through the browser
 --------------------------------------------
 
-::
+
 
  pydoc -p <port>
 

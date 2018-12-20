@@ -4,14 +4,14 @@
 Add header to messages
 ----------------------
 
-::
+
 
  my_hdr X-Operating-System: TempleOS
 
 Whitelist TLS fingerprint
 -------------------------
 
-::
+
 
  tls on
  tls_fingerprint <fingerprint>

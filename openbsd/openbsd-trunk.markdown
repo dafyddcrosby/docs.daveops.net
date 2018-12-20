@@ -4,7 +4,7 @@
 
 Setup
 -----
-::
+
 
  ifconfig bge0 up
  ifconfig bge1 up

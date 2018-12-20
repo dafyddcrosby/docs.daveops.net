@@ -10,19 +10,19 @@ RSA key processing
 
 Generate Certificate Signing Request
 ------------------------------------
-::
+
 
  openssl req -new -key private_key.pem -out cert.csr
 
 Self-sign a certificate
 -----------------------
-::
+
 
  openssl req -x509 -key private_key.pem -in cert.csr -out cert.crt
 
 Get certificate details
 -----------------------
-::
+
 
  openssl x509 -in certificate.crt -text -noout
 

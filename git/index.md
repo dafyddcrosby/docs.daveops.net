@@ -3,7 +3,7 @@
 
 Create bare repository
 ----------------------
-::
+
 
  mkdir -p project.git && cd project.git && git --bare init
 
@@ -16,7 +16,7 @@ url = git.example.com:/path/project.git
 
 Checkout remote repository
 --------------------------
-::
+
 
  git fetch
  git checkout -b local_branch_name remote/branch_name
@@ -24,14 +24,14 @@ Checkout remote repository
 
 Sequential versioning
 ---------------------
-::
+
 
  git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
 
 Reset git to a specific commit
 ------------------------------
 
-::
+
 
  git reset [hash]
  git reset --soft HEAD@{1}
@@ -40,7 +40,7 @@ Reset git to a specific commit
 
 If you just need to amend last commit,
 
-::
+
 
  git commit --amend
 
@@ -52,7 +52,7 @@ Handy hooks
 
 on server, put this in ``hooks/post-receive``
 
-::
+
 
  #!/bin/sh
  GIT_WORK_TREE=/path/to/www.example.org git checkout -f
@@ -60,14 +60,14 @@ on server, put this in ``hooks/post-receive``
 Push branch to remote server
 ----------------------------
 
-::
+
 
  git push origin branch_name
 
 Delete remote branch
 --------------------
 
-::
+
 
  git push origin :branch_to_delete
  git branch -d branch_to_delete
@@ -75,7 +75,7 @@ Delete remote branch
 Tagging
 -------
 
-::
+
 
  git tag  # list tags
  git tag -a v1.0 -m "Creating v1.0 tag"  # Create a tag
@@ -85,7 +85,7 @@ Tagging
 Stashing
 --------
 
-::
+
 
  git stash list  # list stashes
  git stash save "message here"  # create a stash
@@ -97,14 +97,14 @@ Stashing
 Add remote branch
 -----------------
 
-::
+
 
  git remote add upstream <git://github.com/user/repo.git>
 
 Show nicely formatted changelog
 -------------------------------
 
-::
+
 
  git log --graph --oneline --abbrev-commit --decorate
 
@@ -117,14 +117,14 @@ See commits from individual
 Get list of contributors
 ------------------------
 
-::
+
 
  git shortlog -s -n
 
 Remove non-tracked files
 ------------------------
 
-::
+
 
  git clean -n  # dry run
  git clean -f  # delete the files
@@ -132,14 +132,14 @@ Remove non-tracked files
 Squash commits into single commit
 ---------------------------------
 
-::
+
 
  git rebase -i <hash>
 
 Untrack files without deletion
 ------------------------------
 
-::
+
 
  echo "filename" >> .gitignore
  git rm --cached filename
@@ -149,7 +149,7 @@ Untrack files without deletion
 Load my dotfiles to the home directory
 --------------------------------------
 
-::
+
 
  cd ~
  git init
@@ -159,21 +159,21 @@ Load my dotfiles to the home directory
 Get list of staged files for commit
 -----------------------------------
 
-::
+
 
  git diff --cached --name-status | sed 's/.\s*//'
 
 Diff remote repo
 ----------------
 
-::
+
 
  git diff <branch> <remote>/<branch>
 
 Import Sourceforge CVS repo
 ---------------------------
 
-::
+
 
  rsync -av <rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/> w3m
  git cvsimport -p x -v -d /absolute/path/to/w3m w3m
@@ -181,7 +181,7 @@ Import Sourceforge CVS repo
 Import another repo as a subtree
 --------------------------------
 
-::
+
 
  git remote add -f remote_name [git@example.com:remote_repo.git](mailto:git@example.com:remote_repo.git)
  git merge -s ours --no-commit remote_name/master
@@ -192,21 +192,21 @@ Import another repo as a subtree
 Search git history
 ------------------
 
-::
+
 
  git log -S <search term>
 
 Retrieve single file from a specific revision in git
 ----------------------------------------------------
 
-::
+
 
  git checkout <HASH> -- ./path/to/file
 
 GPG signing
 -----------
 
-::
+
 
   git commit -S -m MESSAGE
 
@@ -216,7 +216,7 @@ Signing a commit
 
 In the commit message
 
-::
+
 
   Signed-off-by: David Crosby <[email@example.com](mailto:email@example.com)>
 

@@ -22,7 +22,7 @@ Adding South to an existing project
 Initial migrate schema creation
 -------------------------------
 
-::
+
 
  ./manage.py schemamigration app --initial
  ./manage.py migrate app
@@ -30,7 +30,7 @@ Initial migrate schema creation
 Change schema
 -------------
 
-::
+
 
  ./manage.py schemamigration app --auto
  ./manage.py migrate app

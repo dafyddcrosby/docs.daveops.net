@@ -15,7 +15,7 @@ Install chef on RHEL 6 using gems
 
 Use the omnibus installer if you can!
 
-::
+
 
  sudo rpm -Uvh <http://rbel.frameos.org/rbel6>
  yum install ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow gcc gcc-c++ automake autoconf make curl dmidecode
@@ -44,7 +44,7 @@ Using chef-solo
 knife search
 ------------
 
-::
+
 
  knife search -a ATTR
 

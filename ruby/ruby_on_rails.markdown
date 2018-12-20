@@ -6,14 +6,14 @@
 Installing Rails
 ----------------
 
-::
+
 
  gem install rails
 
 Setting up Rails
 ----------------
 
-::
+
 
  rails new app_name
  cd app_name
@@ -27,14 +27,14 @@ Setting up Rails
 Scaffolding
 -----------
 
-::
+
 
  rails generate scaffold Post user:references title:string{50} content:text
 
 Add indexes to migration
 ------------------------
 
-::
+
 
  rails g resource user name:index email:uniq
 
@@ -70,13 +70,13 @@ Database
 
 ### Migrate to new model
 
-::
+
 
  rake db:migrate
 
 ### Return to previous model
 
-::
+
 
  rake db:rollback
 
@@ -99,7 +99,7 @@ Automated testing with guard and spork
 * run the following
 
 
-::
+
  bundle exec guard init rspec
  bundle exec spork --bootstrap
  bundle exec guard init spork
@@ -122,7 +122,7 @@ Creating tables
 Reset test database
 -------------------
 
-::
+
 
  bundle exec rake db:test:prepare
 

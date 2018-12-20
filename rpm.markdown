@@ -34,14 +34,14 @@ Use ``rpm --querytags`` to get a list of tags
 Verify package integrity
 ------------------------
 
-::
+
 
  rpm -V <package>
 
 Show package dependencies
 -------------------------
 
-::
+
 
  rpm -qpR <.rpm file>
  rpm -qR <package name>
@@ -49,7 +49,7 @@ Show package dependencies
 Extract RPM contents
 --------------------
 
-::
+
 
  rpm2cpio php-5.1.4-1.esp1.x86_64.rpm | cpio -idmv
 
@@ -58,12 +58,12 @@ Signing RPM's with GPG
 
 In `.rpmmacros`
 
-::
+
 
  %_signature gpg
  %_gpg_name Joe Example <[joe@example.org](mailto:joe@example.org)>
 
-::
+
 
  # Replace existing signature
  rpm --resign package1.rpm package2.rpm ...
@@ -73,7 +73,7 @@ In `.rpmmacros`
 RPM DB rebuild
 --------------
 
-::
+
 
  rm -f /var/lib/rpm/__db*
  rpm --rebuilddb

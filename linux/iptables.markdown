@@ -27,21 +27,21 @@ Drop a single host
 Allow connections from this host to 192.168.2.10
 ------------------------------------------------
 
-::
+
 
  iptables -A OUTPUT -o eth0 -d 192.168.2.10 -j ACCEPT
 
 Flush table
 -----------
 
-::
+
 
  iptables --flush
 
 Allow incoming HTTP
 -------------------
 
-::
+
 
  iptables -A INPUT -i eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
  iptables -A OUTPUT -o eth0 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
@@ -49,14 +49,14 @@ Allow incoming HTTP
 Limit connections
 -----------------
 
-::
+
 
  iptables -A INPUT -p tcp --dport 80 -m limit --limit 25/minute --limit-burst 100 -j ACCEPT
 
 Simple IP masquerading
 ----------------------
 
-::
+
 
  echo "1" > /proc/sys/net/ipv4/ip_forward
  iptables -t nat -A POSTROUTING -o $EXT_IFACE -j MASQUERADE
@@ -64,7 +64,7 @@ Simple IP masquerading
 Backup, reload iptables rules
 -----------------------------
 
-::
+
 
  iptables-save > ./file
  iptables-restore < ./file
@@ -72,7 +72,7 @@ Backup, reload iptables rules
 File location
 -------------
 
-::
+
 
  /etc/sysconfig/iptables
 

@@ -1,5 +1,5 @@
 # TCP Wrappers
-::
+
   
   # blank lines and lines starting with '#' ignored
   <daemon list> : <client list> [: <option> : <option> : ...]

@@ -6,7 +6,7 @@ out by *talking* to the manufacturers.
 
 Some notes on NOP
 -----------------
-::
+
 
   if you want to get technical, there isn't really any difference between
   those two. Since the processor doesn't stop, a NOP does *something*, regardless
@@ -19,7 +19,7 @@ Some notes on NOP
   any processor manuals.
   -Jeroen Mostert
 
-::
+
 
   Why not just use two NOP instructions at the entry point?
   

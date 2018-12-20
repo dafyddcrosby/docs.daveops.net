@@ -6,7 +6,7 @@ Compression
 caveat - compression is *not* retroactive, so you should set it on the pool
 immediately after creation
 
-::
+
 
  # See compression settings
  zfs get compression
@@ -19,13 +19,13 @@ Delegate administrative tasks
 -----------------------------
 <https://blogs.oracle.com/marks/entry/zfs_delegated_administration>
 
-::
+
 
  zfs allow
 
 Snapshots
 ---------
-::
+
 
   # List snapshots
   zfs list -t snapshot
@@ -37,13 +37,13 @@ Rollback
 
 By default, ZFS rollback cannot revert to anything beyond the most recent snapshot. -r lets you go earlier, although this is a destructive operation and deletes the intermediate snapshots
 
-::
+
 
   zfs rollback tanks/home/dave@tuesday
 
 See disks
 ---------
-::
+
 
   zpool list
 

@@ -21,7 +21,7 @@ admin.site.register(Thing)
 Reset admin password w/o password reset
 ---------------------------------------
 
-::
+
  ./manage.py shell
 
 ```python

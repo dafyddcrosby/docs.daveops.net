@@ -5,7 +5,7 @@ Game designer of Mega Man
 
 Interview: <http://shmuplations.com/megaman/>
 
-::
+
 
   Kitamura: Going through all those games taught me something important, though. I started to think that if I focused on more detailed, intricate enemy behavior and placement, then I could probably achieve a better difficulty balance than what action games had offered so far.
   

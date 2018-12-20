@@ -4,7 +4,7 @@
 CLI
 ---
 
-::
+
 
   # Get overall status
   passenger-status
@@ -16,7 +16,7 @@ CLI
 Hiding Version Headers
 ----------------------
 
-::
+
 
   # Apache
   LoadModule headers_module modules/mod_headers.so # if not already loaded

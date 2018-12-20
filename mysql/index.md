@@ -45,7 +45,7 @@ Server-side help
 
 Check if a server is up
 -----------------------
-::
+
 
  mysqladmin ping
 
@@ -59,13 +59,13 @@ Create a database
 Import database
 ---------------
 
-::
+
 
  mysql -u username -p<password> database < filename.sql
 
 Export database
 ---------------
-::
+
 
  mysqldump -u username -p<password> database > filename.sql 
 
@@ -108,7 +108,7 @@ Variables
 
 Resetting root password
 -----------------------
-::
+
 
  /etc/init.d/mysql stop
  /usr/bin/mysqld_safe --skip-grant-tables &

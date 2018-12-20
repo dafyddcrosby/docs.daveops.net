@@ -1,5 +1,5 @@
 # nasm
-::
+
 
  # Valid output formats
  nasm -hf

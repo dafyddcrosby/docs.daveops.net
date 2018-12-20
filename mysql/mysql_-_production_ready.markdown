@@ -2,7 +2,7 @@
 Remove all anonymous accounts
 -----------------------------
 
-::
+
 
   DROP USER ''@'localhost';
   DROP USER ''@'hostname';
@@ -14,7 +14,7 @@ Remove all non-localhost root users
 Remove test databases
 ---------------------
 
-::
+
 
   DELETE FROM mysql.db WHERE Db LIKE 'test%';
   FLUSH PRIVILEGES;
@@ -25,14 +25,14 @@ Set timezone to UTC
 
 For safe measure, don't just set the time zone in MySQL, but also set the system time zone to UTC
 
-::
+
 
   default-time-zone=UTC
 
 Change the default prompt
 -------------------------
 
-::
+
 
   [mysql]
   prompt="(\\U) [\d] > "

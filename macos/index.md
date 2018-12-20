@@ -62,21 +62,21 @@ See `man 5 resolver`
 Burn ISO
 --------
 
-::
+
 
  hdiutil burn <image>
 
 List disks
 ----------
 
-::
+
 
  diskutil list
 
 Get linked libraries/object files
 ---------------------------------
 
-::
+
 
  # List shared libraries
  otool -L <executable>
@@ -86,7 +86,7 @@ Get linked libraries/object files
 Create a RAM disk
 -----------------
 
-::
+
 
  # Replace XXXXX with MB * 2048 (eg a 4 gig is 8388608 (4096 * 2048))
  diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount <ram://XXXXX>`

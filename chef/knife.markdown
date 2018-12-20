@@ -11,7 +11,7 @@ Return chef versions
 
 Remove recipe from all nodes
 ----------------------------
-::
+
 
  knife exec -E 'nodes.transform("chef_environment:dev") {|n| puts n.run_list.remove("recipe[chef-client::upgrade]"); n.save }'
 

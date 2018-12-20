@@ -14,7 +14,7 @@ user:role:type (and optionally :level)
 
 generally speaking, you're concerned with type enforcement
 
-::
+
 
   # Change the context of a file
   chcon ...
@@ -27,7 +27,7 @@ generally speaking, you're concerned with type enforcement
   # Get the context type for a file
   secon -t --file FILE
 
-::
+
 
   ls -Z
   id -Z
@@ -41,7 +41,7 @@ Booleans
 
 Booleans allow you to enable/disable privileges for when you hit edge-cases or need non-default configuration
 
-::
+
 
  # Show available SELinux booleans
  getsebool -a
@@ -55,7 +55,7 @@ Booleans allow you to enable/disable privileges for when you hit edge-cases or n
 Modes
 -----
 
-::
+
 
   # get the mode
   sestatus
@@ -73,7 +73,7 @@ The modes used by SELinux:
 semodule
 --------
 
-::
+
 
   # Get available SE modules
   semodule -l
@@ -83,7 +83,7 @@ audit2allow
 
 RH RPM: policycoreutils-python
 
-::
+
 
   grep httpd_t audit.log | audit2allow -M newmod
 
@@ -93,7 +93,7 @@ seinfo
 
 RH RPM: setools-console
 
-::
+
 
   # List contexts
   seinfo -t

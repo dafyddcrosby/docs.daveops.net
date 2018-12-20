@@ -9,7 +9,7 @@ MySQL - Production Ready
 Remove all anonymous accounts
 -----------------------------
 
-::
+
 
   DROP USER ''@'localhost';
   DROP USER ''@'hostname';
@@ -20,7 +20,7 @@ Remove all non-localhost root users
 Remove test databases
 ---------------------
 
-::
+
 
   DELETE FROM mysql.db WHERE Db LIKE 'test%';
   FLUSH PRIVILEGES;
@@ -34,7 +34,7 @@ For safe measure, don't just set the time zone in MySQL, but also set the system
 
 Change the default prompt
 -------------------------
-::
+
 
   [mysql]
   prompt="(\\U) [\d] > "

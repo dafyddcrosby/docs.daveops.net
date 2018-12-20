@@ -1,7 +1,7 @@
 # OpenVPN
 Setting up an OpenVPN server
 ----------------------------
-::
+
 
  # Set up a cert. authority
  cd /etc/openvpn/easy-rsa/
@@ -35,7 +35,7 @@ Hardening
 
 CLI misc
 --------
-::
+
 
   # See list of supported ciphers
   openvpn --show-ciphers
@@ -46,14 +46,14 @@ CLI misc
 
 Using a static key
 ------------------
-::
+
 
  # generate static key
  openvpn --genkey --secret static.key
 
 In configuration files:
 
-::
+
 
  secret static.key
  # or

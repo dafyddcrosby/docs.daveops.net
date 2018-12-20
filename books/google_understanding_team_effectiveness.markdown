@@ -1,7 +1,7 @@
 # Google Understanding Team Effectiveness
 <https://rework.withgoogle.com/guides/understanding-team-effectiveness/>
 
-::
+
 
 
   The researchers found that what really mattered was less about who is on the
@@ -35,7 +35,7 @@
   contributing to the organization’s goals can help reveal impact.
 
 
-::
+
 
   The researchers also discovered which variables were not significantly connected with team effectiveness at Google:
 

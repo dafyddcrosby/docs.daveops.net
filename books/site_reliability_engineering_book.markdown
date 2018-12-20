@@ -6,7 +6,7 @@ The book: <https://landing.google.com/sre/book/>
 Foreward
 --------
 
-::
+
 
   The tribal nature of IT culture often entrenches practitioners in dogmatic positions that hold the industry back.
 
@@ -16,7 +16,7 @@ Preface
 -------
 
 
-::
+
 
    As Margaret says, "a thorough understanding of how to operate the systems was not enough to prevent human errors," and the change request to add error detection and recovery software to the prelaunch program P01 was approved shortly afterwards. 
 
@@ -48,7 +48,7 @@ The SRE Team is responsible for:
 * capacity planning
 
 
-::
+
  The use of an error budget resolves the structural conflict of incentives
  between development and SRE. SRE’s goal is no longer "zero outages"; rather,
  SREs and product developers aim to spend the error budget getting maximum
@@ -59,13 +59,13 @@ The SRE Team is responsible for:
 Monitoring
 ----------
 
-::
+
 
  Monitoring should never require a human to interpret any part of the alerting
  domain. Instead, software should do the interpreting, and humans should be
  notified only when they need to take action.
 
-::
+
 
  Humans add latency. Even if a given system experiences more actual failures, a
  system that can avoid emergencies that require human intervention will have
@@ -88,7 +88,7 @@ to gauge feature velocity. (GCE has a published 99.95% availability).
 Missing a Service-Level Objective (SLO) doesn't mean a lawsuit - but it's an
 understanding of system stability.
 
-::
+
 
  Choose just enough SLOs to provide good coverage of your system’s attributes.
  Defend the SLOs you pick: if you can’t ever win a conversation about
@@ -104,7 +104,7 @@ Automate tasks that are repetitive, no enduring value (ie don't help the
 service beyond after the work is done), are reactive in nature (ie pages), O(n)
 with service growth.
 
-::
+
 
  If the work involved in a task scales up linearly with service size, traffic
  volume, or user count, that task is probably toil. An ideally managed and
@@ -141,7 +141,7 @@ Declare early before details get hazy
 
 Distinct roles:
 
-::
+
 
   Incident Command
   The incident commander holds the high-level state about the incident. They structure the incident response task force, assigning responsibilities according to need and priority. De facto, the commander holds all positions that they have not delegated. If appropriate, they can remove roadblocks that prevent Ops from working most effectively.

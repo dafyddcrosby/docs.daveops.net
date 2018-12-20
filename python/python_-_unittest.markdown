@@ -6,7 +6,7 @@ Up to 2.7, use ``unittest2`` since it's got more assert tests than ``unittest`` 
 Running tests
 -------------
 
-::
+
 
  python -m unittest discover -s project_directory -p '*_test.py'
 

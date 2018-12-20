@@ -8,7 +8,7 @@
 Uploading a new package
 -----------------------
 
-::
+
 
  python setup.py register
  python setup.py sdist upload

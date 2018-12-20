@@ -41,7 +41,7 @@
 
 Check a core dump
 
-::
+
 
  gdb executable coredump
 

@@ -12,7 +12,7 @@ include <filename> | includes a forth source file
 
 colon definitions
 -----------------
-::
+
 
  : funcname ( stack effect comment )
    do stuff ;

@@ -5,7 +5,7 @@ CLI
 ---
 
 
-::
+
 
   chef provision --no-policy
   # debug mode

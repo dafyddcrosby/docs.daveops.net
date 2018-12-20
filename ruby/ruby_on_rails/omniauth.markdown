@@ -6,7 +6,7 @@ Installing
 ----------
 
 These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
-::
+
 
  rails generate model Authorization provider:string uid:string user_id:integer
 

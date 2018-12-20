@@ -2,7 +2,7 @@
 Cheatsheet
 ----------
 
-::
+
 
   # Initialize a disk for LVM
   pvcreate PHYSICAL_VOLUME

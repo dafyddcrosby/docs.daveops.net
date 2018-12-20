@@ -1,7 +1,7 @@
 # VLC
 Subtitles
 ---------
-::
+
 
   # Add a subtitle file
   --sub-file FILE
@@ -14,7 +14,7 @@ Subtitles
 
 Transcoding
 -----------
-::
+
 
   # only transcode a few seconds (for testing)
   --stop-time SECONDS

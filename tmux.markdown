@@ -1,7 +1,7 @@
 # tmux
 Share session
 -------------
-::
+
 
  #Create session
  tmux -S /tmp/tmsession
