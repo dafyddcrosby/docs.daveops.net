@@ -1,4 +1,7 @@
-# Apache HTTP Server
+---
+title: Apache HTTP Server
+---
+
 Signals
 -------
 
