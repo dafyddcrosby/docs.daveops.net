@@ -1,5 +1,6 @@
 url: https://head.daveops.net
 theme: jekyll-theme-hacker
+description: Snippets for yer computer needs
 defaults:
   -
     scope:
