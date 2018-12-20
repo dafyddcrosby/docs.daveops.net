@@ -1,18 +1,22 @@
-# Postfix
-Retry delivery
---------------
-::
+---
+title: Postfix
+layout: post
+---
 
- postqueue -f
+# Retry delivery
 
-Drop queue
-----------
-::
+```
+postqueue -f
+```
 
- postsuper -d ALL
+# Drop queue
 
-### Print non-default configuration values
-::
+```
+postsuper -d ALL
+```
 
- postconf -n
+# Print non-default configuration values
 
+```
+postconf -n
+```
