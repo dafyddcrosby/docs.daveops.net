@@ -1,5 +1,5 @@
 ---
-SMF (Service Management Facility)
+title: SMF (Service Management Facility)
 tags: ["init"]
 ---
 
