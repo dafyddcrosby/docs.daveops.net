@@ -1,6 +1,5 @@
 ---
 title: Postfix
-layout: post
 ---
 
 # Retry delivery
