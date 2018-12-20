@@ -61,7 +61,7 @@ In `.rpmmacros`
 
 
  %_signature gpg
- %_gpg_name Joe Example <[joe@example.org](mailto:joe@example.org)>
+ %_gpg_name Joe Example <joe@example.org>
 
 
 

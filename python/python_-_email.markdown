@@ -17,8 +17,8 @@ Send email
  mail_server = 'localhost'
  mail_server_port = 25
  
- from_addr = '[sender@example.com](mailto:sender@example.com)'
- to_addr = '[receiver@example.com](mailto:receiver@example.com)'
+ from_addr = 'sender@example.com'
+ to_addr = 'receiver@example.com'
  
  from_header = 'From: %s\r\n' %from_addr
  to_header = 'To: %s\r\n\r\n' %to_addr

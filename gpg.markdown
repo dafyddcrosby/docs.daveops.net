@@ -9,7 +9,7 @@ Export the public key
 ---------------------
 
 ```
-gpg --armor --export [user@example.com](mailto:user@example.com) > user.gpg.pub
+gpg --armor --export user@example.com > user.gpg.pub
 ```
 
 Encrypt a file

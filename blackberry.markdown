@@ -1,4 +1,5 @@
 # BlackBerry
+
 Compile via command-line
 ------------------------
 	source bbndk-env.sh
@@ -10,7 +11,7 @@ View logs via SSH
 
 
  blackberry-connect 169.254.0.1 -password <pass>
- ssh [devuser@169.254.0.1](mailto:devuser@169.254.0.1)
+ ssh devuser@169.254.0.1
 
 Create developer certificate
 ----------------------------
@@ -27,12 +28,10 @@ Create debug token
 Deploy debug token
 ------------------
 
-
  blackberry-deploy -installDebugToken ~/.rim/debug_token.bar -device <IP address> -password <device password>
 
 Build a native package
 ----------------------
-
 
  # build with a debug token
  blackberry-nativepackager -package <package>.bar bar-descriptor.xml -devMode -debugToken ~/.rim/debug_token.bar
@@ -40,13 +39,9 @@ Build a native package
 Deploy native app
 -----------------
 
-
  blackberry-deploy -installApp 169.254.0.1 -password <device_pw> <package>.bar
 
 Reference documentation
 -----------------------
 
-
 * [Native API Reference](https://developer.blackberry.com/playbook/native/reference/)
-
-

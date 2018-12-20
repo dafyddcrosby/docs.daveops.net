@@ -153,7 +153,7 @@ Load my dotfiles to the home directory
 
  cd ~
  git init
- git remote add origin [git@github.com:dafyddcrosby/dotfiles.git](mailto:git@github.com:dafyddcrosby/dotfiles.git)
+ git remote add origin git@github.com:dafyddcrosby/dotfiles.git
  git pull origin master
 
 Get list of staged files for commit
@@ -175,7 +175,7 @@ Import Sourceforge CVS repo
 
 
 
- rsync -av <rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/> w3m
+ rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
  git cvsimport -p x -v -d /absolute/path/to/w3m w3m
 
 Import another repo as a subtree
@@ -183,7 +183,7 @@ Import another repo as a subtree
 
 
 
- git remote add -f remote_name [git@example.com:remote_repo.git](mailto:git@example.com:remote_repo.git)
+ git remote add -f remote_name git@example.com:remote_repo.git
  git merge -s ours --no-commit remote_name/master
  git read-tree --prefix=newpath/ -u remote_name/master
  git commit -m "Subtree merged in newpath"
@@ -218,7 +218,7 @@ In the commit message
 
 
 
-  Signed-off-by: David Crosby <[email@example.com](mailto:email@example.com)>
+  Signed-off-by: David Crosby <email@example.com>
 
 zlol
 ----
