@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Phones ======
-
-.. TODO - verify
-    
-00 - International operator
-555-1212 - directory assistance

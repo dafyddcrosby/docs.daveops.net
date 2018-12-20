@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2018-07-06T16:48:42-06:00
-
-====== d3js ======
-Created Friday 06 July 2018
-
-https://d3js.org/

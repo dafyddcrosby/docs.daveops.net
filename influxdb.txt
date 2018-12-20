@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2018-11-03T05:51:18-06:00
-
-====== influxdb ======
-Created Saturday 03 November 2018
-
-Time-series database
-https://www.influxdata.com/

@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2017-09-12T11:28:28-06:00
-
-====== Certificate Transparency ======
-Created Tuesday 12 September 2017
-
-https://www.certificate-transparency.org/
-https://sites.google.com/site/certificatetransparency/what-is-ct

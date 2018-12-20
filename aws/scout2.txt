@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Scout2 ======
-@AWS
-
-'''
-python Scout2.py --region REGION --force --no-browser
-'''

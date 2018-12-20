@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== OpenPGP ======
-
-* [[https://riseup.net/en/security/message-security/openpgp/best-practices|OpenPGP Best Practices]]
-* [[https://debian-administration.org/users/dkg/weblog/97|OpenPGP User ID Comments]]

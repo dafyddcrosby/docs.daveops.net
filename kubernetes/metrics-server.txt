@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2018-11-03T05:49:34-06:00
-
-====== metrics-server ======
-Created Saturday 03 November 2018
-
-https://github.com/kubernetes-incubator/metrics-server
-https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/

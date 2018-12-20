@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-===== FSEvents =====
-
-(like inotify for mac)
-/dev/fsevents
-
-Better to use Spotlight, apparently *shrug*

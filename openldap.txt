@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== OpenLDAP ======
-
-===== Links =====
-* http://www.openldap.org/
-* [[http://www.openldap.org/doc/admin24/guide.html|Admin Guide (2.4)]]

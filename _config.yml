@@ -1,1 +1,14 @@
-theme: jekyll-theme-minimal
+title: head.daveops.net
+url: https://head.daveops.net
+theme: jekyll-theme-hacker
+description: Snippets for yer computer needs
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+
+exclude:
+  - assets/

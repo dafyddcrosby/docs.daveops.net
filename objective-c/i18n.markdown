@@ -1,0 +1,8 @@
+# i18n
+Created Monday 01 January 2018
+
+NSLocalizedString - strings
+NSNumberFormatter - numerical values
+NSDateFormatter - format dates
+NSLocale
+

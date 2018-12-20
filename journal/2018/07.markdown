@@ -1,0 +1,13 @@
+# July 2018
+NetSpectre
+----------
+<https://misc0110.net/web/files/netspectre.pdf>
+
+Bluetooth broken again
+----------------------
+<https://www.kb.cert.org/vuls/id/304725>
+
+More Spectre defenses
+---------------------
+<https://arxiv.org/abs/1807.05843>
+

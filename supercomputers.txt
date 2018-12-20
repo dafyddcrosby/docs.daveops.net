@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2017-09-24T19:19:50-06:00
-
-====== Supercomputers ======
-Created Sunday 24 September 2017
-
-http://www.netlib.org/linpack/
-http://www.netlib.org/lapack/

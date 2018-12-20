@@ -1,6 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-
-====== Cyrix ======
-
-[[https://en.wikipedia.org/wiki/Cyrix_coma_bug|Cyrix coma bug]]

@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2018-08-24T10:04:06-06:00
-
-====== vault ======
-Created Friday 24 August 2018
-
-https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
