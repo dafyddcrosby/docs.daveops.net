@@ -1,4 +1,6 @@
-# X Windows
+---
+title: X Windows
+---
 Created Monday 25 September 2017
 
 Links

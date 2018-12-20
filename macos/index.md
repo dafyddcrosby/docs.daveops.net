@@ -1,5 +1,7 @@
-# macOS
-@macOS
+---
+title: macOS
+tags: ["macOS"]
+---
 
 Keyboard shortcuts
 ------------------
