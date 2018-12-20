@@ -3,7 +3,7 @@
 
 SSL
 ---
-.. code-block:: python
+```python
 
  server = tornado.httpserver.HTTPServer(application, ssl_options={
  "certfile": "/path/to/ssl/cert.crt",
@@ -12,4 +12,4 @@ SSL
  server.bind(port)
  server.start(0)
  tornado.ioloop.IOLoop.instance().start()
-
+```

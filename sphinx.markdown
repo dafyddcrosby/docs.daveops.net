@@ -11,10 +11,10 @@ Create new project
 Removing extra blank pages from PDF
 -----------------------------------
 
-.. code-block:: python
+```python
 
  latex_elements = {
    'classoptions': ',openany,oneside',
    'babel': '\\usepackage[english]{babel}',
  }
-
+```

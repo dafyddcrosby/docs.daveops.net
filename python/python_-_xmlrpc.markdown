@@ -4,7 +4,7 @@
 Connecting to an XMLRPC server
 ------------------------------
 
-.. code-block:: python
+```python
 
  import xmlrpclib
  
@@ -14,4 +14,4 @@ Connecting to an XMLRPC server
  session_id = '2'
  params = { "session_id" : int(session_id)}
  response = svr.foo.bar(params)
-
+```

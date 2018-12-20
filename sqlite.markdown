@@ -4,26 +4,26 @@
 Show all tables
 ---------------
 
-.. code-block:: sqlite3
+```sqlite3
 
  .tables
-
+```
 Show table schema
 -----------------
 
-.. code-block:: sqlite3
+```sqlite3
 
  .schema tablename
-
+```
 See if table exists
 -------------------
 
-.. code-block:: sqlite3
+```sqlite3
 
  SELECT name 
  FROM sqlite_master
  WHERE type='table'
-
+```
 Export tables
 -------------
 

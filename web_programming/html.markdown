@@ -2,16 +2,17 @@
 Shim for old IE browsers
 ------------------------
 
-.. code-block:: html
+```html
 
  <!--[if lt IE 9]>
  <script src="<http://html5shim.googlecode.com/svn/trunk/html5.js>"></script>
  <![endif]-->
+```
 
 Forms
 -----
 
-.. code-block:: html
+```html
 
  <form name="input" action="script.php" method="get">
  Username: <input type="text" name="user" />
@@ -22,6 +23,7 @@ Forms
  </select>
  <input type="submit" value="Submit" />
  </form>
+```
 
 Input attributes (HTML 5)
 -------------------------
@@ -47,17 +49,17 @@ use {![](./html/<input ... required>)} to have the browser whine
 Code samples
 ------------
 
-.. code-block:: html
+```html
 
  <code>print 'hello world'</code> prints <samp>hello world</samp>
-
+```
 Canvas (HTML 5)
 ---------------
 
 
 ### initialization
 
-.. code-block:: html
+```html
 
  <canvas id='id' height='600' width='800'>fallback</canvas>
  <script type='text/javascript'>
@@ -66,84 +68,91 @@ Canvas (HTML 5)
  var context = canvas.getContext(type)
    }
  </script>
-
+```
 Fixed-meter bar (HTML 5)
 ------------------------
 
-.. code-block:: html
+```html
 
  <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
-
+```
 Progress bar (HTML 5)
 ---------------------
 
-.. code-block:: html
+```html
 
  <progress value='num' max='num'>fallback display</progress>
-
+```
 Use JavaScript to move it around
 
 Autofocus input (HTML 5)
 ------------------------
 
 
-.. code-block:: html
+```html
  
  <input ... autofocus>
-
+```
 Patterned input (HTML 5)
 ------------------------
 
 
 ### Enter 15 digits
 
-.. code-block:: html
+```html
 
  <input type='text' pattern='[0-9]{15}'>
+```
 
 Dropdown list for text input (HTML 5)
 -------------------------------------
 
-.. code-block:: html
+```html
 
  <input type='text' ... list='listid'>
  <datalist id='id'>
    <option label='label1' value='value1'>
    <option label='label2' value='value2'>
  </datalist>
+```
 
 Editable content
 ----------------
 
-.. code-block:: html
+```html
 
  <p contenteditable="true">
+```
 
 Link for phone numbers (mobile)
 -------------------------------
 
 International calling code is required
 
-.. code-block:: html
+```html
 
  <a href="tel:+14035555555">403-555-5555</a>
+```
 
 ### To handle an extension
 
-.. code-block:: html
+```html
 
  <a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
+```
 
 ### To use a fax line:
 
-.. code-block:: html
+```html
 
  <a href="fax:+14035555555">403-555-5555</a>
+```
 
 Doctype (HTML 5)
 ----------------
-
-	<!doctype html>
+```html
+<!doctype html>
+```
 
 Semantic tags (HTML 5)
 ----------------------
@@ -155,7 +164,7 @@ Semantic tags (HTML 5)
 * <hgroup> (for article tag)
 
 
-.. code-block:: html
+```html
 
  <article>
    <hgroup>
@@ -163,7 +172,7 @@ Semantic tags (HTML 5)
   <h2>Byline</h2>
    </hgroup>
  </article>
-
+```
 
 * <p> (In HTML 5, don't use the p tag for paragraph breaks - it *must* be used for paragraphs)
 * <figure> (for article tag)

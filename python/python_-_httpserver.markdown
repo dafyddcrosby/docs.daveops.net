@@ -5,7 +5,7 @@
 Basic HTTP server
 -----------------
 
-.. code-block:: python
+```python
 
  from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
  from SocketServer import ThreadingMixIn
@@ -35,4 +35,4 @@ Basic HTTP server
  httpd.serve_forever()
  except:
  print "Could not bind to host %s port %i\n" % (host, port)
-
+```

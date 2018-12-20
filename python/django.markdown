@@ -1,6 +1,7 @@
 ---
 title: Django
 tags: ["django"]
+---
 
 Start project
 -------------

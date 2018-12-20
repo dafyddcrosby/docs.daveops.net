@@ -4,7 +4,7 @@
 Syntax cheatsheet
 -----------------
 
-.. code-block:: tcl
+```tcl
 
  if {blah == 0} {
  # blah
@@ -27,36 +27,41 @@ Syntax cheatsheet
  
  set false 0
  set true 1
+```
 
 Namespaces
 ----------
 
-.. code-block:: tcl
+```tcl
  
  namespace eval blah {}
+```
 
 Profiling statements
 --------------------
 
-.. code-block:: tcl
+```tcl
 
  puts "unbraced: [time { expr 15 * 20 } 1000]"
  puts "braced:   [time { expr {15 * 20} } 1000]"
+
+```
 
 Disassemble statement
 ---------------------
 
 This is fun, because it shows just how much of a difference there is in optimizing statements
 
-.. code-block:: tcl
+```tcl
 
  ::tcl::unsupported::disassemble script {expr $a eq $b}
  ::tcl::unsupported::disassemble script {expr {$a eq $b}}
+```
 
 Creating tests
 --------------
 
-.. code-block:: tcl
+```tcl
 
  package require tcltest
  namespace import ::tcltest::*
@@ -79,4 +84,4 @@ Creating tests
  } -result -23
  
  cleanupTests
-
+```

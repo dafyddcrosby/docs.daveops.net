@@ -1,7 +1,7 @@
 # Python - Tkinter
 @Python 
 
-.. code-block:: python
+```python
 
  from Tkinter import *
  
@@ -26,4 +26,4 @@
  root.title("Some title!")
  d = MyDialog(root)
  root.wait_window(d.top)
-
+```

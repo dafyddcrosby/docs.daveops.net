@@ -1,7 +1,7 @@
 # Python - daemon
 @Python
 
-.. code-block:: python
+```python
 
  import sys, os
  def daemonize(stdin='/dev/null', stdout='/dev/null', stderr='/dev/null'):
@@ -31,4 +31,4 @@
  os.dup2(si.fileno(), sys.stdin.fileno())
  os.dup2(so.fileno(), sys.stdout.fileno())
  os.dup2(se.fileno(), sys.stdout.fileno())
-
+```

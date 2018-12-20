@@ -94,50 +94,50 @@ code.interact(local=locals())
 Logging
 -------
 
-.. code-block:: python
+```python
 
- import logging
- logging.basicConfig(filename='myapp.log', level=logging.INFO)
- logging.warning('%s before you %s', 'Look', 'leap!')
+import logging
+logging.basicConfig(filename='myapp.log', level=logging.INFO)
+logging.warning('%s before you %s', 'Look', 'leap!')
+```
 
 Named tuples (ghetto classes)
 -----------------------------
 
-.. code-block:: python
+```python
+import collections
 
- import collections
- 
- Prisoner = collections.namedtuple('Prisoner', 'name rank serial')
- 
- hogan = Person(name='Hogan', age='Colonel', serial='1234')
- lebeau = Person(name='Lebeau', age='Private', serial='8888')
- print 'Name:', lebeau.name
- 
- for prisoner in [ hogan, lebeau ]:
- print '%s is a %d, serial: %s' % prisoner
+Prisoner = collections.namedtuple('Prisoner', 'name rank serial')
 
+hogan = Person(name='Hogan', age='Colonel', serial='1234')
+lebeau = Person(name='Lebeau', age='Private', serial='8888')
+print 'Name:', lebeau.name
+
+for prisoner in [ hogan, lebeau ]:
+    print '%s is a %d, serial: %s' % prisoner
+```
 
 Tab completion in Python shell
 ------------------------------
 
 If you don't have access to IPython,
 
-.. code-block:: python
-
- import rlcompleter, readline
- readline.parse_and_bind('tab: complete')
+```python
+import rlcompleter, readline
+readline.parse_and_bind('tab: complete')
+```
 
 Tar a bunch of files
 --------------------
 
 
-.. code-block:: python
-
-  import tarfile
-  tar = tarfile.open("sample.tar", "w")
-  for name in ["foo", "bar", "quux"]:
-  tar.add(name)
-  tar.close()
+```python
+import tarfile
+tar = tarfile.open("sample.tar", "w")
+for name in ["foo", "bar", "quux"]:
+tar.add(name)
+tar.close()
+```
 
 Run a simple webserver
 ----------------------
@@ -150,14 +150,14 @@ Run a simple webserver
 Check Python version
 --------------------
 
-.. code-block:: python
-
+```python
  if sys.hexversion >= 0x020502F0:
  # use some advanced feature
  ...
  else:
  # use an alternative implementation or warn the user
  ...
+```
 
 | bit   | description                                                                                 |
 |-------|---------------------------------------------------------------------------------------------|
@@ -171,21 +171,20 @@ Check Python version
 Get Linux distribution
 ----------------------
 
-.. code-block:: python
-
- if sys.hexversion < 0x020600F0:
- platform.dist()
- else:
- platform.linux_distribution()
-
+```python
+if sys.hexversion < 0x020600F0:
+platform.dist()
+else:
+platform.linux_distribution()
+```
 
 Inspect the stack
 -----------------
 
-.. code-block:: python
-   
- import inspect
- print " << ".join([i[3] for i in inspect.stack()])
+```python
+import inspect
+print " << ".join([i[3] for i in inspect.stack()])
+```
 
 Get Python documentation through the browser
 --------------------------------------------

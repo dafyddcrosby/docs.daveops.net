@@ -2,16 +2,18 @@
 No-conflict mode
 ----------------
 
-.. code-block:: javascript
+```javascript
 
  var $j = jQuery.noConflict();
+```
 
 Append a node to the DOM
 ------------------------
 
-.. code-block:: javascript
+```javascript
 
  $('#thing').append('<p>blerg</p>');'</p>')
+```
 
 Get first element of several
 ----------------------------

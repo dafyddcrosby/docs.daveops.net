@@ -11,7 +11,7 @@ Run a simple SMTP server
 Send email
 ----------
 
-.. code-block:: python
+```python
 
  import smtplib
  mail_server = 'localhost'
@@ -31,13 +31,13 @@ Send email
  s = smtplib.SMTP(mail_server, mail_server_port)
  s.sendmail(from_addr, to_addr, email_message)
  s.quit()
-
+```
 Retrieve mail with imaplib
 --------------------------
 
 .. TODO - ensure this works...
 
-.. code-block:: python
+```python
 
  import imaplib
  
@@ -56,4 +56,4 @@ Retrieve mail with imaplib
  outf.write(i.fetch(msg, '(RFC822)')[1][0][1])
  outf.close()
  i.logout()
-
+```

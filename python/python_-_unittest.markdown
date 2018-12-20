@@ -13,7 +13,7 @@ Running tests
 Example
 -------
 
-.. code-block:: python
+```python
  import random
  import unittest
  
@@ -43,4 +43,4 @@ Example
  
  if __name__ == '__main__':
  unittest.main()
-
+```

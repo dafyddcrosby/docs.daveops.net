@@ -1,7 +1,7 @@
 # Python - PyGTK
 @Python 
 
-.. code-block:: python
+```python
 
  import pygtk
  pygtk.require('2.0')
@@ -23,4 +23,4 @@
  def main(self):
  self.main_window.show()
  gtk.main()
-
+```
