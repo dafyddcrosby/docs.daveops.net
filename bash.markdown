@@ -1,46 +1,58 @@
-# BASH
+---
+title: Bash
+---
+
 Go immediately to $EDITOR
 -------------------------
 ctrl-x, e
 
 Most commonly used commands
 ---------------------------
-	history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+```
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+```
 
 Delete files that are not extension
 -----------------------------------
 
-``rm !(*.foo|*.bar|*.baz)``
+```
+rm !(*.foo|*.bar|*.baz)
+```
 
 Find, delete empty directories
 ------------------------------
 
-``find . -type d -empty -exec rmdir {} \;``
+```
+find . -type d -empty -exec rmdir {} \;
+```
 
 Show your shell from a port
 ---------------------------
-
-	script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
+```
+script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
+```
 
 Replace filename spaces with underscores
 ----------------------------------------
-
-	# util-linux-ng
-	rename " " _ *
-
+```
+# util-linux-ng
+rename " " _ *
+```
 
 Search for Unicode use in a tree
 --------------------------------
 
 .. todo I think this could be done with one 'find' command, no need to loop...
-
-	for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
-
+```
+for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
+```
 
 "Press any key to continue"
 ---------------------------
 
-``read -sn 1 -p "Press any key to continue..."``
+```
+read -sn 1 -p "Press any key to continue..."
+```
 
 Conditional Expressions
 -----------------------
@@ -59,28 +71,32 @@ Process Substitution
 --------------------
 A temporary named pipe
 
-	diff <(grep lines file1) <(grep lines file2)
-	thing --output >(gzip > output.txt.gz)
+```
+diff <(grep lines file1) <(grep lines file2)
+thing --output >(gzip > output.txt.gz)
+```
 
 Syntax cheatsheet
 -----------------
-	fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
-	
-	case expression in
-	       pattern1 )
-	       	statements ;;
-	       pattern2 )
-	       	statements ;;
-	       ...
-	esac
-	
-	# for VARIABLE in 1 2 3 4 5
-	for VARIABLE in {1..5}
-	do
-	       	command1
-	       	command2
-	       	commandN
-	done
+```bash
+fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
+
+case expression in
+       pattern1 )
+       	statements ;;
+       pattern2 )
+       	statements ;;
+       ...
+esac
+
+# for VARIABLE in 1 2 3 4 5
+for VARIABLE in {1..5}
+do
+       	command1
+       	command2
+       	commandN
+done
+```
 
 set
 ---
@@ -99,10 +115,11 @@ set
 
 Using regex for variable testing
 --------------------------------
-
-	if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
-	    echo "yay"
-	fi
+```
+if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
+    echo "yay"
+fi
+```
 
 Temporary directory/file
 ------------------------
@@ -131,8 +148,10 @@ Regex change over files returned from grep
 ------------------------------------------
 
 ### macOS
-	grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
 
+```
+grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
+```
 
 I/O Redirection
 ---------------
@@ -143,5 +162,5 @@ I/O Redirection
 | 1>   | Redirect stdout                 |
 | 2>   | Redirect stderr                 |
 | 2>&1 | Redirect stderr to stdout       |
-
+| <    | Redirect stdin to a process     |
 
