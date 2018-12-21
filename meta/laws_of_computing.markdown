@@ -1,4 +1,5 @@
 # Laws of Computing
+
 Marick's Law
 ------------
 
