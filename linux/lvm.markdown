@@ -21,5 +21,3 @@ lvcreate -l 100%free -n VOLUME_NAME GROUP_NAME
 # Links
 
 * <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Logical_Volume_Manager_Administration/LVM_examples.html>
-
-

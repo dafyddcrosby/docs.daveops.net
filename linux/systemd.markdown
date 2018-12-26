@@ -19,6 +19,7 @@ tags: ["init", "Linux", "Red Hat"]
 | is-enabled SERVICE             | Used to check whether a service is configured to start or not in the current environment |
 | list-unit-files --type=service | Print a table of services that lists which runlevels each is configured on or off        |
 | daemon-reload                  | Used when you create a new service file or modify any configuration                      |
+| list-dependencies              | Show dependency tree of a target                     |
 
 
 # Directories
