@@ -2,8 +2,22 @@
 title: lisp
 ---
 
-Streams
--------
+*Note: Common Lisp unless noted otherwise*
+
+# Basics
+
+```lisp
+;; global variable
+(defparameter *foo* 123)
+;; global constant
+(defconstant *limit* 100)
+
+; basic function
+(defun divisible-by-3 (n)
+  (= (mod n 3) 0))
+```
+
+# Streams
 
 ```lisp
 ;; check if it's a stream
@@ -25,4 +39,3 @@ Streams
 ;; mkdir -p
 (ensure-directories-exist "/path/to/file")
 ```
-

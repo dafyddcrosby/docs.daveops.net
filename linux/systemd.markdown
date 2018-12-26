@@ -1,8 +1,9 @@
-# SystemD
-@init, @Linux, @Red_Hat
+---
+title: SystemD
+tags: ["init", "Linux", "Red Hat"]
+---
 
-systemctl
----------
+# systemctl
 
 | Command                        | Notes                                                                                    |
 |--------------------------------|------------------------------------------------------------------------------------------|
@@ -20,19 +21,26 @@ systemctl
 | daemon-reload                  | Used when you create a new service file or modify any configuration                      |
 
 
-Directories
------------
+# Directories
 
+* /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this
+  service is configured on or off
 
-* /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this service is configured on or off
+# Runlevels
 
+To change the runlevel at boot, add the following to the kernel arguments, e.g.
+`systemd.unit=rescue.target`
 
-Single User Mode
-----------------
-Add the following to the kernel arguments `systemd.unit=rescue.target`
+To change the runlevel in a running system, `systemctl isolate rescue.target`
 
-Links
------
+| target | desc |
+| poweroff.target | halt/shut off system |
+| rescue.target | single user mode |
+| multi-user.target | normal startup of system |
+| graphical.target | graphical startup |
+| reboot.target | restart system |
+
+# Links
 
 * <https://cgit.freedesktop.org/systemd/systemd/>
 
