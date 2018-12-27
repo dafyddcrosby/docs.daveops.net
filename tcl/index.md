@@ -1,5 +1,6 @@
-# Tcl
-@Tcl
+---
+title: Tcl
+---
 
 Syntax cheatsheet
 -----------------

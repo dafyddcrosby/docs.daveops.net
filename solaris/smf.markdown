@@ -6,14 +6,14 @@ tags: ["init"]
 Clear maintenance mode and restart
 ----------------------------------
 
-```
+```bash
 svcadm clear <FMRI>
 ```
 
 List services
 -------------
 
-```
+```bash
 svcs -a
 ```
 

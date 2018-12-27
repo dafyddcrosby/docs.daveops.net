@@ -5,21 +5,21 @@ title: Ruby
 Running the profiler
 --------------------
 
-```
+```bash
 ruby -rprofile script.rb
 ```
 
 get machine instructions
 ------------------------
 
-```
+```bash
 ruby --dump insns script.rb
 ```
 
 See how commands are parsed
 ---------------------------
 
-```
+```bash
 ruby --dump parsetree_with_comment script.rb
 ```
 

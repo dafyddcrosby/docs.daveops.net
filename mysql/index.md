@@ -1,5 +1,7 @@
-# MySQL
-@databases, @MySQL
+---
+title: MySQL
+tags: ["databases", "MySQL"]
+---
 
 Monitor queries
 ---------------
@@ -19,14 +21,14 @@ List all tables
 
 Describe table contents
 -----------------------
-
-	-- Column names
-	describe TABLE_NAME;
-	-- Schema
-	show create table TABLE_NAME;
-	-- Indexes
-	show index from TABLE_NAME;
-
+```sql
+-- Column names
+describe TABLE_NAME;
+-- Schema
+show create table TABLE_NAME;
+-- Indexes
+show index from TABLE_NAME;
+```
 
 Dump the database schema
 ------------------------
@@ -52,9 +54,9 @@ Check if a server is up
 
 Create a database
 -----------------
-
-	create database DATABASE_NAME;
-
+```sql
+create database DATABASE_NAME;
+```
 
 Import database
 ---------------
@@ -77,14 +79,14 @@ Delete database
 
 User management
 ---------------
-
-	-- Create a user
-	CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
-	-- Revoke permissions for user
-	REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
-	-- Delete a user
-	DROP USER 'example_user'@'localhost';
-
+```sql
+-- Create a user
+CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
+-- Revoke permissions for user
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
+-- Delete a user
+DROP USER 'example_user'@'localhost';
+```
 
 Show grants
 -----------

@@ -8,33 +8,33 @@ ctrl-x, e
 
 Most commonly used commands
 ---------------------------
-```
+```bash
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 ```
 
 Delete files that are not extension
 -----------------------------------
 
-```
+```bash
 rm !(*.foo|*.bar|*.baz)
 ```
 
 Find, delete empty directories
 ------------------------------
 
-```
+```bash
 find . -type d -empty -exec rmdir {} \;
 ```
 
 Show your shell from a port
 ---------------------------
-```
+```bash
 script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 ```
 
 Replace filename spaces with underscores
 ----------------------------------------
-```
+```bash
 # util-linux-ng
 rename " " _ *
 ```
@@ -42,15 +42,16 @@ rename " " _ *
 Search for Unicode use in a tree
 --------------------------------
 
-.. todo I think this could be done with one 'find' command, no need to loop...
-```
+TODO - I think this could be done with one 'find' command, no need to loop...
+
+```bash
 for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 ```
 
 "Press any key to continue"
 ---------------------------
 
-```
+```bash
 read -sn 1 -p "Press any key to continue..."
 ```
 
@@ -71,7 +72,7 @@ Process Substitution
 --------------------
 A temporary named pipe
 
-```
+```bash
 diff <(grep lines file1) <(grep lines file2)
 thing --output >(gzip > output.txt.gz)
 ```
@@ -115,7 +116,7 @@ set
 
 Using regex for variable testing
 --------------------------------
-```
+```bash
 if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
     echo "yay"
 fi
@@ -123,33 +124,38 @@ fi
 
 Temporary directory/file
 ------------------------
-
-	mktemp -d
+```bash
+mktemp -d
+```
 
 Show the functions declared in the shell
 ----------------------------------------
-	declare -F
-	# on ancient shells:
-	typeset -F
+```bash
+declare -F
+# on ancient shells:
+typeset -F
+```
+
 Use heredocs
 ------------
-	cat <<EOM > file.out
-	blah
-	blah
-	EOM
-
+```bash
+cat <<EOM > file.out
+blah
+blah
+EOM
+```
 
 Quit without saving history
 ---------------------------
-	unset HISFILE && exit
-
+```bash
+unset HISFILE && exit
+```
 
 Regex change over files returned from grep
 ------------------------------------------
 
-### macOS
-
-```
+```bash
+# macOS
 grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
 ```
 

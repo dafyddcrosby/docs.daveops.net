@@ -1,37 +1,42 @@
-# GPG
+---
+title: GPG
+---
+
 Generate GPG keypair
 --------------------
-```
+
+```bash
 gpg --gen-key
 ```
 
 Export the public key
 ---------------------
 
-```
+```bash
 gpg --armor --export user@example.com > user.gpg.pub
 ```
 
 Encrypt a file
 --------------
-	gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
+```bash
+gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
+```
 
 Decrypt a file
 --------------
 
-
-
-  gpg --output <file> --decrypt <file>.gpg
+```bash
+gpg --output <file> --decrypt <file>.gpg
+```
 
 Show key fingerprints
 ---------------------
 
-
-
- gpg --list-keys --fingerprint
- # Show 32-bit fingerprints
- gpg --list-keys --fingerprint --keyid-format=short
-
+```bash
+gpg --list-keys --fingerprint
+# Show 32-bit fingerprints
+gpg --list-keys --fingerprint --keyid-format=short
+```
 
 Verify signature of document
 ----------------------------

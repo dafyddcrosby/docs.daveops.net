@@ -1,17 +1,16 @@
-# CVS
-@version_control
+---
+title: CVS
+tags: ["version control"]
+---
 
-Tagging an instance
--------------------
+## Tagging an instance
 
+```bash
+cvs rtag -D "2010-1-28" tag_name module_name
+```
 
+## Untagging an instance
 
-  cvs rtag -D "2010-1-28" tag_name module_name
-
-Untagging an instance
----------------------
-
-
-
-  cvs rtag -d tag_name module_name
-
+```bash
+cvs rtag -d tag_name module_name
+```
