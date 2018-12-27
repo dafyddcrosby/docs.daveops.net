@@ -17,7 +17,7 @@ title: Common Lisp
 
 ## Compile a file
 
-```lisp
+```common-lisp
 (compile-file "file.lisp")
 ```
 
@@ -36,7 +36,7 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 
 ## Streams
 
-```lisp
+```common-lisp
 ;; check if it's a stream
 (output-stream-p *standard-output*)
 (input-stream-p *standard-input*)
