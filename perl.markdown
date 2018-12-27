@@ -1,21 +1,24 @@
-# Perl
+---
+title: Perl
+---
+
 Syntax Cheatsheet
 -----------------
+```perl
+#!/usr/local/bin/perl -wT
+use strict
 
-	 #!/usr/local/bin/perl -wT
-	 use strict
-	 
-	 $scalar = 0;
-	 @array = [1,2,3];
-	 
-	 if (expr) block elsif (expr) block else block;
-	 
-	 sub hw {
-	   print "Hello World"
-	 }
-	 
-	 hw();
+$scalar = 0;
+@array = [1,2,3];
 
+if (expr) block elsif (expr) block else block;
+
+sub hw {
+  print "Hello World"
+}
+
+hw();
+```
 
 LWP - HTTP Get
 --------------

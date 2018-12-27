@@ -1,24 +1,26 @@
-# Graphviz
+---
+title: Graphviz
+---
+
 <http://graphviz.org>
 
 Output SVG
 ----------
 
-
-
- dot file.dot -Tsvg -o output.svg
+```bash
+dot file.dot -Tsvg -o output.svg
+```
 
 Plain graph
 -----------
 
-
-
- digraph graph_name {
-   A [label="Node A"] // sample comment
-   B [label="Node B"]
-   A->B [label="commands", fontcolor=red]
-   X->Y->Z
- }
-
+```
+digraph graph_name {
+  A [label="Node A"] // sample comment
+  B [label="Node B"]
+  A->B [label="commands", fontcolor=red]
+  X->Y->Z
+}
+```
 
 

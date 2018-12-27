@@ -1,12 +1,13 @@
-# SQLite
-@databases
+---
+title: SQLite
+tags: ["databases"]
+---
 
 Show all tables
 ---------------
 
 ```sqlite3
-
- .tables
+.tables
 ```
 Show table schema
 -----------------

@@ -1,19 +1,25 @@
-# Windows (Microsoft)
+---
+title: Windows (Microsoft)
+slug: windows
+---
+
 Export certificates
 -------------------
 
 On Win7
-	# From Start Menu
-	certmgr.msc
-	# Find cert, right-click, point to All Tasks, click Export
-
+```
+# From Start Menu
+certmgr.msc
+# Find cert, right-click, point to All Tasks, click Export
+```
 
 Recursive copy of files
 -----------------------
 
 On XP
-	xcopy /E <src> <dest>
-
+```
+xcopy /E <src> <dest>
+```
 
 Hosts file
 ----------

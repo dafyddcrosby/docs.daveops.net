@@ -1,28 +1,31 @@
-# Docker
-@containers
+---
+title: Docker
+tags: ["containers"]
+---
 
 Installing on Mac
 -----------------
-	brew install docker docker-machine docker-machine-driver-xhyve
-	brew services start docker-machine
-	docker-machine create main
-	eval $(docker-machine env main)
-
+```bash
+brew install docker docker-machine docker-machine-driver-xhyve
+brew services start docker-machine
+docker-machine create main
+eval $(docker-machine env main)
+```
 
 CLI
 ---
-
-	# list all containers
-	docker ps -a
-	# remove a container
-	docker rm [container_id|name]
-	# restart a container
-	docker restart [container]
-	# build a docker image from a Dockerfile
-	docker build -t TAGNAME . # in dir of Dockerfile
-	# create a docker container
-	docker create TAGNAME
-
+```bash
+# list all containers
+docker ps -a
+# remove a container
+docker rm [container_id|name]
+# restart a container
+docker restart [container]
+# build a docker image from a Dockerfile
+docker build -t TAGNAME . # in dir of Dockerfile
+# create a docker container
+docker create TAGNAME
+```
 
 Docker compose
 --------------
@@ -34,14 +37,14 @@ Docker stack
 
 <https://docs.docker.com/engine/reference/commandline/stack/>
 
-
 Dockerfile syntax
 -----------------
 
 Must use ", not '
 
-	FROM image_name:image_tag
-	MAINTAINER person <person@example.org>
-	RUN install_things
-	CMD ["executable", "--to", "--run"]
-
+```dockerfile
+FROM image_name:image_tag
+MAINTAINER person <person@example.org>
+RUN install_things
+CMD ["executable", "--to", "--run"]
+```

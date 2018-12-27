@@ -1,4 +1,7 @@
-# Forth
+---
+title: Forth
+---
+
 | words | action                        |
 |-------|-------------------------------|
 | .     | pop an element off the stack  |
@@ -13,12 +16,12 @@ include <filename> | includes a forth source file
 colon definitions
 -----------------
 
+```
+: funcname ( stack effect comment )
+  do stuff ;
 
- : funcname ( stack effect comment )
-   do stuff ;
-
- \ local variables
- : funcname { a b -- b a }
-   b a ;
-
+\ local variables
+: funcname { a b -- b a }
+  b a ;
+```
 
