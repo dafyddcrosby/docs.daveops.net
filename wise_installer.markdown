@@ -1,6 +1,7 @@
 # WISE Installer
+
 Extract files from installer
 ----------------------------
-
-	installer.exe /x
-
+```
+installer.exe /x
+```

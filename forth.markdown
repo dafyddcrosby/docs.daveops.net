@@ -16,7 +16,7 @@ include <filename> | includes a forth source file
 colon definitions
 -----------------
 
-```
+```forth
 : funcname ( stack effect comment )
   do stuff ;
 
@@ -24,4 +24,3 @@ colon definitions
 : funcname { a b -- b a }
   b a ;
 ```
-

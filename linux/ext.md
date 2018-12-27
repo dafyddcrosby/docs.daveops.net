@@ -27,4 +27,5 @@ dumpe2fs /dev/sda2
 dumpe2fs -h /dev/sda2 # superblock only
 
 # Debug an ext2 filesystem
+debugfs
 ```
