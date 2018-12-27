@@ -4,7 +4,7 @@ title: Common Lisp
 
 ## Basics
 
-```lisp
+```common-lisp
 ;; global variable
 (defparameter *foo* 123)
 ;; global constant
