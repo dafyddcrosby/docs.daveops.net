@@ -24,4 +24,6 @@ tune2fs -c0 -i0 /dev/sda2
 
 # Get superblock info
 dumpe2fs /dev/sda2
+
+# Debug an ext2 filesystem
 ```
