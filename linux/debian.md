@@ -36,6 +36,8 @@ apt-get install packagename
 apt-cache search KEYWORD
 # See dependencies for a package
 apt-cache depends packagename
+# Get package version
+apt-cache showpkg packagename
 # Remove a package
 apt-get remove packagename
 ```

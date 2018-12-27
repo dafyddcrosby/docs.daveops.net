@@ -18,9 +18,8 @@ Articles/Links
 Website
 -------
 
-
-* ☐ fix verbatim/code blocks
-* ☐ tagging
-* ☐ nicer export output?
+* fix verbatim/code blocks
+* tagging
+* nicer export output?
 
 
