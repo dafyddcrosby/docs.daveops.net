@@ -22,8 +22,9 @@ tune2fs -m1 /dev/sda2
 # Disable automatic filesystem checking
 tune2fs -c0 -i0 /dev/sda2
 
-# Get superblock info
+# Get superblock, groupblock info
 dumpe2fs /dev/sda2
+dumpe2fs -h /dev/sda2 # superblock only
 
 # Debug an ext2 filesystem
 ```

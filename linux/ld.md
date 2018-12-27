@@ -10,6 +10,11 @@ title: ld
 ```bash
 # Reload ld cache
 ldconfig
+# See which libraries are utilized
+ldconfig -v
+
+# See what an executable links to
+ldd ./executablefile
 
 # Specify an alternate library path
 export LD_LIBRARY_PATH=/path/to/dir ...
