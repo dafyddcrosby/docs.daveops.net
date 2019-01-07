@@ -1,7 +1,10 @@
-# Hipchat
+---
+title: Hipchat
+---
+
+
 Message commands
 ----------------
-
 
 | command          | description         |
 |------------------|---------------------|
