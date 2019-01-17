@@ -9,6 +9,13 @@ The cache for SELinux messages is known as the Access Vector Cache (AVC)
 
 SELinux messages can be found in - /var/log/messages or /var/log/audit/audit.log
 
+```bash
+ls -Z
+id -Z
+ps -Z
+netstat -Z
+# and even more!
+```
 ## Labels
 
 ```
@@ -16,6 +23,8 @@ user:role:type (and optionally :level)
 ```
 
 Generally speaking, you're concerned with type enforcement
+
+## Files
 
 ```bash
 # Change the context of a file
@@ -28,14 +37,12 @@ restorecon
 semanage
 # Get the context type for a file
 secon -t --file FILE
-```
-
-```bash
-ls -Z
-id -Z
-ps -Z
-netstat -Z
-# and even more!
+# Copy a file while preserving context
+cp --preserve=context
+# Get file contexts of directory
+ls -Za
+# List of default file contexts
+semanage fcontext -l
 ```
 
 ## Booleans
@@ -141,3 +148,6 @@ matchpathcon
 * [Debian SELinux guide](https://wiki.debian.org/SELinux/Setup)
 * [Fedora SELinux guide](https://fedoraproject.org/wiki/SELinux)
 * [Arch SELinux wiki](https://wiki.archlinux.org/index.php/SELinux)
+
+# TODO
+what context is needed for the PID to access the file
