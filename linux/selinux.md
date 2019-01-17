@@ -11,9 +11,11 @@ SELinux messages can be found in - /var/log/messages or /var/log/audit/audit.log
 
 ## Labels
 
+```
 user:role:type (and optionally :level)
+```
 
-generally speaking, you're concerned with type enforcement
+Generally speaking, you're concerned with type enforcement
 
 ```bash
 # Change the context of a file
@@ -51,6 +53,13 @@ setsebool [boolean] [0|1]
 
 /etc/selinux/targeted/modules/active/booleans.local 
 
+## Users
+
+```bash
+# List users
+semanage user -l
+```
+
 ## Modes
 
 ```bash
@@ -72,6 +81,9 @@ The modes used by SELinux:
 ```bash
 # Get available SE modules
 semodule -l
+
+# Install a policy module
+semodule -i MOD_PKG
 ```
 
 ## audit2allow
@@ -79,17 +91,42 @@ semodule -l
 RH RPM: policycoreutils-python
 
 ```bash
+# Figure out why something is failing
+
 grep httpd_t audit.log | audit2allow -M newmod
 ```
 
-## seinfo
-
+## setools-console
 
 RH RPM: setools-console
 
 ```bash
 # List contexts
 seinfo -t
+
+# Query policies
+sesearch ...
+
+# Search for files with a particular context
+findcon /etc/selinux/targeted/contexts/files/file_contexts -t shadow_t
+
+```
+
+## Policies
+
+| policy name | desc |
+|-------------|------|
+| targeted | type enforcement rules, some RBAC |
+| strict | Full protection. TE, RBAC, much more aggressive |
+| mls | Multi-Level Security (more labels, more rules) |
+
+## Networking
+
+```bash
+# See ports and services
+semanage port -l
+# Add a port rule
+semanage port -a -t http_port_t -p tcp 81
 ```
 
 ## Get the default SELinux context
