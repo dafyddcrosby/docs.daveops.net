@@ -121,8 +121,8 @@ findcon /etc/selinux/targeted/contexts/files/file_contexts -t shadow_t
 
 ## Policies
 
-| policy name | desc |
-|-------------|------|
+| policy name | description |
+|-------------|-------------|
 | targeted | type enforcement rules, some RBAC |
 | strict | Full protection. TE, RBAC, much more aggressive |
 | mls | Multi-Level Security (more labels, more rules) |

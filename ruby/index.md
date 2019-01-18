@@ -110,10 +110,8 @@ Running proceses
 | %W[ ]    | Interpolated Array of words, separated by whitespace               |
 | %x[ ]    | Interpolated shell command                                         |
 
-
 Todo
 ----
 
 * GC.stat
 * Object::AllocationTracer (gem allocation_tracer) 
-
