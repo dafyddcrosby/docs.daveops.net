@@ -1,6 +1,9 @@
-# Foodcritic
-@Chef
+---
+title: Foodcritic
+tags: ["Chef"]
+---
 
-	# Run rules that match the tags
-	foodcritic -t annoyances,deprecated,correctness
-
+```bash
+# Run rules that match the tags
+foodcritic -t annoyances,deprecated,correctness
+```

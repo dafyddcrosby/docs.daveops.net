@@ -1,14 +1,13 @@
-# VirtualBox
-@virtualization
+---
+title: VirtualBox
+tags: ["virtualization"]
+---
 
-Installing VirtualBox Extension Pack
-------------------------------------
+## Installing VirtualBox Extension Pack
 
 * <https://www.virtualbox.org/wiki/Downloads>
 * (as root) ``VBoxManage extpack install <tarball>``
 
+## Vagrant
 
-Vagrant
--------
 Install vagrant-vbguest to use Guest Additions
-

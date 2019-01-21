@@ -1,18 +1,21 @@
-# Git
-@version_control
+---
+title: Git
+tags: ["version_control"]
+---
 
 Create bare repository
 ----------------------
 
+```bash
+mkdir -p project.git && cd project.git && git --bare init
+git clone --bare -l non_bare_repo new_bare_repo
+```
 
- mkdir -p project.git && cd project.git && git --bare init
-
- git clone --bare -l non_bare_repo new_bare_repo
-
- [remote "origin"]
+```ini
+[remote "origin"]
 fetch = +refs/heads/*:refs/remotes/origin/*
 url = git.example.com:/path/project.git
-
+```
 
 Checkout remote repository
 --------------------------
@@ -75,12 +78,13 @@ Delete remote branch
 Tagging
 -------
 
-
-
- git tag  # list tags
- git tag -a v1.0 -m "Creating v1.0 tag"  # Create a tag
- git describe --tags  # Show current tag
- git push --tags  # push tags to remote
+```bash
+git tag  # list tags
+git tag -a v1.0 -m "Creating v1.0 tag"  # Create a tag
+git describe --tags  # Show current tag
+git push --tags  # push tags to remote
+git checkout v1.0 # Check out tag 'v1.0'
+```
 
 Stashing
 --------
