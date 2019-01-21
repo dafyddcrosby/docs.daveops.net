@@ -18,6 +18,7 @@ gpg --armor --export user@example.com > user.gpg.pub
 
 Encrypt a file
 --------------
+
 ```bash
 gpg --encrypt --recipient user@example.com --output <file>.gpg <file>
 ```
@@ -41,41 +42,41 @@ gpg --list-keys --fingerprint --keyid-format=short
 Verify signature of document
 ----------------------------
 
-
-
- # Compressed, signed doc
- gpg --output doc --decrypt doc.sig
- # Detached signature
- gpg --verify doc.sig doc
+```bash
+# Compressed, signed doc
+gpg --output doc --decrypt doc.sig
+# Detached signature
+gpg --verify doc.sig doc
+```
 
 Generate a subkey
 -----------------
 
-
-
-  gpg --edit-key KEYNAME
-  gpg> addkey
+```bash
+gpg --edit-key KEYNAME
+```
+```
+gpg> addkey
+```
 
 List private keys
 -----------------
 
-
-
-  gpg --list-secret-keys
-  # A # after the letters sec means that the secret key is not usable
+```bash
+gpg --list-secret-keys
+# A # after the letters sec means that the secret key is not usable
+```
 
 Deleting keys
 -------------
 
-
-
-  gpg --delete-key USERNAME
-  gpg --delete-secret-key USERNAME
+```bash
+gpg --delete-key USERNAME
+gpg --delete-secret-key USERNAME
+```
 
 Links
 -----
 
 * [GNU Privacy Handbook](https://www.gnupg.org/gph/en/manual.html)
 * [best practices](https://riseup.net/en/security/message-security/openpgp/best-practices)
-
-
