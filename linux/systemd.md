@@ -22,6 +22,17 @@ tags: ["init", "Linux", "Red Hat"]
 | list-dependencies              | Show dependency tree of a target                     |
 
 
+# journalctl
+
+```bash
+# Jump to the end of the log
+journalctl -e
+# Use the message catalog for explanatory text
+journalctl -x
+# Show kernel logs of previous boot
+journalctl -k -b -1
+```
+
 # Directories
 
 * /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this
@@ -44,5 +55,5 @@ To change the runlevel in a running system, `systemctl isolate rescue.target`
 # Links
 
 * <https://cgit.freedesktop.org/systemd/systemd/>
-
+* [Design documentation](http://0pointer.de/blog/projects/systemd.html)
 

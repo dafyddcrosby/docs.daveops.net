@@ -4,13 +4,9 @@ title: GRUB
 
 Except where noted, this is for GRUB 2+
 
-# Legacy
-
-* `/boot/grub/grub.conf`
-
 # Console
 
-```
+```bash
 # Turn on the pager in console mode
 set pager=1
 # See what the variables are
@@ -21,9 +17,14 @@ ls
 
 # Grub grub.cfg creation
 
-```
+```bash
 # RHEL-ish
 grub2-mkconfig -o /boot/grub2/grub.cfg
 # Deb-ish
 update-grub
 ```
+
+# GRUB 1
+
+* `/boot/grub/grub.conf`
+

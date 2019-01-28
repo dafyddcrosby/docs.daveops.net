@@ -1,8 +1,6 @@
 ---
 title: proc
 ---
-Created Friday 13 October 2017
-
 
 ## Get filesystems kernel can use
 
