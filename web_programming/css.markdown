@@ -1,9 +1,30 @@
-# CSS
+---
+title: CSS
+---
+
 <http://www.cssbuttongenerator.com/>
 
-Media types
------------
+## Flexbox
+```
+#thing {
+  display: flex;
+  justify-content: flex-start; /* horizontal alignment */
+  align-items: flex-end; /* horizontal alignment */
+  align-content: flex-end; /* determine spacing between the lines */
+  order: 1; /* adjust the order */
+  flex-wrap: wrap;
+  flex-direction: row; /* direction of items - this flips justify-content and align-items */
 
+  /* you can also use flex-flow instead of -wrap and -direction */
+  flex-flow: row wrap;
+}
+
+.item {
+  align-self: flex-end; /* move an item */
+}
+```
+
+## Media types
 
 * all
 * braille
@@ -16,17 +37,14 @@ Media types
 * tty
 * tv
 
-
-Mobile browsers
----------------
+## Mobile browsers
 
 ```html
 <link rel='stylesheet' media='all' href='base.css'
 <link rel='stylesheet' media='screen and (max-width: 320px)' href='mobile.css'>
 ```
 
-Use a custom font (CSS3)
-------------------------
+## Use a custom font (CSS3)
 
 ```css
 @font-face {
@@ -36,23 +54,20 @@ Use a custom font (CSS3)
 selector { font-family: MyFont; }
 ```
 
-Rounded corners (CSS3)
-----------------------
+## Rounded corners (CSS3)
 
 ```css
 border: width style color;
 border-radius: radius;
 ```
 
-Box shadow (CSS 3)
-------------------
+## Box shadow (CSS 3)
 
 ```css
 box-shadow: xpos ypos blur spread color, ...;
 ```
 
-Change an element's background image (CSS 3)
---------------------------------------------
+## Change an element's background image (CSS 3)
 
 ```css
 selector {
@@ -60,8 +75,7 @@ selector {
 }
 ```
 
-Translucent elements (CSS 3)
-----------------------------
+## Translucent elements (CSS 3)
 
 ```css
 selector {
@@ -70,16 +84,14 @@ selector {
 }
 ```
 
-Create custom borders (CSS 3)
------------------------------
+## Create custom borders (CSS 3)
 
 ```css
 border-image: source slice repeat;
 border-width: width;
 ```
 
-Center an element
------------------
+## Center an element
 
 Give it a width and set the margin
 
@@ -87,3 +99,9 @@ Give it a width and set the margin
 margin: 0 auto;
 width: 939px;
 ```
+
+## Resources
+
+* <https://flexboxfroggy.com/>
+* <http://cssgridgarden.com/>
+

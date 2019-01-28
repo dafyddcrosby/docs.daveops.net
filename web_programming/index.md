@@ -1,5 +1,10 @@
-# Web Programming
-[Extensible Web Manifesto](https://extensiblewebmanifesto.org/)
+---
+title: Web Programming
+---
+
+## Links
+* [Extensible Web Manifesto](https://extensiblewebmanifesto.org/)
+* [Can I Use?](https://caniuse.com/)
 
 Graphics/Icons
 --------------
@@ -8,4 +13,5 @@ Graphics/Icons
 Themes
 ------
 <http://themeforest.net/>
+
 
