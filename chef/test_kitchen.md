@@ -25,6 +25,36 @@ provisioner:
     environment: production
 ```
 
+## kitchen-dokken
+
+Pre-installed with ChefDK
+
+```yaml
+---
+driver:
+  name: dokken
+  chef_version: latest
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+- name: centos-7
+  driver:
+    image: dokken/centos-7
+
+suites:
+  - name: default
+    run_list:
+    - recipe[hello_dokken::default]
+```
+
 ## Links
 
 * [Test Kitchen website](https://kitchen.ci)
