@@ -2,45 +2,38 @@
 title: Bash
 ---
 
-Go immediately to $EDITOR
--------------------------
+## Go immediately to $EDITOR
 ctrl-x, e
 
-Most commonly used commands
----------------------------
+## Most commonly used commands
 ```bash
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 ```
 
-Delete files that are not extension
------------------------------------
+## Delete files that are not extension
 
 ```bash
 rm !(*.foo|*.bar|*.baz)
 ```
 
-Find, delete empty directories
-------------------------------
+## Find, delete empty directories
 
 ```bash
 find . -type d -empty -exec rmdir {} \;
 ```
 
-Show your shell from a port
----------------------------
+## Show your shell from a port
 ```bash
 script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 ```
 
-Replace filename spaces with underscores
-----------------------------------------
+## Replace filename spaces with underscores
 ```bash
 # util-linux-ng
 rename " " _ *
 ```
 
-Search for Unicode use in a tree
---------------------------------
+## Search for Unicode use in a tree
 
 TODO - I think this could be done with one 'find' command, no need to loop...
 
@@ -48,15 +41,13 @@ TODO - I think this could be done with one 'find' command, no need to loop...
 for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 ```
 
-"Press any key to continue"
----------------------------
+## "Press any key to continue"
 
 ```bash
 read -sn 1 -p "Press any key to continue..."
 ```
 
-Conditional Expressions
------------------------
+## Conditional Expressions
 
 | code      | desc                             |
 |-----------|----------------------------------|
@@ -68,8 +59,7 @@ Conditional Expressions
 | -z string | true if length of string is zero |
 
 
-Process Substitution
---------------------
+## Process Substitution
 A temporary named pipe
 
 ```bash
@@ -77,8 +67,7 @@ diff <(grep lines file1) <(grep lines file2)
 thing --output >(gzip > output.txt.gz)
 ```
 
-Syntax cheatsheet
------------------
+## Syntax cheatsheet
 ```bash
 fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
@@ -99,8 +88,7 @@ do
 done
 ```
 
-set
----
+## set
 <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
 
 | flag        | desc                                                                                                                       |
@@ -114,30 +102,29 @@ set
 | -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                                       |
 
 
-Using regex for variable testing
---------------------------------
+## Using regex for variable testing
 ```bash
 if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
     echo "yay"
 fi
 ```
 
-Temporary directory/file
-------------------------
+## Temporary directory/file
 ```bash
 mktemp -d
 ```
 
-Show the functions declared in the shell
-----------------------------------------
+## Variables / functions
 ```bash
+# Set an environment variable
+declare -x BLARG=5
+# Show the functions declared in the shell
 declare -F
-# on ancient shells:
+# show functions on ancient shells
 typeset -F
 ```
 
-Use heredocs
-------------
+## Use heredocs
 ```bash
 cat <<EOM > file.out
 blah
@@ -145,22 +132,19 @@ blah
 EOM
 ```
 
-Quit without saving history
----------------------------
+## Quit without saving history
 ```bash
 unset HISFILE && exit
 ```
 
-Regex change over files returned from grep
-------------------------------------------
+## Regex change over files returned from grep
 
 ```bash
 # macOS
 grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
 ```
 
-I/O Redirection
----------------
+## I/O Redirection
 
 |      | description                     |
 |:-----|:--------------------------------|

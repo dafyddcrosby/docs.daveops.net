@@ -70,17 +70,12 @@ server_tokens off
 Resources
 ---------
 
-
 * <https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return>
 * <https://nginx.org/en/docs/http/ngx_http_core_module.html#location>
-
 
 A funny aside
 -------------
 
 One of my coworkers said that "nginx is just a hipster Apache". I *wish* that's the most ignorant thing he's ever said (sit down with me for a beer, and I'll give a few other gems).
 
-
 * [The C10K Problem](http://www.kegel.com/c10k.html)
-
-

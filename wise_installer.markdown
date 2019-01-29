@@ -1,7 +1,8 @@
-# WISE Installer
+---
+title: WISE Installer
+---
 
-Extract files from installer
-----------------------------
+## Extract files from installer
 ```
 installer.exe /x
 ```

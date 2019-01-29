@@ -20,60 +20,60 @@ url = git.example.com:/path/project.git
 Checkout remote repository
 --------------------------
 
-
- git fetch
- git checkout -b local_branch_name remote/branch_name
-
+```bash
+git fetch
+git checkout -b local_branch_name remote/branch_name
+```
 
 Sequential versioning
 ---------------------
 
-
- git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
+```bash
+git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
+```
 
 Reset git to a specific commit
 ------------------------------
 
-
-
- git reset [hash]
- git reset --soft HEAD@{1}
- git commit -m "revert to [hash]"
- git reset --hard
+```bash
+git reset [hash]
+git reset --soft HEAD@{1}
+git commit -m "revert to [hash]"
+git reset --hard
+```
 
 If you just need to amend last commit,
 
-
-
- git commit --amend
+```
+git commit --amend
+```
 
 Handy hooks
 -----------
-
 
 ### Push to website on git push
 
 on server, put this in ``hooks/post-receive``
 
-
-
- #!/bin/sh
- GIT_WORK_TREE=/path/to/www.example.org git checkout -f
+```bash
+#!/bin/sh
+GIT_WORK_TREE=/path/to/www.example.org git checkout -f
+```
 
 Push branch to remote server
 ----------------------------
 
-
-
- git push origin branch_name
+```bash
+git push origin branch_name
+```
 
 Delete remote branch
 --------------------
 
-
-
- git push origin :branch_to_delete
- git branch -d branch_to_delete
+```bash
+git push origin :branch_to_delete
+git branch -d branch_to_delete
+```
 
 Tagging
 -------
@@ -89,83 +89,84 @@ git checkout v1.0 # Check out tag 'v1.0'
 Stashing
 --------
 
-
-
- git stash list  # list stashes
- git stash save "message here"  # create a stash
- git stash show <stash>  # show stash diff
- git stash apply stash@{1}  # apply the code you stashed
- git stash drop <stash>  # delete specified stash
- git stash clear  # delete all stashes
+```bash
+git stash list  # list stashes
+git stash save "message here"  # create a stash
+git stash show <stash>  # show stash diff
+git stash apply stash@{1}  # apply the code you stashed
+git stash drop <stash>  # delete specified stash
+git stash clear  # delete all stashes
+```
 
 Add remote branch
 -----------------
 
-
-
- git remote add upstream <git://github.com/user/repo.git>
+```bash
+git remote add upstream <git://github.com/user/repo.git>
+```
 
 Show nicely formatted changelog
 -------------------------------
 
-
-
- git log --graph --oneline --abbrev-commit --decorate
+```bash
+git log --graph --oneline --abbrev-commit --decorate
+```
 
 See commits from individual
 ---------------------------
 
-	git log --author="david"
-
+```bash
+git log --author="david"
+```
 
 Get list of contributors
 ------------------------
 
-
-
- git shortlog -s -n
+```bash
+git shortlog -s -n
+```
 
 Remove non-tracked files
 ------------------------
 
-
-
- git clean -n  # dry run
- git clean -f  # delete the files
+```bash
+git clean -n  # dry run
+git clean -f  # delete the files
+```
 
 Squash commits into single commit
 ---------------------------------
 
-
-
- git rebase -i <hash>
+```bash
+git rebase -i <hash>
+```
 
 Untrack files without deletion
 ------------------------------
 
-
-
- echo "filename" >> .gitignore
- git rm --cached filename
- git add -u
- git commit -m "removing filename from version control"
+```bash
+echo "filename" >> .gitignore
+git rm --cached filename
+git add -u
+git commit -m "removing filename from version control"
+```
 
 Load my dotfiles to the home directory
 --------------------------------------
 
-
-
- cd ~
- git init
- git remote add origin git@github.com:dafyddcrosby/dotfiles.git
- git pull origin master
+```bash
+cd ~
+git init
+git remote add origin git@github.com:dafyddcrosby/dotfiles.git
+git pull origin master
+```
 
 Get list of staged files for commit
 -----------------------------------
 
-
-
- git diff --cached --name-status | sed 's/.\s*//'
+```bash
+git diff --cached --name-status | sed 's/.\s*//'
+```
 
 Diff remote repo
 ----------------
@@ -177,52 +178,50 @@ Diff remote repo
 Import Sourceforge CVS repo
 ---------------------------
 
-
-
- rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
- git cvsimport -p x -v -d /absolute/path/to/w3m w3m
+```bash
+rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
+git cvsimport -p x -v -d /absolute/path/to/w3m w3m
+```
 
 Import another repo as a subtree
 --------------------------------
 
-
-
- git remote add -f remote_name git@example.com:remote_repo.git
- git merge -s ours --no-commit remote_name/master
- git read-tree --prefix=newpath/ -u remote_name/master
- git commit -m "Subtree merged in newpath"
- 
+```bash
+git remote add -f remote_name git@example.com:remote_repo.git
+git merge -s ours --no-commit remote_name/master
+git read-tree --prefix=newpath/ -u remote_name/master
+git commit -m "Subtree merged in newpath"
+``` 
 
 Search git history
 ------------------
 
-
-
- git log -S <search term>
+```bash
+git log -S <search term>
+```
 
 Retrieve single file from a specific revision in git
 ----------------------------------------------------
 
-
-
- git checkout <HASH> -- ./path/to/file
+```bash
+git checkout <HASH> -- ./path/to/file
+```
 
 GPG signing
 -----------
 
-
-
-  git commit -S -m MESSAGE
+```bash
+git commit -S -m MESSAGE
+```
 
 Signing a commit
 ----------------
 
-
 In the commit message
 
-
-
-  Signed-off-by: David Crosby <email@example.com>
+```
+Signed-off-by: David Crosby <email@example.com>
+```
 
 zlol
 ----
@@ -232,4 +231,3 @@ zlol
 Misc
 ----
 <https://gitea.io>
-

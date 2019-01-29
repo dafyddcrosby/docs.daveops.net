@@ -1,4 +1,7 @@
-# swift
+---
+title: swift
+---
+
 Benefits
 --------
 Variables initialized before use
@@ -26,6 +29,7 @@ Values are never implicitly converted to another type
 
 String interpolation: "The building is \(feet) feet tall"
 
+```swift
 let multi_line_string = """
 multi
 line
@@ -44,7 +48,7 @@ if boolean_var {
 }
 
 var optionalString: String? = "Maybe hello?"
-
+```
 
 Links
 -----

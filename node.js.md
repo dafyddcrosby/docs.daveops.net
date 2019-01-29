@@ -1,11 +1,15 @@
-# node.js
-Created Saturday 14 April 2018
+---
+title: node.js
+---
 
 [NodeJS ECMAScript Support](http://node.green/)
 
-Debugging
----------
-	node --inspect ...
+## Debugging
+
+```bash
+node --inspect ...
+```
+
 Can also be turned on with SIGUSR1
 Node <7 - Debugger API
 Node >8 - Inspector API

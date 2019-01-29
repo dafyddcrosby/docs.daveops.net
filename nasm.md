@@ -1,4 +1,6 @@
-# nasm
+---
+title: nasm
+---
 
 ```bash
 # Valid output formats
