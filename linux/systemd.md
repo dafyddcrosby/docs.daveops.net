@@ -21,7 +21,6 @@ tags: ["init", "Linux", "Red Hat"]
 | daemon-reload                  | Used when you create a new service file or modify any configuration                      |
 | list-dependencies              | Show dependency tree of a target                     |
 
-
 # journalctl
 
 ```bash
@@ -52,8 +51,13 @@ To change the runlevel in a running system, `systemctl isolate rescue.target`
 | graphical.target | graphical startup |
 | reboot.target | restart system |
 
+# Mountpoints
+
+* <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>
+
 # Links
 
 * <https://cgit.freedesktop.org/systemd/systemd/>
+* <https://www.freedesktop.org/software/systemd/man/index.html>
 * [Design documentation](http://0pointer.de/blog/projects/systemd.html)
 

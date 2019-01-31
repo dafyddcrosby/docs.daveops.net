@@ -26,6 +26,9 @@ rpm -qR <package name>
 
 # Install obsolete RPM
 rpm -i --nodeps ./RPM
+
+# Show RPM changelog
+rpm -q --changelog <package>
 ```
 
 Rebuild SRPM

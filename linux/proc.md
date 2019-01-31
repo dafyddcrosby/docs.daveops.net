@@ -4,8 +4,13 @@ title: proc
 
 ## Get filesystems kernel can use
 
-```
+```bash
+# Get filesystems kernel can use
 cat /proc/filesystems
+# Get mounted file systems
+cat /proc/self/mounts
+# Get arguments to kernel from bootloader
+cat /proc/cmdline
 ```
 
 * <https://perf.wiki.kernel.org/index.php/Tutorial>

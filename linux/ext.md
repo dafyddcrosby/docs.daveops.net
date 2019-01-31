@@ -21,6 +21,8 @@ tune2fs -j /dev/sda2
 tune2fs -m1 /dev/sda2
 # Disable automatic filesystem checking
 tune2fs -c0 -i0 /dev/sda2
+# Run filesystem check after 100 days
+tune2fs -i100 /dev/sda2
 
 # Get superblock, groupblock info
 dumpe2fs /dev/sda2
