@@ -1,5 +1,6 @@
-# The Art of Computer Virus Research and Defense by Peter Szor
-Created Saturday 23 September 2017
+---
+title: The Art of Computer Virus Research and Defense by Peter Szor
+---
 
 Von Neumann machine - no difference between code + data
 
