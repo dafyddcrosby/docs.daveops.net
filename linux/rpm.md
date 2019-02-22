@@ -70,6 +70,5 @@ RPM DB rebuild
 --------------
 
 ```bash
-rm -f /var/lib/rpm/__db*
-rpm --rebuilddb
+rm -f /var/lib/rpm/__db* && rpm --rebuilddb
 ```
