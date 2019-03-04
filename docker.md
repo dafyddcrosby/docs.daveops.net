@@ -6,10 +6,7 @@ tags: ["containers"]
 Installing on Mac
 -----------------
 ```bash
-brew install docker docker-machine docker-machine-driver-xhyve
-brew services start docker-machine
-docker-machine create main
-eval $(docker-machine env main)
+brew cask install docker
 ```
 
 CLI
