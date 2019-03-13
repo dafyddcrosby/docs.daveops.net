@@ -200,18 +200,22 @@ Search git history
 git log -S <search term>
 ```
 
-Retrieve single file from a specific revision in git
-----------------------------------------------------
+## Retrieve single file from a specific revision in git
 
 ```bash
 git checkout <HASH> -- ./path/to/file
 ```
 
-GPG signing
------------
+## GPG signing
 
 ```bash
 git commit -S -m MESSAGE
+```
+
+## Remove branches that have been merged to master
+
+```bash
+git branch --merged | grep -v \* | xargs git branch -D
 ```
 
 Signing a commit
@@ -223,11 +227,9 @@ In the commit message
 Signed-off-by: David Crosby <email@example.com>
 ```
 
-zlol
-----
+## zlol
 
 <http://whatthecommit.com/>
 
-Misc
-----
+## Misc
 <https://gitea.io>

@@ -1,6 +1,8 @@
-# Homebrew
-CLI
 ---
+title: Homebrew
+---
+
+## CLI
 
 | command  | desc                                 |
 |----------|--------------------------------------|
@@ -12,13 +14,13 @@ CLI
 | leaves   | Show installed formulae with no deps |
 
 
-Installing from source
-----------------------
-	brew install FORMULA.rb --build-from-source
+## Installing from source
 
-Links
------
+```bash
+brew install FORMULA.rb --build-from-source
+```
 
+## Links
 
 * <https://brew.sh/>
 * <http://formulae.brew.sh/>
