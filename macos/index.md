@@ -3,8 +3,7 @@ title: macOS
 tags: ["macOS"]
 ---
 
-Keyboard shortcuts
-------------------
+## Keyboard shortcuts
 
 | Shortcut              | Desc                                    |
 |-----------------------|-----------------------------------------|
@@ -16,16 +15,17 @@ Keyboard shortcuts
 
 Open application bundle
 -----------------------
-	open -a APPLICATION
+```bash
+open -a APPLICATION
+```
 
-
-kernel extensions
------------------
-	# list kernel extensions
-	kextstat -l
-	# unload kernel extensions
-	kextunload -b <id>
-
+## kernel extensions
+```bash
+# list kernel extensions
+kextstat -l
+# unload kernel extensions
+kextunload -b <id>
+```
 
 Update software
 ---------------
@@ -61,17 +61,15 @@ See `man 5 resolver`
 
 Burn ISO
 --------
-
-
-
- hdiutil burn <image>
+```bash
+hdiutil burn <image>
+```
 
 List disks
 ----------
-
-
-
- diskutil list
+```bash
+diskutil list
+```
 
 Get linked libraries/object files
 ---------------------------------
@@ -109,37 +107,25 @@ Boot Options
 | Cmd + Option + P + R | Reset NVRAM                        |
 
 
-Wireless diagnostics
---------------------
-
+## Wireless diagnostics
 
 All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window' tab
 
-	/System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
+```bash
+/System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
+```
 
-
-Virtual Memory Stats
---------------------
-
-	vmstat
-
+## Virtual Memory Stats
+```bash
+vmstat
+```
 
 Links
 -----
 
-
-
 * <https://opensource.apple.com/>
 * <https://github.com/herrbischoff/awesome-osx-command-line>
 * <https://www.raywenderlich.com/151741/macos-development-beginners-part-1>
-
-
-Power management
-----------------
-
-``man pmset``
-
-Use ``caffeinate`` to prevent the system from sleeping
 
 Power management
 ----------------
