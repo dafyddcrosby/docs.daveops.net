@@ -36,8 +36,7 @@ LWP - HTTP Get
 Parsing JSON
 ------------
 
-
-
-  use JSON;
-  decode_json($json);
-
+```perl
+use JSON;
+decode_json($json);
+```
