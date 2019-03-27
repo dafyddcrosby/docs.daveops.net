@@ -22,6 +22,8 @@ docker restart [container]
 docker build -t TAGNAME . # in dir of Dockerfile
 # create a docker container
 docker create TAGNAME
+# create and run a docker container, open a shell
+docker run --name CONTAINERNAME -it
 ```
 
 Docker compose
