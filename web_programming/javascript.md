@@ -39,3 +39,5 @@ var house = Building(20,20,10);
 
 <http://2017.js13kgames.com/>
 
+## Links
+* [JavaScript specification](https://tc39.github.io/)

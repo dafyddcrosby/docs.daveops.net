@@ -1,5 +1,6 @@
-# Python
-@Python
+---
+title: Python
+---
 
 .. TODO - ConfigParser
 .. TODO - gdchart
@@ -95,7 +96,6 @@ Logging
 -------
 
 ```python
-
 import logging
 logging.basicConfig(filename='myapp.log', level=logging.INFO)
 logging.warning('%s before you %s', 'Look', 'leap!')

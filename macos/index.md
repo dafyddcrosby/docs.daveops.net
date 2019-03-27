@@ -59,6 +59,12 @@ Create hosts-style file in `/etc/resolver/<domain>`
 See `man 5 resolver`
 
 
+## Change password on encrypted disk
+```bash
+hdiutil chpass /path/to/disk
+```
+
+
 Burn ISO
 --------
 ```bash
@@ -73,25 +79,21 @@ diskutil list
 
 Get linked libraries/object files
 ---------------------------------
-
-
-
- # List shared libraries
- otool -L <executable>
-
+```bash
+# List shared libraries
+otool -L <executable>
+```
 .. TODO look more into otool's operations
 
 Create a RAM disk
 -----------------
-
-
-
- # Replace XXXXX with MB * 2048 (eg a 4 gig is 8388608 (4096 * 2048))
- diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount <ram://XXXXX>`
+```bash
+# Replace XXXXX with MB * 2048 (eg a 4 gig is 8388608 (4096 * 2048))
+diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount <ram://XXXXX>`
+```
 
 Boot Options
 ------------
-
 
 | keypress             | action                             |
 |----------------------|------------------------------------|
@@ -105,7 +107,6 @@ Boot Options
 | N                    | Boot from network                  |
 | Option               | Startup Manager                    |
 | Cmd + Option + P + R | Reset NVRAM                        |
-
 
 ## Wireless diagnostics
 
