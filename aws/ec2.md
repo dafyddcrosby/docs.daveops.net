@@ -1,38 +1,21 @@
-# EC2
-@AWS
+---
+title: EC2
+---
 
 Get instance metadata from within VM
 ------------------------------------
 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html>
 
-	curl http://169.254.169.254/
-	
-	# Get list of IAM roles
-	curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
-	
-	# Get role credentials
-	curl http://169.254.169.254/latest/meta-data/iam/security-credentials/ROLE_NAME
-	# You'll likely want AccessKeyID, SecretAccessKey, and Token
+```bash
+curl http://169.254.169.254/
 
+# Get list of IAM roles
+curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
 
-Get CentOS AMIs
----------------
-
-	aws --region us-east-1 ec2 describe-images --owners aws-marketplace --filters Name=product-code,Values=aw0evgkw8e5c1q413zgy5pjce
-
-
-Creating AMIs
--------------
-
-### Links
-
-* [AMI tools reference](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-tools-commands.html)
-
-
-
-* <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-instance-store-ami.html>
-* <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ConvertingS3toEBS.html>
-
+# Get role credentials
+curl http://169.254.169.254/latest/meta-data/iam/security-credentials/ROLE_NAME
+# You'll likely want AccessKeyID, SecretAccessKey, and Token
+```
 
 Hypervisors
 -----------
