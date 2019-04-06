@@ -1,35 +1,18 @@
-# heroku
+---
+title: heroku
+---
 
-* ☐ this might be quite out of date
+## Mac install
+```bash
+brew tap heroku/brew && brew install heroku
+```
 
+## CLI
 
-Creating a new heroku site
---------------------------
+```bash
+# Creating a new heroku site
+heroku create
 
-
-
- heroku create --stack cedar
-
-Renaming a site
----------------
-
-
-
- heroku rename newsitename
-
-Adding keys
------------
-
-
-
- heroku keys:add
-
-Installing CLI
---------------
-
-
-
- gem install heroku
-
-
-
+# Renaming a site
+# TODO
+```

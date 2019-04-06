@@ -2,29 +2,19 @@
 title: Ruby
 ---
 
-Running the profiler
---------------------
-
+## CLI
 ```bash
-ruby -rprofile script.rb
-```
+# Print warnings
+ruby -w ...
 
-get machine instructions
-------------------------
-
-```bash
+# get machine instructions
 ruby --dump insns script.rb
-```
 
-See how commands are parsed
----------------------------
-
-```bash
+# See how commands are parsed
 ruby --dump parsetree_with_comment script.rb
 ```
 
-Abort on thread errors
-----------------------
+## Abort on thread errors
 
 ```ruby
 Thread.abort_on_exception = true
@@ -38,9 +28,7 @@ loop do
 end
 ```
 
-
-Syntax cheatsheet
------------------
+## Syntax cheatsheet
 
 ```ruby
 class Thing
@@ -67,6 +55,7 @@ end
 # Ternary operator
 exp ? true : false
 
+# Begin block
 begin
   # try to do this
 rescue Exception
@@ -77,6 +66,7 @@ ensure
   # do this no matter what
 end
 
+# Case statement
 case thing
 when 3
   puts 'fizz'
@@ -85,18 +75,21 @@ when 5
 else
   puts thing
 end
+
+# Safe navigation operator (introduced in Ruby 2.3)
+u && u.profile && u.profile.thumbnails && u.profiles.thumbnails.large
+# versus
+u&.profile&.thumbnails&.large
 ```
 
-Running proceses
-----------------
+## Running proceses
 
 * [system()](http://ruby-doc.org/core/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
 * [backticks](http://ruby-doc.org/core/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
 * [exec()](http://ruby-doc.org/core/Kernel.html#method-i-exec) - replace current process by running command
 
 
-% Notation
-----------
+## % Notation
 
 | Modifier | Meaning                                                            |
 |----------|--------------------------------------------------------------------|
@@ -110,9 +103,17 @@ Running proceses
 | %W[ ]    | Interpolated Array of words, separated by whitespace               |
 | %x[ ]    | Interpolated shell command                                         |
 
-Todo
-----
+## Freezing strings
+
+The `frozen_string_literal` pragma will have all strings in the code be immutable, improving performance. To debug, use `--debug=frozen-string-literal`
+```ruby
+# frozen_string_literal: true
+```
+
+
+
+## Todo
 
 * <https://www.exceptionalcreatures.com/>
 * GC.stat
-* Object::AllocationTracer (gem allocation_tracer) 
+* Object::AllocationTracer (gem allocation_tracer)
