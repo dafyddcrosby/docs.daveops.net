@@ -1,23 +1,27 @@
-# Mutt
+---
+title: Mutt
+---
+
 [Manual](http://www.mutt.org/doc/manual/)
 
-Add header to messages
-----------------------
+## Open system mail spool
 
+```bash
+mutt -f /var/mail/USERNAME
+```
 
+## Add header to messages
+```
+my_hdr X-Operating-System: TempleOS
+```
 
- my_hdr X-Operating-System: TempleOS
+## Whitelist TLS fingerprint
+```
+tls on
+tls_fingerprint <fingerprint>
+```
 
-Whitelist TLS fingerprint
--------------------------
-
-
-
- tls on
- tls_fingerprint <fingerprint>
-
-Search
-------
+## Search
 
 | command        | desc                                            |
 |----------------|-------------------------------------------------|
