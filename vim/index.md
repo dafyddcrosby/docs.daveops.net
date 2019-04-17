@@ -1,25 +1,38 @@
-# vim
+---
+title: vim
+---
+
 <http://www.vimninjas.com/>
 
 
-Sort on a virtual column
-------------------------
+## profile Vim startup time
+vim 7.2.269+
 
- ``:sort /.*\%10v/``
+```bash
+vim --startuptime start.log
+```
 
-Get filetype
-------------
+## Sort on a virtual column
 
- ``:set filetype?``
+```
+:sort /.*\%10v/
+```
 
-Delete all lines containing a pattern
--------------------------------------
+## Get filetype
 
-	:g/profile/d
-	:g/^\s*$/d
+```
+:set filetype?
+```
 
+## Delete all lines containing a pattern
 
-Show line numbers
------------------
-	:set number
+```
+:g/profile/d
+:g/^\s*$/d
+```
 
+## Show line numbers
+
+```
+:set number
+```
