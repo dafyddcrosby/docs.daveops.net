@@ -18,5 +18,3 @@ CaseSensitiveIdentifiers
 # Resources
 
 * <http://www.scheme.com>
-
-

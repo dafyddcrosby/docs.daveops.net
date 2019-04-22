@@ -29,9 +29,9 @@ rails generate scaffold Post user:references title:string{50} content:text
 Add indexes to migration
 ------------------------
 
-
-
- rails g resource user name:index email:uniq
+```bash
+rails g resource user name:index email:uniq
+```
 
 Using Dreamhost
 ---------------
