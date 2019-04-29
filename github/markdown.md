@@ -16,6 +16,10 @@ __This will also be bold__
 _You **can** combine them_
 ```
 
+## Comments
+
+Use `<!---` and `-->`, doesn't work for inline comments
+
 ## Links
 
 ```

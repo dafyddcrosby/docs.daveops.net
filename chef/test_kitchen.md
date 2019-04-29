@@ -55,6 +55,19 @@ suites:
     - recipe[hello_dokken::default]
 ```
 
+## Using chef-vault
+```yaml
+suites:
+  - name: default
+      data_bags_path: 'test/data_bags'
+      attributes:
+      chef-vault:
+        databags_fallback: true
+      dev_mode: true # For very old chef-vault cookbooks
+    run_list:
+    - recipe[chef-vault]
+```
+
 ## Links
 
 * [Test Kitchen website](https://kitchen.ci)

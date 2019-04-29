@@ -1,5 +1,7 @@
 # Data Structures
+<!---
 .. TODO - add more love, this could be really good
+-->
 
 Primitives
 ----------
