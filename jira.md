@@ -7,6 +7,9 @@ title: JIRA
 ```
 # Search for unresolved tickets with label foo
 resolution=unresolved and labels=foo
+
+# Ticket is unassigned
+assignee is EMPTY
 ```
 
 * <https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14>

@@ -1,38 +1,39 @@
-# gems
-@Ruby
+---
+title: gems
+---
 
-Build a gem
------------
+## Build a gem
 
+```bash
+gem build name.gemspec
+```
 
-  gem build name.gemspec
+## Uploading
 
-Uploading
----------
+```bash
+# push gem to rubygems.org or other host
+gem push name-0.0.1.gem [--host HOST]
+```
 
+## Sources
 
-  # push gem to rubygems.org or other host
-  gem push name-0.0.1.gem [--host HOST]
+```bash
+# add a source
+gem source -a SOURCE
+# remove a source
+gem source -r SOURCE
+# update source cache
+gem source -u
+```
 
-Sources
--------
+## Ownership
 
-	# add a source
-	gem source -a SOURCE
-	# remove a source
-	gem source -r SOURCE
-	# update source cache
-	gem source -u
+```bash
+gem owner GEM --add EMAIL
+gem owner GEM --remove EMAIL
+```
 
-Ownership
----------
-
-	gem owner GEM --add EMAIL
-	gem owner GEM --remove EMAIL
-
-
-Environment variables
----------------------
+## Environment variables
 
 | var      | description              |
 |----------|--------------------------|
@@ -40,9 +41,6 @@ Environment variables
 | GEM_HOME | where gems are installed |
 
 
-Links
------
+## Links
 
 * [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
-
-
