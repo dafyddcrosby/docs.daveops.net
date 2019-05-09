@@ -1,24 +1,15 @@
-# Emacs
-packages
---------
+---
+title: Emacs
+---
+
+## packages
 
 | ks                | desc                                                       |
 |-------------------|------------------------------------------------------------|
 | M-x list-packages | lists installed packages and packages available from repos |
 | C-h P <package>   | describe package                                           |
 
-
-lisp
-----
-
-| ks      | desc                    |
-|---------|-------------------------|
-| C-x C-e | execute line            |
-| C-j     | execute, dump in buffer |
-
-
-misc
-----
+## misc
 
 | ks                   | desc               |
 |----------------------|--------------------|
@@ -55,9 +46,6 @@ misc
 launchctl load -w ~/Library/LaunchAgents/emacs.daemon.plist
 ```
 
-Links
------
+## Links
 
 * [Emacs standing alone on a Linux Kernel](http://www.informatimago.com/linux/emacs-on-user-mode-linux.html?repost)
-
-

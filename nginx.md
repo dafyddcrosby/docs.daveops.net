@@ -3,8 +3,8 @@ title: nginx
 tags: ["HTTP"]
 ---
 
-Rotate logs
------------
+## Rotate logs
+
 ```bash
 mv access.log access.log.0
 kill -USR1 `cat master.nginx.pid`
@@ -12,8 +12,7 @@ sleep 1
 gzip access.log.0    # do something with access.log.0
 ```
 
-Basic TLS config
-----------------
+## Basic TLS config
 
 Check for recent config at <https://mozilla.github.io/server-side-tls/ssl-config-generator/>
 
@@ -47,34 +46,30 @@ server {
       ssl_trusted_certificate /path/to/root_CA_cert_plus_intermediates;
       resolver <IP DNS resolver>;
   
-      ....
+      # ...
 }
 ```
 
-Redirect only / query
----------------------
+## Redirect only / query
 ```nginx
 location = / {
       # this matches only the / query.
 }
 ```
 
-Disable nginx version in header
--------------------------------
+## Disable nginx version in header
 In http, server, or location
 
 ```nginx
 server_tokens off
 ```
 
-Resources
----------
+## Resources
 
 * <https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return>
 * <https://nginx.org/en/docs/http/ngx_http_core_module.html#location>
 
-A funny aside
--------------
+## A funny aside
 
 One of my coworkers said that "nginx is just a hipster Apache". I *wish* that's the most ignorant thing he's ever said (sit down with me for a beer, and I'll give a few other gems).
 

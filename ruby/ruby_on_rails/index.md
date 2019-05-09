@@ -1,12 +1,15 @@
 ---
 title: Ruby on Rails
 ---
-
+<!---
 .. TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
+-->
 
-Installing and setting up Rails
-----------------
+## Installing and setting up Rails
 
+<!---
+I think the instructions are slightly different with Rails 5
+-->
 ```bash
 gem install rails
 rails new app_name
@@ -19,29 +22,25 @@ rm public/index.html
 $EDITOR config/routes.rb
 ```
 
-Scaffolding
------------
+## Scaffolding
 
 ```bash
 rails generate scaffold Post user:references title:string{50} content:text
 ```
 
-Add indexes to migration
-------------------------
+## Add indexes to migration
 
 ```bash
 rails g resource user name:index email:uniq
 ```
 
-Using Dreamhost
----------------
+## Using Dreamhost
 
 * Passenger must be enabled for domain/subdomain
 * Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
 * For database ``rake db:migrate RAILS_ENV=production``
 
-Validating Active Records
--------------------------
+## Validating Active Records
 
 ```ruby
 class Post < ActiveRecord::Base
@@ -59,8 +58,7 @@ end
 2. add to migration file under def change: ``add_index :users, :email, unique: true``
 3. ``bundle exec rake db:migrate``
 
-Database
---------
+## Database
 
 ```bash
 # Migrate to new model
@@ -99,8 +97,7 @@ bundle exec guard init spork
 * ``bundle exec guard``
 
 
-Creating tables
----------------
+## Creating tables
 
 ```ruby
 create_table "contacts" do |t|
@@ -111,8 +108,7 @@ create_table "contacts" do |t|
 end
 ```
 
-Reset test database
--------------------
+## Reset test database
 
 ```bash
 bundle exec rake db:test:prepare
@@ -128,14 +124,12 @@ rake notes
 rake about
 ```
 
-Simple wins
------------
+## Simple wins
 
 * Use ``find_each`` instead of ``each`` when searching through large sets of iterables
 * Use ``content_tag`` to avoid XSS hacks
 
 
-Links
------
+## Links
 
 * <https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/>
