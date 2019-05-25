@@ -36,3 +36,6 @@ vim --startuptime start.log
 ```
 :set number
 ```
+
+## Omnicompletion
+<C-X><C-O>

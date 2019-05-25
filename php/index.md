@@ -1,31 +1,50 @@
-# PHP
-@php
+---
+title: PHP
+---
 
-Datestamps
-----------
+## Run a server instance with a script
 
-	
-	 <?php
-	 //mktime(hour,minute,second,month,day,year)
-	
-	 echo date("Y/m/d", mktime(0,0,0,11,11,2011));
-	 //2011/11/11
-	 ?> 
-Turn off error reporting
-------------------------
+Requires PHP >= 5.4 - <http://php.net/manual/en/features.commandline.webserver.php>
 
-	
-	 <?php
-	 error_reporting(0)
-	 ?>
+```bash
+php -S localhost:8000 router.php
+```
 
-Check if domain resolves
-------------------------
+## Datestamps
 
-	
-	 <?php
-	 checkdnsrr($host)
-	 ?>
+```php	
+<?php
+//mktime(hour,minute,second,month,day,year)
+
+echo date("Y/m/d", mktime(0,0,0,11,11,2011));
+//2011/11/11
+?> 
+```
+
+## Autogenerate a file download
+
+```php
+<?php
+header("Content-Type: text/calendar; charset=utf-8");
+header("Content-Disposition: attachment; filename=test.ics");
+// render file...
+```
+
+## Turn off error reporting
+
+```php	
+<?php
+error_reporting(0)
+?>
+```
+
+## Check if domain resolves
+
+```php	
+<?php
+checkdnsrr($host)
+?>
+```
 
 Authenticating users
 --------------------
@@ -50,14 +69,6 @@ Authenticating users
 	 } 
 	 ?>
 
-Run a server instance with a script
------------------------------------
-
-Requires PHP >= 5.4 - <http://php.net/manual/en/features.commandline.webserver.php>
-
-
-
- php -S localhost:8000 router.php
 
 Validation
 ----------
@@ -134,15 +145,15 @@ Include PEAR (Dreamhost)
 	 set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
 	 ?>
 
-Scrape $_GET parameters
-=======================
+## Scrape `$_GET` parameters
 
-If mod_rewrite or some other mechanism is preventing the filling of the $_GET array, use this:
+If mod_rewrite or some other mechanism is preventing the filling of the `$_GET` array, use this:
 
-	
-	 <?php
-	 parse_str($_SERVER['QUERY_STRING'], $_GET);
-	 ?>
+```php
+<?php
+parse_str($_SERVER['QUERY_STRING'], $_GET);
+?>
+```
 
 Convert command line arguments into GET variables
 =================================================
@@ -155,53 +166,54 @@ Convert command line arguments into GET variables
 Get PHP config info
 ===================
 
-
-
- # Get configuration (like phpinfo())
- php -i
- # Get location of php.ini
- php --ini
+```bash
+# Get configuration (like phpinfo())
+php -i
+# Get location of php.ini
+php --ini
+```
 
 Redirect to a different URL
 ===========================
 
-	
-	 <?php
-	 header("Location: http://www.example.com/"); 
-	 ?>
+```php	
+<?php
+header("Location: http://www.example.com/"); 
+?>
+```
 
 Syntax cheatsheet
 =================
 
-	
-	 <?php
-	 if ($blah == 0) {
-	   // code
-	 } elseif ($blah == 1) {
-	   // code
-	 } else {
-	   // code
-	 }
-	 
-	 $arr = array(1, 2, 3, 4);
-	 foreach ($arr as $value) {
-		 print $value;
-	 }
-	 
-	 switch ($blah) {
-	   case 0:
-		 // code
-		 break;
-	   case 1:
-		 // code
-		 break;
-	   default:
-		 // code
-		 break;
-	 
-	 function foo () {
-	   return 0;
-	 }
-	 ?>
+```php	
+<?php
+if ($blah == 0) {
+  // code
+} elseif ($blah == 1) {
+  // code
+} else {
+  // code
+}
 
+$arr = array(1, 2, 3, 4);
+foreach ($arr as $value) {
+        print $value;
+}
+
+switch ($blah) {
+  case 0:
+        // code
+        break;
+  case 1:
+        // code
+        break;
+  default:
+        // code
+        break;
+
+function foo () {
+  return 0;
+}
+?>
+```
 

@@ -16,6 +16,14 @@ func main() {
 }
 ```
 
+## Cross-compilation
+```bash
+# Compile for AMD64 Linux
+GOOS=linux GOARCH=amd64 go build
+```
+
+[https://golang.org/doc/install/source#environment](List of compilation targets)
+
 ## Resources
 
 * <https://golang.org/>
