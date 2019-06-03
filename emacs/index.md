@@ -48,4 +48,4 @@ launchctl load -w ~/Library/LaunchAgents/emacs.daemon.plist
 
 ## Links
 
-* [Emacs standing alone on a Linux Kernel](http://www.informatimago.com/linux/emacs-on-user-mode-linux.html?repost)
+* [Emacs standing alone on a Linux Kernel](http://www.informatimago.com/linux/emacs-on-user-mode-linux.html)
