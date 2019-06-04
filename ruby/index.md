@@ -110,10 +110,25 @@ The `frozen_string_literal` pragma will have all strings in the code be immutabl
 # frozen_string_literal: true
 ```
 
+<!--- Todo
 
+safelevel -T
+set_trace_func proc
+caller method
+Marshal.dump
+distributed Ruby (drb)
+attr_reader attr_writer
+Ruby Tk toolkit
+ruby ncurses
+loop retry redo
+yield
+Module for namespacing
+require 'testunit'
+bmbm - two-pass if garbage collection
 
-## Todo
 
 * <https://www.exceptionalcreatures.com/>
 * GC.stat
 * Object::AllocationTracer (gem allocation_tracer)
+
+-->

@@ -8,6 +8,10 @@ title: Debugging
 ruby -r debug example.rb
 ```
 
+<!---
+~/.irbrc options
+-->
+
 ## Irb
 
 As of Ruby 2.4+, you can use `binding.irb` for an experience similar to Pry
