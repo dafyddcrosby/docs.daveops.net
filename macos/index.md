@@ -166,6 +166,10 @@ csrutil(1)
 ### Installing fonts
 copy to ~/Library/Fonts
 
+## Get a call stack of a running process
+```bash
+sample PID -file OUTPUT
+```
 
 ## Type accent marks
 
