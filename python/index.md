@@ -2,17 +2,20 @@
 title: Python
 ---
 
+<!--
 .. TODO - ConfigParser
 .. TODO - gdchart
 .. TODO - asyncore/asynchat
 .. TODO - shlex
 .. TODO - paramiko
 .. TODO - threading, multiprocessing
+-->
 
 Essential third-party tools
 ---------------------------
 
-[autopep8](http://pypi.python.org/pypi/autopep8)
+* [mypy](http://mypy-lang.org/)
+* [autopep8](http://pypi.python.org/pypi/autopep8)
 
 Getopts
 -------
@@ -142,10 +145,9 @@ tar.close()
 Run a simple webserver
 ----------------------
 
-
-
-
- python -m SimpleHTTPServer
+```bash
+python -m SimpleHTTPServer
+```
 
 Check Python version
 --------------------

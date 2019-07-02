@@ -28,6 +28,8 @@ Issues individual service tickets.
 
 <!--
 key version number (kvno) is important for services
+
+krbtgt/REALM@REALM
 -->
 
 ### Realm
@@ -36,11 +38,15 @@ A sort of namespace for principals (ie users, services).
 
 ## KRB4 vs. KRB5
 
-Kerberos 4 uses 56-bit DES (yikes!)
+### Kerberos 4
+* Uses 56-bit DES (yikes!)
 
-Kerberos 5 has credential forwarding
+### Kerberos 5
+* credential forwarding
+* ASN.1
 
 ## Resources
+* http://www.kerberos.info/
 * *Kerberos: The Definitive Guide* by Jason Garman
 
 <!--
