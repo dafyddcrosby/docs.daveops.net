@@ -3,7 +3,7 @@ title: Bash
 ---
 
 ## Go immediately to $EDITOR
-ctrl-x, e
+<kbd>ctrl</kbd>-x, e
 
 ## Most commonly used commands
 ```bash
