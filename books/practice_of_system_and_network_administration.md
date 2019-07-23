@@ -12,10 +12,10 @@ Treat as much infrastructure as code as possible
 
 Identify process bottlenecks
 
-"Small changes need less approval. Big changes require a PowerPoint
-presentation, agreement from the team, and three levels of management. Small
-changes merit a casual suggestion that is approved with a nod. Pick the smallest
-increment of work that creates meaningful change."
+> Small changes need less approval. Big changes require a PowerPoint
+> presentation, agreement from the team, and three levels of management. Small
+> changes merit a casual suggestion that is approved with a nod. Pick the smallest
+> increment of work that creates meaningful change.
 
 Anything painful should be done more frequently - this is how automation gets
 written.

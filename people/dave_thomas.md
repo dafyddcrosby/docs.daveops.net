@@ -12,3 +12,5 @@ Agility - what to do
 Agility - how to do it
 * When faced with two or more alternatives that deliver roughly the same value,
   take the path that makes future changes easier
+
+> No rules are universal (except this one)

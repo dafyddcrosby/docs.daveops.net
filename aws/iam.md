@@ -57,3 +57,4 @@ different statements.
 * [Complete IAM Reference](https://iam.cloudonaut.io/)
 * <https://www1.amazonian.io/post/list-iam-actions/>
 * [ARNs and namespaces](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)
+* [IAM policy 'Version'](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html)
