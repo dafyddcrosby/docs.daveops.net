@@ -1,13 +1,14 @@
-# Launchd
-@macOS
+---
+title: Launchd
+tags: ["macOS"]
+---
 
-Get system resource limits
---------------------------
+```bash
+# Get system resource limits
+launchctl limit
+```
 
-	launchctl limit
-
-periodic
---------
+## periodic
 
 Called by launchd to execute shell scripts (very cron)
 
@@ -16,8 +17,7 @@ Called by launchd to execute shell scripts (very cron)
 /etc/periodic.conf - override the default periodic config
 
 
-Resources
----------
+## Resources
 
 <http://ss64.com/osx/launchctl.html>
 <https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/launchctl.1.html>
