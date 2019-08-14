@@ -30,6 +30,8 @@ journalctl -e
 journalctl -x
 # Show kernel logs of previous boot
 journalctl -k -b -1
+# Tail the log of a service
+journalctl -u SERVICENAME -f
 ```
 
 # Directories

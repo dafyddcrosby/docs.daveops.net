@@ -3,8 +3,7 @@ title: Git
 tags: ["version_control"]
 ---
 
-Create bare repository
-----------------------
+## Create bare repository
 
 ```bash
 mkdir -p project.git && cd project.git && git --bare init
@@ -17,23 +16,20 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 url = git.example.com:/path/project.git
 ```
 
-Checkout remote repository
---------------------------
+## Checkout remote repository
 
 ```bash
 git fetch
 git checkout -b local_branch_name remote/branch_name
 ```
 
-Sequential versioning
----------------------
+## Sequential versioning
 
 ```bash
 git rev-list --reverse HEAD | awk "/$(git log -n 1 --pretty="format:%h")/ {print NR}"
 ```
 
-Reset git to a specific commit
-------------------------------
+## Reset git to a specific commit
 
 ```bash
 git reset [hash]
@@ -48,8 +44,7 @@ If you just need to amend last commit,
 git commit --amend
 ```
 
-Handy hooks
------------
+## Handy hooks
 
 ### Push to website on git push
 
@@ -60,23 +55,20 @@ on server, put this in ``hooks/post-receive``
 GIT_WORK_TREE=/path/to/www.example.org git checkout -f
 ```
 
-Push branch to remote server
-----------------------------
+## Push branch to remote server
 
 ```bash
 git push origin branch_name
 ```
 
-Delete remote branch
---------------------
+## Delete remote branch
 
 ```bash
 git push origin :branch_to_delete
 git branch -d branch_to_delete
 ```
 
-Tagging
--------
+## Tagging
 
 ```bash
 git tag  # list tags
@@ -86,8 +78,7 @@ git push --tags  # push tags to remote
 git checkout v1.0 # Check out tag 'v1.0'
 ```
 
-Stashing
---------
+## Stashing
 
 ```bash
 git stash list  # list stashes
@@ -98,8 +89,7 @@ git stash drop <stash>  # delete specified stash
 git stash clear  # delete all stashes
 ```
 
-Add remote branch
------------------
+## Add remote branch
 
 ```bash
 git remote add upstream <git://github.com/user/repo.git>
