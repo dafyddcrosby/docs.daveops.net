@@ -13,12 +13,30 @@ title: Common Lisp
 ; basic function
 (defun divisible-by-3 (n)
   (= (mod n 3) 0))
+
+; emit to STDOUT
+(format t "hello world")
 ```
 
-## Compile a file
+## Source files
 
 ```common-lisp
+; load a file
+(load "file.lisp")
+
+; compile a file
 (compile-file "file.lisp")
+```
+
+## Property lists
+
+```common-lisp
+; create a plist
+(list :first "frank" :last "sinatra")
+
+; get a value from the plist
+(getf '(:first "frank" :last "sinatra") :first)
+; returns "frank"
 ```
 
 ## Format directives
@@ -56,3 +74,19 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 ;; mkdir -p
 (ensure-directories-exist "/path/to/file")
 ```
+
+## Resources
+* [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+
+<!--TODO
+
+* is there any effort to update the Hyperspec?
+* generate Lisp reading list. Start with 1.3 in the Hyperspec?
+
+defun &rest, &optional, etc
+
+writing macros
+
+look up *query-io* global variable
+
+-->
