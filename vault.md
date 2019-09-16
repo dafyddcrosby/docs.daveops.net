@@ -15,6 +15,8 @@ vault kv put foo/bar hello=world
 vault kv get foo/bar
 # specific field
 vault kv get -field=hello foo/bar
+# Get path help
+vault path-help -h
 ```
 
 ## Environment Variables
