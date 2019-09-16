@@ -1,4 +1,5 @@
 # GitHub
-Created Friday 22 September 2017
 
+## Get Atom feed of file changes
 
+https://github.com/user/repo/commits/master/path/to/file.atom
