@@ -1,7 +1,4 @@
 # production ready
-:date: 2016-5-16
-:modified: 2017-03-17
-@mysql
 
 MySQL - Production Ready
 ========================

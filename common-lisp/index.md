@@ -76,6 +76,8 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 ```
 
 ## Resources
+
+* [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
 * [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 <!--TODO
