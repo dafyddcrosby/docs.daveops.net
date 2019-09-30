@@ -30,4 +30,7 @@ binding.pry
 ```
 # get list of commands
 repl> help
+
+# quit program
+repl> !!!
 ```
