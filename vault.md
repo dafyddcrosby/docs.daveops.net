@@ -28,6 +28,10 @@ vault path-help -h
 ```bash
 # start a dev server
 vault server -dev
+
+# initialize a repo, generate a root token
+# NOTE - you should *only* use a root token for initial setup/emergencies
+vault operator init -recovery-shares=1 -recovery-threshold=1
 ```
 
 ## Links
