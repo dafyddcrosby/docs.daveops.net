@@ -12,3 +12,11 @@ Uncomment the /usr/libexec/getty console line in ``/etc/ttys``
 arch
 lipo
 ```
+
+# Record a terminal session
+
+```bash
+script -r
+# do whatever, then exit
+script -p typescript
+```
