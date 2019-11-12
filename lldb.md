@@ -1,5 +1,6 @@
-# LLDB
-Created Friday 15 September 2017
+---
+title: LLDB
+---
 
 [LLDB <-> GDB Cheatsheet](https://lldb.llvm.org/lldb-gdb.html)
 
@@ -7,5 +8,3 @@ Created Friday 15 September 2017
 |---------|------------------------------|
 | env     | set environment variable     |
 | r ARGS  | run program (with arguments) |
-
-
