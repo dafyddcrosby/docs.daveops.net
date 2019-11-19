@@ -5,21 +5,21 @@ tags: ["init", "Linux", "Red Hat"]
 
 # systemctl
 
-| Command                        | Notes                                                                                    |
-|--------------------------------|------------------------------------------------------------------------------------------|
-| systemctl                      | List services                                                                            |
-| start SERVICE                  | Used to start a service (not reboot persistent)                                          |
-| stop SERVICE                   | Used to stop a service (not reboot persistent)                                           |
-| restart SERVICE                | Used to stop and then start a service                                                    |
-| reload SERVICE                 | When supported, reloads the config file without interrupting pending operations          |
-| condrestart SERVICE            | Restarts if the service is already running                                               |
-| status SERVICE                 | Tells whether a service is currently running                                             |
-| enable SERVICE                 | Turn the service on, for start at next boot, or other trigger                            |
-| disable SERVICE                | Turn the service off for the next reboot, or any other trigger                           |
-| is-enabled SERVICE             | Used to check whether a service is configured to start or not in the current environment |
-| list-unit-files --type=service | Print a table of services that lists which runlevels each is configured on or off        |
-| daemon-reload                  | Used when you create a new service file or modify any configuration                      |
-| list-dependencies              | Show dependency tree of a target                     |
+| Command                          | Notes                                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------------------ |
+| systemctl                        | List services                                                                              |
+| start SERVICE                    | Used to start a service (not reboot persistent)                                            |
+| stop SERVICE                     | Used to stop a service (not reboot persistent)                                             |
+| restart SERVICE                  | Used to stop and then start a service                                                      |
+| reload SERVICE                   | When supported, reloads the config file without interrupting pending operations            |
+| condrestart SERVICE              | Restarts if the service is already running                                                 |
+| status SERVICE                   | Tells whether a service is currently running                                               |
+| enable SERVICE                   | Turn the service on, for start at next boot, or other trigger                              |
+| disable SERVICE                  | Turn the service off for the next reboot, or any other trigger                             |
+| is-enabled SERVICE               | Used to check whether a service is configured to start or not in the current environment   |
+| list-unit-files --type=service   | Print a table of services that lists which runlevels each is configured on or off          |
+| daemon-reload                    | Used when you create a new service file or modify any configuration                        |
+| list-dependencies                | Show dependency tree of a target                                                           |
 
 # journalctl
 
@@ -46,12 +46,19 @@ To change the runlevel at boot, add the following to the kernel arguments, e.g.
 
 To change the runlevel in a running system, `systemctl isolate rescue.target`
 
-| target | desc |
-| poweroff.target | halt/shut off system |
-| rescue.target | single user mode |
+| target            | desc                     |
+| ---               | ---                      |
+| poweroff.target   | halt/shut off system     |
+| rescue.target     | single user mode         |
 | multi-user.target | normal startup of system |
-| graphical.target | graphical startup |
-| reboot.target | restart system |
+| graphical.target  | graphical startup        |
+| reboot.target     | restart system           |
+
+# Units
+
+| key         | value                                                     |
+| ---         | ---                                                       |
+| Environment | Space separated key-value pairs for environment variables |
 
 # Mountpoints
 

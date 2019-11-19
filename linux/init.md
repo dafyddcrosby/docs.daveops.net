@@ -34,11 +34,11 @@ chkconfig --level 24 httpd on
 
 # LSB
 
-| level | desc |
-| 0 | halt |
-| 1 | single user mode |
-| 2 | multi user mode |
-| 3 | multi user mode w/ networking |
-| 4 | not used/user-definable |
-| 5 | runlevel 3 plus graphics |
-| 6 | reboot |
+| level | desc                          |
+| 0     | halt                          |
+| 1     | single user mode              |
+| 2     | multi user mode               |
+| 3     | multi user mode w/ networking |
+| 4     | not used/user-definable       |
+| 5     | runlevel 3 plus graphics      |
+| 6     | reboot                        |
