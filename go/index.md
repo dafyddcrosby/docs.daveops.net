@@ -28,6 +28,7 @@ GOOS=linux GOARCH=amd64 go build
 
 * <https://golang.org/>
 * [Language Specification](https://golang.org/ref/spec)
+* [Go Koans](https://github.com/cdarwin/go-koans)
 
 ## Looking into
 
