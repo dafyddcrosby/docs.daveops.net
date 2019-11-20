@@ -1,8 +1,10 @@
-# Operations checklist
+---
+title: Operations checklist
+---
+
 This is a checklist of things that I think an operations team needs to get to a
 pretty good state. By no means exhaustive, and a bit opinionated. What I think
 is most important is at the top, but really should try to have all of them.
-
 
 * Bug tracker/task manager
 	* How do you track WIP (work-in-progress) tasks?
@@ -20,7 +22,7 @@ is most important is at the top, but really should try to have all of them.
 
   It is extremely important to have everything patched and up-to-date. This
   includes all hardware, networking devices, you name it. You'll want to know
-  where and how to download the updates, how to install the updates, how to
-  back out of a bad update, and a rough estimate of how long an update
-  typically takes.
+  where and how to download the updates, how to install the updates, how to back
+  out of a bad update, and a rough estimate of how long an update typically
+  takes.
 
