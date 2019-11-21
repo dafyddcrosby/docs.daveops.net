@@ -3,14 +3,12 @@ title: Docker
 tags: ["containers"]
 ---
 
-Installing on Mac
------------------
+## Installing on Mac
 ```bash
 brew cask install docker
 ```
 
-CLI
----
+## CLI
 ```bash
 # list all containers
 docker ps -a
@@ -26,18 +24,20 @@ docker create TAGNAME
 docker run --name CONTAINERNAME -it
 ```
 
-Docker compose
---------------
+## Docker compose
 
-<https://docs.docker.com/compose/compose-file/>
+```bash
+docker-compose up
+```
 
-Docker stack
-------------
+* <https://docs.docker.com/compose/>
+* <https://docs.docker.com/compose/compose-file/>
+
+## Docker stack
 
 <https://docs.docker.com/engine/reference/commandline/stack/>
 
-Dockerfile syntax
------------------
+## Dockerfile syntax
 
 Must use ", not '
 

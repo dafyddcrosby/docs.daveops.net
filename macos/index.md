@@ -171,6 +171,12 @@ copy to ~/Library/Fonts
 sample PID -file OUTPUT
 ```
 
+## Time Machine snapshots
+```bash
+tmutil listlocalsnapshotdates
+tmutil deletelocalsnapshots DATE
+```
+
 ## Type accent marks
 
 * á — Option + e, a

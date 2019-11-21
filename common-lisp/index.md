@@ -16,6 +16,13 @@ title: Common Lisp
 
 ; emit to STDOUT
 (format t "hello world")
+
+; iterate over a list
+(dolist (x '(chunky bacon)) (print x))
+
+; expand a macro
+(macroexpand-1 '(dolist (x '(chunky bacon)) (print x)))
+
 ```
 
 ## Source files

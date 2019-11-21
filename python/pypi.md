@@ -1,16 +1,12 @@
-# PyPI
-@Python 
+---
+title: PyPI
+---
 
+* [List of classifiers](https://pypi.org/classifiers/)
 
-* <http://pypi.python.org/pypi?%3Aaction=list_classifiers>
+## Uploading a new package
 
-
-Uploading a new package
------------------------
-
-
-
- python setup.py register
- python setup.py sdist upload
-
-
+```bash
+python setup.py register
+python setup.py sdist upload
+```
