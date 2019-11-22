@@ -196,12 +196,6 @@ git log -S <search term>
 git checkout <HASH> -- ./path/to/file
 ```
 
-## GPG signing
-
-```bash
-git commit -S -m MESSAGE
-```
-
 ## Remove branches that have been merged to master
 
 ```bash
