@@ -3,19 +3,16 @@ title: JavaScript
 tags: ["JavaScript"]
 ---
 
-Sweet libraries
----------------
+## Sweet libraries
 
 <http://jquery.com>
 <http://code.google.com/p/iui/>
 
-Strict Mode
------------
+## Strict Mode
 
 [Strict Mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
-Classes
--------
+## Classes
 
 ```javascript
 function Building(x,y,z) {
@@ -41,3 +38,5 @@ var house = Building(20,20,10);
 
 ## Links
 * [JavaScript specification](https://tc39.github.io/)
+* [JavaScript deobfuscator](https://lelinhtinh.github.io/de4js/)
+* [Esoteric variant](http://www.jsfuck.com/)

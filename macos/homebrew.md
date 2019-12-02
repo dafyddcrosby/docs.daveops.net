@@ -24,5 +24,3 @@ brew install FORMULA.rb --build-from-source
 
 * <https://brew.sh/>
 * <http://formulae.brew.sh/>
-
-
