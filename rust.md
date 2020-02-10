@@ -32,6 +32,19 @@ fn main() {
 }
 ```
 
+## Cargo
+
+```bash
+# New project
+cargo new project_name --bin
+# Build a release
+cargo build --release
+# Test a build
+cargo check
+# Create documentation and open it in a browser
+cargo doc --open
+```
+
 ## Resources
 
 * <https://doc.rust-lang.org/core/>
@@ -40,3 +53,8 @@ fn main() {
 * <https://rust-lang.github.io/book/> / <https://doc.rust-lang.org/book/>
 * <https://doc.rust-lang.org/stable/rust-by-example/>
 * [vim plugin](https://github.com/rust-lang/rust.vim)
+
+<!-- TODO
+* Using rand crate 0.7+
+* rust fmt
+-->
