@@ -1,46 +1,46 @@
-# HTTP
-Telnet access
--------------
+---
+title: HTTP
+---
 
-	GET / HTTP/1.1
-	host: daveops.net
-	<line feed>
+##  Telnet access
 
+```
+GET / HTTP/1.1
+host: daveops.net
+<line feed>
+```
 
-Get request headers
--------------------
-	curl -i example.com
+## Get request headers
+```bash
+curl -i example.com
+```
 
-
-See if server uses gzip/deflate
--------------------------------
-	curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
-
+## See if server uses gzip/deflate
+```bash
+curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
+```
 
 HTTP response codes
 -------------------
 
 ### 1xx Informational
 
-
-* 100 Continue
-* 101 Switching Protocols
-* 102 Processing (WebDAV; RFC 2518)
-
+| 100 | Continue                      |
+| 101 | Switching Protocols           |
+| 102 | Processing (WebDAV; RFC 2518) |
 
 ### 2xx Success
 
-
-* 200 OK
-* 201 Created
-* 202 Accepted
-* 203 ~Non-Authoritative Information (since HTTP/1.1)
-* 204 No Content
-* 205 Reset Content
-* 206 Partial Content
-* 207 ~Multi-Status (WebDAV; RFC 4918)
-* 208 Already Reported (WebDAV; RFC 5842)
-* 226 IM Used (RFC 3229)
+| 200 | OK                                              |
+| 201 | Created                                         |
+| 202 | Accepted                                        |
+| 203 | ~Non-Authoritative Information (since HTTP/1.1) |
+| 204 | No Content                                      |
+| 205 | Reset Content                                   |
+| 206 | Partial Content                                 |
+| 207 | ~Multi-Status (WebDAV; RFC 4918)                |
+| 208 | Already Reported (WebDAV; RFC 5842)             |
+| 226 | IM Used (RFC 3229)                              |
 
 
 ### 3xx Redirection
