@@ -46,9 +46,54 @@ line vty 0 15
   transport input ssh
  ```
 
-### Enable SSH
-```ios
+### SSH
+```
+! Enable SSH
 hostname foo
 ip domain-name example.com
 crypto key generate rsa
+
+! Remove a key
+ip ssh pubkey-chain
+username NAME
+key-hash ssh-rsa HASH KEYNAME
 ```
+
+## SFP
+
+Get DOM
+```
+show hw-module subslot 0/1 transceiver 0 status
+```
+
+## factory reset switch
+
+Note - check `flash:` for any residual crap
+
+```
+erase nvram:
+delete flash:vlan.dat
+reload
+```
+
+also `write erase`
+
+## Reset port to default config
+
+in config mode:
+```
+default interface FastEthernet 1/0/1
+```
+
+## file system commands
+
+* dir
+* copy
+* show file information
+* show file systems
+* more
+* delete
+* pwd
+* cd
+* mkdir
+* rmdir
