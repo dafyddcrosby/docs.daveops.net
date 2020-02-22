@@ -1,7 +1,8 @@
-# iOS (Apple)
-View lifecycle
---------------
+---
+title: iOS (Apple)
+---
 
+## View lifecycle
 
 * viewDidLoad
 * viewWillAppear

@@ -9,10 +9,10 @@ If the function passes, the test passes
 ```rust
 #[test]
 fn this_tests_code(){
-	println!("");
-	if 1 == 0 {
-		fail!("This should never happen");
-	}
+  println!("");
+  if 1 == 0 {
+    fail!("This should never happen");
+  }
 }
 ```
 
@@ -58,6 +58,13 @@ cargo build --release
 cargo check
 # Create documentation and open it in a browser
 cargo doc --open
+```
+
+## rustc
+
+```bash
+# Build a library
+rustc --crate-type=lib thing.rs
 ```
 
 ## Resources

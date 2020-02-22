@@ -1,8 +1,10 @@
-# awk
-Get a specific column
----------------------
+---
+title: awk
+---
 
-	# print second column
-	awk '{print $2}'
+## Get a specific column
 
-
+```bash
+# print second column
+awk '{print $2}'
+```
