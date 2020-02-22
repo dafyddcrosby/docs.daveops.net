@@ -26,9 +26,24 @@ To compile the tests and replace main with test runner:
 
 ```rust
 fn main() {
-	let mut a = 1; // mut makes the value mutable
-	a = 2;
-	println!("{}", a);
+  let mut a = 1; // mut makes the value mutable
+  println!("{}", a);
+  a = 2;
+  println!("{}", a);
+
+  // shadowing
+  let x = 2;
+  let x = x + 2;
+
+  loop {
+    println!("simple loop");
+    break;
+  }
+
+  println!("easy as");
+  for number in 1..4 {
+    println!("{}", number);
+  }
 }
 ```
 
