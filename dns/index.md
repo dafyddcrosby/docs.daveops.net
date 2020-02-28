@@ -2,25 +2,26 @@
 title: DNS
 ---
 
-## Reverse lookup
+## Using dig
 
-``dig -x [ip addr]``
+```bash
+# Reverse lookup
+dig -x [ip addr]
+
+# get root servers
+dig NS com
+
+# Get nameserver glue records
+dig NS example.com @b.gtld-servers.net
+
+# Get SOA (serial, refresh, retry, expiry, minimum)
+dig +short example.com soa
+```
 
 ## Query name server for IP addresses
 
 ``nslookup [name] [dns server]``
 
-## Get nameserver glue records
-
-	# get root servers
-	dig NS com
-	# get glue records
-	dig NS example.com @b.gtld-servers.net
-
-
-## Get SOA (serial, refresh, retry, expiry, minimum)
-
-``dig +short example.com soa``
 
 ## Add Route53 subdomain to zone file
 

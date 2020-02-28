@@ -48,8 +48,9 @@ deny from all
 </Files>
 ```
 ## Prevent directory indexing
-
-	Options -Indexes
+```apache
+Options -Indexes
+```
 
 ## Adding user authentication
 ```apache

@@ -4,11 +4,15 @@ title: Firefox
 
 ## list of about: pages
 
-
   about:about
 
 <https://developer.mozilla.org/en-US/Firefox/The_about_protocol>
 
+## DNS-over-HTTP
+
+* https://support.mozilla.org/en-US/kb/firefox-dns-over-https
+* https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https
+* https://support.mozilla.org/en-US/kb/canary-domain-use-application-dnsnet
 
 ## Debug logging
 <https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/HTTP_logging>

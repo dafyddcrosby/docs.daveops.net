@@ -131,6 +131,11 @@ The kernel doesn't execute setuid scripts, only binaries. See the [UNIX
 FAQ](http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html) for reasons
 why.
 
+## Change the ulimits of a running process
+```bash
+prlimit --pid $PID --nofile=8192
+```
+
 ## Kernel resources
 
 * <https://kernel.org>
