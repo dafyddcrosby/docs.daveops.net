@@ -2,6 +2,10 @@
 title: Running an AS
 ---
 
+## Getting an ASN
+* https://www.arin.net/resources/guide/request/#autonomous-system-numbers-asns
+* https://www.arin.net/participate/policy/nrpm/#5-as-numbers
+
 ## Books
 * BGP Design and Implementation (Cisco Press)
 * BGP Table Growth

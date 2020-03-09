@@ -9,3 +9,6 @@ title: Sysadmin Life
 
 * Sleep is precious. Invest in a nice bed, keep light out of the room, keep caffeinated substance consumption to a minimum.
 * If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier - the most inconvenient time. Schedule accordingly.
+
+## Links
+* https://www.netmeister.org/blog/ops-lessons.html
