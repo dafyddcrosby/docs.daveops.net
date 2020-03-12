@@ -132,6 +132,7 @@ rustc --crate-type=lib thing.rs
 * <https://www.rust-lang.org/documentation.html>
 * <https://doc.rust-lang.org/stable/rust-by-example/>
 * [vim plugin](https://github.com/rust-lang/rust.vim)
+* https://rustacean.net/
 
 <!-- TODO
 * Using rand crate 0.7+

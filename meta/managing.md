@@ -54,5 +54,5 @@ Deming's "Plan, Do, Check, Act"
 
 * Start by listening. "How are you doing?" Don't go straight to business.
 * Explore perceptions. "How do you think you're doing?"
-* Legitimize emotions. They're feelings are valid.
+* Legitimize emotions. Their feelings are valid.
 * Don't let your own emotions cloud the message.

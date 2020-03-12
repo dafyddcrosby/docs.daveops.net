@@ -3,11 +3,10 @@ title: Django - admin mode
 tags: ["django"]
 ---
 
-Enabling admin mode
--------------------
+## Enabling admin mode
 
 * Uncomment "django.contrib.admin" in the ~INSTALLED_APPS setting.
-* ./manage.py syncdb
+* `./manage.py syncdb`
 * Uncomment admin lines in urls.py
 * Create admin.py in your app:
 
@@ -18,11 +17,11 @@ from app.models import Thing
 admin.site.register(Thing)
 ```
 
-Reset admin password w/o password reset
----------------------------------------
+## Reset admin password w/o password reset
 
-
- ./manage.py shell
+```bash
+./manage.py shell
+```
 
 ```python
 from django.contrib.auth.models import User
