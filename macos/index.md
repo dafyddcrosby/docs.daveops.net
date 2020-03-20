@@ -107,6 +107,11 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 /System/Library/CoreServices/Applications/Wireless\ Diagnostics.app/Contents/MacOS/Wireless\ Diagnostics
 ```
 
+```bash
+# List APs
+/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+```
+
 ## Virtual Memory Stats
 ```bash
 vmstat
@@ -198,3 +203,8 @@ tmutil deletelocalsnapshots DATE
 * « — Option + \
 * » — Shift + Option + \
 * quotation dash (—) — Shift + Option + -
+
+## Nice graphical diff
+```bash
+opendiff foo bar
+```

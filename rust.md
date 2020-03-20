@@ -25,8 +25,11 @@ To compile the tests and replace main with test runner:
 ## Syntax cheatsheet
 
 ```rust
+//! You can create a description for your crate using two slashes and an exclamation mark
+
 // Add debugging info to struct
 // Trait is std::fmt::Debug
+/// Documentation comments use three slashes and Markdown
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -123,6 +126,36 @@ cargo run
 rustc --crate-type=lib thing.rs
 ```
 
+## Cross-compilation
+
+* https://blog.rust-lang.org/2016/05/13/rustup.html
+* https://sigmaris.info/blog/2019/02/cross-compiling-rust-on-mac-os-for-an-arm-linux-router/
+
+```bash
+rustup target list
+rustup target add x86_64-unknown-linux-musl
+cargo build --target x86_64-unknown-linux-musl
+```
+
+If you're working on Mac and compiling for Linux, you'll also want:
+```bash
+brew install x86_64-elf-binutils
+```
+
+And using that specific linker:
+```toml
+[target.x86_64-unknown-linux-musl]
+linker = "x86_64-elf-ld"
+```
+
+## Nightly rust
+```bash
+# Install nightly toolchain
+rustup toolchain install nightly
+# Use nightly toolchain by default
+rustup default nightly
+```
+
 ## Resources
 
 * [Rust Programming Language Book](https://doc.rust-lang.org/stable/book/)
@@ -144,4 +177,5 @@ rustc --crate-type=lib thing.rs
 * The ? operator (ch 9.2)
 * Traits still kind of hand-wavy (10.2)
 * Lifetimes (10.3)
+* Closures (13)
 -->
