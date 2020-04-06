@@ -161,3 +161,8 @@ Keep a bug database
 Even something as simple as BUGS.txt eliminates bus factor, and makes it
 easier to approach a project months later.
 
+## Keep a changelog
+
+This doesn't have to be fancy, and there's [thoughtful guidelines you can
+follow](https://keepachangelog.com/en/1.0.0/). Just remember that this is for
+humans, not machines.
