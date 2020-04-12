@@ -32,7 +32,7 @@ end
 
 ```ruby
 class Thing
-  attr_accessort :foo
+  attr_accessor :foo
   def initialize(foo = 0)
     @foo = foo
   end
