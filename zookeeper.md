@@ -1,6 +1,5 @@
 ---
 title: Zookeeper
-layout: page
 ---
 
 by default listens on port 2181/tcp
