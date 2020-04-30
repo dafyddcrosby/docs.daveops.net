@@ -12,3 +12,4 @@ defaults:
 
 exclude:
   - assets/
+  - vendor/
