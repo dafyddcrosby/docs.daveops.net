@@ -1,22 +1,18 @@
-# reStructuredText
-Convert rst to HTML
--------------------
+---
+title: reStructuredText
+---
 
+## Convert rst to HTML
 
+```bash
+rst2html FILE ...
+```
 
-  rst2html FILE ...
+## Syntax cheatsheet
 
-Syntax cheatsheet
------------------
-
-
-Note - this might make a bit more sense by checking the blog source ;-)
-
-* ☐ TODO table
-
-
+```rst
 *italics*
 **bold**
 ``fixed-space literal``
 .. comment
-
+```
