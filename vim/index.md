@@ -39,3 +39,6 @@ vim --startuptime start.log
 
 ## Omnicompletion
 <C-X><C-O>
+
+## Links
+* http://www.vimregex.com/
