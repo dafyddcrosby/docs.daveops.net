@@ -20,12 +20,18 @@ radare2 FILE
 | aa         | analyze "all"  (good for most debugging)  |
 | aaa        | analyze all                               |
 | afl        | analyze function list                     |
+| afn name [addr] | rename function [at address] |
+| afvn name | rename argument/local |
 | fs FLAG    | change to different flagspace             |
 | f          | show flags in flagspace                   |
 | iz         | list strings in data sections             |
 | izz        | search for all strings in binary          |
 | axt [addr] | find data/code references to this address |
 | pdf        | print disassemble function                |
+
+### Info
+
+| ie | display entrypoint
 
 Interesting offsets (sections, functions, symbols, etc) are called "flags"
 

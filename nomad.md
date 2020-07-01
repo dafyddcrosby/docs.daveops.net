@@ -13,6 +13,9 @@ nomad server members
 
 # Start a dev server
 sudo nomad agent -dev
+
+# run a job
+nomad run JOBNAME.nomad
 ```
 
 Default web UI port is 4646
