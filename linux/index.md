@@ -5,15 +5,17 @@ tags: ["Linux"]
 
 ## force filesystem check on next boot
 
-
- touch /forcefsck
+```bash
+touch /forcefsck
+```
 
 ## Socket programming with /dev/tcp
 
-
- exec 3<>/dev/tcp/www.google.com/80
- echo -e "GET / HTTP/1.1\n\n" >&3
- cat <&3
+```bash
+exec 3<>/dev/tcp/www.google.com/80
+echo -e "GET / HTTP/1.1\n\n" >&3
+cat <&3
+```
 
 ## See what services are using a particular port
 Run as root:
@@ -30,13 +32,18 @@ or
 
 ## See if hard drive is on its last legs
 
-
- smartctl -H /dev/sda
+```bash
+# Get all health info
+smartctl -a /dev/sda
+# Run tests that take ~10m
+smartctl -t short /dev/sda
+```
 
 ## Get reboot/shutdown history
 
-
- last -x
+```bash
+last -x
+```
 
 ## Date utility
 
@@ -142,5 +149,3 @@ prlimit --pid $PID --nofile=8192
 * <https://lwn.net/>
 * <https://kernelnewbies.org/>
 * [Kernel syscalls](https://syscalls.kernelgrok.com/)
-
-
