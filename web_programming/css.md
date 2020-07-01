@@ -104,3 +104,4 @@ width: 939px;
 
 * <https://flexboxfroggy.com/>
 * <http://cssgridgarden.com/>
+* <https://css-tricks.com/snippets/css/complete-guide-grid/>

@@ -12,15 +12,24 @@ RewriteRule . - [L]
 
 ### Do a 301 redirect
 
-	RewriteCond %{REQUEST_FILENAME} /tascam688
-	RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
-	RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
+```apache
+RewriteCond %{REQUEST_FILENAME} /tascam688
+RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
+RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
+```
+
+### Redirect all traffic to another domain
+```
+RedirectMatch 301 ^(.*)$ https://example.org
+```
 
 ### Deny hotlinking of images
 
-	RewriteCond %{HTTP_REFERER} !^$
-	RewriteCond %{HTTP_REFERER} !^http://(www\.)?lonesomecosmonaut.com/.*$ [NC]
-	RewriteRule .(gif|jpg|bmp)$ - [F]
+```apache
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?lonesomecosmonaut.com/.*$ [NC]
+RewriteRule .(gif|jpg|bmp)$ - [F]
+```
 
 ## mod_alias
 

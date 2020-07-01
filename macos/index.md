@@ -208,3 +208,10 @@ tmutil deletelocalsnapshots DATE
 ```bash
 opendiff foo bar
 ```
+
+## Custom keyboard layouts
+`~/Library/Keyboard Layouts`
+
+https://web.archive.org/web/20140812170917/https://developer.apple.com/library/mac/documentation/TextFonts/Reference/TextInputSourcesReference/Reference/reference.html
+https://web.archive.org/web/20160318180309/https://developer.apple.com/library/mac/technotes/tn2056/_index.html
+

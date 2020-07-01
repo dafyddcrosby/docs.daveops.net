@@ -61,6 +61,8 @@ fn main() {
   let x = 2;
   let x = x + 2;
 
+  eprinln!("Use this to print to stderr");
+
   loop {
     println!("simple loop");
     break;
@@ -169,10 +171,6 @@ rustup default nightly
 
 <!-- TODO
 * Using rand crate 0.7+
-* rust fmt
-* enums are a little fuzzy - especially using impl on them
-* revisit how Option works (ch 6.1)
-* match keyword seems conceptually similar to switch in other langs
 * crate paths/files (ch 7.5)
 * The ? operator (ch 9.2)
 * Traits still kind of hand-wavy (10.2)
