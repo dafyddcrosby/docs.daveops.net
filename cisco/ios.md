@@ -8,17 +8,18 @@ title: Cisco IOS
 | Enable        | Allows privileged access to the equipment |
 | Configuration | Allows privileged access to the equipment |
 
-| Command                          | Description                       |
-| --                               | --                                |
-| [command] ?                      | help mode                         |
-| enable                           | enter Enable (privileged) mode    |
-| configure terminal               | Move to global configuration mode |
-| reload                           | reboot IOS                        |
-| show running-config              | Get current config                |
-| show startup-config              | Get startup config                |
-| erase startup-config             | erase startup-config file         |
-| show mac address-table [dynamic] | show the MAC address table        |
-| show mac address-table count     | get MAC address space available   |
+| Command                            | Description                           |
+| --                                 | --                                    |
+| [command] ?                        | help mode                             |
+| enable                             | enter Enable (privileged) mode        |
+| configure terminal                 | Move to global configuration mode     |
+| reload                             | reboot IOS                            |
+| show running-config                | Get current config                    |
+| show startup-config                | Get startup config                    |
+| copy running-config startup-config | Save running config as startup config |
+| erase startup-config               | erase startup-config file             |
+| show mac address-table [dynamic]   | show the MAC address table            |
+| show mac address-table count       | get MAC address space available       |
 
 | Command     | Description              |
 | --------    | ----------               |
