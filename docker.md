@@ -43,7 +43,7 @@ Must use ", not '
 
 ```dockerfile
 FROM image_name:image_tag
-MAINTAINER person <person@example.org>
+LABEL maintainer="person <person@example.org>"
 RUN install_things
 CMD ["executable", "--to", "--run"]
 ```
