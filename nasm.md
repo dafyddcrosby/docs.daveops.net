@@ -9,4 +9,6 @@ nasm -hf
 nasm -a ...
 # assemble to ELF64
 nasm -f elf64 example.asm
+# assemble to macho64 (macOS)
+nasm -f macho64 example.asm
 ```
