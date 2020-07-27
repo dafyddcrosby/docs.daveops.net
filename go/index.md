@@ -8,8 +8,21 @@ title: Go
 package main
 
 import(
-        "fmt"
+	"fmt"
+	"os"
+	"bufio"
 )
+
+func read_file(path string) string {
+        f, err := os.Open(filearg)
+        if err != nil {
+                panic(err)
+        }
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+}
 
 func main() {
         fmt.Println("hello world")
