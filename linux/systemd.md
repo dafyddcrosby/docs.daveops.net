@@ -34,6 +34,15 @@ journalctl -k -b -1
 journalctl -u SERVICENAME -f
 ```
 
+# hostnamectl
+
+```bash
+# Set hostname
+hostnamectl set-hostname HOSTNAME
+# F32 and below to restart multicast DNS:
+systemctl restart avahi-daemon.service
+```
+
 # Directories
 
 * /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this

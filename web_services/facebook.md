@@ -1,5 +1,16 @@
-# Facebook
-<https://developers.facebook.com>
+---
+title: Facebook
+---
 
-<https://developers.facebook.com/tools/debug>
+## Graph API
+
+```
+# Get details of calling user
+/me
+```
+
+## Links
+
+* <https://developers.facebook.com>
+* <https://developers.facebook.com/tools/debug>
 

@@ -71,6 +71,10 @@ thing --output >(gzip > output.txt.gz)
 ```bash
 fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
+if [ -e file ] ; then
+	echo "file exists"
+fi
+
 case expression in
        pattern1 )
        	statements ;;
