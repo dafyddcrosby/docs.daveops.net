@@ -10,6 +10,7 @@ The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and 
 <!-- TODO cross-reference -->
 
 Start address | End address | Description                     | 32X SH-2 address
+---           | ---         | ---                             | ----
 0x000000      | 0x3FFFFF    | Cartridge ROM/RAM               | 0x2000000-0x23FFFFF
 0x400000      | 0x7FFFFF    | Reserved (used by the Mega-CD and 32X)
 0x800000      | 0x9FFFFF    | Reserved (used by the 32X)
@@ -70,6 +71,7 @@ Start address | End address | Description                     | 32X SH-2 address
 <!-- TODO cross-reference -->
 
 Start | End   | Description
+--- | --- | ---
 0000h | 1FFFh | Z80 RAM
 2000h | 3FFFh | Reserved
 4000h |       | M2612 A0
@@ -85,12 +87,13 @@ Start | End   | Description
 
 ## SegaCD / MegaCD
 
-Start address 	| End address 	| Description
-0x000000 	| 0x01FFFF 	| MegaCD BIOS ROM
-0x020000 	| 0x03FFFF 	| MegaCD "Program RAM" Bank Access
-0x200000 	| 0x23FFFF 	| MegaCD "WORD RAM"
-0xA12000 	| 0xA120XX 	| MegaCD "Gate Array"
-0xFFFD00 	| 0xFFFDFF 	| MegaCD Interrupt/Exception vectors 
+Start address | End address | Description
+---           | ---         | ---
+0x000000      | 0x01FFFF    | MegaCD BIOS ROM
+0x020000      | 0x03FFFF    | MegaCD "Program RAM" Bank Access
+0x200000      | 0x23FFFF    | MegaCD "WORD RAM"
+0xA12000      | 0xA120XX    | MegaCD "Gate Array"
+0xFFFD00      | 0xFFFDFF    | MegaCD Interrupt/Exception vectors
 
 ## Links 
 
