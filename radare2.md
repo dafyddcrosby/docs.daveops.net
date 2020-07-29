@@ -19,6 +19,7 @@ key | thing
 V   | visual mode
 VV  | visual graph
 c   | cursor mode
+C   | change color
 
 
 ### Analysis
