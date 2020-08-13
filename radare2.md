@@ -74,6 +74,7 @@ command       | desc
 ... >file     | print to a file
 ... \         | wc | pipe output to shell command
 ... ~ pattern | use internal grep
+ecs           | show terminal colors
 
 ## Resources
 

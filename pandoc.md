@@ -2,6 +2,14 @@
 title: pandoc
 ---
 
+## Markdown footnotes
+
+```
+I need a footnote[^footnote]
+
+[^footnote]: This footnote explains why
+```
+
 ## Making slides
 
 ```bash
