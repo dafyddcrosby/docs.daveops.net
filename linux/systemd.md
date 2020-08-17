@@ -3,25 +3,25 @@ title: SystemD
 tags: ["init", "Linux", "Red Hat"]
 ---
 
-# systemctl
+## systemctl
 
-| Command                          | Notes                                                                                      |
-| -------------------------------- | ------------------------------------------------------------------------------------------ |
-| systemctl                        | List services                                                                              |
-| start SERVICE                    | Used to start a service (not reboot persistent)                                            |
-| stop SERVICE                     | Used to stop a service (not reboot persistent)                                             |
-| restart SERVICE                  | Used to stop and then start a service                                                      |
-| reload SERVICE                   | When supported, reloads the config file without interrupting pending operations            |
-| condrestart SERVICE              | Restarts if the service is already running                                                 |
-| status SERVICE                   | Tells whether a service is currently running                                               |
-| enable SERVICE                   | Turn the service on, for start at next boot, or other trigger                              |
-| disable SERVICE                  | Turn the service off for the next reboot, or any other trigger                             |
-| is-enabled SERVICE               | Used to check whether a service is configured to start or not in the current environment   |
-| list-unit-files --type=service   | Print a table of services that lists which runlevels each is configured on or off          |
-| daemon-reload                    | Used when you create a new service file or modify any configuration                        |
-| list-dependencies                | Show dependency tree of a target                                                           |
+Command                        | Notes
+---                            | ---
+systemctl                      | List services
+start SERVICE                  | Used to start a service (not reboot persistent)
+stop SERVICE                   | Used to stop a service (not reboot persistent)
+restart SERVICE                | Used to stop and then start a service
+reload SERVICE                 | When supported, reloads the config file without interrupting pending operations
+condrestart SERVICE            | Restarts if the service is already running
+status SERVICE                 | Tells whether a service is currently running
+enable SERVICE                 | Turn the service on, for start at next boot, or other trigger
+disable SERVICE                | Turn the service off for the next reboot, or any other trigger
+is-enabled SERVICE             | Used to check whether a service is configured to start or not in the current environment
+list-unit-files --type=service | Print a table of services that lists which runlevels each is configured on or off
+daemon-reload                  | Used when you create a new service file or modify any configuration
+list-dependencies              | Show dependency tree of a target
 
-# journalctl
+## journalctl
 
 ```bash
 # Jump to the end of the log
@@ -34,7 +34,7 @@ journalctl -k -b -1
 journalctl -u SERVICENAME -f
 ```
 
-# hostnamectl
+## hostnamectl
 
 ```bash
 # Set hostname
@@ -43,37 +43,40 @@ hostnamectl set-hostname HOSTNAME
 systemctl restart avahi-daemon.service
 ```
 
-# Directories
+## Directories
 
 * /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this
   service is configured on or off
 
-# Runlevels
+## Runlevels
 
 To change the runlevel at boot, add the following to the kernel arguments, e.g.
 `systemd.unit=rescue.target`
 
 To change the runlevel in a running system, `systemctl isolate rescue.target`
 
-| target            | desc                     |
-| ---               | ---                      |
-| poweroff.target   | halt/shut off system     |
-| rescue.target     | single user mode         |
-| multi-user.target | normal startup of system |
-| graphical.target  | graphical startup        |
-| reboot.target     | restart system           |
+target            | desc
+---               | ---
+poweroff.target   | halt/shut off system
+rescue.target     | single user mode
+multi-user.target | normal startup of system
+graphical.target  | graphical startup
+reboot.target     | restart system
 
-# Units
+## Units
 
-| key         | value                                                     |
-| ---         | ---                                                       |
-| Environment | Space separated key-value pairs for environment variables |
+key         | value
+---         | ---
+Environment | Space separated key-value pairs for environment variables
 
-# Mountpoints
+* [Directives](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
+* [systemd unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
+
+## Mountpoints
 
 * <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>
 
-# Links
+## Links
 
 * <https://cgit.freedesktop.org/systemd/systemd/>
 * <https://www.freedesktop.org/software/systemd/man/index.html>

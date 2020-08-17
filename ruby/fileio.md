@@ -1,19 +1,21 @@
-# FileIO
-@Ruby
+---
+title: Ruby - File IO
+---
 
-Write to a file
----------------
+## Write to a file
 
-	fp = File.open(filename, mode)
-	fp.write('bloop')
-	fp.close
+```ruby
+fp = File.open(filename, mode)
+fp.write('bloop')
+fp.close
+```
 
-Read individual chars
----------------------
+## Read individual chars
 
-	fp = File.open(filename, mode)
-	fp.each_char do |char|
-	      puts char
-	end
-	fp.close
-
+```ruby
+fp = File.open(filename, mode)
+fp.each_char do |char|
+      puts char
+end
+fp.close
+```

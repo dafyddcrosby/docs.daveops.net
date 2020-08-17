@@ -63,4 +63,6 @@ Inserting ``debugger;`` in your code sets a breakpoint
 | scripts | List all loaded scripts
 | version | Display V8's version
 
+## Links
 
+* http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm
