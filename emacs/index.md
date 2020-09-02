@@ -4,20 +4,25 @@ title: Emacs
 
 ## packages
 
-| ks                | desc                                                       |
-|-------------------|------------------------------------------------------------|
-| M-x list-packages | lists installed packages and packages available from repos |
-| C-h P <package>   | describe package                                           |
+keystrokes                   | desc
+---                          | ---
+M-x list-packages            | lists installed packages and packages available from repos
+M-x package-refresh-contents | Update package list
+C-h P <package>              | describe package
+
+i | mark for installation
+u | unmark
+x | execute action on package
 
 ## misc
 
-| ks                   | desc               |
-|----------------------|--------------------|
-| C-h C-t              | show Emacs TODO    |
-| C-h m                | show module info   |
-| M-x telnet           | telnet to a server |
-| M-x report-emacs-bug | report a bug       |
-| M-x calc             | calc mode          |
+keystrokes           | desc
+---                  | ---
+C-h C-t              | show Emacs TODO
+C-h m                | show module info
+M-x telnet           | telnet to a server
+M-x report-emacs-bug | report a bug
+M-x calc             | calc mode
 
 ## macOS daemon
 

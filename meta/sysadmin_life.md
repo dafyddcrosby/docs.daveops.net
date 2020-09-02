@@ -10,5 +10,10 @@ title: Sysadmin Life
 * Sleep is precious. Invest in a nice bed, keep light out of the room, keep caffeinated substance consumption to a minimum.
 * If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier - the most inconvenient time. Schedule accordingly.
 
+## Staying current
+
+* [League of Professional System Administrators](https://lopsa.org/)
+* [System Administration Book of Knowledge](http://sabok.org/)
+
 ## Links
 * https://www.netmeister.org/blog/ops-lessons.html
