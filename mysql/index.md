@@ -3,24 +3,23 @@ title: MySQL
 tags: ["databases", "MySQL"]
 ---
 
-Monitor queries
----------------
-	watch -n 1 mysqladmin --user=<user> --password=<password> processlist
+## Monitor queries
+```bash
+watch -n 1 mysqladmin --user=<user> --password=<password> processlist
+```
 
+## List all databases
+```sql
+show databases;
+```
 
-List all databases
-------------------
-	show databases;
+## List all tables
+```sql
+show tables;
+```
 
+## Describe table contents
 
-List all tables
----------------
-
-	show tables;
-
-
-Describe table contents
------------------------
 ```sql
 -- Column names
 describe TABLE_NAME;
@@ -30,40 +29,38 @@ show create table TABLE_NAME;
 show index from TABLE_NAME;
 ```
 
-Dump the database schema
-------------------------
+## Dump the database schema
 
-	mysqldump --all-databases --no-data
-	# --skip-add-drop-table 
-	# --skip-comments
+```bash
+mysqldump --all-databases --no-data
+# --skip-add-drop-table
+# --skip-comments
+```
 
+## Server-side help
 
-Server-side help
-----------------
+```
+-- contents
+help contents
+```
 
-	-- contents
-	help contents
+## Check if a server is up
 
+```bash
+mysqladmin ping
+```
 
-Check if a server is up
------------------------
+## Create a database
 
-
- mysqladmin ping
-
-
-Create a database
------------------
 ```sql
 create database DATABASE_NAME;
 ```
 
-Import database
----------------
+## Import database
 
-
-
- mysql -u username -p<password> database < filename.sql
+```bash
+mysql -u username -p<password> database < filename.sql
+```
 
 Export database
 ---------------
@@ -148,18 +145,18 @@ See running processes
 	select * from information_schema.processlist where user='foobar';
 
 
-Isolation Levels
-----------------
+## Isolation Levels
 
-| Isolation level  | dirty reads possible | nonrepeatable reads possible | phantom reads possible | locking reads |
-|------------------|----------------------|------------------------------|------------------------|---------------|
-| READ UNCOMMITTED | t                    | t                            | t                      | f             |
-| READ COMMITTED   | f                    | t                            | t                      | f             |
-| REPEATABLE READ  | f                    | f                            | t                      | f             |
-| SERIALIZABLE     | f                    | f                            | f                      | t             |
+Isolation level  | dirty reads possible | nonrepeatable reads possible | phantom reads possible | locking reads
+---              | ---                  | ---                          | ---                    | ---
+READ UNCOMMITTED | t                    | t                            | t                      | f
+READ COMMITTED   | f                    | t                            | t                      | f
+REPEATABLE READ  | f                    | f                            | t                      | f
+SERIALIZABLE     | f                    | f                            | f                      | t
 
-	SET SESSION TRANSACTION ISOLATION LEVEL [level];
-
+```
+SET SESSION TRANSACTION ISOLATION LEVEL [level];
+```
 
 Autocommit
 ----------

@@ -47,3 +47,11 @@ LABEL maintainer="person <person@example.org>"
 RUN install_things
 CMD ["executable", "--to", "--run"]
 ```
+
+## Logs
+
+```bash
+docker logs <CONTAINER>
+```
+
+See also `/var/lib/docker/containers/<ID>/<ID>-json.log`
