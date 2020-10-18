@@ -2,6 +2,13 @@
 title: Phones
 ---
 
+## Systems
+
+https://en.wikipedia.org/wiki/Signalling_System_No._7
+
+
+## Numbers
+
 TODO - verify
 
 00 - International operator

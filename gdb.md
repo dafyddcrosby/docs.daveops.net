@@ -1,4 +1,6 @@
-# GDB
+---
+title: GDB
+---
 
 * ☐ clean up
 
@@ -33,19 +35,19 @@
 | info registers             | show registers (excluding floating point)               |
 | macro expand *macro*       | expands a macro (requires -gdwarf-2 -g3 compiler flags) |
 
-| code | print type   |
-|------|--------------|
-| x    | hexadecimal  |
-| u    | unsigned int |
-| d    | signed int   |
+code | print type
+--- | ---
+x    | hexadecimal
+u    | unsigned int
+d    | signed int
 
-Check a core dump
+## Check a core dump
 
+```bash
+gdb executable coredump
+```
 
-
- gdb executable coredump
-
-Extensions
+## Extensions
 
 <http://rr-project.org/>
 

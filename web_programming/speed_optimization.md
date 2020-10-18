@@ -1,18 +1,18 @@
-# Speed Optimization
-Created Tuesday 10 July 2018
+---
+title: Speed Optimization
+---
 
-
-* Use the latest language/server/platform/library versions?
 * Enable caching
 * Minify your resources
-* Optimiize your images
+* Optimize your images
 * Check out your database
 	* When was it last vacuumed?
 * Use a CDN
+* Consider preloading
 
+* Use the latest language/server/platform/library versions?
 
-Links
------
+## Links
 
 * <https://www.dreamhost.com/blog/optimize-wordpress-website-speed/>
 

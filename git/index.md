@@ -202,13 +202,19 @@ git checkout <HASH> -- ./path/to/file
 git branch --merged | grep -v \* | xargs git branch -D
 ```
 
-Signing a commit
-----------------
+## Signing a commit
 
 In the commit message
 
 ```
 Signed-off-by: David Crosby <email@example.com>
+```
+
+## Objects
+
+```bash
+# See all objects
+git rev-list --objects --all
 ```
 
 ## zlol
