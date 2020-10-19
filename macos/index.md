@@ -5,16 +5,16 @@ tags: ["macOS"]
 
 ## Keyboard shortcuts
 
-| Shortcut              | Desc                                    |
-|-----------------------|-----------------------------------------|
-| cmd + option + escape | bring up 'force quit applications' menu |
-| cmd + shift + 3       | take screenshot of all screens          |
-| cmd + shift + 4       | take a partial screenshot               |
-| cmd + shift + eject   | lock screen                             |
+Shortcut              | Desc
+---                   | ---
+cmd + option + escape | bring up 'force quit applications' menu
+cmd + shift + 3       | take screenshot of all screens
+cmd + shift + 4       | take a partial screenshot
+cmd + shift + eject   | lock screen
 
 
-Open application bundle
------------------------
+## Open application bundle
+
 ```bash
 open -a APPLICATION
 ```
