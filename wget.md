@@ -1,8 +1,9 @@
-# wget
-Mirror a website
-----------------
+---
+title: wget
+---
 
+## Mirror a website
 
-
-  wget -mk <site>
-
+```bash
+wget -mk <site>
+```

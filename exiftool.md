@@ -1,11 +1,13 @@
-# Exiftool
-Remove metadata from JPEG
--------------------------
+---
+title: Exiftool
+---
 
-	exiftool -all= example.jpg
+## Remove metadata from JPEG
+```bash
+exiftool -all= example.jpg
+```
 
-Modify PDF metadata
--------------------
-
-	exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"
-
+## Modify PDF metadata
+```bash
+exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"
+```

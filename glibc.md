@@ -1,12 +1,17 @@
-# glibc
-Get version
------------
+---
+title: glibc
+---
 
-	/lib/libc.so.6
+## Get version
+
+```bash
+/lib/libc.so.6
+```
 
 or
 
-	#include <stdio.h>
-	#include <gnu/libc-version.h>
-	int main (void) { puts (gnu_get_libc_version ()); return 0; }
-
+```c
+#include <stdio.h>
+#include <gnu/libc-version.h>
+int main (void) { puts (gnu_get_libc_version ()); return 0; }
+```

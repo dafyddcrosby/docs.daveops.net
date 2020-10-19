@@ -1,6 +1,9 @@
-# Debugging
-Bryan Cantrill
---------------
+---
+title: Debugging
+----
+
+## Bryan Cantrill
+
 [Debugging Under Fire (YouTube)](https://www.youtube.com/watch?v=30jNsCVLpAE)
 
 ``Debugging is the process by which we understand pathological behavior in a software system``
