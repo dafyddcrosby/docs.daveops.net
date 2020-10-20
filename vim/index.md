@@ -40,5 +40,11 @@ vim --startuptime start.log
 ## Omnicompletion
 <C-X><C-O>
 
+## Set shell
+
+```
+:set shell=/bin/bash
+```
+
 ## Links
 * http://www.vimregex.com/

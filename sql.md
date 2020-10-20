@@ -1,16 +1,16 @@
-# SQL
-@databases
+---
+title: SQL
+tags: ["databases"]
+---
 
-To add a row
-------------
+## To add a row
 
 ```sql
 INSERT INTO table_name (column1, column2, column3,...)
 VALUES (value1, value2, value3,...)
 ```
 
-To update a row
----------------
+## To update a row
 
 ```sql
 UPDATE table_name

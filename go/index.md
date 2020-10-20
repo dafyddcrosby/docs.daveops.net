@@ -7,7 +7,7 @@ title: Go
 ```go
 package main
 
-import(
+import (
 	"fmt"
 	"os"
 	"bufio"
@@ -29,6 +29,14 @@ func main() {
 }
 ```
 
+## Go modules
+
+```bash
+go mod init <module_name>
+go mod vendor
+go get -u
+```
+
 ## Cross-compilation
 ```bash
 # Compile for AMD64 Linux
@@ -38,6 +46,10 @@ GOOS=linux GOARCH=amd64 go build
 [https://golang.org/doc/install/source#environment](List of compilation targets)
 
 ## Resources
+
+```bash
+godoc -http=:8080
+```
 
 * <https://golang.org/>
 * [Language Specification](https://golang.org/ref/spec)

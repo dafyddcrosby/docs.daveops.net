@@ -2,7 +2,7 @@
 title: User Management
 ---
 
-# Users
+## Users
 
 ```bash
 # change user info
@@ -31,7 +31,15 @@ Octal mask to deny permissions by default
 
 Files can't have execution at creation, but directories do. Set your octal mask to deal with the executable
 
-# Groups
+```bash
+# Get umask
+umask
+
+# Set a umask that denies any other-user access
+umask 077
+```
+
+## Groups
 
 * newgrp - logs into a new shell with a new primary group
 * chgrp - change the group for files
@@ -39,4 +47,3 @@ Files can't have execution at creation, but directories do. Set your octal mask 
 * usermod - add users to the group
 
 Sticky bit - t or T in the mode line
-
