@@ -20,15 +20,15 @@ cat <&3
 ## See what services are using a particular port
 Run as root:
 
-
-
- lsof -w -n -i (tcp|udp):<port>
+```bash
+lsof -w -n -i (tcp|udp):<port>
+```
 
 or
 
-
-
-  netstat -luntp
+```bash
+netstat -luntp
+```
 
 ## See if hard drive is on its last legs
 
@@ -47,16 +47,18 @@ last -x
 
 ## Date utility
 
-
- # Get the date from a timestamp
- date -d @$TIMESTAMP
- # Get the current time as a timestamp
- date +%s
+```bash
+# Get the date from a timestamp
+date -d @$TIMESTAMP
+# Get the current time as a timestamp
+date +%s
+```
 
 ## Find all files with a setuid/setgid bit set
 
-
- find / -perm +6000 -type f -exec ls -ld {} \; > setuid.txt &
+```bash
+find / -perm +6000 -type f -exec ls -ld {} \; > setuid.txt &
+```
 
 ## Burn an ISO from the command prompt
 
@@ -96,10 +98,12 @@ last -x
  mesg [n|y]
 
 ## Assembly
-System call table located at ``/usr/include/asm/unistd.h``
+
+System call table located at `/usr/include/asm/unistd.h`
+
 Red Hat syscall man pages installed with ``man-pages`` RPM. ``man 2 syscalls`` for a list, ``man 2 <syscall>`` for the syscall.
 
-Put syscall in EAX, put arguments in other ExX registers, call the interrupt, result usually in EAX
+Put syscall (32-bit int) in EAX, put arguments in other ExX registers, `int 0x80`, result usually in EAX
 
 ## ip command
 
@@ -139,6 +143,7 @@ FAQ](http://www.faqs.org/faqs/unix-faq/faq/part4/section-7.html) for reasons
 why.
 
 ## Change the ulimits of a running process
+
 ```bash
 prlimit --pid $PID --nofile=8192
 ```

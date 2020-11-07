@@ -36,6 +36,11 @@ Save as FILENAME.bat
 
 <https://ss64.com/nt/>
 
+## Debuggers
+
+* https://x64dbg.com/
+* http://www.ollydbg.de/
+
 ## Cool links
 
 * [Cleaning NTFS artifacts with

@@ -18,8 +18,7 @@ SET column1=value, column2=value2,...
 WHERE some_column=some_value
 ```
 
-To sort a table
----------------
+## To sort a table
 
 ```sql
 SELECT row1, row2
@@ -27,16 +26,14 @@ FROM table
 ORDER BY row2 (ASC|DESC)
 ```
 
-Delete rows
------------
+## Delete rows
 
 ```sql
 DELETE FROM table_name
 WHERE some_column=some_value
 ```
 
-Search in fields
-----------------
+## Search in fields
 
 ```sql
 SELECT *
@@ -44,8 +41,7 @@ FROM Persons
 WHERE City LIKE '%ville'
 ```
 
-Conditional statements
-----------------------
+## Conditional statements
 
 ```sql
 CASE WHEN condition THEN result
@@ -54,24 +50,21 @@ CASE WHEN condition THEN result
 END
 ```
 
-Format a date
--------------
+## Format a date
 
 ```sql
 SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
 FROM table
 ```
 
-Retrieve records within 90 days of stamp
-----------------------------------------
+## Retrieve records within 90 days of stamp
 
 ```sql
 FROM stockserialitems
 WHERE expirationdate < utc_timestamp() + interval 90 day
 ```
 
-Check for duplicate rows
-------------------------
+## Check for duplicate rows
 
 ```sql
 SELECT a, b, count(*) cnt 
@@ -81,12 +74,11 @@ HAVING cnt > 1
 ORDER BY cnt asc;
 ```
 
-Standards
----------
+## Standards
 
-1992
-1999
-2003
-2008
-new ones?
+* 1992
+* 1999
+* 2003
+* 2008
+* new ones?
 

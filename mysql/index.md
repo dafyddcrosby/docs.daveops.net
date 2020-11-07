@@ -62,17 +62,17 @@ create database DATABASE_NAME;
 mysql -u username -p<password> database < filename.sql
 ```
 
-Export database
----------------
+## Export database
 
+```bash
+mysqldump -u username -p<password> database > filename.sql
+```
 
- mysqldump -u username -p<password> database > filename.sql 
+## Delete database
 
-Delete database
----------------
-
-	drop database DATABASE_NAME;
-
+```bash
+drop database DATABASE_NAME;
+```
 
 User management
 ---------------
@@ -277,20 +277,21 @@ Timezones
 	SET time_zone = <timezone>;
 
 
-mysqladmin
-----------
+## mysqladmin
+
 mysqladmin COMMAND
 
-| command    | desc        |
-|------------|-------------|
-| flush-logs | rotate logs |
-| version    | get version |
+command    | desc
+---        | ---
+flush-logs | rotate logs
+version    | get version
 
 
-Search for foreign key use
---------------------------
-	select * from KEY_COLUMN_USAGE where REFERENCED_TABLE_NAME = 'tbl_name';
+## Search for foreign key use
 
+```sql
+select * from KEY_COLUMN_USAGE where REFERENCED_TABLE_NAME = 'tbl_name';
+```
 
 Disable super_read_only
 -----------------------
@@ -298,9 +299,6 @@ Disable super_read_only
 
 super_read_only <https://www.percona.com/blog/2016/09/27/using-the-super_read_only-system-variable/>
 
-Good books
-----------
+## Good books
 
 * High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko
-
-
