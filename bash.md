@@ -49,15 +49,14 @@ read -sn 1 -p "Press any key to continue..."
 
 ## Conditional Expressions
 
-| code      | desc                             |
-|-----------|----------------------------------|
-| -a file   | file exists                      |
-| -d file   | file exists and is a directory   |
-| -r file   | file exists and is readable      |
-| -w file   | file exists and is writeable     |
-| -x file   | file exists and is executable    |
-| -z string | true if length of string is zero |
-
+code      | desc
+---       | ---
+-a file   | file exists
+-d file   | file exists and is a directory
+-r file   | file exists and is readable
+-w file   | file exists and is writeable
+-x file   | file exists and is executable
+-z string | true if length of string is zero
 
 ## Process Substitution
 A temporary named pipe
@@ -83,6 +82,7 @@ case expression in
        ...
 esac
 
+# Bash 4+
 # for VARIABLE in 1 2 3 4 5
 for VARIABLE in {1..5}
 do
@@ -90,20 +90,21 @@ do
        	command2
        	commandN
 done
+# to do stepping, use {1..99..2}
 ```
 
 ## set
 <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
 
-| flag        | desc                                                                                                                       |
-|-------------|----------------------------------------------------------------------------------------------------------------------------|
-| -e          | exit if a pipeline returns non-zero                                                                                        |
-| -o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status                     |
-| -o posix    | match POSIX standard behaviour (<https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode>) |
-| -n          | read commands but do not execute (used for checking syntax)                                                                |
-| -u          | treat unset variables and parameters as an error when performing parameter expansion                                       |
-| -x          | print trace of commands as they are executed                                                                               |
-| -C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files                                       |
+flag        | desc
+---         | ---
+-e          | exit if a pipeline returns non-zero
+-o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status
+-o posix    | match POSIX standard behaviour (<https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode>)
+-n          | read commands but do not execute (used for checking syntax)
+-u          | treat unset variables and parameters as an error when performing parameter expansion
+-x          | print trace of commands as they are executed
+-C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files
 
 
 ## Using regex for variable testing
