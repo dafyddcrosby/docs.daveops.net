@@ -48,3 +48,6 @@ vim --startuptime start.log
 
 ## Links
 * http://www.vimregex.com/
+
+<!-- set a modeline -->
+<!-- vim: set nospell: -->

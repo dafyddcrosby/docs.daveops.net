@@ -1,17 +1,25 @@
-# Python - pdb
-@Python
-
-CLI
+---
+title: Python - pdb
+tags: ["python"]
 ---
 
+cmd | desc
+h | help
+w | (where) stacktrace
 
+## CLI
 
- python -m pdb file.py
+```bash
+python -m pdb file.py
+```
 
-Invoke debugger when line is hit
---------------------------------
+## Invoke debugger when line is hit
 
 ```python
+# Python 3.7+
+breakpoint()
+
+# Python < 3.7
 import pdb
 pdb.set_trace()
 ```

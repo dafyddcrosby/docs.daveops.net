@@ -1,11 +1,14 @@
-# Data Structures
+---
+title: Data Structures
+---
+
 <!---
 .. TODO - add more love, this could be really good
+.. TODO - Trees
+.. TODO - Graphs
 -->
 
-Primitives
-----------
-
+## Primitives
 
 * boolean
 * char
@@ -15,37 +18,38 @@ Primitives
 * enumerated type
 
 
-Arrays
-------
-
+## Arrays
 
 * Contiguous in RAM
-* Faster indexing than linked lists Θ(1)
+* Faster indexing than linked lists -  Θ(1)
 
-
-Linked Lists
-------------
-
+## Linked Lists
 
 * Lists made of nodes that contain a data item and a pointer/reference to the next (and possibly previous) node
 * Non-contiguous in RAM
 * Requires scanning the list sequentially to find element (no random access) Θ(n)
 * Faster insertion and removal than a dynamic array Θ(1) (plus search time if in the middle), where a dynamic array may need to reallocate its memory to stay contiguous.
 
+## Stack
 
-Skip lists
-----------
+* Last in-first out
 
+## Queue
+
+* First in-first out
+
+## Skip lists
 
 * Hierarchical linked lists that allow for faster indexing and insert/delete (Θ(log n) average, Θ(n) worst case)
 
 
-Vectors
--------
+## Vectors
 
+## Trees
 
-Hash Table
-----------
+## Graphs
+
+## Hash Table
 
 
 * A data structure used to implement associative arrays
@@ -54,9 +58,6 @@ Hash Table
 * A good hash can prevent needless collisions. Use all the information in the key. Combine the info by multiplying with prime numbers
 * If load factor greater than 75%, double it. If less than 20%, halve it.
 
+## Links
 
-.. TODO - Trees
-
-.. TODO - Graphs
-
-
+* https://www.bigocheatsheet.com/

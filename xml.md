@@ -1,11 +1,21 @@
-# XML
-Prettify
---------
+---
+title: XML
+---
 
-	tidy -xml -i -m [file]
+## Prettify
 
-Check for errors
-----------------
+```bash
+tidy -xml -i -m [file]
+```
 
-	xmllint -noout [file]
+## XMLLint
 
+```bash
+# Check XML file is well-formed
+xmllint --noout $FILE
+
+# Check XML file against local DTD file
+xmllint --noout --dtdvalid ./local.dtd $FILE
+```
+
+* http://www.xmlsoft.org/
