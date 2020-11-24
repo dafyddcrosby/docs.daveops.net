@@ -4,8 +4,15 @@ tags: ["python"]
 ---
 
 cmd | desc
-h | help
-w | (where) stacktrace
+--- | ---
+h   | help
+w   | (where) stacktrace
+l   | list source
+s   | step
+n   | next
+d   | down frame
+b   | breakpoint
+tb  | temporary breakpoint
 
 ## CLI
 

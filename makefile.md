@@ -1,4 +1,6 @@
-# Makefile
+---
+title: Makefile
+---
 
 ```makefile
 name= project_name
