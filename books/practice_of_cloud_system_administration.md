@@ -17,7 +17,14 @@ There are aspects outside of the product itself that, if not dealt with
 adequately, make the product difficult/impossible to maintain
 
 * Configuration
+  * Use version control
+  * API for configuration output? Ensure it's complete!
 * Startup and shutdown
+  * Perform data validation in event of crash
+  * Document time to start/stop services
+  * For HA systems, consider "crash-only" instead of orderly start/stop
+    * Only way to start is crash-recovery, only way to stop is crash
+    * This exercises the crash-recovery path, gives it more QA time
 * Queue draining
 * Software upgrades
 * Backups and restores
