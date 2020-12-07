@@ -72,6 +72,12 @@ Environment | Space separated key-value pairs for environment variables
 * [Directives](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
 * [systemd unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
 
+## Running user-level services
+
+Put unit into `~/.config/systemd/user/NAME.service`
+
+Run `systemctl` commands with `--user` flag
+
 ## Mountpoints
 
 * <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>

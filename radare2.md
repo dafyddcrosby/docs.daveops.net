@@ -3,6 +3,9 @@ title: Radare2
 ---
 
 ```bash
+# convert decimal to hexadecimal
+rax2 42
+
 # Get binary info
 rabin2 -I FILE
 

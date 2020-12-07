@@ -1,5 +1,7 @@
-# QEMU
-@virtualization
+---
+title: QEMU
+tags: ["virtualization"]
+---
 
 <http://www.qemu-advent-calendar.org/>
 

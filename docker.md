@@ -55,3 +55,11 @@ docker logs <CONTAINER>
 ```
 
 See also `/var/lib/docker/containers/<ID>/<ID>-json.log`
+
+## Docker registry
+
+https://github.com/docker/docker.github.io/blob/master/registry/deploying.md
+
+```bash
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```

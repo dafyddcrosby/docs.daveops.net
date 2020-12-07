@@ -82,8 +82,9 @@ find / -perm +6000 -type f -exec ls -ld {} \; > setuid.txt &
 
 ## Set time on machine that doesn't have NTP
 
-
- date --set="$(ssh user@server date)"
+```bash
+date --set="$(ssh user@server date)"
+```
 
 ## Inter-user communication
 
