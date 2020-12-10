@@ -4,15 +4,21 @@ title: Homebrew
 
 ## CLI
 
-| command  | desc                                 |
-|----------|--------------------------------------|
-| outdated | list outdated homebrew packages      |
-| pin      | pin to a particular version          |
-| services | formulae integration with launchctl  |
-| cleanup  | remove old versions of packages      |
-| switch   | switch between installed versions    |
-| leaves   | Show installed formulae with no deps |
+command  | desc
+---      | ---
+outdated | list outdated homebrew packages
+pin      | pin to a particular version
+services | formulae integration with launchctl
+cleanup  | remove old versions of packages
+switch   | switch between installed versions
+leaves   | Show installed formulae with no deps
 
+## Services
+
+```bash
+brew services list
+brew services start foo
+```
 
 ## Installing from source
 
