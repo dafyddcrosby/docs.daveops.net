@@ -1,10 +1,14 @@
-# llvm
-List available targets
-----------------------
-	llc -version
+---
+title: llvm
+---
 
+## List available targets
 
-Modules
--------
+```bash
+llc -version
+```
+
+## Modules
+
 <http://clang.llvm.org/docs/Modules.html>
 

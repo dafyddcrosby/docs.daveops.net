@@ -11,8 +11,15 @@ tags: ["JavaScript"]
 
 [MDN Strict Mode docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
+## Debugger
+
+```javascript
+debugger;
+```
+
 ## Classes
 
+### Pre-ES5 classes
 ```javascript
 function Building(x,y,z) {
   this.x = x;
