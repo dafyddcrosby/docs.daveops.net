@@ -1,8 +1,8 @@
-# Zoom telepresence
+---
+title: Zoom telepresence
+---
 
-## browser-based
-
-Seems like it works in Chrome better?
+## Force browser-based client
 
 Convert:
 
