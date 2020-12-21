@@ -1,74 +1,51 @@
-# Console Fun
-Accounting
-----------
+---
+title: Console Fun
+---
 
+## Accounting
 
 * [Ledger](http://ledger-cli.org/)
 
-
-Calendar
---------
-
+## Calendar
 
 * [Calcurse](http://calcurse.org/)
 
+## Mail
 
-Mail
-----
-
-
-* [Mutt](./mutt.markdown)
+* [Mutt](./mutt.md)
 * [Alpine](http://www.washington.edu/alpine/)
 * Elm
 
-
-Addresses
----------
-
+## Addresses
 
 * abook
 
 
-Twitter
--------
-
+## Twitter
 
 * turses
 * t
 
-
-RSS
----
+## RSS
 
 * newsbeuter
 * snownews
 
 
-IM
---
-
+## Instant Messaging
 
 * finch
 
-
-IRC
----
-
+## IRC
 
 * irssi
 
-
-FTP
----
-
+## FTP
 
 * lftp
 * ncftp
 
-
-Music
------
-
+## Music
 
 * mplayer
 * cmus
@@ -77,83 +54,55 @@ Music
 * id3v2
 * beet
 
-
-WWW
----
-
+## WWW
 
 * lynx
 * links
 * w3m
 * elinks
-* [curl](./curl.markdown)
+* [curl](./curl.md)
 
 
-spreadsheet
------------
-
+## spreadsheet
 
 * sc
 
-
-typing
-------
-
+## typing
 
 * typespeed
 
 
-dictionary
-----------
-
+## dictionary
 
 * dict
 
-
-books
------
-
+## books
 
 * fbgs
 * booklist
 
-
-NNTP
-----
-
+## NNTP
 
 * tin
 
-
-Torrents
---------
-
+## Torrents
 
 * rtorrent
 * transmission-cli
 
-
-Games
------
-
+## Games
 
 * bsd-games
 
-
-Finger
-------
-
+## Finger
 
 * finger
 * pinky
 
+## Text editing
 
-Text editing
-------------
-
-
-* [vim](./vim.markdown)
-* [emacs](./emacs.markdown)
+* [vim](./vim.md)
+* [emacs](./emacs.md)
 * nano
 
 
