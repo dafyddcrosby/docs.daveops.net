@@ -20,5 +20,6 @@ terraform untaint RESOURCE
 
 ## Links
 
-* <https://github.com/hashicorp/terraform>
-* <https://www.terraform.io/docs/>
+* [Source Code](https://github.com/hashicorp/terraform)
+* [Project documentation](https://www.terraform.io/docs/)
+* [TFsec - static scanner](https://www.tfsec.dev/)

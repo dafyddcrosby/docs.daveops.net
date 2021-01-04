@@ -2,29 +2,35 @@
 title: Cisco IOS
 ---
 
-| Mode          | Description                               |
-| -----------   | ----------------------------------------- |
-| User          | generally no breaking changes allowed     |
-| Enable        | Allows privileged access to the equipment |
-| Configuration | Allows privileged access to the equipment |
+Mode          | Description
+---           | ---
+User          | generally no breaking changes allowed
+Enable        | Allows privileged access to the equipment
+Configuration | Allows privileged access to the equipment
 
-| Command                            | Description                           |
-| --                                 | --                                    |
-| [command] ?                        | help mode                             |
-| enable                             | enter Enable (privileged) mode        |
-| configure terminal                 | Move to global configuration mode     |
-| reload                             | reboot IOS                            |
-| show running-config                | Get current config                    |
-| show startup-config                | Get startup config                    |
-| copy running-config startup-config | Save running config as startup config |
-| erase startup-config               | erase startup-config file             |
-| show mac address-table [dynamic]   | show the MAC address table            |
-| show mac address-table count       | get MAC address space available       |
+Command                            | Description
+---                                | ---
+[command] ?                        | help mode
+enable                             | enter Enable (privileged) mode
+configure terminal                 | Move to global configuration mode
+reload                             | reboot IOS
+show running-config                | Get current config
+show startup-config                | Get startup config
+copy running-config startup-config | Save running config as startup config
+erase startup-config               | erase startup-config file
+show mac address-table [dynamic]   | show the MAC address table
+show mac address-table count       | get MAC address space available
 
-| Command     | Description              |
-| --------    | ----------               |
-| show ip ssh | show SSH configuration   |
-| show ssh    | show active SSH sessions |
+Command     | Description
+---         | ---
+show ip ssh | show SSH configuration
+show ssh    | show active SSH sessions
+
+## BGP
+
+Command             | Desc
+---                 | ---
+show ip bgp summary | get quick info on sessions
 
 ## User access
 
@@ -48,6 +54,7 @@ line vty 0 15
  ```
 
 ### SSH
+
 ```
 ! Enable SSH
 hostname foo
