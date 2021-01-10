@@ -5,13 +5,13 @@ tags: ["Linux"]
 
 ## basic commands
 
-| desc                           | command         |
-|--------------------------------|-----------------|
-| list modules                   | `lsmod`           |
-| get info about a module        | `modinfo MODULE`  |
-| load a module                  | `modprobe MODULE` |
-| load kernel module by filename | `insmod FILE`     |
-| unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch) |
+desc                           | command
+---                            | ---
+list modules                   | `lsmod`
+get info about a module        | `modinfo MODULE`
+load a module                  | `modprobe MODULE`
+load kernel module by filename | `insmod FILE`
+unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch)
 
 ## Resources
 

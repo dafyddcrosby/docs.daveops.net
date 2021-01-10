@@ -1,6 +1,9 @@
-# memcached
-Get a list of keys
-------------------
+---
+title: memcached
+---
+
+## Get a list of keys
+
 Note - this is an undocumented interface in the C memcached server
 
 	# get slab info
@@ -9,21 +12,22 @@ Note - this is an undocumented interface in the C memcached server
 	stats cachedump SLAB LIMIT
 
 
-Using ASCII protocol through telnet
------------------------------------
+## Using ASCII protocol through telnet
 
-	telnet host 11211
+```bash
+telnet host 11211
+```
 
-| command                                                                                                                                                                    | description       |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| stats                                                                                                                                                                      | gets buncha stats |
-| set <key> <flags> <exptime> <bytes> [noreply]\r                                                                                                                            | set a value       |
-| \*:<bytes> is the number of bytes in the data block to follow, *not* including the delimiting \r <bytes> may be zero (in which case it's followed by an empty data block). |                   |
-| get <key> - returns: VALUE <key> <flags> <bytes> [<cas unique>]\r<data block>\r                                                                                            |                   |
+command                                                                                                                                                                    | description
+---                                                                                                                                                                        | ---
+stats                                                                                                                                                                      | gets buncha stats
+set <key> <flags> <exptime> <bytes> [noreply]\r                                                                                                                            | set a value
+get <key> - returns: VALUE <key> <flags> <bytes> [<cas unique>]\r<data block>\r                                                                                            |  |
 
 
-Resources
----------
+\*:<bytes> is the number of bytes in the data block to follow, *not* including the delimiting \r <bytes> may be zero (in which case it's followed by an empty data block). |  |
+
+## Resources
 
 * [memcached site](http://memcached.org/)
 * [libmemcached site](http://libmemcached.org/)
