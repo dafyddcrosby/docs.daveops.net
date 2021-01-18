@@ -82,6 +82,12 @@ Run `systemctl` commands with `--user` flag
 
 * <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>
 
+## Analyze boot time
+
+```bash
+systemd-analyze
+```
+
 ## Links
 
 * <https://cgit.freedesktop.org/systemd/systemd/>
