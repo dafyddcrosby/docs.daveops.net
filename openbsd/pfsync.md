@@ -1,17 +1,13 @@
-# pfsync
-@OpenBSD, @firewalls
+---
+title: pfsync
+tags: ["OpenBSD", "firewalls"]
+---
 
-sysctl:
--------
-
-
+## sysctl
 
  net.inet.carp.preempt=1
 
-ifconfig:
----------
-
-
+## ifconfig
 
  ifconfig em1 10.10.10.2 netmask 255.255.255.0
  ifconfig pfsync0 syncdev em1
