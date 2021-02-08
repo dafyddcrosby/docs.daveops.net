@@ -1,5 +1,6 @@
-# OpenBSD - CARP
-@OpenBSD
+--
+title: OpenBSD - CARP
+---
 
 master advertises on port 112
 
@@ -12,5 +13,10 @@ master advertises on port 112
 
 ## Try to become master
 
- sysctl net.inet.carp.preempt=1
+```bash
+# Force master to give up control
+ifconfig carp0 down
 
+# Allow preemption
+sysctl net.inet.carp.preempt=1
+```

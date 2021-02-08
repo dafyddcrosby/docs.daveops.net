@@ -14,6 +14,7 @@ flag       | command
 -sr        | show rulesets
 -ss        | show state table
 -si        | show filter stats+counters
+-sl        | show label counters
 -sa        | show everything
 
 ## General rule syntax
@@ -49,5 +50,3 @@ table <firewall> const { self }
 ## Resources
 
 * https://www.openbsd.org/faq/pf/
-
-
