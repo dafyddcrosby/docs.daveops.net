@@ -46,6 +46,9 @@ kubectl label pod $POD_NAME app=v1
 kubectl proxy
 
 kubectl expose TYPE/NAME
+
+# Forward port 8081 to a deployment
+kubectl port-forward deployment/foobar 8082
 ```
 
 #### Logs
@@ -109,4 +112,5 @@ kubectl get componentstatus
 ## Links
 
 * <https://kubernetes.io/>
+* [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 * <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>

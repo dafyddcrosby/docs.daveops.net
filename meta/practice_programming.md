@@ -1,5 +1,8 @@
-# Practice programming
-<http://jasonrudolph.com/blog/2011/08/09/programming-achievements-how-to-level-up-as-a-developer/>
+---
+title: Practice programming
+---
+
+<https://jasonrudolph.com/blog/2011/08/09/programming-achievements-how-to-level-up-as-a-developer/>
 
 Puzzles
 -------
