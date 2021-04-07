@@ -37,10 +37,13 @@ RewriteRule .(gif|jpg|bmp)$ - [F]
 
 	RedirectMatch 302 ^/ /outoforder.html
 
-## Add audio handling (HTML 5)
+## Add audio/video handling (HTML 5)
 
-	AddType audio/ogg oga ogg
-	AddType audio/mp3 mp3
+```apache
+AddType audio/ogg oga ogg
+AddType audio/mp3 mp3
+AddType video/webm webm
+```
 
 ## Run Python cgi scripts
 

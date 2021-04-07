@@ -114,3 +114,4 @@ kubectl get componentstatus
 * <https://kubernetes.io/>
 * [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 * <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
+* [Kubernetes post-mortems](https://k8s.af/)

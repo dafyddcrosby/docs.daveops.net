@@ -1,5 +1,9 @@
-# Cassandra
+---
+title: Cassandra
+---
+
 Based on the [Amazon Dynamo](https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html) paper
+
 Ring topology
 peer-to-peer, gossip protocol
 no special nodes
@@ -10,24 +14,18 @@ eventually consistent, tunable
 
 vnodes mean more ranges, which makes it easier to give a range to a new node
 
-Partitioners
-------------
-
+## Partitioners
 
 * Murmur3Partitioner: even distribution of data across the cluster using the MurmurHash algorithm.
 * RandomPartitioner: default prior to 1.2. Uses MD5 hashes. If you don't use vnodes, you have to calculate the tokens.
 * ByteOrderedPartitioner: orders rows lexically by key bytes. Not recommended, since it's hard to load balance and can have hot spots.
 
 
-cqlsh
------
-
+## cqlsh
 
 port 9042
 
-nodetool
---------
-
+## nodetool
 
 <https://docs.datastax.com/en/cassandra/2.1/cassandra/tools/toolsNodetool_r.html>
 
@@ -36,9 +34,7 @@ nodetool
 	nodetool compactionstats
 
 
-Topologies
-----------
-
+## Topologies
 
 Uses 'snitches'
 
@@ -49,14 +45,11 @@ Uses 'snitches'
 * EC2Snitch (discovers AWS AZ/regions)
 
 
-Per-Query Consistency
----------------------
+## Per-Query Consistency
 
 ANY/ONE/QUORUM/LOCAL_QUORUM/ALL
 
-Resources
----------
-
+## Resources
 
 * Cassandra High Availability by X
 

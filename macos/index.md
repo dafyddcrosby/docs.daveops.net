@@ -182,6 +182,24 @@ tmutil listlocalsnapshotdates
 tmutil deletelocalsnapshots DATE
 ```
 
+## Do Bad Things to your Mac
+
+Note: Voids your warranty, haven't tried it myself
+
+```bash
+# Disable GateKeeper
+sudo spctl --master-disable
+
+# Disable Library Validation
+sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
+
+# (From Recovery Mode) Disable System Integrity Protection
+csrutil disable
+
+# (From Recovery Mode) Disable Apple Mobile File Integrity
+nvram boot-args="amfi_get_out_of_my_way=1"
+```
+
 ## Type accent marks
 
 * á — Option + e, a

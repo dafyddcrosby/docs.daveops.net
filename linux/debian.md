@@ -2,7 +2,7 @@
 title: Debian
 ---
 
-# Package management
+## Package management
 
 * `/etc/apt/sources.list` - list of APT repositories
 

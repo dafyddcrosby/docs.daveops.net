@@ -34,6 +34,19 @@ $ORIGIN subdomain.example.com.
 @ IN NS ns-x.awsdns-x.org.
 ```
 
+## Protect domain that doesn't use email
+
+* an SPF record that says you do not have any sending servers
+  * TXT record, @ : "v=spf1 -all"
+* a DMARC record to reject any email from your domain
+  * TXT record, _dmarc : "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;fo=1;rua=mailto:stub@example.org"
+* an empty DKIM key record
+  * TXT record, *._domainkey : "v=DKIM1; p="
+* (optional) null MX record
+  * priority 0
+
+[Source](https://www.gov.uk/guidance/protect-domains-that-dont-send-email)
+
 ## Links
 
 * [Kaminsky DNS Vulnerability](http://www.unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html)
