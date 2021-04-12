@@ -66,6 +66,19 @@ if __name__ == "__main__":
     main()
 ```
 
+## String formatting
+
+```python
+user="world"
+
+# Interpolated (3.6+)
+print(f"hello {user}")
+# New
+print("hello {}".format(user))
+# Old
+print("hello %s" % user)
+```
+
 ## Remove duplicates from a list
 
 ```python
