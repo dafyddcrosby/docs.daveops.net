@@ -6,11 +6,12 @@ title: memcached
 
 Note - this is an undocumented interface in the C memcached server
 
-	# get slab info
-	stats items
-	# get dump of slab
-	stats cachedump SLAB LIMIT
-
+```
+# get slab info
+stats items
+# get dump of slab
+stats cachedump SLAB LIMIT
+```
 
 ## Using ASCII protocol through telnet
 
@@ -32,5 +33,5 @@ get <key> - returns: VALUE <key> <flags> <bytes> [<cas unique>]\r<data block>\r 
 * [memcached site](http://memcached.org/)
 * [libmemcached site](http://libmemcached.org/)
 * [memdump](http://docs.libmemcached.org/bin/memdump.html)
-
-
+* [Docker image](https://hub.docker.com/_/memcached)
+* [Ruby client](https://github.com/petergoldstein/dalli)

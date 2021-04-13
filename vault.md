@@ -37,3 +37,4 @@ vault operator init -recovery-shares=1 -recovery-threshold=1
 ## Links
 * https://learn.hashicorp.com/vault/day-one/production-hardening
 * https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
+* [Docker image](https://hub.docker.com/_/vault)

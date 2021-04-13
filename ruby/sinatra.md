@@ -1,13 +1,12 @@
-# Sinatra
-@Ruby 
+---
+title: Sinatra
+---
 
-<http://www.sinatrarb.com>
-
-Using haml
-----------
-
+## Using haml
 
 * Add haml to Gemfile
 * To add partials use: ``= haml :footer``
 
-
+## Links
+* <http://www.sinatrarb.com>
+* [Dockerizing Sinatra](https://www.codewithjason.com/dockerize-sinatra-application/)

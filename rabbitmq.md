@@ -62,3 +62,9 @@ for i in `cat output` ; do sudo rabbitmqctl sync_queue $i ; done
 	* rabbit.tcp_listen_options.sndbuf = 16384
 	* rabbit.tcp_listen_options.recbuf = 16384
 * Don't use 32-bit Erlang
+
+## Links
+
+* [Docker image](https://hub.docker.com/_/rabbitmq)
+* [Ruby client (bunny)](http://rubybunny.info/)
+* [bunny tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)

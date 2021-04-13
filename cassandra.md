@@ -20,7 +20,6 @@ vnodes mean more ranges, which makes it easier to give a range to a new node
 * RandomPartitioner: default prior to 1.2. Uses MD5 hashes. If you don't use vnodes, you have to calculate the tokens.
 * ByteOrderedPartitioner: orders rows lexically by key bytes. Not recommended, since it's hard to load balance and can have hot spots.
 
-
 ## cqlsh
 
 port 9042
@@ -53,7 +52,6 @@ ANY/ONE/QUORUM/LOCAL_QUORUM/ALL
 
 * Cassandra High Availability by X
 
-
 .. todo
    <http://docs.datastax.com/en/cql/3.1/cql/ddl/ddl_when_use_index_c.html>
    <http://docs.datastax.com/en/cql/3.1/cql/ddl/ddl_intro_c.html>
@@ -64,3 +62,7 @@ ANY/ONE/QUORUM/LOCAL_QUORUM/ALL
    <https://www.instaclustr.com/blog/2016/01/27/apache-cassandra-compaction/>
    <https://tobert.github.io/pages/als-cassandra-21-tuning-guide.html>
 
+## Links
+
+* [Docker image](https://hub.docker.com/_/cassandra)
+* [Ruby driver](https://github.com/datastax/ruby-driver)

@@ -5,27 +5,27 @@ title: Apache HTTP Server
 Signals
 -------
 
-| Signal   | Description                                      |
-|----------|--------------------------------------------------|
-| SIGHUP   | Rotate logs, kill children, reload configuration |
-| SIGWINCH | Graceful stop                                    |
-| SIGUSR1  | Graceful restart                                 |
-| SIGTERM  | Immediate stop                                   |
+Signal   | Description
+---      | ---
+SIGHUP   | Rotate logs, kill children, reload configuration
+SIGWINCH | Graceful stop
+SIGUSR1  | Graceful restart
+SIGTERM  | Immediate stop
 
 
 Apachectl options
 -----------------
 
-| Option        | ShortOption | Description                                                       |
-|---------------|:------------|-------------------------------------------------------------------|
-| start         |             | start daemon                                                      |
-| stop          |             | stop daemon                                                       |
-| restart       |             | restarts after checking configtest                                |
-| graceful      |             | graceful restart (checks configtest)                              |
-| graceful-stop |             | graceful stop of the daemon                                       |
-| fullstatus    |             | display full status report (mod_status and text browser required) |
-| configtest    | -t          | test the configuration                                            |
-|               | -S          | parse the config, show what IPs are used for virtual hosts        |
+Option        | ShortOption | Description
+---           | :---        | ---
+start         |             | start daemon
+stop          |             | stop daemon
+restart       |             | restarts after checking configtest
+graceful      |             | graceful restart (checks configtest)
+graceful-stop |             | graceful stop of the daemon
+fullstatus    |             | display full status report (mod_status and text browser required)
+configtest    | -t          | test the configuration
+              | -S          | parse the config, show what IPs are used for virtual hosts
 
 
 General Hardening
@@ -64,12 +64,11 @@ ServerSignature Off
 TraceEnable Off
 ```
 
-Misc
-----
+## Links
 
 * [Apache docs](https://httpd.apache.org/docs/)
 * [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator)
 * <https://httpd.apache.org/docs/current/misc/security_tips.html>
-
+* [Docker image](https://hub.docker.com/_/httpd)
 
 
