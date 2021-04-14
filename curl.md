@@ -18,4 +18,12 @@ curl -e ...
 curl -F "key=val" ...
 
 curl -F "uploadedfile=@FILE_TO_UPLOAD;filename=FILENAME_TO_SEND"
+
+# Use POST
+curl -X POST -F "url=https://example.org" ..
+
+## Send JSON object
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"name": "admin", "email": "admin@example.com"}' \
+        https://example.org
 ```

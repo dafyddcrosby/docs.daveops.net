@@ -2,6 +2,20 @@
 title: Sinatra
 ---
 
+## Cheatsheet
+
+```bash
+# To run a Sinatra server
+ruby app.rb
+```
+
+```ruby
+require 'sinatra'
+get '/helloworld' do
+  'Hello, world!'
+end
+```
+
 ## Using haml
 
 * Add haml to Gemfile

@@ -1,7 +1,8 @@
-# Telnet
-Neat things to connect to
--------------------------
+---
+title: Telnet
+---
 
+## Neat things to connect to
 
 * <http://www.livingcomputermuseum.org>
 * <http://www.telnet.org/htm/places.htm>

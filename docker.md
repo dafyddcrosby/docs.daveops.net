@@ -30,6 +30,20 @@ docker run --name CONTAINERNAME -it
 docker-compose up
 ```
 
+```yaml
+version: "3.8"
+services:
+  api:
+    build:
+      dockerfile: ./Dockerfile.api
+    ports:
+      - 4567:4567
+    links:
+      - url_cache
+  url_cache:
+    image: memcached
+```
+
 * <https://docs.docker.com/compose/>
 * <https://docs.docker.com/compose/compose-file/>
 

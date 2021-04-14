@@ -28,6 +28,15 @@ get <key> - returns: VALUE <key> <flags> <bytes> [<cas unique>]\r<data block>\r 
 
 \*:<bytes> is the number of bytes in the data block to follow, *not* including the delimiting \r <bytes> may be zero (in which case it's followed by an empty data block). |  |
 
+## Using Dalli
+
+```ruby
+require 'dalli'
+dc = Dalli::Client.new('localhost:11211')
+dc.set('foo', 'bar')
+dc.get('foo')
+```
+
 ## Resources
 
 * [memcached site](http://memcached.org/)
