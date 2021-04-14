@@ -14,24 +14,74 @@ eventually consistent, tunable
 
 vnodes mean more ranges, which makes it easier to give a range to a new node
 
+
+## Keyspaces
+
+List keyspaces
+```
+DESCRIBE KEYSPACES;
+```
+
+Create a keyspace
+```
+CREATE KEYSPACE "my_space"
+WITH REPLICATION = {
+  'class': 'SimpleStrategy', 'replication_factor': 1
+};
+```
+
+Use a keyspace
+```
+USE "my_space";
+```
+
+## Tables
+
+List tables
+```
+DESCRIBE TABLES;
+```
+
+Create table
+```
+CREATE TABLE "users" (
+  "user" text PRIMARY KEY,
+  "email" text,
+  "avatar" blob
+);
+```
+Insert into table
+```
+INSERT INTO "users"
+("avatar", "email", "avatar")
+VALUES (
+  'admin',
+  'admin@example.org',
+  0xf00badc0ff33
+);
+```
+
 ## Partitioners
 
 * Murmur3Partitioner: even distribution of data across the cluster using the MurmurHash algorithm.
 * RandomPartitioner: default prior to 1.2. Uses MD5 hashes. If you don't use vnodes, you have to calculate the tokens.
 * ByteOrderedPartitioner: orders rows lexically by key bytes. Not recommended, since it's hard to load balance and can have hot spots.
 
-## cqlsh
+## ports
 
-port 9042
+desc  | port
+---   | ---
+cqlsh | 9042
 
 ## nodetool
 
 <https://docs.datastax.com/en/cassandra/2.1/cassandra/tools/toolsNodetool_r.html>
 
-	#  Checking node repair
-	nodetool netstats
-	nodetool compactionstats
-
+```bash
+#  Checking node repair
+nodetool netstats
+nodetool compactionstats
+```
 
 ## Topologies
 
@@ -47,6 +97,30 @@ Uses 'snitches'
 ## Per-Query Consistency
 
 ANY/ONE/QUORUM/LOCAL_QUORUM/ALL
+
+## Quick Docker dev setup
+
+```bash
+# Run server instance
+docker run --name some-cassandra -v ~/my/own/datadir:/var/lib/cassandra -d cassandra:latest
+```
+
+## Types
+
+name      | desc
+---       | ---
+text      | UTF8
+ascii     | ASCII
+int       | 32-bit integer
+bigint    | 64-bit integer
+varint    | arbitrary size
+float     | 32-bit float
+double    | 64-bit float
+decimal   | variable-precision decimal
+boolean   | boolean
+timestamp | 'yyyy-mm-dd HH:mm:ssZ'
+uuid      | UUID v1 and v4
+blob      | binary (prefix with 0x)
 
 ## Resources
 
