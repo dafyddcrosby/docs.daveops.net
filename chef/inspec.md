@@ -1,5 +1,5 @@
 ---
-title: InSpec
+title: Chef/InSpec
 ---
 
 ## Chef shell

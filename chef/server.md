@@ -1,5 +1,5 @@
 ---
-title: server
+title: Chef/server
 tags: ["Chef"]
 ---
 

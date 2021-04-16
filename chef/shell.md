@@ -1,5 +1,6 @@
-# shell
-@Chef
+---
+title: Chef/shell
+---
 
 Debug attributes
 ----------------

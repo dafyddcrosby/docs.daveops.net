@@ -1,5 +1,5 @@
 ---
-title: Chef vault
+title: Chef/vault
 ---
 
 ## Knife

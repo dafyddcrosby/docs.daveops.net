@@ -1,8 +1,8 @@
-# handlers
-Created Monday 18 September 2017
+---
+title: Chef/handlers
+---
 
-Handler types
--------------
+## Handler types
 
 ### exception
 Loaded when run fails
@@ -15,8 +15,7 @@ report handler runs when the success? property for the run_status object returns
 ### start
 Starts at chef client run
 
-Resources
----------
+## Resources
 
 <https://docs.chef.io/handlers.html>
 

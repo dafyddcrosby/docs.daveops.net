@@ -1,5 +1,5 @@
 ---
-title: Foodcritic
+title: Chef/Foodcritic
 tags: ["Chef"]
 ---
 

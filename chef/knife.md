@@ -1,5 +1,5 @@
 ---
-title: knife
+title: Chef/knife
 ---
 
 ## Bootstrap a node
