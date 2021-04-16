@@ -1,5 +1,5 @@
 ---
-title: ld
+title: OpenBSD/ld
 ---
 
 # OpenBSD ld.so
