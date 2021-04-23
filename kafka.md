@@ -42,5 +42,40 @@ kafka-console-consumer --zookeeper localhost:2181 --topic kafkatopic --from-begi
 
 ## Links
 
-* [Paper](http://notes.stephenholiday.com/Kafka.pdf)
 * [Broker config](http://kafka.apache.org/documentation.html#brokerconfig)
+
+## The Kafka Paper
+
+* [Paper](http://notes.stephenholiday.com/Kafka.pdf)
+
+Kafka used for the on-line consumption of logs
+
+Pub-sub model, consumers pull
+
+Message is a payload of bytes
+
+Storage:
+* segments of approximate uniformity (~1GB)
+* message only exposed to consumers after flush
+* message is logical offset in log (it will increase, but not consecutively)
+
+leverages the filesystem page cache (ie no double buffering)
+
+uses the Linux sendfile API call to avoid overhead
+
+brokers use time-based retention (no knowledge of consumer state) - this allows consumer rewind
+
+consumer groups - 1 consumer
+
+partition in a topic is the smallest unit - to even the load, overpartition the topic
+
+uses Zookeeper to coordinate (still?)
+
+guarantees at-least-once delivery, not only-once delivery
+
+no guarantee of ordering from different partitions
+
+no replication at time of paper's writing
+
+by keeping feature set minimal with small storage format, was more efficient than ActiveMQ/RabbitMQ in testing
+
