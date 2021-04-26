@@ -1,7 +1,8 @@
-# TO DO
-Articles/Links
---------------
+---
+title: TO DO
+---
 
+## Articles/Links
 
 * <http://sijinjoseph.com/programmer-competency-matrix/>
 * <http://petr-mitrichev.blogspot.ca/>
@@ -14,12 +15,8 @@ Articles/Links
 * <https://www.synalysis.net/>
 * <https://www.sweetscape.com/download/>
 
-
-Website
--------
+## Website
 
 * fix verbatim/code blocks
 * tagging
 * nicer export output?
-
-
