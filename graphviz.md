@@ -4,15 +4,13 @@ title: Graphviz
 
 <http://graphviz.org>
 
-Output SVG
-----------
+## Output SVG
 
 ```bash
 dot file.dot -Tsvg -o output.svg
 ```
 
-Plain graph
------------
+## Plain graph
 
 ```
 digraph graph_name {
@@ -23,4 +21,14 @@ digraph graph_name {
 }
 ```
 
+## Common attributes
 
+name         | desc
+---          | ---
+bgcolor      | background color
+tooltip      | mouseover functionality for SVG
+URL          | clickable link
+label        | node content
+labelURL     |
+image        | sets image as node content - JPEG, PNG, GIF, BMP, SVG, or Postscript, image must contain size info
+shape        | shape of the node
