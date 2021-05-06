@@ -44,3 +44,5 @@ dc.get('foo')
 * [memdump](http://docs.libmemcached.org/bin/memdump.html)
 * [Docker image](https://hub.docker.com/_/memcached)
 * [Ruby client](https://github.com/petergoldstein/dalli)
+
+* [LRU tuning](https://memcached.org/blog/modern-lru/)
