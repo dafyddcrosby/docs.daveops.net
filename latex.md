@@ -1,36 +1,39 @@
-# LaTeX
-adding quotes
--------------
+---
+title: LaTeX
+---
 
-	\begin{quote}
-	...
-	\end{quote}
+## adding quotes
 
-Cheatsheet
-----------
+```tex
+\begin{quote}
+...
+\end{quote}
+```
 
-	\documentclass{book}
-	\begin{document}
-	\maketitle
-	\end{document}
+## Cheatsheet
 
-bibtex
-------
+```tex
+\documentclass{book}
+\begin{document}
+\maketitle
+\end{document}
+```
 
-	% Add to the preamble:
-	% Load biblatex package
-	\usepackage{biblatex}
-	% Load bibTeX file
-	\addbibresource{file.bib}
-	% Add a citation somewhere in your file
-	Blah blah \autocite{<key>}
-	% In the backmatter),
-	\printbibliography
+## bibtex
 
+```tex
+% Add to the preamble:
+% Load biblatex package
+\usepackage{biblatex}
+% Load bibTeX file
+\addbibresource{file.bib}
+% Add a citation somewhere in your file
+Blah blah \autocite{<key>}
+% In the backmatter,
+\printbibliography
+```
 
-document classes
-----------------
-
+## document classes
 
 * book
 * article
@@ -38,18 +41,14 @@ document classes
 * letter
 * slides
 
-
-ePub
-----
+## ePub
 
 * <https://www.tug.org/TUGboat/tb32-3/tb102rishi.pdf>
 * <http://pandoc.org/>
 * <https://tex2ebook.wordpress.com/>
 
 
-installing on Fedora
---------------------
-
+## installing on Fedora
 
 * texlive
 * pdflatex
@@ -58,4 +57,23 @@ installing on Fedora
 * texlive-hyphen-base
 * texlive-mfware
 
+## Add a draft watermark
 
+```tex
+\usepackage{draftwatermark}
+\SetWatermarkText{Draft}
+```
+
+## Tables
+
+```tex
+\begin{tabular}{||c || c | c ||}
+\hline
+Foo? & Column A & Column B
+\hline
+Bar & Yes & No
+\hline
+Bax & No & Yes
+\hline
+\end{tabular}
+```

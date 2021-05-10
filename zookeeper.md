@@ -14,3 +14,4 @@ maxClientCnxns=0
 ## Links
 
 * [Docker image](https://hub.docker.com/_/zookeeper)
+* [Zookeeper paper](https://www.usenix.org/legacy/events/usenix10/tech/full_papers/Hunt.pdf)
