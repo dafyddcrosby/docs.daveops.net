@@ -233,3 +233,6 @@ opendiff foo bar
 https://web.archive.org/web/20140812170917/https://developer.apple.com/library/mac/documentation/TextFonts/Reference/TextInputSourcesReference/Reference/reference.html
 https://web.archive.org/web/20160318180309/https://developer.apple.com/library/mac/technotes/tn2056/_index.html
 
+## Links
+
+* [Wiping Intel-based macs](https://support.apple.com/en-us/HT208496)
