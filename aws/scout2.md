@@ -1,5 +1,7 @@
-# Scout2
-@AWS
+---
+title: Scout2
+---
 
-	python Scout2.py --region REGION --force --no-browser
-
+```bash
+python Scout2.py --region REGION --force --no-browser
+```

@@ -1,6 +1,9 @@
-# ASCII art
-Convert JPG to ASCII art
-------------------------
-	
-	jp2a -b --colors --fill
+---
+title: ASCII art
+---
 
+## Convert JPG to ASCII art
+
+```bash
+jp2a -b --colors --fill
+```

@@ -1,5 +1,6 @@
-# Arduino
-@C
+---
+title: Arduino
+---
 
 <http://ardx.org/src/code/>
 
