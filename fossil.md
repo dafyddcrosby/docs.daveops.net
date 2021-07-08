@@ -9,5 +9,8 @@ fossil init foo.repo
 mkdir working && cd working && fossil open ../foo.repo
 ```
 
+## Links
 
 * <https://www.fossil-scm.org>
+* [Git import](https://www.fossil-scm.org/home/doc/trunk/www/inout.wiki)
+* [Fossil for Git users](https://www.fossil-scm.org/home/doc/trunk/www/gitusers.md)
