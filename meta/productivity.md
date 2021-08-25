@@ -7,8 +7,7 @@ title: Productivity
 Mold your life so that the path of least resistance is the path of maximum productivity -Matt Might
 
 * [LeechBlock](https://addons.mozilla.org/en-US/firefox/addon/leechblock/)
-
-  - Good if you want to stop checking slashdot 30 times a day
+  * Good if you want to stop checking slashdot 30 times a day
 
 Recognize the default actions in your life, and find ways to change those defaults
 
@@ -19,10 +18,7 @@ Use 'bright lines' to avoid ambiguities that keep you doing things you don't wan
 ## Computing
 
 * [Learn to touch type](http://10fastfingers.com/)
-
-  - The effort you spend getting to 70-80 WPM is far outweighed in time saved over your life.
-
-
+  * The effort you spend getting to 70-80 WPM is far outweighed in time saved over your life.
 * Learn your editor inside out
 * Use the best tools you can for your development machine. Waiting for compiles suck time and money.
 
@@ -54,7 +50,7 @@ delivered. Anything else is wishful thinking. Real priorities *ship*.
 * Do the tasks by importance.
 * Repeat.
 
-##Links
+## Links
 
 * <https://timemanagementninja.com/2015/01/10-productivity-questions-to-ask-yourself-every-day/>
 * <https://www.inc.com/john-rampton/15-ways-to-increase-productivity-at-work.html>

@@ -9,12 +9,7 @@ title: EPUB files
 
 
 * ERROR: /media/UDISK/spm.epub: mimetype entry missing or not the first in archive
-
-  - It is what it sounds like. When you create your zip archive, the first one in has to be the mimetype file.
-
+  * It is what it sounds like. When you create your zip archive, the first one in has to be the mimetype file.
 * ERROR: /media/UDISK/spm.epub: extra field length for first filename must be 0, but was 28
-
-  - When you run zip, use the -X argument so that there's no timestamps, etc. These are the 'extra fields'
-
-
+  * When you run zip, use the -X argument so that there's no timestamps, etc. These are the 'extra fields'
 
