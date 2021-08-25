@@ -1,5 +1,6 @@
-# Rework by 37signals
-@books
+---
+title: Rework by 37signals
+---
 
 p 10 "Starting a business on the side while keeping your day job can provide all the cash flow you need."
 

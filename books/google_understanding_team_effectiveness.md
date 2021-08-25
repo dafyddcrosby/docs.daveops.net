@@ -1,4 +1,7 @@
-# Google Understanding Team Effectiveness
+---
+title: Google Understanding Team Effectiveness
+---
+
 <https://rework.withgoogle.com/guides/understanding-team-effectiveness/>
 
 

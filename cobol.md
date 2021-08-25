@@ -1,8 +1,9 @@
-# COBOL
-Links
------
+---
+title: COBOL
+---
 
+## Links
 
-* <http://www.coboloncogs.org>
+* [COBOL on Cogs](http://www.coboloncogs.org)
 
 

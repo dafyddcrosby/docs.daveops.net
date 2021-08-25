@@ -1,5 +1,6 @@
-# Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield
-@books
+---
+title: Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield
+---
 
 How do I speak up about infractions so that dangerous behaviour is avoided
 Find a polite way to interject - positive deviance

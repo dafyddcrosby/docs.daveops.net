@@ -1,29 +1,22 @@
-# Site Reliability Engineering (book)
-@books
+---
+title: Site Reliability Engineering (book)
+---
 
 The book: <https://landing.google.com/sre/book/>
 
-Foreward
---------
-
+## Foreward
 
 
   The tribal nature of IT culture often entrenches practitioners in dogmatic positions that hold the industry back.
 
 Just a *touch* self-serving. But I guess if Google pays you to write a book, you kind of have to glorify it just a smidge.
 
-Preface
--------
-
-
-
+## Preface
 
    As Margaret says, "a thorough understanding of how to operate the systems was not enough to prevent human errors," and the change request to add error detection and recovery software to the prelaunch program P01 was approved shortly afterwards. 
 
 
-Introduction
-------------
-
+## Introduction
 
 "Hope is not a strategy." -Traditional SRE saying
 
@@ -56,9 +49,7 @@ The SRE Team is responsible for:
  a "bad" thing—it is an expected part of the process of innovation, and an
  occurrence that both development and SRE teams manage rather than fear. 
 
-Monitoring
-----------
-
+## Monitoring
 
 
  Monitoring should never require a human to interpret any part of the alerting

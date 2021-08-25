@@ -1,7 +1,8 @@
-# Hackers and Painters by Paul Graham
-Created Friday 08 September 2017
+---
+title: Hackers and Painters by Paul Graham
+---
 
-The day job to pay the bills, and the the fun/beautiful work after hours
+The day job to pay the bills, and the fun/beautiful work after hours
 
 
 "Run upstairs"
