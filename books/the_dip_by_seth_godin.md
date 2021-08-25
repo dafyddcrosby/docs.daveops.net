@@ -1,5 +1,6 @@
-# The Dip by Seth Godin
-@books
+---
+title: The Dip by Seth Godin
+---
 
 "Never quit something with great long-term potential just because you can't deal with the stress of the moment" - Seth Godin (p. 64)
 

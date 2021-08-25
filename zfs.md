@@ -4,6 +4,7 @@ tags: ["SmartOS", "Solaris", "FreeBSD"]
 ---
 
 ## Compression
+
 caveat - compression is *not* retroactive, so you should set it on the pool
 immediately after creation
 

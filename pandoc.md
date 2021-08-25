@@ -4,7 +4,7 @@ title: pandoc
 
 ## Markdown footnotes
 
-```
+```markdown
 I need a footnote[^footnote]
 
 [^footnote]: This footnote explains why

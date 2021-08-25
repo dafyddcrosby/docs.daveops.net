@@ -1,4 +1,7 @@
-# Demoscene tricks
+---
+title: Demoscene tricks
+---
+
 Fixed point math
 ----------------
 

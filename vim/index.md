@@ -46,6 +46,10 @@ vim --startuptime start.log
 :set shell=/bin/bash
 ```
 
+## Redraw shell
+
+ctrl-l
+
 ## Links
 * http://www.vimregex.com/
 

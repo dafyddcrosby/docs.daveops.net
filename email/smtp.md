@@ -1,7 +1,8 @@
-# SMTP
+---
+title: SMTP
+---
 
-Connect via command line
-------------------------
+## Connect via command line
 
 ```bash
 # Connect via telnet
@@ -21,9 +22,7 @@ Blah blah
 <CR-LF>
 ```
 
-Ports
------
-
+## Ports
 
 * 25: SMTP, typically used for MTA to MTA
 * 465: SMTPS

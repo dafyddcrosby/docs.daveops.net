@@ -10,9 +10,11 @@ M-x list-packages            | lists installed packages and packages available f
 M-x package-refresh-contents | Update package list
 C-h P <package>              | describe package
 
-i | mark for installation
-u | unmark
-x | execute action on package
+key | desc
+--- | ---
+i   | mark for installation
+u   | unmark
+x   | execute action on package
 
 ## misc
 

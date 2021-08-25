@@ -1,5 +1,6 @@
-# minikube
-Created Saturday 03 November 2018
+---
+title: minikube
+---
 
 <https://github.com/kubernetes/minikube>
 

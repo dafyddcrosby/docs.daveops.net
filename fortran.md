@@ -1,7 +1,8 @@
-# Fortran
-Links
------
+---
+title: Fortran
+---
 
+## Links
 
 * <https://fortran.io/>
 

@@ -1,6 +1,8 @@
-# influxdb
-Created Saturday 03 November 2018
+---
+title: influxdb
+---
 
 Time-series database
+
 <https://www.influxdata.com/>
 

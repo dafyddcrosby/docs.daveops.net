@@ -1,4 +1,6 @@
-# GNU Screen
+---
+title: GNU Screen
+---
 
 ```bash
 # Reattach a terminal

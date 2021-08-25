@@ -1,2 +1,4 @@
-# concepts
+---
+title: concepts
+---
 

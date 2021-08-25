@@ -1,5 +1,6 @@
-# So Good They Can't Ignore You by Cal Newport
-@books
+---
+title: So Good They Can't Ignore You by Cal Newport
+---
 
 three disqualifiers for applying the craftsman mindset
 ------------------------------------------------------

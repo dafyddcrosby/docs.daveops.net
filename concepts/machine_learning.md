@@ -1,3 +1,6 @@
-# Machine Learning
+---
+title: Machine Learning
+---
+
 Machine learning is the automation of automation.
 

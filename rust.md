@@ -168,6 +168,7 @@ rustup default nightly
 * <https://doc.rust-lang.org/stable/rust-by-example/>
 * [vim plugin](https://github.com/rust-lang/rust.vim)
 * https://rustacean.net/
+* [Rust on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/rust/)
 
 <!-- TODO
 * Using rand crate 0.7+

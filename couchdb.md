@@ -1,5 +1,6 @@
-# CouchDB
-@databases
+---
+title: CouchDB
+---
 
 ## get list of databases
 

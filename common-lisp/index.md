@@ -4,7 +4,7 @@ title: Common Lisp
 
 ## Basics
 
-```common-lisp
+```lisp
 ;; global variable
 (defparameter *foo* 123)
 ;; global constant
@@ -27,7 +27,7 @@ title: Common Lisp
 
 ## Source files
 
-```common-lisp
+```lisp
 ; load a file
 (load "file.lisp")
 
@@ -37,7 +37,7 @@ title: Common Lisp
 
 ## Property lists
 
-```common-lisp
+```lisp
 ; create a plist
 (list :first "frank" :last "sinatra")
 
@@ -61,7 +61,7 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 
 ## Streams
 
-```common-lisp
+```lisp
 ;; check if it's a stream
 (output-stream-p *standard-output*)
 (input-stream-p *standard-input*)

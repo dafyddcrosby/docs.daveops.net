@@ -1,6 +1,6 @@
-# The Five Dysfunctions of a Team by Patrick Lencioni
-@books
-
+---
+title: The Five Dysfunctions of a Team by Patrick Lencioni
+---
 
 * Inattention to results - status and ego
 * Avoidance of accountability - low standards

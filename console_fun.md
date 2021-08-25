@@ -101,8 +101,8 @@ title: Console Fun
 
 ## Text editing
 
-* [vim](./vim.md)
-* [emacs](./emacs.md)
+* [[vim/index|Vim]]
+* [[emacs/index|Emacs]]
 * nano
 
 

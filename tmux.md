@@ -1,17 +1,15 @@
 # tmux
-Share session
--------------
+## Share session
 
+```bash
+# Create session
+tmux -S /tmp/tmsession
+chmod 777 /tmp/tmsession
+# Connect
+tmux -S /tmp/tmsession attach
+```
 
- #Create session
- tmux -S /tmp/tmsession
- chmod 777 /tmp/tmsession
- #Connect
- tmux -S /tmp/tmsession attach
-
-
-Keyboard shortcuts
-------------------
+## Keyboard shortcuts
 
 | Shortcut         | Description                |
 |------------------|----------------------------|

@@ -1,7 +1,8 @@
-# Netflix
-Secret category #s
-------------------
+---
+title: Netflix
+---
 
+## Secret category
 
 * Action & Adventure: 1365
 * Action Comedies: 43040

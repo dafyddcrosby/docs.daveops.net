@@ -1,10 +1,13 @@
-# Databases
-.. TODO
-   read Gray & Reuter
-   read Weikum and Vossen
+---
+title: Databases
+---
 
-Michael Stonebreaker
---------------------
+<!---
+read Gray & Reuter
+read Weikum and Vossen
+--->
+
+## Michael Stonebreaker
 
 <http://slideshot.epfl.ch/play/suri_stonebraker>
 
@@ -12,10 +15,11 @@ Michael Stonebreaker
 Column store
 ------------
 
-.. TODO
+<!---
    read Monet paper on column executor vs row executor
    Ralph Kimball
-   
+ --->
+
 50-100 times faster (according to Stonebraker) (data?)
 Only reads the columns needed, not the entire store
 

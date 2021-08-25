@@ -1,4 +1,7 @@
-# TinyLetter
+---
+title: TinyLetter
+---
+
 Mailing list
 
 5,000 subscriber limit

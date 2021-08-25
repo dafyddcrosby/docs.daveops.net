@@ -1,4 +1,6 @@
-# DevOps
+---
+title: DevOps
+---
 
 * DevOps is not something you can buy or force down someone's throat
 * DevOps does not require special tools. It requires a mindset of deployment automation and frequent builds
