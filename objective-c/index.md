@@ -1,6 +1,6 @@
 # Objective C
-Classes
--------
+
+## Classes
 
 Categories extend classes
 
@@ -54,16 +54,16 @@ Categories extend classes
 	MyClass *thing = [MyClass new]
 
 
-Objects
--------
+## Objects
+
 	// setter methods are set + property name
 	[person setFirstName:@"Bob"];
 	// or use dot syntax
 	person.firstName = @"Bob";
 
 
-Protocols
----------
+## Protocols
+
 
 	@protocol XYZProto
 	// by default methods are required
@@ -84,8 +84,7 @@ Protocols
 	@end
 
 
-Collections
------------
+## Collections
 
 ### Arrays
 	// Trailing nil needed
@@ -113,16 +112,16 @@ Collections
 	NSNumber *storedNumber = dictionary[@"magicNumber"];
 
 
-Blocks
-------
+## Blocks
+
 Like closures/lambdas in other languages
 	^{
 	  NSLog(@"It's a block!");
 	}
 
 
-Error Handling
---------------
+## Error Handling
+
 [Error Handling Programming Guide for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/)
 
 	    NSString *domain = @"net.daveops.MyApplication.ErrorDomain";

@@ -1,4 +1,7 @@
 # Meetings
+
+## Meeting timeline
+
 ### Start of the meeting
 
 * Give at least 30m notice, in addition to any extra time people might need to gather information
@@ -22,8 +25,7 @@
 * Do a quick overview of the action items, confirm you've hit all agenda points.
 
 
-Meetings, Bloody Meetings
--------------------------
+## Meetings, Bloody Meetings
 
 1. plan - be precise about the objectives and why you need the meeting
 2. inform - what people need to bring to the meeting

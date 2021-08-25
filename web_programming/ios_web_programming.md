@@ -1,6 +1,6 @@
 # iOS web programming
-Web Inspector
--------------
+
+## Web Inspector
 
 ### On Mac
 Safari -> Preferences -> Advanced -> Show Develop in menu bar
@@ -8,14 +8,12 @@ Safari -> Preferences -> Advanced -> Show Develop in menu bar
 ### On iPhone
 Settings -> Safari -> Advanced -> Web Inspector
 
-Application Name
-----------------
+## Application Name
 
 	<title>WebApp</title>
 
 
-Launcher icon (iOS 1.1.3+)
---------------------------
+## Launcher icon (iOS 1.1.3+)
 
 Rounded corners, no added shiny (iOS 4.2):
 
@@ -29,15 +27,13 @@ Added shiny:
 With no sizes the default is 57x57 px
 (Multiple sizes iOS 4.2+)
 
-Startup Image (iOS 3.0+)
-------------------------
+## Startup Image (iOS 3.0+)
 
 	<link rel="apple-touch-startup-image" href="/startup.png">
 
 320x460 px, portrait
 
-Have standalone look
---------------------
+## Have standalone look
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -45,16 +41,14 @@ Have standalone look
 
 ``That will involve: a) adding back navigation everywhere, b) create a SPA experience or use location.href instead of <a> links for internal navigation, c) if the load process is done in fullscreen mode (navigator.standalone==true), always load the home screen not matter what the stored URL says and please d) don’t suggest me to “download an app” if I’m already inside an app-like experience.``
 
-Hide top status bar
--------------------
+## Hide top status bar
 
 NB - must have standalone mode on.
 
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 
-Prevent zooming
----------------
+## Prevent zooming
 
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta name="viewport" content="maximum-scale=1.0">
@@ -62,8 +56,7 @@ Prevent zooming
 	<meta name="viewport" content="width=device-width">
 
 
-Links
------
+## Links
 
 <https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html>
 

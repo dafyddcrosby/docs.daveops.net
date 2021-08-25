@@ -1,6 +1,6 @@
 # Oracle Integrated LOM
-Turn on indicator light
------------------------
+
+## Turn on indicator light
 
 ### 3.0
 
@@ -8,7 +8,7 @@ Turn on indicator light
 	set /SYS/LOCATE value=Fast_Blink
 
 
-Turn server off
----------------
+## Turn server off
+
 	stop /SYS
 
