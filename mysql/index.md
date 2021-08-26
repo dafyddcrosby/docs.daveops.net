@@ -262,8 +262,8 @@ indexing
 
 * Isolate the query column
 * Try to simplify any math, and use literals when possible
-* When indexing char colums, try using just a few letters
-	* good target is ``count(distinct name) / count(*)``
+* When indexing char columns, try using just a few letters
+  * good target is ``count(distinct name) / count(*)``
 
 
 Timezones

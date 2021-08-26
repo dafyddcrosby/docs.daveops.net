@@ -11,8 +11,8 @@ indexing
 
 * Isolate the query column
 * Try to simplify any math, and use literals when possible
-* When indexing char colums, try using just a few letters
-	* good target is ``count(distinct name) / count(*)``
+* When indexing char columns, try using just a few letters
+  * good target is ``count(distinct name) / count(*)``
 
 
 Check the slow query log
@@ -56,14 +56,14 @@ Good ways to benchmark
 * Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run
 * Use fresh snapshots between benchmarks
 * Full stack tools:
-	* ab
-	* http_load
-		* ``http_load -rate [requests_per_sec] -parallel [num_processes] -seconds [time] [url_file]``
-	* JMeter
+  * ab
+  * http_load
+    * ``http_load -rate [requests_per_sec] -parallel [num_processes] -seconds [time] [url_file]``
+  * JMeter
 * Single component tools:
-	* Database Test Suite (made by OSDL)
-	* sql-bench
-	* Super Smack
+  * Database Test Suite (made by OSDL)
+  * sql-bench
+  * Super Smack
 
 
 mysqlslap
@@ -84,5 +84,4 @@ Resources
 ---------
 
 * High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko
-
 

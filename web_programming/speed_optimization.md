@@ -6,7 +6,7 @@ title: Speed Optimization
 * Minify your resources
 * Optimize your images
 * Check out your database
-	* When was it last vacuumed?
+  * When was it last vacuumed?
 * Use a CDN
 * Consider preloading
 
@@ -15,5 +15,4 @@ title: Speed Optimization
 ## Links
 
 * <https://www.dreamhost.com/blog/optimize-wordpress-website-speed/>
-
 

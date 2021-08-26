@@ -1,10 +1,11 @@
-# G. Mark Hardy
-@people
+---
+title: G. Mark Hardy
+tags: people
+---
 
 <http://gmark.com>
 
-G Mark's Observations on Life
------------------------------
+## G Mark's Observations on Life
 
 * Just ask.
 * Don't wait for perfection.
@@ -22,11 +23,11 @@ G Mark's Observations on Life
 * Choose tech or management.
 * Do something bigger than yourself.
 * Recipe for life:
-	* vision
-	* plan
-	* take risk
-	* stay focused (TTL)
-	* determination
+  * vision
+  * plan
+  * take risk
+  * stay focused (TTL)
+  * determination
 * Don't save your best for last.
 * Be generous now.
 * Enjoy life!

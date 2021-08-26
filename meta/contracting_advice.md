@@ -1,11 +1,11 @@
-# Contracting advice
-@advice 
+---
+title: Contracting advice
+tags: advice
+---
 
 Wisdom pulled from a variety of sources
 
-Technical
----------
-
+## Technical
 
 * Always have the technology installed and comprehended before making estimates
 * Don't reinvent the wheel.
@@ -19,9 +19,7 @@ Technical
 * If you patched anything, try to send that upstream. It shows familiarity with project to potential employers.
 
 
-Business
---------
-
+## Business
 
 * Always ask for double or more the rate you would get working full-time at a company
 * Documentation, documentation, documentation
@@ -41,10 +39,7 @@ Business
 * Try to resolve conflicts in person. Often a cup of coffee is enough to sort out issues.
 * When firing a client, it is important that you do it in writing and mention which part of the contract has been violated.
 
-
-Contract
---------
-
+## Contract
 
 * Set clear expectations and clear definitions. Put them in a contract.
 * If the customer refuses to pay, don't appeal to emotion. Get a lawyer, instead.
@@ -54,11 +49,9 @@ Contract
 * Don't start work before you've signed a contract. You will lose critical leverage.
 * Don't blindly accept the client's terms. Often they are just boilerplate, and sometimes just wrong.
 * Don't back down on the important stuff:
-	* IP transfers on full payment (if they use your work before full payment, you can sue for that).
-	* A kill fee for project termination (amount the client will have to pay for an unreasonable termination of project - ensures no wasted time) - be sure to have multiple phases written in the contract.
-	* Liability (transferred after project acceptance by client)
+  * IP transfers on full payment (if they use your work before full payment, you can sue for that).
+  * A kill fee for project termination (amount the client will have to pay for an unreasonable termination of project - ensures no wasted time) - be sure to have multiple phases written in the contract.
+  * Liability (transferred after project acceptance by client)
 * Have the project deemed 'accepted' after the deliverable has been given for 5-10 business days
 * Be specific and confident about money. Sound like you know what you're talking about, even when you don't.
 * Have penalties after non-payment (net-d)
-
-
