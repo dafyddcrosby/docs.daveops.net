@@ -1,21 +1,15 @@
-# production ready
+# MySQL - Production Ready
 
-MySQL - Production Ready
-========================
+## Remove all anonymous accounts
 
-Remove all anonymous accounts
------------------------------
+```sql
+DROP USER ''@'localhost';
+DROP USER ''@'hostname';
+```
 
+## Remove all non-localhost root users
 
-
-  DROP USER ''@'localhost';
-  DROP USER ''@'hostname';
-
-Remove all non-localhost root users
------------------------------------
-
-Remove test databases
----------------------
+## Remove test databases
 
 
 
@@ -23,14 +17,13 @@ Remove test databases
   FLUSH PRIVILEGES;
   DROP DATABASE test;
 
-Set timezone to UTC
--------------------
+## Set timezone to UTC
+
 For safe measure, don't just set the time zone in MySQL, but also set the system time zone to UTC
 
 ``default-time-zone=UTC``
 
-Change the default prompt
--------------------------
+## Change the default prompt
 
 
   [mysql]
