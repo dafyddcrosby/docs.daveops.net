@@ -2,7 +2,7 @@
 title: HTTP
 ---
 
-##  Telnet access
+## Telnet access
 
 ```
 GET / HTTP/1.1
