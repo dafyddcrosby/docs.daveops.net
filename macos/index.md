@@ -113,6 +113,7 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 ```
 
 ## Virtual Memory Stats
+
 ```bash
 vmstat
 ```
@@ -138,6 +139,7 @@ A bunch of dtrace under the hood
 ``man defaults``
 
 ## launch services database
+
 ```bash
 # dump database
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump
@@ -157,20 +159,25 @@ scutil - system config utility
 - use ``n.add KEY`` + ``n.watch`` to get notified of config changes
 
 ## Look for memory leaks
+
 leaks(1)
 
 ## System Integrity Protection
+
 csrutil(1)
 
 ### Installing fonts
+
 copy to ~/Library/Fonts
 
 ## Get a call stack of a running process
+
 ```bash
 sample PID -file OUTPUT
 ```
 
 ## Time Machine snapshots
+
 ```bash
 tmutil listlocalsnapshotdates
 tmutil deletelocalsnapshots DATE
@@ -217,15 +224,17 @@ nvram boot-args="amfi_get_out_of_my_way=1"
 * quotation dash (—) — Shift + Option + -
 
 ## Nice graphical diff
+
 ```bash
 opendiff foo bar
 ```
 
 ## Custom keyboard layouts
+
 `~/Library/Keyboard Layouts`
 
-https://web.archive.org/web/20140812170917/https://developer.apple.com/library/mac/documentation/TextFonts/Reference/TextInputSourcesReference/Reference/reference.html
-https://web.archive.org/web/20160318180309/https://developer.apple.com/library/mac/technotes/tn2056/_index.html
+* <https://web.archive.org/web/20140812170917/https://developer.apple.com/library/mac/documentation/TextFonts/Reference/TextInputSourcesReference/Reference/reference.html>
+* <https://web.archive.org/web/20160318180309/https://developer.apple.com/library/mac/technotes/tn2056/_index.html>
 
 ## Links
 

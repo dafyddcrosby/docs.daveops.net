@@ -32,6 +32,7 @@ General Hardening
 -----------------
 
 ### SSL Config
+
 ```apache
 SSLProtocol          All -SSLv2 -SSLv3
 SSLHonorCipherOrder  on
@@ -41,6 +42,7 @@ Header always set Strict-Transport-Security "max-age=15768000"
 ```
 
 ### General Apache Config
+
 ```apache
 # Deny access to root dir
 <Directory />

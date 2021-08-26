@@ -16,6 +16,7 @@ ps -Z
 netstat -Z
 # and even more!
 ```
+
 ## Labels
 
 ```
@@ -116,7 +117,6 @@ sesearch ...
 
 # Search for files with a particular context
 findcon /etc/selinux/targeted/contexts/files/file_contexts -t shadow_t
-
 ```
 
 ## Policies

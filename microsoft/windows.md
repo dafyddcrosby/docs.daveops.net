@@ -6,6 +6,7 @@ slug: windows
 ## Export certificates
 
 On Win7
+
 ```cmd
 # From Start Menu
 certmgr.msc
@@ -15,6 +16,7 @@ certmgr.msc
 ## Recursive copy of files
 
 On XP
+
 ```cmd
 xcopy /E <src> <dest>
 ```

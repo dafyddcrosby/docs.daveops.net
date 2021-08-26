@@ -22,7 +22,9 @@ fedora-arm-image-installer --image=</path/to/fedora_image> --target=<RPi_Version
 Because of a [firmware
 issue](https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=141195), need to
 add this to `/boot/config.txt`:
+
 ```
 enable_uart=1
 ```
+
 [See also the GH issue](https://github.com/raspberrypi/firmware/issues/553#issuecomment-199486644)

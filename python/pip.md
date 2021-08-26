@@ -22,6 +22,7 @@ pip install -r requirements.txt
 ```
 
 ## Dreamhost pip3 usage
+
 ```bash
 virtualenv -p python3 env
 . env/bin/activate

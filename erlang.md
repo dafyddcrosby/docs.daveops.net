@@ -16,6 +16,7 @@ f(). % drop all variables
 ```
 
 ## Syntax cheatsheet
+
 ```erlang
 % division
 5 / 2.

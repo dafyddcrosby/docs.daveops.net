@@ -3,6 +3,7 @@ title: SSH
 ---
 
 ## Generating a new key
+
 ```bash
 # Generate a new RSA keypair
 ssh-keygen -t rsa -b 4096 -C "<username> generated <date>" -f id_rsa
@@ -11,6 +12,7 @@ ssh-keygen -t ed25519 -C "<username> generated <date>"
 ```
 
 ## Getting key fingerprint
+
 ```bash
 ssh-keygen -lf .ssh/id_rsa.pub
 ```

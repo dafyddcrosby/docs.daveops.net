@@ -32,6 +32,7 @@ json_attribs "/etc/chef/node.json"
 ```
 
 ### /etc/chef/node.json
+
 ```json
 {
  "resolver": {

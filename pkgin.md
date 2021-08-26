@@ -3,6 +3,7 @@ title: pkgin
 ---
 
 ## Update pkgin database
+
 ```
 pkgin -y up
 ```

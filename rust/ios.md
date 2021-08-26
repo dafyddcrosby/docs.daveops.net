@@ -3,6 +3,7 @@ title: Rust for iOS
 ---
 
 ## Getting started
+
 ```bash
 # Be able to create iOS executables
 cargo install cargo-lipo

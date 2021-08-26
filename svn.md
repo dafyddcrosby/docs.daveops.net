@@ -2,8 +2,9 @@
 
 @version_control
 
-Get information about a repo
+## Get information about a repo
 ----------------------------
+
 ```bash
 svnlookup info /path/to/repo
 # latest revision number

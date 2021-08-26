@@ -32,28 +32,28 @@ Send email
  s.sendmail(from_addr, to_addr, email_message)
  s.quit()
 ```
-Retrieve mail with imaplib
---------------------------
+
+## Retrieve mail with imaplib
 
 .. TODO - ensure this works...
 
 ```python
+import imaplib
 
- import imaplib
- 
- username = 'name'
- password = 'pass'
- 
- mail_server = 'mail_server'
- 
- i = imaplib.IMAP4_SSL(mail_server)
- i.login(username, password)
- i.select('INBOX')
- 
- for msg in i.search(None, 'ALL')[1][0].split():
- print msg
- outf = open('%s.eml' % msg, 'w')
- outf.write(i.fetch(msg, '(RFC822)')[1][0][1])
- outf.close()
- i.logout()
+username = 'name'
+password = 'pass'
+
+mail_server = 'mail_server'
+
+i = imaplib.IMAP4_SSL(mail_server)
+i.login(username, password)
+i.select('INBOX')
+
+for msg in i.search(None, 'ALL')[1][0].split():
+    print msg
+outf = open('%s.eml' % msg, 'w')
+outf.write(i.fetch(msg, '(RFC822)')[1][0][1])
+outf.close()
+i.logout()
 ```
+

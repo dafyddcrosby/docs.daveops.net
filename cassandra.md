@@ -18,11 +18,13 @@ vnodes mean more ranges, which makes it easier to give a range to a new node
 ## Keyspaces
 
 List keyspaces
+
 ```
 DESCRIBE KEYSPACES;
 ```
 
 Create a keyspace
+
 ```
 CREATE KEYSPACE "my_space"
 WITH REPLICATION = {
@@ -31,6 +33,7 @@ WITH REPLICATION = {
 ```
 
 Use a keyspace
+
 ```
 USE "my_space";
 ```
@@ -38,11 +41,13 @@ USE "my_space";
 ## Tables
 
 List tables
+
 ```
 DESCRIBE TABLES;
 ```
 
 Create table
+
 ```
 CREATE TABLE "users" (
   "user" text PRIMARY KEY,
@@ -50,7 +55,9 @@ CREATE TABLE "users" (
   "avatar" blob
 );
 ```
+
 Insert into table
+
 ```
 INSERT INTO "users"
 ("avatar", "email", "avatar")

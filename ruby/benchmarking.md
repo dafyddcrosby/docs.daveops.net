@@ -4,11 +4,13 @@ tags: ["Ruby"]
 ---
 
 ## Running the profiler
+
 ```bash
 ruby -r profile script.rb
 ```
 
 ## Benchmarking
+
 ```ruby
 require 'benchmark'
 

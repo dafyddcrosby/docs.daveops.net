@@ -15,6 +15,7 @@ llc -version
 ## Playing with AST, clang-query and clang-tidy
 
 Note - when compiling from source:
+
 ```
 -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra"
 ```
@@ -37,11 +38,13 @@ python add_new_check.py misc my-first-check
 ### clang-query
 
 Dump the AST
+
 ```
 set output dump
 ```
 
 Reduce noise (not always reliable)
+
 ```
 set bind-root false
 ```

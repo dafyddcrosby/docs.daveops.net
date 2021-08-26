@@ -11,11 +11,13 @@ mutt -f /var/mail/USERNAME
 ```
 
 ## Add header to messages
+
 ```
 my_hdr X-Operating-System: TempleOS
 ```
 
 ## Whitelist TLS fingerprint
+
 ```
 tls on
 tls_fingerprint <fingerprint>
@@ -31,5 +33,4 @@ tls_fingerprint <fingerprint>
 | ~d [MIN]-[MAX] | messages with date-sent in date range           |
 | ~l             | mailing lists                                   |
 | ~s             | Subject:                                        |
-
 

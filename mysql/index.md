@@ -4,16 +4,19 @@ tags: ["databases", "MySQL"]
 ---
 
 ## Monitor queries
+
 ```bash
 watch -n 1 mysqladmin --user=<user> --password=<password> processlist
 ```
 
 ## List all databases
+
 ```sql
 show databases;
 ```
 
 ## List all tables
+
 ```sql
 show tables;
 ```
@@ -76,6 +79,7 @@ drop database DATABASE_NAME;
 
 User management
 ---------------
+
 ```sql
 -- Create a user
 CREATE USER 'example_user'@'localhost' IDENTIFIED BY 'example_pass';
@@ -267,9 +271,11 @@ version    | get version
 select * from KEY_COLUMN_USAGE where REFERENCED_TABLE_NAME = 'tbl_name';
 ```
 
-Disable super_read_only
------------------------
-	set global super_read_only=0
+## Disable super_read_only
+
+```
+set global super_read_only=0
+```
 
 super_read_only <https://www.percona.com/blog/2016/09/27/using-the-super_read_only-system-variable/>
 

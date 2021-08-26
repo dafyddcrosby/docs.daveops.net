@@ -12,7 +12,9 @@ keytool -list -v -keystore keystore.jks
 ```
 
 ## Auto-sign release
+
 Add to ant.properties
+
 ```
 key.store=/path/to/example-key.keystore
 key.alias=alias_name

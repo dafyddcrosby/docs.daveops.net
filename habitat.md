@@ -3,6 +3,7 @@ title: Habitat
 ---
 
 ## Install on macOS
+
 ```bash
 # Install hab
 brew tap habitat-sh/habitat
@@ -13,4 +14,5 @@ hab cli setup
 ```
 
 ## Links
+
 * [CLI Reference](https://www.habitat.sh/docs/habitat-cli/)

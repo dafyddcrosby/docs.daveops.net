@@ -4,11 +4,13 @@ tags: ["containers"]
 ---
 
 ## Installing on Mac
+
 ```bash
 brew cask install docker
 ```
 
 ## CLI
+
 ```bash
 # list all containers
 docker ps -a

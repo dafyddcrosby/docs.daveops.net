@@ -56,6 +56,7 @@ suites:
 ```
 
 ## Using chef-vault
+
 ```yaml
 suites:
   - name: default

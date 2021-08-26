@@ -10,6 +10,7 @@ title: Ruby on Rails
 <!---
 I think the instructions are slightly different with Rails 5
 -->
+
 ```bash
 gem install rails
 rails new app_name

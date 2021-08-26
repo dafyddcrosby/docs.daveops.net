@@ -2,8 +2,8 @@
 title: Perl
 ---
 
-Syntax Cheatsheet
------------------
+## Syntax Cheatsheet
+
 ```perl
 #!/usr/local/bin/perl -wT
 use strict

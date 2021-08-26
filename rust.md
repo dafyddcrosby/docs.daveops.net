@@ -140,17 +140,20 @@ cargo build --target x86_64-unknown-linux-musl
 ```
 
 If you're working on Mac and compiling for Linux, you'll also want:
+
 ```bash
 brew install x86_64-elf-binutils
 ```
 
 And using that specific linker:
+
 ```toml
 [target.x86_64-unknown-linux-musl]
 linker = "x86_64-elf-ld"
 ```
 
 ## Nightly rust
+
 ```bash
 # Install nightly toolchain
 rustup toolchain install nightly

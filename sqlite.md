@@ -9,6 +9,7 @@ Show all tables
 ```sqlite3
 .tables
 ```
+
 Show table schema
 -----------------
 
@@ -16,6 +17,7 @@ Show table schema
 
  .schema tablename
 ```
+
 See if table exists
 -------------------
 
@@ -25,6 +27,7 @@ See if table exists
  FROM sqlite_master
  WHERE type='table'
 ```
+
 Export tables
 -------------
 

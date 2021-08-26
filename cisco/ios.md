@@ -70,6 +70,7 @@ key-hash ssh-rsa HASH KEYNAME
 ## SFP
 
 Get DOM
+
 ```
 show hw-module subslot 0/1 transceiver 0 status
 ```
@@ -89,6 +90,7 @@ also `write erase`
 ## Reset port to default config
 
 in config mode:
+
 ```
 default interface FastEthernet 1/0/1
 ```

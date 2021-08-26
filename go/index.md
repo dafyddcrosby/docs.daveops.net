@@ -38,6 +38,7 @@ go get -u
 ```
 
 ## Cross-compilation
+
 ```bash
 # Compile for AMD64 Linux
 GOOS=linux GOARCH=amd64 go build

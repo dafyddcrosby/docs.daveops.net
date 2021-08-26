@@ -3,6 +3,7 @@ title: C - File IO
 ---
 
 ## Open and read file
+
 ```c
 const char *filename = "file.txt";
 unsigned char byte;

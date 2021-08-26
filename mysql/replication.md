@@ -5,6 +5,7 @@ tags: ["MySQL", "databases"]
 
 Set the replica binlog coordinates
 ----------------------------------
+
 ```sql
 CHANGE MASTER TO
   MASTER_HOST='example.com',

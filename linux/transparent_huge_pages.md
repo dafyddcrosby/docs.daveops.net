@@ -10,6 +10,7 @@ cat /sys/kernel/mm/transparent_hugepage/defrag
 ```
 
 To disable:
+
 ```
 echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled
 echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag

@@ -3,6 +3,7 @@ title: Terraform
 ---
 
 ## Syntax
+
 ```hcl
 # This is a comment
 variable "ami" {

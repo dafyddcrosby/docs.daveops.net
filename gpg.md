@@ -48,6 +48,7 @@ gpg --verify doc.sig doc
 ```bash
 gpg --edit-key KEYNAME
 ```
+
 ```
 gpg> addkey
 ```

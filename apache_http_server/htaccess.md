@@ -5,6 +5,7 @@ title: htaccess
 ## mod_rewrite
 
 ### Allow password protected directories without WordPress 404
+
 ```apache
 RewriteCond %{REQUEST_URI} ^/(failed_auth\.html).*$ [NC]
 RewriteRule . - [L]
@@ -19,6 +20,7 @@ RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
 ```
 
 ### Redirect all traffic to another domain
+
 ```
 RedirectMatch 301 ^(.*)$ https://example.org
 ```
@@ -53,18 +55,22 @@ AddType video/webm webm
 	AddHandler cgi-script .py
 
 ## Do not allow access to .htaccess file
+
 ```apache
 <Files .htaccess>
 order allow,deny
 deny from all
 </Files>
 ```
+
 ## Prevent directory indexing
+
 ```apache
 Options -Indexes
 ```
 
 ## Adding user authentication
+
 ```apache
 <Limit GET PUT POST>
 AuthName "Please enter credentials"
@@ -75,6 +81,7 @@ Require valid-user
 ```
 
 ## To create an htpasswd file
+
 ```bash
 htpasswd -c .htpasswd username
 ```

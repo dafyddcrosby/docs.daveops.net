@@ -3,9 +3,11 @@ title: Bash
 ---
 
 ## Go immediately to $EDITOR
+
 <kbd>ctrl</kbd>-x, e
 
 ## Most commonly used commands
+
 ```bash
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 ```
@@ -23,11 +25,13 @@ find . -type d -empty -exec rmdir {} \;
 ```
 
 ## Show your shell from a port
+
 ```bash
 script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 ```
 
 ## Replace filename spaces with underscores
+
 ```bash
 # util-linux-ng
 rename " " _ *
@@ -59,6 +63,7 @@ code      | desc
 -z string | true if length of string is zero
 
 ## Process Substitution
+
 A temporary named pipe
 
 ```bash
@@ -67,6 +72,7 @@ thing --output >(gzip > output.txt.gz)
 ```
 
 ## Syntax cheatsheet
+
 ```bash
 fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
@@ -94,6 +100,7 @@ done
 ```
 
 ## set
+
 <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
 
 flag        | desc
@@ -108,6 +115,7 @@ flag        | desc
 
 
 ## Using regex for variable testing
+
 ```bash
 if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
     echo "yay"
@@ -115,11 +123,13 @@ fi
 ```
 
 ## Temporary directory/file
+
 ```bash
 mktemp -d
 ```
 
 ## Variables / functions
+
 ```bash
 # Set an environment variable
 declare -x BLARG=5
@@ -130,6 +140,7 @@ typeset -F
 ```
 
 ## Use heredocs
+
 ```bash
 cat <<EOM > file.out
 blah
@@ -138,6 +149,7 @@ EOM
 ```
 
 ## Quit without saving history
+
 ```bash
 unset HISFILE && exit
 ```

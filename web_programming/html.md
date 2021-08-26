@@ -1,28 +1,26 @@
 # HTML
-Shim for old IE browsers
-------------------------
+
+## Shim for old IE browsers
 
 ```html
-
- <!--[if lt IE 9]>
- <script src="<http://html5shim.googlecode.com/svn/trunk/html5.js>"></script>
- <![endif]-->
+<!--[if lt IE 9]>
+<script src="<http://html5shim.googlecode.com/svn/trunk/html5.js>"></script>
+<![endif]-->
 ```
 
 Forms
 -----
 
 ```html
-
- <form name="input" action="script.php" method="get">
- Username: <input type="text" name="user" />
- Favorite color:
- <select name="color">
-   <option value="red">Red</option>
-   <option value="blue">Blue</option>
- </select>
- <input type="submit" value="Submit" />
- </form>
+<form name="input" action="script.php" method="get">
+Username: <input type="text" name="user" />
+Favorite color:
+<select name="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+</select>
+<input type="submit" value="Submit" />
+</form>
 ```
 
 Input attributes (HTML 5)
@@ -44,15 +42,19 @@ Input attributes (HTML 5)
 * range (restrict to valid numeric range
 
 
-use {![](./html/<input ... required>)} to have the browser whine
+use `required` to have the browser whine
+
+```html
+<input ... required>
+```
 
 Code samples
 ------------
 
 ```html
-
- <code>print 'hello world'</code> prints <samp>hello world</samp>
+<code>print 'hello world'</code> prints <samp>hello world</samp>
 ```
+
 Canvas (HTML 5)
 ---------------
 
@@ -69,6 +71,7 @@ Canvas (HTML 5)
    }
  </script>
 ```
+
 Fixed-meter bar (HTML 5)
 ------------------------
 
@@ -76,6 +79,7 @@ Fixed-meter bar (HTML 5)
 
  <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
 ```
+
 Progress bar (HTML 5)
 ---------------------
 
@@ -83,19 +87,19 @@ Progress bar (HTML 5)
 
  <progress value='num' max='num'>fallback display</progress>
 ```
+
 Use JavaScript to move it around
 
 Autofocus input (HTML 5)
 ------------------------
 
-
 ```html
  
  <input ... autofocus>
 ```
+
 Patterned input (HTML 5)
 ------------------------
-
 
 ### Enter 15 digits
 
@@ -108,20 +112,18 @@ Dropdown list for text input (HTML 5)
 -------------------------------------
 
 ```html
-
- <input type='text' ... list='listid'>
- <datalist id='id'>
-   <option label='label1' value='value1'>
-   <option label='label2' value='value2'>
- </datalist>
+<input type='text' ... list='listid'>
+<datalist id='id'>
+  <option label='label1' value='value1'>
+  <option label='label2' value='value2'>
+</datalist>
 ```
 
 Editable content
 ----------------
 
 ```html
-
- <p contenteditable="true">
+<p contenteditable="true">
 ```
 
 Link for phone numbers (mobile)
@@ -150,13 +152,13 @@ International calling code is required
 
 Doctype (HTML 5)
 ----------------
+
 ```html
 <!doctype html>
 ```
 
 Semantic tags (HTML 5)
 ----------------------
-
 
 * <section>
 * <nav>
@@ -165,13 +167,12 @@ Semantic tags (HTML 5)
 
 
 ```html
-
- <article>
-   <hgroup>
-  <h1>Title</h1>
-  <h2>Byline</h2>
-   </hgroup>
- </article>
+<article>
+  <hgroup>
+ <h1>Title</h1>
+ <h2>Byline</h2>
+  </hgroup>
+</article>
 ```
 
 * <p> (In HTML 5, don't use the p tag for paragraph breaks - it *must* be used for paragraphs)
@@ -189,7 +190,7 @@ Good meta tags to have
 * <link rel=”author” href=”<https://plus.google.com/[YOUR> PERSONAL G+ PROFILE HERE]”/>
 * <a href=”<https://plus.google.com/[YOUR> PERSONAL G+ PROFILE NUMBER]” rel=”me”>Me on Google+</a>
 * <link rel=”publisher” href=”<https://plus.google.com/[YOUR> BUSINESS G+ PROFILE HERE]”/>
-* [OpenGraph](./opengraph.markdown)
+* [OpenGraph](./opengraph.md)
 * [Web Services:Twitter](../web_services/twitter.markdown)
 
 

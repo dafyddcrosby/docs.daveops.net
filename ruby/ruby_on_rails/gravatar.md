@@ -2,8 +2,8 @@
 title: Gravatar
 ---
 
-Helper to return Gravatar image
--------------------------------
+## Helper to return Gravatar image
+
 ```ruby
 # Returns the Gravatar (http://gravatar.com/) for the given user.
 def gravatar_for(user, options = { size: 50 })

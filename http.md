@@ -11,17 +11,18 @@ host: daveops.net
 ```
 
 ## Get request headers
+
 ```bash
 curl -i example.com
 ```
 
 ## See if server uses gzip/deflate
+
 ```bash
 curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 ```
 
-HTTP response codes
--------------------
+## HTTP response codes
 
 ### 1xx Informational
 

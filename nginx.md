@@ -51,6 +51,7 @@ server {
 ```
 
 ## Redirect only / query
+
 ```nginx
 location = / {
       # this matches only the / query.
@@ -71,9 +72,9 @@ server_tokens off
 
 ## A funny aside
 
-One of my coworkers said that "nginx is just a hipster Apache". I *wish* that's the most ignorant thing he's ever said (sit down with me for a beer, and I'll give a few other gems).
-
-* [The C10K Problem](http://www.kegel.com/c10k.html)
+One of my coworkers said that "nginx is just a hipster Apache". However,
+there's sound technical reasons for choosing nginx called [the C10K
+Problem](http://www.kegel.com/c10k.html)
 
 ## Links
 

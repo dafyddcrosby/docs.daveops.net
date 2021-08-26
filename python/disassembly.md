@@ -3,6 +3,7 @@ title: Disassembly
 ---
 
 ## Disassemble a code object
+
 ```python
 import dis
 dis.dis(func)

@@ -20,6 +20,7 @@ debugger;
 ## Classes
 
 ### Pre-ES5 classes
+
 ```javascript
 function Building(x,y,z) {
   this.x = x;

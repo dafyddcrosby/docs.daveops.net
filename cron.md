@@ -13,6 +13,7 @@ title: cron
 
 
 ## Syntax
+
 ```
 ┌───────────── min (0 - 59)
 │ ┌────────────── hour (0 - 23)
@@ -25,4 +26,5 @@ title: cron
 ```
 
 ## Links
+
 * https://crontab.guru/

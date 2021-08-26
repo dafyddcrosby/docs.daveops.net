@@ -3,6 +3,7 @@ title: Ruby
 ---
 
 ## CLI
+
 ```bash
 # Print warnings
 ruby -w ...
@@ -105,6 +106,7 @@ Modifier | Meaning
 ## Freezing strings
 
 The `frozen_string_literal` pragma will have all strings in the code be immutable, improving performance. To debug, use `--debug=frozen-string-literal`
+
 ```ruby
 # frozen_string_literal: true
 ```
@@ -131,3 +133,4 @@ bmbm - two-pass if garbage collection
 * Object::AllocationTracer (gem allocation_tracer)
 
 -->
+
