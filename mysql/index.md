@@ -183,16 +183,6 @@ uses table-locking, but is speedy
 Archive engine
 --------------
 
-has high overhead, but row-level locking with multiversion concurrency control (MVCC)
-
-Memory engine
--------------
-
-uses table-locking, but is speedy
-
-Archive engine
---------------
-
 
 * Only uses INSERT and SELECT
 * Compresses each new row with zlib
@@ -226,24 +216,8 @@ PBXT (Primebase XT) engine
 
 * Has high write concurrency
 
-
-indexing
---------
-
-
-* similar to InnoDB
-
-
-PBXT (Primebase XT) engine
---------------------------
-
-
-* Has high write concurrency
-
-
 Maria
 -----
-
 
 * (needs to be looked into)
 

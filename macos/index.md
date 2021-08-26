@@ -117,12 +117,6 @@ All the neat tools for diagnosing busy channels, noise, etc. are in the 'Window'
 vmstat
 ```
 
-## Links
-
-* <https://opensource.apple.com/>
-* <https://github.com/herrbischoff/awesome-osx-command-line>
-* <https://www.raywenderlich.com/151741/macos-development-beginners-part-1>
-
 ## Power management
 
 ``man pmset``
@@ -236,3 +230,7 @@ https://web.archive.org/web/20160318180309/https://developer.apple.com/library/m
 ## Links
 
 * [Wiping Intel-based macs](https://support.apple.com/en-us/HT208496)
+* <https://opensource.apple.com/>
+* <https://github.com/herrbischoff/awesome-osx-command-line>
+* <https://www.raywenderlich.com/151741/macos-development-beginners-part-1>
+
