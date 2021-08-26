@@ -2,14 +2,16 @@
 title: Chef/shell
 ---
 
-Debug attributes
-----------------
+## Debug attributes
 
-	pp node.debug_value('system', 'repo')
+```ruby
+pp node.debug_value('system', 'repo')
+```
 
-Get the resources used
-----------------------
-	# in chef-shell
-	recipe_mode
-	resources
+## Get the resources used
 
+```ruby
+# in chef-shell
+recipe_mode
+resources
+```

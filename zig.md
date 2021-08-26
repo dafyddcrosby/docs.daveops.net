@@ -13,4 +13,4 @@ zig targets
 
 ## links
 
-* https://ziglang.org/
+* <https://ziglang.org/>

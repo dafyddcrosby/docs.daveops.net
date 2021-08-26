@@ -1,5 +1,6 @@
 ---
 title: Chef/ChefSpec
+tags: Chef
 ---
 
 ## Links

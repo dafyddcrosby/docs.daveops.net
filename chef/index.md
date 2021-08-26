@@ -24,7 +24,6 @@ gem install chef --no-ri --no-rdoc
 
 ## Using chef-solo
 
-
 ### /etc/chef/solo.rb
 
 ```ruby
@@ -51,11 +50,10 @@ knife search -a ATTR
 
 ## common node attributes
 
-| description         | attribute                  |
-|---------------------|----------------------------|
-| version of chef     | chef_packages.chef.version |
-| nodes's environment | chef.environment           |
-
+description         | attribute
+---                 | ---
+version of chef     | chef_packages.chef.version
+nodes's environment | chef.environment
 
 ## Compile time notes
 
