@@ -2,6 +2,12 @@
 title: C
 ---
 
+## Install tooling in Fedora
+
+```bash
+sudo yum groupinstall "C Development Tools and Libraries"
+```
+
 ## Resources
 
 * <http://splint.org>
