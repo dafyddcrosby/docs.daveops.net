@@ -1,6 +1,6 @@
 ---
 title: Lokkit
-tags: ["Red Hat", "firewalls"]
+tags: RedHat, firewalls
 ---
 
 ## Get list of services

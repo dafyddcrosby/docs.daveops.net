@@ -1,6 +1,6 @@
 ---
 title: Git
-tags: ["version_control"]
+tags: VersionControl
 ---
 
 ## Create bare repository

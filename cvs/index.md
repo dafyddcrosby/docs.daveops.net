@@ -1,6 +1,6 @@
 ---
 title: CVS
-tags: ["version control"]
+tags: VersionControl
 ---
 
 ## Tagging an instance

@@ -27,7 +27,7 @@ require 'pry'
 binding.pry
 ```
 
-```
+```text
 # get list of commands
 repl> help
 

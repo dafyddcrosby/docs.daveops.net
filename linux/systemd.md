@@ -1,6 +1,6 @@
 ---
 title: SystemD
-tags: ["init", "Linux", "Red Hat"]
+tags: init, Linux, RedHat
 ---
 
 ## systemctl

@@ -7,7 +7,7 @@ tags: ["ruby"]
 
 ## Tags
 
-```
+```erb
 <% Ruby code -- inline with output %>
 <%= Ruby expression -- replace with result %>
 <%# comment -- ignored -- useful in testing %>

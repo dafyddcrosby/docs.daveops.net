@@ -1,6 +1,6 @@
 ---
 title: RPM
-tags: ["Red Hat"]
+tags: RedHat
 ---
 
 [List of RPM macros](http://www.zarb.org/~jasonc/macros.php)

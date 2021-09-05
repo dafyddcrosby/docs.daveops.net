@@ -35,11 +35,10 @@ gem owner GEM --remove EMAIL
 
 ## Environment variables
 
-| var      | description              |
-|----------|--------------------------|
-| GEM_PATH | where gems can be loaded |
-| GEM_HOME | where gems are installed |
-
+var      | description
+---      | ---
+GEM_PATH | where gems can be loaded
+GEM_HOME | where gems are installed
 
 ## Links
 

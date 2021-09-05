@@ -37,9 +37,9 @@ class Thing
   def initialize(foo = 0)
     @foo = foo
   end
-  
+
   private
-  
+
   def bar
     puts "whoa"
   end
@@ -126,7 +126,6 @@ yield
 Module for namespacing
 require 'testunit'
 bmbm - two-pass if garbage collection
-
 
 * <https://www.exceptionalcreatures.com/>
 * GC.stat

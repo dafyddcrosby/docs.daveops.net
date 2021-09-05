@@ -1,8 +1,7 @@
 # Minix
-.. TODO - read the microkernel source
+<!-- read the microkernel source -->
 
-Resources
----------
+## Resources
 
 * <http://www.minix3.org/>
 
