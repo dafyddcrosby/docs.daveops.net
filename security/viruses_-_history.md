@@ -1,6 +1,4 @@
 # Viruses - history
-Created Saturday 23 September 2017
-
 | Name        | Description                               | When             | Author          |
 |-------------|-------------------------------------------|------------------|-----------------|
 | Elk Cloner  | First virus on a microcomputer (Apple II) | 1982             | Rich Skrenta    |
