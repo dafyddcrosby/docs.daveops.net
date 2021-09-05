@@ -1,5 +1,5 @@
 ---
-title: Debugging
+title: Ruby/Debugging
 ---
 
 ## -r debug

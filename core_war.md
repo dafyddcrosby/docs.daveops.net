@@ -11,6 +11,27 @@ Originally called *Darwin*,  ran on a PDP-1 in Bell Labs
 
 10 instructions in original set, 14 in 1999
 
+<!-- TODO fill desc -->
+
+opcode | desc
+---    | ---
+DAT    | no-op
+MOV    |
+ADD    |
+SUB    |
+MUL    |
+DIV    |
+MOD    |
+JMP    |
+JMZ    |
+JMN    |
+DJN    |
+CMP    |
+SLT    |
+SPL    |
+
+- <http://www.koth.org/info/icws94.html>
+
 ## Memory Array Redcode Simulator (MARS)
 
 ## Types of programs

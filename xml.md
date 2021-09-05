@@ -18,4 +18,4 @@ xmllint --noout $FILE
 xmllint --noout --dtdvalid ./local.dtd $FILE
 ```
 
-* http://www.xmlsoft.org/
+- <http://www.xmlsoft.org/>

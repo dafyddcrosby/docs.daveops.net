@@ -4,7 +4,7 @@ title: Facebook
 
 ## Graph API
 
-```
+```text
 # Get details of calling user
 /me
 ```
