@@ -1,6 +1,6 @@
 ---
 title: Debugging
-----
+---
 
 ## Bryan Cantrill
 

@@ -1,4 +1,7 @@
-# nmap
+---
+title: nmap
+---
+
 Handy scripts
 -------------
 
