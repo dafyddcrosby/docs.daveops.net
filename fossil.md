@@ -35,6 +35,14 @@ update      | Changes version of current checkout
 git fast-export --all | fossil import --git new-repo.fossil
 ```
 
+## Ignore glob
+
+```bash
+mkdir -p .fossil-settings
+echo "ignore.this.file" > .fossil-settings/ignore-glob
+fossil add .fossil-setings/ignore-glob
+```
+
 ## Links
 
 * <https://www.fossil-scm.org>
