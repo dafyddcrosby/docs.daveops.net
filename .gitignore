@@ -1,4 +1,5 @@
 *.swp
+.obsidian
 html
 vendor
 _site
