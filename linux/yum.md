@@ -1,6 +1,6 @@
 ---
 title: YUM
-tags: ["Red Hat"]
+tags: RedHat
 ---
 
 ## Create a group

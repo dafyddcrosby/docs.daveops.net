@@ -1,6 +1,6 @@
 ---
 title: SystemD
-tags: ["init", "Linux", "Red Hat"]
+tags: init, Linux, RedHat
 ---
 
 ## systemctl
@@ -45,7 +45,7 @@ systemctl restart avahi-daemon.service
 
 ## Directories
 
-* /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this
+- /etc/systemd/system/\*.wants/SERVICE.service - Used to list what levels this
   service is configured on or off
 
 ## Runlevels
@@ -69,8 +69,8 @@ key         | value
 ---         | ---
 Environment | Space separated key-value pairs for environment variables
 
-* [Directives](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
-* [systemd unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
+- [Directives](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
+- [systemd unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
 
 ## Running user-level services
 
@@ -80,7 +80,7 @@ Run `systemctl` commands with `--user` flag
 
 ## Mountpoints
 
-* <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>
+- <https://www.freedesktop.org/software/systemd/man/systemd.mount.html>
 
 ## Analyze boot time
 
@@ -90,7 +90,7 @@ systemd-analyze
 
 ## Links
 
-* <https://cgit.freedesktop.org/systemd/systemd/>
-* <https://www.freedesktop.org/software/systemd/man/index.html>
-* [Design documentation](http://0pointer.de/blog/projects/systemd.html)
+- <https://cgit.freedesktop.org/systemd/systemd/>
+- <https://www.freedesktop.org/software/systemd/man/index.html>
+- [Design documentation](http://0pointer.de/blog/projects/systemd.html)
 

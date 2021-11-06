@@ -191,7 +191,7 @@ Good meta tags to have
 * <a href=”<https://plus.google.com/[YOUR> PERSONAL G+ PROFILE NUMBER]” rel=”me”>Me on Google+</a>
 * <link rel=”publisher” href=”<https://plus.google.com/[YOUR> BUSINESS G+ PROFILE HERE]”/>
 * [OpenGraph](./opengraph.md)
-* [Web Services:Twitter](../web_services/twitter.markdown)
+* [Web Services:Twitter](twitter.md)
 
 
 <http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013>
@@ -199,14 +199,13 @@ Good meta tags to have
 HTML entities for accents
 -------------------------
 
-
-| Modifier   | Example | HTML     |
-|------------|---------|----------|
-| Grave      | à       | &agrave; |
-| Acute      | á       | &aacute; |
-| Circumflex | â       | &acirc;  |
-| Tilde      | ã       | &atilde; |
-| Umlaut     | ä       | &auml;   |
-| Cedil      | ç       | &ccedil; |
+Modifier   | Example | HTML
+---        | ---     | ---
+Grave      | à       | &agrave;
+Acute      | á       | &aacute;
+Circumflex | â       | &acirc;
+Tilde      | ã       | &atilde;
+Umlaut     | ä       | &auml;
+Cedil      | ç       | &ccedil;
 
 

@@ -1,6 +1,6 @@
 ---
 title: SMF (Service Management Facility)
-tags: ["init"]
+tags: init
 ---
 
 Clear maintenance mode and restart

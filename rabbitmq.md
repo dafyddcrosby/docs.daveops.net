@@ -29,9 +29,11 @@ rabbitmqctl rotate_logs <suffix>
 
 ## Ports
 
-* 4369 - EPMD
-* 5672 - AMQP connections
-* 15672 - mgmt interface
+port  | desc
+---   | ---
+4369  | EPMD
+5672  | AMQP connections
+15672 | mgmt interface
 
 ## Re-syncing mirrors in HA mode
 

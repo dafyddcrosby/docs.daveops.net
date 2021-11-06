@@ -1,6 +1,6 @@
 ---
 title: kickstart
-tags: ["Red Hat"]
+tags: RedHat
 ---
 
 * Press ESC

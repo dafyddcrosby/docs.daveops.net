@@ -4,7 +4,7 @@ title: xmodem
 
 ## Using xmodem with macOS
 
-```
+```bash
 brew install lrzsz
 ```
 

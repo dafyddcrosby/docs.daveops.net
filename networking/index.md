@@ -1,4 +1,7 @@
-# Networking
+---
+title: Networking
+---
+
 traceroute/ping
 ---------------
 (as root)

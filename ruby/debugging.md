@@ -1,5 +1,5 @@
 ---
-title: Debugging
+title: Ruby/Debugging
 ---
 
 ## -r debug
@@ -27,7 +27,7 @@ require 'pry'
 binding.pry
 ```
 
-```
+```text
 # get list of commands
 repl> help
 
