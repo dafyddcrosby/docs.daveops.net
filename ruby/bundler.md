@@ -15,7 +15,21 @@ source 'https://rubygems.org' do
 end
 ```
 
+## Using a git repository
+
+```ruby
+gem 'rack', git: 'https://github.com/rack/rack'
+```
+
+<https://bundler.io/v2.2/guides/git.html>
+
 ## Install gems to dir
+
+```bash
+bundle config set --local path 'vendor'
+```
+
+Deprecated way:
 
 ```bash
 bundle install --path dir

@@ -1,5 +1,11 @@
-# ObjectSpace
-Created Wednesday 21 March 2018
+---
+title: Ruby - ObjectSpace
+---
 
-<https://ruby-doc.org/core-2.5.0/ObjectSpace.html>
+```ruby
+ObjectSpace.count_objects
+```
 
+## Links
+
+- <https://ruby-doc.org/core-3.0.2/ObjectSpace.html>
