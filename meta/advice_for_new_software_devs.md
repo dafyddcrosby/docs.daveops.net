@@ -23,11 +23,12 @@ tags: advice
 * What makes software 'legacy software' is that you will grow smarter and more experienced, and you'll just know better ways to organize and your code. If you try to learn lessons from legacy software, your time will be well-rewarded.
 * Look at the source code of the programs you use regularly. You might just be able to directly improve your own tools.
 * Don't celebrate sleep-deprivation. It's stupid. Get 8-9 hours of sleep a day, so that your mind can actually do good work.
-* Don't break backwards compatibility unless the idea behind breaking it is exceptionally good
+* Don't break backwards compatibility unless the idea behind breaking it is
+  exceptionally good (e.g. the program runs 5x faster, takes 1/10th the memory,
+  or something else materially worthwhile for your end users)
 * Don't work in a job just for the money - the money will dry up, but those memories won't. Your life is too valuable to waste on stupid crap.
 * Learn how to write tests
   * ...but don't go overboard. Find the right amount of testing so that it's actually *helpful*. Code-to-test ratio shouldn't be over 1.2, and writing tests shouldn't take more than 1/3 of your time.
 * Know what 'good enough' is in any project. There's seldom a need to optimize, don't build up technical debt needlessly.
 * Legacy software is the perception shift that happens when you become a better programmer. Legacy software *keeps you honest*.
-
-
+* [Your users might never tell you something is broken](https://pointersgonewild.com/2019/11/02/they-might-never-tell-you-its-broken/)
