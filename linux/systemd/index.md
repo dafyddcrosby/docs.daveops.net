@@ -1,6 +1,6 @@
 ---
-title: SystemD
-tags: init, Linux, RedHat
+title: systemd
+tags: init, Linux, systemd
 ---
 
 ## systemctl
@@ -21,27 +21,6 @@ list-unit-files --type=service | Print a table of services that lists which runl
 daemon-reload                  | Used when you create a new service file or modify any configuration
 list-dependencies              | Show dependency tree of a target
 
-## journalctl
-
-```bash
-# Jump to the end of the log
-journalctl -e
-# Use the message catalog for explanatory text
-journalctl -x
-# Show kernel logs of previous boot
-journalctl -k -b -1
-# Tail the log of a service
-journalctl -u SERVICENAME -f
-```
-
-## hostnamectl
-
-```bash
-# Set hostname
-hostnamectl set-hostname HOSTNAME
-# F32 and below to restart multicast DNS:
-systemctl restart avahi-daemon.service
-```
 
 ## Directories
 
@@ -88,8 +67,14 @@ Run `systemctl` commands with `--user` flag
 systemd-analyze
 ```
 
+## See also
+
+- [journalctl](./journalctl.md)
+- [hostnamectl](hostnamectl.md)
+
 ## Links
 
+- [homepage](https://systemd.io/)
 - <https://cgit.freedesktop.org/systemd/systemd/>
 - <https://www.freedesktop.org/software/systemd/man/index.html>
 - [Design documentation](http://0pointer.de/blog/projects/systemd.html)

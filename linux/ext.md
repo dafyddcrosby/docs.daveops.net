@@ -1,6 +1,7 @@
 ---
 title: ext filesystem
 slug: ext
+tags: filesystems
 ---
 
 * ext2 - no journaling, but good for small solid-state drives

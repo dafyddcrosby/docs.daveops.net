@@ -1,5 +1,6 @@
 ---
 title: XFS
+tags: filesystems
 ---
 
 Default filesystem of CentOS 7
