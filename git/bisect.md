@@ -1,5 +1,6 @@
 ---
 title: git bisect
+tags: git
 ---
 
 ```bash

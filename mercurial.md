@@ -1,5 +1,6 @@
 ---
 title: mercurial
+tags: VersionControl
 ---
 
 ## Clone a repo

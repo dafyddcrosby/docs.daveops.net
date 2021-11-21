@@ -2,7 +2,7 @@
 title: LVM
 ---
 
-# Cheatsheet
+## Cheatsheet
 
 ```bash
 # Initialize a disk for LVM
@@ -18,6 +18,6 @@ vgs
 lvcreate -l 100%free -n VOLUME_NAME GROUP_NAME
 ```
 
-# Links
+## Links
 
-* <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Logical_Volume_Manager_Administration/LVM_examples.html>
+- <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Logical_Volume_Manager_Administration/LVM_examples.html>

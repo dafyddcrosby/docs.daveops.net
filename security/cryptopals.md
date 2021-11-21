@@ -1,5 +1,4 @@
 # Cryptopals
-Created Monday 05 February 2018
 
 <http://cryptopals.com>
 

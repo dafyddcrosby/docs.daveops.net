@@ -7,5 +7,5 @@ title: Partitioning
 `/dev/hd*` - Drives that start with hd are PATA, also known as IDE drives.
 
 
-# GUID vs. MBR
+## GUID vs. MBR
 GUID Partition Table supports disks up to 9ZB, 128 partitions per-disk.

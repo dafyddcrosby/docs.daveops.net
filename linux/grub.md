@@ -4,7 +4,7 @@ title: GRUB
 
 Except where noted, this is for GRUB 2+
 
-# Console
+## Console
 
 ```bash
 # Turn on the pager in console mode
@@ -15,7 +15,7 @@ set
 ls
 ```
 
-# Grub grub.cfg creation
+## Grub grub.cfg creation
 
 ```bash
 # RHEL-ish
@@ -24,7 +24,7 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 update-grub
 ```
 
-# GRUB 1
+## GRUB 1
 
 * `/boot/grub/grub.conf`
 

@@ -79,9 +79,9 @@ setenforce [ Enforcing | Permissive | 1 | 0 ]
 
 The modes used by SELinux:
 
-* Enforcing
-* Permissive
-* Disabled
+- Enforcing
+- Permissive
+- Disabled
 
 
 ## semodule
@@ -121,11 +121,11 @@ findcon /etc/selinux/targeted/contexts/files/file_contexts -t shadow_t
 
 ## Policies
 
-| policy name | description |
-|-------------|-------------|
-| targeted | type enforcement rules, some RBAC |
-| strict | Full protection. TE, RBAC, much more aggressive |
-| mls | Multi-Level Security (more labels, more rules) |
+policy name | description
+---         | ---
+targeted    | type enforcement rules, some RBAC
+strict      | Full protection. TE, RBAC, much more aggressive
+mls         | Multi-Level Security (more labels, more rules)
 
 ## Networking
 

@@ -1,10 +1,11 @@
-# Cyberpunk
-Created Tuesday 10 April 2018
+---
+title: Cyberpunk
+---
 
-Books
+## Books
 
-* Neuromancer by William Gibson
-* Burning Chrome by William Gibson
-* Simulacron-3 by Daniel F. Galouye
+- Neuromancer by William Gibson
+- Burning Chrome by William Gibson
+- Simulacron-3 by Daniel F. Galouye
 
 

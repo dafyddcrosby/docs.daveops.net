@@ -25,8 +25,8 @@ From ["What is TRIZ?"](https://triz-journal.com/what-is-triz/)
 The Ideal Final Result (IFR) is when the product has no costs/harms to the customer.
 
 Five Pillars:
-* Ideality
-* Contradictions
+- Ideality
+- Contradictions
 
 ## Links
-* [TRIZ Journal](https://triz-journal.com)
+- [TRIZ Journal](https://triz-journal.com)

@@ -1,5 +1,6 @@
-# Anonymity
-Created Friday 13 October 2017
+---
+title: Anonymity
+---
 
 <https://blog.coralproject.net/the-real-name-fallacy/>
 

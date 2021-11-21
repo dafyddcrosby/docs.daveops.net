@@ -1,11 +1,11 @@
-# Conferences
-Created Friday 22 September 2017
+---
+title: Security Conferences
+---
 
-
-* DefCon
-* BlackHat
-* ShmooCon
-* HOPE
-* CanSecWest
+- DefCon
+- BlackHat
+- ShmooCon
+- HOPE
+- CanSecWest
 
 
