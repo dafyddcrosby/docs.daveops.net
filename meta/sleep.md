@@ -16,4 +16,4 @@ title: Sleep
 - Take any pain medication (eg acetominephan) 30m before bed so there's time to for it to kick in before sleeping
 - Don't cheap out on your mattress - you'll get bad sleep and a bad back as well
 - Weighted blankets are good for some folks (not all), try one if you haven't yet
-- If your sleep hygiene is good and you're still having issues, talk with your doctor
+- If your sleep still sucks, talk with your doctor. Insomnia research still has new techniques emerging

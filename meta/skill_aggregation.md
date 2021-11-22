@@ -30,7 +30,7 @@ title: Skill Aggregation
 - Sees situations holistically
 - Will self-correct based on previous performance
 - Learns from the experience of others
-- Frustrated by oversimplified information 
+- Frustrated by oversimplified information
 
 ## Level 5: Expert
 

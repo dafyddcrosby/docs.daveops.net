@@ -1,6 +1,10 @@
 ---
 title: ZFS
-tags: ["SmartOS", "Solaris", "FreeBSD"]
+tags:
+- SmartOS
+- Solaris
+- FreeBSD
+- Filesystems
 ---
 
 ## Compression
