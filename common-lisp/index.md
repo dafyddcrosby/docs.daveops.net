@@ -52,12 +52,12 @@ title: Common Lisp
 
 destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 
-| ~ | Directive                         |
-|---|-----------------------------------|
-| % | newline                           |
-| { | Consume a list                    |
-| a | 'aesthetic', output in human form |
-| R | human output of number            |
+ ~  | Directive
+--- | ---
+ %  | newline
+ {  | Consume a list
+ a  | 'aesthetic', output in human form
+ R  | human output of number
 
 ## Streams
 
@@ -84,8 +84,17 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 
 ## Resources
 
-* [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
-* [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+- [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
+- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+- https://github.com/CodyReichert/awesome-cl
+- http://www.adamtornhill.com/articles/lispweb.htm
+- https://edicl.github.io/hunchentoot/#teen-age
+- https://edicl.github.io/cl-who/
+- https://lisp-lang.org/books/
+- https://www.onlineprogrammingbooks.com/free-lisp-books/
+
+## Books
+- Land of Lisp
 
 <!--TODO
 

@@ -1,5 +1,6 @@
 ---
 title: upstart
+tags: init
 ---
 
 Included in CentOS 6, Ubuntu

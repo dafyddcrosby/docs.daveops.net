@@ -21,3 +21,18 @@ the core community and YJIT merged into the upstream.
 
 - [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
 - <https://github.com/ruby/debug>
+
+
+## 2.4
+- binding.irb
+## 2.1
+- generational garbage collector
+## 2.3
+- frozen string literal pragma
+## 2.2
+- incremental garbage collector
+## 2.0
+- copy-on-write friendly memory management
+
+## 1.9
+- added the Ruby Virtual Machine

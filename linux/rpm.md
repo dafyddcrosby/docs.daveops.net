@@ -5,7 +5,6 @@ tags: RedHat
 
 [List of RPM macros](http://www.zarb.org/~jasonc/macros.php)
 
-
 ```bash
 # List files in an RPM
 rpm -qlp file.rpm
@@ -31,8 +30,7 @@ rpm -i --nodeps ./RPM
 rpm -q --changelog <package>
 ```
 
-Rebuild SRPM
-------------
+## Rebuild SRPM
 
 ```bash
 # Centos 6
@@ -42,15 +40,13 @@ rpm -i <SRPM>
 rpmbuild -ba rpmbuild/SPECS/<spec file>
 ```
 
-Extract RPM contents
---------------------
+## Extract RPM contents
 
 ```bash
 rpm2cpio php-5.1.4-1.esp1.x86_64.rpm | cpio -idmv
 ```
 
-Signing RPM's with GPG
-----------------------
+## Signing RPM's with GPG
 
 In `.rpmmacros`
 
@@ -66,8 +62,7 @@ rpm --resign package1.rpm package2.rpm ...
 rpm --resign package1.rpm package2.rpm ...
 ```
 
-RPM DB rebuild
---------------
+## RPM DB rebuild
 
 ```bash
 rm -f /var/lib/rpm/__db* && rpm --rebuilddb

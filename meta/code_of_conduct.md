@@ -1,5 +1,6 @@
-# code of conduct
-Created Tuesday 18 September 2018
+---
+title: code of conduct
+---
 
 <https://www.contributor-covenant.org/>
 

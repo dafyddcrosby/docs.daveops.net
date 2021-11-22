@@ -8,7 +8,7 @@ title: GitHub - Markdown
 
 ## Emphasis
 
-```
+```markdown
 *This text will be italic*
 _This will also be italic_
 **This text will be bold**
@@ -23,7 +23,7 @@ Use `<!---` and `-->`, doesn't work for inline comments
 
 ## Links
 
-```
+```markdown
 <http://example.com> - automatic
 [Example](<http://example.com>)
 ```

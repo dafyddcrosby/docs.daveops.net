@@ -1,35 +1,15 @@
 # Conferences
 
-* ☐ add links
-
-
 <http://lanyrd.com/>
 
-Security
---------
+- [List of security conferences](../security/conferences.md)
 
+## BSD
 
-* DefCon
-* BlackHat
-* ShmooCon
-* HOPE
-* CanSecWest
+- [AsiaBSDCon](http://asiabsdcon.org)
+- BSDCan
 
+## Ruby
 
-BSD
----
-
-
-* [AsiaBSDCon](http://asiabsdcon.org)
-* BSDCan
-
-
-Ruby
-----
-
-
-* <http://rubythere.com/>
-* Rails Conf
-
-
-
+- Ruby Kaigi
+- Rails Conf

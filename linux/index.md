@@ -62,23 +62,26 @@ find / -perm +6000 -type f -exec ls -ld {} \; > setuid.txt &
 
 ## Burn an ISO from the command prompt
 
-
- cdrecord -v -data image.iso
+```bash
+cdrecord -v -data image.iso
+```
 
 ## Fixing missing shared library
 
-* Create a .conf file in `/etc/ld.so.conf.d/` and put the library's directory in it.
-* Run `ldconfig` to reload the system paths
+- Create a .conf file in `/etc/ld.so.conf.d/` and put the library's directory in it.
+- Run `ldconfig` to reload the system paths
 
 ## Find files changed in the past day
 
-
- find . -ctime -1 -type f
+```bash
+find . -ctime -1 -type f
+```
 
 ## Disable caps lock
 
-
- setxkbmap -option ctrl:nocaps
+```bash
+setxkbmap -option ctrl:nocaps
+```
 
 ## Set time on machine that doesn't have NTP
 
@@ -88,15 +91,16 @@ date --set="$(ssh user@server date)"
 
 ## Inter-user communication
 
-
- # Get list of logged in users
- who
- # Send message to all users
- wall [message]
- # Send message to another user's terminal
- write user [ttyname]
- # Enable/disable terminal message
- mesg [n|y]
+```bash
+# Get list of logged in users
+who
+# Send message to all users
+wall [message]
+# Send message to another user's terminal
+write user [ttyname]
+# Enable/disable terminal message
+mesg [n|y]
+```
 
 ## Assembly
 
@@ -151,7 +155,7 @@ prlimit --pid $PID --nofile=8192
 
 ## Kernel resources
 
-* <https://kernel.org>
-* <https://lwn.net/>
-* <https://kernelnewbies.org/>
-* [Kernel syscalls](https://syscalls.kernelgrok.com/)
+- <https://kernel.org>
+- <https://lwn.net/>
+- <https://kernelnewbies.org/>
+- [Kernel syscalls](https://syscalls.kernelgrok.com/)

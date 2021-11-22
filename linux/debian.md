@@ -4,7 +4,7 @@ title: Debian
 
 ## Package management
 
-* `/etc/apt/sources.list` - list of APT repositories
+- `/etc/apt/sources.list` - list of APT repositories
 
 ```bash
 # Install a package

@@ -15,6 +15,6 @@ ghe-webhook-logs -f -a YYYYMMDD
 
 ## Documentation
 
-* <https://docs.github.com/en/enterprise-server@2.22/admin/configuration/command-line-utilities>
-* <https://docs.github.com/en/enterprise-server@2.22/admin>
-* <https://docs.github.com/en/enterprise-server@2.22/user/github>
+- <https://docs.github.com/en/enterprise-server@2.22/admin/configuration/command-line-utilities>
+- <https://docs.github.com/en/enterprise-server@2.22/admin>
+- <https://docs.github.com/en/enterprise-server@2.22/user/github>

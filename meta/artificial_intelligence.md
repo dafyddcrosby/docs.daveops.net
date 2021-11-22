@@ -1,5 +1,6 @@
-# Artificial Intelligence
-Created Friday 06 July 2018
+---
+title: Artificial Intelligence
+---
 
 <https://en.wikipedia.org/wiki/Moravec%27s_paradox>
 

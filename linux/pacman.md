@@ -1,7 +1,9 @@
-# pacman
-@Arch_Linux
+---
+title: pacman
+tags: ArchLinux
+---
 
-Installing
-----------
-	pacman -S [package]
-
+## Installing
+```bash
+pacman -S [package]
+```

@@ -1,15 +1,15 @@
-# patch
-To create patch
----------------
+---
+title: patch
+---
 
+## To create patch
 
- diff -Naur oldfile newfile >new-patch
+```bash
+diff -Naur oldfile newfile >new-patch
+```
 
-To add patch
-------------
+## To add patch
 
-
- patch <new-patch
-
-
-
+```bash
+patch <new-patch
+```

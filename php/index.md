@@ -182,8 +182,7 @@ header("Location: http://www.example.com/");
 ?>
 ```
 
-Syntax cheatsheet
-=================
+## Syntax cheatsheet
 
 ```php	
 <?php
@@ -194,6 +193,10 @@ if ($blah == 0) {
 } else {
   // code
 }
+
+// null coalescing - ??
+// $var = isset($_GET['var']) ? $_GET['var'] : 'default';
+$var = $_GET['var'] ?? 'default';
 
 $arr = array(1, 2, 3, 4);
 foreach ($arr as $value) {

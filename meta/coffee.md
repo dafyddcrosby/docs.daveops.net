@@ -1,5 +1,10 @@
-# Coffee
+---
+title: Coffee
+---
+
 If coffee is sour, it's under-extracted.
 
-<http://brewmethods.com/>
+## Links
+
+- <http://brewmethods.com/>
 

@@ -20,8 +20,7 @@ sub hw {
 hw();
 ```
 
-LWP - HTTP Get
---------------
+## LWP - HTTP Get
 
 `get($url)`
 
@@ -31,10 +30,11 @@ LWP - HTTP Get
 
 ### See if LWP is installed
 
-`perl -MLWP -le "print(LWP->VERSION)"`
+```bash
+perl -MLWP -le "print(LWP->VERSION)"
+```
 
-Parsing JSON
-------------
+## Parsing JSON
 
 ```perl
 use JSON;

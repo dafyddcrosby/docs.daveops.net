@@ -4,7 +4,7 @@ title: init
 
 Traditional init systems used `/etc/inittab`
 
-# Runlevels
+## Runlevels
 
 ```bash
 # See the current runlevel
@@ -16,11 +16,11 @@ init 5
 telinit 5
 ```
 
-# /etc/rc.d
+## /etc/rc.d
 
 File links that start with S start the service, K stops the service. Numbers determine order of operation.
 
-# chkconfig
+## chkconfig
 
 Generally only available on RHEL-ish
 
@@ -32,7 +32,7 @@ chkconfig --list
 chkconfig --level 24 httpd on
 ```
 
-# LSB
+## LSB
 
 level | desc
 ---   | ---

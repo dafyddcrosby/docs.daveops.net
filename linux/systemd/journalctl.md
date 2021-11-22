@@ -1,6 +1,6 @@
 ---
-title: SystemD/journalctl
-tags: init, Linux, RedHat
+title: systemd/journalctl
+tags: Linux, systemd
 ---
 
 ## journalctl

@@ -1,3 +1,6 @@
-# Meta
-Created Friday 22 September 2017
+---
+title: Meta
+---
+
+The "meta" pages are the stuff that's not about the code, but everything around it.
 

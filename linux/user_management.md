@@ -41,9 +41,9 @@ umask 077
 
 ## Groups
 
-* newgrp - logs into a new shell with a new primary group
-* chgrp - change the group for files
-* groupadd - create a group
-* usermod - add users to the group
+- newgrp - logs into a new shell with a new primary group
+- chgrp - change the group for files
+- groupadd - create a group
+- usermod - add users to the group
 
 Sticky bit - t or T in the mode line

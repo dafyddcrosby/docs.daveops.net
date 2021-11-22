@@ -4,8 +4,6 @@ title: Ruby - Performance
 
 ## Frozen string literals
 
-## Frozen string literals
-
 When 'freeze' is called on a string you are marking that string as immutable. The   performance benefit is that the object can be re-used without new object allocation.
 
 ```ruby
@@ -37,7 +35,7 @@ $ ruby freeze.rb
 ### File pragma
 
 In Ruby 2.3+, you can add this pragma to opt-in to all string literals being
-made immutable in the source file.
+made immutable in the source file. Note - this isn't a guaranteed performance win!
 
 ```ruby
 # frozen_string_literal: true
@@ -63,10 +61,13 @@ x = 'a'
 x << 'b'
 ```
 
+Worst case, it'll be a `realloc` but won't trigger GC
+
 ### Memory-heavy iterators
 
 When going through a file, it's better to read the file line-by-line like the
 following to avoid GC hits:
+<!--- TODO put inefficient example here-->
 
 ```ruby
 file = File.open('foobar', 'r')
@@ -78,3 +79,6 @@ end
 ## See also 
 
 - [ObjectSpace](./objectspace.md)
+
+## Books
+- Ruby Performance Optimization by Alexander Dymo

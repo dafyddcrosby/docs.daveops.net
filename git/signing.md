@@ -1,5 +1,6 @@
 ---
 title: Git commit signing
+tags: git
 ---
 
 ```bash

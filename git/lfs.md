@@ -1,5 +1,6 @@
 ---
 title: Git LFS
+tags: git
 ---
 
 https://git-lfs.github.com/

@@ -1,12 +1,12 @@
-# Laws of Computing
+---
+title: Laws of Computing
+---
 
-Marick's Law
-------------
+# Marick's Law
 
 In software, anything of the form "X's Law" is better understood by replacing the word "Law" with "Fervent Desire".
 
-Hanlon's Razor
---------------
+# Hanlon's Razor
 
 Don't attribute to malice that which is adequately explained by carelessness/ignorance/stupidity.
 

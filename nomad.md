@@ -21,4 +21,4 @@ nomad run JOBNAME.nomad
 Default web UI port is 4646
 
 ## Links
-* [CLI reference](https://www.nomadproject.io/docs/commands/index.html)
+- [CLI reference](https://www.nomadproject.io/docs/commands/index.html)

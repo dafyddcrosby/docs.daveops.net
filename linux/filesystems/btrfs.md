@@ -1,5 +1,6 @@
 ---
 title: btrfs
+tags: filesystems
 ---
 
 ## snapshots

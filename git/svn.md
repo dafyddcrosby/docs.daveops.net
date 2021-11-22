@@ -1,5 +1,6 @@
 ---
-title: SVN
+title: Git/SVN
+tags: git
 ---
 
 ## Importing a local SVN repo to git

@@ -10,4 +10,4 @@ ninja -t compdb > compile_commands.json
 
 ## Links
 
-* https://ninja-build.org/
+- https://ninja-build.org/
