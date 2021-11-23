@@ -83,11 +83,11 @@ u && u.profile && u.profile.thumbnails && u.profiles.thumbnails.large
 u&.profile&.thumbnails&.large
 ```
 
-## Running proceses
+## Running processes
 
-* [system()](http://ruby-doc.org/core/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
-* [backticks](http://ruby-doc.org/core/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
-* [exec()](http://ruby-doc.org/core/Kernel.html#method-i-exec) - replace current process by running command
+- [system()](http://ruby-doc.org/core/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
+- [backticks](http://ruby-doc.org/core/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
+- [exec()](http://ruby-doc.org/core/Kernel.html#method-i-exec) - replace current process by running command
 
 ## % Notation
 
@@ -103,13 +103,9 @@ Modifier | Meaning
 %W[ ]    | Interpolated Array of words, separated by whitespace
 %x[ ]    | Interpolated shell command
 
-## Freezing strings
+## Links
 
-The `frozen_string_literal` pragma will have all strings in the code be immutable, improving performance. To debug, use `--debug=frozen-string-literal`
-
-```ruby
-# frozen_string_literal: true
-```
+- [List of end-of-life Ruby versions](https://endoflife.date/ruby)
 
 <!--- Todo
 

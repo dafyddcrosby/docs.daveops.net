@@ -37,5 +37,5 @@ bundle install --path dir
 
 ## Resources
 
-* <https://bundler.io>
+- <https://bundler.io>
 

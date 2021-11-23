@@ -36,6 +36,7 @@ $ ruby freeze.rb
 
 In Ruby 2.3+, you can add this pragma to opt-in to all string literals being
 made immutable in the source file. Note - this isn't a guaranteed performance win!
+To debug, use `--debug=frozen-string-literal`
 
 ```ruby
 # frozen_string_literal: true
