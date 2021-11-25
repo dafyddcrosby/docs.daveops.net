@@ -4,8 +4,8 @@ title: Linux/ld
 
 # The GNU linker
 
-* `/etc/ld.so.conf` configures directories to search
-* `/etc/ld.so.cache` is the binary cache used by ld.so
+- `/etc/ld.so.conf` configures directories to search
+- `/etc/ld.so.cache` is the binary cache used by ld.so
 
 ```bash
 # Reload ld cache
