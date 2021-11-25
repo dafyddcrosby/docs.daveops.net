@@ -23,6 +23,12 @@ git fetch
 git checkout -b local_branch_name remote/branch_name
 ```
 
+## Rename a branch
+
+```bash
+git branch -m master main
+```
+
 ## Sequential versioning
 
 ```bash
@@ -48,7 +54,7 @@ git commit --amend
 
 ### Push to website on git push
 
-on server, put this in ``hooks/post-receive``
+On server, put this in ``hooks/post-receive``
 
 ```bash
 #!/bin/sh
@@ -95,44 +101,38 @@ git stash clear  # delete all stashes
 git remote add upstream <git://github.com/user/repo.git>
 ```
 
-Show nicely formatted changelog
--------------------------------
+## Show nicely formatted changelog
 
 ```bash
 git log --graph --oneline --abbrev-commit --decorate
 ```
 
-See commits from individual
----------------------------
+## See commits from individual
 
 ```bash
 git log --author="david"
 ```
 
-Get list of contributors
-------------------------
+## Get list of contributors
 
 ```bash
 git shortlog -s -n
 ```
 
-Remove non-tracked files
-------------------------
+## Remove non-tracked files
 
 ```bash
 git clean -n  # dry run
 git clean -f  # delete the files
 ```
 
-Squash commits into single commit
----------------------------------
+## Squash commits into single commit
 
 ```bash
 git rebase -i <hash>
 ```
 
-Untrack files without deletion
-------------------------------
+## Untrack files without deletion
 
 ```bash
 echo "filename" >> .gitignore
@@ -150,30 +150,26 @@ git remote add origin git@github.com:dafyddcrosby/dotfiles.git
 git pull origin main
 ```
 
-Get list of staged files for commit
------------------------------------
+## Get list of staged files for commit
 
 ```bash
 git diff --cached --name-status | sed 's/.\s*//'
 ```
 
-Diff remote repo
-----------------
+## Diff remote repo
 
+```bash
+git diff <branch> <remote>/<branch>
+```
 
-
- git diff <branch> <remote>/<branch>
-
-Import Sourceforge CVS repo
----------------------------
+## Import Sourceforge CVS repo
 
 ```bash
 rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
 git cvsimport -p x -v -d /absolute/path/to/w3m w3m
 ```
 
-Import another repo as a subtree
---------------------------------
+## Import another repo as a subtree
 
 ```bash
 git remote add -f remote_name git@example.com:remote_repo.git
@@ -182,8 +178,7 @@ git read-tree --prefix=newpath/ -u remote_name/main
 git commit -m "Subtree merged in newpath"
 ``` 
 
-Search git history
-------------------
+## Search git history
 
 ```bash
 git log -S <search term>
@@ -205,7 +200,7 @@ git branch --merged | grep -v \* | xargs git branch -D
 
 In the commit message
 
-```
+```text
 Signed-off-by: David Crosby <email@example.com>
 ```
 
