@@ -46,19 +46,28 @@ GOOS=linux GOARCH=amd64 go build
 
 [https://golang.org/doc/install/source#environment](List of compilation targets)
 
+## Static linking
+
+If you're not using CGo, you can statically link with `CGO_ENABLED`.
+In Fedora this appears to be [on by default](https://src.fedoraproject.org/rpms/golang//blob/rawhide/f/golang.spec)
+
+```bash
+CGO_ENABLED=0 go build
+```
+
 ## Resources
 
 ```bash
 godoc -http=:8080
 ```
 
-* <https://golang.org/>
-* [Language Specification](https://golang.org/ref/spec)
-* [Go Koans](https://github.com/cdarwin/go-koans)
+- <https://golang.org/>
+- [Language Specification](https://golang.org/ref/spec)
+- [Go Koans](https://github.com/cdarwin/go-koans)
 
 ## Looking into
 
-* https://www.kablamo.com.au/blog-1/2018/12/10/just-tell-me-how-to-use-go-modules
-* https://cryptic.io/go-http/
-* https://medium.com/@nate510/don-t-use-go-s-default-http-client-4804cb19f779
-* [TinyGo](https://tinygo.org/)
+- <https://www.kablamo.com.au/blog-1/2018/12/10/just-tell-me-how-to-use-go-modules>
+- <https://cryptic.io/go-http/>
+- <https://medium.com/@nate510/don-t-use-go-s-default-http-client-4804cb19f779>
+- [TinyGo](https://tinygo.org/)
