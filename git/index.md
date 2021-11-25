@@ -141,14 +141,13 @@ git add -u
 git commit -m "removing filename from version control"
 ```
 
-Load my dotfiles to the home directory
---------------------------------------
+## Load my dotfiles to the home directory
 
 ```bash
 cd ~
 git init
 git remote add origin git@github.com:dafyddcrosby/dotfiles.git
-git pull origin master
+git pull origin main
 ```
 
 Get list of staged files for commit
@@ -178,8 +177,8 @@ Import another repo as a subtree
 
 ```bash
 git remote add -f remote_name git@example.com:remote_repo.git
-git merge -s ours --no-commit remote_name/master
-git read-tree --prefix=newpath/ -u remote_name/master
+git merge -s ours --no-commit remote_name/main
+git read-tree --prefix=newpath/ -u remote_name/main
 git commit -m "Subtree merged in newpath"
 ``` 
 
@@ -196,7 +195,7 @@ git log -S <search term>
 git checkout <HASH> -- ./path/to/file
 ```
 
-## Remove branches that have been merged to master
+## Remove branches that have been merged to main
 
 ```bash
 git branch --merged | grep -v \* | xargs git branch -D
