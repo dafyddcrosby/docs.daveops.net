@@ -1,8 +1,10 @@
 ---
 title: People/W. Edward Deming
 tags:
-- people
+  - people
 ---
+
+# W. Edward Deming
 
 ## 14 Principles of Management
 

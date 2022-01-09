@@ -4,6 +4,8 @@ tags:
   - people
 ---
 
+# Brendan Gregg
+
 - [Brilliant Jerks](http://www.brendangregg.com/blog/2017-11-13/brilliant-jerks.html)
 
 ## The USE Method
