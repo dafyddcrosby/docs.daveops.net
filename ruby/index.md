@@ -201,8 +201,8 @@ pp Ripper.sexp(f)
 http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html
 
  ### ast and parser gems
-https://github.com/whitequark/ast
-https://github.com/whitequark/parser
+- https://github.com/whitequark/ast
+- https://github.com/whitequark/parser
 
  ### code reconstruction from AST
 - [unparser](https://github.com/mbj/unparser)
@@ -219,8 +219,6 @@ end
 
 ract.take
 ```
-
- ### Links
 
 - [Ruby Ractor Reference](https://ruby-doc.org/core-3.0.2/Ractor.html)
 - [Good intro to Ractors [ScoutAPM]](https://scoutapm.com/blog/ruby-ractor)
