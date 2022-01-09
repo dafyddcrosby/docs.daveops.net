@@ -13,17 +13,17 @@
 
     <header>
       <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-	<h1>{{ page.title }}</h1>
         {{ content }}
       </section>
     </div>
   </body>
 </html>
-
