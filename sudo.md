@@ -1,3 +1,8 @@
+---
+title: sudo
+
+---
+
 # sudo
 sudoers syntax cheatsheet
 -------------------------

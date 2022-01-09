@@ -1,6 +1,11 @@
+---
+title: Nagios
+
+---
+
 # Nagios
-Plugin levels
--------------
+
+## Plugin levels
 
 | # | level    |
 |---|----------|

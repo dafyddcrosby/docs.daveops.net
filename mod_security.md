@@ -1,5 +1,9 @@
+---
+title: mod_security
+
+---
+
 # mod_security
-Created Tuesday 10 October 2017
 
 	<IfModule security2_module>
 	# Turn on rule engine and set default action

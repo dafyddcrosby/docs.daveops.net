@@ -1,3 +1,8 @@
+---
+title: refactorings
+
+---
+
 # Refactorings
 
 * Extract method -> move block of code into a separate function

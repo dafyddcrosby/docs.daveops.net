@@ -1,7 +1,7 @@
 ---
 title: Akira Kitamura
 tags:
-- people
+  - people
 ---
 
 Game designer of Mega Man

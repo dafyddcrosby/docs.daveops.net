@@ -1,5 +1,8 @@
+---
+title: Sphinx
+
+---
 # Sphinx
-@Python
 
 Create new project
 ------------------

@@ -1,7 +1,7 @@
 ---
 title: Seymour Cray
 tags:
-- People
+  - People
 ---
 
 "What Seymour threw out the window, Les [Davis] would catch."

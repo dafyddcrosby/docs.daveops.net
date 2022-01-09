@@ -1,3 +1,8 @@
+---
+title: Oracle Integrated LOM
+
+---
+
 # Oracle Integrated LOM
 
 ## Turn on indicator light
