@@ -1,7 +1,10 @@
 ---
 title: benchmarking
-tags: ["Ruby"]
+tags:
+  - Ruby
 ---
+
+# Ruby Benchmarking
 
 ## Running the profiler
 

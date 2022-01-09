@@ -1,6 +1,7 @@
 ---
 title: Mount
-tags: ["Linux"]
+tags:
+  - Linux
 ---
 
 ```bash
