@@ -134,3 +134,94 @@ bmbm - two-pass if garbage collection
 
 -->
 
+
+## Get list of undocumented code
+
+```
+rdoc -C1 > documentation_coverage.txt
+```
+
+ ### Links
+
+- <http://documenting-ruby.org/>
+
+
+## Extending and Embedding
+ ### C
+
+Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
+
+- [Running Ruby in C](https://silverhammermba.github.io/emberb/embed/)
+- [Embedding a Ruby interpreter](https://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Extending_Ruby_Embedding_a_Ruby_Interpreter.html)
+
+ ### C++
+
+[Rice](https://github.com/jasonroelofs/rice)
+
+ ### Rust
+
+Can use C bindings...
+
+ ### Java
+
+- <https://www.jruby.org>
+
+
+## Neat Ruby source files to look at
+
+file          | desc
+---           | ---
+parse.y       | The lexing/parsing of Ruby source code
+defs/keywords | The reserved keywords of Ruby
+
+## parsing
+ ### parsetree (CLI)
+
+```bash
+ruby --dump parsetree
+```
+
+This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in
+CRuby source (output not usable in other implementations)
+
+ ### Ripper
+
+Built-in since Ruby 1.9
+
+Dumps S-expressions
+
+```ruby
+require 'ripper'
+require 'pp'
+
+f = File.read('foo.rb')
+pp Ripper.sexp(f)
+```
+
+http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html
+
+ ### ast and parser gems
+https://github.com/whitequark/ast
+https://github.com/whitequark/parser
+
+ ### code reconstruction from AST
+- [unparser](https://github.com/mbj/unparser)
+- [sorcerer](https://github.com/jimweirich/sorcerer)
+
+## Ractors
+Ractors are Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
+
+
+```ruby
+ract = Ractor.new do
+  puts "hello"
+end
+
+ract.take
+```
+
+ ### Links
+
+- [Ruby Ractor Reference](https://ruby-doc.org/core-3.0.2/Ractor.html)
+- [Good intro to Ractors [ScoutAPM]](https://scoutapm.com/blog/ruby-ractor)
+- [Koichi's 'guild' slides that Ractor was based off](https://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf)
