@@ -1,5 +1,6 @@
 ---
 title: Erlang
+tags: Erlang
 ---
 
 * All statements must end with a period and whitespace

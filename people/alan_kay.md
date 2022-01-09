@@ -52,3 +52,7 @@ Every invention has to be usable by at least 100 people.
 
 [Source](https://www.quora.com/What-made-Xerox-PARC-special-Who-else-today-is-like-them/answer/Alan-Kay-11)
 
+
+## Quotes
+
+> Arrogance in computing is measured in nano-Dijkstras'

@@ -22,3 +22,8 @@ tms = Benchmark.measure { for i in 1..n; a = "1"; end }
 # Returns [@label, @utime, @stime, @cutime, @cstime, @real]
 tms.to_a
 ```
+
+## Links
+
+- https://github.com/evanphx/benchmark-ips
+- https://github.com/davy/benchmark-bigo

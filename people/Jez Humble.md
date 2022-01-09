@@ -1,5 +1,7 @@
 ---
 title: Jez Humble
+tags:
+- People
 ---
 
 [Why Scaling Agile Doesn't Work](https://www.youtube.com/watch?v=2zYxWEZ0gYg)

@@ -11,7 +11,7 @@ mount -o loop disk1.iso /mnt/disk
 mount /home -o remount, noatime
 
 # Create a RAM disk
-mount -t tmpfs tmpfs /mnt -o size=1024m
+mount -t tmpfs -o size=1g tmpfs /mnt
 ```
 
 ## Lazy unmount of a partition

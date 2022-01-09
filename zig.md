@@ -11,6 +11,10 @@ zig cc --version
 zig targets
 ```
 
+## versions
+
+- 0.5.0 - async
+
 ## links
 
 * <https://ziglang.org/>

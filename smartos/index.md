@@ -1,5 +1,6 @@
-# SmartOS
-@SmartOS
+---
+title: SmartOS
+---
 
 
 * vmadm - start, stop, etc virtual machines

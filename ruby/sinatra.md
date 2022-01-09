@@ -16,6 +16,15 @@ get '/helloworld' do
 end
 ```
 
+## Using Rack
+
+### Classic-style
+
+```ruby
+require './app'
+run Sinatra::Application
+```
+
 ## Using haml
 
 * Add haml to Gemfile

@@ -38,6 +38,11 @@ class Thing
     @foo = foo
   end
 
+  # use `self.` to define a class method
+  def self.foobar
+    puts "foobar"
+  end
+
   private
 
   def bar
