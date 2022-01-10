@@ -17,7 +17,5 @@ tag                     | desc
 @repeat-method(method)  | the repeat method: fixed, start-after-completion, or due-after-completion
 @repeat-rule(rule)      | an ICS repeat rule (see RFC244557), e.g. FREQ=WEEKLY;INTERVAL=1
 
-## Links
-
 * https://support.omnigroup.com/omnifocus-taskpaper-reference/
 * https://omni-automation.com/omnifocus/taskpaper.html

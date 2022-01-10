@@ -159,3 +159,29 @@ prlimit --pid $PID --nofile=8192
 - <https://lwn.net/>
 - <https://kernelnewbies.org/>
 - [Kernel syscalls](https://syscalls.kernelgrok.com/)
+
+
+# Timezones
+
+## Creating a timezone
+
+```bash
+echo "Zone MEST -6:00 - MEST" > MEST.zone
+zic -d ~/.zoneinfo MEST.zone
+export TZDIR=~/.zoneinfo TZ=MEST
+```
+
+## Setting timezone (systemd)
+
+```bash
+sudo timedatectl set-timezone TIMEZONE
+```
+
+
+
+# WONTFIX
+
+There's a lot of crazy behaviour in Linux, that for whatever reason will not be fixed.
+
+- [unintentional TCP self-connects](http://lkml.iu.edu/hypermail/linux/kernel/9909.3/0510.html)
+- fingerprinting via UDP packets

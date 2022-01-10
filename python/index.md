@@ -191,3 +191,24 @@ pydoc -p $PORT
 ```
 
 <!-- vim: set nospell: -->
+
+
+
+## Disassemble a code object
+
+```python
+import dis
+dis.dis(func)
+```
+
+<http://akaptur.com/blog/2013/08/14/python-bytecode-fun-with-dis/>
+
+
+
+
+
+## Create virtual environment
+
+```bash
+python3 -m venv path/to/new/env
+```

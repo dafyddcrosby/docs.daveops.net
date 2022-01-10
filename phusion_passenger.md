@@ -9,13 +9,14 @@ CLI
 ---
 
 
-
-  # Get overall status
-  passenger-status
-  # current requests
-  passenger-status --show=requests
-  # restart app
-  passenger-config restart-app
+```bash
+# Get overall status
+passenger-status
+# current requests
+passenger-status --show=requests
+# restart app
+passenger-config restart-app
+```
 
 Hiding Version Headers
 ----------------------

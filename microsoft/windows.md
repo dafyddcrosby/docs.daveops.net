@@ -47,3 +47,18 @@ Save as FILENAME.bat
 
 * [Cleaning NTFS artifacts with
   FSCTL_CLEAN_VOLUME_METADATA](https://medium.com/@grzegorztworek/cleaning-ntfs-artifacts-with-fsctl-clean-volume-metadata-bd29afef290c)
+
+
+## Sign a Windows binary in Linux with osslsigncode
+
+```bash
+osslsigncode -certs signing.cert -key signing.key -readpass passphrase_file -in unsigned_binary.exe -out signed_binary.exe -h sha256
+```
+
+
+
+## Extract files from WISE installer
+
+```shell
+installer.exe /x
+```
