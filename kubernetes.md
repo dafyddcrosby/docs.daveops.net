@@ -1,7 +1,4 @@
----
-title: Kubernetes
-tags: ["containers"]
----
+# Kubernetes
 
 Master -> Node + Node processes
 
@@ -115,3 +112,46 @@ kubectl get componentstatus
 * [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 * <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
 * [Kubernetes post-mortems](https://k8s.af/)
+
+
+# minikube
+<https://github.com/kubernetes/minikube>
+
+Master -> Node -> Node processes
+
+	minikube start
+
+
+
+# k3
+* https://github.com/rancher/k3s
+* https://github.com/rancher/k3d
+
+
+# k3s
+* https://github.com/rancher/k3s
+* https://github.com/rancher/k3d
+
+
+# metrics-server
+
+<https://github.com/kubernetes-incubator/metrics-server>
+<https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/>
+
+
+
+# heapster
+
+<https://github.com/kubernetes/heapster>
+deprecated Kubernetes 1.11, retired in Kubernetes 1.13
+collects metrics from cadvisor
+to be replaced by [[kubernetes]]
+
+
+# cadvisor
+
+<https://hub.docker.com/r/google/cadvisor/>
+collects resource/perf metrics from running containers
+UI - port was 4194
+in Kubernetes 1.11, UI turned off by default
+

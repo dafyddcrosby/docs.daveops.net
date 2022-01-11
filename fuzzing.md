@@ -1,6 +1,5 @@
----
-title: American Fuzzy Lop
----
+# Fuzzing
+# American Fuzzy Lop
 
 <http://lcamtuf.coredump.cx/afl/>
 

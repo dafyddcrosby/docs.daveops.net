@@ -1,8 +1,8 @@
 # Solaris
-
+This includes Solaris derivatives as well, such as OpenSolaris and the Illumos project
 <http://www.brendangregg.com/blog/2017-09-05/solaris-to-linux-2017.html>
 
-
+# Solaris
 
 # SMF (Service Management Facility)
 
@@ -57,4 +57,42 @@ Show hardware devices
 ---------------------
 	show-devs
 
+
+
+
+# OmniOS
+https://omnios.org/
+
+
+
+# SmartOS
+
+* vmadm - start, stop, etc virtual machines
+* imgadm - find, download, install images
+
+
+
+
+## SmartDataCenter
+
+Find VM by alias
+----------------
+
+
+
+ sdc-vmapi /vms | json -H -c "this.alias &amp;&amp; this.alias.match(/riak/)"
+
+Output fwapi rules
+------------------
+
+
+
+ sdc-fwapi /rules
+
+Update resolvers
+----------------
+
+
+
+ sdc-vmapi  /vms/<uuid>?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"] }'
 

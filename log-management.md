@@ -1,9 +1,31 @@
----
-title: systemd/journalctl
-tags: Linux, systemd
----
+# Log management
+# logstash
 
-## journalctl
+- [Docker image](https://hub.docker.com/_/logstash)
+
+
+# Loki
+
+* [Documentation](https://grafana.com/docs/loki/latest/overview/)
+
+
+# logrotate
+Syntax
+------
+
+	 /path/to/file.log {
+		 rotate 30
+		 daily
+		 compress
+		 missingok
+		 copytruncate
+		 dateext
+	 }
+
+
+
+
+# systemd/journalctl
 
 ```bash
 # Jump to the end of the log

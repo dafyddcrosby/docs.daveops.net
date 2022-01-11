@@ -1,6 +1,4 @@
----
-title: hardware
----
+# Electronic hardware
 
 * [Navy Electricity and Electronics Training Series](https://www.hnsa.org/resources/manuals-documents/2575-2/)
 * <https://hackaday.com/>
@@ -28,3 +26,31 @@ title: hardware
 <!---
 https://blog.jessfraz.com/post/why-open-source-firmware-is-important-for-security
 -->
+
+
+---
+title: Fuses
+---
+
+## Slow blow fuses
+
+L - Low Breaking Capacity (ie glass)
+H - High Breaking Capacity (ie ceramic)
+
+
+# theory
+Created Sunday 16 September 2018
+
+Voltage
+-------
+symbol: V (sometimes E)
+measured in volts
+voltage is *between 2 points*
+
+Current
+-------
+symbol: I
+measured in amps
+current is *through a circuit*
+
+

@@ -1,6 +1,15 @@
----
-title: GoCD
----
+# Continuous Integration and Delivery
+# Jenkins
+* [Docker image](https://hub.docker.com/r/jenkins/jenkins)
+
+
+# spinnaker
+
+<https://www.spinnaker.io/>
+
+
+
+# GoCD
 
 ## Enable SSL debugging
 

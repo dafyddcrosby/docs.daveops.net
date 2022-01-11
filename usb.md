@@ -1,5 +1,4 @@
 # usb
-Created Saturday 08 September 2018
 
 Cable
 -----
