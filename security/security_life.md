@@ -5,3 +5,14 @@
 ## Resources
 
 - http://lcamtuf.blogspot.com/2016/08/so-you-want-to-work-in-security-but-are.html
+
+
+# Security Conferences
+
+- DefCon
+- BlackHat
+- ShmooCon
+- HOPE
+- CanSecWest
+
+

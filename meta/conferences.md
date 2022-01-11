@@ -2,7 +2,7 @@
 
 <http://lanyrd.com/>
 
-- [List of security conferences](../security/conferences.md)
+- [List of security conferences](../security/security_life.md)
 
 ## BSD
 

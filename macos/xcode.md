@@ -14,3 +14,18 @@ From:
 <https://stackoverflow.com/questions/18423896/is-it-possible-to-install-ios-6-sdk-on-xcode-5>
 <https://gist.github.com/rnapier/3370649>
 
+
+
+# Cocoapods
+[Cocoapods](https://cocoapods.org/)
+
+
+
+# Code signing
+security(1) - dump keychains
+codesign(1) - create/manipulate code signatures
+csreq(1)
+
+code signing is optional in macOS
+unsigned code is killed by the kernel in iOS
+
