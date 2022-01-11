@@ -1,15 +1,13 @@
----
-title: kernel
----
+# Linux kernel
 
-## Remove older kernels
+# Remove older kernels
 
 ```bash
 # (RHEL) Install yum-utils and run:
 package-cleanup --oldkernels --count=1
 ```
 
-## Links
+# Kernel Analysis
 * [Linux Kernel Analysis](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
 
 # Hardware
@@ -24,7 +22,7 @@ cat /proc/cpuinfo
 
 # kexec
 
-## Using systemctl
+Using systemctl
 
 ```bash
 systemctl kexec
@@ -185,8 +183,7 @@ what context is needed for the PID to access the file
 
 # Transparent Huge Pages
 
-
-## Centos
+Files in CentOS:
 
 ```bash
 cat /sys/kernel/mm/transparent_hugepage/enabled
@@ -199,8 +196,6 @@ To disable:
 echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled
 echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag
 ```
-
-## Links
 
 * [THP kernel doc](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)
 * [hugetlbpage kernel doc](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt)

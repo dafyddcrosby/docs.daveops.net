@@ -10,6 +10,7 @@
 
 
 # logrotate
+
 Syntax
 ------
 
@@ -25,7 +26,8 @@ Syntax
 
 
 
-# systemd/journalctl
+# journalctl
+Provided by systemd
 
 ```bash
 # Jump to the end of the log

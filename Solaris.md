@@ -4,7 +4,7 @@ This includes Solaris derivatives as well, such as OpenSolaris and the Illumos p
 
 # Solaris
 
-# SMF (Service Management Facility)
+## SMF (Service Management Facility)
 
 Clear maintenance mode and restart
 ----------------------------------
@@ -32,7 +32,7 @@ Links
 * [Ben Rockwood's cheatsheet](http://www.cuddletech.com/blog/pivot/entry.php?id=182)
 
 
-# Sun OpenBoot
+## Sun OpenBoot
 @Sun
 
 Boot from CDROM
@@ -57,11 +57,6 @@ Show hardware devices
 ---------------------
 	show-devs
 
-
-
-
-# OmniOS
-https://omnios.org/
 
 
 
@@ -95,4 +90,9 @@ Update resolvers
 
 
  sdc-vmapi  /vms/<uuid>?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"] }'
+
+# OmniOS
+https://omnios.org/
+
+
 

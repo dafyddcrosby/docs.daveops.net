@@ -1,12 +1,16 @@
 # Kubernetes
+- <https://kubernetes.io/>
+- <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
+- [Kubernetes post-mortems](https://k8s.af/)
 
 Master -> Node + Node processes
 
 Deployment -> (service -> ) pod (on a node) -> containers/volumes
 
-### Kubectl
+# Kubectl
+[kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 
-#### Cluster
+## Cluster
 
 ```bash
 # get cluster info
@@ -15,7 +19,7 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
-#### Deployments
+## Deployments
 
 ```bash
 # create a deployment
@@ -24,7 +28,7 @@ kubectl run NAME --image=...
 kubectl get deployments
 ```
 
-#### Pods
+## Pods
 Think of a pod as a logical host
 
 ```bash
@@ -36,7 +40,7 @@ kubectl exec $POD_NAME COMMAND
 kubectl label pod $POD_NAME app=v1
 ```
 
-#### Networking
+## Networking
 
 ```bash
 # Open a proxy to the internal network
@@ -48,13 +52,13 @@ kubectl expose TYPE/NAME
 kubectl port-forward deployment/foobar 8082
 ```
 
-#### Logs
+## Logs
 
 ```bash
 kubectl logs $POD_NAME
 ```
 
-#### Services
+## Services
 
 A logical collection of pods
 
@@ -72,10 +76,10 @@ kubectl get services
 kubectl delete service
 ```
 
-#### DaemonSets
+## DaemonSets
 Long-running processes, generally monitoring/logging. Can come up first, and go down safely at reboot/shutdown.	
 
-#### Namespaces
+## Namespaces
 
 ```bash
 # list namespaces
@@ -90,7 +94,7 @@ kubectl config use-context NAMESPACE
 kubectl config current-context
 ```
 
-#### Secrets
+## Secrets
 
 ```bash
 # Create generic secret from literal value
@@ -99,19 +103,13 @@ kubectl create secret generic OBJECTNAME --from-literal=KEYNAME=LITERAL_VALUE
 
 <https://kubernetes.io/docs/concepts/configuration/secret/>
 
-#### Misc
+## Misc
 
 ```bash
 # Check control plane health
 kubectl get componentstatus
 ```
 
-## Links
-
-* <https://kubernetes.io/>
-* [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-* <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
-* [Kubernetes post-mortems](https://k8s.af/)
 
 
 # minikube

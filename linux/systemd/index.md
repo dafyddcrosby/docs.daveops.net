@@ -1,7 +1,7 @@
 ---
 title: systemd
 tags: init, Linux, systemd
----
+==========================
 
 ## systemctl
 
@@ -69,7 +69,7 @@ systemd-analyze
 
 ## See also
 
-- [log-management](../../log-management.md)
+- [journalctl](../../log-management.md#journalctl)
 - [hostnamectl](hostnamectl.md)
 
 ## Links

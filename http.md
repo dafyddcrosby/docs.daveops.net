@@ -1,6 +1,4 @@
----
-title: HTTP
-===========
+# HTTP
 
 # Telnet access
 

@@ -102,15 +102,6 @@ apt-cache showpkg packagename
 Default run level is 2
 
 
-# Alpine Linux
-
-```
-apk add
-apk del
-apk --no-cache
-```
-
-
 # SUSE
 
 ## Zypper

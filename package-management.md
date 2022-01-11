@@ -78,3 +78,13 @@ DB located at /var/db/pkg
 * <https://pkgsrc.joyent.com>
 * <https://www.pkgsrc.org/>
 * <http://pkgin.net>
+# APK
+Used in Alpine Linux
+
+```
+apk add
+apk del
+apk --no-cache
+```
+
+

@@ -28,18 +28,15 @@ https://blog.jessfraz.com/post/why-open-source-firmware-is-important-for-securit
 -->
 
 
----
-title: Fuses
----
+# Fuses
 
-## Slow blow fuses
+Slow blow fuses:
 
-L - Low Breaking Capacity (ie glass)
-H - High Breaking Capacity (ie ceramic)
+- L - Low Breaking Capacity (ie glass)
+- H - High Breaking Capacity (ie ceramic)
 
 
 # theory
-Created Sunday 16 September 2018
 
 Voltage
 -------
