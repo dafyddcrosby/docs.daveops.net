@@ -1,8 +1,8 @@
 ---
 title: HTTP
----
+===========
 
-## Telnet access
+# Telnet access
 
 ```
 GET / HTTP/1.1
@@ -10,27 +10,15 @@ host: daveops.net
 <line feed>
 ```
 
-## Get request headers
+# HTTP response codes
 
-```bash
-curl -i example.com
-```
-
-## See if server uses gzip/deflate
-
-```bash
-curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
-```
-
-## HTTP response codes
-
-### 1xx Informational
+## 1xx Informational
 
 | 100 | Continue                      |
 | 101 | Switching Protocols           |
 | 102 | Processing (WebDAV; RFC 2518) |
 
-### 2xx Success
+## 2xx Success
 
 | 200 | OK                                              |
 | 201 | Created                                         |
@@ -44,7 +32,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 | 226 | IM Used (RFC 3229)                              |
 
 
-### 3xx Redirection
+## 3xx Redirection
 
 
 * 300 Multiple Choices
@@ -58,7 +46,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 * 308 Permanent Redirect
 
 
-### 4xx Client Error
+## 4xx Client Error
 
 
 * 400 Bad Request
@@ -102,7 +90,7 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 * 499 Client Closed Request (Nginx)
 
 
-### 5xx Server Error
+## 5xx Server Error
 
 
 * 500 Internal Server Error
@@ -200,18 +188,18 @@ TraceEnable Off
 
 
 
-# htaccess
+## htaccess
 
-## mod_rewrite
+### mod_rewrite
 
-### Allow password protected directories without WordPress 404
+#### Allow password protected directories without WordPress 404
 
 ```apache
 RewriteCond %{REQUEST_URI} ^/(failed_auth\.html).*$ [NC]
 RewriteRule . - [L]
 ```
 
-### Do a 301 redirect
+#### Do a 301 redirect
 
 ```apache
 RewriteCond %{REQUEST_FILENAME} /tascam688
@@ -219,13 +207,13 @@ RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
 RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
 ```
 
-### Redirect all traffic to another domain
+#### Redirect all traffic to another domain
 
 ```
 RedirectMatch 301 ^(.*)$ https://example.org
 ```
 
-### Deny hotlinking of images
+#### Deny hotlinking of images
 
 ```apache
 RewriteCond %{HTTP_REFERER} !^$
@@ -233,13 +221,13 @@ RewriteCond %{HTTP_REFERER} !^http://(www\.)?lonesomecosmonaut.com/.*$ [NC]
 RewriteRule .(gif|jpg|bmp)$ - [F]
 ```
 
-## mod_alias
+### mod_alias
 
-### Put website down for maintenance
+#### Put website down for maintenance
 
 	RedirectMatch 302 ^/ /outoforder.html
 
-## Add audio/video handling (HTML 5)
+### Add audio/video handling (HTML 5)
 
 ```apache
 AddType audio/ogg oga ogg
@@ -247,14 +235,14 @@ AddType audio/mp3 mp3
 AddType video/webm webm
 ```
 
-## Run Python cgi scripts
+### Run Python cgi scripts
 
 (note - scripts should be 755)
 
 	Options +ExecCGI
 	AddHandler cgi-script .py
 
-## Do not allow access to .htaccess file
+### Do not allow access to .htaccess file
 
 ```apache
 <Files .htaccess>
@@ -263,13 +251,13 @@ deny from all
 </Files>
 ```
 
-## Prevent directory indexing
+### Prevent directory indexing
 
 ```apache
 Options -Indexes
 ```
 
-## Adding user authentication
+### Adding user authentication
 
 ```apache
 <Limit GET PUT POST>
@@ -280,13 +268,13 @@ Require valid-user
 </Limit>
 ```
 
-## To create an htpasswd file
+### To create an htpasswd file
 
 ```bash
 htpasswd -c .htpasswd username
 ```
 
-# mod_security
+## mod_security
 
 	<IfModule security2_module>
 	# Turn on rule engine and set default action
@@ -413,3 +401,15 @@ curl -X POST -H "Content-Type: application/json" \
     -d '{"name": "admin", "email": "admin@example.com"}' \
         https://example.org
 ```
+## Get request headers
+
+```bash
+curl -i example.com
+```
+
+## See if server uses gzip/deflate
+
+```bash
+curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
+```
+
