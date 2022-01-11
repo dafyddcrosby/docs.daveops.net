@@ -1,6 +1,6 @@
----
-title: Firefox
----
+# Web Browsers
+# Firefox
+
 
 ## list of about: pages
 
@@ -32,3 +32,8 @@ browser.newtabpage.enabled -> false
 ## Container tabs
 
 * https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
+
+
+# Chromium
+
+SHIFT-ESC - see which tabs are chewing up the most CPU/memory

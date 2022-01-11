@@ -1,7 +1,4 @@
----
-title: Assembly
----
-
+# Assembly
 ## Intel Syntax
 
 * Assembler detects type of symbols (no need to add sigil)
@@ -29,3 +26,35 @@ q      | qword
 l      | lword
 w      | word
 b      | byte
+
+
+# VASM assembler
+
+http://sun.hasenbraten.de/vasm/
+## Building
+
+```bash
+# Build assembler for 68000 with motorola syntax
+make CPU=m68k SYNTAX=mot
+```
+
+
+
+# nasm
+```bash
+# Valid output formats
+nasm -hf
+# don't preprocess (assemble only)
+nasm -a ...
+# assemble to raw binary
+nasm -f bin
+# assemble to ELF64 (Linux)
+nasm -f elf64 example.asm
+# assemble to macho64 (macOS)
+nasm -f macho64 example.asm
+```
+
+```asm
+; Set to 32-bit
+BITS 32
+```

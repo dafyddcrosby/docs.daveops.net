@@ -1,7 +1,134 @@
----
-title: PostgreSQL
-tags: ["databases"]
----
+# SQL
+
+## To add a row
+
+```sql
+INSERT INTO table_name (column1, column2, column3,...)
+VALUES (value1, value2, value3,...)
+```
+
+## To update a row
+
+```sql
+UPDATE table_name
+SET column1=value, column2=value2,...
+WHERE some_column=some_value
+```
+
+## To sort a table
+
+```sql
+SELECT row1, row2
+FROM table
+ORDER BY row2 (ASC|DESC)
+```
+
+## Delete rows
+
+```sql
+DELETE FROM table_name
+WHERE some_column=some_value
+```
+
+## Search in fields
+
+```sql
+SELECT *
+FROM Persons
+WHERE City LIKE '%ville'
+```
+
+## Conditional statements
+
+```sql
+CASE WHEN condition THEN result
+[WHEN ...]
+[ELSE result]
+END
+```
+
+## Format a date
+
+```sql
+SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate 
+FROM table
+```
+
+## Retrieve records within 90 days of stamp
+
+```sql
+FROM stockserialitems
+WHERE expirationdate < utc_timestamp() + interval 90 day
+```
+
+## Check for duplicate rows
+
+```sql
+SELECT a, b, count(*) cnt 
+FROM table
+GROUP BY a, b 
+HAVING cnt > 1
+ORDER BY cnt asc;
+```
+
+## Standards
+
+* 1992
+* 1999
+* 2003
+* 2008
+* new ones?
+
+
+
+# SQLite
+
+Show all tables
+---------------
+
+```sqlite3
+.tables
+```
+
+Show table schema
+-----------------
+
+```sqlite3
+
+ .schema tablename
+```
+
+See if table exists
+-------------------
+
+```sqlite3
+
+ SELECT name 
+ FROM sqlite_master
+ WHERE type='table'
+```
+
+Export tables
+-------------
+
+
+
+  sqlite3 my.db .dump
+
+Datatypes
+---------
+
+
+* NULL. The value is a NULL value.
+* INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
+* REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.
+* TEXT. The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+* BLOB. The value is a blob of data, stored exactly as it was input.
+
+
+
+
+# PostgreSQL
 
 Connect to a shell
 ------------------

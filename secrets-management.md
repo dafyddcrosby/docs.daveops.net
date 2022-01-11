@@ -1,6 +1,5 @@
----
-title: vault
----
+# Secrets Management
+# HashiCorp vault
 
 ## Client
 
@@ -38,3 +37,9 @@ vault operator init -recovery-shares=1 -recovery-threshold=1
 * https://learn.hashicorp.com/vault/day-one/production-hardening
 * https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
 * [Docker image](https://hub.docker.com/_/vault)
+
+
+# passwordstore
+
+[core](https://www.passwordstore.org/)
+[gopass](https://www.gopass.pw/)

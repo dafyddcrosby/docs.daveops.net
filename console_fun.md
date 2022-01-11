@@ -12,7 +12,7 @@ title: Console Fun
 
 ## Mail
 
-* [Mutt](./mutt.md)
+* [Mutt](email.md)
 * [Alpine](http://www.washington.edu/alpine/)
 * Elm
 
@@ -60,7 +60,7 @@ title: Console Fun
 * links
 * w3m
 * elinks
-* [curl](./curl.md)
+* [http](http.md)
 
 
 ## spreadsheet

@@ -43,9 +43,6 @@ EOF
 ```
 
 
----
-title: Terraform Custom Providers
----
-
 https://www.terraform.io/docs/extend/writing-custom-providers.html
 
+[TF on Azure](https://docs.microsoft.com/en-us/azure/terraform/)

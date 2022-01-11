@@ -108,3 +108,32 @@ writing macros
 look up *query-io* global variable
 
 -->
+
+
+# Quicklisp
+Load a system
+-------------
+
+```common-lisp
+(ql:quickload "system-name")
+```
+
+Find a system
+-------------
+
+```common-lisp
+(ql:system-apropos "term")
+```
+
+Load Quicklisp every time Lisp starts
+-------------------------------------
+
+```common-lisp
+(ql:add-to-init-file)
+```
+
+
+# clozure
+```lisp
+(external-call "getpid" :pid_t)
+```

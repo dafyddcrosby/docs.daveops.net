@@ -1,6 +1,5 @@
----
-title: Radare2
----
+# Binary Analysis
+# Radare2
 
 ```bash
 # convert decimal to hexadecimal
@@ -82,3 +81,16 @@ ecs           | show terminal colors
 ## Resources
 
 * https://radare.gitbooks.io/radare2book/content/
+
+
+# Binary Visualization
+
+<https://sites.google.com/site/xxcantorxdustxx/>
+[Veles](binary-analysis.md)
+
+
+
+# Veles
+
+<https://codisec.com/veles/>
+

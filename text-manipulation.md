@@ -1,6 +1,16 @@
----
-title: sed
----
+# text manipulation
+
+# awk
+
+## Get a specific column
+
+```bash
+# print second column
+awk '{print $2}'
+```
+
+
+# sed
 
 ## Delete all lines matching a pattern
 

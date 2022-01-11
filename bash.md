@@ -1,6 +1,9 @@
----
-title: Bash
----
+# Bash
+
+You should try to stay in bash as long as possible without dropping into a subshell (ie running another program).
+
+- https://github.com/dylanaraps/pure-bash-bible
+- https://github.com/dylanaraps/pure-sh-bible
 
 ## Go immediately to $EDITOR
 

@@ -1,7 +1,5 @@
----
-title: Docker
-tags: ["containers"]
----
+# Containers
+# Docker
 
 ## Installing on Mac
 
@@ -80,3 +78,34 @@ See also `/var/lib/docker/containers/<ID>/<ID>-json.log`
 ```bash
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
+
+
+# podman
+
+## Add varlink interface
+
+https://podman.io/blogs/2019/01/16/podman-varlink.html
+
+## Change to cgroups v1
+
+```bash
+sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+```
+
+
+# Habitat
+
+## Install on macOS
+
+```bash
+# Install hab
+brew tap habitat-sh/habitat
+brew install hab
+
+# Setup
+hab cli setup
+```
+
+## Links
+
+* [CLI Reference](https://www.habitat.sh/docs/habitat-cli/)

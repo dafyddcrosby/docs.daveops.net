@@ -1,7 +1,12 @@
----
-title: Chef
+# Configuration Management
+# Ansible
 
----
+## Run a playbook
+
+```bash
+ansible-playbook -i ./inventory.yml playbook.yml
+```
+
 
 # Chef
 

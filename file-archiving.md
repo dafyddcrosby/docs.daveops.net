@@ -1,6 +1,6 @@
----
-title: Tar
----
+# File Archiving
+
+# Tar
 
 ## Clean a tar-bombed directory
 
@@ -36,3 +36,18 @@ tar jxvf [file]
 ```
 tar ... -C /send/to/
 ```
+
+
+# cpio
+Not POSIX 1996, but 2001
+* predates tar!
+
+
+| flag | description  |
+|------|--------------|
+| -i   | input        |
+| -o   | output       |
+| -p   | pass-through |
+
+```
+# Copy-out mode
