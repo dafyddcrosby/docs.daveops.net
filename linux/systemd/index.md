@@ -1,7 +1,4 @@
----
-title: systemd
-tags: init, Linux, systemd
-==========================
+# systemd
 
 ## systemctl
 

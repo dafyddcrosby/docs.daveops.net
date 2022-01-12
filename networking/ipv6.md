@@ -1,5 +1,4 @@
 # IPv6
-Created Friday 09 February 2018
 
 <https://ipv6.he.net/certification>
 

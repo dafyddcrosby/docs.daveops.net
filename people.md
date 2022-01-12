@@ -143,7 +143,6 @@ Every invention has to be usable by at least 100 people.
 
 
 # Bret Victor
-Created Monday 08 January 2018
 
 
 Videos
@@ -293,7 +292,6 @@ Seven Deadly Sins
 
 
 # Roger Faulkner
-Created Sunday 17 September 2017
 
 Co-creator of /proc
 <https://thenewstack.io/remembering-roger-faulkner/>

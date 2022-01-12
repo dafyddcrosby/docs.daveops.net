@@ -2,8 +2,7 @@
 title: Sega Genesis/Mega Drive
 ---
 
-The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and a z80
-@ 4MHz (to handle sound processing).
+The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and a z80 @ 4MHz (to handle sound processing).
 
 ## 68000 Memory map
 

@@ -1,5 +1,4 @@
 # Net::SMTP
-Created Thursday 21 September 2017
 
 <https://ruby-doc.org/stdlib-2.3.0/libdoc/net/smtp/rdoc/Net/SMTP.html>
 

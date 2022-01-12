@@ -54,6 +54,23 @@ for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:
 read -sn 1 -p "Press any key to continue..."
 ```
 
+## Arrays
+
+code           | desc
+---            | ---
+arr=()         | Create an empty array
+arr=(1 2 3)    | Initialize array
+${arr[N]}      | Retrieve Nth element
+${arr[@]}      | Retrieve all elements
+${!arr[@]}     | Retrieve array indices
+${#arr[@]}     | Calculate array size
+arr[N]=foo     | Overwrite Nth element
+arr+=(bar)     | Append value 'bar'
+arr=( $(cmd) ) | Save `cmd` output as an array
+unset arr[N]   | Delete element at N
+${arr[@]:x:n}  | Retrieve n elements starting at index x
+read -a arr    | Read STDIN as an array to arr variable
+
 ## Conditional Expressions
 
 code      | desc

@@ -199,3 +199,155 @@ echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag
 
 * [THP kernel doc](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)
 * [hugetlbpage kernel doc](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt)
+
+
+# filesystems
+# btrfs
+
+## snapshots
+
+```bash
+# Create a read-only snapshot
+btrfs subvolume snapshot -r <mount> <dest>
+
+# Send snapshot to external drive
+btrfs send <snap> | btrfs receive <device>
+```
+
+
+# ext filesystem
+
+* ext2 - no journaling, but good for small solid-state drives
+* ext3 - journaling - can be upgraded from ext2 with no data loss
+* ext4 - support for large disks/file sizes
+
+Superblock at the start, has info on filesystem. Groupblock holds information on subsections of the space, as well as superblock backups. Inode tables hold the file metadata.
+
+```bash
+# create label for the filesystem
+e2label /dev/sda2 mylabel
+# see label for filesystem
+e2label /dev/sda2
+
+# Add journal to ext2 filesystem
+tune2fs -j /dev/sda2
+# specify percentage that's reserved by root (by default 5%)
+tune2fs -m1 /dev/sda2
+# Disable automatic filesystem checking
+tune2fs -c0 -i0 /dev/sda2
+# Run filesystem check after 100 days
+tune2fs -i100 /dev/sda2
+
+# Get superblock, groupblock info
+dumpe2fs /dev/sda2
+dumpe2fs -h /dev/sda2 # superblock only
+
+# Debug an ext2 filesystem
+debugfs
+```
+
+
+# XFS
+
+Default filesystem of CentOS 7
+
+Can't be shrunk
+
+```bash
+xfs_admin -L mylabel /dev/sda2
+```
+
+
+---
+title: bcachefs
+tags: filesystems
+---
+
+[Architecture](https://bcachefs.org/Architecture/)
+
+---
+title: kernel modules
+tags: ["Linux"]
+---
+
+## basic commands
+
+desc                           | command
+---                            | ---
+list modules                   | `lsmod`
+get info about a module        | `modinfo MODULE`
+load a module                  | `modprobe MODULE`
+load kernel module by filename | `insmod FILE`
+unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch)
+
+## Resources
+
+* [Linux Loadable Kernel Module](http://www.tldp.org/HOWTO/Module-HOWTO/)
+* [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.6/html/)
+
+
+---
+title: UDP
+---
+
+## UDP fingerprinting
+> In addition to his post, I heard a very good explanation of why they _intentionally_ coded it this way. The simplest way to create a packet is to simply set aside a section of memory for the packet and start filling in the necessary fields. For something like a UDP packet, there are some spaces in the packet that just aren't normally used. So if the field is left alne, is simply contains some data from whatever was stored in that section of memory previously. So instead of leaving those sections alone, they intentionally zeroed out the unused fields (such as the IP identification field) so that when the packet gets sent out, it doesn't give out any information that may have been laying around in memory.
+> — from <http://www.antionline.com/showthread.php?221887.html>
+
+
+
+---
+title: DKMS
+---
+
+Dynamic Kernel Module System
+
+
+
+---
+title: Building Kernels
+tags: ["Fedora"]
+---
+
+```bash
+dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison kernel-devel glibc-static
+```
+
+TODO - add bison flex to <https://fedoraproject.org/wiki/Building_a_custom_kernel>
+
+### Building a user-mode linux kernel
+
+```
+# TODO add a saner config
+mini.config
+CONFIG_BINFMT_ELF=y
+CONFIG_HOSTFS=y
+CONFIG_LBD=y
+CONFIG_BLK_DEV=y
+CONFIG_BLK_DEV_LOOP=y
+CONFIG_STDERR_CONSOLE=y
+CONFIG_UNIX98_PTYS=y
+CONFIG_EXT2_FS=y
+```
+
+```bash
+# build the config
+make ARCH=um allnoconfig KCONFIG_ALLCONFIG=mini.config
+# make the kernel
+make ARCH=um
+```
+
+if missing gnu/stubs-32.h, means you need glibc-devel.i686
+
+
+
+---
+title: cgroups
+---
+
+## Links
+
+- <https://www.kernel.org/doc/Documentation/cgroup-v1/>
+- <https://www.kernel.org/doc/Documentation/cgroup-v2.txt>
+- <https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/>
+

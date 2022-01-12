@@ -1,5 +1,4 @@
 # Wordpress
-Created Tuesday 10 July 2018
 
 plugins
 -------
