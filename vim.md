@@ -5,7 +5,8 @@ title: vim
 <http://www.vimninjas.com/>
 
 ## profile Vim startup time
-vim 7.2.269+
+
+Requires vim 7.2.269+
 
 ```bash
 vim --startuptime start.log
@@ -21,13 +22,6 @@ vim --startuptime start.log
 
 ```text
 :set filetype?
-```
-
-## Delete all lines containing a pattern
-
-```text
-:g/profile/d
-:g/^\s*$/d
 ```
 
 ## Show line numbers
@@ -50,17 +44,50 @@ vim --startuptime start.log
 
 ctrl-l
 
-## Regular expressions
+# Regular expressions
+
+`:help pattern-searches`
 
 - http://www.vimregex.com/
 
+ # Search and replace
 
-## Links
+letter | desc
+---    | ---
+c      | Confirm substitutions
+g      | Replace all line occurrences in the line (not just first)
+i      | Ignore case
+I      | Case insensitive
 
+ # Character classes
 
-<!-- set a modeline -->
-<!-- vim: set nospell: -->
+`:help character-classes`
 
+Uppercase for inverse 
+
+mc  | desc
+--- | ---
+.   | any character except new line
+\s  | tab or space character
+\p  | printable character
+\f  | filename character
+\k  | keyword character
+\i  | identifier character
+\d  | digit
+\x  | hex digit
+\o  | octal digit
+\w  | word character [a-zA-Z_]
+\h  | head of word character
+\a  | alphabetic character
+\l  | lowercase character
+\u  | uppercase character
+
+## Delete all lines containing a pattern
+
+```text
+:g/profile/d
+:g/^\s*$/d
+```
 
 # slimv
 
@@ -78,16 +105,22 @@ key | desc
 * https://github.com/kovisoft/slimv
 * https://kovisoft.github.io/slimv-tutorial/
 
-
 # tabs
 
-## Open a session from CLI
 ```bash
+# Open a session from CLI
 vim -S session.vim
 ```
 
-## Switch tabs
+keys | desc
+---  | ---
+gt   | next tab
+gT   | previous tab
 
-gt - next tab
-gT - previous tab
+# Modelines
 
+```
+<!-- vim: set nospell: -->
+```
+
+<!-- vim: set nospell: -->
