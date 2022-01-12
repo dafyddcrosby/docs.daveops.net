@@ -3,12 +3,12 @@ title: Python
 ---
 
 <!--
-.. TODO - ConfigParser
-.. TODO - gdchart
-.. TODO - asyncore/asynchat
-.. TODO - shlex
-.. TODO - paramiko
-.. TODO - threading, multiprocessing
+TODO - ConfigParser
+TODO - gdchart
+TODO - asyncore/asynchat
+TODO - shlex
+TODO - paramiko
+TODO - threading, multiprocessing
 -->
 
 ## Essential third-party tools
@@ -382,7 +382,7 @@ Send email
 
 ## Retrieve mail with imaplib
 
-.. TODO - ensure this works...
+<!-- TODO - ensure this works... -->
 
 ```python
 import imaplib

@@ -5,11 +5,11 @@ title: nmap
 Handy scripts
 -------------
 
-| Script             | Description                           |
-|--------------------|---------------------------------------|
-| ssl-enum-ciphers   | get list of available SSL/TLS headers |
-| http-trace         | see if server has a TRACE method      |
-| http-server-header | get details from the Server: header   |
+Script             | Description
+---                | ---
+ssl-enum-ciphers   | get list of available SSL/TLS headers
+http-trace         | see if server has a TRACE method
+http-server-header | get details from the Server: header
 
 
 Get list of available server ciphers

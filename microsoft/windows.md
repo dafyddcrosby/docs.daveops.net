@@ -31,10 +31,10 @@ Save as FILENAME.bat
 
 ## Command Prompt
 
-| command | description          |
-|---------|----------------------|
-| move    | move a file          |
-| xcopy   | copy files + folders |
+command | description
+---     | ---
+move    | move a file
+xcopy   | copy files + folders
 
 <https://ss64.com/nt/>
 

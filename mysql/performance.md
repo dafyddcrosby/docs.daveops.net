@@ -3,8 +3,7 @@ title: performance
 tags: ["MySQL"]
 ---
 
-.. TODO
-  Avoid NULL when possible (forget why)
+<!-- TODO Avoid NULL when possible (forget why) -->
 
 indexing
 --------
@@ -50,7 +49,7 @@ optimize table <tbl>;
 
 Good ways to benchmark
 ----------------------
-.. TODO - cleanup
+<!-- TODO - cleanup -->
 
 
 * Use a query log to come up with a realistic workload that covers peek time and when batch jobs are run

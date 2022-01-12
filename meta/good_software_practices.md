@@ -60,7 +60,7 @@ pulled together from the code (a la doxygen, etc.).
 Keep LOC down to keep bugs down
 -------------------------------
 
-.. TODO - What was the study? COMODO?
+<!-- TODO - What was the study? COMODO? -->
 
 Code Complete said that the industry average is 15-50 bugs per 1000 lines of
 code. By reducing the lines of code and keeping functions simple, your life

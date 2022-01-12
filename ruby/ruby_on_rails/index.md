@@ -2,7 +2,7 @@
 title: Ruby on Rails
 ---
 <!---
-.. TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
+TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
 -->
 
 ## Installing and setting up Rails

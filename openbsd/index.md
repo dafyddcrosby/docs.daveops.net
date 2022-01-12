@@ -25,7 +25,9 @@ title: OpenBSD
 
 ## USB snapshots
 
-  dd if=install*.fs of=/dev/sd1c bs=1m
+```bash
+dd if=install*.fs of=/dev/sd1c bs=1m
+```
 
 ## Updates
 
@@ -73,11 +75,11 @@ LD_DEBUG=1 ./a.out
  ifconfig trunk0 trunkport <proto> bge0 trunkport bge1 \
  192.168.1.1 netmask 255.255.255.0
 
-| proto       | desc                                                              |
-|-------------|-------------------------------------------------------------------|
-| failover    | Fails over to next link                                           |
-| lacp        | increases link speed and redundancy, requires lacp-capable switch |
-| loadbalance | load-balancing                                                    |
-| roundrobin  | Use round-robin scheduler to distribute traffic                   |
+proto       | desc
+---         | ---
+failover    | Fails over to next link
+lacp        | increases link speed and redundancy, requires lacp-capable switch
+loadbalance | load-balancing
+roundrobin  | Use round-robin scheduler to distribute traffic
 
 

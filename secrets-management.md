@@ -20,7 +20,9 @@ vault path-help -h
 
 ## Environment Variables
 
-| VAULT_ADDR | vault address |
+var        | desc
+---        | ---
+VAULT_ADDR | vault address
 
 ## Server
 

@@ -4,12 +4,12 @@ title: cron
 
 ## crontab
 
-| flag    | description                                |
-|---------|--------------------------------------------|
-| -u USER | select different user                      |
-| -l      | display current crontab                    |
-| -r      | remove current crontab                     |
-| -e      | edit current crontab with VISUAL or EDITOR |
+flag    | description
+---     | ---
+-u USER | select different user
+-l      | display current crontab
+-r      | remove current crontab
+-e      | edit current crontab with VISUAL or EDITOR
 
 
 ## Syntax

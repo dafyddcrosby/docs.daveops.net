@@ -7,10 +7,10 @@ title: UNIX
 Signals
 -------
 
-| signal  | # | description             |
-|---------|---|-------------------------|
-| SIGSTOP |   | Stop the process.       |
-| SIGCONT |   | Start a stopped process |
+signal  | description
+---     | ---
+SIGSTOP | Stop the process.
+SIGCONT | Start a stopped process
 
 14 character filename limit
 ---------------------------

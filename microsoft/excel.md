@@ -1,9 +1,8 @@
 # Microsoft - Excel
-Keyboard shortcuts
-------------------
+## Keyboard shortcuts
 
-| keystroke | desc                |
-|-----------|---------------------|
-| ctrl-;    | insert today's date |
+keystroke | desc
+---       | ---
+ctrl-;    | insert today's date
 
 

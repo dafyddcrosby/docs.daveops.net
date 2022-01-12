@@ -183,11 +183,11 @@ grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
 
 ## I/O Redirection
 
-|      | description                     |
-|:-----|:--------------------------------|
-| &>   | Redirect both stderr and stdout |
-| 1>   | Redirect stdout                 |
-| 2>   | Redirect stderr                 |
-| 2>&1 | Redirect stderr to stdout       |
-| <    | Redirect stdin to a process     |
+code | description
+---  | ---
+&>   | Redirect both stderr and stdout
+1>   | Redirect stdout
+2>   | Redirect stderr
+2>&1 | Redirect stderr to stdout
+<    | Redirect stdin to a process
 

@@ -461,10 +461,12 @@ sudo dnf install rubygem-rdoc ruby-doc
 
 ## Trim mode
 
-| %  |  enables Ruby code processing for lines beginning with % |
-| <> |  omit newline for lines starting with <% and ending in %> |
-| >  |  omit newline for lines ending in %> |
-| -  |  omit blank lines ending in -%> |
+code | desc
+---  | ---
+%    | enables Ruby code processing for lines beginning with %
+<>   | omit newline for lines starting with <% and ending in %>
+>    | omit newline for lines ending in %>
+-    | omit blank lines ending in -%>
 
 
 # Fibers

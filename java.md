@@ -4,15 +4,15 @@ title: Java
 
 ## Types
 
-| type    | note                                            |
-|---------|-------------------------------------------------|
-| byte    | 8-bit signed two's complement integer           |
-| short   | 16-bit signed two's complement integer          |
-| int     | 32-bit signed two's complement integer          |
-| long    | 64-bit two's complement integer                 |
-| float   | single-precision 32-bit IEEE 754 floating point |
-| double  | double-precision 64-bit IEEE 754 floating point |
-| boolean | the size isn't precisely defined                |
+type    | note
+---     | ---
+byte    | 8-bit signed two's complement integer
+short   | 16-bit signed two's complement integer
+int     | 32-bit signed two's complement integer
+long    | 64-bit two's complement integer
+float   | single-precision 32-bit IEEE 754 floating point
+double  | double-precision 64-bit IEEE 754 floating point
+boolean | the size isn't precisely defined
 
 ## Numeric literals
 

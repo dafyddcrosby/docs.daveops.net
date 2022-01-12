@@ -72,7 +72,7 @@ diskutil list
 otool -L <executable>
 ```
 <!---
-.. TODO look more into otool's operations
+TODO look more into otool's operations
 -->
 
 ## Create a RAM disk
@@ -83,18 +83,18 @@ diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount <ram://XXXXX>`
 
 ## Boot Options
 
-| keypress             | action                             |
-|----------------------|------------------------------------|
-| Cmd + r              | Recovery Mode                      |
-| Option + Cmd + r     | Upgrade to latest compatible macOS |
-| Cmd + v              | Verbose Mode                       |
-| Cmd + s              | Single-user Mode                   |
-| Shift                | Safe Mode                          |
-| D                    | Apple Diagnostics / Hardware Test  |
-| C                    | Boot removable device              |
-| N                    | Boot from network                  |
-| Option               | Startup Manager                    |
-| Cmd + Option + P + R | Reset NVRAM                        |
+keypress             | action
+---                  | ---
+Cmd + r              | Recovery Mode
+Option + Cmd + r     | Upgrade to latest compatible macOS
+Cmd + v              | Verbose Mode
+Cmd + s              | Single-user Mode
+Shift                | Safe Mode
+D                    | Apple Diagnostics / Hardware Test
+C                    | Boot removable device
+N                    | Boot from network
+Option               | Startup Manager
+Cmd + Option + P + R | Reset NVRAM
 
 ## Wireless diagnostics
 
@@ -482,6 +482,7 @@ Layout
 
 Can be accessed by NSBundle
 
+```
 Contents/
   CodeResources/
   Info.plist     Main package manifest
@@ -491,12 +492,14 @@ Contents/
   Version.plist
   _CodeSignature/
 CodeResources
+```
 
 Framework layout
 ----------------
 
 /System/Library/Frameworks (and also /System/Library/PrivateFrameworks)
 
+```
 Contents/
   Headers/    - .h files
   Modules/
@@ -504,19 +507,18 @@ Contents/
   Versions/
 A/
 Current/  - symlink to current version
-
+``
+`
 TODO check out -framework compiler switch
-
-
 
 # dns
 
-| path                                                       | description                   |
-| ---------------------------------------------------------- | ----------------------------- |
-| /etc/resolv.conf                                           | not used                      |
-| /private/etc/hosts                                         | force resolution              |
-| /Library/Preferences/SystemConfiguration/preferences.plist | preferences                   |
-| /etc/resolver/                                             | domain nameserver overrides   |
+path                                                       | description
+---                                                        | ---
+/etc/resolv.conf                                           | not used
+/private/etc/hosts                                         | force resolution
+/Library/Preferences/SystemConfiguration/preferences.plist | preferences
+/etc/resolver/                                             | domain nameserver overrides
 
 
 ## Flush DNS cache
@@ -544,7 +546,6 @@ nslookup example.com
 ## DNS settings
 
 ``scutil --dns``
-
 
 ## mDNSResponder
 

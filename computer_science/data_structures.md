@@ -1,11 +1,9 @@
----
-title: Data Structures
----
+# Data Structures
 
 <!---
-.. TODO - add more love, this could be really good
-.. TODO - Trees
-.. TODO - Graphs
+TODO - add more love, this could be really good
+TODO - Trees
+TODO - Graphs
 -->
 
 ## Primitives
