@@ -50,9 +50,13 @@ vim --startuptime start.log
 
 ctrl-l
 
+## Regular expressions
+
+- http://www.vimregex.com/
+
+
 ## Links
 
-* http://www.vimregex.com/
 
 <!-- set a modeline -->
 <!-- vim: set nospell: -->
