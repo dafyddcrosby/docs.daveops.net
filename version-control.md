@@ -1,7 +1,10 @@
 # Version Control
+
 # Git
 
-## Create bare repository
+## Repositories
+
+Create bare repository
 
 ```bash
 mkdir -p project.git && cd project.git && git --bare init
@@ -14,17 +17,40 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 url = git.example.com:/path/project.git
 ```
 
-## Checkout remote repository
+## Branches
+
+```bash
+# Rename a branch -m FROM TO
+git branch -m master main
+
+# Push branch to remote server
+git push origin branch_name
+```
+
+Checkout remote repository:
 
 ```bash
 git fetch
 git checkout -b local_branch_name remote/branch_name
 ```
 
-## Rename a branch
+Delete remote branch:
 
 ```bash
-git branch -m master main
+git push origin :branch_to_delete
+git branch -d branch_to_delete
+```
+
+Add remote branch:
+
+```bash
+git remote add upstream <git://github.com/user/repo.git>
+```
+
+Remove branches already merged to main:
+
+```bash
+git branch --merged | grep -v \* | xargs git branch -D
 ```
 
 ## Sequential versioning
@@ -44,13 +70,15 @@ git reset --hard
 
 If you just need to amend last commit,
 
-```
+```bash
 git commit --amend
 ```
 
-## Handy hooks
+## Hooks
 
-### Push to website on git push
+<!-- TODO list of hooks --->
+
+Push to website on git push:
 
 On server, put this in ``hooks/post-receive``
 
@@ -59,27 +87,19 @@ On server, put this in ``hooks/post-receive``
 GIT_WORK_TREE=/path/to/www.example.org git checkout -f
 ```
 
-## Push branch to remote server
-
-```bash
-git push origin branch_name
-```
-
-## Delete remote branch
-
-```bash
-git push origin :branch_to_delete
-git branch -d branch_to_delete
-```
-
 ## Tagging
 
 ```bash
-git tag  # list tags
-git tag -a v1.0 -m "Creating v1.0 tag"  # Create a tag
-git describe --tags  # Show current tag
-git push --tags  # push tags to remote
-git checkout v1.0 # Check out tag 'v1.0'
+# list tags
+git tag
+# Show current tag
+git describe --tags
+# Create a tag
+git tag -a v1.0 -m "Creating v1.0 tag"
+# push tags to remote
+git push --tags
+# Check out tag 'v1.0'
+git checkout v1.0
 ```
 
 ## Stashing
@@ -93,28 +113,20 @@ git stash drop <stash>  # delete specified stash
 git stash clear  # delete all stashes
 ```
 
-## Add remote branch
+## History
 
 ```bash
-git remote add upstream <git://github.com/user/repo.git>
-```
-
-## Show nicely formatted changelog
-
-```bash
+# Show nicely formatted changelog
 git log --graph --oneline --abbrev-commit --decorate
-```
 
-## See commits from individual
-
-```bash
+# See commits from individual
 git log --author="david"
-```
 
-## Get list of contributors
-
-```bash
+# Get list of contributors
 git shortlog -s -n
+
+# Search git history
+git log -S <search term>
 ```
 
 ## Remove non-tracked files
@@ -160,46 +172,10 @@ git diff --cached --name-status | sed 's/.\s*//'
 git diff <branch> <remote>/<branch>
 ```
 
-## Import Sourceforge CVS repo
-
-```bash
-rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
-git cvsimport -p x -v -d /absolute/path/to/w3m w3m
-```
-
-## Import another repo as a subtree
-
-```bash
-git remote add -f remote_name git@example.com:remote_repo.git
-git merge -s ours --no-commit remote_name/main
-git read-tree --prefix=newpath/ -u remote_name/main
-git commit -m "Subtree merged in newpath"
-``` 
-
-## Search git history
-
-```bash
-git log -S <search term>
-```
-
 ## Retrieve single file from a specific revision in git
 
 ```bash
 git checkout <HASH> -- ./path/to/file
-```
-
-## Remove branches that have been merged to main
-
-```bash
-git branch --merged | grep -v \* | xargs git branch -D
-```
-
-## Signing a commit
-
-In the commit message
-
-```text
-Signed-off-by: David Crosby <email@example.com>
 ```
 
 ## Objects
@@ -209,12 +185,15 @@ Signed-off-by: David Crosby <email@example.com>
 git rev-list --objects --all
 ```
 
-## zlol
+## misc
 
 <http://whatthecommit.com/>
 
-## Misc
 <https://gitea.io>
+
+[git-crypt](https://www.agwa.name/projects/git-crypt/)
+
+[Running Gitlab in Docker](https://docs.gitlab.com/omnibus/docker/#run-the-image)
 
 ## git bisect
 
@@ -225,20 +204,23 @@ git bisect visualize
 git bisect reset
 ```
 
-
 ## Git LFS
 
 https://git-lfs.github.com/
 
-
-```
+```bash
 # Checking out files
 git lfs fetch
 git lfs checkout
 ```
 
-
 ## Git commit signing
+
+To sign off on a commit, put in the commit message:
+
+```text
+Signed-off-by: David Crosby <email@example.com>
+```
 
 ```bash
 # sign a commit
@@ -258,22 +240,29 @@ git config --global gpg.format x509
 - https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 - https://help.github.com/en/github/authenticating-to-github/signing-commits
 
+## Importing
 
-### Importing a local SVN repo to git
+Import another repo as a subtree:
+
+```bash
+git remote add -f remote_name git@example.com:remote_repo.git
+git merge -s ours --no-commit remote_name/main
+git read-tree --prefix=newpath/ -u remote_name/main
+git commit -m "Subtree merged in newpath"
+```
+
+Importing a local SVN repo to git:
 
 ```bash
 git svn clone file:///path/to/repo -T trunk -b branches -t tags
 ```
 
+Import Sourceforge CVS repo:
 
-## git-crypt
-
-https://www.agwa.name/projects/git-crypt/
-
-
-### Gitlab
-[Running Gitlab in Docker](https://docs.gitlab.com/omnibus/docker/#run-the-image)
-
+```bash
+rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
+git cvsimport -p x -v -d /absolute/path/to/w3m w3m
+```
 
 ## GitHub
 
@@ -313,14 +302,14 @@ git push --tags
 gpg --armor --detach-sign software-0.1.tar.gz
 # add gpg signature to release
 ```
+
 ### Get Atom feed of file changes
 
 https://github.com/user/repo/commits/master/path/to/file.atom
 
-
 ### GitHub - Enterprise
 
-#### CLI
+CLI:
 
 ```bash
 # Set a message that's visible to everyone
@@ -331,14 +320,13 @@ ghe-announce -u
 ghe-webhook-logs -f -a YYYYMMDD
 ```
 
-#### Documentation
-
 - <https://docs.github.com/en/enterprise-server@2.22/admin/configuration/command-line-utilities>
 - <https://docs.github.com/en/enterprise-server@2.22/admin>
 - <https://docs.github.com/en/enterprise-server@2.22/user/github>
 
-
 # Fossil
+
+- <https://www.fossil-scm.org>
 
 ```bash
 # initialize repo
@@ -346,8 +334,6 @@ fossil init foo.repo
 # make a working directory, check out a local tree
 mkdir working && cd working && fossil open ../foo.repo
 ```
-
-## Commands
 
 cmd         | desc
 ---         | ---
@@ -381,47 +367,38 @@ fossil add .fossil-setings/ignore-glob
 git fast-export --all | fossil import --git new-repo.fossil
 ```
 
-## Links
-
-* <https://www.fossil-scm.org>
-* [Git import](https://www.fossil-scm.org/home/doc/trunk/www/inout.wiki)
-* [Fossil for Git users](https://www.fossil-scm.org/home/doc/trunk/www/gitusers.md)
-
+- [Git import](https://www.fossil-scm.org/home/doc/trunk/www/inout.wiki)
+- [Fossil for Git users](https://www.fossil-scm.org/home/doc/trunk/www/gitusers.md)
 
 # mercurial
 
-* https://www.mercurial-scm.org/
-## Clone a repo
+- https://www.mercurial-scm.org/
 
 ```bash
+# New repo
+hg init $DIR
+
+# Clone a repo
 hg clone $REPO
-cd $REPO
+
+# Add files to a commit
 hg add $FILES
+
+# Commit with message
 hg commit -m "Changes"
+
+# Push changes
 hg push
 ```
 
-## New repo
-
-```bash
-hg init $DIR
-cd $DIR
-hg add $FILES
-hg commit -m "Changes"
-```
-
-
 # CVS
 
-## Tagging an instance
+Tagging:
 
 ```bash
+# Tag an instance
 cvs rtag -D "2010-1-28" tag_name module_name
-```
-
-## Untagging an instance
-
-```bash
+# Untagging an instance
 cvs rtag -d tag_name module_name
 ```
 
@@ -429,18 +406,17 @@ cvs rtag -d tag_name module_name
 
 <http://www.openbsd.org/cvsync.html>
 
-### Check available modules
-
-	cvsync cvsync://<host>[:<port>]/</port></host>
-
-
+```bash
+# Check available modules
+cvsync cvsync://<host>[:<port>]/</port></host>
+```
 
 # SVN
 
-## Get information about a repo
+Get information about a repo:
+
 ```bash
 svnlookup info /path/to/repo
 # latest revision number
 svnlookup youngest /path/to/repo
 ```
-
