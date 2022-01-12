@@ -133,7 +133,7 @@ blob      | binary (prefix with 0x)
 
 * Cassandra High Availability by X
 
-.. todo
+<!--
    <http://docs.datastax.com/en/cql/3.1/cql/ddl/ddl_when_use_index_c.html>
    <http://docs.datastax.com/en/cql/3.1/cql/ddl/ddl_intro_c.html>
    <http://www.datastax.com/dev/blog/new-in-cassandra-3-0-materialized-views>
@@ -142,6 +142,7 @@ blob      | binary (prefix with 0x)
    <http://www.planetcassandra.org/blog/cassandra-native-secondary-index-deep-dive/>
    <https://www.instaclustr.com/blog/2016/01/27/apache-cassandra-compaction/>
    <https://tobert.github.io/pages/als-cassandra-21-tuning-guide.html>
+-->
 
 ## Links
 

@@ -8,9 +8,10 @@ Subtitles
   # Change the subtitle delay
   --sub-delay <INT> # Integer is in tenths of a second
 
-.. todo
+<!-- todo
  soverlay
  scodec
+-->
 
 Transcoding
 -----------
