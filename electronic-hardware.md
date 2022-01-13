@@ -38,14 +38,12 @@ Slow blow fuses:
 
 # theory
 
-Voltage
--------
+## Voltage
 symbol: V (sometimes E)
 measured in volts
 voltage is *between 2 points*
 
-Current
--------
+## Current
 symbol: I
 measured in amps
 current is *through a circuit*

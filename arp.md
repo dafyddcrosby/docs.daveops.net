@@ -1,6 +1,5 @@
 ---
 title: ARP
-tags: ["networking"]
 ---
 
 ## Running arpwatch

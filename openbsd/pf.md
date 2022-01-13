@@ -1,8 +1,5 @@
 ---
 title: pf
-tags:
-  - OpenBSD
-  - firewalls
 ---
 
 ## pfctl

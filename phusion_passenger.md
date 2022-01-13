@@ -1,7 +1,5 @@
----
-title: Phusion Passenger
+# Phusion Passenger
 
----
 
 # Phusion Passenger
 
@@ -18,8 +16,7 @@ passenger-status --show=requests
 passenger-config restart-app
 ```
 
-Hiding Version Headers
-----------------------
+## Hiding Version Headers
 
 
 
@@ -30,8 +27,7 @@ Hiding Version Headers
   # nginx (in http context)
   passenger_show_version_in_header off;
 
-Resources
----------
+## Resources
 
 <https://www.phusionpassenger.com/library/admin/apache/>
 

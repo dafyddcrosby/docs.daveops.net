@@ -1,6 +1,5 @@
 # qmake
-Generate Makefile
------------------
+## Generate Makefile
 
 
 

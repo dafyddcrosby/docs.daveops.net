@@ -1,6 +1,4 @@
----
-title: The Art of Computer Virus Research and Defense by Peter Szor
----
+# The Art of Computer Virus Research and Defense by Peter Szor
 
 Von Neumann machine - no difference between code + data
 
@@ -15,8 +13,7 @@ Von Neumann machine - no difference between code + data
 
 [Security:Viruses - history](../security/viruses_-_history.md)
 
-Books
------
+## Books
 __Kinematic Self-Replicating Machines__ by Merkle + Freitas
 
 * ecophagy - like the 'grey goo'?

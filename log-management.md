@@ -11,8 +11,7 @@
 
 # logrotate
 
-Syntax
-------
+## Syntax
 
 	 /path/to/file.log {
 		 rotate 30

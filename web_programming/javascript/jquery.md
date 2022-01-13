@@ -1,6 +1,5 @@
 ---
 title: jQuery
-tags: ["JavaScript"]
 ---
 
 <https://jquery.com>

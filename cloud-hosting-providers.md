@@ -27,11 +27,6 @@ brew tap linode/cli
 brew install linode-cli
 ```
 
-
----
-title: AWS
-----------
-
 # AWS
 
 ## ELB certs

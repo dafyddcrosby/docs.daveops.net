@@ -1,6 +1,4 @@
----
-title: Forth
----
+# Forth
 
 words | action
 ---   | ---
@@ -13,8 +11,7 @@ see   | decompile
 words | action
 include <filename> | includes a forth source file
 
-colon definitions
------------------
+## colon definitions
 
 ```forth
 : funcname ( stack effect comment )

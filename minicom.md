@@ -1,6 +1,5 @@
 ---
 title: Minicom
-tags: ["SerialConsole"]
 ---
 
 ## Attach to a serial console

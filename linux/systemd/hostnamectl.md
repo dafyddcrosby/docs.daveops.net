@@ -1,6 +1,5 @@
 ---
 title: systemd/hostnamectl
-tags: systemd
 ---
 
 ```bash

@@ -1,6 +1,5 @@
 ---
 title: Bundler
-tags: Ruby
 ---
 
 ## Writing a Gemfile

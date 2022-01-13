@@ -1,45 +1,36 @@
----
-title: Django
-tags: ["django"]
----
+# Django
 
-Start project
--------------
+## Start project
 
 
 
  django-admin.py startproject project_name
 
-Start demo server
------------------
+## Start demo server
 
 
 
  python manage.py runserver
 
-Check for construction errors in models
----------------------------------------
+## Check for construction errors in models
 
 
 
  python manage.py validate
 
-Put models in database
-----------------------
+## Put models in database
 
 
 
  python manage.py syncdb
 
-Shell
------
+## Shell
 
 
 
  python manage.py shell
 
-Permanent redirect
-------------------
+## Permanent redirect
 
 in urls.py's urlpatterns
 
@@ -50,13 +41,11 @@ url(r'^$', lambda x: HttpResponsePermanentRedirect('/n
 
 # Dreamhost
 
-Restarting Passenger
---------------------
+## Restarting Passenger
 
 ``touch ~/example.com/tmp/restart.txt``
 
-Settings for Passenger
-----------------------
+## Settings for Passenger
 
 	 import sys, os
 	 
@@ -106,8 +95,7 @@ users[0].save()
 
 # South
 
-Installing in a project
------------------------
+## Installing in a project
 
 
 * ``pip install South``
@@ -115,8 +103,7 @@ Installing in a project
 * ``./manage.py syncdb``
 
 
-Adding South to an existing project
------------------------------------
+## Adding South to an existing project
 
 
 * add 'south' to ~INSTALLED_APPS
@@ -124,16 +111,14 @@ Adding South to an existing project
 * ``./manage.py convert_to_south myapp``
 
 
-Initial migrate schema creation
--------------------------------
+## Initial migrate schema creation
 
 
 
  ./manage.py schemamigration app --initial
  ./manage.py migrate app
 
-Change schema
--------------
+## Change schema
 
 
 

@@ -1,9 +1,6 @@
 # Omniauth
-@Ruby, @Ruby_on_Rails, @Twitter, @Facebook, @Linkedin 
 
-
-Installing
-----------
+## Installing
 
 These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
 
@@ -26,8 +23,7 @@ These notes are assuming you're also allowing regular email/password logins. It'
 	  provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
 	end
 
-app/models/user.rb
-------------------
+## app/models/user.rb
 
 add:
 
@@ -39,8 +35,7 @@ add:
 	  end
 	end
 
-app/controllers/sessions_controller.rb
---------------------------------------
+## app/controllers/sessions_controller.rb
 
 	def omniauth_create
 	  auth_hash = request.env['omniauth.auth']
@@ -58,8 +53,7 @@ app/controllers/sessions_controller.rb
 	  redirect_back_or user
 	end
 
-app/models/authorization.rb
----------------------------
+## app/models/authorization.rb
 
 	belongs_to :user
 	validates :provider, :uid, :presence => true
@@ -80,8 +74,7 @@ app/models/authorization.rb
 	  auth
 	end
 
-config/routes.rb
-----------------
+## config/routes.rb
 
 	match '/auth/:provider/callback', to: 'sessions#create'
 	match '/auth/failure', to: 'sessions#failure'

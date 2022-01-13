@@ -10,8 +10,7 @@ Use CNAMEs to wean off old names
 
 Pre-derive all current names before committing to a name scheme
 
-Links
------
+## Links
 
 
 * <https://www.nanog.org/meetings/nanog31/presentations/ringel.pdf>

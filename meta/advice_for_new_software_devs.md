@@ -1,8 +1,4 @@
----
-tags: advice
----
-
-## Advice for new software devs
+# Advice for new software devs
 
 - Build the right *it* before you build it *right*. Do a [pretotype](http://www.pretotyping.org) before a prototype to see if it's even worth the effort (you'll find often it's not).
 - When you're stuck, ask a more experienced developer. Don't let pride keep you from getting the work done.

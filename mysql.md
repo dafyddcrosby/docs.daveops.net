@@ -74,8 +74,7 @@ mysqldump -u username -p<password> database > filename.sql
 drop database DATABASE_NAME;
 ```
 
-User management
----------------
+## User management
 
 ```sql
 -- Create a user
@@ -86,8 +85,7 @@ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'example_user'@'localhost';
 DROP USER 'example_user'@'localhost';
 ```
 
-Show grants
------------
+## Show grants
 
 	-- show grants for current user
 	show grants;
@@ -95,8 +93,7 @@ Show grants
 	show grants for 'user'@'example.com';
 
 
-Variables
----------
+## Variables
 
 	-- session variables
 	SHOW SESSION VARIABLES;
@@ -106,8 +103,7 @@ Variables
 	SET GLOBAL sort_buffer_size=1000000;
 
 
-Resetting root password
------------------------
+## Resetting root password
 
 
  /etc/init.d/mysql stop
@@ -123,22 +119,19 @@ Resetting root password
 	 service mysql start
 
 
-Create prefix index
--------------------
+## Create prefix index
 
 	alter table TABLENAME.COLUMN
 	add key (COLUMN(n));
 
 
-See what engine the table uses
-------------------------------
+## See what engine the table uses
 
 	show table status
 	like 'table_name' \G
 
 
-See running processes
----------------------
+## See running processes
 
 	-- Quick glance
 	show processlist ;
@@ -159,30 +152,25 @@ SERIALIZABLE     | f                    | f                            | f      
 SET SESSION TRANSACTION ISOLATION LEVEL [level];
 ```
 
-Autocommit
-----------
+## Autocommit
 
 	SHOW VARIABLES LIKE 'AUTOCOMMIT';
 	SET AUTOCOMMIT=[0|1]
 
 
-Repairing
----------
+## Repairing
 
 	check table [tablename]
 	repair table [tablename]
 
 
-InnoDB engine
--------------
+## InnoDB engine
 has high overhead, but row-level locking with multiversion concurrency control (MVCC)
 
-Memory engine
--------------
+## Memory engine
 uses table-locking, but is speedy
 
-Archive engine
---------------
+## Archive engine
 
 
 * Only uses INSERT and SELECT
@@ -191,48 +179,41 @@ Archive engine
 * Ideal for logging
 
 
-NDB Cluster Engine
-------------------
+## NDB Cluster Engine
 
 * Consists of data nodes, management nodes, and SQL nodes
 * Real-time performance with redunancy and load-balancing capabilities
 * Complex joins are slow, but single table lookups can be fast
 
 
-Falcon Engine
--------------
+## Falcon Engine
 
 * Uses MVCC, tries to keep transactions in memory
 * (need to see where it's development is at now)
 
 
-soliddb engine
---------------
+## soliddb engine
 
 * similar to InnoDB
 
 
-PBXT (Primebase XT) engine
---------------------------
+## PBXT (Primebase XT) engine
 
 * Has high write concurrency
 
-Maria
------
+## Maria
 
 * (needs to be looked into)
 
 
-Optimizing
-----------
+## Optimizing
 
 
 * Avoid NULL when possible
 * ``optimize table``
 
 
-indexing
---------
+## indexing
 
 
 * Isolate the query column
@@ -241,8 +222,7 @@ indexing
   * good target is ``count(distinct name) / count(*)``
 
 
-Timezones
----------
+## Timezones
 
 	-- see what time zones are in use
 	SELECT @@global.time_zone, @@session.time_zone;
@@ -288,8 +268,7 @@ super_read_only <https://www.percona.com/blog/2016/09/27/using-the-super_read_on
 
 # MySQL - Configuration
 
-Variables
----------
+## Variables
 
 ```sql
 -- session variables
@@ -300,8 +279,7 @@ SHOW GLOBAL VARIABLES;
 SET GLOBAL sort_buffer_size=1000000;
 ```
 
-Get timezone config
--------------------
+## Get timezone config
 
 ```sql
 SELECT @@global.time_zone, @@session.time_zone;
@@ -309,7 +287,6 @@ SELECT @@global.time_zone, @@session.time_zone;
 
 
 # network
-@MySQL
 
 Port 3306
 Plaintext protocol
@@ -321,8 +298,7 @@ SSL is negotiated in-stream
 
 <!-- TODO Avoid NULL when possible (forget why) -->
 
-indexing
---------
+## indexing
 
 * Isolate the query column
 * Try to simplify any math, and use literals when possible
@@ -330,8 +306,7 @@ indexing
   * good target is ``count(distinct name) / count(*)``
 
 
-Check the slow query log
-------------------------
+## Check the slow query log
 Enable this for debugging, don't leave it running if you don't need it.
 
 ```mysql
@@ -346,16 +321,14 @@ set global slow_query_log_file = file_name
   # Percona toolkit (<https://www.percona.com/software/database-tools/percona-toolkit>)
   pt-query-digest /var/log/mysql/mysql-slow.log
 
-Dealing with fragmentation
---------------------------
+## Dealing with fragmentation
 
 ```mysql
 -- size in MB
 select ENGINE, TABLE_NAME, Round(DATA_LENGTH/1024/1024) as data_length, round(INDEX_LENGTH/1024/1024) as index_length, round(DATA_FREE/1024/1024) as data_free, (data_free/(index_length+data_length)) as frag_ratio from information_schema.tables where DATA_FREE > 0 order by frag_ratio desc;
 ```
 
-Optimize table
---------------
+## Optimize table
 
 ```mysql
 optimize table <tbl>;
@@ -363,8 +336,7 @@ optimize table <tbl>;
 
 <https://dev.mysql.com/doc/refman/5.7/en/optimize-table.html>
 
-Good ways to benchmark
-----------------------
+## Good ways to benchmark
 <!-- TODO - cleanup -->
 
 
@@ -381,13 +353,11 @@ Good ways to benchmark
   * Super Smack
 
 
-mysqlslap
----------
+## mysqlslap
 
 Emulates client load
 
-Run profiling
--------------
+## Run profiling
 
 ```
 set profiling = 1;
@@ -395,8 +365,7 @@ set profiling = 1;
 show profile;
 ```
 
-Resources
----------
+## Resources
 
 * High Performance MySQL by Baron Schwartz, Perter Zaitsev, Vadim Tkachenko
 
@@ -439,8 +408,7 @@ For safe measure, don't just set the time zone in MySQL, but also set the system
 
 # replication
 
-Set the replica binlog coordinates
-----------------------------------
+## Set the replica binlog coordinates
 
 ```sql
 CHANGE MASTER TO
@@ -449,24 +417,20 @@ CHANGE MASTER TO
   MASTER_LOG_POS=123456;
 ```
 
-Check the binlog in a human readable way
-----------------------------------------
+## Check the binlog in a human readable way
 
 
   mysqlbinlog <binlog file>
 
 
-Links
------
+## Links
 <https://dev.mysql.com/doc/refman/5.6/en/replication-gtids-concepts.html>
 
 
 
 # security
-@MySQL
 
-Don't place DB on same instance as application
-----------------------------------------------
+## Don't place DB on same instance as application
 
 If the application is vulnerable to a file disclosure attack, it could allow attacker to download the DB files directly. This can be mitigated by proper file permissions, but a locked down ACL on a networked MySQL server is just as good (and makes the application more scalable as well).
 
@@ -486,15 +450,12 @@ Run mysql_upgrade
 
 
 # ZFS
-@MySQL, @ZFS
 
-Set the ZFS recordsizes to match InnoDB page size
--------------------------------------------------
+## Set the ZFS recordsizes to match InnoDB page size
 	zfs set recordsize=16k  tank/db
 	zfs set recordsize=128k tank/log
 
-Further reading
----------------
+## Further reading
 
 * [MySQL InnoDB ZFS Best Practices](https://blogs.oracle.com/realneel/entry/mysql_innodb_zfs_best_practices)
 
@@ -549,8 +510,7 @@ innochecksum - offline file checksum utility
 * excellent for read-only tables
 
 
-Tools
------
+## Tools
 
 
  myisam_ftdump

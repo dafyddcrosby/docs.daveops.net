@@ -1,8 +1,6 @@
 # Python - XMLRPC
-@Python 
 
-Connecting to an XMLRPC server
-------------------------------
+## Connecting to an XMLRPC server
 
 ```python
 

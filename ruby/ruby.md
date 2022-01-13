@@ -1,7 +1,5 @@
 ---
 title: Ruby
-tags:
-  - Ruby
 ---
 
 # Ruby

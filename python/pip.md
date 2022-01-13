@@ -1,6 +1,5 @@
 ---
 title: pip
-tags: ["Python"]
 ---
 
 ## Create a package list

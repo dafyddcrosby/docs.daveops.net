@@ -1,7 +1,5 @@
 ---
 title: Concepts
-tags:
-  - security
 ---
 
 ## Confidentiality, Integrity, Availability

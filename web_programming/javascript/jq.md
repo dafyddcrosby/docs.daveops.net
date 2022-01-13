@@ -1,6 +1,5 @@
 ---
 title: jq
-tags: ["JavaScript"]
 ---
 
 * <https://jqplay.org/>

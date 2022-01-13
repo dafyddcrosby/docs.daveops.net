@@ -1,6 +1,4 @@
----
-title: Site Reliability Engineering (book)
----
+# Site Reliability Engineering (book)
 
 The book: <https://landing.google.com/sre/book/>
 
@@ -67,8 +65,7 @@ The SRE Team is responsible for:
  jack-of-all-trades on-call engineer does work, but the practiced on-call
  engineer armed with a playbook works much better.
 
-Uptime
-------
+## Uptime
 
 
 Aiming for 100% uptime doesn't make sense outside of life-critical systems.
@@ -87,8 +84,7 @@ understanding of system stability.
  SLO. However, not all product attributes are amenable to SLOs: it’s hard to
  specify "user delight" with an SLO.
 
-Reducing Toil
--------------
+## Reducing Toil
 
 
 Automate tasks that are repetitive, no enduring value (ie don't help the
@@ -102,8 +98,7 @@ with service growth.
  designed service can grow by at least one order of magnitude with zero
  additional work, other than some one-time efforts to add resources. 
 
-Service Reliability Hierarchy
------------------------------
+## Service Reliability Hierarchy
 
 
 * Monitoring
@@ -117,8 +112,7 @@ Service Reliability Hierarchy
 
 (Not sure the argument that this makes a pyramid holds up...)
 
-Managing Incidents
-------------------
+## Managing Incidents
 
 
 An incident is when something:
@@ -148,8 +142,7 @@ Distinct roles:
 
 Incident commander hand-off is explicitly confirmed by person taking over.
 
-Misc
-----
+## Misc
 
 
 [Dan Luu's notes](https://danluu.com/google-sre-book/)

@@ -54,17 +54,13 @@ JRO <SRC>        | Transfer execution to instruction at offset specified by SRC 
 HCF              | Halt and Catch Fire (undocumented)
 
 
-Node Type T30 - Stack Memory Node
----------------------------------
+## Node Type T30 - Stack Memory Node
 
-Node Type T31 - Random Access Memory Node
------------------------------------------
+## Node Type T31 - Random Access Memory Node
 
-Debugger
---------
+## Debugger
 
-Visualization Module
---------------------
+## Visualization Module
 
 
 

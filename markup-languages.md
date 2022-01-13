@@ -20,8 +20,7 @@ https://www.w3.org/TR/emotionml/Overview.html
 <![endif]-->
 ```
 
-Forms
------
+## Forms
 
 ```html
 <form name="input" action="script.php" method="get">
@@ -35,8 +34,7 @@ Favorite color:
 </form>
 ```
 
-Input attributes (HTML 5)
--------------------------
+## Input attributes (HTML 5)
 
 
 * email
@@ -60,15 +58,13 @@ use `required` to have the browser whine
 <input ... required>
 ```
 
-Code samples
-------------
+## Code samples
 
 ```html
 <code>print 'hello world'</code> prints <samp>hello world</samp>
 ```
 
-Canvas (HTML 5)
----------------
+## Canvas (HTML 5)
 
 
 ### initialization
@@ -84,16 +80,14 @@ Canvas (HTML 5)
  </script>
 ```
 
-Fixed-meter bar (HTML 5)
-------------------------
+## Fixed-meter bar (HTML 5)
 
 ```html
 
  <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
 ```
 
-Progress bar (HTML 5)
----------------------
+## Progress bar (HTML 5)
 
 ```html
 
@@ -102,16 +96,14 @@ Progress bar (HTML 5)
 
 Use JavaScript to move it around
 
-Autofocus input (HTML 5)
-------------------------
+## Autofocus input (HTML 5)
 
 ```html
  
  <input ... autofocus>
 ```
 
-Patterned input (HTML 5)
-------------------------
+## Patterned input (HTML 5)
 
 ### Enter 15 digits
 
@@ -120,8 +112,7 @@ Patterned input (HTML 5)
  <input type='text' pattern='[0-9]{15}'>
 ```
 
-Dropdown list for text input (HTML 5)
--------------------------------------
+## Dropdown list for text input (HTML 5)
 
 ```html
 <input type='text' ... list='listid'>
@@ -131,15 +122,13 @@ Dropdown list for text input (HTML 5)
 </datalist>
 ```
 
-Editable content
-----------------
+## Editable content
 
 ```html
 <p contenteditable="true">
 ```
 
-Link for phone numbers (mobile)
--------------------------------
+## Link for phone numbers (mobile)
 
 International calling code is required
 
@@ -162,15 +151,13 @@ International calling code is required
  <a href="fax:+14035555555">403-555-5555</a>
 ```
 
-Doctype (HTML 5)
-----------------
+## Doctype (HTML 5)
 
 ```html
 <!doctype html>
 ```
 
-Semantic tags (HTML 5)
-----------------------
+## Semantic tags (HTML 5)
 
 * <section>
 * <nav>
@@ -193,8 +180,7 @@ Semantic tags (HTML 5)
 * <aside> (for p tags)
 
 
-Good meta tags to have
-----------------------
+## Good meta tags to have
 
 * <http://commoncrawl.org/>
 * <title> - up to 70 characters of relevant text
@@ -208,8 +194,7 @@ Good meta tags to have
 
 <http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013>
 
-HTML entities for accents
--------------------------
+## HTML entities for accents
 
 Modifier   | Example | HTML
 ---        | ---     | ---

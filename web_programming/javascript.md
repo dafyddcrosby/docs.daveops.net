@@ -1,6 +1,5 @@
 ---
 title: JavaScript
-tags: ["JavaScript"]
 ---
 
 ## Strict Mode

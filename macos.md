@@ -319,8 +319,7 @@ mdimport - test/list spotlight plugins
 mdls - list the metadata of a file
 mddiagnose - diagnose Spotlight issues
 
-Ignore a directory for indexing
--------------------------------
+## Ignore a directory for indexing
 touch the file ``.metadata_never_index``
 
 
@@ -395,22 +394,19 @@ darwinup - manage archives for the system
 
 
 
-See filesystem attributes
--------------------------
+## See filesystem attributes
 
 	ls -lO
 
 
 
 # Apple File System
-@filesystems, @macOS
 
 Replaces HFS+
 
 OS X 10.12+
 
-Features
---------
+## Features
 
 
 
@@ -426,8 +422,7 @@ Features
 * SMB compatible
 
 
-Links
------
+## Links
 
 
 <https://developer.apple.com/library/prerelease/content/documentation/FileManagement/Conceptual/APFS_Guide/GeneralCharacteristics/GeneralCharacteristics.html#//apple_ref/doc/uid/TP40016999-CH2-SW1>
@@ -477,8 +472,7 @@ script -p typescript
 # bundles
 Bundles
 
-Layout
-------
+## Layout
 
 Can be accessed by NSBundle
 
@@ -494,8 +488,7 @@ Contents/
 CodeResources
 ```
 
-Framework layout
-----------------
+## Framework layout
 
 /System/Library/Frameworks (and also /System/Library/PrivateFrameworks)
 
@@ -581,8 +574,7 @@ Uses AppleEvents
 
 Use osascript and Automator
 
-View AppleEvents output
------------------------
+## View AppleEvents output
 
 export AEDebugSends=1 AEDebugReceives=1
 
@@ -639,8 +631,7 @@ Dashboard disabled in 10.10 (Yosemite)
 
 <https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/about_debugging_w_xcode.html#//apple_ref/doc/uid/TP40015022>
 
-Using old SDKs
---------------
+## Using old SDKs
 
 Edit MinimumSDKVersion in
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Info.plist
@@ -673,8 +664,7 @@ unsigned code is killed by the kernel in iOS
 say "talking from the command line"
 ```
 
-Objective-C
------------
+## Objective-C
 [Speech Synthesis Programming Guide](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/)
 
 speech synthesizers located in ``/System/Library/Speech/Synthesizers``

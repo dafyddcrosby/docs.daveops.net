@@ -1,9 +1,6 @@
 # ActiveRecord
-@Ruby, @Ruby_on_Rails
 
-
-Supported database column types
--------------------------------
+## Supported database column types
 
 
 * binary
@@ -20,8 +17,7 @@ Supported database column types
 * timestamp
 
 
-Misc.
------
+## Misc.
 
 
 * Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration

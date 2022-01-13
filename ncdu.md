@@ -1,6 +1,5 @@
 # ncdu
-Only count files on same mounted filesystem
--------------------------------------------
+## Only count files on same mounted filesystem
 
 
 

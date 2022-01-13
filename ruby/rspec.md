@@ -1,11 +1,9 @@
 # RSpec
-@Ruby, @Ruby_on_Rails
 
 <http://rspec.info/>
 <http://rubydoc.info/gems/rspec-rails/frames>
 
-Using RSpec
------------
+## Using RSpec
 
 Add to Gemfile:
 

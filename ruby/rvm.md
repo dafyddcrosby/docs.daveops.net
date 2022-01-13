@@ -1,36 +1,30 @@
 # RVM
-@Ruby, @Ruby_on_Rails
 
-Install RVM with Ruby
----------------------
+## Install RVM with Ruby
 
 
 
  curl -L <https://get.rvm.io> | bash -s stable --ruby
 
-Create a per-project rvmrc
---------------------------
+## Create a per-project rvmrc
 
 
 
  rvm --rvmrc --create 1.9.3@projectname
 
-gemsets
--------
+## gemsets
 
 
 
  rvm gemset [create|use|delete] gemsetname
 
-See gem directory
------------------
+## See gem directory
 
 
 
  gem env gemdir
 
-Installing openssl and readline for dependencies
-------------------------------------------------
+## Installing openssl and readline for dependencies
 
 
 
@@ -39,13 +33,11 @@ Installing openssl and readline for dependencies
  rvm pkg install readline
  rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/ --with-readline-dir=$HOME/.rvm/usr
 
-Automatic gemset initialization
--------------------------------
+## Automatic gemset initialization
 
 Add gems to ``~/.rvm/gemsets/global.gems``
 
-set default ruby
-----------------
+## set default ruby
 
 
 

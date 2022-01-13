@@ -1,5 +1,4 @@
 # Python - Tkinter
-@Python 
 
 ```python
 

@@ -1,10 +1,8 @@
 # Crucial Conversations
-@books
 
 By: Kerry Patterson; Joseph Grenny; Ron McMillan; Al Switzler
 
-What's a crucial convo?
------------------------
+## What's a crucial convo?
 
 
 
@@ -110,8 +108,7 @@ Signs that a conversation is about to get Crucial
 Look for safety problems. Safe conversations let the things that need to be
 said be said. Unsafe convos are ugly.
 
-Silence
--------
+## Silence
 
 
 * masking (sarcasm, sugarcoating)
@@ -128,8 +125,7 @@ Silence
    when others force their ideas into the pool, people have a harder time
    accepting the information.
 
-Violence
---------
+## Violence
 
 
 * controlling (coercion, using directive questions)
@@ -217,8 +213,7 @@ Agree to agree. Focus on your purpose, and be open to alternatives. Find the
 higher objective which you agree on.
 
 
-CRIB
-----
+## CRIB
 
 
 
@@ -348,8 +343,7 @@ Look for opportunities to be curious about others
  
 Every sentence has a history - find out what's lead to this
 
-Disagreement
-------------
+## Disagreement
 
 
 Break the cycle, encourage other person to step away from their harsh feelings, anger
@@ -390,8 +384,7 @@ Say "I agree," and then build.
 
 Compare your path with the other person, determine what they're trying to accomplish
 
-Decision making
----------------
+## Decision making
 
 
 Dialogue is not decision making
@@ -418,14 +411,12 @@ Don't get pulled into any one instance or your concern will seem trivial. Talk a
 hard to talk about. Pick one element and work on it. Establish Mutual Purpose.
 Frame the conversation in a way that the other person will care about."
 
-Stress
-------
+## Stress
 
 
 What is your Style under Stress? Your family? Coworkers?
 
-Trust
------
+## Trust
 
 
 Trust is not binary, there are degrees of trust

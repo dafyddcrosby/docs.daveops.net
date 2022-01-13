@@ -258,17 +258,11 @@ xfs_admin -L mylabel /dev/sda2
 ```
 
 
----
-title: bcachefs
-tags: filesystems
----
+# bcachefs
 
 [Architecture](https://bcachefs.org/Architecture/)
 
----
-title: kernel modules
-tags: ["Linux"]
----
+# kernel modules
 
 ## basic commands
 
@@ -286,9 +280,8 @@ unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pi
 * [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.6/html/)
 
 
----
-title: UDP
----
+
+# UDP
 
 ## UDP fingerprinting
 > In addition to his post, I heard a very good explanation of why they _intentionally_ coded it this way. The simplest way to create a packet is to simply set aside a section of memory for the packet and start filling in the necessary fields. For something like a UDP packet, there are some spaces in the packet that just aren't normally used. So if the field is left alne, is simply contains some data from whatever was stored in that section of memory previously. So instead of leaving those sections alone, they intentionally zeroed out the unused fields (such as the IP identification field) so that when the packet gets sent out, it doesn't give out any information that may have been laying around in memory.
@@ -296,18 +289,13 @@ title: UDP
 
 
 
----
-title: DKMS
----
+#  DKMS
 
 Dynamic Kernel Module System
 
 
 
----
-title: Building Kernels
-tags: ["Fedora"]
----
+# Building Kernels
 
 ```bash
 dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison kernel-devel glibc-static
@@ -341,9 +329,7 @@ if missing gnu/stubs-32.h, means you need glibc-devel.i686
 
 
 
----
-title: cgroups
----
+# cgroups
 
 ## Links
 

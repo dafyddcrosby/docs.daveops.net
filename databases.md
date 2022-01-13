@@ -1,6 +1,6 @@
----
-title: Databases
----
+# Databases
+
+
 
 <!---
 read Gray & Reuter
@@ -12,8 +12,7 @@ read Weikum and Vossen
 <http://slideshot.epfl.ch/play/suri_stonebraker>
 
 
-Column store
-------------
+## Column store
 
 <!---
    read Monet paper on column executor vs row executor
@@ -23,17 +22,14 @@ Column store
 50-100 times faster (according to Stonebraker) (data?)
 Only reads the columns needed, not the entire store
 
-OLTP (Online Transaction Processing)
-------------------------------------
+## OLTP (Online Transaction Processing)
 
 
-High-Availability
------------------
+## High-Availability
 
 CAP theorem - consistency, availability, partition tolerance
 
-Log-Structured Merge Trees
---------------------------
+## Log-Structured Merge Trees
 
 Record data and changes in immutable segments.
 When data is inserted/changed, the top level fills up and its data is copied into a new segment (compaction)

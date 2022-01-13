@@ -1,5 +1,4 @@
 # Tornado
-@Python
 
 SSL
 ---

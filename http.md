@@ -96,8 +96,7 @@ code | status
 
 # Apache HTTP Server
 
-Signals
--------
+## Signals
 
 Signal   | Description
 ---      | ---
@@ -107,8 +106,7 @@ SIGUSR1  | Graceful restart
 SIGTERM  | Immediate stop
 
 
-Apachectl options
------------------
+## Apachectl options
 
 Option        | ShortOption | Description
 ---           | :---        | ---
@@ -122,8 +120,7 @@ configtest    | -t          | test the configuration
               | -S          | parse the config, show what IPs are used for virtual hosts
 
 
-General Hardening
------------------
+## General Hardening
 
 ### SSL Config
 

@@ -1,6 +1,4 @@
----
-title: Sega Genesis/Mega Drive
----
+# Sega Genesis/Mega Drive
 
 The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and a z80 @ 4MHz (to handle sound processing).
 
@@ -9,7 +7,7 @@ The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and 
 <!-- TODO cross-reference -->
 
 Start address | End address | Description                     | 32X SH-2 address
----           | ---         | ---                             | ----
+---           | ---         | ---                             | ---
 0x000000      | 0x3FFFFF    | Cartridge ROM/RAM               | 0x2000000-0x23FFFFF
 0x400000      | 0x7FFFFF    | Reserved (used by the Mega-CD and 32X)
 0x800000      | 0x9FFFFF    | Reserved (used by the 32X)

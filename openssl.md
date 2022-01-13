@@ -1,6 +1,4 @@
----
-title: OpenSSL
----
+# OpenSSL
 
 ## RSA key processing
 
@@ -50,7 +48,6 @@ openssl x509 -req -in request.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateseri
 
 
 
-Testing an SNI certificate
---------------------------
+## Testing an SNI certificate
 	openssl s_client -servername example.com -connect example.com:443
 

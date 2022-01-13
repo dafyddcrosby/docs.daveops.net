@@ -1,6 +1,4 @@
----
-title: Cryptography
----
+# Cryptography
 
 ## XOR
 
@@ -48,8 +46,7 @@ Common triplets of text are THE, EST, FOR, AND, HIS, ENT or THA.
 
 <http://cryptopals.com>
 
-Set 1
------
+## Set 1
 
 Base 64 - RFC 4648
 

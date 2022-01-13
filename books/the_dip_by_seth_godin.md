@@ -1,11 +1,8 @@
----
-title: The Dip by Seth Godin
----
+# The Dip by Seth Godin
 
 "Never quit something with great long-term potential just because you can't deal with the stress of the moment" - Seth Godin (p. 64)
 
-Several curves
---------------
+## Several curves
 
 
 * The dip - where there is a barrier to great success
@@ -24,8 +21,7 @@ Who are you trying to influence? If you're trying to influence a single person, 
 
 Measuring your progress means you can see if you're pulling ahead or not.
 
-Questions to ask before quitting (p 75-76)
-------------------------------------------
+## Questions to ask before quitting (p 75-76)
 
 
 

@@ -1,6 +1,4 @@
----
-title: Python
----
+# Python
 
 <!--
 TODO - ConfigParser
@@ -214,8 +212,7 @@ python3 -m venv path/to/new/env
 ```
 
 
-Python zen
-----------
+## Python zen
 
 ```python
 import this
@@ -348,15 +345,13 @@ if __name__ == '__main__':
 
 # email
 
-Run a simple SMTP server
-------------------------
+## Run a simple SMTP server
 
 
 
  python -m smtpd -n -c DebuggingServer localhost:1025
 
-Send email
-----------
+## Send email
 
 ```python
 
@@ -418,8 +413,7 @@ server.login()
 # HTTPServer
 
 
-Basic HTTP server
------------------
+## Basic HTTP server
 
 ```python
 

@@ -1,18 +1,14 @@
----
-title: Sphinx
-
----
 # Sphinx
 
-Create new project
-------------------
+# Sphinx
+
+## Create new project
 
 
 
  sphinx-quickstart
 
-Removing extra blank pages from PDF
------------------------------------
+## Removing extra blank pages from PDF
 
 ```python
 

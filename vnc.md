@@ -5,8 +5,7 @@
  x11vnc -display :0 -nopw
  vncviewer :0
 
-Testing a connection
---------------------
+## Testing a connection
 
 
 

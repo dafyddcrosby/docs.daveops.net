@@ -1,6 +1,5 @@
 ---
 title: Lokkit
-tags: RedHat, firewalls
 ---
 
 ## Get list of services

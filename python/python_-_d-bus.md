@@ -1,9 +1,7 @@
 # Python - D-Bus
-@Python 
 
 
-Connecting to D-Bus
--------------------
+## Connecting to D-Bus
 
 ```python
 import dbus

@@ -1,28 +1,22 @@
----
-title: Networking
----
+# Networking
 
-traceroute/ping
----------------
+## traceroute/ping
 (as root)
 
 
  mtr google.com
 
-list listening ports
---------------------
+## list listening ports
 
 
  netstat -plunt
 
-Alarm when ping is successful
------------------------------
+## Alarm when ping is successful
 
 
  ping -i 60 -a IP_address
 
-get external ip
----------------
+## get external ip
 
 
  curl ipecho.net/plain

@@ -1,16 +1,12 @@
----
-title: sysbench
----
+# sysbench
 
-benchmark CPU
--------------
+## benchmark CPU
 
 ```bash
 sysbench --test=cpu --cpu-max-prime=20000 run
 ```
 
-benchmark I/O
--------------
+## benchmark I/O
  
 ```bash
 sysbench --test=fileio --file-total-size=10G prepare

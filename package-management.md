@@ -90,10 +90,7 @@ apk --no-cache
 
 
 
----
-title: RPM
-tags: RedHat
----
+#  RPM
 
 [List of RPM macros](http://www.zarb.org/~jasonc/macros.php)
 

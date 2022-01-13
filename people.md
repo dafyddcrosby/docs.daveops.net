@@ -35,8 +35,7 @@ Players like little secrets
 
 # Paul Gibbs
 
-Learning Contract
------------------
+## Learning Contract
 
 
 
@@ -50,8 +49,7 @@ Learning Contract
 * Evaluate your learning
 
 
-Reflective Cycle
-----------------
+## Reflective Cycle
 
 
 
@@ -77,8 +75,7 @@ the former. The latter will have to wait for a more sublime day.
 
 <https://www.quora.com/profile/Alan-Kay-11>
 
-Xerox PARC Principles
----------------------
+## Xerox PARC Principles
 
 
 
@@ -145,8 +142,7 @@ Every invention has to be usable by at least 100 people.
 # Bret Victor
 
 
-Videos
-------
+## Videos
 [The Humane Representation of Thought](https://vimeo.com/115154289)
 Flat, symbolic representation of ideas (ie printed on paper) is only one facet of expressing thought. We lose our ability to think some thoughts if we express only through this mechanism
 
@@ -271,8 +267,7 @@ Users don't know what they want, but they know what they don't want when you've 
 
 # Joe Armstrong
 
-Seven Deadly Sins
------------------
+## Seven Deadly Sins
 
 
 1. Code even you cannot understand a week after you wrote it - no comments

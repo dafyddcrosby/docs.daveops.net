@@ -1,6 +1,5 @@
 # Wordpress
 
-plugins
--------
+## plugins
 <https://wordpress.org/plugins/wp-optimize/>
 

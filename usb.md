@@ -1,7 +1,6 @@
 # usb
 
-Cable
------
+## Cable
 
 * Red +5V power
 * Black Ground

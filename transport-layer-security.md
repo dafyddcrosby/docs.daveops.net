@@ -3,8 +3,7 @@
 Here's a quick checklist of best practices as of this writing. It is by no
 means complete, but should get you well on your way.
 
-Stop using
-----------
+## Stop using
 
 
 * aNULL non-authenticated DH exchanges (MITM attack)
@@ -21,16 +20,14 @@ Stop using
 * SSL Compression (CRIME attack)
 
 
-Start using
------------
+## Start using
 
 
 * HTTP Strict Transport Security (RFC 6797)
 * OCSP Stapling
 
 
-Links
------
+## Links
 
 
 * <https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model>

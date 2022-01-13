@@ -1,6 +1,5 @@
 ---
 title: Contracting advice
-tags: advice
 ---
 
 Wisdom pulled from a variety of sources

@@ -1,5 +1,4 @@
 # Python - PyGTK
-@Python 
 
 ```python
 

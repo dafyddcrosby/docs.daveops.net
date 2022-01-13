@@ -1,6 +1,5 @@
 # Systrace
-Automatically generate systrace profile
----------------------------------------
+## Automatically generate systrace profile
 
 
 

@@ -1,17 +1,13 @@
----
-title: Web Programming
----
+# Web Programming
 
 ## Links
 * [Extensible Web Manifesto](https://extensiblewebmanifesto.org/)
 * [Can I Use?](https://caniuse.com/)
 
-Graphics/Icons
---------------
+## Graphics/Icons
 <http://subtlepatterns.com/>
 
-Themes
-------
+## Themes
 <http://themeforest.net/>
 
 

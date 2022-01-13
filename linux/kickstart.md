@@ -1,6 +1,5 @@
 ---
 title: kickstart
-tags: RedHat
 ---
 
 * Press ESC

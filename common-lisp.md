@@ -1,6 +1,4 @@
----
-title: Common Lisp
----
+# Common Lisp
 
 ## Basics
 
@@ -111,22 +109,19 @@ look up *query-io* global variable
 
 
 # Quicklisp
-Load a system
--------------
+## Load a system
 
 ```common-lisp
 (ql:quickload "system-name")
 ```
 
-Find a system
--------------
+## Find a system
 
 ```common-lisp
 (ql:system-apropos "term")
 ```
 
-Load Quicklisp every time Lisp starts
--------------------------------------
+## Load Quicklisp every time Lisp starts
 
 ```common-lisp
 (ql:add-to-init-file)

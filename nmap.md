@@ -1,9 +1,6 @@
----
-title: nmap
----
+# nmap
 
-Handy scripts
--------------
+## Handy scripts
 
 Script             | Description
 ---                | ---
@@ -12,21 +9,18 @@ http-trace         | see if server has a TRACE method
 http-server-header | get details from the Server: header
 
 
-Get list of available server ciphers
-------------------------------------
+## Get list of available server ciphers
 
 	nmap --script ssl-enum-ciphers -p PORT SERVER
 
 
-Specifying hosts
-----------------
+## Specifying hosts
 
 	# Input from list
 	nmap -iL file ...
 
 
-Output
-------
+## Output
 
 	# Grepable
 	nmap -oG file ...
@@ -34,8 +28,7 @@ Output
 	nmap -oX file ...
 
 
-Resources
----------
+## Resources
 
 ### Source repo
 	svn co https://svn.nmap.org/nmap

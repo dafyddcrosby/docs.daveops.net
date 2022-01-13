@@ -1,9 +1,6 @@
----
-title: swift
----
+# swift
 
-Benefits
---------
+## Benefits
 Variables initialized before use
 - var for variable, let for constant
 - specify type after variable with <variable_name>:<type>
@@ -20,8 +17,7 @@ CLI
 swift - start up a Swift REPL (backed by LLDB)
 swiftc - compile swift code
 
-Syntax cheatsheet
------------------
+## Syntax cheatsheet
 
 No semicolons needed
 No main() needed, global scope is entry point
@@ -50,7 +46,6 @@ if boolean_var {
 var optionalString: String? = "Maybe hello?"
 ```
 
-Links
------
+## Links
 - <https://swift.org>
 

@@ -1,6 +1,5 @@
 # VLC
-Subtitles
----------
+## Subtitles
 
 
   # Add a subtitle file
@@ -13,8 +12,7 @@ Subtitles
  scodec
 -->
 
-Transcoding
------------
+## Transcoding
 
 
   # only transcode a few seconds (for testing)

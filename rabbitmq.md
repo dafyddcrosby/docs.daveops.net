@@ -1,6 +1,5 @@
 ---
 title: RabbitMQ
-tags: ["Erlang"]
 ---
 
 ## add/restart/remove cluster node

@@ -1,6 +1,4 @@
----
-title: Ruby on Rails
----
+# Ruby on Rails
 <!---
 TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
 -->
@@ -69,8 +67,7 @@ rake db:migrate
 rake db:rollback
 ```
 
-Automated testing with guard and spork
---------------------------------------
+## Automated testing with guard and spork
 
 * Add to Gemfile:
 

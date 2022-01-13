@@ -1,8 +1,7 @@
 # procfs
 The process information pseudo-file system
 
-Linux
------
+## Linux
 
 man 5 proc
 

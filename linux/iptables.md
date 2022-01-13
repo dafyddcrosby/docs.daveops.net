@@ -1,6 +1,5 @@
 ---
 title: iptables
-tags: firewalls
 ---
 
 ## Set up default DROP rule for eth0

@@ -1,14 +1,11 @@
 # rinetd
-Caveats
--------
+## Caveats
 Doesn't redirect UDP or FTP
 
-Source
-------
+## Source
 <http://www.boutell.com/rinetd/>
 
-/etc/rinetd.conf
-----------------
+## /etc/rinetd.conf
 
 	bindaddress bindport connectaddress connectport
 

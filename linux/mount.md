@@ -1,7 +1,5 @@
 ---
 title: Mount
-tags:
-  - Linux
 ---
 
 ```bash
