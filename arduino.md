@@ -1,6 +1,4 @@
----
-title: Arduino
----
+# Arduino
 
 <http://ardx.org/src/code/>
 

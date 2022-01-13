@@ -1,6 +1,4 @@
----
-title: Binary Hacks
----
+# Binary Hacks
 
 ## Determine if integer is odd
 ```c

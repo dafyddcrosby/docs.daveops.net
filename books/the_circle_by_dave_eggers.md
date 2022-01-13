@@ -1,6 +1,4 @@
----
-title: The Circle by Dave Eggers
----
+# The Circle by Dave Eggers
 
 ## The Rights of Humans in a Digital Age
 

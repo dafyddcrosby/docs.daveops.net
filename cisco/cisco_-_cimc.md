@@ -1,6 +1,4 @@
----
-title: Cisco - CIMC
----
+# Cisco - CIMC
 
 ## Resources
 

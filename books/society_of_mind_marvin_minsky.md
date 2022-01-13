@@ -1,6 +1,4 @@
----
-title: Society of Mind by Marvin Minsky
----
+# Society of Mind by Marvin Minsky
 agents
 
 "What can we do when things are hard to describe?"

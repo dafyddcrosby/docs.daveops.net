@@ -1,6 +1,4 @@
----
-title: Android
----
+# Android
 
 ## Keystore
 

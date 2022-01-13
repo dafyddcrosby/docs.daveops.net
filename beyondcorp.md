@@ -1,6 +1,4 @@
----
-title: BeyondCorp
----
+# BeyondCorp
 
 https://www.beyondcorp.com/
 

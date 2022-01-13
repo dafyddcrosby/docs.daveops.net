@@ -1,6 +1,4 @@
----
-title: Books
----
+# Books
 
 I know there's more good books out there, this is just a list of stuff I've
 read personally and found good advice in

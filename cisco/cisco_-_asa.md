@@ -1,6 +1,4 @@
----
-title: Cisco - ASA
----
+# Cisco - ASA
 
 ## security-level
 

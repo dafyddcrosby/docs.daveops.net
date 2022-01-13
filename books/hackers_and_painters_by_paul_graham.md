@@ -1,6 +1,4 @@
----
-title: Hackers and Painters by Paul Graham
----
+# Hackers and Painters by Paul Graham
 
 The day job to pay the bills, and the fun/beautiful work after hours
 

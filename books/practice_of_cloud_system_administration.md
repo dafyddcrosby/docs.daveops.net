@@ -1,6 +1,4 @@
----
-title: "The Practice of Cloud System Administration"
----
+# "The Practice of Cloud System Administration"
 
 What are the well-defined business objectives? Work backwards.
 

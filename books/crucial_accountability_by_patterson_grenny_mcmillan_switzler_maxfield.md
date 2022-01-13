@@ -1,6 +1,4 @@
----
-title: Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield
----
+# Crucial Accountability by Patterson, Grenny, McMillan, Switzler, Maxfield
 
 How do I speak up about infractions so that dangerous behaviour is avoided
 

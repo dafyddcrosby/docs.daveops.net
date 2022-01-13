@@ -1,6 +1,4 @@
----
-title: Binary Coded Decimal
----
+# Binary Coded Decimal
 
 Decimal | Binary
 ---     | ---

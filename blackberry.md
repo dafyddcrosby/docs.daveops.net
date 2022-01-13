@@ -1,6 +1,4 @@
----
-title: BlackBerry
----
+# BlackBerry
 
 ## Compile via command-line
 

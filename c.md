@@ -1,6 +1,4 @@
----
-title: C
----
+# C
 
 ## Install tooling in Fedora
 

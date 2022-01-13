@@ -1,6 +1,4 @@
----
-title: C++
----
+# C++
 
 * ☐ TODO Read the latest spec
 

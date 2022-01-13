@@ -1,6 +1,4 @@
----
-title: Cassandra
----
+# Cassandra
 
 Based on the [Amazon Dynamo](https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html) paper
 

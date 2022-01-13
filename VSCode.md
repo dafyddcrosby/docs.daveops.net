@@ -1,6 +1,4 @@
----
-title: VSCode
----
+# VSCode
 
 ## Keyboard shortcuts
 

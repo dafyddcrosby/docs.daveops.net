@@ -1,6 +1,4 @@
----
-title: ASCII art
----
+# ASCII art
 
 ## Convert JPG to ASCII art
 

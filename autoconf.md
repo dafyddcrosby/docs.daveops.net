@@ -1,6 +1,4 @@
----
-title: autoconf
----
+# autoconf
 
 ## Check library for function
 

@@ -1,6 +1,4 @@
----
-title: Practice of System and Network Administration
----
+# Practice of System and Network Administration
 
 Ticket tracking system for WIP
 OS installation should be fully automatic

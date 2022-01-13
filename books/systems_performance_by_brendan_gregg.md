@@ -1,6 +1,4 @@
----
-title: "Systems Performance by Brendan Gregg"
----
+# "Systems Performance by Brendan Gregg"
 
 ## 60 second Linux perf troubleshooting
 
