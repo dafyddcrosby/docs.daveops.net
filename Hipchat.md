@@ -2,8 +2,7 @@
 
 # Hipchat
 
-Message commands
-----------------
+## Message commands
 
 command          | description
 ---              | ---
@@ -17,8 +16,7 @@ command          | description
 /me <msg>        | emote command
 
 
-Keyboard shortcuts
-------------------
+## Keyboard shortcuts
 
 shortcut    | action
 ---         | ---
@@ -31,14 +29,12 @@ cmd+n       | search for room, user
 option+up   | put last line in your text box
 
 
-Modify last line
-----------------
+## Modify last line
 
 
 s/search/replace/
 
-Links
------
+## Links
 
 
 * [Emoticons list](https://www.hipchat.com/emoticons)

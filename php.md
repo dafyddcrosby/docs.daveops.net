@@ -1,6 +1,4 @@
----
-title: PHP
----
+# PHP
 
 ## Run a server instance with a script
 
@@ -46,8 +44,7 @@ checkdnsrr($host)
 ?>
 ```
 
-Authenticating users
---------------------
+## Authenticating users
 
 
 	
@@ -70,8 +67,7 @@ Authenticating users
 	 ?>
 
 
-Validation
-----------
+## Validation
 
 
 ### Numeric validation
@@ -82,8 +78,7 @@ Validation
 	 is_numeric($var)
 	 ?>
 
-Export to CSV
-=============
+# Export to CSV
 
 	
 	 <?php
@@ -95,16 +90,14 @@ Export to CSV
 	 header("Content-disposition: attachment; filename=rawlogs.csv");
 	 ?>
 
-Get filename
-============
+# Get filename
 
 	
 	 <?php
 	 $FILE_NAME = basename($_SERVER["PHP_SELF"]);
 	 ?>
 
-Return multiple values
-======================
+# Return multiple values
 
 	
 	 <?php
@@ -115,8 +108,7 @@ Return multiple values
 	 list ($zero, $one) = mult();
 	 ?>
 
-Create an array of objects
-==========================
+# Create an array of objects
 
 	
 	 <?php
@@ -136,8 +128,7 @@ Create an array of objects
 	 ?>
 	
 
-Include PEAR (Dreamhost)
-========================
+# Include PEAR (Dreamhost)
 
 	
 	 <?php
@@ -155,16 +146,14 @@ parse_str($_SERVER['QUERY_STRING'], $_GET);
 ?>
 ```
 
-Convert command line arguments into GET variables
-=================================================
+# Convert command line arguments into GET variables
 
 	
 	 <?php
 	 parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
 	 ?>
 
-Get PHP config info
-===================
+# Get PHP config info
 
 ```bash
 # Get configuration (like phpinfo())
@@ -173,8 +162,7 @@ php -i
 php --ini
 ```
 
-Redirect to a different URL
-===========================
+# Redirect to a different URL
 
 ```php	
 <?php
@@ -391,12 +379,8 @@ $bc->draw($_GET['bctext'], "int25", "png");
 ```
 
 
-# PHP - SQLite
-@php
 
-
-SQLite
-------
+## SQLite
 
 
 ### Initializing

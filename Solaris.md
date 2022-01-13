@@ -6,55 +6,45 @@ This includes Solaris derivatives as well, such as OpenSolaris and the Illumos p
 
 ## SMF (Service Management Facility)
 
-Clear maintenance mode and restart
-----------------------------------
+## Clear maintenance mode and restart
 
 ```bash
 svcadm clear <FMRI>
 ```
 
-List services
--------------
+## List services
 
 ```bash
 svcs -a
 ```
 
-Logs
-----
+## Logs
 
 /var/svc/log
 
-Links
------
+## Links
 
 * <http://bnsmb.de/solaris/My_Little_SMF_FAQ.html>
 * [Ben Rockwood's cheatsheet](http://www.cuddletech.com/blog/pivot/entry.php?id=182)
 
 
 ## Sun OpenBoot
-@Sun
 
-Boot from CDROM
----------------
+## Boot from CDROM
 
 	boot cdrom
 
-Test hardware
--------------
+## Test hardware
 
 	test-all
 
-Show banner
------------
+## Show banner
 	banner
 
-Get ethernet address
---------------------
+## Get ethernet address
 	.enet-addr
 
-Show hardware devices
----------------------
+## Show hardware devices
 	show-devs
 
 
@@ -70,22 +60,19 @@ Show hardware devices
 
 ## SmartDataCenter
 
-Find VM by alias
-----------------
+## Find VM by alias
 
 
 
  sdc-vmapi /vms | json -H -c "this.alias &amp;&amp; this.alias.match(/riak/)"
 
-Output fwapi rules
-------------------
+## Output fwapi rules
 
 
 
  sdc-fwapi /rules
 
-Update resolvers
-----------------
+## Update resolvers
 
 
 
