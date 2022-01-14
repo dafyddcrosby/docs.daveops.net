@@ -1,6 +1,4 @@
----
-title: Software bugs
----
+# Software bugs
 
 ## Design Bugs
 

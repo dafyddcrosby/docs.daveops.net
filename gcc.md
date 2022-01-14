@@ -1,6 +1,4 @@
----
-title: GCC
----
+# GCC
 
 flag                  | desc
 ---                   | ---

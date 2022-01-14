@@ -1,6 +1,4 @@
----
-title: Preloading
----
+# Preloading
 
 ## Preloading
 

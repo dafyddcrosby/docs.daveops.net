@@ -1,6 +1,4 @@
----
-title: "R"
----
+# "R"
 
 ## Syntax cheatsheet
 

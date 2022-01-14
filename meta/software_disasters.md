@@ -1,6 +1,4 @@
----
-title: Software Disasters
----
+# Software Disasters
 
 This is a list of software disasters where bugs had real-world repercussions
 beyond typical annoyance.

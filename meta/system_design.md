@@ -1,6 +1,4 @@
----
-title: System Design
----
+# System Design
 
 ## Software System Design Cycle
 

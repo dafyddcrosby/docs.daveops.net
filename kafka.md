@@ -1,6 +1,4 @@
----
-title: Kafka
----
+# Kafka
 
 by default listens on port 9092
 

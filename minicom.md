@@ -1,6 +1,4 @@
----
-title: Minicom
----
+# Minicom
 
 ## Attach to a serial console
 

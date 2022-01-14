@@ -1,6 +1,4 @@
----
-title: Sysadmin Life
----
+# Sysadmin Life
 
 - Write great documentation, not necessarily for others, but for your own sanity
 - Assume that you typing something in is the weakest link in any chain. If it can be automated, it should be.

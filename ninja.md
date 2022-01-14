@@ -1,6 +1,4 @@
----
-title: Ninja (build system)
----
+# Ninja (build system)
 
 ## Create compilation database
 

@@ -1,6 +1,4 @@
----
-title: Coffee
----
+# Coffee
 
 If coffee is sour, it's under-extracted.
 

@@ -1,6 +1,4 @@
----
-title: Hot Standby Router Protocol
----
+# Hot Standby Router Protocol
 
 RFC 2281
 

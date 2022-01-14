@@ -1,6 +1,4 @@
----
-title: jq
----
+# jq
 
 * <https://jqplay.org/>
 * <https://stedolan.github.io/jq/>

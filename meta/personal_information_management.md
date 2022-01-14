@@ -1,6 +1,4 @@
----
-title: Personal Information Management
----
+# Personal Information Management
 
 A good PIM always has the right information to meet our needs.
 

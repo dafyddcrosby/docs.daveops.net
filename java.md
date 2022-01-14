@@ -1,6 +1,4 @@
----
-title: Java
----
+# Java
 
 ## Types
 

@@ -1,6 +1,4 @@
----
-title: Outsourcing
----
+# Outsourcing
 
 ## Tom Limoncelli
 

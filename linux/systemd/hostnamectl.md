@@ -1,6 +1,4 @@
----
-title: systemd/hostnamectl
----
+# systemd/hostnamectl
 
 ```bash
 # Set hostname

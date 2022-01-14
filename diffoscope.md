@@ -1,5 +1,5 @@
 ---
-title: diffoscope
+# diffoscope
 ---
 
 - [home page](https://diffoscope.org/)

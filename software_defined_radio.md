@@ -1,5 +1,5 @@
 ---
-title: software-defined radio
+# software-defined radio
 ---
 
 [gqrx](https://gqrx.dk/)

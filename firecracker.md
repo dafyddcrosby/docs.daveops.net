@@ -1,5 +1,5 @@
 ---
-title: Firecracker
+# Firecracker
 ---
 
 https://firecracker-microvm.github.io/

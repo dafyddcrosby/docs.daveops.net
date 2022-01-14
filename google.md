@@ -1,6 +1,4 @@
----
-title: Google
----
+# Google
 
 ## Style Guides
 

@@ -1,6 +1,4 @@
----
-title: Ruby
----
+# Ruby
 
 # Ruby
 

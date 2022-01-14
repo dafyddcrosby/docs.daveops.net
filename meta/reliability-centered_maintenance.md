@@ -1,6 +1,4 @@
----
-title: Reliability-Centered Maintenance
----
+# Reliability-Centered Maintenance
 
 1. What is the item supposed to do and its associated performance standards?
 2. In what ways can it fail to provide the required functions?

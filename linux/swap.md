@@ -1,6 +1,4 @@
----
-title: swap
----
+# swap
 
 Rule of thumb is usually twice physical RAM, but not strictly necessary. You do get a benefit of the kernel putting crash dumps into it.
 

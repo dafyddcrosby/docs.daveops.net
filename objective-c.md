@@ -1,6 +1,4 @@
----
-title: Objective C
----
+# Objective C
 
 ## Classes
 

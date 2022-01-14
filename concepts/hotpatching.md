@@ -1,6 +1,4 @@
----
-title: Hotpatching
----
+# Hotpatching
 
 `MOV EDI, EDI` is used because it's a safe two-byte NOP that can be used across
 x86-compatible manufactures - according to Raymond Chen, this was even figured

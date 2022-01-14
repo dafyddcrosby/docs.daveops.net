@@ -1,6 +1,4 @@
----
-title: Canada-specific resources
----
+# Canada-specific resources
 
 - [Innovation, Science and Economic Development Canada](http://www.ic.gc.ca)
 - [Canada Intellectual Property Office](http://www.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/home)

@@ -1,6 +1,4 @@
----
-title: memcached
----
+# memcached
 
 ## Get a list of keys
 

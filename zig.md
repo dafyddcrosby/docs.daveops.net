@@ -1,6 +1,4 @@
----
-title: zig
----
+# zig
 
 ## CLI
 

@@ -1,6 +1,4 @@
----
-title: YAGNI exceptions
----
+# YAGNI exceptions
 
 This is a non-exhaustive list of features that are worth implementing early because the cost is significantly greater later in the process.
 

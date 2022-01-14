@@ -1,6 +1,4 @@
----
-title: node.js
----
+# node.js
 
 [NodeJS ECMAScript Support](http://node.green/)
 

@@ -1,6 +1,4 @@
----
-title: TCP Wrappers
----
+# TCP Wrappers
  
 ```
 # blank lines and lines starting with '#' ignored

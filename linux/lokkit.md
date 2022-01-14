@@ -1,6 +1,4 @@
----
-title: Lokkit
----
+# Lokkit
 
 ## Get list of services
 

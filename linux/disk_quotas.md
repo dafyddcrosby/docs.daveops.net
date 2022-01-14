@@ -1,6 +1,4 @@
----
-title: Disk quotas
----
+# Disk quotas
 
 Add usrquota/grpquota to the mount options of the drive
 

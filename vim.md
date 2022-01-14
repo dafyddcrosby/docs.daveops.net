@@ -1,6 +1,4 @@
----
-title: vim
----
+# vim
 
 <http://www.vimninjas.com/>
 

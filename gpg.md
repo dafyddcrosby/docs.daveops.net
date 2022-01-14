@@ -1,6 +1,4 @@
----
-title: GPG
----
+# GPG
 
 ## Generate GPG keypair
 

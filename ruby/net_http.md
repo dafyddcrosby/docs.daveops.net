@@ -1,6 +1,4 @@
----
-title: Ruby net/http
----
+# Ruby net/http
 
 ```bash
 require 'net/http'

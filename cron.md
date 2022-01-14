@@ -1,6 +1,4 @@
----
-title: cron
----
+# cron
 
 ## crontab
 

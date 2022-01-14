@@ -1,6 +1,4 @@
----
-title: Kerberos
----
+# Kerberos
 
 ## Terminology
 

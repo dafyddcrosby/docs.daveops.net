@@ -1,6 +1,4 @@
----
-title: Landing Pages
----
+# Landing Pages
 
 - Have one conversion goal, and only one goal
 - Point out why you're unique

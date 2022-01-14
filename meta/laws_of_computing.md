@@ -1,6 +1,4 @@
----
-title: Laws of Computing
----
+# Laws of Computing
 
 # Marick's Law
 

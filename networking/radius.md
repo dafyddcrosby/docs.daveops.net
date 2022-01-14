@@ -1,6 +1,4 @@
----
-title: RADIUS
----
+# RADIUS
 
 ## RFCs
 * 2865

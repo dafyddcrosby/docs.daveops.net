@@ -1,6 +1,4 @@
----
-title: Couchbase
----
+# Couchbase
 
 ## Links
 

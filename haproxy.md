@@ -1,6 +1,4 @@
----
-title: HAProxy
----
+# HAProxy
 
 ## Setting ciphers on an SSL listener
 

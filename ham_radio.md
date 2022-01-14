@@ -1,6 +1,4 @@
----
-title: Ham Radio
----
+# Ham Radio
 
 ## International Space Station
 

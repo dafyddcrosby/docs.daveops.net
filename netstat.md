@@ -1,7 +1,5 @@
----
-title: netstat
+# netstat
 
----
 
 # netstat
 

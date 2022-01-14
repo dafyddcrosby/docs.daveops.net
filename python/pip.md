@@ -1,6 +1,4 @@
----
-title: pip
----
+# pip
 
 ## Create a package list
 

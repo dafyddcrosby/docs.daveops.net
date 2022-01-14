@@ -1,6 +1,4 @@
----
-title: Riak
----
+# Riak
 
 ## Get stats
 

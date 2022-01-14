@@ -1,6 +1,4 @@
----
-title: CSS
----
+# CSS
 
 <http://www.cssbuttongenerator.com/>
 

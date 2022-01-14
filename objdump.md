@@ -1,6 +1,4 @@
----
-title: objdump
----
+# objdump
 
 flag      | desc
 ---       | ---

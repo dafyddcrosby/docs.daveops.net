@@ -1,6 +1,4 @@
----
-title: EMail
----
+# EMail
 
 ## See also
 

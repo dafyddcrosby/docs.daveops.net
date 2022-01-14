@@ -1,6 +1,4 @@
----
-title: Mount
----
+# Mount
 
 ```bash
 # Mounting an ISO

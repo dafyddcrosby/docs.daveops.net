@@ -1,6 +1,4 @@
----
-title: Working from Home
----
+# Working from Home
 
 - Take regular breaks
 - No social media during working hours

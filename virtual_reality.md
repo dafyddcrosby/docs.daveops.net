@@ -1,6 +1,4 @@
----
-title: Virtual Reality
----
+# Virtual Reality
 
 ## Best Practices
 

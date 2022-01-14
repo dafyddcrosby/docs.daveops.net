@@ -1,6 +1,4 @@
----
-title: fdisk
----
+# fdisk
 
 ```bash
 # show partition table from CLI

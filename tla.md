@@ -1,6 +1,4 @@
----
-title: TLA+
----
+# TLA+
 
 - http://lamport.azurewebsites.net/tla/high-level-view.html
 - [Thinking for Programmers](https://channel9.msdn.com/Events/Build/2014/3-642)

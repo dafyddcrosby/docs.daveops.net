@@ -1,6 +1,4 @@
----
-title: ICMP
----
+# ICMP
 
 RFC 792
 

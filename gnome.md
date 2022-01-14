@@ -1,6 +1,4 @@
----
-title: GNOME
----
+# GNOME
 
 ## Turn caps lock into control key
 
@@ -9,9 +7,7 @@ dconf write /org/gnome/desktop/input-sources/xkb-options "['ctrl:nocaps']"
 ```
 
 
----
-title: GDM
----
+# GDM
 
 ## Add a WM to GDM dropdown
 

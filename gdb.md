@@ -1,6 +1,4 @@
----
-title: GDB
----
+# GDB
 
 cmd                        | desc
 ---                        | ---

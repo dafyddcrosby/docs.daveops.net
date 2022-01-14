@@ -1,6 +1,4 @@
----
-title: Productivity
----
+# Productivity
 
 ## General life hacks
 

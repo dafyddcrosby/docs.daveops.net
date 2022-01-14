@@ -1,6 +1,4 @@
----
-title: mdadm
----
+# mdadm
 
 ## Get details of RAID setup
 

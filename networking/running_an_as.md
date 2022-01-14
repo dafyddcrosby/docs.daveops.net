@@ -1,6 +1,4 @@
----
-title: Running an AS
----
+# Running an AS
 
 ## Getting an ASN
 * https://www.arin.net/resources/guide/request/#autonomous-system-numbers-asns

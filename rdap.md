@@ -1,6 +1,4 @@
----
-title: Registration Data Access Protocol (RDAP)
----
+# Registration Data Access Protocol (RDAP)
 
 Machine-readable successor to WHOIS
 

@@ -1,6 +1,4 @@
----
-title: gnuplot
----
+# gnuplot
 
 http://www.gnuplot.info/
 

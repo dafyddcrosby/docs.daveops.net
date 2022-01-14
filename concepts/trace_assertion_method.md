@@ -1,6 +1,4 @@
----
-title: Trace Assertion Method
----
+# Trace Assertion Method
 
 ## Papers
 

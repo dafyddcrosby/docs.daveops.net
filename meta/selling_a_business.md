@@ -1,6 +1,4 @@
----
-title: Selling a business
----
+# Selling a business
 
 Sell for 2-4x trailing-twelve-months revenue minus expenses
 

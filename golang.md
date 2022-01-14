@@ -1,6 +1,4 @@
----
-title: Go
----
+# Go
 
 ## Syntax cheatsheet
 

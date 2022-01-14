@@ -1,6 +1,4 @@
----
-title: taskwarrior
----
+# taskwarrior
 
 ```bash
 # List tasks

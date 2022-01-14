@@ -1,6 +1,4 @@
----
-title: User Management
----
+# User Management
 
 ## Users
 

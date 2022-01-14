@@ -1,6 +1,4 @@
----
-title: Daemontools
----
+# Daemontools
 
 flag | action
 ---  | ---

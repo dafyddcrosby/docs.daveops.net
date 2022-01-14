@@ -1,6 +1,4 @@
----
-title: UML
----
+# UML
 
 Unified Modeling Language
 

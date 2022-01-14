@@ -1,5 +1,5 @@
 ---
-title: RANCID
+# RANCID
 ---
 
 https://shrubbery.net/rancid/

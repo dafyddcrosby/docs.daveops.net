@@ -1,6 +1,4 @@
----
-title: Speed Optimization
----
+# Speed Optimization
 
 * Enable caching
 * Minify your resources

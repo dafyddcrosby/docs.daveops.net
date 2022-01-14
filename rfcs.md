@@ -1,6 +1,4 @@
----
-title: RFCs
----
+# RFCs
 
 # Writing RFCs
 

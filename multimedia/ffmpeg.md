@@ -1,6 +1,4 @@
----
-title: FFmpeg
----
+# FFmpeg
 
 ## Encode a video from WAV and PNG
 

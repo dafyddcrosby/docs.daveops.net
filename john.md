@@ -1,6 +1,4 @@
----
-title: john
----
+# john
 
 ```bash
 # Convert raw packet capture

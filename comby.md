@@ -1,6 +1,4 @@
----
-title: comby
----
+# comby
 
 flag           | desc
 ---            | ---

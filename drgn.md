@@ -1,6 +1,4 @@
----
-title: drgn
----
+# drgn
 
 ## Links
 

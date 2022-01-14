@@ -1,6 +1,4 @@
----
-title: Grim Meathook Future
----
+# Grim Meathook Future
 
 ## Greyball
 

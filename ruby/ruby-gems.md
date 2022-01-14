@@ -1,7 +1,5 @@
----
-title: RubyGems
+# RubyGems
 
----
 
 # Ruby Gems
 

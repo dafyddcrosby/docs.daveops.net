@@ -1,6 +1,4 @@
----
-title: iOS (Apple)
----
+# iOS (Apple)
 
 ## View lifecycle
 

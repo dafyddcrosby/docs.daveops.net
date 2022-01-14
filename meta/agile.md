@@ -1,6 +1,4 @@
----
-title: Agile
----
+# Agile
 
 [Agile Manifesto](http://agilemanifesto.org/)
 

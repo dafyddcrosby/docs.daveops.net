@@ -1,6 +1,4 @@
----
-title: Software Engineering
----
+# Software Engineering
 
 ## Bodies of knowledge
 ### IEEE SWEBOK

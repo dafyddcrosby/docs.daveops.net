@@ -1,6 +1,4 @@
----
-title: iptables
----
+# iptables
 
 ## Set up default DROP rule for eth0
 

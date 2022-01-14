@@ -1,6 +1,4 @@
----
-title: Operations checklist
----
+# Operations checklist
 
 This is a checklist of things that I think an operations team needs to get to a
 pretty good state. By no means exhaustive, and a bit opinionated. What I think

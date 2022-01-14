@@ -1,6 +1,4 @@
----
-title: Kotlin
----
+# Kotlin
 
 <http://kotlinlang.org/>
 

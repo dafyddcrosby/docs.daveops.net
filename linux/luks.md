@@ -1,6 +1,4 @@
----
-title: LUKS
----
+# LUKS
 
 ```bash
 # Encrypt a partition

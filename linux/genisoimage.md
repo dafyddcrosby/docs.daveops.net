@@ -1,6 +1,4 @@
----
-title: genisoimage
----
+# genisoimage
 
 ```bash
 genisoimage -o cd.iso $DIRECTORY

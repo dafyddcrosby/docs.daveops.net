@@ -1,6 +1,4 @@
----
-title: benchmarking
----
+# benchmarking
 
 * Don't run off battery power (use mains)
 * Disable things like TurboBoost (which temporarily increases CPU speed)

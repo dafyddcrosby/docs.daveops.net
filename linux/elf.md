@@ -1,6 +1,4 @@
----
-title: Linux - ELF
----
+# Linux - ELF
 
 ```bash
 # Get a program's headers

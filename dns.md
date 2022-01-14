@@ -1,6 +1,4 @@
----
-title: DNS
----
+# DNS
 
 ## Using dig
 
@@ -54,9 +52,7 @@ $ORIGIN subdomain.example.com.
 * [Criticism of DNSSEC](https://sockpuppet.org/blog/2015/01/15/against-dnssec/)
 
 
----
-title: DNS - SPF
----
+# SPF
 
 ## Check the SPF record of a domain
 
@@ -76,9 +72,7 @@ If the domain should not be sending any email
 
 
 
----
-title: BIND
----
+# BIND
 
 ## Production ready
 

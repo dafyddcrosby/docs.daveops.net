@@ -1,6 +1,4 @@
----
-title: Project Management
----
+# Project Management
 
 * Initiation - where do you want to go?
   * Why is this project important?

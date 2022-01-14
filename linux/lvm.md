@@ -1,6 +1,4 @@
----
-title: LVM
----
+# LVM
 
 ## Cheatsheet
 

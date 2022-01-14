@@ -1,6 +1,4 @@
----
-title: upstart
----
+# upstart
 
 Included in CentOS 6, Ubuntu
 

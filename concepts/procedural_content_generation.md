@@ -1,6 +1,4 @@
----
-title: Procedural Content Generation
----
+# Procedural Content Generation
 
 * <http://pcg.wikidot.com/>
 * <http://pcgbook.com/>

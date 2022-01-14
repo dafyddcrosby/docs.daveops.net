@@ -1,6 +1,4 @@
----
-title: Consul
----
+# Consul
 
 ## Links
 

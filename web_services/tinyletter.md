@@ -1,6 +1,4 @@
----
-title: TinyLetter
----
+# TinyLetter
 
 Mailing list
 

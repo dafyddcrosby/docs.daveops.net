@@ -1,6 +1,4 @@
----
-title: EST Protocol
----
+# EST Protocol
 
 RFC 7030
 

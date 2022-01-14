@@ -1,6 +1,4 @@
----
-title: 12 Factor App
----
+# 12 Factor App
 
 * <http://www.12factor.net/>
 * <https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c>

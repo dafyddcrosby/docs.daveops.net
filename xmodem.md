@@ -1,6 +1,4 @@
----
-title: xmodem
----
+# xmodem
 
 ## Using xmodem with macOS
 

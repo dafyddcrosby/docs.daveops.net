@@ -1,6 +1,4 @@
----
-title: RabbitMQ
----
+# RabbitMQ
 
 ## add/restart/remove cluster node
 

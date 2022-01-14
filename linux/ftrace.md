@@ -1,6 +1,4 @@
----
-title: ftrace
----
+# ftrace
 
 ## trace-cmd
 

@@ -1,6 +1,4 @@
----
-title: Productive Work Space
----
+# Productive Work Space
 
 ## The Office
 

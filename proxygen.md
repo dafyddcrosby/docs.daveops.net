@@ -1,6 +1,4 @@
----
-title: Proxygen
----
+# Proxygen
 
 ## Links
 

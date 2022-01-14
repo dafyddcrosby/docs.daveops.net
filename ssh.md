@@ -1,6 +1,4 @@
----
-title: SSH
----
+# SSH
 
 ## Generating a new key
 

@@ -1,6 +1,4 @@
----
-title: Bundler
----
+# Bundler
 
 ## Writing a Gemfile
 

@@ -1,6 +1,4 @@
----
-title: pandoc
----
+# pandoc
 
 ## Making slides
 

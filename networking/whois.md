@@ -1,6 +1,4 @@
----
-title: whois
----
+# whois
 
 ```bash
 # get POC info from ARIN

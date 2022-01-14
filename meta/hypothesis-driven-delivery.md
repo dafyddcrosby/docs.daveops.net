@@ -1,6 +1,4 @@
----
-title: Hypothesis-Driven Delivery
----
+# Hypothesis-Driven Delivery
 
 ```
 We believe that

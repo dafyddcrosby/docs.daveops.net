@@ -1,6 +1,4 @@
----
-title: Public Speaking
----
+# Public Speaking
 
 - Don't make hesitation noises ("ummm"), just pause
 - Rotate eye contact between 3 people

@@ -1,6 +1,4 @@
----
-title: graphing
----
+# graphing
 
 ## graphviz
 

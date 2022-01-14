@@ -1,6 +1,4 @@
----
-title: Telnet
----
+# Telnet
 
 ## Neat things to connect to
 

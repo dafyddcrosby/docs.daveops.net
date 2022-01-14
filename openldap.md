@@ -1,6 +1,4 @@
----
-title: OpenLDAP
----
+# OpenLDAP
 
 ## ldapsearch
 

@@ -1,6 +1,4 @@
----
-title: proc
----
+# proc
 
 ## Get filesystems kernel can use
 

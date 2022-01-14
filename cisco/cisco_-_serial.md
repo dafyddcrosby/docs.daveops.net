@@ -1,6 +1,4 @@
----
-title: Cisco - Serial
----
+# Cisco - Serial
 
 Often the general defaults:
 

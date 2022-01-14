@@ -1,6 +1,4 @@
----
-title: Scheme
----
+# Scheme
 
 ## Syntax cheatsheet
 

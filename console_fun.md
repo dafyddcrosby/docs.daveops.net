@@ -1,6 +1,4 @@
----
-title: Console Fun
----
+# Console Fun
 
 ## Accounting
 

@@ -1,6 +1,4 @@
----
-title: tcpdump
----
+# tcpdump
 
 ## Get all ICMP packets
 

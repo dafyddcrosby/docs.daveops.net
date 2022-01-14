@@ -1,6 +1,4 @@
----
-title: Gravatar
----
+# Gravatar
 
 ## Helper to return Gravatar image
 

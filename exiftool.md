@@ -1,6 +1,4 @@
----
-title: Exiftool
----
+# Exiftool
 
 ## Remove metadata from JPEG
 

@@ -1,6 +1,4 @@
----
-title: ImageMagick
----
+# ImageMagick
 
 ## Create a PDF from image files
 

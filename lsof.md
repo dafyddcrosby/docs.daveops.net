@@ -1,6 +1,4 @@
----
-title: lsof
----
+# lsof
 
 ```bash
 # List open files by user

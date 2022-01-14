@@ -1,6 +1,4 @@
----
-title: LiquidPlanner
----
+# LiquidPlanner
 
 ## API
 

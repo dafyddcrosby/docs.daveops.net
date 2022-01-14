@@ -1,6 +1,4 @@
----
-title: Spanning Tree
----
+# Spanning Tree
 
 2 states:
 * Forwarding

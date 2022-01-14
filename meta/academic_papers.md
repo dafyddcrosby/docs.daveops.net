@@ -1,6 +1,4 @@
----
-title: Academic Papers
----
+# Academic Papers
 
 ## On Reading Papers
 - [Should I Read Papers?](http://michaelrbernste.in/2014/10/21/should-i-read-papers.html)

@@ -1,6 +1,4 @@
----
-title: diff
----
+# diff
 
 ```
 --patience  # use the patience algorithm

@@ -1,6 +1,4 @@
----
-title: dtrace
----
+# dtrace
 
 ```bash
 # list probes

@@ -1,6 +1,4 @@
----
-title: Contracting advice
----
+# Contracting advice
 
 Wisdom pulled from a variety of sources
 

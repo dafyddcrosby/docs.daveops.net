@@ -1,6 +1,4 @@
----
-title: Theory of Inventive Problem Solving
----
+# Theory of Inventive Problem Solving
 
 Teoriya Resheniya Izobreatatelskikh Zadatch
 

@@ -1,6 +1,4 @@
----
-title: OpenBSD
----
+# OpenBSD
 
 ## List PCI devices
 

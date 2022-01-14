@@ -1,6 +1,4 @@
----
-title: Elasticsearch
----
+# Elasticsearch
 
 ## Running in Docker
 

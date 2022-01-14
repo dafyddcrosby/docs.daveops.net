@@ -1,6 +1,4 @@
----
-title: Ethics
----
+# Ethics
 
 - [ACM Code of Ethics](https://www.acm.org/code-of-ethics)
 - [CIPS Code of Ethics](http://www.cips.ca/ethics)

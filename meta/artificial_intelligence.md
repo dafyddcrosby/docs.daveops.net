@@ -1,6 +1,4 @@
----
-title: Artificial Intelligence
----
+# Artificial Intelligence
 
 <https://en.wikipedia.org/wiki/Moravec%27s_paradox>
 

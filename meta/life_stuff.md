@@ -1,6 +1,4 @@
----
-title: Life stuff
----
+# Life stuff
 
 - It's easier to hold to your principles 100% of the time than it is to hold to them 98% of the time -Clayton M. Christensen
 - Try to quit (or drastically reduce) your caffeine intake. You'll sleep better, and get sick less.

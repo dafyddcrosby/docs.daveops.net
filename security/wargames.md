@@ -1,6 +1,4 @@
----
-title: wargames
----
+# wargames
 
 Learning how to break software helps you build more robust software.
 

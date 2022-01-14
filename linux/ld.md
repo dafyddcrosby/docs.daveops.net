@@ -1,6 +1,4 @@
----
-title: Linux/ld
----
+# Linux/ld
 
 # The GNU linker
 

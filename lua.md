@@ -1,6 +1,4 @@
----
-title: Lua
----
+# Lua
 
 ## Iterate through file
 

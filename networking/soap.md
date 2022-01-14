@@ -1,6 +1,4 @@
----
-title: SOAP
----
+# SOAP
 
 Simple Object Access Protocol
 

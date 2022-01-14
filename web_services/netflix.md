@@ -1,6 +1,4 @@
----
-title: Netflix
----
+# Netflix
 
 ## Secret category
 

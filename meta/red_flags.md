@@ -1,6 +1,4 @@
----
-title: Red Flags
----
+# Red Flags
 
 ## Hiring
 

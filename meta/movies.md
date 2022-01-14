@@ -1,6 +1,4 @@
----
-title: Movies
----
+# Movies
 
 Good movies for the computer geek
 

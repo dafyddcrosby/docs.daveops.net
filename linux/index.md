@@ -1,6 +1,4 @@
----
-title: Linux
----
+# Linux
 
 ## force filesystem check on next boot
 

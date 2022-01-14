@@ -1,6 +1,4 @@
----
-title: Partitioning
----
+# Partitioning
 
 `/dev/sd*` - Drives that start with sd are either SATA, SCSI, or USB drives.
 

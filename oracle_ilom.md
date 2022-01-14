@@ -1,7 +1,5 @@
----
-title: Oracle Integrated LOM
+# Oracle Integrated LOM
 
----
 
 # Oracle Integrated LOM
 

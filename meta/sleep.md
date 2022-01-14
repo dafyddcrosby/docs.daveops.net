@@ -1,6 +1,4 @@
----
-title: Sleep
----
+# Sleep
 
 - Buy black-out curtains for your bedroom windows, and keep electronic lights to a bare minimum
 - Only use your bedroom for rest. Don't eat/watch TV/etc. in there

@@ -1,6 +1,4 @@
----
-title: shellcode
----
+# shellcode
 
 ## Dealing with null bytes
 

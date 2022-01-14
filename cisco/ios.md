@@ -1,6 +1,4 @@
----
-title: Cisco IOS
----
+# Cisco IOS
 
 Mode          | Description
 ---           | ---

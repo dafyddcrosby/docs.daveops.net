@@ -1,6 +1,4 @@
----
-title: Cisco NX-OS
----
+# Cisco NX-OS
 
 ## Get inventory of pluggables
 

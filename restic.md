@@ -1,6 +1,4 @@
----
-title: Restic
----
+# Restic
 
 ```bash
 # Initialize the repo

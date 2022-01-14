@@ -1,6 +1,4 @@
----
-title: Border Gateway Protocol
----
+# Border Gateway Protocol
 
 ## RPKI
 * http://rpki.exposed/

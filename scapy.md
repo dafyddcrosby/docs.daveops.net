@@ -1,7 +1,5 @@
----
-title: Scapy
+# Scapy
 
----
 
 # Scapy
 

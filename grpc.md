@@ -1,5 +1,5 @@
 ---
-title: gRPC
+# gRPC
 ---
 
 https://grpc.io/

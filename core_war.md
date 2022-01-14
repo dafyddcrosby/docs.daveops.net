@@ -1,6 +1,4 @@
----
-title: Core War
----
+# Core War
 
 ## History
 Created by Robert Morris Sr. (NSA Chief Scientist), Victor Vyssotsky and Dennis Ritchie (Bell Labs)

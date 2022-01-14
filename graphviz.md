@@ -1,6 +1,4 @@
----
-title: Graphviz
----
+# Graphviz
 
 <http://graphviz.org>
 

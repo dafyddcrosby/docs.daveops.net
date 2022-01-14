@@ -1,6 +1,4 @@
----
-title: COBOL
----
+# COBOL
 
 ## Links
 

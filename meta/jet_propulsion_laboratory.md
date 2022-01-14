@@ -1,6 +1,4 @@
----
-title: Jet Propulsion Laboratory
----
+# Jet Propulsion Laboratory
 
 ## Pi
 

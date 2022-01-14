@@ -1,6 +1,4 @@
----
-title: Skill Aggregation
----
+# Skill Aggregation
 
 ## level 1: beginner
 

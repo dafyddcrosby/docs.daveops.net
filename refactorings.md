@@ -1,7 +1,5 @@
----
-title: refactorings
+# refactorings
 
----
 
 # Refactorings
 

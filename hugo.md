@@ -1,6 +1,4 @@
----
-title: Hugo
----
+# Hugo
 
 ```bash
 # new site

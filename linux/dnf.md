@@ -1,6 +1,4 @@
----
-title: dnf
----
+# dnf
 
 The CLI is generally the same as YUM.
 

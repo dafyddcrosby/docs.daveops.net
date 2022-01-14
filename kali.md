@@ -1,6 +1,4 @@
----
-title: Kali
----
+# Kali
 
 * [Web site](https://www.kali.org/)
 * [VM images](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)

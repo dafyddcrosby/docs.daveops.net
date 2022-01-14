@@ -1,6 +1,4 @@
----
-title: IPFS
----
+# IPFS
 
 * https://ipfs.io
 

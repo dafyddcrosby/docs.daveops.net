@@ -1,6 +1,4 @@
----
-title: jQuery
----
+# jQuery
 
 <https://jquery.com>
 

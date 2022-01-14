@@ -1,6 +1,4 @@
----
-title: pf
----
+# pf
 
 ## pfctl
 

@@ -1,6 +1,4 @@
----
-title: Ruby-Next
----
+# Ruby-Next
 
 - <https://github.com/ruby-next/ruby-next>
 

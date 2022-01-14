@@ -1,7 +1,5 @@
----
-title: OpenPGP
+# OpenPGP
 
----
 # OpenPGP
 
 - [OpenPGP Best Practices](https://riseup.net/en/security/message-security/openpgp/best-practices)

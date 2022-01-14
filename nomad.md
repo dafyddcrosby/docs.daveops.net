@@ -1,6 +1,4 @@
----
-title: Nomad
----
+# Nomad
 
 ## CLI
 

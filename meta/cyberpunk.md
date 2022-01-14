@@ -1,6 +1,4 @@
----
-title: Cyberpunk
----
+# Cyberpunk
 
 ## Books
 

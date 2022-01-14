@@ -1,6 +1,4 @@
----
-title: firewalld
----
+# firewalld
 
 ```bash
 # is firewalld running?

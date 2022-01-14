@@ -1,6 +1,4 @@
----
-title: Raspberry Pi
----
+# Raspberry Pi
 
 ## Installing Fedora
 

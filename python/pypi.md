@@ -1,6 +1,4 @@
----
-title: PyPI
----
+# PyPI
 
 * [List of classifiers](https://pypi.org/classifiers/)
 

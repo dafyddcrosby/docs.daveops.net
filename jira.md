@@ -1,6 +1,4 @@
----
-title: JIRA
----
+# JIRA
 
 ## JQL search queries
 

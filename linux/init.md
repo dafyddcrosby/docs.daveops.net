@@ -1,6 +1,4 @@
----
-title: init
----
+# init
 
 Traditional init systems used `/etc/inittab`
 

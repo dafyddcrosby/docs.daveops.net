@@ -1,6 +1,4 @@
----
-title: HNAP
----
+# HNAP
 
 Home Network Administration Protocol
 

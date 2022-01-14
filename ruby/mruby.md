@@ -1,5 +1,5 @@
 ---
-title: Ruby - mruby
+# Ruby - mruby
 ---
 
 compile with mrbc

@@ -1,6 +1,4 @@
----
-title: Privacy
----
+# Privacy
 
 * [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/)
 

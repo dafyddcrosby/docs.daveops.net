@@ -1,6 +1,4 @@
----
-title: Capability Maturity Model
----
+# Capability Maturity Model
 
 <https://en.wikipedia.org/wiki/Capability_Maturity_Model>
 

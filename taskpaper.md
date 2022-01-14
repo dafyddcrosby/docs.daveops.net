@@ -1,6 +1,4 @@
----
-title: taskpaper
----
+# taskpaper
 
 ## Omnifocus tags
 

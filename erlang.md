@@ -1,6 +1,4 @@
----
-title: Erlang
----
+# Erlang
 
 * All statements must end with a period and whitespace
 * Atoms are like Ruby symbols

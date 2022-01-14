@@ -1,7 +1,4 @@
----
-title: Windows (Microsoft)
-slug: windows
----
+# Windows (Microsoft)
 
 ## Export certificates
 

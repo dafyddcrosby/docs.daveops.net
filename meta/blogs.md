@@ -1,6 +1,4 @@
----
-title: Blogs
----
+# Blogs
 
 - [Coding Horror](http://www.codinghorror.com/blog/)
 - [Joel on Software](http://www.joelonsoftware.com/)

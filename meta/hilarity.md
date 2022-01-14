@@ -1,6 +1,4 @@
----
-title: Hilarity
----
+# Hilarity
 
 ## Painting the Bike Shed
 

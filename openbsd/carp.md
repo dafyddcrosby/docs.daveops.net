@@ -1,6 +1,5 @@
 --
-title: OpenBSD - CARP
----
+# OpenBSD - CARP
 
 master advertises on port 112
 

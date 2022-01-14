@@ -1,6 +1,4 @@
----
-title: Progressive Web Apps
----
+# Progressive Web Apps
 
 ## Tools
 

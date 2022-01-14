@@ -1,6 +1,4 @@
----
-title: osquery
----
+# osquery
 
 ## Get processes where the path no longer exists
 

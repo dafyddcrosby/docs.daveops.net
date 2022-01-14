@@ -1,6 +1,4 @@
----
-title: LLDB
----
+# LLDB
 
 [LLDB <-> GDB Cheatsheet](https://lldb.llvm.org/lldb-gdb.html)
 

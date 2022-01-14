@@ -1,6 +1,4 @@
----
-title: ZFS
----
+# ZFS
 
 ## Compression
 

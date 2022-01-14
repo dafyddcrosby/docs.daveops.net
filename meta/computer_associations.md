@@ -1,6 +1,4 @@
----
-title: Computer Associations
----
+# Computer Associations
 
 ## IEEE
 

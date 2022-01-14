@@ -1,7 +1,5 @@
----
-title: Emacs
+# Emacs
 
----
 
 # Emacs
 

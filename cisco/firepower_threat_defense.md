@@ -1,6 +1,4 @@
----
-title: Firepower Threat Defense
----
+# Firepower Threat Defense
 
 ## Firepower Management Center
 

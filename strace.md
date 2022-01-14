@@ -1,6 +1,4 @@
----
-title: strace
----
+# strace
 
 flag          | description
 ---           | ---

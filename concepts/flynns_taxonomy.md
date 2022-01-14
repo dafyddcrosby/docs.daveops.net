@@ -1,6 +1,4 @@
----
-title: Flynn's Taxonomy
----
+# Flynn's Taxonomy
 
 <http://arith.stanford.edu/~flynn/>
 

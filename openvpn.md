@@ -1,6 +1,4 @@
----
-title: OpenVPN
----
+# OpenVPN
 
 ## Setting up an OpenVPN server
 

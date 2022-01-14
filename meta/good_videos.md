@@ -1,6 +1,4 @@
----
-title: Good Videos
----
+# Good Videos
 
 This is a list of talks, etc. that are quite good
 
