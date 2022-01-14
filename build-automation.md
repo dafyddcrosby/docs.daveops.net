@@ -1,3 +1,17 @@
+# Build automation
+
+# autoconf
+
+## Check library for function
+
+```
+AC_CHECK_LIB (library, function, [action-if-found], [action-if-not-found], [other-libraries])
+```
+
+
+
+
+
 # Makefile
 
 ```makefile
@@ -28,3 +42,25 @@ dist: clean $(name).spec
 	tar zcf $(name)-$(version).tar.gz $(name)-$(version)
 	rm -rf $(name)-$(version)
 ```
+
+
+# qmake
+## Generate Makefile
+
+
+
+  qmake -o Makefile hello.pro
+
+
+
+# Ninja (build system)
+
+## Create compilation database
+
+```
+ninja -t compdb > compile_commands.json
+```
+
+## Links
+
+- https://ninja-build.org/

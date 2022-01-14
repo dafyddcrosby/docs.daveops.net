@@ -19,3 +19,6 @@ GO_SERVER_SYSTEM_PROPERTIES="$GO_SERVER_SYSTEM_PROPERTIES -Djavax.net.debug=ssl:
 # Restart server
 # Debug logs go to go-server.log
 ```
+
+# Travis
+* <http://travis-ci.org>
