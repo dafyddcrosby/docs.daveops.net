@@ -5,7 +5,6 @@ means complete, but should get you well on your way.
 
 ## Stop using
 
-
 * aNULL non-authenticated DH exchanges (MITM attack)
 * eNULL (cleartext)
 * SSL2 (DROWN attack)
@@ -26,26 +25,21 @@ means complete, but should get you well on your way.
 * HTTP Strict Transport Security (RFC 6797)
 * OCSP Stapling
 
-
 ## Links
-
 
 * <https://blog.qualys.com/ssllabs/2015/06/08/introducing-tls-maturity-model>
 * [OpenSSL disables TLS 1.0. and 1.1](https://lists.debian.org/debian-devel-announce/2017/08/msg00004.html)
 * [TLS 1.3 and Proxies](https://www.imperialviolet.org/2018/03/10/tls13.html)
-
-
-
 
 # Certificate Transparency
 
 <https://www.certificate-transparency.org/>
 <https://sites.google.com/site/certificatetransparency/what-is-ct>
 
-
-
 # Qualys
 
 * [SSL Server Rating Guide](https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide)
 
+# stunnel
 
+<https://www.stunnel.org/static/stunnel.html>
