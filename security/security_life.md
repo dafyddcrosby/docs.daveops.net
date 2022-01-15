@@ -6,7 +6,6 @@
 
 - http://lcamtuf.blogspot.com/2016/08/so-you-want-to-work-in-security-but-are.html
 
-
 # Security Conferences
 
 - DefCon
@@ -15,4 +14,15 @@
 - HOPE
 - CanSecWest
 
+# Resources
+* [Have I Been Pwned?](https://haveibeenpwned.com/)
+<http://seclists.org>
+<http://insecure.org>
+
+## OpenSCAP
+
+<https://www.open-scap.org/>
+
+## STIG
+<https://www.stigviewer.com/stigs>
 
