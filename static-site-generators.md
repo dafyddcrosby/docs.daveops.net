@@ -1,3 +1,12 @@
+# Static Site Generators
+# Hugo
+
+```bash
+# new site
+hugo new site
+# server with drafts enabled
+hugo server -D
+```
 # Jekyll
 
 https://jekyllrb.com/docs/variables/

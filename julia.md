@@ -1,3 +1,0 @@
-# Julia
-
-https://julialang.org/
