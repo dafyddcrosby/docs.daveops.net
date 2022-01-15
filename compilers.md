@@ -166,3 +166,8 @@ Add `/hotpatch` to the compiler flags.
 * <https://blogs.msdn.microsoft.com/oldnewthing/20130102-00/?p=5663/>
 
 
+# Control Flow Integrity
+
+<https://blog.trailofbits.com/2016/10/17/lets-talk-about-cfi-clang-edition/>
+<https://clang.llvm.org/docs/ControlFlowIntegrity.html>
+

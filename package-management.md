@@ -156,3 +156,8 @@ rpm --resign package1.rpm package2.rpm ...
 ```bash
 rm -f /var/lib/rpm/__db* && rpm --rebuilddb
 ```
+# dnf
+
+The CLI is generally the same as YUM.
+
+yum-plugin-versionlock is replaced with dnf-plugins-core

@@ -59,3 +59,15 @@ osslsigncode -certs signing.cert -key signing.key -readpass passphrase_file -in 
 ```shell
 installer.exe /x
 ```
+# Microsoft - Excel
+## Keyboard shortcuts
+
+keystroke | desc
+---       | ---
+ctrl-;    | insert today's date
+
+
+# Microsoft Outlook
+
+https://docs.microsoft.com/en-us/outlook/rest/ruby-tutorial
+https://github.com/ebeigarts/exchanger

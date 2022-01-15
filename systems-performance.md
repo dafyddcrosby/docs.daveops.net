@@ -45,3 +45,15 @@ sysbench --test=fileio --file-total-size=10G --file-test-mode=rndrw --init-rnd=o
 sysbench --test=fileio --file-total-size=10G cleanup
 ```
 
+# ftrace
+
+## trace-cmd
+
+```bash
+# list available plugins/events
+trace-cmd list
+```
+# perf
+
+<https://perf.wiki.kernel.org/index.php/Main_Page>
+

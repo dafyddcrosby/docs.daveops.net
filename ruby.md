@@ -1,7 +1,5 @@
 # Ruby
 
-# Ruby
-
 ## CLI
 
 ```bash

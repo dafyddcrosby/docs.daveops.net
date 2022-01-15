@@ -363,3 +363,11 @@ item["password"]
 
 * <http://www.pburkholder.com/blog/2015/12/04/why-chef-vault-and-autoscaling-dont-mix/>
 * <http://engineering.ooyala.com/blog/keeping-secrets-chef>
+# Concepts - Idempotency
+
+Something that should always have the same result, no matter how many times it runs.
+
+```bash
+# /tmp/thing should exist no matter how many times you run this:
+mkdir -p /tmp/thing
+```
