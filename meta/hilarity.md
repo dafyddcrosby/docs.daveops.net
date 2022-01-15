@@ -4,11 +4,6 @@
 
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=678775>
 
-## Unix
-
-- <https://www.bell-labs.com/usr/dmr/www/odd.html>
-- [shasm](http://lists.gnu.org/archive/html/bug-bash/2001-02/msg00054.html)
-
 
 ## Programming Languages
 

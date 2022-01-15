@@ -40,3 +40,9 @@ The UNIX time-sharing system (1974)
 <http://languagelog.ldc.upenn.edu/nll/?p=3496>
 <http://minnie.tuhs.org/cgi-bin/utree.pl?file=V5/usr/sys/user.h> see u_name
 DIRSIZ is defined here: <http://minnie.tuhs.org/cgi-bin/utree.pl?file=V5/usr/sys/param.h>
+
+
+## Unix
+
+- <https://www.bell-labs.com/usr/dmr/www/odd.html>
+- [shasm](http://lists.gnu.org/archive/html/bug-bash/2001-02/msg00054.html)
