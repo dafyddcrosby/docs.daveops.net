@@ -391,3 +391,10 @@ curl -i example.com
 curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 ```
 
+
+
+# Content Security Policy
+
+<https://content-security-policy.com/>
+<https://hacks.mozilla.org/2016/02/implementing-content-security-policy/>
+

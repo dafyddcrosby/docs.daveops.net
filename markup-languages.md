@@ -15,6 +15,15 @@ https://www.w3.org/TR/emotionml/Overview.html
 ## Application cache
 * <http://www.html5rocks.com/en/tutorials/appcache/beginner/>
 
+
+## Preloading
+
+- https://instant.page/
+- https://github.com/instantpage/instant.page
+
+```html
+<link rel="prefetch" href="_url_">
+```
 ## Shim for old IE browsers
 
 ```html
@@ -423,3 +432,16 @@ syntax.
 # SAML
 Security Assertion Markup Language
 https://samltest.id/
+
+# Liquid templating system
+
+https://shopify.github.io/liquid/
+
+Uses objects, tags, and filters
+
+Objects are `{{ }}` put within a template, that holds objects and variables.
+
+Tags are for logic, `{% %}`
+
+Filters are a `|` within a `{{ }}` block
+

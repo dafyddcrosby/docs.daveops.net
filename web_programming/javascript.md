@@ -66,3 +66,96 @@ block-scoped.
 * [JavaScript specification](https://tc39.github.io/)
 * [JavaScript deobfuscator](https://lelinhtinh.github.io/de4js/)
 * [Esoteric variant](http://www.jsfuck.com/)
+
+
+# jQuery
+
+<https://jquery.com>
+
+## No-conflict mode
+
+```javascript
+var $j = jQuery.noConflict();
+```
+
+## Append a node to the DOM
+
+```javascript
+$('#thing').append('<p>blerg</p>');'</p>')
+```
+
+## Get first element of several
+
+CSS pseudo-selectors   $(".stuff li:first");
+
+DOM traversal   $(".stuff").first();
+
+## Searches for the closest ancestor that matches
+
+```javascript
+.closest()
+```
+
+## Objects
+
+
+Use $(this) instead of this - it's a jQuery object
+
+## Get custom data attributes from the DOM
+
+date(name)
+
+## Get direct children from an element
+
+```javascript
+$("ul").children("li");
+```
+
+## Get parent element of a node
+
+```javascript
+$("#thing").parent();
+```
+
+
+# Tangle
+
+<http://worrydream.com/Tangle/guide.html>
+
+
+
+# CoffeeScript
+
+<http://coffeescript.org/>
+<http://www.coffeelint.org/>
+
+
+
+
+# Typescript
+
+https://www.typescriptlang.org/
+
+
+# React
+
+<https://reactjs.org/>
+
+# React Native
+
+<http://facebook.github.io/react-native/>
+https://reactnative.dev/
+
+
+# jq
+
+* <https://jqplay.org/>
+* <https://stedolan.github.io/jq/>
+* [jid - interactive JSON manipulation](https://github.com/simeji/jid)
+
+
+
+# d3js
+
+<https://d3js.org/>
+
