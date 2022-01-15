@@ -1187,3 +1187,210 @@ Inserting ``debugger;`` in your code sets a breakpoint
 ## Links
 
 * http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm
+# C++
+
+* ☐ TODO Read the latest spec
+
+
+## To verify
+
+* A C++ compiler requires explicit declaration of all functions (language requirement)
+# C
+
+## Install tooling in Fedora
+
+```bash
+sudo yum groupinstall "C Development Tools and Libraries"
+```
+
+## Resources
+
+* <http://splint.org>
+* <http://c-faq.com/>
+* <https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard>
+* [GCC non-bugs](https://gcc.gnu.org/bugs/#nonbugs_c)_
+* <http://www.slideshare.net/olvemaudal/deep-c/24-What_will_happen_if_you>
+
+## Misc Notes
+
+* Don't cast returned pointers from malloc. (void \*) should get automatically promoted to any pointer type, and casting just makes it likely you'll get it wrong.
+* Free allocated memory when you are done with it, don't assume that OS will clean up your mess.
+
+## To verify
+
+* ☐ C compiler will create implicit declaration of function, which can be satisfied at link time
+* ☐ Difference between exit values in ANSI C, K+R, C99
+* ☐ Are return values typically passed in a register?
+
+## Open and read file
+
+```c
+const char *filename = "file.txt";
+unsigned char byte;
+FILE *fp;
+ 
+fp = fopen(filename, "rb");
+ 
+if (!fp) {
+        printf("Couldn't open file\n");
+        return 1;
+}
+ 
+while(!feof(fp)) {
+        fread(&byte, sizeof(int), 1, fp);
+        printf("%i\n",byte);
+}
+ 
+fclose(fp);
+```
+
+
+# glibc
+
+## Get version
+
+```bash
+/lib/libc.so.6
+```
+
+or
+
+```c
+#include <stdio.h>
+#include <gnu/libc-version.h>
+int main (void) { puts (gnu_get_libc_version ()); return 0; }
+```
+# Common Lisp
+
+## Basics
+
+```lisp
+;; global variable
+(defparameter *foo* 123)
+;; global constant
+(defconstant *limit* 100)
+
+; basic function
+(defun divisible-by-3 (n)
+  (= (mod n 3) 0))
+
+; emit to STDOUT
+(format t "hello world")
+
+; iterate over a list
+(dolist (x '(chunky bacon)) (print x))
+
+; expand a macro
+(macroexpand-1 '(dolist (x '(chunky bacon)) (print x)))
+
+```
+
+## Source files
+
+```lisp
+; load a file
+(load "file.lisp")
+
+; compile a file
+(compile-file "file.lisp")
+```
+
+## Property lists
+
+```lisp
+; create a plist
+(list :first "frank" :last "sinatra")
+
+; get a value from the plist
+(getf '(:first "frank" :last "sinatra") :first)
+; returns "frank"
+```
+
+## Format directives
+
+(format destination control-string args) => result
+
+destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
+
+ ~  | Directive
+--- | ---
+ %  | newline
+ {  | Consume a list
+ a  | 'aesthetic', output in human form
+ R  | human output of number
+
+## Streams
+
+```lisp
+;; check if it's a stream
+(output-stream-p *standard-output*)
+(input-stream-p *standard-input*)
+;; write to standard output
+(write-char #\a *standard-output*)
+(print 'blerk *standard-output*)
+;; read a character
+(read-char *standard-input*)
+;; write to file
+(with-open-file (file-handle "example.txt" :direction :output)
+(print "text to write" file-handle))
+;; read from file
+(with-open-file (file-handle "example.txt" :direction :input)
+(read file-handle))
+;; file exists?
+(probe-file "/path/to/file")
+;; mkdir -p
+(ensure-directories-exist "/path/to/file")
+```
+
+## Resources
+
+- [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
+- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+- https://github.com/CodyReichert/awesome-cl
+- http://www.adamtornhill.com/articles/lispweb.htm
+- https://edicl.github.io/hunchentoot/#teen-age
+- https://edicl.github.io/cl-who/
+- https://lisp-lang.org/books/
+- https://www.onlineprogrammingbooks.com/free-lisp-books/
+
+## Books
+- Land of Lisp
+
+<!--TODO
+
+* is there any effort to update the Hyperspec?
+* generate Lisp reading list. Start with 1.3 in the Hyperspec?
+
+defun &rest, &optional, etc
+
+writing macros
+
+look up *query-io* global variable
+
+-->
+
+
+# Quicklisp
+## Load a system
+
+```common-lisp
+(ql:quickload "system-name")
+```
+
+## Find a system
+
+```common-lisp
+(ql:system-apropos "term")
+```
+
+## Load Quicklisp every time Lisp starts
+
+```common-lisp
+(ql:add-to-init-file)
+```
+
+
+# clozure
+```lisp
+(external-call "getpid" :pid_t)
+```
