@@ -65,3 +65,15 @@ Used to limit system calls
 ```bash
 systrace -A /path/to/executable
 ```
+# procfs
+The process information pseudo-file system
+
+## Linux
+
+man 5 proc
+
+
+* /proc/partitions
+
+  list of partitions
+

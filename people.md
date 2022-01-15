@@ -404,3 +404,17 @@ Inventory of Ruby language
 > programming or operating the application of the machines. We are the
 > masters. They are the slaves."
 
+# Paul Graham
+## Hackers and Painters by Paul Graham (book)
+
+The day job to pay the bills, and the fun/beautiful work after hours
+
+"Run upstairs"
+
+When you're small and nimble, try to get as much technical ground between you
+and the competition. They're bigger, so it will take longer for them to reach
+feature parity. Natural barrier to entry.
+
+> "Start by picking a hard problem, and then at every decision point, take the
+> harder choice."
+

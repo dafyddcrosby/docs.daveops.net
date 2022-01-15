@@ -524,3 +524,45 @@ https://about.rdap.org/
 
 * [Consul docs](https://www.consul.io/docs)
 * [ECS and Consul](https://aws.amazon.com/blogs/compute/service-discovery-via-consul-with-amazon-ecs/)
+# Scapy
+
+Packet manipulation
+
+<http://www.secdev.org/projects/scapy/>
+
+
+# john
+
+```bash
+# Convert raw packet capture
+wpacap2john cap.raw > cap.john
+john -form wpapsk cap.john
+```
+# RFCs
+
+# Writing RFCs
+
+document                  | #
+---                       | ---
+RFC Style Guide           | 7322
+RFC Series and RFC Editor | 8729
+
+# Interesting bits
+
+document         | #
+---              | ---
+30 Years of RFCs | 2555
+# VNC
+
+
+ ssh desthost -L 5900:localhost:5900
+ x11vnc -display :0 -nopw
+ vncviewer :0
+
+## Testing a connection
+
+
+
+  nc -v <host> <port>
+  # should return "RFB ..."
+

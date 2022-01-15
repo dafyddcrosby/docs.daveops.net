@@ -122,3 +122,73 @@ class Singleton:
 ## Papers
 
 - Using Traces to Write Abstract Specifications for Software Modules (Wolfram Bartussek and David Parnas)
+# UML
+
+Unified Modeling Language
+
+## DOT
+
+Node must be shape of record
+
+```dot
+digraph U {
+        node [
+                shape = "record"
+        ]
+
+        Foo [
+                label = "{Foo|+ thing : string\l+ num : int|+ func()}"
+        ]
+}
+```
+
+http://www.ffnn.nl/pages/articles/media/uml-diagrams-using-graphviz-dot.php
+
+## links
+
+https://www.uml.org/
+# refactorings
+
+
+# Refactorings
+
+* Extract method -> move block of code into a separate function
+* Move method -> move function to class that uses it most, removing or delegating it in the old class
+* Replace temp with query -> Replace a temporary variable with a query
+* Form template method -> Get the steps of two similar subclasses into methods with the same signature (to reduce duplication)
+* Replace type with state/strategy -> Replace type code with a state object
+* Replace conditional with polymorphism -> Move each leg of the conditional to an overriding method in a subclass. Make the original method abstract.
+* Self encapsulate field -> Using get and set methods to access variables
+
+
+# 12 Factor App
+
+* <http://www.12factor.net/>
+* <https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c>
+
+* Codebase
+  * One codebase tracked in revision control, many deploys (i.e. it's all in Git)
+* Dependencies
+  * Explicitly declare and isolate dependencies. Don't rely on system tools - app should be self-contained.
+* Config
+  * Store config using environment variables (which won't be accidentally committed). Ask yourself "could this be open-sourced **right now**?"
+* Backing Services
+  * Treat backing services as attached resources
+* Build, release, run
+  * Strictly separate build and run stages
+* Processes
+  * Execute the app as one or more stateless processes
+* Port binding
+  * Export services via port binding
+* Concurrency
+  * Scale out via the process model
+* Disposability
+  * Maximize robustness with fast startup and graceful shutdown
+* Dev/prod parity
+  * Keep development, staging, and production as similar as possible
+* Logs
+  * Treat logs as event streams
+* Admin processes
+  * Run admin/management tasks as one-off processes
+
+
