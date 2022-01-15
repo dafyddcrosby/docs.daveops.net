@@ -1,3 +1,10 @@
+# Workload Orchestration
+
+# Twine
+
+- https://engineering.fb.com/2019/06/06/data-center-engineering/twine/
+
+
 # Kubernetes
 - <https://kubernetes.io/>
 - <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
@@ -152,4 +159,9 @@ to be replaced by [[kubernetes]]
 collects resource/perf metrics from running containers
 UI - port was 4194
 in Kubernetes 1.11, UI turned off by default
+
+
+
+# Mesos
+<https://mesos.apache.org/>
 
