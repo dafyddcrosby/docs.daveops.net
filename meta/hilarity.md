@@ -4,12 +4,6 @@
 
 - <https://bugzilla.mozilla.org/show_bug.cgi?id=678775>
 
-
-## Databases
-
-- [Gay Marriage: the database engineering perspective](http://qntm.org/gay)
-
-
 ## Unix
 
 - <https://www.bell-labs.com/usr/dmr/www/odd.html>
