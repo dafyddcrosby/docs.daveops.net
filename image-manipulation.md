@@ -23,3 +23,10 @@ exiftool -all= example.jpg
 ```bash
 exiftool file.pdf -Title="Animal Farm" -Author="George Orwell"
 ```
+# ASCII art
+
+## Convert JPG to ASCII art
+
+```bash
+jp2a -b --colors --fill
+```

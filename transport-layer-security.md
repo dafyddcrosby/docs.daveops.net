@@ -42,4 +42,6 @@ means complete, but should get you well on your way.
 
 # stunnel
 
-<https://www.stunnel.org/static/stunnel.html>
+<https://www.stunnel.org/static/stunnel.html># NSS
+<https://git.fedorahosted.org/cgit/mod_nss.git/plain/docs/mod_nss.html#Directives>
+
