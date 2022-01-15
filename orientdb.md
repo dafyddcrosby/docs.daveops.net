@@ -1,3 +1,0 @@
-# OrientDB
-<http://orientdb.com/>
-

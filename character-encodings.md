@@ -1,3 +1,5 @@
+# Character Encodings
+
 # Binary Coded Decimal
 
 Decimal | Binary

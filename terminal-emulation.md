@@ -2,43 +2,6 @@
 
 https://en.wikipedia.org/wiki/Terminal_emulator
 
-# DEC VTs
-
-https://vt100.net/
-
-# Terminal Emulators
-
-## Alacritty
-Comes with [X Windows](x_windows.md)
-- https://alacritty.org/
-- [GitHub](https://github.com/alacritty/alacritty)
-
-## xterm
-
-Command         | Keys
----             | ---
-Paste clipboard | shift + insert
-Main menu       | ctrl + left click
-Font menu       | ctrl + right click
-
-# Using bash to make TUIs
-
-https://github.com/dylanaraps/writing-a-tui-in-bash
-
-# ncurses
-
-- [Home](https://invisible-island.net/ncurses/)
-- [FAQ](https://invisible-island.net/ncurses/ncurses.faq.html)
-
-# Notcurses
-
-A much prettier (albeit less compliant) TUI library
-
-- [GitHub](https://github.com/dankamongmen/notcurses)
-- [Home](https://nick-black.com/dankwiki/index.php/Notcurses)
-
-
-
 # tmux
 
 ## Share session
@@ -68,56 +31,6 @@ C-b p            | Previous window
 C-b &            | Kill window
 C-b PgUp/PgDn    | Scroll mode
 C-b .            | Move window
-
-
-# GNU Screen
-
-```bash
-# Reattach a terminal
-screen -r
-# Attach to a non-detached session (pair-programming)
-screen -x
-
-# Share session
-screen -d -m -S (session name)
-screen -x (session name)
-```
-
-## Keyboard shortcuts
-
-Shortcut | Command       | Description
----      | ---           | ---
-C-a "    | windowlist -b | list all windows
-C-a C-a  | other         | go to previous screen
-C-a C-d  | detach        | detach from screen back to the terminal
-C-a k    | kill          | kill window
-C-a H    | log           | log the current window
-C-a C    |               | new window
-
-## Scrollback
-
-	C-a :
-	scrollback <lines>
-	C-a [
-
-# Minicom
-
-## Attach to a serial console
-
-```bash
-# ensure that the dev node has correct permissions
-minicom -s
-# select "Serial port setup"
-# save
-```
-# Telnet
-
-## Neat things to connect to
-
-* <http://www.livingcomputermuseum.org>
-* <http://www.telnet.org/htm/places.htm>
-* towel.blinkenlights.nl - ASCII Star Wars
-* nyancat.dakko.us - Nyan cat
 
 
 # SSH
@@ -185,10 +98,10 @@ UsePrivilegeSeparation yes
 ```
 
 
-# Troubleshooting
+## Troubleshooting
 As silly as some of these seem, I've seen them all apply at one point or another.
 
-## Client-side
+### Client-side
 
 * Are you using the correct key?
   * Confirm this using the -i flag
@@ -201,10 +114,97 @@ As silly as some of these seem, I've seen them all apply at one point or another
   * Is your routing correct?
   * Does the fingerprint match?
 
-## Server-side
+### Server-side
 
 - Is sshd running?
 - Is the firewall open?
 - Are the logs showing any connections?
+
+
+# DEC VTs
+
+https://vt100.net/
+
+# Terminal Emulators
+
+## Alacritty
+Comes with [X Windows](x_windows.md)
+- https://alacritty.org/
+- [GitHub](https://github.com/alacritty/alacritty)
+
+## xterm
+
+Command         | Keys
+---             | ---
+Paste clipboard | shift + insert
+Main menu       | ctrl + left click
+Font menu       | ctrl + right click
+
+# Using bash to make TUIs
+
+https://github.com/dylanaraps/writing-a-tui-in-bash
+
+# ncurses
+
+- [Home](https://invisible-island.net/ncurses/)
+- [FAQ](https://invisible-island.net/ncurses/ncurses.faq.html)
+
+# Notcurses
+
+A much prettier (albeit less compliant) TUI library
+
+- [GitHub](https://github.com/dankamongmen/notcurses)
+- [Home](https://nick-black.com/dankwiki/index.php/Notcurses)
+
+
+
+# GNU Screen
+
+```bash
+# Reattach a terminal
+screen -r
+# Attach to a non-detached session (pair-programming)
+screen -x
+
+# Share session
+screen -d -m -S (session name)
+screen -x (session name)
+```
+
+## Keyboard shortcuts
+
+Shortcut | Command       | Description
+---      | ---           | ---
+C-a "    | windowlist -b | list all windows
+C-a C-a  | other         | go to previous screen
+C-a C-d  | detach        | detach from screen back to the terminal
+C-a k    | kill          | kill window
+C-a H    | log           | log the current window
+C-a C    |               | new window
+
+## Scrollback
+
+	C-a :
+	scrollback <lines>
+	C-a [
+
+# Minicom
+
+## Attach to a serial console
+
+```bash
+# ensure that the dev node has correct permissions
+minicom -s
+# select "Serial port setup"
+# save
+```
+# Telnet
+
+## Neat things to connect to
+
+* <http://www.livingcomputermuseum.org>
+* <http://www.telnet.org/htm/places.htm>
+* towel.blinkenlights.nl - ASCII Star Wars
+* nyancat.dakko.us - Nyan cat
 
 

@@ -71,3 +71,75 @@ tag                     | desc
 
 * https://support.omnigroup.com/omnifocus-taskpaper-reference/
 * https://omni-automation.com/omnifocus/taskpaper.html
+# JIRA
+
+## JQL search queries
+
+```
+# Search for unresolved tickets with label foo
+resolution=unresolved and labels=foo
+
+# Ticket is unassigned
+assignee is EMPTY
+```
+
+* <https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14>
+* [Advanced search
+  queries](https://confluence.atlassian.com/jirasoftwarecloud/advanced-searching-764478330.html)
+
+### Common Fields
+* Affected version
+* Assignee
+* Attachments
+* Comment
+* Component
+* Created
+* Creator
+* Description
+* Due
+* Epic link
+* Filter
+* Fix version
+* Issue key
+* Labels
+* Last viewed
+* Priority
+* Project
+* Reporter
+* Resolved
+* Sprint
+* Status
+* Summary
+* Text
+* Time spent
+* Voter
+* Watcher
+# Agile
+
+[Agile Manifesto](http://agilemanifesto.org/)
+
+Start with the principles, and then look at the practices
+
+## Scrum
+Keep each speaker to a very limited question set.
+
+* What did you accomplish since the last meeting?
+* What are you currently working on?
+* What are you blocked by?
+* What do you need from the rest of the team?
+
+## Books
+
+* A Practical Approach to Large-Scale Agile Development: How HP Transformed
+  LaserJet FutureSmart Firmware by Mike Young, Gary Gruver, Pat Fulghum
+# LiquidPlanner
+
+## API
+
+```bash
+curl -H "Authorization: Bearer ${API_TOKEN}" https://app.liquidplanner.com/api/v1/workspaces/46891/tasks/${TASK_ITEM}
+``
+
+* https://developer.liquidplanner.com/docs/getting-started
+* https://developer.liquidplanner.com/v1.0/reference
+* https://app.liquidplanner.com/api/help/urls
