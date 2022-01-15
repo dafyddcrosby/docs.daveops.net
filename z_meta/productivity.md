@@ -1,6 +1,6 @@
 # Productivity
 
-## General life hacks
+# General life hacks
 
 > Mold your life so that the path of least resistance is the path of maximum productivity -Matt Might
 
@@ -15,7 +15,7 @@ Use 'bright lines' to avoid ambiguities that keep you doing things you don't wan
 
 Get enough [sleep](./sleep.md). Seriously.
 
-## Computing
+# Computing
 
 - [Learn to touch type](http://10fastfingers.com/)
   - The effort you spend getting to 70-80 WPM is far outweighed in time saved over your life.
@@ -23,31 +23,31 @@ Get enough [sleep](./sleep.md). Seriously.
 - Use the best tools you can for your development machine. Waiting for compiles suck time and money.
 
 
-## Delegation
+# Delegation
 
 - Assistants generally excel at maintaining systems, not creating them. *You* should have the big picture in your head.
 - Have a documented process. Questions mean the process isn't documented well enough.
 
-## Time Management
+# Time Management
 
 - Set 3 important tasks for the day, every day. Guard your time so that these three things always get done
 
-## Office organization
+# Office organization
 
 - Identify problem spots first.
 
-## Priorities
+# Priorities
 
 A real priority has a budget, a deadline, and a person responsible for it being delivered. Anything else is wishful thinking. Real priorities *ship*.
 
-## Ivy Lee Method
+# Ivy Lee Method
 
 - Each night before you go to bed, write down the 6 most important tasks for the next day.
 - Order by importance.
 - Do the tasks by importance.
 - Repeat.
 
-## Links
+# Links
 
 * <https://timemanagementninja.com/2015/01/10-productivity-questions-to-ask-yourself-every-day/>
 * <https://www.inc.com/john-rampton/15-ways-to-increase-productivity-at-work.html>
@@ -120,3 +120,23 @@ for it. If you find this evidence, continue. If not, move on.
 
 Work Right trumps finding the Right Work
 
+# Productive Work Space
+
+## The Office
+
+- Quiet, minimum of noise
+- Comfortable temperature
+- Natural light
+- Kitchenette/kitchen should be a separate space (eg no microwave smell/noise)
+
+
+## The Desk
+
+- Adjustable desk (ie allows for sitting and standing)
+- Deskspace should allow for work material to be comfortably spread out
+- Ergonomic chair
+- Water carafe
+- Easy-to-consume calories hidden away
+- Desk clear of clutter
+- Necessary stationary within reach
+- Lots of monitor space

@@ -132,7 +132,6 @@ bmbm - two-pass if garbage collection
 
 -->
 
-
 ## Get list of undocumented code
 
 ```
@@ -164,7 +163,6 @@ Can use C bindings...
 
 - <https://www.jruby.org>
 
-
 ## Neat Ruby source files to look at
 
 file          | desc
@@ -173,6 +171,7 @@ parse.y       | The lexing/parsing of Ruby source code
 defs/keywords | The reserved keywords of Ruby
 
 ## parsing
+
  ### parsetree (CLI)
 
 ```bash
@@ -199,16 +198,18 @@ pp Ripper.sexp(f)
 http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html
 
  ### ast and parser gems
+
 - https://github.com/whitequark/ast
 - https://github.com/whitequark/parser
 
  ### code reconstruction from AST
+
 - [unparser](https://github.com/mbj/unparser)
 - [sorcerer](https://github.com/jimweirich/sorcerer)
 
 ## Ractors
-Ractors are Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
 
+Ractors are Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
 
 ```ruby
 ract = Ractor.new do
@@ -351,38 +352,25 @@ ObjectSpace.count_objects
 
 This is a list of interesting bits from Ruby versions
 
-## 3.1
-
-### YJIT
-
-YJIT looks to get some excellent speed improvements in
-
-Moreover, what *really* impresses me is how quickly Maxime was welcomed into
-the core community and YJIT merged into the upstream.
-
-- [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
-- [Github: Merge YJIT: an in-process JIT compiler](https://github.com/ruby/ruby/pull/4992)
-- [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
-
-### New Debugger
-
-- [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
-- <https://github.com/ruby/debug>
-
-
-## 2.4
-- binding.irb
-## 2.1
-- generational garbage collector
-## 2.3
-- frozen string literal pragma
-## 2.2
-- incremental garbage collector
-## 2.0
-- copy-on-write friendly memory management
-
-## 1.9
-- added the Ruby Virtual Machine
+- 3.1
+  - [YJIT](https://github.com/ruby/ruby/pull/4992) (looks to get some excellent speed improvements in)
+    - Moreover, what *really* impresses me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
+    - [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
+    - [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
+  - [New debugger](https://github.com/ruby/debug)
+    - [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
+- 2.4
+  - binding.irb
+- 2.3
+  - frozen string literal pragma
+- 2.2
+  - incremental garbage collector
+- 2.1
+  - generational garbage collector
+- 2.0
+  - copy-on-write friendly memory management
+- 1.9
+  - added the Ruby Virtual Machine
 
 # Rdoc
 
@@ -703,7 +691,10 @@ From `contributing.rdoc`:
 
 - <https://brunosutic.com/blog/async-ruby>
 - [async gem](https://github.com/socketry/async)
+
 # Bundler
+
+- <https://bundler.io>
 
 ## Writing a Gemfile
 
@@ -737,10 +728,6 @@ Deprecated way:
 bundle install --path dir
 ```
 
-## Resources
-
-- <https://bundler.io>
-
 # Ruby - mruby
 
 compile with mrbc
@@ -756,23 +743,23 @@ uri = URI('http://example.com')
 <https://ruby-doc.org/stdlib-2.3.0/libdoc/net/smtp/rdoc/Net/SMTP.html>
 
 ## Using starttls
-	smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
-	smtp.enable_starttls_auto
-	smtp.start(
-	  smtp_options[:helo_domain],
-	  smtp_options[:user_name],
-	  smtp_options[:password],
-	  smtp_options[:authentication]
-	) do |smtp|
-	  smtp.send_message msgstr, "from@example.org", [ "to@example.org" ]
-	end
 
-# Ruby - Binary
+```ruby
+smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
+smtp.enable_starttls_auto
+smtp.start(
+  smtp_options[:helo_domain],
+  smtp_options[:user_name],
+  smtp_options[:password],
+  smtp_options[:authentication]
+) do |smtp|
+  smtp.send_message msgstr, "from@example.org", [ "to@example.org" ]
+end
+```
 
-## ::Array#pack / String#unpack
+# Binary manipulation with ::Array#pack / ::String#unpack
 
-### Integer
-
+Integer:
 
 Directive | Meaning
 ---       | ---
@@ -811,7 +798,7 @@ little-endian | <
 - Q_, Q!, q_, and q! are available since Ruby 2.1.
 - I!<, i!<, I!>, and i!> are available since Ruby 1.9.3.
 
-### Float
+Float:
 
 Directive | Meaning
 ---       | ---
@@ -822,7 +809,7 @@ e         | single-precision, little-endian byte order
 G         | double-precision, network (big-endian) byte order
 g         | single-precision, network (big-endian) byte order
 
-### String
+String:
 
 Directive | Meaning
 ---       | ---
@@ -839,7 +826,7 @@ m         | base64 encoded string (:RFC:`2045`) (default)  base64 encoded string
 P         | pointer to a structure (fixed-length string)
 p         | pointer to a null-terminated string
 
-### Misc
+Misc:
 
 Directive | Meaning
 ---       | ---
@@ -847,30 +834,27 @@ Directive | Meaning
 X         | skip backward one byte
 x         | skip forward one byte
 
-
-
 # RSpec
 
 <http://rspec.info/>
 <http://rubydoc.info/gems/rspec-rails/frames>
 
-## Using RSpec
-
 Add to Gemfile:
 
-	gem 'rspec-rails'
-	gem 'guard-rspec'
+```ruby
+gem 'rspec-rails'
+gem 'guard-rspec'
+```
 
-
-
- rails generate rspec:install
-
+```bash
+rails generate rspec:install
+```
 
 # Ruby Gems
 
 ## Sorbet
 
-### CLI
+[Home page](https://sorbet.org)
 
 ```bash
 # First run
@@ -879,16 +863,16 @@ bundle exec srb init
 bundle exec src tc
 ```
 
-### Install
+Gemfile:
 
 ```ruby
 gem 'sorbet', :group => :development
 ```
 
-- [Home page](https://sorbet.org)
-
-
 ## Sinatra
+
+- [Home page](http://www.sinatrarb.com)
+- [Dockerizing Sinatra](https://www.codewithjason.com/dockerize-sinatra-application/)
 
 ### Cheatsheet
 
@@ -906,7 +890,7 @@ end
 
 ### Using Rack
 
-#### Classic-style
+Classic-style:
 
 ```ruby
 require './app'
@@ -918,11 +902,6 @@ run Sinatra::Application
 * Add haml to Gemfile
 * To add partials use: ``= haml :footer``
 
-### Links
-* <http://www.sinatrarb.com>
-* [Dockerizing Sinatra](https://www.codewithjason.com/dockerize-sinatra-application/)
-
-
 ## Capistrano
 
 ```bash
@@ -930,14 +909,9 @@ run Sinatra::Application
 cap install
 ```
 
-
 ## Camping
 
 - <http://www.ruby-camping.com/>
-
-
-
-
 
 ## Guard
 
@@ -994,6 +968,7 @@ adsf --live-reload
 ```
 
 - <https://github.com/ddfreyne/adsf/>
+
 ## Ruby on Rails
 <!---
 TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
@@ -1031,27 +1006,22 @@ rails g resource user name:index email:uniq
 
 ### ActiveRecord
 
-#### Supported database column types
+Supported database column types:
 
+- binary
+- boolean
+- date
+- datetime
+- decimal
+- float
+- integer
+- primary_key
+- string
+- text
+- time
+- timestamp
 
-* binary
-* boolean
-* date
-* datetime
-* decimal
-* float
-* integer
-* primary_key
-* string
-* text
-* time
-* timestamp
-
-
-#### Misc.
-
-
-* Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
+Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
 
 
 ### Validating Active Records
@@ -1146,42 +1116,45 @@ rake about
 ### Links
 
 * <https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/>
-### Omniauth
 
-#### Installing
+### Omniauth
 
 These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
 
+```bash
+rails generate model Authorization provider:string uid:string user_id:integer
+```
 
- rails generate model Authorization provider:string uid:string user_id:integer
+Gemfile:
 
-##### Gemfile
+```ruby
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+```
 
-	gem 'omniauth'
-	gem 'omniauth-twitter'
-	gem 'omniauth-facebook'
-	gem 'omniauth-linkedin'
+`config/initializers/omniauth.rb`:
 
-##### config/initializers/omniauth.rb
-
-
+```ruby
 	Rails.application.config.middleware.use OmniAuth::Builder do
 	  provider :twitter, 'CONSUMER_KEY', 'CONSUMER_SECRET'
 	  provider :facebook, 'APP_ID', 'APP_SECRET'
 	  provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
 	end
+```
 
-#### app/models/user.rb
+`app/models/user.rb`:
 
-add:
+```ruby
+has_many :authorizations
 
-	has_many :authorizations
-	
-	def add_provider(auth_hash)
-	  unless authorizations.find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
-	        Authorization.create :user => self, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
-	  end
-	end
+def add_provider(auth_hash)
+  unless authorizations.find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
+        Authorization.create :user => self, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
+  end
+end
+```
 
 #### app/controllers/sessions_controller.rb
 
@@ -1229,7 +1202,7 @@ add:
 
 ### Gravatar
 
-#### Helper to return Gravatar image
+Helper to return Gravatar image:
 
 ```ruby
 # Returns the Gravatar (http://gravatar.com/) for the given user.
@@ -1240,55 +1213,42 @@ def gravatar_for(user, options = { size: 50 })
   image_tag(gravatar_url, alt: user.name, class: "gravatar")
 end
 ```
+
 # Ruby-Next
 
 - <https://github.com/ruby-next/ruby-next>
+- [Writing Go in Ruby](https://evilmartians.com/chronicles/a-no-go-fantasy-writing-go-in-ruby-with-ruby-next)
 
-## interesting use cases
-
-- <https://evilmartians.com/chronicles/a-no-go-fantasy-writing-go-in-ruby-with-ruby-next>
 # RVM
 
 ## Install RVM with Ruby
 
+```bash
+curl -L https://get.rvm.io | bash -s stable --ruby
 
+# Installing openssl and readline for dependencies
+curl -L https://get.rvm.io | bash -s stable
+rvm pkg install openssl
+rvm pkg install readline
+rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/ --with-readline-dir=$HOME/.rvm/usr
+```
 
- curl -L <https://get.rvm.io> | bash -s stable --ruby
+## Gems
 
-## Create a per-project rvmrc
+```bash
+# Create a per-project rvmrc
+rvm --rvmrc --create 1.9.3@projectname
+# set default ruby
+rvm --default use 2.2.0
+# Use a gemset
+rvm gemset [create|use|delete] gemsetname
+# See gem directory
+gem env gemdir
+```
 
-
-
- rvm --rvmrc --create 1.9.3@projectname
-
-## gemsets
-
-
-
- rvm gemset [create|use|delete] gemsetname
-
-## See gem directory
-
-
-
- gem env gemdir
-
-## Installing openssl and readline for dependencies
-
-
-
- curl -L <https://get.rvm.io> | bash -s stable
- rvm pkg install openssl
- rvm pkg install readline
- rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/ --with-readline-dir=$HOME/.rvm/usr
-
-## Automatic gemset initialization
+Automatic gemset initialization:
 
 Add gems to ``~/.rvm/gemsets/global.gems``
 
-## set default ruby
 
-
-
- rvm --default use 2.2.0
 

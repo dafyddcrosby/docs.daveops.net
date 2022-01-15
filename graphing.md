@@ -47,3 +47,10 @@ label        | node content
 labelURL     |
 image        | sets image as node content - JPEG, PNG, GIF, BMP, SVG, or Postscript, image must contain size info
 shape        | shape of the node
+
+## graphing
+
+
+<http://jsongraphformat.info/>
+<http://js.cytoscape.org/>
+

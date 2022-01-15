@@ -1,15 +1,15 @@
 # Life stuff
 
-- It's easier to hold to your principles 100% of the time than it is to hold to them 98% of the time -Clayton M. Christensen
+> It's easier to hold to your principles 100% of the time than it is to hold to them 98% of the time -Clayton M. Christensen
+
 - Try to quit (or drastically reduce) your caffeine intake. You'll sleep better, and get sick less.
 - Have non-computer hobbies - you'll need the balance.
 - Actively seek out better workplaces and working conditions. Strive to work at the best.
 - Memento mori - don't waste your life on stupid shit.
+
 # Coffee
 
 If coffee is sour, it's under-extracted.
-
-## Links
 
 - <http://brewmethods.com/>
 
@@ -30,3 +30,9 @@ If coffee is sour, it's under-extracted.
 - Don't cheap out on your mattress - you'll get bad sleep and a bad back as well
 - Weighted blankets are good for some folks (not all), try one if you haven't yet
 - If your sleep still sucks, talk with your doctor. Insomnia research still has new techniques emerging
+# Ethics
+
+- [ACM Code of Ethics](https://www.acm.org/code-of-ethics)
+- [CIPS Code of Ethics](http://www.cips.ca/ethics)
+- [IEEE Computer Society Code of Ethics](https://www.computer.org/education/code-of-ethics)
+- [Computer Professionals for Social Responsibility](http://cpsr.org/)
