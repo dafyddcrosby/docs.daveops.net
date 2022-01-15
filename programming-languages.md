@@ -1,4 +1,77 @@
 # Programming Languages
+# C
+
+## Install tooling in Fedora
+
+```bash
+sudo yum groupinstall "C Development Tools and Libraries"
+```
+
+## Resources
+
+* <http://splint.org>
+* <http://c-faq.com/>
+* <https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard>
+* [GCC non-bugs](https://gcc.gnu.org/bugs/#nonbugs_c)_
+* <http://www.slideshare.net/olvemaudal/deep-c/24-What_will_happen_if_you>
+
+## Misc Notes
+
+* Don't cast returned pointers from malloc. (void \*) should get automatically promoted to any pointer type, and casting just makes it likely you'll get it wrong.
+* Free allocated memory when you are done with it, don't assume that OS will clean up your mess.
+
+## To verify
+
+* ☐ C compiler will create implicit declaration of function, which can be satisfied at link time
+* ☐ Difference between exit values in ANSI C, K+R, C99
+* ☐ Are return values typically passed in a register?
+
+## Open and read file
+
+```c
+const char *filename = "file.txt";
+unsigned char byte;
+FILE *fp;
+ 
+fp = fopen(filename, "rb");
+ 
+if (!fp) {
+        printf("Couldn't open file\n");
+        return 1;
+}
+ 
+while(!feof(fp)) {
+        fread(&byte, sizeof(int), 1, fp);
+        printf("%i\n",byte);
+}
+ 
+fclose(fp);
+```
+
+
+## glibc
+
+### Get version
+
+```bash
+/lib/libc.so.6
+```
+
+or
+
+```c
+#include <stdio.h>
+#include <gnu/libc-version.h>
+int main (void) { puts (gnu_get_libc_version ()); return 0; }
+```
+# C++
+
+* ☐ TODO Read the latest spec
+
+
+## To verify
+
+* A C++ compiler requires explicit declaration of all functions (language requirement)
 # Go
 
 ## Syntax cheatsheet
@@ -770,7 +843,7 @@ checkdnsrr($host)
 	 is_numeric($var)
 	 ?>
 
-# Export to CSV
+## Export to CSV
 
 	
 	 <?php
@@ -782,14 +855,14 @@ checkdnsrr($host)
 	 header("Content-disposition: attachment; filename=rawlogs.csv");
 	 ?>
 
-# Get filename
+## Get filename
 
 	
 	 <?php
 	 $FILE_NAME = basename($_SERVER["PHP_SELF"]);
 	 ?>
 
-# Return multiple values
+## Return multiple values
 
 	
 	 <?php
@@ -800,7 +873,7 @@ checkdnsrr($host)
 	 list ($zero, $one) = mult();
 	 ?>
 
-# Create an array of objects
+## Create an array of objects
 
 	
 	 <?php
@@ -820,7 +893,7 @@ checkdnsrr($host)
 	 ?>
 	
 
-# Include PEAR (Dreamhost)
+## Include PEAR (Dreamhost)
 
 	
 	 <?php
@@ -828,7 +901,7 @@ checkdnsrr($host)
 	 set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
 	 ?>
 
-## Scrape `$_GET` parameters
+### Scrape `$_GET` parameters
 
 If mod_rewrite or some other mechanism is preventing the filling of the `$_GET` array, use this:
 
@@ -838,14 +911,14 @@ parse_str($_SERVER['QUERY_STRING'], $_GET);
 ?>
 ```
 
-# Convert command line arguments into GET variables
+## Convert command line arguments into GET variables
 
 	
 	 <?php
 	 parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
 	 ?>
 
-# Get PHP config info
+## Get PHP config info
 
 ```bash
 # Get configuration (like phpinfo())
@@ -854,7 +927,7 @@ php -i
 php --ini
 ```
 
-# Redirect to a different URL
+## Redirect to a different URL
 
 ```php	
 <?php
@@ -862,7 +935,7 @@ header("Location: http://www.example.com/");
 ?>
 ```
 
-## Syntax cheatsheet
+### Syntax cheatsheet
 
 ```php	
 <?php
@@ -902,10 +975,10 @@ function foo () {
 
 
 
-# composer
+## composer
 [Composer homepage](https://getcomposer.org/)
 
-## Require a package
+### Require a package
 
 ```bash
 composer require repo/package
@@ -913,7 +986,7 @@ composer require repo/package
 
 Will drop `composer.json` and `composer.lock`
 
-## Load vendor directory
+### Load vendor directory
 
 ```php
 <?php
@@ -921,23 +994,23 @@ require __DIR__ . '/vendor/autoload.php';
 ```
 
 
-# Insecurity
+## Insecurity
 PHP has more than a few security pitfalls, this is just a quick list of ways it
 can bite you.
 
-## $FILES tmp_name usage
+### $FILES tmp_name usage
 
 tmp_name is untrusted input and should be sanitized before doing any file
 operations (like `move_uploaded_file`)
 
-## exif_imagetype is not validation
+### exif_imagetype is not validation
 
 If you're testing a file to ensure it's an image, exif_imagetype alone is
 inadequate, as it can be easily bypassed with a magic string like "BM" (for
 bitmap)
 
 
-# PDO
+## PDO
 
 ```php
 // simple query
@@ -951,8 +1024,9 @@ $max_id= $sth->fetchColumn();
 
 
 
-# Versions
-## 8.1
+## Versions
+
+### 8.1
 
 - Enums
 - Read-only properties
@@ -968,9 +1042,9 @@ $max_id= $sth->fetchColumn();
 - <https://www.php.net/releases/8.1/en.php>
 
 
-# Binary
+## Binary
 
-## Read a binary file
+### Read a binary file
 ```php
 <?php
 $handle = fopen('/path/to/file', 'rb');
@@ -978,21 +1052,21 @@ $contents = fread($handle, filesize($filename));
 fclose($handle);
 ?>
 ```	
-## Binary craziness
+### Binary craziness
 
 	
 	 <?php
 	 bindec();
 	 decbin();
 	 ?>
-## Playing with endianness
+### Playing with endianness
 	
 	 <?php
 	 // For changing endianness, just use strrev()
 	 // %016b for 16-bit, %032b for 32-bit
 	 strrev(sprintf("%016b", $int));
 	 ?>
-## Unpacking binary file formats
+### Unpacking binary file formats
 	 <?php
 	 // For parsing binary file formats,
 	 // use pack/unpack
@@ -1045,8 +1119,9 @@ fclose($handle);
 
 
 
-# Barcodes
-## Get a UPC check digit
+## Barcodes
+
+### Get a UPC check digit
 
 ```php	
 <?php
@@ -1060,7 +1135,7 @@ function get_ean_checkdigit($barcode){
 ?>
 ```
 
-## Create a barcode with Image_Barcode2 (PEAR)
+### Create a barcode with Image_Barcode2 (PEAR)
 
 ```php	
 <?php
@@ -1072,10 +1147,10 @@ $bc->draw($_GET['bctext'], "int25", "png");
 
 
 
-## SQLite
+### SQLite
 
 
-### Initializing
+#### Initializing
 
 	
 	 <?php
@@ -1100,7 +1175,7 @@ $bc->draw($_GET['bctext'], "int25", "png");
 	 var_dump($result->fetchArray());
 	 ?>
 
-### Reading values
+#### Reading values
 
 	
 	 <?php
@@ -1187,79 +1262,6 @@ Inserting ``debugger;`` in your code sets a breakpoint
 ## Links
 
 * http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm
-# C++
-
-* ☐ TODO Read the latest spec
-
-
-## To verify
-
-* A C++ compiler requires explicit declaration of all functions (language requirement)
-# C
-
-## Install tooling in Fedora
-
-```bash
-sudo yum groupinstall "C Development Tools and Libraries"
-```
-
-## Resources
-
-* <http://splint.org>
-* <http://c-faq.com/>
-* <https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard>
-* [GCC non-bugs](https://gcc.gnu.org/bugs/#nonbugs_c)_
-* <http://www.slideshare.net/olvemaudal/deep-c/24-What_will_happen_if_you>
-
-## Misc Notes
-
-* Don't cast returned pointers from malloc. (void \*) should get automatically promoted to any pointer type, and casting just makes it likely you'll get it wrong.
-* Free allocated memory when you are done with it, don't assume that OS will clean up your mess.
-
-## To verify
-
-* ☐ C compiler will create implicit declaration of function, which can be satisfied at link time
-* ☐ Difference between exit values in ANSI C, K+R, C99
-* ☐ Are return values typically passed in a register?
-
-## Open and read file
-
-```c
-const char *filename = "file.txt";
-unsigned char byte;
-FILE *fp;
- 
-fp = fopen(filename, "rb");
- 
-if (!fp) {
-        printf("Couldn't open file\n");
-        return 1;
-}
- 
-while(!feof(fp)) {
-        fread(&byte, sizeof(int), 1, fp);
-        printf("%i\n",byte);
-}
- 
-fclose(fp);
-```
-
-
-# glibc
-
-## Get version
-
-```bash
-/lib/libc.so.6
-```
-
-or
-
-```c
-#include <stdio.h>
-#include <gnu/libc-version.h>
-int main (void) { puts (gnu_get_libc_version ()); return 0; }
-```
 # Common Lisp
 
 ## Basics
@@ -1370,33 +1372,31 @@ look up *query-io* global variable
 -->
 
 
-# Quicklisp
-## Load a system
+## Quicklisp
+
+### Load a system
 
 ```common-lisp
 (ql:quickload "system-name")
 ```
 
-## Find a system
+### Find a system
 
 ```common-lisp
 (ql:system-apropos "term")
 ```
 
-## Load Quicklisp every time Lisp starts
+### Load Quicklisp every time Lisp starts
 
 ```common-lisp
 (ql:add-to-init-file)
 ```
 
 
-# clozure
+## clozure
 ```lisp
 (external-call "getpid" :pid_t)
 ```
-# Rexx
-
-https://en.wikipedia.org/wiki/Rexx
 # Rust
 
 ## Writing tests
@@ -1579,16 +1579,16 @@ rustup default nightly
 * Closures (13)
 -->
 
-# Cargo
+## Cargo
 
-## Cargo watch
+### Cargo watch
 
 ```bash
 cargo watch -x check -x test
 ```
 
 
-# Rust for iOS
+## Rust for iOS
 ```bash
 # Be able to create iOS executables
 cargo install cargo-lipo
@@ -1597,9 +1597,9 @@ rustup target add aarch64-apple-ios x86_64-apple-ios
 ```
 
 
-# Rust Webassembly
+## Rust Webassembly
 
-## Using --target web
+### Using --target web
 
 ```bash
 wasm-pack build --target web
@@ -1685,3 +1685,6 @@ repeat block until exp
 
 if exp then block { elseif exp then block } [ else block ] end
 ```
+# Rexx
+
+https://en.wikipedia.org/wiki/Rexx

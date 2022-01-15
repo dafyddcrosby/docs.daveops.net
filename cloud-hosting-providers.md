@@ -1,5 +1,43 @@
 # Cloud Hosting Providers
 
+# Dreamhost
+
+- Passenger must be enabled for domain/subdomain
+- Passenger assumes it's in production mode, touch tmp/restart.txt to have it reload pages
+
+
+## Ruby on Rails
+
+- For database ``rake db:migrate RAILS_ENV=production``
+
+## Phusion Passenger
+
+<https://www.phusionpassenger.com/library/admin/apache/>
+
+CLI: 
+
+```bash
+# Get overall status
+passenger-status
+# current requests
+passenger-status --show=requests
+# restart app
+passenger-config restart-app
+```
+
+Hiding Version Headers:
+
+```
+# Apache
+LoadModule headers_module modules/mod_headers.so # if not already loaded
+Header always unset "X-Powered-By"
+Header always unset "X-Runtime"
+```
+
+```
+# nginx (in http context)
+passenger_show_version_in_header off;
+```
 # Heroku
 
 ## Mac install
@@ -259,6 +297,9 @@ EOF
 https://www.terraform.io/docs/extend/writing-custom-providers.html
 
 [TF on Azure](https://docs.microsoft.com/en-us/azure/terraform/)
+### Sentinel
+
+https://docs.hashicorp.com/sentinel/downloads/
 ## Cloud Custodian
 
 https://github.com/cloud-custodian/cloud-custodian
@@ -267,6 +308,3 @@ https://github.com/cloud-custodian/cloud-custodian
 
 
 
-# Sentinel
-
-https://docs.hashicorp.com/sentinel/downloads/

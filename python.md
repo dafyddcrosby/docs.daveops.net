@@ -9,12 +9,29 @@ TODO - paramiko
 TODO - threading, multiprocessing
 -->
 
-## Essential third-party tools
+# Syntax cheatsheet
+
+```python
+if blah == 0:
+    print("0")
+elif == 1:
+    print("1")
+else:
+    print("else")
+
+def printarg (arg):
+    print(arg)
+
+if __name__ == "__main__":
+    main()
+```
+
+# Essential third-party tools
 
 * [mypy](http://mypy-lang.org/)
 * [autopep8](http://pypi.python.org/pypi/autopep8)
 
-## Getopts
+# Getopts
 
 ```python
 import getopt, sys
@@ -36,7 +53,7 @@ for opt, val in opts:
         server = val
 ```
 
-## Opening a file
+# Opening a file
 
 ```python
 try:
@@ -47,24 +64,7 @@ try:
         print(err)
 ```
 
-## Syntax cheatsheet
-
-```python
-if blah == 0:
-    print("0")
-elif == 1:
-    print("1")
-else:
-    print("else")
-
-def printarg (arg):
-    print(arg)
-
-if __name__ == "__main__":
-    main()
-```
-
-## String formatting
+# String formatting
 
 ```python
 user="world"
@@ -77,13 +77,13 @@ print("hello {}".format(user))
 print("hello %s" % user)
 ```
 
-## Remove duplicates from a list
+# Remove duplicates from a list
 
 ```python
 the_list = list(set(the_list))
 ```
 
-## Profile a program
+# Profile a program
 
 <http://docs.python.org/library/profile.html>
 
@@ -92,14 +92,14 @@ import profile
 profile.run("main()")
 ```
 
-## Launch REPL when line is hit
+# Launch REPL when line is hit
 
 ```python
 import code
 code.interact(local=locals())
 ```
 
-## Logging
+# Logging
 
 ```python
 import logging
@@ -107,7 +107,7 @@ logging.basicConfig(filename='myapp.log', level=logging.INFO)
 logging.warning('%s before you %s', 'Look', 'leap!')
 ```
 
-## Named tuples (ghetto classes)
+# Named tuples (ghetto classes)
 
 ```python
 import collections
@@ -122,7 +122,7 @@ for prisoner in [ hogan, lebeau ]:
     print '%s is a %d, serial: %s' % prisoner
 ```
 
-## Tab completion in Python shell
+# Tab completion in Python shell
 
 If you don't have access to IPython,
 
@@ -131,7 +131,7 @@ import rlcompleter, readline
 readline.parse_and_bind('tab: complete')
 ```
 
-## Tar a bunch of files
+# Tar a bunch of files
 
 ```python
 import tarfile
@@ -141,13 +141,13 @@ tar.add(name)
 tar.close()
 ```
 
-## Run a simple webserver
+# Run a simple webserver
 
 ```bash
 python -m SimpleHTTPServer
 ```
 
-## Check Python version
+# Check Python version
 
 ```python
  if sys.hexversion >= 0x020502F0:
@@ -166,7 +166,7 @@ bit   | description
 25-28 | PY_RELEASE_LEVEL (0xA for alpha, 0xB for beta, 0xC for release candidate and 0xF for final)
 29-32 | PY_RELEASE_SERIAL (the 3 in 2.1.0a3, zero for final releases)
 
-## Get Linux distribution
+# Get Linux distribution
 
 ```python
 if sys.hexversion < 0x020600F0:
@@ -175,14 +175,14 @@ else:
 platform.linux_distribution()
 ```
 
-## Inspect the stack
+# Inspect the stack
 
 ```python
 import inspect
 print " << ".join([i[3] for i in inspect.stack()])
 ```
 
-## Get Python documentation through the browser
+# Get Python documentation through the browser
 
 ```bash
 pydoc -p $PORT
@@ -192,7 +192,7 @@ pydoc -p $PORT
 
 
 
-## Disassemble a code object
+# Disassemble a code object
 
 ```python
 import dis
@@ -205,21 +205,21 @@ dis.dis(func)
 
 
 
-## Create virtual environment
+# Create virtual environment
 
 ```bash
 python3 -m venv path/to/new/env
 ```
 
 
-## Python zen
+# Python zen
 
 ```python
 import this
 ```
 
 
-## enums
+# enums
 
 <!--
 http://xion.io/post/code/python-enums-are-ok.html
@@ -506,4 +506,295 @@ pydoc -b
 
 # Start documentation server at port 1234
 pydoc -p 1234
+```
+# Django
+
+## Start project
+
+
+
+ django-admin.py startproject project_name
+
+## Start demo server
+
+
+
+ python manage.py runserver
+
+## Check for construction errors in models
+
+
+
+ python manage.py validate
+
+## Put models in database
+
+
+
+ python manage.py syncdb
+
+## Shell
+
+
+
+ python manage.py shell
+
+## Permanent redirect
+
+in urls.py's urlpatterns
+
+```python
+url(r'^$', lambda x: HttpResponsePermanentRedirect('/n
+```
+
+
+## Django - taggit
+
+### Installing in a project
+
+* ``pip install django-taggit``
+* add 'taggit' to ~INSTALLED_APPS
+* ``./manage.py syncdb``
+
+
+```python
+from django.db import models
+from taggit.managers import TaggableManager
+
+class Thing(models.Model):
+# ... fields here
+
+tags = TaggableManager()
+```
+## South
+
+### Installing in a project
+
+
+* ``pip install South``
+* add 'south' to ~INSTALLED_APPS
+* ``./manage.py syncdb``
+
+
+### Adding South to an existing project
+
+
+* add 'south' to ~INSTALLED_APPS
+* ``./manage.py syncdb``
+* ``./manage.py convert_to_south myapp``
+
+
+### Initial migrate schema creation
+
+
+
+ ./manage.py schemamigration app --initial
+ ./manage.py migrate app
+
+### Change schema
+
+
+
+ ./manage.py schemamigration app --auto
+ ./manage.py migrate app
+
+
+
+
+
+# Dreamhost
+
+## Restarting Passenger
+
+``touch ~/example.com/tmp/restart.txt``
+
+## Settings for Passenger
+
+	 import sys, os
+	 
+	 sys.path.append(os.getcwd())
+	 sys.path.append(os.path.join(os.getcwd(), 'project'))
+	 
+	 # Prepend virtualenv to path so that it's loaded first
+	 sys.path.insert(0,'/home/user/example.com/venv/bin')
+	 sys.path.insert(0,'/home/user/example.com/venv/lib/python2.6/site-packages/Django-1.4.3-py2.6.egg-info')
+	 sys.path.insert(0,'/home/user/example.com/venv/lib/python2.6/site-packages')
+	 
+	 os.environ['DJANGO_SETTINGS_MODULE'] = "project.settings"
+	 import django.core.handlers.wsgi
+	 application = django.core.handlers.wsgi.WSGIHandler()
+
+
+
+## Enabling admin mode
+
+* Uncomment "django.contrib.admin" in the ~INSTALLED_APPS setting.
+* `./manage.py syncdb`
+* Uncomment admin lines in urls.py
+* Create admin.py in your app:
+
+```python
+from django.contrib import admin
+from app.models import Thing
+
+admin.site.register(Thing)
+```
+
+## Reset admin password w/o password reset
+
+```bash
+./manage.py shell
+```
+
+```python
+from django.contrib.auth.models import User
+users = User.objects.all()
+users
+users[0].set_password('whatever');
+users[0].save()
+```
+
+
+
+# Pyre
+
+Requires Python 3.6+ and [watchman](https://facebook.github.io/watchman/)
+
+```bash
+# Install pyre
+pip install pyre-check
+pyre init
+pyre
+```
+# pip
+
+## Create a package list
+
+```bash
+pip freeze > requirements.txt
+```
+
+## Upgrade package
+
+```bash
+pip install -U package
+```
+
+## Install a package list
+
+```bash
+pip install -r requirements.txt
+```
+
+## Dreamhost pip3 usage
+
+```bash
+virtualenv -p python3 env
+. env/bin/activate
+pip3 install #...
+```
+# PyPI
+
+* [List of classifiers](https://pypi.org/classifiers/)
+
+## Uploading a new package
+
+```bash
+python setup.py register
+python setup.py sdist upload
+```
+# Python - D-Bus
+
+
+## Connecting to D-Bus
+
+```python
+import dbus
+
+bus = dbus.SystemBus()
+try:
+    thing = bus.get_object('com.tech.Thing', '/com/tech/Thing')
+except:
+    print("Oh snap, couldn't connect")
+```
+# Python - PyGTK
+
+```python
+
+ import pygtk
+ pygtk.require('2.0')
+ import gtk
+ 
+ class PyGUI():
+ def __init__(self):
+ try:
+ builder = gtk.Builder()
+ builder.add_from_file("gui.glade") 
+ except:
+ self.stderr("Failed to load Glade template file")
+ sys.exit(1)
+ 
+ self.main_window = builder.get_object("main_window")
+ 
+ builder.connect_signals(self)
+ 
+ def main(self):
+ self.main_window.show()
+ gtk.main()
+```
+# Python - Tkinter
+
+```python
+
+ from Tkinter import *
+ 
+ class MyDialog:
+ def __init__(self, parent):
+ self.top = Frame(parent)
+ self.top.pack()
+ 
+ Label(self.top, text="Value").pack()
+ 
+ self.e = Entry(self.top)
+ self.e.pack(padx=5)
+ 
+ b = Button(self.top, text="OK", command=self.ok)
+ b.pack(pady=5)
+ 
+ def ok(self):
+ print "value is", self.e.get()
+ self.top.destroy()
+ 
+ root = Tk()
+ root.title("Some title!")
+ d = MyDialog(root)
+ root.wait_window(d.top)
+```
+# Python - XMLRPC
+
+## Connecting to an XMLRPC server
+
+```python
+
+ import xmlrpclib
+ 
+ server = '<http://blah.com/XMLRPC>'
+ svr = xmlrpclib.Server(server)
+ 
+ session_id = '2'
+ params = { "session_id" : int(session_id)}
+ response = svr.foo.bar(params)
+```
+# Tornado
+
+Using SSL:
+
+```python
+server = tornado.httpserver.HTTPServer(application, ssl_options={
+"certfile": "/path/to/ssl/cert.crt",
+"keyfile": "/path/to/ssl/tornado_key.pem",
+})
+server.bind(port)
+server.start(0)
+tornado.ioloop.IOLoop.instance().start()
 ```

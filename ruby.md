@@ -277,6 +277,22 @@ fp.close
 ```
 
 
+## heredoc
+
+	message1 = <<EOM
+	This string starts at line start
+	EOM # Needs to be at 0 position
+	
+	# TODO <<-EOM
+	
+	message3 = <<~EOM
+	  This one will remove space before first printable character
+	  Available in Ruby 2.3+
+	EOM
+
+
+
+
 # Gems
 
 ## Build a gem
@@ -321,22 +337,6 @@ GEM_HOME | where gems are installed
 
 * [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
 - <http://rakeroutes.com/blog/lets-write-a-gem-part-one/> <!-- TODO extract -->
-
-## heredoc
-
-	message1 = <<EOM
-	This string starts at line start
-	EOM # Needs to be at 0 position
-	
-	# TODO <<-EOM
-	
-	message3 = <<~EOM
-	  This one will remove space before first printable character
-	  Available in Ruby 2.3+
-	EOM
-
-
-
 
 # ObjectSpace
 
@@ -696,9 +696,601 @@ From `contributing.rdoc`:
 
 <https://ruby-doc.org/core-2.2.0/RubyVM/InstructionSequence.html>
 
-
-
 # Conferences
 
 - Ruby Kaigi
 - Rails Conf
+
+# async
+
+- <https://brunosutic.com/blog/async-ruby>
+- [async gem](https://github.com/socketry/async)
+# Bundler
+
+## Writing a Gemfile
+
+```ruby
+source 'https://example.org' do
+  # If you have private gems, put them here so that someone doesn't spoof them on rubygems.org !
+end
+
+source 'https://rubygems.org' do
+  # Gems here
+end
+```
+
+## Using a git repository
+
+```ruby
+gem 'rack', git: 'https://github.com/rack/rack'
+```
+
+<https://bundler.io/v2.2/guides/git.html>
+
+## Install gems to dir
+
+```bash
+bundle config set --local path 'vendor'
+```
+
+Deprecated way:
+
+```bash
+bundle install --path dir
+```
+
+## Resources
+
+- <https://bundler.io>
+
+# Ruby - mruby
+
+compile with mrbc
+# Ruby net/http
+
+```bash
+require 'net/http'
+
+uri = URI('http://example.com')
+```
+# Net::SMTP
+
+<https://ruby-doc.org/stdlib-2.3.0/libdoc/net/smtp/rdoc/Net/SMTP.html>
+
+## Using starttls
+	smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
+	smtp.enable_starttls_auto
+	smtp.start(
+	  smtp_options[:helo_domain],
+	  smtp_options[:user_name],
+	  smtp_options[:password],
+	  smtp_options[:authentication]
+	) do |smtp|
+	  smtp.send_message msgstr, "from@example.org", [ "to@example.org" ]
+	end
+
+# Ruby - Binary
+
+## ::Array#pack / String#unpack
+
+### Integer
+
+
+Directive | Meaning
+---       | ---
+C         | 8-bit unsigned (unsigned char)
+S         | 16-bit unsigned, native endian (uint16_t)
+L         | 32-bit unsigned, native endian (uint32_t)
+Q         | 64-bit unsigned, native endian (uint64_t)
+c         | 8-bit signed (signed char)
+s         | 16-bit signed, native endian (int16_t)
+l         | 32-bit signed, native endian (int32_t)
+q         | 64-bit signed, native endian (int64_t)
+S_, S!    | unsigned short, native endian
+I, I_, I! | unsigned int, native endian
+L_, L!    | unsigned long, native endian
+n         | 16-bit unsigned, network (big-endian) byte order
+N         | 32-bit unsigned, network (big-endian) byte order
+v         | 16-bit unsigned, VAX (little-endian) byte order
+V         | 32-bit unsigned, VAX (little-endian) byte order
+U         | UTF-8 character
+w         | BER-compressed integer (see Array.pack)
+Q_, Q!    | unsigned long long, native endian (ArgumentError if the platform has no long long type.)
+s_, s!    | signed short, native endian
+i, i_, i! | signed int, native endian
+l_, l!    | signed long, native endian
+q_, q!    | signed long long, native endian (ArgumentError if the platform has no long long type.)
+
+
+desc          | suffix
+---           | ---
+native endian | !
+native endian | _
+big-endian    | >
+little-endian | <
+
+- J, J! j, and j! are available since Ruby 2.3.
+- Q_, Q!, q_, and q! are available since Ruby 2.1.
+- I!<, i!<, I!>, and i!> are available since Ruby 1.9.3.
+
+### Float
+
+Directive | Meaning
+---       | ---
+D, d      | double-precision, native format
+F, f      | single-precision, native format
+E         | double-precision, little-endian byte order
+e         | single-precision, little-endian byte order
+G         | double-precision, network (big-endian) byte order
+g         | single-precision, network (big-endian) byte order
+
+### String
+
+Directive | Meaning
+---       | ---
+A         | arbitrary binary string (remove trailing nulls and ASCII spaces)
+a         | arbitrary binary string
+Z         | null-terminated string
+B         | bit string (MSB first)
+b         | bit string (LSB first)
+H         | hex string (high nibble first)
+h         | hex string (low nibble first)
+u         | UU-encoded string
+M         | quoted-printable, MIME encoding (:RFC:`2045`)
+m         | base64 encoded string (:RFC:`2045`) (default)  base64 encoded string (:RFC:`4648`) if followed by 0
+P         | pointer to a structure (fixed-length string)
+p         | pointer to a null-terminated string
+
+### Misc
+
+Directive | Meaning
+---       | ---
+@         | skip to the offset given by the length argument
+X         | skip backward one byte
+x         | skip forward one byte
+
+
+
+# RSpec
+
+<http://rspec.info/>
+<http://rubydoc.info/gems/rspec-rails/frames>
+
+## Using RSpec
+
+Add to Gemfile:
+
+	gem 'rspec-rails'
+	gem 'guard-rspec'
+
+
+
+ rails generate rspec:install
+
+
+# Ruby Gems
+
+## Sorbet
+
+### CLI
+
+```bash
+# First run
+bundle exec srb init
+# Run typechecker
+bundle exec src tc
+```
+
+### Install
+
+```ruby
+gem 'sorbet', :group => :development
+```
+
+- [Home page](https://sorbet.org)
+
+
+## Sinatra
+
+### Cheatsheet
+
+```bash
+# To run a Sinatra server
+ruby app.rb
+```
+
+```ruby
+require 'sinatra'
+get '/helloworld' do
+  'Hello, world!'
+end
+```
+
+### Using Rack
+
+#### Classic-style
+
+```ruby
+require './app'
+run Sinatra::Application
+```
+
+### Using haml
+
+* Add haml to Gemfile
+* To add partials use: ``= haml :footer``
+
+### Links
+* <http://www.sinatrarb.com>
+* [Dockerizing Sinatra](https://www.codewithjason.com/dockerize-sinatra-application/)
+
+
+## Capistrano
+
+```bash
+# Create new stub
+cap install
+```
+
+
+## Camping
+
+- <http://www.ruby-camping.com/>
+
+
+
+
+
+## Guard
+
+```bash
+# Create bin/guard
+bundle binstub guard
+
+# Write a Guardfile
+guard init
+
+# List available guards
+guard list
+```
+
+- <https://github.com/guard/guard>
+
+### Minitest
+
+In bundler:
+
+```ruby
+gem "guard-minitest"
+```
+
+```bash
+# Add minitest to Guardfile
+guard init minitest
+```
+
+- <https://github.com/guard/guard-minitest>
+
+### Rubocop
+
+In bundler:
+
+```ruby
+gem "guard-rubocop"
+```
+
+```bash
+# Add rubocop to Guardfile
+guard init rubocop
+```
+
+- <https://github.com/rubocop/guard-rubocop>
+
+
+## adsf
+
+```bash
+gem install 'adsf'
+gem install 'adsf-live' # Live reload functionality
+adsf --live-reload
+```
+
+- <https://github.com/ddfreyne/adsf/>
+## Ruby on Rails
+<!---
+TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
+-->
+
+### Installing and setting up Rails
+
+<!---
+I think the instructions are slightly different with Rails 5
+-->
+
+```bash
+gem install rails
+rails new app_name
+cd app_name
+rake db:create
+rails server # (on standalone machine)
+rails generate controller home index
+rm public/index.html
+# Uncomment the ``root :to => "home#index"`` line
+$EDITOR config/routes.rb
+```
+
+### Scaffolding
+
+```bash
+rails generate scaffold Post user:references title:string{50} content:text
+```
+
+### Add indexes to migration
+
+```bash
+rails g resource user name:index email:uniq
+```
+
+### ActiveRecord
+
+#### Supported database column types
+
+
+* binary
+* boolean
+* date
+* datetime
+* decimal
+* float
+* integer
+* primary_key
+* string
+* text
+* time
+* timestamp
+
+
+#### Misc.
+
+
+* Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
+
+
+### Validating Active Records
+
+```ruby
+class Post < ActiveRecord::Base
+  # ...
+
+  validates :name,  :presence => true
+  validates :title, :presence => true,
+       				 :length => { :minimum => 5 }
+end
+```
+
+#### Ensure uniqueness at the db level
+
+1. ``rails generate migration add_index_to_users_email``
+2. add to migration file under def change: ``add_index :users, :email, unique: true``
+3. ``bundle exec rake db:migrate``
+
+### Database
+
+```bash
+# Migrate to new model
+rake db:migrate
+
+# Return to previous model
+rake db:rollback
+```
+
+### Automated testing with guard and spork
+
+* Add to Gemfile:
+
+```ruby
+group :test, :development do
+  gem 'guard-spork'
+  gem 'spork'
+  gem 'guard-rspec'
+end
+group :test do
+  gem 'rb-inotify'
+  gem 'libnotify'
+end
+```
+
+* run the following
+
+```bash
+bundle exec guard init rspec
+bundle exec spork --bootstrap
+bundle exec guard init spork
+```
+
+* Add ``:cli => '--drb``' to guard 'rspec'
+* ``bundle exec guard``
+
+
+### Creating tables
+
+```ruby
+create_table "contacts" do |t|
+  t.integer  "user_id", :null => false
+  t.string   "name", :null => false
+  t.string   "phone", :limit => 40
+  t.string   "email"
+end
+```
+
+### Reset test database
+
+```bash
+bundle exec rake db:test:prepare
+```
+
+### Rake default niceties
+
+```bash
+# Find TODO, FIXME, and OPTIMIZE comment tags
+rake notes
+
+# Get versions
+rake about
+```
+
+### Simple wins
+
+* Use ``find_each`` instead of ``each`` when searching through large sets of iterables
+* Use ``content_tag`` to avoid XSS hacks
+
+
+### Links
+
+* <https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/>
+### Omniauth
+
+#### Installing
+
+These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
+
+
+ rails generate model Authorization provider:string uid:string user_id:integer
+
+##### Gemfile
+
+	gem 'omniauth'
+	gem 'omniauth-twitter'
+	gem 'omniauth-facebook'
+	gem 'omniauth-linkedin'
+
+##### config/initializers/omniauth.rb
+
+
+	Rails.application.config.middleware.use OmniAuth::Builder do
+	  provider :twitter, 'CONSUMER_KEY', 'CONSUMER_SECRET'
+	  provider :facebook, 'APP_ID', 'APP_SECRET'
+	  provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
+	end
+
+#### app/models/user.rb
+
+add:
+
+	has_many :authorizations
+	
+	def add_provider(auth_hash)
+	  unless authorizations.find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
+	        Authorization.create :user => self, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
+	  end
+	end
+
+#### app/controllers/sessions_controller.rb
+
+	def omniauth_create
+	  auth_hash = request.env['omniauth.auth']
+	  if session[:user_id]
+	        # Means user is signed in. Add the authorization to the user
+	        user = User.find(session[:user_id])
+	        user.add_provider(auth_hash)
+	  else
+	        auth = Authorization.find_or_create(auth_hash)
+	        # Create the session
+	        session[:user_id] = auth.user_id
+	        user = User.find(session[:user_id])
+	  end
+	  sign_in user
+	  redirect_back_or user
+	end
+
+#### app/models/authorization.rb
+
+	belongs_to :user
+	validates :provider, :uid, :presence => true
+	
+	def self.find_or_create(auth_hash)
+	  unless auth = find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
+	        user = User.find_by_email(auth_hash["info"]["email"])
+	        if not user
+	          # If it's a new user, we want to give them a solid password
+	          random_string = SecureRandom.base64(30)
+	          user = User.create :name => auth_hash["info"]["name"],
+	       					   :email => auth_hash["info"]["email"],
+	       					   :password => random_string,
+	       					   :password_confirmation => random_string
+	        end
+	        auth = create :user_id => user, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
+	  end
+	  auth
+	end
+
+#### config/routes.rb
+
+	match '/auth/:provider/callback', to: 'sessions#create'
+	match '/auth/failure', to: 'sessions#failure'
+
+### Gravatar
+
+#### Helper to return Gravatar image
+
+```ruby
+# Returns the Gravatar (http://gravatar.com/) for the given user.
+def gravatar_for(user, options = { size: 50 })
+  gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
+  size = options[:size]
+  gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
+  image_tag(gravatar_url, alt: user.name, class: "gravatar")
+end
+```
+# Ruby-Next
+
+- <https://github.com/ruby-next/ruby-next>
+
+## interesting use cases
+
+- <https://evilmartians.com/chronicles/a-no-go-fantasy-writing-go-in-ruby-with-ruby-next>
+# RVM
+
+## Install RVM with Ruby
+
+
+
+ curl -L <https://get.rvm.io> | bash -s stable --ruby
+
+## Create a per-project rvmrc
+
+
+
+ rvm --rvmrc --create 1.9.3@projectname
+
+## gemsets
+
+
+
+ rvm gemset [create|use|delete] gemsetname
+
+## See gem directory
+
+
+
+ gem env gemdir
+
+## Installing openssl and readline for dependencies
+
+
+
+ curl -L <https://get.rvm.io> | bash -s stable
+ rvm pkg install openssl
+ rvm pkg install readline
+ rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/ --with-readline-dir=$HOME/.rvm/usr
+
+## Automatic gemset initialization
+
+Add gems to ``~/.rvm/gemsets/global.gems``
+
+## set default ruby
+
+
+
+ rvm --default use 2.2.0
+
