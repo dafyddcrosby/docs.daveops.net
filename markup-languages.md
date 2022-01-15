@@ -437,14 +437,6 @@ https://samltest.id/
 
 https://shopify.github.io/liquid/
 
-Uses objects, tags, and filters
-
-Objects are `{{ }}` put within a template, that holds objects and variables.
-
-Tags are for logic, `{% %}`
-
-Filters are a `|` within a `{{ }}` block
-
 # CSS
 
 <http://www.cssbuttongenerator.com/>
