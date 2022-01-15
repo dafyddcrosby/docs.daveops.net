@@ -59,3 +59,11 @@ Logs and alerts on anomalies, malicious activity, puts it into "single pane of g
   Information and Event Management Systems," in IEEE Security & Privacy, vol.
   12, no. 5, pp. 35-41, Sept.-Oct. 2014, doi: 10.1109/MSP.2014.103.
 
+# Return-Oriented Programming
+Looks for 'gadgets' in code, snippets of code in libc and elsewhere in lieu of providing the code itself.
+
+## Other links
+
+* [AntiJOP](http://zsmith.co/antijop.html)
+
+
