@@ -169,3 +169,9 @@ table <firewall> const { self }
  ifconfig pfsync0 syncdev em1
  ifconfig pfsync0 up
 
+
+
+# Conferences
+
+- [AsiaBSDCon](http://asiabsdcon.org)
+- BSDCan

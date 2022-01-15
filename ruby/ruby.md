@@ -696,3 +696,9 @@ From `contributing.rdoc`:
 
 <https://ruby-doc.org/core-2.2.0/RubyVM/InstructionSequence.html>
 
+
+
+# Conferences
+
+- Ruby Kaigi
+- Rails Conf
