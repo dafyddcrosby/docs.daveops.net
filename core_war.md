@@ -29,7 +29,6 @@ SLT    |
 SPL    |
 
 - <http://www.koth.org/info/icws94.html>
-
 ## Memory Array Redcode Simulator (MARS)
 
 ## Types of programs
@@ -39,7 +38,5 @@ Moves 1 address forward each cycle
 
 ## Sources
 
-* [Books:The Art of Computer Virus Research and Defense by Peter Szor](./books/the_art_of_computer_virus_research_and_defense_by_peter_szor.md)
-* <http://www.corewar.info/>
-
-
+- [The Art of Computer Virus Research and Defense by Peter Szor](security/viruses.md#the-art-of-computer-virus-research-and-defense-by-peter-szor)
+- <http://www.corewar.info/>
