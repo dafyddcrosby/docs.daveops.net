@@ -1,5 +1,3 @@
----
 # Julia
----
 
 https://julialang.org/

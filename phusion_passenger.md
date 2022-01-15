@@ -4,7 +4,6 @@
 # Phusion Passenger
 
 CLI
----
 
 
 ```bash

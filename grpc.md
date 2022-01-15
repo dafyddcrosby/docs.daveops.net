@@ -1,5 +1,3 @@
----
 # gRPC
----
 
 https://grpc.io/

@@ -11,8 +11,7 @@ Auto memory management
 Error handling
 
 
-CLI
----
+## CLI
 
 swift - start up a Swift REPL (backed by LLDB)
 swiftc - compile swift code

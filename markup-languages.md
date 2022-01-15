@@ -12,6 +12,9 @@ https://www.w3.org/TR/emotionml/Overview.html
 
 # HTML
 
+## Application cache
+* <http://www.html5rocks.com/en/tutorials/appcache/beginner/>
+
 ## Shim for old IE browsers
 
 ```html

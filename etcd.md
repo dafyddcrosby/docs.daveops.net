@@ -1,5 +1,3 @@
----
 # etcd
----
 
 https://etcd.io/

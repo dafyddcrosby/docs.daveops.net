@@ -320,7 +320,7 @@ GEM_HOME | where gems are installed
 ## Links
 
 * [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
-
+- <http://rakeroutes.com/blog/lets-write-a-gem-part-one/> <!-- TODO extract -->
 
 ## heredoc
 
@@ -439,7 +439,6 @@ sudo dnf install rubygem-rdoc ruby-doc
 - <https://docs.ruby-lang.org/en/2.1.0/RDoc/Markup.html>
 - <https://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html>
 - <https://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf>
-
 
 # Erb
 <http://ruby-doc.org/stdlib-2.4.0/libdoc/erb/rdoc/ERB.html>
