@@ -37,3 +37,8 @@ lsof -i
 # List all Unix sockets
 lsof -U
 ```
+# Sentry
+
+## Links
+
+* [Self hosting with Docker](https://develop.sentry.dev/self-hosted/)

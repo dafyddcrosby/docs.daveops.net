@@ -420,3 +420,12 @@ svnlookup info /path/to/repo
 # latest revision number
 svnlookup youngest /path/to/repo
 ```
+# diff
+
+```
+--patience  # use the patience algorithm
+```
+
+<http://bramcohen.livejournal.com/73318.html>
+
+

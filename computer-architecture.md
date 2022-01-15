@@ -1,9 +1,94 @@
 # Computer Architecture
-# Processors
+# Unicorn CPU emulator
 
 [Unicorn CPU emulator](http://www.unicorn-engine.org/)
 
+# Motorola 68000
 
+Note: This information is generally geared to the 68000 specifically (for use with the Sega Genesis), later processor models have more/enhanced instructions :-)
+
+- http://68k.hax.com
+- http://www.freescale.com/files/archives/doc/ref_manual/M68000PRM.pdf
+
+## ISA
+
+field | desc
+---   | ---
+ #X   | immediate (raw) data
+ ea   | effective address (data register or memory address)
+ An   | address register
+ Dn   | data register
+ Rn   | any register
+
+Mnemonic     | Sizes | Desc
+---          | ---   | ---
+add ea,ea    | b,w,l | Add source to destination (either needs to be Dn)
+addi #X,ea   | b,w,l | Add source to destination (either needs to be Dn)
+bCC label    | b,w   | See Condition Code test table (68020+ supports long)
+bchg Dn,ea   | b,l   | test a bit in destination operand, set Z code, flip bit
+bclr Dn,ea   | b,l   | test a bit in destination operand, set Z code, set bit to 0
+bset Dn,ea   | b,l   | test a bit in destination operand, set Z code, set bit to 1
+clr ea       | b,w,l | Zero out destination
+eor Dn,ea    | b,w,l | Exclusive OR (XOR)
+exg Rn       | l     | Exchange registers
+lea ea,An    | l     | Load effective address into an address register
+move ea,ea   | b,w,l | Move source ea to dest ea (assembler converts to movea if uses direct register)
+movea ea,An  | w,l   | Move ea to address register
+moveq #x, Dn | l     | Move immediate long to data register
+not ea       | b,w,l | Flip bits of effective address
+swap Dn      | w     | Swap upper word with lower word
+tst ea       | b,w,l | test an operand (sets Z if operand zero)
+
+Only byte-sizes can use odd addressing (word+long crash).
+
+### Condition Code Tests
+
+Mnemonic | Condition
+---      | ---
+CC(HI)   | Carry Clear
+CS(LO)   | Carry Set
+EQ       | Equal
+GE       | Greater or Equal
+GT       | Greater Than
+HI       | High
+LE       | Less or Equal
+LS       | Low or Same
+LT       | Less Than
+MI       | Minus
+NE       | Not Equal
+PL       | Plus
+VC       | Overflow Clear
+VS       | Overflow Set
+
+### Condition codes
+
+code | condition
+---  | ---
+X    | ?
+N    | Negative
+Z    | Zero
+V    | Overflow
+C    | Carry
+
+## Motorola assembly syntax
+
+```asm
+; mnemonic.size source,destination
+```
+
+Size is 'b' (byte), 'w' (word), or 'l' (long)
+
+operand     | desc
+---         | ---
+ $00000042  | memory address of 00000042
+ #42        | decimal 42 literal
+ #$42       | hexadecimal 42 literal
+ #%01000010 | binary 42 literal
+ a0         | address register 0
+ d0         | data register 0
+ $42(a0)    | add offset of 42 to address register 0
+ (a0)+      | increment address register 0 (register incremented after instruction)
+ -(a0)      | decrement address register 0 (register decreased before instruction)
 
 # TIS-100
 Tessellated Intelligence System
@@ -65,105 +150,7 @@ HCF              | Halt and Catch Fire (undocumented)
 
 
 
-# Motorola 68000
-
-Note: This information is generally geared to the 68000 specifically (for use with the Sega Genesis), later processor models have more/enhanced instructions :-)
-
-## ISA
-
-field | desc
----   | ---
-# X    | immediate (raw) data
-ea    | effective address (data register or memory address)
-An    | address register
-Dn    | data register
-Rn    | any register
-
-Mnemonic     | Sizes | Desc
----          | ---   | ---
-add ea,ea    | b,w,l | Add source to destination (either needs to be Dn)
-addi #X,ea   | b,w,l | Add source to destination (either needs to be Dn)
-bCC label    | b,w   | See Condition Code test table (68020+ supports long)
-bchg Dn,ea   | b,l   | test a bit in destination operand, set Z code, flip bit
-bclr Dn,ea   | b,l   | test a bit in destination operand, set Z code, set bit to 0
-bset Dn,ea   | b,l   | test a bit in destination operand, set Z code, set bit to 1
-clr ea       | b,w,l | Zero out destination
-eor Dn,ea    | b,w,l | Exclusive OR (XOR)
-exg Rn       | l     | Exchange registers
-lea ea,An    | l     | Load effective address into an address register
-move ea,ea   | b,w,l | Move source ea to dest ea (assembler converts to movea if uses direct register)
-movea ea,An  | w,l   | Move ea to address register
-moveq #x, Dn | l     | Move immediate long to data register
-not ea       | b,w,l | Flip bits of effective address
-swap Dn      | w     | Swap upper word with lower word
-tst ea       | b,w,l | test an operand (sets Z if operand zero)
-
-Only byte-sizes can use odd addressing (word+long crash).
-
-### Condition Code Tests
-
-Mnemonic | Condition
----      | ---
-CC(HI)   | Carry Clear
-CS(LO)   | Carry Set
-EQ       | Equal
-GE       | Greater or Equal
-GT       | Greater Than
-HI       | High
-LE       | Less or Equal
-LS       | Low or Same
-LT       | Less Than
-MI       | Minus
-NE       | Not Equal
-PL       | Plus
-VC       | Overflow Clear
-VS       | Overflow Set
-
-### Condition codes
-
-code | condition
----  | ---
-X    | ?
-N    | Negative
-Z    | Zero
-V    | Overflow
-C    | Carry
-
-## Motorola assembly syntax
-
-```asm
-; mnemonic.size source,destination
-```
-
-Size is 'b' (byte), 'w' (word), or 'l' (long)
-
-operand    | desc
----        | ---
-$00000042  | memory address of 00000042
-# 42        | decimal 42 literal
-
-# $42       | hexadecimal 42 literal
-
-# %01000010 | binary 42 literal
-a0         | address register 0
-d0         | data register 0
-$42(a0)    | add offset of 42 to address register 0
-(a0)+      | increment address register 0 (register incremented after instruction)
--(a0)      | decrement address register 0 (register decreased before instruction)
-
-## Links
-
-* http://68k.hax.com
-* http://www.freescale.com/files/archives/doc/ref_manual/M68000PRM.pdf
-
-
 # Intel x86
-
-## Real Mode
-
-* less than 1MB of RAM
-* no virtual memory
-* no hardware memory protection
 
 ## ISA
 
@@ -177,11 +164,16 @@ int OP    | Generate software interrupt
 
 ## Bootstrapping
 
-Starts in 16-bit Real Mode, for compatibility reasons
+Starts in 16-bit [Real Mode](#real-mode), for compatibility reasons
 
 Zero the data segment registers first thing, since their content is unknown.
 
 The BIOS transfers the first 512 bytes of data from the device into 0x7c00. The last two bytes need to be 0x55 and then 0xAA to be considered a valid bootsector.
+## Real Mode
+
+* less than 1MB of RAM
+* no virtual memory
+* no hardware memory protection
 
 ## Factoids
 
@@ -207,11 +199,11 @@ The BIOS transfers the first 512 bytes of data from the device into 0x7c00. The 
 # MIL-STD-1750A
 <https://en.wikipedia.org/wiki/MIL-STD-1750A>
 
-
-
 # Sega Genesis/Mega Drive
 
 The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and a z80 @ 4MHz (to handle sound processing).
+
+- https://en.wikibooks.org/wiki/Genesis_Programming
 
 ## 68000 Memory map
 
@@ -279,7 +271,7 @@ Start address | End address | Description                     | 32X SH-2 address
 <!-- TODO cross-reference -->
 
 Start | End   | Description
---- | --- | ---
+---   | ---   | ---
 0000h | 1FFFh | Z80 RAM
 2000h | 3FFFh | Reserved
 4000h |       | M2612 A0
@@ -303,11 +295,8 @@ Start address | End address | Description
 0xA12000      | 0xA120XX    | MegaCD "Gate Array"
 0xFFFD00      | 0xFFFDFF    | MegaCD Interrupt/Exception vectors
 
-## Links 
-
-* https://en.wikibooks.org/wiki/Genesis_Programming
 # Supercomputers
 
-<http://www.netlib.org/linpack/>
-<http://www.netlib.org/lapack/>
+- <http://www.netlib.org/linpack/>
+- <http://www.netlib.org/lapack/>
 

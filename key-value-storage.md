@@ -86,8 +86,17 @@ dc.get('foo')
 * [LRU tuning](https://memcached.org/blog/modern-lru/)
 
 
-# moxi
+## moxi
 
 * [Configuration](https://github.com/steveyen/moxi/blob/master/doc/moxi/configuration.org)
 
 
+# Redis
+
+## Links
+* [Docker image](https://hub.docker.com/_/redis)
+* https://redis.io/
+* [Ruby client](https://github.com/redis/redis-rb)
+# etcd
+
+https://etcd.io/

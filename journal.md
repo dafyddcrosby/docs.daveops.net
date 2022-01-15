@@ -1,3 +1,4 @@
+# Journal
 # November, 2018
 
 ## VirtualBox 0day
@@ -16,6 +17,7 @@ One of the most lucid breaks I've seen in a while
 <https://justi.cz/security/2018/09/13/alpine-apk-rce.html>
 
 # August 2018
+
 ## Another Struts RCE
 <https://semmle.com/news/apache-struts-CVE-2018-11776>
 
@@ -32,6 +34,7 @@ Routing Around Nation-States: Overlays and Measurements
 <https://lwn.net/Articles/762570/>
 
 # July 2018
+
 ## NetSpectre
 <https://misc0110.net/web/files/netspectre.pdf>
 
@@ -42,6 +45,7 @@ Routing Around Nation-States: Overlays and Measurements
 <https://arxiv.org/abs/1807.05843>
 
 # June 2018
+
 ## Microsoft buys GitHub
 <https://johansen.software/github-xp/>
 
@@ -49,6 +53,7 @@ Routing Around Nation-States: Overlays and Measurements
 <https://www.spinics.net/lists/linux-crypto/msg33291.html>
 
 # May 2018
+
 ## Throwhammer
 I wonder how long before Rowhammer-style attacks make their way to networking equipment...
 <https://www.cs.vu.nl/~herbertb/download/papers/throwhammer_atc18.pdf>
@@ -61,6 +66,7 @@ A broken embargo, and lots of finger pointing. Security is awesome!
 <https://arxiv.org/pdf/1805.04956.pdf>
 
 # April 2018
+
 ## patch runs ed
 <http://rachelbythebay.com/w/2018/04/05/bangpatch/>
 
@@ -68,9 +74,9 @@ A broken embargo, and lots of finger pointing. Security is awesome!
 (from the lzip format author)
 <https://www.nongnu.org/lzip/xz_inadequate.html>
 
-``This of course is sad because we software developers are among the few people who are able to understand the strengths and weaknesses of formats. We have a moral duty to choose wisely the formats we use because everybody else will blindly use whatever formats we choose.``
-
+> This of course is sad because we software developers are among the few people who are able to understand the strengths and weaknesses of formats. We have a moral duty to choose wisely the formats we use because everybody else will blindly use whatever formats we choose.
 # March 2018
+
 ## Exim pre-auth RCE
 <https://devco.re/blog/2018/03/06/exim-off-by-one-RCE-exploiting-CVE-2018-6789-en/>
 
@@ -95,6 +101,7 @@ A broken embargo, and lots of finger pointing. Security is awesome!
 <https://github.com/UnaPibaGeek/ctfr>
 
 # February 2018
+
 ## Audio Adversarial Examples
 Because the computer is always right. Only a matter of time before there's malware hidden in the next pop hit.
 <https://nicholas.carlini.com/code/audio_adversarial_examples/>
@@ -110,6 +117,7 @@ Because the computer is always right. Only a matter of time before there's malwa
 [AMD Indirect Branch Control Extension (PDF)](https://developer.amd.com/wp-content/resources/Architecture_Guidelines_Update_Indirect_Branch_Control.pdf)
 
 # December 2018
+
 ## Meltdown/Spectre
 Throw out all your computers. Again.
 
@@ -133,6 +141,7 @@ Throw out all your computers. Again.
 <http://jspaint.ml/>
 
 # December 2017
+
 ## Advent calendar season
 
 * [Advent of Code](http://adventofcode.com/2017)
@@ -174,6 +183,7 @@ Like shorting the market, but funnier
 <https://sendcryptopeopletulips.com/>
 
 # November 2017
+
 ## Fooling Neural Networks/Machine Learning
 <https://arxiv.org/abs/1708.05207>
 <http://www.labsix.org/physical-objects-that-fool-neural-nets/>
@@ -210,6 +220,7 @@ fix:
 	dsenableroot -d
 
 # October 2017
+
 ## CommonMark
 It turns out having 20+ Markdown implementations with no spec is a bad idea. Let's see how long before there's a competing spec ;-)
 <http://commonmark.org/>
@@ -241,6 +252,7 @@ WPA2 is broken, hum-de-dum
 ![](file:///Users/davidcrosby/Desktop/Strip-Faille-WP2-650-finalenglish.jpg)
 
 # September 2017
+
 ## BlueBorne attack
 <https://arstechnica.com/information-technology/2017/09/bluetooth-bugs-open-billions-of-devices-to-attacks-no-clicking-required/>
 <http://go.armis.com/hubfs/BlueBorne%20Technical%20White%20Paper.pdf>

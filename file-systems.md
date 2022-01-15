@@ -56,9 +56,6 @@ zpool list
 * <http://jrs-s.net/2015/02/03/will-zfs-and-non-ecc-ram-kill-your-data/>
 # NFS
 
-
-# NFS
-
 ## Install NFS
 
 	# Install nfs-utils (Red Hat) or nfs-common (Ubuntu)
@@ -71,8 +68,25 @@ zpool list
  showmount -e [host]
 
 # Samba
+
 ## Remotely shut down Windows machine
 
 
  net rpc shutdown -I ipAddressOfWindowsPC -U username%password
 
+# ncdu
+
+## Only count files on same mounted filesystem
+
+
+
+  ncdu -x <mount point>
+
+# IPFS
+
+* https://ipfs.io
+
+```bash
+# Initialize an IPFS system
+ipfs init
+```

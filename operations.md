@@ -1,3 +1,43 @@
+# Operations
+# "The Practice of Cloud System Administration"
+
+What are the well-defined business objectives? Work backwards.
+
+* 99.99% uptime?
+* Latency requirements?
+* Process x million QPS?
+* Regular introduction of features?
+* Integration with other products?
+* How quickly to fix major bugs?
+
+## Operational requirements
+
+There are aspects outside of the product itself that, if not dealt with
+adequately, make the product difficult/impossible to maintain
+
+* Configuration
+  * Use version control
+  * API for configuration output? Ensure it's complete!
+* Startup and shutdown
+  * Perform data validation in event of crash
+  * Document time to start/stop services
+  * For HA systems, consider "crash-only" instead of orderly start/stop
+    * Only way to start is crash-recovery, only way to stop is crash
+    * This exercises the crash-recovery path, gives it more QA time
+* Queue draining
+* Software upgrades
+* Backups and restores
+* Redundancy
+* Replicated databases
+* Hot swaps
+* Toggles for individual features
+* Graceful degradation
+* Access controls and rate limits
+* Data import controls
+* Monitoring
+* Auditing
+* Debug instrumentation
+* Exception collection
 # Practice of System and Network Administration
 
 Ticket tracking system for WIP
@@ -89,3 +129,29 @@ Don't let the LRC become a burden by adding too many items. Automate the items,
 standardize parts where you can.
 
 "The difference between a problem and a crisis is preparation."
+# Operations checklist
+
+This is a checklist of things that I think an operations team needs to get to a
+pretty good state. By no means exhaustive, and a bit opinionated. What I think
+is most important is at the top, but really should try to have all of them.
+
+* Bug tracker/task manager
+  * How do you track WIP (work-in-progress) tasks?
+  * Customer can easily create a useful ticket?
+* Version control
+  * Can you see when a file was changed, and by whom? What you choose isn't necessarily important (e.g. git), but you'll likely never change the system once you start using it, so choose carefully. 
+* Configuration management
+* **Fully** automatic installs
+* CI/CD system
+  * Deployment to production is fully automated
+* Monitoring systems
+* Inventory system
+  * Can you, in less than 5 minutes, say how many machines (physical and virtual) you have running?
+* Have an update process
+
+> It is extremely important to have everything patched and up-to-date. This
+> includes all hardware, networking devices, you name it. You'll want to know
+> where and how to download the updates, how to install the updates, how to back
+> out of a bad update, and a rough estimate of how long an update typically
+> takes.
+

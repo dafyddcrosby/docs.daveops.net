@@ -33,7 +33,7 @@ Take a 10-15% cut (generally worth it - much lower risk, higher negotiated price
 * [FEI International](http://feinternational.com)
 
 
-# Rework by 37signals
+# Rework by 37signals (book)
 
 p 10 "Starting a business on the side while keeping your day job can provide all the cash flow you need."
 

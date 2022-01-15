@@ -1,3 +1,0 @@
-# etcd
-
-https://etcd.io/

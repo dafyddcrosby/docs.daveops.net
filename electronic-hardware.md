@@ -81,3 +81,27 @@ enable_uart=1
 ```
 
 [See also the GH issue](https://github.com/raspberrypi/firmware/issues/553#issuecomment-199486644)
+# Oracle Integrated LOM
+
+## Turn on indicator light
+
+### 3.0
+
+	show /SYS/LOCATE
+	set /SYS/LOCATE value=Fast_Blink
+
+
+## Turn server off
+
+	stop /SYS
+
+# usb
+
+## Cable
+
+* Red +5V power
+* Black Ground
+* White Data (-)
+* Green Data (+)
+
+
