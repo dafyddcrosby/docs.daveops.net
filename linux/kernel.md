@@ -337,3 +337,9 @@ if missing gnu/stubs-32.h, means you need glibc-devel.i686
 - <https://www.kernel.org/doc/Documentation/cgroup-v2.txt>
 - <https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/>
 
+# drgn
+
+## Links
+
+- [Meta blog post](https://developers.facebook.com/blog/post/2021/12/09/drgn-how-linux-kernel-team-meta-debugs-kernel-scale/?_fb_noscript=1)
+- [Github](https://github.com/osandov/drgn)

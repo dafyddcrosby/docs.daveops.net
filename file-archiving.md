@@ -51,3 +51,6 @@ flag | description
 
 ```
 # Copy-out mode
+# diffoscope
+
+- [home page](https://diffoscope.org/)

@@ -213,3 +213,7 @@ Answer support queries quickly. Good customer service can disarm a customer.
 * Revenue - users conduct some monetization behaviour
 
 
+# Selling software
+
+Customers want *benefits*, not features. Users do not have a "software" problem
+

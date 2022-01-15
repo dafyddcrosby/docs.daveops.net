@@ -1,3 +1,6 @@
+# File Systems
+
+Filesystems here are either networked or OS-agnostic
 # ZFS
 
 ## Compression
@@ -51,3 +54,25 @@ zpool list
 
 * <http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide>
 * <http://jrs-s.net/2015/02/03/will-zfs-and-non-ecc-ram-kill-your-data/>
+# NFS
+
+
+# NFS
+
+## Install NFS
+
+	# Install nfs-utils (Red Hat) or nfs-common (Ubuntu)
+	modprobe nfs
+	mkdir /repo
+	mount -t nfs4 -o proto=tcp,port=2049 host:/repo /repo
+
+## Show exports
+
+ showmount -e [host]
+
+# Samba
+## Remotely shut down Windows machine
+
+
+ net rpc shutdown -I ipAddressOfWindowsPC -U username%password
+

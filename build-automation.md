@@ -64,3 +64,6 @@ ninja -t compdb > compile_commands.json
 ## Links
 
 - https://ninja-build.org/
+# watchman
+
+- https://facebook.github.io/watchman/
