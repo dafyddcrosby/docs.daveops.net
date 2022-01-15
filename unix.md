@@ -45,4 +45,23 @@ DIRSIZ is defined here: <http://minnie.tuhs.org/cgi-bin/utree.pl?file=V5/usr/sys
 ## Unix
 
 - <https://www.bell-labs.com/usr/dmr/www/odd.html>
-- [shasm](http://lists.gnu.org/archive/html/bug-bash/2001-02/msg00054.html)
+- [shasm](http://lists.gnu.org/archive/html/bug-bash/2001-02/msg00054.html)# sudo
+
+
+# sudo
+
+Syntax: 
+```
+<user(group)> <host(group)> = (<list of users to run as|ALL>) <PASSWD|EXEC|SETENV|LOG_INPUT|LOG_OUTPUT>: <commands|ALL>
+```
+
+# Systrace
+
+http://www.citi.umich.edu/u/provos/systrace/
+
+Used to limit system calls
+
+## Automatically generate systrace profile
+```bash
+systrace -A /path/to/executable
+```

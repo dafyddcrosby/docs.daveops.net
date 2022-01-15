@@ -1,3 +1,116 @@
+# Multimedia
+# FFmpeg
+
+## Encode a video from WAV and PNG
+
+```bash
+ffmpeg -loop 1 -r 2 -i input.png -i audio.ogg -c:v libx264 -preset medium -tune stillimage -crf 18 -c:a copy -shortest -pix_fmt yuv420p output.mkv
+```
+
+## Convert MOV to GIF
+
+```bash
+ffmpeg -i file.mov -pix_fmt rgb24 output.gif
+```
+
+## Do a screencast
+
+```bash
+ffmpeg -f x11grab -r 25 -s 1280x800 -i :0.0 /tmp/outputFile.mpg
+```
+
+## Extract audio from a video file
+
+```bash
+ffmpeg -i video.mp4 -vn -acodec copy audio.aac
+```
+# Multimedia
+
+## Radio stations
+
+* [Big Up Radio Dub station](http://radio.bigupradio.com:8013)
+* [Radio Canada Alberta](http://premierechaineedmonton-64.akacast.akamaistream.net/7/508/94045/v1/rc.akacast.akamaistream.net/premierechaineedmonton-64)
+
+
+
+# mencoder
+## Join multiple videos
+
+```
+cat movie1.avi movie2.avi > movie.avi
+mencoder -forceidx -oac copy -ovc copy movie.avi -o movie_fixed.avi
+```
+
+## Get specific time
+Use -ss to seek to a specific part of the file you want.
+
+```
+-ss 00:30:00 -endpos 00:00:05
+```
+
+
+## Get codecs
+
+```bash
+# audio codecs
+mencoder -oac help
+# video codecs
+mencoder -ovc help
+```
+
+## Subtitles
+
+```
+ -sub FILE
+ -subdelay
+```
+
+# mplayer
+## Speed up playback
+
+
+
+ mplayer -speed 1.2 [file]
+
+## Watch movies in a terminal
+
+
+
+ mplayer -vo caca movie.avi
+
+## Play a CD
+
+
+
+ mplayer cdda:// -cache 5000
+
+## Open a DVD menu
+
+
+
+ mplayer dvdnav://
+
+# VLC
+## Subtitles
+
+
+  # Add a subtitle file
+  --sub-file FILE
+  # Change the subtitle delay
+  --sub-delay <INT> # Integer is in tenths of a second
+
+<!-- todo
+ soverlay
+ scodec
+-->
+
+## Transcoding
+
+
+  # only transcode a few seconds (for testing)
+  --stop-time SECONDS
+  
+
 # Netflix
 
 ## Secret category

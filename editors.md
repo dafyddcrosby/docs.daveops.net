@@ -1,7 +1,14 @@
+# Editors
+
 # Emacs
 
-
-# Emacs
+keystrokes           | desc
+---                  | ---
+C-h C-t              | show Emacs TODO
+C-h m                | show module info
+M-x telnet           | telnet to a server
+M-x report-emacs-bug | report a bug
+M-x calc             | calc mode
 
 ## packages
 
@@ -16,16 +23,6 @@ key | desc
 i   | mark for installation
 u   | unmark
 x   | execute action on package
-
-## misc
-
-keystrokes           | desc
----                  | ---
-C-h C-t              | show Emacs TODO
-C-h m                | show module info
-M-x telnet           | telnet to a server
-M-x report-emacs-bug | report a bug
-M-x calc             | calc mode
 
 ## macOS daemon
 
@@ -59,9 +56,18 @@ launchctl load -w ~/Library/LaunchAgents/emacs.daemon.plist
 * [Emacs standing alone on a Linux Kernel](http://www.informatimago.com/linux/emacs-on-user-mode-linux.html)
 
 
-# Emacs Lisp
+## Emacs Lisp
 
 ks      | desc
 ---     | ---
 C-x C-e | execute line
 C-j     | execute, dump in buffer
+
+# VSCode
+
+## Keyboard shortcuts
+
+shortcut      | desc
+---           | ---
+ctrl-k ctrl-s | keyboard shortcut menu
+ctrl-\        | split pane

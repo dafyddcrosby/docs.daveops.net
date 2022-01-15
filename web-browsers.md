@@ -37,3 +37,13 @@ browser.newtabpage.enabled -> false
 # Chromium
 
 SHIFT-ESC - see which tabs are chewing up the most CPU/memory
+
+# Google
+
+## Don't redirect based on country
+
+<https://google.com/ncr>
+# HyperCard
+
+## Links
+- https://blogs.loc.gov/thesignal/2021/07/all-hyped-up-for-hypercard-further-adventures-with-an-apple-legacy-format/
