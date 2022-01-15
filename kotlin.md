@@ -1,4 +1,0 @@
-# Kotlin
-
-<http://kotlinlang.org/>
-

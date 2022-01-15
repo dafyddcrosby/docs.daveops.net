@@ -74,3 +74,8 @@ Advantages:
 ## Interesting DBA problems
 
 - [Gay Marriage: the database engineering perspective](http://qntm.org/gay)
+# ODBC
+Open Database Connectivity
+
+<https://docs.microsoft.com/en-us/sql/odbc/microsoft-open-database-connectivity-odbc>
+

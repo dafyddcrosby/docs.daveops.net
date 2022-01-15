@@ -1,5 +1,6 @@
 # Scheme
 
+* <https://www.scheme.com>
 ## Syntax cheatsheet
 
 ```scheme
@@ -15,7 +16,3 @@ CaseSensitiveIdentifiers
 
 (load "filename.ss")
 ```
-
-## Resources
-
-* <https://www.scheme.com>
