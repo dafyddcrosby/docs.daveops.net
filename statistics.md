@@ -1,4 +1,4 @@
-# Data Science
+# Statistics
 
 Null hypothesis - general statement that nothing is happening.
 
