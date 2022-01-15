@@ -3,7 +3,7 @@
 <http://www.elidedbranches.com/2015/11/the-manager-as-debugger.html>
 <http://www.dummies.com/business/human-resources/employee-relations/employee-appraisal-phrases-productivity-and-timeliness/>
 
-## Does Management Matter?
+## Does Management Matter? (paper)
 
 <https://people.stanford.edu/nbloom/sites/default/files/dmm.pdf>
 
@@ -508,4 +508,16 @@ What is your Style under Stress? Your family? Coworkers?
 Trust is not binary, there are degrees of trust
 
 Have a clear 'no surprises' rule, that folks should let you know of snags ASAP.
+
+
+
+# The Five Dysfunctions of a Team by Patrick Lencioni
+
+* Inattention to results - status and ego
+* Avoidance of accountability - low standards
+* Lack of commitment - ambiguity
+* Fear of conflict - artificial harmony
+* Absence of trust - invulnerability
+
+
 
