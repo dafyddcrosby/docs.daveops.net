@@ -294,16 +294,11 @@ fp.close
 
 # Gems
 
-## Build a gem
-
 ```bash
+# Build a gem
 gem build name.gemspec
-```
 
-## Uploading
-
-```bash
-# push gem to rubygems.org or other host
+# upload gem to rubygems.org or other host
 gem push name-0.0.1.gem [--host HOST]
 ```
 
@@ -609,16 +604,11 @@ If you know in advance what your time format is, don't use Date#parse, since the
 - Use `String#casecmp` over `String#downcase + ==`
 - Use `Enumerable#detect` over `Enumerable#select.first`
 
-## See also 
-
-- [ObjectSpace](ruby.md)
-
 ## Books / Links
 
 - Ruby Performance Optimization by Alexander Dymo
 - https://github.com/JuanitoFatas/fast-ruby
 - https://github.com/DamirSvrtan/fasterer
-
 
 # Benchmarking
 
@@ -728,9 +718,10 @@ Deprecated way:
 bundle install --path dir
 ```
 
-# Ruby - mruby
+# mruby
 
 compile with mrbc
+
 # Ruby net/http
 
 ```bash
@@ -849,7 +840,6 @@ gem 'guard-rspec'
 ```bash
 rails generate rspec:install
 ```
-
 # Ruby Gems
 
 ## Sorbet
