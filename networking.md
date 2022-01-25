@@ -276,13 +276,13 @@ $ORIGIN subdomain.example.com.
 ## Protect domain that doesn't use email
 
 * an SPF record that says you do not have any sending servers
-  * TXT record, @ : "v=spf1 -all"
+  * TXT record, `@ : "v=spf1 -all"`
 * a DMARC record to reject any email from your domain
-  * TXT record, _dmarc : "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;fo=1;rua=mailto:stub@example.org"
+  * TXT record, `_dmarc : "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;fo=1;rua=mailto:stub@example.org"`
 * an empty DKIM key record
-  * TXT record, *._domainkey : "v=DKIM1; p="
+  * TXT record, `*._domainkey : "v=DKIM1; p="`
 * (optional) null MX record
-  * priority 0
+  * `priority 0`
 
 [Source](https://www.gov.uk/guidance/protect-domains-that-dont-send-email)
 
@@ -317,15 +317,16 @@ If the domain should not be sending any email
 
 ## Production ready
 
-* Rate limiting is set in the options
-* Recursion is disabled on the authoritative servers
-* Zone transfers are locked down
+- Rate limiting is set in the options
+- Recursion is disabled on the authoritative servers
+- Zone transfers are locked down
+
 # iperf3
 
-* https://iperf.fr/
+- https://iperf.fr/
+
 # mtr
 ## Look for UDP packet loss
-
 
  mtr -u <dest>
 
@@ -342,8 +343,9 @@ http-server-header | get details from the Server: header
 
 ## Get list of available server ciphers
 
-	nmap --script ssl-enum-ciphers -p PORT SERVER
-
+```bash
+nmap --script ssl-enum-ciphers -p PORT SERVER
+```
 
 ## Specifying hosts
 
@@ -359,17 +361,32 @@ http-server-header | get details from the Server: header
 	nmap -oX file ...
 
 
+## Misc
+
+```
+List scan
+-sL # does reverse DNS lookup
+
+Aggressive scan
+-A # equal to -sV -sC -O --traceroute
+
+-T4 # intensity (1-5, 4+ if on broadband)
+
+-O # OS detection
+```
+
 ## Resources
 
 ### Source repo
-	svn co https://svn.nmap.org/nmap
 
-
+```bash
+svn co https://svn.nmap.org/nmap
+```
 
 # scripting engine
 
-<https://nmap.org/book/nse.html>
-<https://nmap.org/presentations/BHDC10/>
+- <https://nmap.org/book/nse.html>
+- <https://nmap.org/presentations/BHDC10/>
 
 # rinetd
 ## Caveats
@@ -422,6 +439,7 @@ tcpdump src 1.2.3.4
 RFC 7030
 
 http://testrfc7030.com/
+
 # netstat
 
 

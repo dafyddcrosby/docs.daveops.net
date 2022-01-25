@@ -774,3 +774,20 @@ server.bind(port)
 server.start(0)
 tornado.ioloop.IOLoop.instance().start()
 ```
+
+# Conda
+
+https://www.anaconda.com/products/individual
+
+Fedora:
+
+```bash
+sudo dnf install conda
+```
+
+```bash
+# Create an env
+conda create -n ENVNAME
+# Activate the env
+conda activate ENVNAME
+```
