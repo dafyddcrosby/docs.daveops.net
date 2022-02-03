@@ -342,7 +342,6 @@ ObjectSpace.count_objects
 
 - <https://ruby-doc.org/core-3.0.2/ObjectSpace.html>
 
-
 # Versions
 
 This is a list of interesting bits from Ruby versions
@@ -368,6 +367,11 @@ This is a list of interesting bits from Ruby versions
   - added the Ruby Virtual Machine
 
 # Rdoc
+
+
+- <https://docs.ruby-lang.org/en/2.1.0/RDoc/Markup.html>
+- <https://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html>
+- <https://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf>
 
 ```text
 *word*
@@ -415,12 +419,6 @@ To get the system ruby library documentation, you'll need to install `ruby-doc`
 sudo dnf install rubygem-rdoc ruby-doc
 ```
 
-## Links
-
-- <https://docs.ruby-lang.org/en/2.1.0/RDoc/Markup.html>
-- <https://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html>
-- <https://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf>
-
 # Erb
 <http://ruby-doc.org/stdlib-2.4.0/libdoc/erb/rdoc/ERB.html>
 
@@ -460,7 +458,6 @@ States: `:running`, `:waiting`, `:runnable`, `:dead`
 - [Fiber class](https://ruby-doc.org/core-3.0.2/Fiber.html)
 - [Fiber::SchedulerInterface](https://ruby-doc.org/core-3.0.2/Fiber/SchedulerInterface.html)
 - <https://noteflakes.com/articles/2021-10-20-explaining-ruby-fibers>
-
 
 # Debugging
 
@@ -696,6 +693,12 @@ end
 source 'https://rubygems.org' do
   # Gems here
 end
+
+# Make a gem group optional
+# use `bundle config set --local with GROUP` to install
+group :development, optional: true do
+  gem 'guard'
+end
 ```
 
 ## Using a git repository
@@ -842,6 +845,16 @@ rails generate rspec:install
 ```
 # Ruby Gems
 
+## Rack
+[Live reloading](https://github.com/jaredmdobson/rack-livereload)
+
+```ruby
+# config.ru
+require 'rack-livereload'
+use Rack::LiveReload
+```
+
+(pair it with [guard-livereload](https://github.com/guard/guard-livereload))
 ## Sorbet
 
 [Home page](https://sorbet.org)
@@ -892,6 +905,45 @@ run Sinatra::Application
 * Add haml to Gemfile
 * To add partials use: ``= haml :footer``
 
+### Reloader
+http://sinatrarb.com/contrib/reloader
+
+
+```ruby
+# Gemfile
+gem install sinatra-contrib
+```
+
+```ruby
+# Classic
+require "sinatra/reloader" if development?
+
+# Specify additional load paths
+also_reload '/path/to/some/file' # path can use globbing
+dont_reload '/path/to/other/file'
+after_reload do
+  puts 'reloaded'
+end
+
+# Modular approach
+require "sinatra/base"
+require "sinatra/reloader"
+
+class MyApp < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+    also_reload '/path/to/some/file'
+    dont_reload '/path/to/other/file'
+    after_reload do
+      puts 'reloaded'
+    end
+  end
+
+  # ...
+end
+```
+
+
 ## Capistrano
 
 ```bash
@@ -935,9 +987,68 @@ guard init minitest
 
 ### Rubocop
 
-In bundler:
+#### NodePattern
+
+Note: table uses int node, but can be for any type of node.
+
+Variable length patterns can only be used in a sequence once
+
+syntax        | desc
+---           | ---
+int           | match `int` exactly
+(int 1)       | match a node with more precision (eg, int node that represents 1)
+_             | match any single node
+...           | several subsequent nodes
+int\*         | Match zero or more targets of int type <!--- escape slash is for Markdown --->
+int?          | Match zero or one of the int type
+int+          | Match at least one of the int type
+\<int float\> | Match integer and float in either order <!--- escape slash is for Markdown --->
+{int float} | "OR" union function (ie either int or float)
+(int [odd? positive?]) | "AND", useful when using predicate methods against type
+(int $\_) | Capture the node/element (variable length captured as arrays) <!--- escape slash is for Markdown --->
+(^array int+) | TODO Check the parent of a node
+(\`int int\*) | Check for descendents of a node, here an array of ints <!--- escape slash is for Markdown --->
+(int ALLOWED_INTS) | Use a constant (here ALLOWED_INTS) in a pattern
+
+Predicate methods can be used as well:
+
+```
+# Patterns can have a comment, with `# ` to EOL
+
+int_type?  # equivalent to (int _)
+(int odd?) # Only match odd numbers
+
+# `#` can be used to call an outside function
+
+(int #prime?) # if a prime? method has been created
+(int #multiple_of?(12)) # You can also use arguments in your functions (the signature here being `multiple_of?(value, multiple)`)
+
+# An argument in the matcher can be passed to a pattern
+def_node_matcher :int_node_magic_number?, '(int #magic_number?(%1))'
+```
+
+Developing a pattern to match (consider using `irb` for interactivity):
 
 ```ruby
+require 'rubocop'
+code = '2 + 2'
+source = RuboCop::ProcessedSource.new(code, RUBY_VERSION.to_f)
+node = source.ast
+RuboCop::NodePattern.new('(int ...)').match(node)
+```
+
+```bash
+# Generating AST on the command line
+ruby-parse -e '2 + 2'
+```
+
+- [RuboCop development guide](https://docs.rubocop.org/rubocop/development.html)
+- [NodePattern doc](https://github.com/rubocop/rubocop-ast/blob/master/docs/modules/ROOT/pages/node_pattern.adoc)
+
+#### Using Guard
+
+```ruby
+# Add to Gemfile
 gem "guard-rubocop"
 ```
 
@@ -947,7 +1058,6 @@ guard init rubocop
 ```
 
 - <https://github.com/rubocop/guard-rubocop>
-
 
 ## adsf
 
