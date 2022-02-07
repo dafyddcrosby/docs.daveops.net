@@ -1,20 +1,9 @@
 # Markup languages
 
-# GeoJSON
-
-https://en.wikipedia.org/wiki/GeoJSON
-
-# Virtual Human Markup Language
-https://en.wikipedia.org/wiki/VHML
-
-# EmotionML
-https://www.w3.org/TR/emotionml/Overview.html
-
 # HTML
 
 ## Application cache
 * <http://www.html5rocks.com/en/tutorials/appcache/beginner/>
-
 
 ## Preloading
 
@@ -48,21 +37,19 @@ Favorite color:
 
 ## Input attributes (HTML 5)
 
-
-* email
-* color
-* seach
-* tel
-* url
-* date
-* month
-* week
-* time
-* datetime
-* datetime-local (no timezone)
-* number
-* range (restrict to valid numeric range
-
+- email
+- color
+- seach
+- tel
+- url
+- date
+- month
+- week
+- time
+- datetime
+- datetime-local (no timezone)
+- number
+- range (restrict to valid numeric range)
 
 use `required` to have the browser whine
 
@@ -78,32 +65,30 @@ use `required` to have the browser whine
 
 ## Canvas (HTML 5)
 
-
-### initialization
-
 ```html
-
- <canvas id='id' height='600' width='800'>fallback</canvas>
- <script type='text/javascript'>
-   var canvas = document.getElementById(id)
-   if (canvas.getContext) {
- var context = canvas.getContext(type)
-   }
- </script>
+<canvas id='id' height='600' width='800'>fallback</canvas>
+<script type='text/javascript'>
+  var canvas = document.getElementById(id)
+  if (canvas.getContext) {
+    var context = canvas.getContext(type)
+  }
+</script>
 ```
 
 ## Fixed-meter bar (HTML 5)
 
 ```html
-
- <meter value='num' min='num' max='num' optimum='num'>fallback display</meter>
+<meter value='num' min='num' max='num' optimum='num'>
+fallback display
+</meter>
 ```
 
 ## Progress bar (HTML 5)
 
 ```html
-
- <progress value='num' max='num'>fallback display</progress>
+<progress value='num' max='num'>
+fallback display
+</progress>
 ```
 
 Use JavaScript to move it around
@@ -111,17 +96,14 @@ Use JavaScript to move it around
 ## Autofocus input (HTML 5)
 
 ```html
- 
- <input ... autofocus>
+<input ... autofocus>
 ```
 
 ## Patterned input (HTML 5)
 
-### Enter 15 digits
-
 ```html
-
- <input type='text' pattern='[0-9]{15}'>
+<!-- Enter 15 digits -->
+<input type='text' pattern='[0-9]{15}'>
 ```
 
 ## Dropdown list for text input (HTML 5)
@@ -145,22 +127,13 @@ Use JavaScript to move it around
 International calling code is required
 
 ```html
+<a href="tel:+14035555555">403-555-5555</a>
 
- <a href="tel:+14035555555">403-555-5555</a>
-```
+<!-- To handle an extension -->
+<a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
 
-### To handle an extension
-
-```html
-
- <a href="tel:+14035555555p23">403-555-5555 ext. 23</a>
-```
-
-### To use a fax line:
-
-```html
-
- <a href="fax:+14035555555">403-555-5555</a>
+<!-- To use a fax line -->
+<a href="fax:+14035555555">403-555-5555</a>
 ```
 
 ## Doctype (HTML 5)
@@ -171,11 +144,16 @@ International calling code is required
 
 ## Semantic tags (HTML 5)
 
-* <section>
-* <nav>
-* <article>
-* <hgroup> (for article tag)
-
+```
+- <section>
+- <nav>
+- <article>
+- <hgroup> (for article tag)
+- <p> (In HTML 5, don't use the p tag for paragraph breaks - it *must* be used for paragraphs)
+- <figure> (for article tag)
+- <figcaption> (for figure tag)
+- <aside> (for p tags)
+```
 
 ```html
 <article>
@@ -186,51 +164,29 @@ International calling code is required
 </article>
 ```
 
-* <p> (In HTML 5, don't use the p tag for paragraph breaks - it *must* be used for paragraphs)
-* <figure> (for article tag)
-* <figcaption> (for figure tag)
-* <aside> (for p tags)
-
-
 ## Good meta tags to have
 
-* <http://commoncrawl.org/>
-* <title> - up to 70 characters of relevant text
-* <meta name=”description” content=”155 characters of message matching text”>
-* <link rel=”author” href=”<https://plus.google.com/[YOUR> PERSONAL G+ PROFILE HERE]”/>
-* <a href=”<https://plus.google.com/[YOUR> PERSONAL G+ PROFILE NUMBER]” rel=”me”>Me on Google+</a>
-* <link rel=”publisher” href=”<https://plus.google.com/[YOUR> BUSINESS G+ PROFILE HERE]”/>
-* [OpenGraph](web_programming/opengraph.md)
-* [Web Services:Twitter](twitter.md)
+- <http://commoncrawl.org/>
 
+```html
+<head>
+<title>up to 70 characters of relevant text</title>
+<meta name="description" content="155 characters of message matching text">
+</head>
+```
+
+- [OpenGraph](web_programming/opengraph.md)
+- [Web Services:Twitter](twitter.md)
 
 <http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013>
 
-## HTML entities for accents
-
-Modifier   | Example | HTML
----        | ---     | ---
-Grave      | à       | &agrave;
-Acute      | á       | &aacute;
-Circumflex | â       | &acirc;
-Tilde      | ã       | &atilde;
-Umlaut     | ä       | &auml;
-Cedil      | ç       | &ccedil;
-
-
-
-
-HAML
+# HAML
 
 <http://haml.info>
-
-## Install
 
 ```bash
 gem install haml
 ```
-
-## Syntax Cheatsheet
 
 ```haml
 -# This is a comment line, !!! 5 does the HTML 5 doctype
@@ -246,54 +202,90 @@ gem install haml
     = haml :footer
 ```
 
-
 # Markdown
 
-## Headings
-
-1 to 6 # symbols
-
-## Emphasis
-
 ```markdown
+<!-- Comments are HTML comments, which can show up in the rendered output -->
+
+[//]: # Non-standard way of commenting (avoiding rendering) is using using link to # (a valid URI) and blank line separation
+
+[You can comment in the title box, and rely on :: to not find a reference elsewhere on the page (multiline support not guaranteed)]::
+
+<!-- atx headers -->
+# Heading 1
+## Heading 2
+###### Heading 6
+
+<!-- Emphasis -->
 *This text will be italic*
 _This will also be italic_
 **This text will be bold**
 __This will also be bold__
 _You **can** combine them_
 ~~This line is using a strikethrough~~
-```
+\*Use backslash for literals\*
 
-## Comments
+<!-- Links -->
 
-Use `<!---` and `-->`, doesn't work for inline comments
-
-## Links
-
-```markdown
-<http://example.com> - automatic
+<http://example.com> - automatic link
 [Example](<http://example.com>)
+[DefineLink][]
+[DefineLink]: http://example.com/later
+
+<!-- Images -->
+![Alt text](/path/to/img.jpg)
+
+<!-- Lists -->
+- unordered
+- list
+
+1. ordered
+2. list
+
+1.  Multiparagraph list
+
+    Requires 4 spaces/tab
+
+2.  Blockquoted items
+
+    > Need to have the > indented as well
 ```
 
+- <https://daringfireball.net/projects/markdown/syntax>
 
+# Symbols and glyphs
 
-# reStructuredText
+## Accents
 
-## Convert rst to HTML
+Modifier   | e.g. | HTML Entity | vim CK
+---        | ---  | ---         | ---
+Grave      | à    | &agrave;    | a!
+Acute      | á    | &aacute;    | a'
+Circumflex | â    | &acirc;     | a>
+Tilde      | ã    | &atilde;    | '?
+Umlaut     | ä    | &auml;      | a:
+Cedil      | ç    | &ccedil;    | c,
 
-```bash
-rst2html FILE ...
-```
+## Set theory
 
-## Syntax cheatsheet
-
-```rst
-*italics*
-**bold**
-``fixed-space literal``
-.. comment
-```
-
+desc                     | notation    | unicode | vim CK
+---                      | ---         | ---     | ---
+empty set                | \varnothing | 8709    | /0
+set of natural numbers   | \mathbb{N}
+set of integers          | \mathbb{Z}
+set of rational numbers  | \mathbb{Q}
+set of algebraic numbers | \mathbb{A}
+set of real numbers      | \mathbb{R}
+set of complex numbers   | \mathbb{C}
+is member of             | \in         | 8712    | (-
+is not member of         | \notin      | 8716
+contains as member       | \ni         | 8715    | -)
+is proper subset of      | \subset     | 8834    | (C
+is subset or equal to    | \subseteq   | 8838    | (_
+is proper superset of    | \supset     | 8835    | )C
+is superset or equal to  | \supseteq   | 8839    | )_
+set union                | \cup        | 8746    | )U
+set intersection         | \cap        | 8745    | (U
 
 # xml
 
@@ -314,7 +306,6 @@ xmllint --noout --dtdvalid ./local.dtd $FILE
 ```
 
 - <http://www.xmlsoft.org/>
-
 
 # LaTeX
 
@@ -351,27 +342,27 @@ Blah blah \autocite{<key>}
 
 ## document classes
 
-* book
-* article
-* report
-* letter
-* slides
+- book
+- article
+- report
+- letter
+- slides
 
 ## ePub
 
-* <https://www.tug.org/TUGboat/tb32-3/tb102rishi.pdf>
-* <http://pandoc.org/>
-* <https://tex2ebook.wordpress.com/>
+- <https://www.tug.org/TUGboat/tb32-3/tb102rishi.pdf>
+- <http://pandoc.org/>
+- <https://tex2ebook.wordpress.com/>
 
 
 ## installing on Fedora
 
-* texlive
-* pdflatex
-* texlive-xetex
-* texlive-cm
-* texlive-hyphen-base
-* texlive-mfware
+- texlive
+- pdflatex
+- texlive-xetex
+- texlive-cm
+- texlive-hyphen-base
+- texlive-mfware
 
 ## Add a draft watermark
 
@@ -394,48 +385,26 @@ Bax & No & Yes
 \end{tabular}
 ```
 
+# mustache
 
-# RSS
+- https://github.com/mustache/mustache
 
-## Wordpress
+Characters escaped with standard double Mustache syntax: `& \ " < > '`
 
-http://wp.example.org/feed
+tag           | desc
+---           | ---
+{{name}}      | search a label in current context (HTML-escaped by default)
+{{{name}}}    | unescaped variable
+{{#names}}    | begin section for names (1 or more)
+{{^names}}    | begin section for names (false or empty array)
+{{/names}}    | end of a section
+{{! comment}} | comment
+{{> partial}} | partial (rendered at runtime)
+{{=<% %>=}}   | set delimiters to something else (here erb delimiters)
 
-## Blogger / blogspot
-* Atom 1.0: https://blogname.blogspot.com/feeds/posts/default
-* RSS 2.0: https://blogname.blogspot.com/feeds/posts/default?alt=rss
+If value is callable (ie function or lambda), text block is passed to callable unrendered and unexpanded.
 
-
-# EPUB files
-
-<http://code.google.com/p/epubcheck/>
-
-
- zip -X ../spm.epub mimetype css/style.css META-INF/container.xml book.ncx book.opf solplayaymar.xhtml
-
-
-* ERROR: /media/UDISK/spm.epub: mimetype entry missing or not the first in archive
-  * It is what it sounds like. When you create your zip archive, the first one in has to be the mimetype file.
-* ERROR: /media/UDISK/spm.epub: extra field length for first filename must be 0, but was 28
-  * When you run zip, use the -X argument so that there's no timestamps, etc. These are the 'extra fields'
-
-
-
-# ASN.1 (Abstract Syntax Notation One)
-
-https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
-
-Visually similar to Augmented Backus-Naur form, but is for data structures, not
-syntax.
-
-
-# SAML
-Security Assertion Markup Language
-https://samltest.id/
-
-# Liquid templating system
-
-https://shopify.github.io/liquid/
+http://mustache.github.io/mustache.5.html
 
 # CSS
 
@@ -522,13 +491,6 @@ selector {
 }
 ```
 
-## Create custom borders (CSS 3)
-
-```css
-border-image: source slice repeat;
-border-width: width;
-```
-
 ## Center an element
 
 Give it a width and set the margin
@@ -538,8 +500,87 @@ margin: 0 auto;
 width: 939px;
 ```
 
+## Create custom borders (CSS 3)
+
+```css
+border-image: source slice repeat;
+border-width: width;
+```
+
 ## Resources
 
 * <https://flexboxfroggy.com/>
 * <http://cssgridgarden.com/>
 * <https://css-tricks.com/snippets/css/complete-guide-grid/>
+# RSS
+
+Defaults for getting feed link:
+
+```
+# Wordpress
+http://wp.example.org/feed
+
+# Blogger / blogspot
+Atom 1.0: https://blogname.blogspot.com/feeds/posts/default
+RSS 2.0: https://blogname.blogspot.com/feeds/posts/default?alt=rss
+```
+
+# reStructuredText
+
+Syntax cheatsheet:
+
+```rst
+*italics*
+**bold**
+``fixed-space literal``
+.. comment
+```
+
+```bash
+# Convert rst to HTML
+rst2html FILE ...
+```
+
+# Liquid templating system
+
+https://shopify.github.io/liquid/
+
+# EPUB files
+
+<http://code.google.com/p/epubcheck/>
+
+```bash
+zip -X ../spm.epub mimetype css/style.css META-INF/container.xml book.ncx book.opf solplayaymar.xhtml
+```
+
+* ERROR: /media/UDISK/spm.epub: mimetype entry missing or not the first in archive
+  * It is what it sounds like. When you create your zip archive, the first one in has to be the mimetype file.
+* ERROR: /media/UDISK/spm.epub: extra field length for first filename must be 0, but was 28
+  * When you run zip, use the -X argument so that there's no timestamps, etc. These are the 'extra fields'
+
+
+
+# ASN.1 (Abstract Syntax Notation One)
+
+https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+
+Visually similar to Augmented Backus-Naur form, but is for data structures, not
+syntax.
+
+
+# SAML
+Security Assertion Markup Language
+https://samltest.id/
+
+# EmotionML
+
+https://www.w3.org/TR/emotionml/Overview.html
+
+# GeoJSON
+
+https://en.wikipedia.org/wiki/GeoJSON
+
+# Virtual Human Markup Language
+
+https://en.wikipedia.org/wiki/VHML
+

@@ -28,6 +28,14 @@ vim --startuptime start.log
 :set number
 ```
 
+## Inserting glyphs
+
+ctrl-k starts digraph mode
+
+:help digraphs
+
+g8 - see bytes for UTF-8 character
+
 ## Omnicompletion
 
 <C-X><C-O>

@@ -163,6 +163,11 @@ Can use C bindings...
 
 - <https://www.jruby.org>
 
+ ### Embedded C
+
+- https://github.com/mruby/mruby/
+- https://github.com/picoruby/picoruby
+
 ## Neat Ruby source files to look at
 
 file          | desc
@@ -943,6 +948,11 @@ class MyApp < Sinatra::Base
 end
 ```
 
+### Mustache handler
+
+- https://github.com/mustache/mustache
+- https://github.com/mustache/mustache-sinatra
+- https://github.com/mustache/vim-mustache-handlebars
 
 ## Capistrano
 
