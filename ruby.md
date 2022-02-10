@@ -1,6 +1,6 @@
 # Ruby
 
-## CLI
+# CLI
 
 ```bash
 # Print warnings
@@ -13,7 +13,7 @@ ruby --dump insns script.rb
 ruby --dump parsetree_with_comment script.rb
 ```
 
-## Abort on thread errors
+# Abort on thread errors
 
 ```ruby
 Thread.abort_on_exception = true
@@ -27,7 +27,7 @@ loop do
 end
 ```
 
-## Syntax cheatsheet
+# Syntax cheatsheet
 
 ```ruby
 class Thing
@@ -86,13 +86,13 @@ u && u.profile && u.profile.thumbnails && u.profiles.thumbnails.large
 u&.profile&.thumbnails&.large
 ```
 
-## Running processes
+# Running processes
 
-- [system()](http://ruby-doc.org/core/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
-- [backticks](http://ruby-doc.org/core/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
-- [exec()](http://ruby-doc.org/core/Kernel.html#method-i-exec) - replace current process by running command
+- [system()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
+- [backticks](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
+- [exec()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-exec) - replace current process by running command
 
-## % Notation
+# % Notation
 
 Modifier | Meaning
 ---      | ---
@@ -106,44 +106,7 @@ Modifier | Meaning
 %W[ ]    | Interpolated Array of words, separated by whitespace
 %x[ ]    | Interpolated shell command
 
-## Links
-
-- [List of end-of-life Ruby versions](https://endoflife.date/ruby)
-
-<!--- Todo
-
-safelevel -T
-set_trace_func proc
-caller method
-Marshal.dump
-distributed Ruby (drb)
-attr_reader attr_writer
-Ruby Tk toolkit
-ruby ncurses
-loop retry redo
-yield
-Module for namespacing
-require 'testunit'
-bmbm - two-pass if garbage collection
-
-* <https://www.exceptionalcreatures.com/>
-* GC.stat
-* Object::AllocationTracer (gem allocation_tracer)
-
--->
-
-## Get list of undocumented code
-
-```
-rdoc -C1 > documentation_coverage.txt
-```
-
- ### Links
-
-- <http://documenting-ruby.org/>
-
-
-## Extending and Embedding
+# Extending and Embedding
  ### C
 
 Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
@@ -168,14 +131,14 @@ Can use C bindings...
 - https://github.com/mruby/mruby/
 - https://github.com/picoruby/picoruby
 
-## Neat Ruby source files to look at
+# Neat Ruby source files to look at
 
 file          | desc
 ---           | ---
 parse.y       | The lexing/parsing of Ruby source code
 defs/keywords | The reserved keywords of Ruby
 
-## parsing
+# parsing
 
  ### parsetree (CLI)
 
@@ -212,7 +175,7 @@ http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270
 - [unparser](https://github.com/mbj/unparser)
 - [sorcerer](https://github.com/jimweirich/sorcerer)
 
-## Ractors
+# Ractors
 
 Ractors are Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
 
@@ -224,11 +187,11 @@ end
 ract.take
 ```
 
-- [Ruby Ractor Reference](https://ruby-doc.org/core-3.0.2/Ractor.html)
+- [Ruby Ractor Reference](https://docs.ruby-lang.org/en/master/Ractor.html)
 - [Good intro to Ractors [ScoutAPM]](https://scoutapm.com/blog/ruby-ractor)
 - [Koichi's 'guild' slides that Ractor was based off](https://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf)
 
-## JSON
+# JSON
 
 ```ruby
 require 'json'
@@ -238,7 +201,7 @@ JSON.pretty_generate(obj)
 ```
 
 
-## Naming idioms
+# Naming idioms
 
 ```ruby
 local_variable
@@ -250,19 +213,19 @@ ModuleName
 $global
 ```
 
-## Minitest
-- <https://ruby-doc.org/core-3.0.2/_bundle/gems/minitest-5_14_2/README_rdoc.html>
+# Minitest
+- <http://docs.seattlerb.org/minitest/>
 
+# CSV
 
-## CSV
+- [CSV documentation](https://docs.ruby-lang.org/en/master/CSV.html)
+- [gem source](https://github.com/ruby/csv)
+
 ```ruby
 require 'csv'
 data = CSV.read('path/to/file', headers: true)
 ```
-
-
-
-## Write to a file
+# Write to a file
 
 ```ruby
 fp = File.open(filename, mode)
@@ -270,7 +233,7 @@ fp.write('bloop')
 fp.close
 ```
 
-## Read individual chars
+# Read individual chars
 
 ```ruby
 fp = File.open(filename, mode)
@@ -280,22 +243,26 @@ end
 fp.close
 ```
 
+# heredoc
 
-## heredoc
+[heredoc documentation](https://docs.ruby-lang.org/en/master/doc/syntax/literals_rdoc.html#label-Here+Document+Literals)
 
-	message1 = <<EOM
-	This string starts at line start
-	EOM # Needs to be at 0 position
-	
-	# TODO <<-EOM
-	
-	message3 = <<~EOM
-	  This one will remove space before first printable character
-	  Available in Ruby 2.3+
-	EOM
+```ruby
+  message1 = <<EOM
+  This string starts at line start
+EOM # Needs to be at 0 position
 
+  message2 = <<-EOM
+While the terminator is indented, text is left flush
+  EOM
 
+  message3 = <<~EOM
+    This one removes space before first printable character 
+      of the least indented line. Empty lines ignored
 
+    Available in Ruby 2.3+
+  EOM
+```
 
 # Gems
 
@@ -337,19 +304,25 @@ This module is useful for understanding the memory size of what you're working w
 ObjectSpace.count_objects
 ```
 
-- <https://ruby-doc.org/core-3.0.2/ObjectSpace.html>
+[ObjectSpace docs](https://docs.ruby-lang.org/en/master/ObjectSpace.html)
 
 # Versions
 
 This is a list of interesting bits from Ruby versions
 
-- 3.1
+- [3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/)
   - [YJIT](https://github.com/ruby/ruby/pull/4992) (looks to get some excellent speed improvements in)
     - Moreover, what *really* impresses me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
     - [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
     - [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
   - [New debugger](https://github.com/ruby/debug)
     - [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
+  - [Error highlighting](https://github.com/ruby/error_highlight)
+  - Irb autocompletion with tab, documentation with alt-d
+  - pin operator in pattern matching can take an expression, parentheses optional in one-line matching
+  - values in hash literals can be omitted
+  - Psych.load uses safe_load by default
+  - [multiple assignment evaluation order changes](https://bugs.ruby-lang.org/issues/4443)
 - 2.4
   - binding.irb
 - 2.3
@@ -363,10 +336,12 @@ This is a list of interesting bits from Ruby versions
 - 1.9
   - added the Ruby Virtual Machine
 
+- [List of end-of-life Ruby versions](https://endoflife.date/ruby)
+
 # Rdoc
 
-
-- <https://docs.ruby-lang.org/en/2.1.0/RDoc/Markup.html>
+- [Core documentation](https://docs.ruby-lang.org/en/master/RDoc.html)
+- [Core markup documentation](https://docs.ruby-lang.org/en/master/RDoc/Markup.html)
 - <https://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html>
 - <https://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf>
 
@@ -416,10 +391,22 @@ To get the system ruby library documentation, you'll need to install `ruby-doc`
 sudo dnf install rubygem-rdoc ruby-doc
 ```
 
-# Erb
-<http://ruby-doc.org/stdlib-2.4.0/libdoc/erb/rdoc/ERB.html>
+## Get list of undocumented code
 
-## Tags
+```
+rdoc -C1 > documentation_coverage.txt
+```
+
+ ### Links
+
+- <http://documenting-ruby.org/>
+
+
+# ERB
+
+[Core ERB documentation](https://docs.ruby-lang.org/en/master/ERB.html)
+
+Tags:
 
 ```erb
 <% Ruby code -- inline with output %>
@@ -430,13 +417,13 @@ sudo dnf install rubygem-rdoc ruby-doc
 <%% or %%> -- replace with <% or %> respectively
 ```
 
-## Trim mode
+Trim mode:
 
 code | desc
 ---  | ---
 %    | enables Ruby code processing for lines beginning with %
 <>   | omit newline for lines starting with <% and ending in %>
->    | omit newline for lines ending in %>
+\>   | omit newline for lines ending in %> <!-- slash for Markdown -->
 -    | omit blank lines ending in -%>
 
 
@@ -452,8 +439,9 @@ A fiber always starts in a suspended state, it will not run until you switch to 
 
 States: `:running`, `:waiting`, `:runnable`, `:dead`
 
-- [Fiber class](https://ruby-doc.org/core-3.0.2/Fiber.html)
-- [Fiber::SchedulerInterface](https://ruby-doc.org/core-3.0.2/Fiber/SchedulerInterface.html)
+- [Core fiber readme](https://docs.ruby-lang.org/en/master/doc/fiber_md.html)
+- [Fiber class](https://docs.ruby-lang.org/en/master/Fiber.html)
+- [Fiber::SchedulerInterface](https://docs.ruby-lang.org/en/master/Fiber/SchedulerInterface.html)
 - <https://noteflakes.com/articles/2021-10-20-explaining-ruby-fibers>
 
 # Debugging
@@ -664,12 +652,12 @@ From `contributing.rdoc`:
 
 # RubyVM
 
-<https://ruby-doc.org/core-2.2.0/RubyVM/InstructionSequence.html>
+<https://docs.ruby-lang.org/en/master/RubyVM.html>
 
 # Conferences
 
-- Ruby Kaigi
-- Rails Conf
+- [Ruby Kaigi](https://rubykaigi.org/)
+- [Rails Conf](https://rubyconf.org/)
 
 # async
 
@@ -691,17 +679,14 @@ source 'https://rubygems.org' do
   # Gems here
 end
 
+# Using a git repository
+gem 'rack', git: 'https://github.com/rack/rack'
+
 # Make a gem group optional
 # use `bundle config set --local with GROUP` to install
 group :development, optional: true do
   gem 'guard'
 end
-```
-
-## Using a git repository
-
-```ruby
-gem 'rack', git: 'https://github.com/rack/rack'
 ```
 
 <https://bundler.io/v2.2/guides/git.html>
@@ -710,11 +695,8 @@ gem 'rack', git: 'https://github.com/rack/rack'
 
 ```bash
 bundle config set --local path 'vendor'
-```
 
-Deprecated way:
-
-```bash
+# Deprecated way:
 bundle install --path dir
 ```
 
@@ -731,11 +713,15 @@ uri = URI('http://example.com')
 ```
 # Net::SMTP
 
-<https://ruby-doc.org/stdlib-2.3.0/libdoc/net/smtp/rdoc/Net/SMTP.html>
-
-## Using starttls
+[gem source](https://github.com/ruby/net-smtp)
 
 ```ruby
+# Gemfile
+gem 'net-smtp'
+```
+
+```ruby
+# Using starttls
 smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
 smtp.enable_starttls_auto
 smtp.start(
@@ -825,21 +811,6 @@ Directive | Meaning
 X         | skip backward one byte
 x         | skip forward one byte
 
-# RSpec
-
-<http://rspec.info/>
-<http://rubydoc.info/gems/rspec-rails/frames>
-
-Add to Gemfile:
-
-```ruby
-gem 'rspec-rails'
-gem 'guard-rspec'
-```
-
-```bash
-rails generate rspec:install
-```
 # Ruby Gems
 
 ## Rack
@@ -972,24 +943,16 @@ guard list
 
 - <https://github.com/guard/guard>
 
-### Minitest
+Integrations:
 
-In bundler:
+gem | initializing
+--- | ---
+[guard-minitest](https://github.com/guard/guard-minitest) | `guard init minitest`
+[guard-rubocop](https://github.com/rubocop/guard-rubocop) | `guard init rubocop`
 
-```ruby
-gem "guard-minitest"
-```
+## Rubocop
 
-```bash
-# Add minitest to Guardfile
-guard init minitest
-```
-
-- <https://github.com/guard/guard-minitest>
-
-### Rubocop
-
-#### NodePattern
+### NodePattern
 
 Note: table uses int node, but can be for any type of node.
 
@@ -1047,20 +1010,6 @@ ruby-parse -e '2 + 2'
 - [RuboCop development guide](https://docs.rubocop.org/rubocop/development.html)
 - [NodePattern doc](https://github.com/rubocop/rubocop-ast/blob/master/docs/modules/ROOT/pages/node_pattern.adoc)
 
-#### Using Guard
-
-```ruby
-# Add to Gemfile
-gem "guard-rubocop"
-```
-
-```bash
-# Add rubocop to Guardfile
-guard init rubocop
-```
-
-- <https://github.com/rubocop/guard-rubocop>
-
 ## adsf
 
 ```bash
@@ -1072,15 +1021,8 @@ adsf --live-reload
 - <https://github.com/ddfreyne/adsf/>
 
 ## Ruby on Rails
-<!---
-TODO - <http://ruby.railstutorial.org/ruby-on-rails-tutorial-book?version=3.2>
--->
 
-### Installing and setting up Rails
-
-<!---
-I think the instructions are slightly different with Rails 5
--->
+### Installing and setting up Rails 4
 
 ```bash
 gem install rails
@@ -1106,6 +1048,22 @@ rails generate scaffold Post user:references title:string{50} content:text
 rails g resource user name:index email:uniq
 ```
 
+### Using RSpec with Rails
+
+- <http://rspec.info/>
+- <http://rubydoc.info/gems/rspec-rails/frames>
+
+Add to `Gemfile`:
+
+```ruby
+gem 'rspec-rails'
+gem 'guard-rspec'
+```
+
+```bash
+rails generate rspec:install
+```
+
 ### ActiveRecord
 
 Supported database column types:
@@ -1124,7 +1082,6 @@ Supported database column types:
 - timestamp
 
 Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
-
 
 ### Validating Active Records
 
@@ -1211,9 +1168,8 @@ rake about
 
 ### Simple wins
 
-* Use ``find_each`` instead of ``each`` when searching through large sets of iterables
-* Use ``content_tag`` to avoid XSS hacks
-
+- Use ``find_each`` instead of ``each`` when searching through large sets of iterables
+- Use ``content_tag`` to avoid XSS hacks
 
 ### Links
 
@@ -1227,7 +1183,7 @@ These notes are assuming you're also allowing regular email/password logins. It'
 rails generate model Authorization provider:string uid:string user_id:integer
 ```
 
-Gemfile:
+`Gemfile`:
 
 ```ruby
 gem 'omniauth'
@@ -1258,49 +1214,55 @@ def add_provider(auth_hash)
 end
 ```
 
-#### app/controllers/sessions_controller.rb
+`app/controllers/sessions_controller.rb`:
 
-	def omniauth_create
-	  auth_hash = request.env['omniauth.auth']
-	  if session[:user_id]
-	        # Means user is signed in. Add the authorization to the user
-	        user = User.find(session[:user_id])
-	        user.add_provider(auth_hash)
-	  else
-	        auth = Authorization.find_or_create(auth_hash)
-	        # Create the session
-	        session[:user_id] = auth.user_id
-	        user = User.find(session[:user_id])
-	  end
-	  sign_in user
-	  redirect_back_or user
-	end
+```ruby
+def omniauth_create
+  auth_hash = request.env['omniauth.auth']
+  if session[:user_id]
+        # Means user is signed in. Add the authorization to the user
+        user = User.find(session[:user_id])
+        user.add_provider(auth_hash)
+  else
+        auth = Authorization.find_or_create(auth_hash)
+        # Create the session
+        session[:user_id] = auth.user_id
+        user = User.find(session[:user_id])
+  end
+  sign_in user
+  redirect_back_or user
+end
+```
 
-#### app/models/authorization.rb
+`app/models/authorization.rb`:
 
-	belongs_to :user
-	validates :provider, :uid, :presence => true
-	
-	def self.find_or_create(auth_hash)
-	  unless auth = find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
-	        user = User.find_by_email(auth_hash["info"]["email"])
-	        if not user
-	          # If it's a new user, we want to give them a solid password
-	          random_string = SecureRandom.base64(30)
-	          user = User.create :name => auth_hash["info"]["name"],
-	       					   :email => auth_hash["info"]["email"],
-	       					   :password => random_string,
-	       					   :password_confirmation => random_string
-	        end
-	        auth = create :user_id => user, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
-	  end
-	  auth
-	end
+```ruby
+belongs_to :user
+validates :provider, :uid, :presence => true
 
-#### config/routes.rb
+def self.find_or_create(auth_hash)
+  unless auth = find_by_provider_and_uid(auth_hash["provider"], auth_hash["uid"])
+        user = User.find_by_email(auth_hash["info"]["email"])
+        if not user
+          # If it's a new user, we want to give them a solid password
+          random_string = SecureRandom.base64(30)
+          user = User.create :name => auth_hash["info"]["name"],
+       					   :email => auth_hash["info"]["email"],
+       					   :password => random_string,
+       					   :password_confirmation => random_string
+        end
+        auth = create :user_id => user, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
+  end
+  auth
+end
+```
 
-	match '/auth/:provider/callback', to: 'sessions#create'
-	match '/auth/failure', to: 'sessions#failure'
+`config/routes.rb`:
+
+```ruby
+match '/auth/:provider/callback', to: 'sessions#create'
+match '/auth/failure', to: 'sessions#failure'
+```
 
 ### Gravatar
 
@@ -1323,8 +1285,6 @@ end
 
 # RVM
 
-## Install RVM with Ruby
-
 ```bash
 curl -L https://get.rvm.io | bash -s stable --ruby
 
@@ -1333,11 +1293,7 @@ curl -L https://get.rvm.io | bash -s stable
 rvm pkg install openssl
 rvm pkg install readline
 rvm install 1.9.3 --with-openssl-dir=$HOME/.rvm/ --with-readline-dir=$HOME/.rvm/usr
-```
 
-## Gems
-
-```bash
 # Create a per-project rvmrc
 rvm --rvmrc --create 1.9.3@projectname
 # set default ruby
@@ -1348,9 +1304,5 @@ rvm gemset [create|use|delete] gemsetname
 gem env gemdir
 ```
 
-Automatic gemset initialization:
-
-Add gems to ``~/.rvm/gemsets/global.gems``
-
-
+For automatic gemset initialization, add gems to `~/.rvm/gemsets/global.gems`
 
