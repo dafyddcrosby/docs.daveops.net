@@ -77,10 +77,16 @@ code      | desc
 ---       | ---
 -a file   | file exists
 -d file   | file exists and is a directory
+-h file   | file exists and is a symbolic link
 -r file   | file exists and is readable
 -w file   | file exists and is writeable
 -x file   | file exists and is executable
+-S file   | file exists and is a socket
+-n string | true if length of string is non-zero
 -z string | true if length of string is zero
+
+- <https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html>
+- <https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html>
 
 ## Process Substitution
 

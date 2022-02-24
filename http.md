@@ -96,6 +96,11 @@ code | status
 
 # Apache HTTP Server
 
+- [Apache docs](https://httpd.apache.org/docs/)
+- [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator)
+- <https://httpd.apache.org/docs/current/misc/security_tips.html>
+- [Docker image](https://hub.docker.com/_/httpd)
+
 ## Signals
 
 Signal   | Description
@@ -119,10 +124,9 @@ fullstatus    |             | display full status report (mod_status and text br
 configtest    | -t          | test the configuration
               | -S          | parse the config, show what IPs are used for virtual hosts
 
-
 ## General Hardening
 
-### SSL Config
+SSL Config:
 
 ```apache
 SSLProtocol          All -SSLv2 -SSLv3
@@ -132,7 +136,7 @@ SSLCompression       off
 Header always set Strict-Transport-Security "max-age=15768000"
 ```
 
-### General Apache Config
+General Apache Config:
 
 ```apache
 # Deny access to root dir
@@ -157,19 +161,22 @@ ServerSignature Off
 TraceEnable Off
 ```
 
-## Links
-
-* [Apache docs](https://httpd.apache.org/docs/)
-* [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator)
-* <https://httpd.apache.org/docs/current/misc/security_tips.html>
-* [Docker image](https://hub.docker.com/_/httpd)
-
-
-
-
 ## htaccess
 
 ### mod_rewrite
+
+- <https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html>
+- <https://httpd.apache.org/docs/2.4/rewrite/remapping.html>
+
+```apache
+# Do a redirect that ignores the ACME challenge directory
+RewriteCond %{REQUEST_URI} !^/.well-known/acme-challenge [NC]
+RewriteRule ^ https://example.org [L,R=301]
+
+# Redirect to the HTTPS version of the URI
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
 
 #### Allow password protected directories without WordPress 404
 
@@ -186,12 +193,6 @@ RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
 RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
 ```
 
-#### Redirect all traffic to another domain
-
-```
-RedirectMatch 301 ^(.*)$ https://example.org
-```
-
 #### Deny hotlinking of images
 
 ```apache
@@ -202,9 +203,15 @@ RewriteRule .(gif|jpg|bmp)$ - [F]
 
 ### mod_alias
 
-#### Put website down for maintenance
+- <https://httpd.apache.org/docs/2.4/mod/mod_alias.html>
 
-	RedirectMatch 302 ^/ /outoforder.html
+```apache
+# Redirect all traffic to another domain
+RedirectMatch 301 ^(.*)$ https://example.org
+
+# Put website down for maintenance
+RedirectMatch 302 ^/ /outoforder.html
+```
 
 ### Add audio/video handling (HTML 5)
 
@@ -218,8 +225,10 @@ AddType video/webm webm
 
 (note - scripts should be 755)
 
-	Options +ExecCGI
-	AddHandler cgi-script .py
+```apache
+Options +ExecCGI
+AddHandler cgi-script .py
+```
 
 ### Do not allow access to .htaccess file
 
@@ -255,15 +264,23 @@ htpasswd -c .htpasswd username
 
 ## mod_security
 
-	<IfModule security2_module>
-	# Turn on rule engine and set default action
-	SecRuleEngine On
-	SecDefaultAction "phase:2,deny,log,status:403"
-	</IfModule>
-
-
+```apache
+<IfModule security2_module>
+# Turn on rule engine and set default action
+SecRuleEngine On
+SecDefaultAction "phase:2,deny,log,status:403"
+</IfModule>
+```
 
 # nginx
+
+- <https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return>
+- <https://nginx.org/en/docs/http/ngx_http_core_module.html#location>
+- [Docker image](https://hub.docker.com/_/nginx)
+
+A funny aside, one of my coworkers said that "nginx is just a hipster Apache".
+However, there's sound technical reasons for choosing nginx called [the C10K
+Problem](http://www.kegel.com/c10k.html)
 
 ## Rotate logs
 
@@ -327,30 +344,12 @@ In http, server, or location
 server_tokens off
 ```
 
-## Resources
-
-* <https://nginx.org/en/docs/http/ngx_http_rewrite_module.html#return>
-* <https://nginx.org/en/docs/http/ngx_http_core_module.html#location>
-
-## A funny aside
-
-One of my coworkers said that "nginx is just a hipster Apache". However,
-there's sound technical reasons for choosing nginx called [the C10K
-Problem](http://www.kegel.com/c10k.html)
-
-## Links
-
-* [Docker image](https://hub.docker.com/_/nginx)
-
-
 # wget
 
-## Mirror a website
-
 ```bash
+# Mirror a website
 wget -mk <site>
 ```
-
 
 # curl
 
@@ -374,24 +373,17 @@ curl -F "uploadedfile=@FILE_TO_UPLOAD;filename=FILENAME_TO_SEND"
 # Use POST
 curl -X POST -F "url=https://example.org" ..
 
-## Send JSON object
+# Send JSON object
 curl -X POST -H "Content-Type: application/json" \
     -d '{"name": "admin", "email": "admin@example.com"}' \
         https://example.org
-```
-## Get request headers
 
-```bash
+# Get request headers
 curl -i example.com
-```
 
-## See if server uses gzip/deflate
-
-```bash
+# See if server uses gzip/deflate
 curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 ```
-
-
 
 # Content Security Policy
 
@@ -403,13 +395,11 @@ curl -I -H 'Accept-Encoding: gzip,deflate' http://example.com
 - [HAProxy website](http://www.haproxy.org/)
 - [Docker image](https://hub.docker.com/_/haproxy)
 
-Setting ciphers on an SSL listener
+Setting ciphers on an SSL listener:
 
 ```
 bind :443 ssl no-sslv3 crt /path/to/cert.pem ciphers ALL:!EXPORT:!aNULL:!eNULL:!RC4:!MD5:!DES:!3DES:!MEDIUM:!WEAK
 ```
 # Proxygen
-
-## Links
 
 - <https://github.com/facebook/proxygen>

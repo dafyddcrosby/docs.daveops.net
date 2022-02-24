@@ -1,6 +1,8 @@
 # Linux Distributions
 # Fedora
+
 - [Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/)
+
 ## Upgrading to new Fedora versions
 
 ```bash
@@ -11,8 +13,24 @@ sudo dnf system-upgrade download --refresh --releasever=33
 
 https://fedoraproject.org/wiki/DNF_system_upgrade
 
-## Links
+## Building live images
 
+```bash
+# Install the tooling
+sudo dnf install livecd-tools spin-kickstarts
+# Kickstart files are located in /usr/share/spin-kickstarts
+
+# Build the ISO
+sudo livecd-creator --verbose \
+--config /path/to/kickstart/file.ks \
+--fslabel Image-Label \
+--cache /var/cache/live
+
+# Test on KVM
+sudo qemu-kvm -m 2048 -vga qxl -cdrom filename.iso
+```
+
+https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#proc_creating-and-using-live-cd
 
 # CentOS
 
@@ -25,7 +43,6 @@ https://fedoraproject.org/wiki/DNF_system_upgrade
 - <https://github.com/CentOS/sig-cloud-instance-build/>
 - [Images repository](https://cloud.centos.org/centos)
 - [AWS instructions on importing VMs](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
-
 
 # NixOS
 
@@ -104,8 +121,6 @@ Default run level is 2
 
 # SUSE
 
-## Zypper
-
 ```bash
 # Install a package
 zypper install PACKAGE
@@ -113,20 +128,18 @@ zypper install PACKAGE
 zypper search -t PACKAGE
 ```
 
-
-
 # Arch Linux
 
-## Installing packages
 ```bash
+# Installing packages
 pacman -S [package]
 ```
 
 # Kali
 
-* [Web site](https://www.kali.org/)
-* [VM images](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
-* [Tool list](https://tools.kali.org/tools-listing)
+- [Web site](https://www.kali.org/)
+- [VM images](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
+- [Tool list](https://tools.kali.org/tools-listing)
 
 ## VirtualBox
 

@@ -13,20 +13,6 @@ ruby --dump insns script.rb
 ruby --dump parsetree_with_comment script.rb
 ```
 
-# Abort on thread errors
-
-```ruby
-Thread.abort_on_exception = true
-
-Thread.new do
-  fail 'Cannot continue'
-end
-
-loop do
-  sleep
-end
-```
-
 # Syntax cheatsheet
 
 ```ruby
@@ -84,6 +70,21 @@ end
 u && u.profile && u.profile.thumbnails && u.profiles.thumbnails.large
 # versus
 u&.profile&.thumbnails&.large
+```
+
+# Threads
+
+```ruby
+# Abort on thread errors
+Thread.abort_on_exception = true
+
+Thread.new do
+  fail 'Cannot continue'
+end
+
+loop do
+  sleep
+end
 ```
 
 # Running processes
@@ -312,7 +313,7 @@ This is a list of interesting bits from Ruby versions
 
 - [3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/)
   - [YJIT](https://github.com/ruby/ruby/pull/4992) (looks to get some excellent speed improvements in)
-    - Moreover, what *really* impresses me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
+    - Moreover, what *really* impressed me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
     - [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
     - [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
   - [New debugger](https://github.com/ruby/debug)
@@ -323,18 +324,33 @@ This is a list of interesting bits from Ruby versions
   - values in hash literals can be omitted
   - Psych.load uses safe_load by default
   - [multiple assignment evaluation order changes](https://bugs.ruby-lang.org/issues/4443)
-- 2.4
+- [3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/)
+- [2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
+- [2.6](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
+- [2.5](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
+- [2.4](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/)
   - binding.irb
-- 2.3
+- [2.3](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
   - frozen string literal pragma
-- 2.2
+- [2.2](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
   - incremental garbage collector
-- 2.1
+- [2.1](https://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/)
+  - First release with [semantic versioning](https://www.ruby-lang.org/en/news/2013/12/21/ruby-version-policy-changes-with-2-1-0/)
   - generational garbage collector
-- 2.0
+- [2.0](https://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/)
   - copy-on-write friendly memory management
-- 1.9
+- [1.9.3](https://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/)
+- [1.9.2](https://www.ruby-lang.org/en/news/2010/08/18/ruby-1-9-2-released/)
+- [1.9.1](https://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/)
+- [1.9.0](https://www.ruby-lang.org/en/news/2007/12/25/ruby-1-9-0-released/)
   - added the Ruby Virtual Machine
+- [1.8.7](https://www.ruby-lang.org/en/news/2008/05/31/ruby-1-8-7-has-been-released/)
+  - securerandom library
+  - Array handles recursive data properly
+  - Lots of new base class methods
+- [1.8.6](https://www.ruby-lang.org/en/news/2007/03/12/ruby-1-8-6-released/)
+  - First release with NEWS file
+
 
 - [List of end-of-life Ruby versions](https://endoflife.date/ruby)
 
@@ -856,6 +872,11 @@ ruby app.rb
 require 'sinatra'
 get '/helloworld' do
   'Hello, world!'
+end
+
+get '/haml' do
+  # Render template views/thing, insert some variables
+  haml :thing, locals: {foo: 'bar', biz: 'baz'}
 end
 ```
 

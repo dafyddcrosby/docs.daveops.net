@@ -811,95 +811,101 @@ checkdnsrr($host)
 
 ## Authenticating users
 
-
-	
-	 <?php
-	 session_start();
-	 // Check for session injection
-	 if (isset($_REQUEST['_SESSION'])) {
-		 session_destroy();
-		 die('');
-	 } elseif (isset($_SESSION['HTTP_USER_AGENT'])) {
-		 if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
-			 session_destroy();
-			 die('');
-		 }
-	 }
-	 // At end of page, let's regenerate the session ID
-	 if(isset($_SESSION['username'])) {
-		 session_regenerate_id(TRUE);
-	 } 
-	 ?>
-
+```php
+<?php
+session_start();
+// Check for session injection
+if (isset($_REQUEST['_SESSION'])) {
+    session_destroy();
+    die('');
+} elseif (isset($_SESSION['HTTP_USER_AGENT'])) {
+    if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
+   	 session_destroy();
+   	 die('');
+    }
+}
+// At end of page, let's regenerate the session ID
+if(isset($_SESSION['username'])) {
+    session_regenerate_id(TRUE);
+} 
+?>
+```
 
 ## Validation
 
-
-### Numeric validation
-
-	
-	 <?php
-	 is_int($var)
-	 is_numeric($var)
-	 ?>
+```php
+<?php
+// Numeric validation
+is_int($var)
+is_numeric($var)
+?>
+```
 
 ## Export to CSV
 
-	
-	 <?php
-	 header("Expires: 0");
-	 header("Cache-control: private");
-	 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-	 header("Content-Description: File Transfer");
-	 header("Content-Type: text/csv");
-	 header("Content-disposition: attachment; filename=rawlogs.csv");
-	 ?>
+```php	
+<?php
+header("Expires: 0");
+header("Cache-control: private");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+header("Content-Description: File Transfer");
+header("Content-Type: text/csv");
+header("Content-disposition: attachment; filename=rawlogs.csv");
+?>
+```
 
 ## Get filename
 
 	
-	 <?php
-	 $FILE_NAME = basename($_SERVER["PHP_SELF"]);
-	 ?>
+```php	
+<?php
+$FILE_NAME = basename($_SERVER["PHP_SELF"]);
+?>
+```
 
 ## Return multiple values
 
 	
-	 <?php
-	 function mult() {
-		 return array(0, 1);
-	 }
-	 
-	 list ($zero, $one) = mult();
-	 ?>
+```php	
+<?php
+function mult() {
+    return array(0, 1);
+}
+
+list ($zero, $one) = mult();
+?>
+```
 
 ## Create an array of objects
 
 	
-	 <?php
-	 $allCars=array();
-	 $result = mysql_query($SQL);
-	 
-	 while ($rowInfo = mysql_fetch_assoc($result))
-	 { 
-	 	 $tempCar=new Car();
-	  
-	 	 $tempCar->setMake($rowInfo['car_make']);
-	 	 $tempCar->setModel($rowInfo['car_model']);
-	 	 $tempCar->setColor($rowInfo['car_color']);
-	 
-	 	 $allCars[]=$tempCar;
-	 }
-	 ?>
-	
+```php	
+<?php
+$allCars=array();
+$result = mysql_query($SQL);
+
+while ($rowInfo = mysql_fetch_assoc($result))
+{ 
+	 $tempCar=new Car();
+ 
+	 $tempCar->setMake($rowInfo['car_make']);
+	 $tempCar->setModel($rowInfo['car_model']);
+	 $tempCar->setColor($rowInfo['car_color']);
+
+	 $allCars[]=$tempCar;
+}
+?>
+```	
 
 ## Include PEAR (Dreamhost)
 
 	
-	 <?php
-	 //Include my PEAR path
-	 set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
-	 ?>
+```php	
+<?php
+//Include my PEAR path
+set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
+?>
+```
 
 ### Scrape `$_GET` parameters
 
@@ -913,10 +919,11 @@ parse_str($_SERVER['QUERY_STRING'], $_GET);
 
 ## Convert command line arguments into GET variables
 
-	
-	 <?php
-	 parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
-	 ?>
+```php
+<?php
+parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
+?>
+```
 
 ## Get PHP config info
 
@@ -931,7 +938,7 @@ php --ini
 
 ```php	
 <?php
-header("Location: http://www.example.com/"); 
+header("Location: https://example.org/"); 
 ?>
 ```
 
@@ -966,14 +973,13 @@ switch ($blah) {
   default:
         // code
         break;
+}
 
 function foo () {
   return 0;
 }
 ?>
 ```
-
-
 
 ## composer
 [Composer homepage](https://getcomposer.org/)
@@ -992,7 +998,6 @@ Will drop `composer.json` and `composer.lock`
 <?php
 require __DIR__ . '/vendor/autoload.php';
 ```
-
 
 ## Insecurity
 PHP has more than a few security pitfalls, this is just a quick list of ways it
@@ -1022,8 +1027,6 @@ $max_id= $sth->fetchColumn();
 ?>
 ```	
 
-
-
 ## Versions
 
 ### 8.1
@@ -1040,7 +1043,6 @@ $max_id= $sth->fetchColumn();
 - Sodium XChaCha20 functions
 
 - <https://www.php.net/releases/8.1/en.php>
-
 
 ## Binary
 

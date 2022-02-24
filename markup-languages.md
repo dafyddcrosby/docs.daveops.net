@@ -182,7 +182,7 @@ International calling code is required
 
 # HAML
 
-<http://haml.info>
+<https://haml.info>
 
 ```bash
 gem install haml
@@ -193,7 +193,9 @@ gem install haml
 !!! 5
 %html
   %head
-    %meta{:charset => "utf-8"}
+    %meta{charset: "utf-8"}
+    -# You can pass variables to attributes
+    %meta{variable: attribute_variable}
     %title Demo HAML page
   %body
     -# you can use . or # instead of %div if you're using a div tag
