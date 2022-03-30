@@ -67,3 +67,33 @@ trace-cmd list
 
 Be aware of subtle floating point rounding errors that can occur from code path
 changes (eg hitting the CPU registers vs main memory)
+
+# eBPF
+
+- kprobe - a probe that fires on kernel function entry
+- uprobe - a probe that fires on user-level program function entry
+- USDT (user-level statically defined tracing) - a designated trace point for operations to allow for function name changes/inlining
+- tracepoint - a kernel-level USDT
+
+## bpftrace
+
+```bash
+# list all syscall tracepoints
+bpftrace -l 'tracepoint:syscalls:*'
+
+# run a bpftrace program
+bpftrace -e 'tracepoint:syscalls:sys_enter_openat {printf "%s\n", comm}'
+
+# get BPF instructions
+bpftrace -v program.bt
+```
+
+## bpftool
+
+```bash
+# show loaded bpf programs
+bpftool prog show
+
+# dump BPF instructions of a program (here 123)
+bpftool prog dump xlated id 123
+```
