@@ -4,7 +4,7 @@
 flag                  | desc
 ---                   | ---
 -S                    | get assembly code
--g                    | debug (for GDB)
+-g                    | compile with debug symbols (for GDB)
 -pedantic             | warnings for strict ISO C
 -std=c99              | use C99 standard
 -Wall                 | show warnings of questionable practices
@@ -164,7 +164,6 @@ Add `/hotpatch` to the compiler flags.
 * <https://blogs.msdn.microsoft.com/ishai/2004/06/24/why-does-the-compiler-generate-a-mov-edi-edi-instruction-at-the-beginning-of-functions/>
 * <https://blogs.msdn.microsoft.com/oldnewthing/20110921-00/?p=9583/>
 * <https://blogs.msdn.microsoft.com/oldnewthing/20130102-00/?p=5663/>
-
 
 # Control Flow Integrity
 

@@ -2,37 +2,61 @@
 
 # GDB
 
+Execution
+
+full             | short | desc
+---              | ---   | ---
+run ARG1         | r     | run program
+attach PID       |       | attach gdb to already running process
+next             | n     | step to next source line (ie don't step in to subroutine)
+step             | s     | step through program (steps into subroutines)
+stepi            | si    | step one instruction exactly
+continue         | c     | continue running program
+break LOC        | b     | set breakpoint at function/line
+tbreak LOC       |       | set breakpoint that breaks only once
+watch EXPR       |       | stop execution when a variable changes
+rwatch EXPR      |       | stop execution when a variable is read
+info breakpoints | i b   | list of breakpoints
+disable NUM      | dis   | disable a breakpoint
+kill             |       | stop execution of program
+
+Stack info
+
+full           | short   | desc
+---            | ---     | ---
+backtrace      | bt      | backtrace
+backtrace full | bt full | backtrace (with locals for each frame)
+list           | l       | list surrounding source
+info locals    | i lo    | show local variables
+info args      | i ar    | show arguments
+info frame     | i f     | show info about stack frame
+finish         | fin     | return from function
+call           |         | call function linked into program
+up N           |         | go up n frames in the stack
+down N         |         | go down n frames in the stack
+
+Examine memory:
+
 cmd                        | desc
 ---                        | ---
-!controlling execution     |
-r ARG1 ...                 | run program
-s                          | step through program
-si                         | step one instruction exactly
-c                          | continue running program
-!breakpoints               |
-b FUNCNAME (or line)       | set breakpoint at function
-! ...                      |
-bt                         | backtrace
-bt full                    | backtrace (with locals for each frame)
-l                          | list surrounding source
-info locals                | show local variables
-info args                  | show arguments
-up/down N                  | go up or down n frames in the stack
 disassemble                | disassemble section of memory
 p/x VAR                    | print variable in hexadecimal
 x ADDR                     | Examine memory at addr
 whatis VAR                 | show variable type
 set var VAR=VAL            | Set variable to value
+info registers             | show registers (excluding floating point)
 show env                   | Show environment
 set env FOO = bar          | Set environment variable FOO to bar
 set env VAR=VAL            | Set environment variable to value
-attach PID                 | Attach gdb to already running process
+
+cmd                        | desc
+---                        | ---
 set print pretty on        | pretty print structures
 set print array on         | readable array output
 set print array-indexes on | show array indices
 set print demangle on      | demangle C++ names
-info registers             | show registers (excluding floating point)
 macro expand MACRO         | expands a macro (requires -gdwarf-2 -g3 compiler flags)
+source FILE                | source a GDB macro file
 
 code | print type
 ---  | ---
@@ -47,8 +71,7 @@ a    | address
 c    | char
 s    | string
 
-
-## Check a core dump
+Examine a core dump:
 
 ```bash
 gdb executable coredump
@@ -70,6 +93,7 @@ env FOO=BAR    | set environment variable
 frame variable | list local variables
 bt             | backtrace
 disassemble -f | disassemble frame
+
 # Bryan Cantrill
 
 [Debugging Under Fire (YouTube)](https://www.youtube.com/watch?v=30jNsCVLpAE)
