@@ -8,7 +8,7 @@ package-cleanup --oldkernels --count=1
 ```
 
 # Kernel Analysis
-* [Linux Kernel Analysis](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
+- [Linux Kernel Analysis](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
 
 # Hardware
 
@@ -32,6 +32,13 @@ systemctl kexec
 # SELinux
 
 Security Enhanced Linux
+
+- <http://www.selinuxproject.org>
+- <https://github.com/SELinuxProject>
+- [CentOS SELinux guide](https://wiki.centos.org/HowTos/SELinux)
+- [Debian SELinux guide](https://wiki.debian.org/SELinux/Setup)
+- [Fedora SELinux guide](https://fedoraproject.org/wiki/SELinux)
+- [Arch SELinux wiki](https://wiki.archlinux.org/index.php/SELinux)
 
 The cache for SELinux messages is known as the Access Vector Cache (AVC)
 
@@ -164,18 +171,12 @@ semanage port -l
 semanage port -a -t http_port_t -p tcp 81
 ```
 
-## Get the default SELinux context
+Get the default SELinux context:
 
+```
 matchpathcon
+```
 
-## Resources
-
-* <https://github.com/SELinuxProject>
-* <http://www.selinuxproject.org>
-* [CentOS SELinux guide](https://wiki.centos.org/HowTos/SELinux)
-* [Debian SELinux guide](https://wiki.debian.org/SELinux/Setup)
-* [Fedora SELinux guide](https://fedoraproject.org/wiki/SELinux)
-* [Arch SELinux wiki](https://wiki.archlinux.org/index.php/SELinux)
 
 ### TODO
 what context is needed for the PID to access the file
@@ -202,9 +203,10 @@ echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag
 
 
 # filesystems
-# btrfs
 
-## snapshots
+## btrfs
+
+### snapshots
 
 ```bash
 # Create a read-only snapshot
@@ -215,7 +217,7 @@ btrfs send <snap> | btrfs receive <device>
 ```
 
 
-# ext filesystem
+## ext filesystem
 
 * ext2 - no journaling, but good for small solid-state drives
 * ext3 - journaling - can be upgraded from ext2 with no data loss
@@ -247,7 +249,7 @@ debugfs
 ```
 
 
-# XFS
+## XFS
 
 Default filesystem of CentOS 7
 
@@ -258,13 +260,17 @@ xfs_admin -L mylabel /dev/sda2
 ```
 
 
-# bcachefs
+## bcachefs
 
 [Architecture](https://bcachefs.org/Architecture/)
 
 # kernel modules
 
-## basic commands
+- [Linux Loadable Kernel Module](http://www.tldp.org/HOWTO/Module-HOWTO/)
+- [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.6/html/)
+- DKMS - Dynamic Kernel Module System
+
+## commands
 
 desc                           | command
 ---                            | ---
@@ -274,31 +280,17 @@ load a module                  | `modprobe MODULE`
 load kernel module by filename | `insmod FILE`
 unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch)
 
-## Resources
-
-* [Linux Loadable Kernel Module](http://www.tldp.org/HOWTO/Module-HOWTO/)
-* [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.6/html/)
-
-
-
 # UDP
 
-## UDP fingerprinting
+UDP fingerprinting:
+
 > In addition to his post, I heard a very good explanation of why they _intentionally_ coded it this way. The simplest way to create a packet is to simply set aside a section of memory for the packet and start filling in the necessary fields. For something like a UDP packet, there are some spaces in the packet that just aren't normally used. So if the field is left alne, is simply contains some data from whatever was stored in that section of memory previously. So instead of leaving those sections alone, they intentionally zeroed out the unused fields (such as the IP identification field) so that when the packet gets sent out, it doesn't give out any information that may have been laying around in memory.
 > — from <http://www.antionline.com/showthread.php?221887.html>
-
-
-
-#  DKMS
-
-Dynamic Kernel Module System
-
-
 
 # Building Kernels
 
 ```bash
-dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison kernel-devel glibc-static
+dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison flex kernel-devel glibc-static grubby
 ```
 
 TODO - add bison flex to <https://fedoraproject.org/wiki/Building_a_custom_kernel>
@@ -316,6 +308,8 @@ CONFIG_BLK_DEV_LOOP=y
 CONFIG_STDERR_CONSOLE=y
 CONFIG_UNIX98_PTYS=y
 CONFIG_EXT2_FS=y
+CONFIG_64BIT=y
+CONFIG_X86_64=y
 ```
 
 ```bash
@@ -325,21 +319,21 @@ make ARCH=um allnoconfig KCONFIG_ALLCONFIG=mini.config
 make ARCH=um
 ```
 
-if missing gnu/stubs-32.h, means you need glibc-devel.i686
+If missing gnu/stubs-32.h, means you're building a 32-bit kernel and need
+glibc-devel.i686 (or to specify CONFIG_X86_64=y)
 
-
+Running:
+```bash
+./linux root=/dev/root init=/bin/bash
+```
 
 # cgroups
-
-## Links
 
 - <https://www.kernel.org/doc/Documentation/cgroup-v1/>
 - <https://www.kernel.org/doc/Documentation/cgroup-v2.txt>
 - <https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/>
 
 # drgn
-
-## Links
 
 - [Meta blog post](https://developers.facebook.com/blog/post/2021/12/09/drgn-how-linux-kernel-team-meta-debugs-kernel-scale/?_fb_noscript=1)
 - [Github](https://github.com/osandov/drgn)
