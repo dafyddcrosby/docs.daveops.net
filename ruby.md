@@ -601,6 +601,7 @@ If you know in advance what your time format is, don't use Date#parse, since the
 - Use `String#tr` over `String#gsub`
 - Use `String#casecmp` over `String#downcase + ==`
 - Use `Enumerable#detect` over `Enumerable#select.first`
+- Use `String#unpack1` over `String#unpack().first`
 
 ## Books / Links
 
