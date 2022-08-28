@@ -72,6 +72,7 @@ int main (void) { puts (gnu_get_libc_version ()); return 0; }
 ## To verify
 
 * A C++ compiler requires explicit declaration of all functions (language requirement)
+
 # Go
 
 ## Syntax cheatsheet
@@ -146,6 +147,7 @@ godoc -http=:8080
 
 ## Templating
 
+{% raw %}
 ```
 {{/* comment */}}  Defines a comment
 {{.}}              Renders root element
@@ -155,6 +157,7 @@ godoc -http=:8080
 {{range .Items}} {{.}} {{end}}  Loops over all “Items” and renders each using {{.}}
 {{block "bar" .}} {{end}}       Defines a block with the name "bar"
 ```
+{% endraw %}
 
 ## Go - FastCGI
 
@@ -392,8 +395,9 @@ In ad_page_contract:
 {fries "t"}
 ```
 
-In ad_form:
+In `ad_form`:
 
+{% raw %}
 ```
 {fries:text(checkbox),optional
         {label {"Would you like fries with that?"}}
@@ -401,6 +405,7 @@ In ad_form:
         {options {{"" t}}}
 }
 ```
+{% endraw %}
 
 ### ADP tags
 

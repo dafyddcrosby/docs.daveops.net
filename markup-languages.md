@@ -393,16 +393,20 @@ Bax & No & Yes
 
 Characters escaped with standard double Mustache syntax: `& \ " < > '`
 
+{% raw %}
+
 tag               | desc
 ---               | ---
-\{\{name\}\}      | search a label in current context (HTML-escaped by default)
-\{\{\{name\}\}\}  | unescaped variable
-\{\{#names\}\}    | begin section for names (1 or more)
-\{\{^names\}\}    | begin section for names (false or empty array)
-\{\{/names\}\}    | end of a section
-\{\{! comment\}\} | comment
-\{\{> partial\}\} | partial (rendered at runtime)
-\{\{=<% %>=\}\}   | set delimiters to something else (here erb delimiters)
+{{name}}      | search a label in current context (HTML-escaped by default)
+{{{name}}}  | unescaped variable
+{{#names}}    | begin section for names (1 or more)
+{{^names}}    | begin section for names (false or empty array)
+{{/names}}    | end of a section
+{{! comment}} | comment
+{{> partial}} | partial (rendered at runtime)
+{{=<% %>=}}   | set delimiters to something else (here erb delimiters)
+
+{% endraw %}
 
 If value is callable (ie function or lambda), text block is passed to callable unrendered and unexpanded.
 
