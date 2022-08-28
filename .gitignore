@@ -1,6 +1,5 @@
 *.swp
-.obsidian
 html
 vendor
 _site
-.obsidian
+.jekyll-cache
