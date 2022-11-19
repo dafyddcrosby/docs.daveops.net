@@ -107,9 +107,15 @@ ORDER BY cnt asc;
 
 ## Export tables
 
+```bash
+sqlite3 my.db .dump
+```
 
+## Get table sizes
 
-  sqlite3 my.db .dump
+```sqlite
+SELECT SUM("pgsize") FROM "dbstat" WHERE name='TABLENAME';
+```
 
 ## Datatypes
 
@@ -192,7 +198,6 @@ For really bad table bloat, use CLUSTER (not VACUUM FULL). It requires space for
  pg_restore -F t -d [db name] [filename.tar]
 
 ## Create database
-
 
 
  create database <db_name>
