@@ -1,24 +1,29 @@
 # text manipulation
 
+
 # awk
+
 
 ## Get a specific column
 
-```bash
+```shell
 # print second column
 awk '{print $2}'
 ```
 
+
 # sed
+
 
 ## Delete all lines matching a pattern
 
-```bash
+```shell
 sed -i '/pattern to match/d' ./infile
 ```
 
+
 ## Prepend a file
 
-```bash
+```shell
 sed -i '1i header line' ./infile
 ```
