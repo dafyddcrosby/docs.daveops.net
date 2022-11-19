@@ -1,0 +1,14 @@
+<ul class="post-list">
+  {%- for p in site.pages -%}
+  {%- if p and p.title != nil and p.dir contains page.dir -%}
+  <li>
+    <a class="post-link" href="{{ p.url | relative_url }}">
+  {%- if p.dir != page.dir -%}
+	{{p.dir}}
+  {%- endif -%}
+      {{ p.title | escape }}
+    </a>
+  </li>
+  {%- endif -%}
+  {%- endfor -%}
+</ul>

@@ -2,10 +2,11 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   <body>
-    {% include header.html %}
+  {% include header.html %}
 
     <div class="container">
       <section id="main_content">
+        {% include page_index.html %}
         {{ content }}
       </section>
     </div>

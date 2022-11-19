@@ -3,10 +3,9 @@ url: https://docs.daveops.net
 theme: jekyll-theme-hacker
 description: Snippets for yer computer needs
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+      type: "posts"
     values:
       layout: "default"
 plugins:
