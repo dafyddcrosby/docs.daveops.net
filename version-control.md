@@ -74,6 +74,12 @@ If you just need to amend last commit,
 git commit --amend
 ```
 
+## Make an empty commit
+
+```bash
+git commit --allow-empty -m 'just need to kick the CI'
+```
+
 ## Hooks
 
 <!-- TODO list of hooks --->
@@ -242,15 +248,6 @@ git config --global gpg.format x509
 
 ## Importing
 
-Import another repo as a subtree:
-
-```bash
-git remote add -f remote_name git@example.com:remote_repo.git
-git merge -s ours --no-commit remote_name/main
-git read-tree --prefix=newpath/ -u remote_name/main
-git commit -m "Subtree merged in newpath"
-```
-
 Importing a local SVN repo to git:
 
 ```bash
@@ -264,6 +261,30 @@ rsync -av rsync://w3m.cvs.sourceforge.net/cvsroot/w3m/ w3m
 git cvsimport -p x -v -d /absolute/path/to/w3m w3m
 ```
 
+## Git subtree
+
+Subtrees are kind of like less janky submodules. 
+
+```
+# Add a remote
+git remote add -f subtreename https://github.com/dafyddcrosby/project.git
+# Add the subtree
+git subtree add --prefix path/to/subtree subtreename main
+# Pull a subtree
+git fetch subtreename main
+git subtree pull --prefix path/to/subtree subtreename subtreename main
+# Push a subtree
+git subtree push --prefix=path/to/subtree subtreename main
+```
+
+Another way of importing another repo as a subtree without git subtree command
+
+```bash
+git remote add -f remote_name git@example.com:remote_repo.git
+git merge -s ours --no-commit remote_name/main
+git read-tree --prefix=newpath/ -u remote_name/main
+git commit -m "Subtree merged in newpath"
+```
 ## GitHub
 
 ### Templates and special files
@@ -305,7 +326,7 @@ gpg --armor --detach-sign software-0.1.tar.gz
 
 ### Get Atom feed of file changes
 
-https://github.com/user/repo/commits/master/path/to/file.atom
+https://github.com/user/repo/commits/main/path/to/file.atom
 
 ### GitHub - Enterprise
 

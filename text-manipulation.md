@@ -9,7 +9,6 @@
 awk '{print $2}'
 ```
 
-
 # sed
 
 ## Delete all lines matching a pattern

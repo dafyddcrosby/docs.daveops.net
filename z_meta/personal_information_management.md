@@ -56,5 +56,3 @@ In the creation of a project, does how we categorize and file drive the success 
 ## Resources
 
 - Keeping Found Things Found: The Study and Practice of Personal Information Management by William Jones
-
-
