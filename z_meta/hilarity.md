@@ -1,21 +1,21 @@
 # Hilarity
 
+
 # Painting the Bike Shed
 
-- <https://bugzilla.mozilla.org/show_bug.cgi?id=678775>
+-   <https://bugzilla.mozilla.org/show_bug.cgi?id=678775>
 
 
 # Programming Languages
 
-- [A Brief, Incomplete, and Mostly Wrong History of Programming Languages](http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html)
+-   [A Brief, Incomplete, and Mostly Wrong History of Programming Languages](http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html)
 
 
 # Joke password policy
 
 (I've forgotten where I found this)
 
-> For immediate issue:
-> Password changing guidelines V2.2b
+> For immediate issue: Password changing guidelines V2.2b
 > 
 > Due to new security policies, the following guidelines have been issued to assist in choosing new passwords. Please follow them closely.
 > 
@@ -27,7 +27,7 @@
 > 4.  Containing no characters in the ASCII character set.
 > 5.  No characters typeable on a Sun type 5 keyboard
 > 6.  No subset of one character or more must have appeared on Usenet news, /dev/mem, rand(3), or the King James bible (version 0.1alpha)
-> 7.  Must be quantum theoretically secure, i.e. must automatically change if observed (to protect against net sniffing).
+> 7.  Must be quantum theoretically secure, i.e. must automatically change if observed (to protect against net sniffing).
 > 8.  Binary representation must not contain any of the sequences 00 01 10 11, commonly known about in hacker circles.
 > 9.  Be provably different from all other passwords on the internet.
 > 10. Not be representable in any human language or written script.
@@ -43,4 +43,3 @@
 > 20. Not decryptable by exhaustive application of possible one time pads.
 > 
 > Due to the severity of the restrictions, if the password is entered incorrectly three (3) times at login time, you will be asked if you would like to pick a new one.
-
