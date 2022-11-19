@@ -1,21 +1,25 @@
 # Linux Distributions
+
+
 # Fedora
 
 - [Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/)
 
+
 ## Upgrading to new Fedora versions
 
-```bash
+```shell
 sudo dnf upgrade --refresh
 sudo dnf install dnf-plugin-system-upgrade
 sudo dnf system-upgrade download --refresh --releasever=36
 ```
 
-https://fedoraproject.org/wiki/DNF_system_upgrade
+<https://fedoraproject.org/wiki/DNF_system_upgrade>
+
 
 ## Building live images
 
-```bash
+```shell
 # Install the tooling
 sudo dnf install livecd-tools spin-kickstarts
 # Kickstart files are located in /usr/share/spin-kickstarts
@@ -30,7 +34,8 @@ sudo livecd-creator --verbose \
 sudo qemu-kvm -m 2048 -vga qxl -cdrom filename.iso
 ```
 
-https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#proc_creating-and-using-live-cd
+<https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#proc_creating-and-using-live-cd>
+
 
 # CentOS
 
@@ -38,11 +43,13 @@ https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-instal
 - [kernel sources](https://git.centos.org/sources/kernel/)
 - <https://www.centos.org/download/>
 
+
 ## Building AMIs
 
 - <https://github.com/CentOS/sig-cloud-instance-build/>
 - [Images repository](https://cloud.centos.org/centos)
 - [AWS instructions on importing VMs](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
+
 
 # NixOS
 
@@ -52,6 +59,7 @@ nixos-rebuild to use it
 
 nix-channel handles the repositories
 
+
 ## /etc/nixos/configuration.nix
 
 ```
@@ -59,26 +67,27 @@ nix-channel handles the repositories
 system.autoUpgrade.enable = true;
 ```
 
+
 ## NixOS containers
 
-As of 2019-01-04, "NixOS containers are not perfectly isolated from the host
-system. This means that a user with root access to the container can do things
-that affect the host. So you should not give container root access to untrusted
-users." from <https://nixos.org/nixos/manual/index.html#ch-containers>
+As of 2019-01-04, "NixOS containers are not perfectly isolated from the host system. This means that a user with root access to the container can do things that affect the host. So you should not give container root access to untrusted users." from <https://nixos.org/nixos/manual/index.html#ch-containers>
 
-```bash
+```shell
 # Create a container
 nixos-container create foo
 # Run a container
 nixos-container start foo
 ```
+
+
 # Debian
+
 
 ## Package management
 
 - `/etc/apt/sources.list` - list of APT repositories
 
-```bash
+```shell
 # Install a package
 dpkg -i file.deb
 # Remove a package
@@ -115,31 +124,36 @@ apt-cache depends packagename
 apt-cache showpkg packagename
 ```
 
+
 ## misc
+
 Default run level is 2
 
 
 # SUSE
 
-```bash
+```shell
 # Install a package
 zypper install PACKAGE
 # Search for a package
 zypper search -t PACKAGE
 ```
 
+
 # Arch Linux
 
-```bash
+```shell
 # Installing packages
 pacman -S [package]
 ```
+
 
 # Kali
 
 - [Web site](https://www.kali.org/)
 - [VM images](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/)
 - [Tool list](https://tools.kali.org/tools-listing)
+
 
 ## VirtualBox
 

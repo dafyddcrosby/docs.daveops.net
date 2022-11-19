@@ -86,7 +86,7 @@ Interesting offsets (sections, functions, symbols, etc) are called "flags"
 
 ## Resources
 
--   <https://radare.gitbooks.io/radare2book/content/>
+- <https://radare.gitbooks.io/radare2book/content/>
 
 
 # Binary Visualization

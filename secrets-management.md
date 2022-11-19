@@ -1,9 +1,12 @@
 # Secrets Management
+
+
 # HashiCorp vault
+
 
 ## Client
 
-```bash
+```shell
 # get status of the vault setup
 vault status
 # get list of secrets engines
@@ -18,15 +21,17 @@ vault kv get -field=hello foo/bar
 vault path-help -h
 ```
 
+
 ## Environment Variables
 
-var        | desc
----        | ---
-VAULT_ADDR | vault address
+| var          | desc          |
+|------------ |------------- |
+| `VAULT_ADDR` | vault address |
+
 
 ## Server
 
-```bash
+```shell
 # start a dev server
 vault server -dev
 
@@ -35,13 +40,15 @@ vault server -dev
 vault operator init -recovery-shares=1 -recovery-threshold=1
 ```
 
+
 ## Links
-* https://learn.hashicorp.com/vault/day-one/production-hardening
-* https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef
-* [Docker image](https://hub.docker.com/_/vault)
+
+- <https://learn.hashicorp.com/vault/day-one/production-hardening>
+- <https://www.hashicorp.com/blog/using-hashicorps-vault-with-chef>
+- [Docker image](https://hub.docker.com/_/vault)
 
 
 # passwordstore
 
-[core](https://www.passwordstore.org/)
-[gopass](https://www.gopass.pw/)
+- [core](https://www.passwordstore.org/)
+- [gopass](https://www.gopass.pw/)

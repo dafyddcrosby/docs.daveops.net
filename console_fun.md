@@ -1,106 +1,120 @@
 # Console Fun
 
+
 ## Accounting
 
-* [Ledger](http://ledger-cli.org/)
+- [Ledger](http://ledger-cli.org/)
+
 
 ## Calendar
 
-* [Calcurse](http://calcurse.org/)
+- [Calcurse](http://calcurse.org/)
+
 
 ## Mail
 
-* [Mutt](email.md)
-* [Alpine](http://www.washington.edu/alpine/)
-* Elm
+- [Mutt](email.md)
+- [Alpine](http://www.washington.edu/alpine/)
+- Elm
+
 
 ## Addresses
 
-* abook
+- abook
 
 
 ## Twitter
 
-* turses
-* t
+- turses
+- t
+
 
 ## RSS
 
-* newsbeuter
-* snownews
+- newsbeuter
+- snownews
 
 
 ## Instant Messaging
 
-* finch
+- finch
+
 
 ## IRC
 
-* irssi
+- irssi
+
 
 ## FTP
 
-* lftp
-* ncftp
+- lftp
+- ncftp
+
 
 ## Music
 
-* mplayer
-* cmus
-* abcde
-* metaflac
-* id3v2
-* beet
+- mplayer
+- cmus
+- abcde
+- metaflac
+- id3v2
+- beet
+
 
 ## WWW
 
-* lynx
-* links
-* w3m
-* elinks
-* [http](http.md)
+- lynx
+- links
+- w3m
+- elinks
+- [http](http.md)
 
 
 ## spreadsheet
 
-* sc
+- sc
+
 
 ## typing
 
-* typespeed
+- typespeed
 
 
 ## dictionary
 
-* dict
+- dict
+
 
 ## books
 
-* fbgs
-* booklist
+- fbgs
+- booklist
+
 
 ## NNTP
 
-* tin
+- tin
+
 
 ## Torrents
 
-* rtorrent
-* transmission-cli
+- rtorrent
+- transmission-cli
+
 
 ## Games
 
-* bsd-games
+- bsd-games
+
 
 ## Finger
 
-* finger
-* pinky
+- finger
+- pinky
+
 
 ## Text editing
 
-* [[vim|Vim]]
-* [[emacs|Emacs]]
-* nano
-
-
+- Vim
+- Emacs
+- nano

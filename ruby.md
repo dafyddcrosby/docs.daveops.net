@@ -1,8 +1,9 @@
 # Ruby
 
+
 # CLI
 
-```bash
+```shell
 # Print warnings
 ruby -w ...
 
@@ -12,6 +13,7 @@ ruby --dump insns script.rb
 # See how commands are parsed
 ruby --dump parsetree_with_comment script.rb
 ```
+
 
 # Syntax cheatsheet
 
@@ -72,6 +74,7 @@ u && u.profile && u.profile.thumbnails && u.profiles.thumbnails.large
 u&.profile&.thumbnails&.large
 ```
 
+
 # Threads
 
 ```ruby
@@ -87,70 +90,82 @@ loop do
 end
 ```
 
+
 # Running processes
 
 - [system()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
 - [backticks](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
 - [exec()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-exec) - replace current process by running command
 
+
 # % Notation
 
-Modifier | Meaning
----      | ---
-%i[ ]    | Non-interpolated symbol array (Ruby 2+)
-%I[ ]    | Interpolated symbol array (Ruby 2+)
-%q[ ]    | Non-interpolated String (except for \\ \[ and \])
-%Q[ ]    | Interpolated String (default)
-%r[ ]    | Interpolated Regexp (flags can appear after the closing delimiter)
-%s[ ]    | Non-interpolated Symbol
-%w[ ]    | Non-interpolated Array of words, separated by whitespace
-%W[ ]    | Interpolated Array of words, separated by whitespace
-%x[ ]    | Interpolated shell command
+| Modifier | Meaning                                                            |
+|-------- |------------------------------------------------------------------ |
+| %i[ ]    | Non-interpolated symbol array (Ruby 2+)                            |
+| %I[ ]    | Interpolated symbol array (Ruby 2+)                                |
+| %q[ ]    | Non-interpolated String (except for \\ [ and ])                    |
+| %Q[ ]    | Interpolated String (default)                                      |
+| %r[ ]    | Interpolated Regexp (flags can appear after the closing delimiter) |
+| %s[ ]    | Non-interpolated Symbol                                            |
+| %w[ ]    | Non-interpolated Array of words, separated by whitespace           |
+| %W[ ]    | Interpolated Array of words, separated by whitespace               |
+| %x[ ]    | Interpolated shell command                                         |
+
 
 # Extending and Embedding
- ### C
+
+
+### C
 
 Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
 
 - [Running Ruby in C](https://silverhammermba.github.io/emberb/embed/)
 - [Embedding a Ruby interpreter](https://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Extending_Ruby_Embedding_a_Ruby_Interpreter.html)
 
- ### C++
+
+### C++
 
 [Rice](https://github.com/jasonroelofs/rice)
 
- ### Rust
+
+### Rust
 
 Can use C bindings...
 
- ### Java
+
+### Java
 
 - <https://www.jruby.org>
 
- ### Embedded C
 
-- https://github.com/mruby/mruby/
-- https://github.com/picoruby/picoruby
+### Embedded C
+
+- <https://github.com/mruby/mruby/>
+- <https://github.com/picoruby/picoruby>
+
 
 # Neat Ruby source files to look at
 
-file          | desc
----           | ---
-parse.y       | The lexing/parsing of Ruby source code
-defs/keywords | The reserved keywords of Ruby
+| file          | desc                                   |
+|------------- |-------------------------------------- |
+| parse.y       | The lexing/parsing of Ruby source code |
+| defs/keywords | The reserved keywords of Ruby          |
+
 
 # parsing
 
- ### parsetree (CLI)
 
-```bash
+### parsetree (CLI)
+
+```shell
 ruby --dump parsetree
 ```
 
-This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in
-CRuby source (output not usable in other implementations)
+This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in CRuby source (output not usable in other implementations)
 
- ### Ripper
+
+### Ripper
 
 Built-in since Ruby 1.9
 
@@ -164,17 +179,20 @@ f = File.read('foo.rb')
 pp Ripper.sexp(f)
 ```
 
-http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html
+<http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html>
 
- ### ast and parser gems
 
-- https://github.com/whitequark/ast
-- https://github.com/whitequark/parser
+### ast and parser gems
 
- ### code reconstruction from AST
+- <https://github.com/whitequark/ast>
+- <https://github.com/whitequark/parser>
+
+
+### code reconstruction from AST
 
 - [unparser](https://github.com/mbj/unparser)
 - [sorcerer](https://github.com/jimweirich/sorcerer)
+
 
 # Ractors
 
@@ -189,8 +207,9 @@ ract.take
 ```
 
 - [Ruby Ractor Reference](https://docs.ruby-lang.org/en/master/Ractor.html)
-- [Good intro to Ractors [ScoutAPM]](https://scoutapm.com/blog/ruby-ractor)
+- [Good intro to Ractors [ScoutAPM](https://scoutapm.com/blog/ruby-ractor)]
 - [Koichi's 'guild' slides that Ractor was based off](https://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf)
+
 
 # JSON
 
@@ -214,8 +233,11 @@ ModuleName
 $global
 ```
 
+
 # Minitest
+
 - <http://docs.seattlerb.org/minitest/>
+
 
 # CSV
 
@@ -226,6 +248,8 @@ $global
 require 'csv'
 data = CSV.read('path/to/file', headers: true)
 ```
+
+
 # Write to a file
 
 ```ruby
@@ -233,6 +257,7 @@ fp = File.open(filename, mode)
 fp.write('bloop')
 fp.close
 ```
+
 
 # Read individual chars
 
@@ -243,6 +268,7 @@ fp.each_char do |char|
 end
 fp.close
 ```
+
 
 # heredoc
 
@@ -265,9 +291,10 @@ While the terminator is indented, text is left flush
   EOM
 ```
 
+
 # Gems
 
-```bash
+```shell
 # Build a gem
 gem build name.gemspec
 
@@ -289,13 +316,14 @@ gem owner GEM --remove EMAIL
 
 Environment variables:
 
-var      | description
----      | ---
-GEM_PATH | where gems can be loaded
-GEM_HOME | where gems are installed
+| var        | description              |
+|---------- |------------------------ |
+| `GEM_PATH` | where gems can be loaded |
+| `GEM_HOME` | where gems are installed |
 
 - [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
-- <http://rakeroutes.com/blog/lets-write-a-gem-part-one/> <!-- TODO extract -->
+- <http://rakeroutes.com/blog/lets-write-a-gem-part-one/>
+
 
 # ObjectSpace
 
@@ -307,52 +335,96 @@ ObjectSpace.count_objects
 
 [ObjectSpace docs](https://docs.ruby-lang.org/en/master/ObjectSpace.html)
 
+
 # Versions
 
 This is a list of interesting bits from Ruby versions
 
-- [3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/)
-  - [YJIT](https://github.com/ruby/ruby/pull/4992) (looks to get some excellent speed improvements in)
+
+## [3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/)
+
+- [YJIT](https://github.com/ruby/ruby/pull/4992) (looks to get some excellent speed improvements in)
     - Moreover, what *really* impressed me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
     - [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
     - [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
-  - [New debugger](https://github.com/ruby/debug)
+
+- [New debugger](https://github.com/ruby/debug)
     - [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
-  - [Error highlighting](https://github.com/ruby/error_highlight)
-  - Irb autocompletion with tab, documentation with alt-d
-  - pin operator in pattern matching can take an expression, parentheses optional in one-line matching
-  - values in hash literals can be omitted
-  - Psych.load uses safe_load by default
-  - [multiple assignment evaluation order changes](https://bugs.ruby-lang.org/issues/4443)
-- [3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/)
-- [2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
-- [2.6](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
-- [2.5](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
-- [2.4](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/)
-  - binding.irb
-- [2.3](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
-  - frozen string literal pragma
-- [2.2](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
-  - incremental garbage collector
-- [2.1](https://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/)
-  - First release with [semantic versioning](https://www.ruby-lang.org/en/news/2013/12/21/ruby-version-policy-changes-with-2-1-0/)
-  - generational garbage collector
-- [2.0](https://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/)
-  - copy-on-write friendly memory management
-- [1.9.3](https://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/)
-- [1.9.2](https://www.ruby-lang.org/en/news/2010/08/18/ruby-1-9-2-released/)
-- [1.9.1](https://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/)
-- [1.9.0](https://www.ruby-lang.org/en/news/2007/12/25/ruby-1-9-0-released/)
-  - added the Ruby Virtual Machine
-- [1.8.7](https://www.ruby-lang.org/en/news/2008/05/31/ruby-1-8-7-has-been-released/)
-  - securerandom library
-  - Array handles recursive data properly
-  - Lots of new base class methods
-- [1.8.6](https://www.ruby-lang.org/en/news/2007/03/12/ruby-1-8-6-released/)
-  - First release with NEWS file
+
+- [Error highlighting](https://github.com/ruby/error_highlight)
+- Irb autocompletion with tab, documentation with alt-d
+- pin operator in pattern matching can take an expression, parentheses optional in one-line matching
+- values in hash literals can be omitted
+- Psych.load uses safe<sub>load</sub> by default
+- [multiple assignment evaluation order changes](https://bugs.ruby-lang.org/issues/4443)
 
 
-- [List of end-of-life Ruby versions](https://endoflife.date/ruby)
+# [3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/)
+
+
+# [2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
+
+
+# [2.6](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
+
+
+# [2.5](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
+
+
+# [2.4](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/)
+
+- binding.irb
+
+
+# [2.3](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
+
+- frozen string literal pragma
+
+
+# [2.2](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
+
+- incremental garbage collector
+
+
+# [2.1](https://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/)
+
+- First release with [semantic versioning](https://www.ruby-lang.org/en/news/2013/12/21/ruby-version-policy-changes-with-2-1-0/)
+- generational garbage collector
+
+
+# [2.0](https://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/)
+
+- copy-on-write friendly memory management
+
+
+# [1.9.3](https://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/)
+
+
+# [1.9.2](https://www.ruby-lang.org/en/news/2010/08/18/ruby-1-9-2-released/)
+
+
+# [1.9.1](https://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/)
+
+
+# [1.9.0](https://www.ruby-lang.org/en/news/2007/12/25/ruby-1-9-0-released/)
+
+- added the Ruby Virtual Machine
+
+
+# [1.8.7](https://www.ruby-lang.org/en/news/2008/05/31/ruby-1-8-7-has-been-released/)
+
+- securerandom library
+- Array handles recursive data properly
+- Lots of new base class methods
+
+
+# [1.8.6](https://www.ruby-lang.org/en/news/2007/03/12/ruby-1-8-6-released/)
+
+- First release with NEWS file
+
+
+# [List of end-of-life Ruby versions](https://endoflife.date/ruby)
+
 
 # Rdoc
 
@@ -361,7 +433,7 @@ This is a list of interesting bits from Ruby versions
 - <https://www.mikeperham.com/wp-content/uploads/2010/12/rdoc.html>
 - <https://jan.varwig.org/wp-content/uploads/2006/09/Rdoc%20Cheat%20Sheet.pdf>
 
-```text
+```
 *word*
     displays word in a bold font
 _word_
@@ -392,20 +464,22 @@ end
 
 Links:
 
-```text
+```
 https://github.com/example/example
 mailto:user@example.com
 {RDoc Documentation}[http://rdoc.rubyforge.org]
 {RDoc Markup}[rdoc-ref:RDoc::Markup]
 ```
 
+
 ## Using `ri` on Fedora
 
 To get the system ruby library documentation, you'll need to install `ruby-doc`
 
-```bash
+```shell
 sudo dnf install rubygem-rdoc ruby-doc
 ```
+
 
 ## Get list of undocumented code
 
@@ -413,7 +487,8 @@ sudo dnf install rubygem-rdoc ruby-doc
 rdoc -C1 > documentation_coverage.txt
 ```
 
- ### Links
+
+### Links
 
 - <http://documenting-ruby.org/>
 
@@ -424,7 +499,7 @@ rdoc -C1 > documentation_coverage.txt
 
 Tags:
 
-```erb
+```
 <% Ruby code -- inline with output %>
 <%= Ruby expression -- replace with result %>
 <%# comment -- ignored -- useful in testing %>
@@ -435,21 +510,17 @@ Tags:
 
 Trim mode:
 
-code | desc
----  | ---
-%    | enables Ruby code processing for lines beginning with %
-<>   | omit newline for lines starting with <% and ending in %>
-\>   | omit newline for lines ending in %> <!-- slash for Markdown -->
--    | omit blank lines ending in -%>
+| code | desc                                                     |
+|---- |-------------------------------------------------------- |
+| %    | enables Ruby code processing for lines beginning with %  |
+| <>   | omit newline for lines starting with <% and ending in %> |
+| >    | omit newline for lines ending in %>                      |
+| -    | omit blank lines ending in -%>                           |
 
 
 # Fibers
 
-A fiber is an independent execution context that can be paused and resumed
-programmatically. There's always a currently active fiber, which is created by
-the runtime for each thread. Fibers are managed in the userspace program, using
-cooperative multitasking (the fiber must voluntarily give up control) instead
-of the OS' pre-emptive multitasking.
+A fiber is an independent execution context that can be paused and resumed programmatically. There's always a currently active fiber, which is created by the runtime for each thread. Fibers are managed in the userspace program, using cooperative multitasking (the fiber must voluntarily give up control) instead of the OS' pre-emptive multitasking.
 
 A fiber always starts in a suspended state, it will not run until you switch to it with #transfer.
 
@@ -460,21 +531,21 @@ States: `:running`, `:waiting`, `:runnable`, `:dead`
 - [Fiber::SchedulerInterface](https://docs.ruby-lang.org/en/master/Fiber/SchedulerInterface.html)
 - <https://noteflakes.com/articles/2021-10-20-explaining-ruby-fibers>
 
+
 # Debugging
+
 
 ## -r debug
 
-```bash
+```shell
 ruby -r debug example.rb
 ```
 
-<!---
-~/.irbrc options
--->
 
 ## Irb
 
 As of Ruby 2.4+, you can use `binding.irb` for an experience similar to Pry
+
 
 ## Pry
 
@@ -487,7 +558,7 @@ require 'pry'
 binding.pry
 ```
 
-```text
+```
 # get list of commands
 repl> help
 
@@ -500,11 +571,10 @@ repl> !!!
 
 As with any system performance advice, don't forget to [benchmark](ruby.md)
 
+
 ## Frozen string literals
 
-When 'freeze' is called on a string you are marking that string as immutable.
-The performance benefit is that the object can be re-used without new object
-allocation.
+When 'freeze' is called on a string you are marking that string as immutable. The performance benefit is that the object can be re-used without new object allocation.
 
 ```ruby
 def unfrozen
@@ -524,7 +594,7 @@ p frozen
 p frozen
 ```
 
-```bash
+```shell
 $ ruby freeze.rb
 60
 80
@@ -532,11 +602,10 @@ $ ruby freeze.rb
 100
 ```
 
+
 ### File pragma
 
-In Ruby 2.3+, you can add this pragma to opt-in to all string literals being
-made immutable in the source file. Note - this isn't a guaranteed performance
-win!
+In Ruby 2.3+, you can add this pragma to opt-in to all string literals being made immutable in the source file. Note - this isn't a guaranteed performance win!
 
 To debug, use `--debug=frozen-string-literal`
 
@@ -544,7 +613,9 @@ To debug, use `--debug=frozen-string-literal`
 # frozen_string_literal: true
 ```
 
+
 ## Performance pitfalls
+
 
 ### Inefficient string concatenation
 
@@ -566,11 +637,10 @@ x << 'b'
 
 Worst case, it'll be a `realloc` but won't trigger GC.
 
+
 ### Memory-heavy iterators
 
-When going through a file, it's better to read the file line-by-line like the
-following to avoid GC hits:
-<!--- TODO put inefficient example here-->
+When going through a file, it's better to read the file line-by-line like the following to avoid GC hits:
 
 ```ruby
 file = File.open('foobar', 'r')
@@ -579,13 +649,16 @@ while line = file.gets
 end
 ```
 
+
 ## Use in-place operations whenever possible
 
 The difference between `sort` and `sort!` can be pretty significant, especially when you're dealing with loops and big objects, since you're copying the object with `sort`. If you don't need to re-use the value, use a mutating (`!`) function.
 
+
 ## Use a time format instead of Date#parse
 
 If you know in advance what your time format is, don't use Date#parse, since there's a bunch of overhead just figuring out what kind of time it is.
+
 
 ## Other significant wins
 
@@ -603,19 +676,23 @@ If you know in advance what your time format is, don't use Date#parse, since the
 - Use `Enumerable#detect` over `Enumerable#select.first`
 - Use `String#unpack1` over `String#unpack().first`
 
+
 ## Books / Links
 
 - Ruby Performance Optimization by Alexander Dymo
-- https://github.com/JuanitoFatas/fast-ruby
-- https://github.com/DamirSvrtan/fasterer
+- <https://github.com/JuanitoFatas/fast-ruby>
+- <https://github.com/DamirSvrtan/fasterer>
+
 
 # Benchmarking
 
+
 ## Running the profiler
 
-```bash
+```shell
 ruby -r profile script.rb
 ```
+
 
 ## Benchmarking
 
@@ -631,8 +708,8 @@ tms = Benchmark.measure { for i in 1..n; a = "1"; end }
 tms.to_a
 ```
 
-- https://github.com/evanphx/benchmark-ips
-- https://github.com/davy/benchmark-bigo
+- <https://github.com/evanphx/benchmark-ips>
+- <https://github.com/davy/benchmark-bigo>
 
 
 # Contributing
@@ -640,50 +717,56 @@ tms.to_a
 - [Github source mirror](https://github.com/ruby/ruby)
 - [Bug tracker](https://redmine.ruby-lang.org/)
 
+
 ## Template for feature proposals
 
 From `contributing.rdoc`:
 
-> [Abstract]
->   Summary of your feature
-> [Background]
->   Describe current behavior and why it is problem. Related work, such as
->   solutions in other language helps us to understand the problem.
-> [Proposal]
->   Describe your proposal in details
-> [Details]
->   If it has complicated feature, describe it
-> [Usecase]
->   How would your feature be used? Who will benefit from it?
-> [Discussion]
->   Discuss about this proposal. A list of pros and cons will help start
->   discussion.
-> [Limitation]
->   Limitation of your proposal
-> [Another alternative proposal]
->   If there are alternative proposals, show them.
-> [See also]
->   Links to the other related resources
-
+<p class="verse">
+[Abstract]<br />
+&#xa0;&#xa0;Summary of your feature<br />
+[Background]<br />
+&#xa0;&#xa0;Describe current behavior and why it is problem. Related work, such as<br />
+&#xa0;&#xa0;solutions in other language helps us to understand the problem.<br />
+[Proposal]<br />
+&#xa0;&#xa0;Describe your proposal in details<br />
+[Details]<br />
+&#xa0;&#xa0;If it has complicated feature, describe it<br />
+[Usecase]<br />
+&#xa0;&#xa0;How would your feature be used? Who will benefit from it?<br />
+[Discussion]<br />
+&#xa0;&#xa0;Discuss about this proposal. A list of pros and cons will help start<br />
+&#xa0;&#xa0;discussion.<br />
+[Limitation]<br />
+&#xa0;&#xa0;Limitation of your proposal<br />
+[Another alternative proposal]<br />
+&#xa0;&#xa0;If there are alternative proposals, show them.<br />
+[See also]<br />
+&#xa0;&#xa0;Links to the other related resources<br />
+</p>
 
 
 # RubyVM
 
 <https://docs.ruby-lang.org/en/master/RubyVM.html>
 
+
 # Conferences
 
 - [Ruby Kaigi](https://rubykaigi.org/)
 - [Rails Conf](https://rubyconf.org/)
+
 
 # async
 
 - <https://brunosutic.com/blog/async-ruby>
 - [async gem](https://github.com/socketry/async)
 
+
 # Bundler
 
 - <https://bundler.io>
+
 
 ## Writing a Gemfile
 
@@ -708,26 +791,31 @@ end
 
 <https://bundler.io/v2.2/guides/git.html>
 
+
 ## Install gems to dir
 
-```bash
+```shell
 bundle config set --local path 'vendor'
 
 # Deprecated way:
 bundle install --path dir
 ```
 
+
 # mruby
 
 compile with mrbc
 
+
 # Ruby net/http
 
-```bash
+```shell
 require 'net/http'
 
 uri = URI('http://example.com')
 ```
+
+
 # Net::SMTP
 
 [gem source](https://github.com/ruby/net-smtp)
@@ -751,86 +839,89 @@ smtp.start(
 end
 ```
 
+
 # Binary manipulation with ::Array#pack / ::String#unpack
 
 Integer:
 
-Directive | Meaning
----       | ---
-C         | 8-bit unsigned (unsigned char)
-S         | 16-bit unsigned, native endian (uint16_t)
-L         | 32-bit unsigned, native endian (uint32_t)
-Q         | 64-bit unsigned, native endian (uint64_t)
-c         | 8-bit signed (signed char)
-s         | 16-bit signed, native endian (int16_t)
-l         | 32-bit signed, native endian (int32_t)
-q         | 64-bit signed, native endian (int64_t)
-S_, S!    | unsigned short, native endian
-I, I_, I! | unsigned int, native endian
-L_, L!    | unsigned long, native endian
-n         | 16-bit unsigned, network (big-endian) byte order
-N         | 32-bit unsigned, network (big-endian) byte order
-v         | 16-bit unsigned, VAX (little-endian) byte order
-V         | 32-bit unsigned, VAX (little-endian) byte order
-U         | UTF-8 character
-w         | BER-compressed integer (see Array.pack)
-Q_, Q!    | unsigned long long, native endian (ArgumentError if the platform has no long long type.)
-s_, s!    | signed short, native endian
-i, i_, i! | signed int, native endian
-l_, l!    | signed long, native endian
-q_, q!    | signed long long, native endian (ArgumentError if the platform has no long long type.)
+| Directive  | Meaning                                                                                  |
+|---------- |---------------------------------------------------------------------------------------- |
+| C          | 8-bit unsigned (unsigned char)                                                           |
+| S          | 16-bit unsigned, native endian (uint16<sub>t</sub>)                                      |
+| L          | 32-bit unsigned, native endian (uint32<sub>t</sub>)                                      |
+| Q          | 64-bit unsigned, native endian (uint64<sub>t</sub>)                                      |
+| c          | 8-bit signed (signed char)                                                               |
+| s          | 16-bit signed, native endian (int16<sub>t</sub>)                                         |
+| l          | 32-bit signed, native endian (int32<sub>t</sub>)                                         |
+| q          | 64-bit signed, native endian (int64<sub>t</sub>)                                         |
+| S\_, S!    | unsigned short, native endian                                                            |
+| I, I\_, I! | unsigned int, native endian                                                              |
+| L\_, L!    | unsigned long, native endian                                                             |
+| n          | 16-bit unsigned, network (big-endian) byte order                                         |
+| N          | 32-bit unsigned, network (big-endian) byte order                                         |
+| v          | 16-bit unsigned, VAX (little-endian) byte order                                          |
+| V          | 32-bit unsigned, VAX (little-endian) byte order                                          |
+| U          | UTF-8 character                                                                          |
+| w          | BER-compressed integer (see Array.pack)                                                  |
+| Q\_, Q!    | unsigned long long, native endian (ArgumentError if the platform has no long long type.) |
+| s\_, s!    | signed short, native endian                                                              |
+| i, i\_, i! | signed int, native endian                                                                |
+| l\_, l!    | signed long, native endian                                                               |
+| q\_, q!    | signed long long, native endian (ArgumentError if the platform has no long long type.)   |
 
-
-desc          | suffix
----           | ---
-native endian | !
-native endian | _
-big-endian    | >
-little-endian | <
+| desc          | suffix |
+|------------- |------ |
+| native endian | !      |
+| native endian | \_     |
+| big-endian    | >      |
+| little-endian | <      |
 
 - J, J! j, and j! are available since Ruby 2.3.
-- Q_, Q!, q_, and q! are available since Ruby 2.1.
+- Q\_, Q!, q\_, and q! are available since Ruby 2.1.
 - I!<, i!<, I!>, and i!> are available since Ruby 1.9.3.
 
 Float:
 
-Directive | Meaning
----       | ---
-D, d      | double-precision, native format
-F, f      | single-precision, native format
-E         | double-precision, little-endian byte order
-e         | single-precision, little-endian byte order
-G         | double-precision, network (big-endian) byte order
-g         | single-precision, network (big-endian) byte order
+| Directive | Meaning                                           |
+|--------- |------------------------------------------------- |
+| D, d      | double-precision, native format                   |
+| F, f      | single-precision, native format                   |
+| E         | double-precision, little-endian byte order        |
+| e         | single-precision, little-endian byte order        |
+| G         | double-precision, network (big-endian) byte order |
+| g         | single-precision, network (big-endian) byte order |
 
 String:
 
-Directive | Meaning
----       | ---
-A         | arbitrary binary string (remove trailing nulls and ASCII spaces)
-a         | arbitrary binary string
-Z         | null-terminated string
-B         | bit string (MSB first)
-b         | bit string (LSB first)
-H         | hex string (high nibble first)
-h         | hex string (low nibble first)
-u         | UU-encoded string
-M         | quoted-printable, MIME encoding (:RFC:`2045`)
-m         | base64 encoded string (:RFC:`2045`) (default)  base64 encoded string (:RFC:`4648`) if followed by 0
-P         | pointer to a structure (fixed-length string)
-p         | pointer to a null-terminated string
+| Directive | Meaning                                                                                            |
+|--------- |-------------------------------------------------------------------------------------------------- |
+| A         | arbitrary binary string (remove trailing nulls and ASCII spaces)                                   |
+| a         | arbitrary binary string                                                                            |
+| Z         | null-terminated string                                                                             |
+| B         | bit string (MSB first)                                                                             |
+| b         | bit string (LSB first)                                                                             |
+| H         | hex string (high nibble first)                                                                     |
+| h         | hex string (low nibble first)                                                                      |
+| u         | UU-encoded string                                                                                  |
+| M         | quoted-printable, MIME encoding (:RFC:=2045=)                                                      |
+| m         | base64 encoded string (:RFC:=2045=) (default) base64 encoded string (:RFC:=4648=) if followed by 0 |
+| P         | pointer to a structure (fixed-length string)                                                       |
+| p         | pointer to a null-terminated string                                                                |
 
 Misc:
 
-Directive | Meaning
----       | ---
-@         | skip to the offset given by the length argument
-X         | skip backward one byte
-x         | skip forward one byte
+| Directive | Meaning                                         |
+|--------- |----------------------------------------------- |
+| @         | skip to the offset given by the length argument |
+| X         | skip backward one byte                          |
+| x         | skip forward one byte                           |
+
 
 # Ruby Gems
 
+
 ## Rack
+
 [Live reloading](https://github.com/jaredmdobson/rack-livereload)
 
 ```ruby
@@ -840,11 +931,13 @@ use Rack::LiveReload
 ```
 
 (pair it with [guard-livereload](https://github.com/guard/guard-livereload))
+
+
 ## Sorbet
 
 [Home page](https://sorbet.org)
 
-```bash
+```shell
 # First run
 bundle exec srb init
 # Run typechecker
@@ -857,14 +950,16 @@ Gemfile:
 gem 'sorbet', :group => :development
 ```
 
+
 ## Sinatra
 
 - [Home page](http://www.sinatrarb.com)
 - [Dockerizing Sinatra](https://www.codewithjason.com/dockerize-sinatra-application/)
 
+
 ### Cheatsheet
 
-```bash
+```shell
 # To run a Sinatra server
 ruby app.rb
 ```
@@ -881,6 +976,7 @@ get '/haml' do
 end
 ```
 
+
 ### Using Rack
 
 Classic-style:
@@ -890,14 +986,16 @@ require './app'
 run Sinatra::Application
 ```
 
+
 ### Using haml
 
-* Add haml to Gemfile
-* To add partials use: ``= haml :footer``
+- Add haml to Gemfile
+- To add partials use: `= haml :footer`
+
 
 ### Reloader
-http://sinatrarb.com/contrib/reloader
 
+<http://sinatrarb.com/contrib/reloader>
 
 ```ruby
 # Gemfile
@@ -933,26 +1031,30 @@ class MyApp < Sinatra::Base
 end
 ```
 
+
 ### Mustache handler
 
-- https://github.com/mustache/mustache
-- https://github.com/mustache/mustache-sinatra
-- https://github.com/mustache/vim-mustache-handlebars
+- <https://github.com/mustache/mustache>
+- <https://github.com/mustache/mustache-sinatra>
+- <https://github.com/mustache/vim-mustache-handlebars>
+
 
 ## Capistrano
 
-```bash
+```shell
 # Create new stub
 cap install
 ```
+
 
 ## Camping
 
 - <http://www.ruby-camping.com/>
 
+
 ## Guard
 
-```bash
+```shell
 # Create bin/guard
 bundle binstub guard
 
@@ -967,12 +1069,14 @@ guard list
 
 Integrations:
 
-gem | initializing
---- | ---
-[guard-minitest](https://github.com/guard/guard-minitest) | `guard init minitest`
-[guard-rubocop](https://github.com/rubocop/guard-rubocop) | `guard init rubocop`
+| gem                                                       | initializing          |
+|--------------------------------------------------------- |--------------------- |
+| [guard-minitest](https://github.com/guard/guard-minitest) | `guard init minitest` |
+| [guard-rubocop](https://github.com/rubocop/guard-rubocop) | `guard init rubocop`  |
+
 
 ## Rubocop
+
 
 ### NodePattern
 
@@ -980,22 +1084,22 @@ Note: table uses int node, but can be for any type of node.
 
 Variable length patterns can only be used in a sequence once
 
-syntax        | desc
----           | ---
-int           | match `int` exactly
-(int 1)       | match a node with more precision (eg, int node that represents 1)
-_             | match any single node
-...           | several subsequent nodes
-int\*         | Match zero or more targets of int type <!--- escape slash is for Markdown --->
-int?          | Match zero or one of the int type
-int+          | Match at least one of the int type
-\<int float\> | Match integer and float in either order <!--- escape slash is for Markdown --->
-{int float} | "OR" union function (ie either int or float)
-(int [odd? positive?]) | "AND", useful when using predicate methods against type
-(int $\_) | Capture the node/element (variable length captured as arrays) <!--- escape slash is for Markdown --->
-(^array int+) | TODO Check the parent of a node
-(\`int int\*) | Check for descendents of a node, here an array of ints <!--- escape slash is for Markdown --->
-(int ALLOWED_INTS) | Use a constant (here ALLOWED_INTS) in a pattern
+| syntax                   | desc                                                              |
+|------------------------ |----------------------------------------------------------------- |
+| `int`                    | match `int` exactly                                               |
+| `(int 1)`                | match a node with more precision (eg, int node that represents 1) |
+| `_`                      | match any single node                                             |
+| ...                      | several subsequent nodes                                          |
+| `int*`                   | Match zero or more targets of int type                            |
+| `int?`                   | Match zero or one of the int type                                 |
+| `int+`                   | Match at least one of the int type                                |
+| `<int float>`            | Match integer and float in either order                           |
+| `{int float}`            | "OR" union function (ie either int or float)                      |
+| `(int [odd? positive?])` | "AND", useful when using predicate methods against type           |
+| `(int $_)`               | Capture the node/element (variable length captured as arrays)     |
+| `(^array int+)`          | TODO Check the parent of a node                                   |
+| ``(`int int*)``          | Check for descendents of a node, here an array of ints            |
+| `(int ALLOWED_INTS)`     | Use a constant (here ALLOWED<sub>INTS</sub>) in a pattern         |
 
 Predicate methods can be used as well:
 
@@ -1024,7 +1128,7 @@ node = source.ast
 RuboCop::NodePattern.new('(int ...)').match(node)
 ```
 
-```bash
+```shell
 # Generating AST on the command line
 ruby-parse -e '2 + 2'
 ```
@@ -1032,9 +1136,10 @@ ruby-parse -e '2 + 2'
 - [RuboCop development guide](https://docs.rubocop.org/rubocop/development.html)
 - [NodePattern doc](https://github.com/rubocop/rubocop-ast/blob/master/docs/modules/ROOT/pages/node_pattern.adoc)
 
+
 ## adsf
 
-```bash
+```shell
 gem install 'adsf'
 gem install 'adsf-live' # Live reload functionality
 adsf --live-reload
@@ -1042,11 +1147,13 @@ adsf --live-reload
 
 - <https://github.com/ddfreyne/adsf/>
 
+
 ## Ruby on Rails
+
 
 ### Installing and setting up Rails 4
 
-```bash
+```shell
 gem install rails
 rails new app_name
 cd app_name
@@ -1058,17 +1165,20 @@ rm public/index.html
 $EDITOR config/routes.rb
 ```
 
+
 ### Scaffolding
 
-```bash
+```shell
 rails generate scaffold Post user:references title:string{50} content:text
 ```
 
+
 ### Add indexes to migration
 
-```bash
+```shell
 rails g resource user name:index email:uniq
 ```
+
 
 ### Using RSpec with Rails
 
@@ -1082,9 +1192,10 @@ gem 'rspec-rails'
 gem 'guard-rspec'
 ```
 
-```bash
+```shell
 rails generate rspec:install
 ```
+
 
 ### ActiveRecord
 
@@ -1097,13 +1208,14 @@ Supported database column types:
 - decimal
 - float
 - integer
-- primary_key
+- primary<sub>key</sub>
 - string
 - text
 - time
 - timestamp
 
 Use "AddColumnToTable" style migration names to have the work done for you automatically in the migration
+
 
 ### Validating Active Records
 
@@ -1113,19 +1225,20 @@ class Post < ActiveRecord::Base
 
   validates :name,  :presence => true
   validates :title, :presence => true,
-       				 :length => { :minimum => 5 }
+                     :length => { :minimum => 5 }
 end
 ```
 
-#### Ensure uniqueness at the db level
+-   Ensure uniqueness at the db level
 
-1. ``rails generate migration add_index_to_users_email``
-2. add to migration file under def change: ``add_index :users, :email, unique: true``
-3. ``bundle exec rake db:migrate``
+    1. `rails generate migration add_index_to_users_email`
+    2. add to migration file under def change: `add_index :users, :email, unique: true`
+    3. `bundle exec rake db:migrate`
+
 
 ### Database
 
-```bash
+```shell
 # Migrate to new model
 rake db:migrate
 
@@ -1133,9 +1246,10 @@ rake db:migrate
 rake db:rollback
 ```
 
+
 ### Automated testing with guard and spork
 
-* Add to Gemfile:
+- Add to Gemfile:
 
 ```ruby
 group :test, :development do
@@ -1149,16 +1263,16 @@ group :test do
 end
 ```
 
-* run the following
+- run the following
 
-```bash
+```shell
 bundle exec guard init rspec
 bundle exec spork --bootstrap
 bundle exec guard init spork
 ```
 
-* Add ``:cli => '--drb``' to guard 'rspec'
-* ``bundle exec guard``
+- Add `:cli => '--drb`' to guard 'rspec'
+- `bundle exec guard`
 
 
 ### Creating tables
@@ -1172,15 +1286,17 @@ create_table "contacts" do |t|
 end
 ```
 
+
 ### Reset test database
 
-```bash
+```shell
 bundle exec rake db:test:prepare
 ```
 
+
 ### Rake default niceties
 
-```bash
+```shell
 # Find TODO, FIXME, and OPTIMIZE comment tags
 rake notes
 
@@ -1188,20 +1304,23 @@ rake notes
 rake about
 ```
 
+
 ### Simple wins
 
-- Use ``find_each`` instead of ``each`` when searching through large sets of iterables
-- Use ``content_tag`` to avoid XSS hacks
+- Use `find_each` instead of `each` when searching through large sets of iterables
+- Use `content_tag` to avoid XSS hacks
+
 
 ### Links
 
-* <https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/>
+- <https://robertheaton.com/2013/07/22/how-to-hack-a-rails-app-using-its-secret-token/>
+
 
 ### Omniauth
 
 These notes are assuming you're also allowing regular email/password logins. It's greatly simplified if you don't...
 
-```bash
+```shell
 rails generate model Authorization provider:string uid:string user_id:integer
 ```
 
@@ -1217,11 +1336,11 @@ gem 'omniauth-linkedin'
 `config/initializers/omniauth.rb`:
 
 ```ruby
-	Rails.application.config.middleware.use OmniAuth::Builder do
-	  provider :twitter, 'CONSUMER_KEY', 'CONSUMER_SECRET'
-	  provider :facebook, 'APP_ID', 'APP_SECRET'
-	  provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
-	end
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :twitter, 'CONSUMER_KEY', 'CONSUMER_SECRET'
+  provider :facebook, 'APP_ID', 'APP_SECRET'
+  provider :linked_in, 'CONSUMER_KEY', 'CONSUMER_SECRET'
+end
 ```
 
 `app/models/user.rb`:
@@ -1269,9 +1388,9 @@ def self.find_or_create(auth_hash)
           # If it's a new user, we want to give them a solid password
           random_string = SecureRandom.base64(30)
           user = User.create :name => auth_hash["info"]["name"],
-       					   :email => auth_hash["info"]["email"],
-       					   :password => random_string,
-       					   :password_confirmation => random_string
+                           :email => auth_hash["info"]["email"],
+                           :password => random_string,
+                           :password_confirmation => random_string
         end
         auth = create :user_id => user, :provider => auth_hash["provider"], :uid => auth_hash["uid"]
   end
@@ -1285,6 +1404,7 @@ end
 match '/auth/:provider/callback', to: 'sessions#create'
 match '/auth/failure', to: 'sessions#failure'
 ```
+
 
 ### Gravatar
 
@@ -1300,14 +1420,16 @@ def gravatar_for(user, options = { size: 50 })
 end
 ```
 
+
 # Ruby-Next
 
 - <https://github.com/ruby-next/ruby-next>
 - [Writing Go in Ruby](https://evilmartians.com/chronicles/a-no-go-fantasy-writing-go-in-ruby-with-ruby-next)
 
+
 # RVM
 
-```bash
+```shell
 curl -L https://get.rvm.io | bash -s stable --ruby
 
 # Installing openssl and readline for dependencies
@@ -1327,4 +1449,3 @@ gem env gemdir
 ```
 
 For automatic gemset initialization, add gems to `~/.rvm/gemsets/global.gems`
-

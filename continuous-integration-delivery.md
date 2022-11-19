@@ -1,6 +1,9 @@
 # Continuous Integration and Delivery
+
+
 # Jenkins
-* [Docker image](https://hub.docker.com/r/jenkins/jenkins)
+
+- [Docker image](https://hub.docker.com/r/jenkins/jenkins)
 
 
 # spinnaker
@@ -8,8 +11,8 @@
 <https://www.spinnaker.io/>
 
 
-
 # GoCD
+
 
 ## Enable SSL debugging
 
@@ -20,5 +23,7 @@ GO_SERVER_SYSTEM_PROPERTIES="$GO_SERVER_SYSTEM_PROPERTIES -Djavax.net.debug=ssl:
 # Debug logs go to go-server.log
 ```
 
+
 # Travis
-* <http://travis-ci.org>
+
+- <http://travis-ci.org>

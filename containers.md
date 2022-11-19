@@ -1,15 +1,19 @@
 # Containers
+
+
 # Docker
+
 
 ## Installing on Mac
 
-```bash
+```shell
 brew cask install docker
 ```
 
+
 ## CLI
 
-```bash
+```shell
 # list all containers
 docker ps -a
 # remove a container
@@ -24,9 +28,10 @@ docker create TAGNAME
 docker run --name CONTAINERNAME -it
 ```
 
+
 ## Docker compose
 
-```bash
+```shell
 docker-compose up
 ```
 
@@ -44,60 +49,67 @@ services:
     image: memcached
 ```
 
-* <https://docs.docker.com/compose/>
-* <https://docs.docker.com/compose/compose-file/>
+- <https://docs.docker.com/compose/>
+- <https://docs.docker.com/compose/compose-file/>
+
 
 ## Docker stack
 
 <https://docs.docker.com/engine/reference/commandline/stack/>
 
+
 ## Dockerfile syntax
 
 Must use ", not '
 
-```dockerfile
+```
 FROM image_name:image_tag
 LABEL maintainer="person <person@example.org>"
 RUN install_things
 CMD ["executable", "--to", "--run"]
 ```
 
+
 ## Logs
 
-```bash
+```shell
 docker logs <CONTAINER>
 ```
 
 See also `/var/lib/docker/containers/<ID>/<ID>-json.log`
 
+
 ## Docker registry
 
-* [Instructions](https://github.com/docker/docker.github.io/blob/master/registry/deploying.md)
-* [Docker image](https://hub.docker.com/_/registry)
+- [Instructions](https://github.com/docker/docker.github.io/blob/master/registry/deploying.md)
+- [Docker image](https://hub.docker.com/_/registry)
 
-```bash
+```shell
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 ```
 
 
 # podman
 
+
 ## Add varlink interface
 
-https://podman.io/blogs/2019/01/16/podman-varlink.html
+<https://podman.io/blogs/2019/01/16/podman-varlink.html>
+
 
 ## Change to cgroups v1
 
-```bash
+```shell
 sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
 ```
 
 
 # Habitat
 
+
 ## Install on macOS
 
-```bash
+```shell
 # Install hab
 brew tap habitat-sh/habitat
 brew install hab
@@ -106,6 +118,7 @@ brew install hab
 hab cli setup
 ```
 
+
 ## Links
 
-* [CLI Reference](https://www.habitat.sh/docs/habitat-cli/)
+- [CLI Reference](https://www.habitat.sh/docs/habitat-cli/)

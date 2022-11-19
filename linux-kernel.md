@@ -1,30 +1,33 @@
 # Linux kernel
 
+
 # Remove older kernels
 
-```bash
+```shell
 # (RHEL) Install yum-utils and run:
 package-cleanup --oldkernels --count=1
 ```
 
+
 # Kernel Analysis
+
 - [Linux Kernel Analysis](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
+
 
 # Hardware
 
-```bash
+```shell
 # Get cpu info
 lscpu
 cat /proc/cpuinfo
 ```
 
 
-
 # kexec
 
 Using systemctl
 
-```bash
+```shell
 systemctl kexec
 ```
 
@@ -44,13 +47,14 @@ The cache for SELinux messages is known as the Access Vector Cache (AVC)
 
 SELinux messages can be found in - /var/log/messages or /var/log/audit/audit.log
 
-```bash
+```shell
 ls -Z
 id -Z
 ps -Z
 netstat -Z
 # and even more!
 ```
+
 
 ## Labels
 
@@ -60,9 +64,10 @@ user:role:type (and optionally :level)
 
 Generally speaking, you're concerned with type enforcement
 
+
 ## Files
 
-```bash
+```shell
 # Change the context of a file
 chcon ...
 # Copy the security context from another file
@@ -81,11 +86,12 @@ ls -Za
 semanage fcontext -l
 ```
 
+
 ## Booleans
 
 Booleans allow you to enable/disable privileges for when you hit edge-cases or need non-default configuration
 
-```bash
+```shell
 # Show available SELinux booleans
 getsebool -a
 # For ~CentOS 6:
@@ -94,18 +100,20 @@ semanage boolean -l
 setsebool [boolean] [0|1]
 ```
 
-/etc/selinux/targeted/modules/active/booleans.local 
+/etc/selinux/targeted/modules/active/booleans.local
+
 
 ## Users
 
-```bash
+```shell
 # List users
 semanage user -l
 ```
 
+
 ## Modes
 
-```bash
+```shell
 # get the mode
 sestatus
 # change the mode (does not persist through reboot)
@@ -121,7 +129,7 @@ The modes used by SELinux:
 
 ## semodule
 
-```bash
+```shell
 # Get available SE modules
 semodule -l
 
@@ -129,21 +137,23 @@ semodule -l
 semodule -i MOD_PKG
 ```
 
+
 ## audit2allow
 
 RH RPM: policycoreutils-python
 
-```bash
+```shell
 # Figure out why something is failing
 
 grep httpd_t audit.log | audit2allow -M newmod
 ```
 
+
 ## setools-console
 
 RH RPM: setools-console
 
-```bash
+```shell
 # List contexts
 seinfo -t
 
@@ -154,17 +164,19 @@ sesearch ...
 findcon /etc/selinux/targeted/contexts/files/file_contexts -t shadow_t
 ```
 
+
 ## Policies
 
-policy name | description
----         | ---
-targeted    | type enforcement rules, some RBAC
-strict      | Full protection. TE, RBAC, much more aggressive
-mls         | Multi-Level Security (more labels, more rules)
+| policy name | description                                     |
+|----------- |----------------------------------------------- |
+| targeted    | type enforcement rules, some RBAC               |
+| strict      | Full protection. TE, RBAC, much more aggressive |
+| mls         | Multi-Level Security (more labels, more rules)  |
+
 
 ## Networking
 
-```bash
+```shell
 # See ports and services
 semanage port -l
 # Add a port rule
@@ -178,37 +190,35 @@ matchpathcon
 ```
 
 
-### TODO
-what context is needed for the PID to access the file
-
-
 # Transparent Huge Pages
 
 Files in CentOS:
 
-```bash
+```shell
 cat /sys/kernel/mm/transparent_hugepage/enabled
 cat /sys/kernel/mm/transparent_hugepage/defrag
 ```
 
 To disable:
 
-```bash
+```shell
 echo 'never' > /sys/kernel/mm/transparent_hugepage/enabled
 echo 'never' > /sys/kernel/mm/transparent_hugepage/defrag
 ```
 
-* [THP kernel doc](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)
-* [hugetlbpage kernel doc](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt)
+- [THP kernel doc](https://www.kernel.org/doc/Documentation/vm/transhuge.txt)
+- [hugetlbpage kernel doc](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt)
 
 
 # filesystems
 
+
 ## btrfs
+
 
 ### snapshots
 
-```bash
+```shell
 # Create a read-only snapshot
 btrfs subvolume snapshot -r <mount> <dest>
 
@@ -219,13 +229,13 @@ btrfs send <snap> | btrfs receive <device>
 
 ## ext filesystem
 
-* ext2 - no journaling, but good for small solid-state drives
-* ext3 - journaling - can be upgraded from ext2 with no data loss
-* ext4 - support for large disks/file sizes
+- ext2 - no journaling, but good for small solid-state drives
+- ext3 - journaling - can be upgraded from ext2 with no data loss
+- ext4 - support for large disks/file sizes
 
 Superblock at the start, has info on filesystem. Groupblock holds information on subsections of the space, as well as superblock backups. Inode tables hold the file metadata.
 
-```bash
+```shell
 # create label for the filesystem
 e2label /dev/sda2 mylabel
 # see label for filesystem
@@ -255,7 +265,7 @@ Default filesystem of CentOS 7
 
 Can't be shrunk
 
-```bash
+```shell
 xfs_admin -L mylabel /dev/sda2
 ```
 
@@ -264,36 +274,38 @@ xfs_admin -L mylabel /dev/sda2
 
 [Architecture](https://bcachefs.org/Architecture/)
 
+
 # kernel modules
 
 - [Linux Loadable Kernel Module](http://www.tldp.org/HOWTO/Module-HOWTO/)
 - [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.6/html/)
 - DKMS - Dynamic Kernel Module System
 
+
 ## commands
 
-desc                           | command
----                            | ---
-list modules                   | `lsmod`
-get info about a module        | `modinfo MODULE`
-load a module                  | `modprobe MODULE`
-load kernel module by filename | `insmod FILE`
-unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch)
+| desc                           | command                                             |
+|------------------------------ |--------------------------------------------------- |
+| list modules                   | `lsmod`                                             |
+| get info about a module        | `modinfo MODULE`                                    |
+| load a module                  | `modprobe MODULE`                                   |
+| load kernel module by filename | `insmod FILE`                                       |
+| unload a module                | `modprobe -r MODULE` (or `rmmod MODULE` in a pinch) |
+
 
 # UDP
 
 UDP fingerprinting:
 
-> In addition to his post, I heard a very good explanation of why they _intentionally_ coded it this way. The simplest way to create a packet is to simply set aside a section of memory for the packet and start filling in the necessary fields. For something like a UDP packet, there are some spaces in the packet that just aren't normally used. So if the field is left alne, is simply contains some data from whatever was stored in that section of memory previously. So instead of leaving those sections alone, they intentionally zeroed out the unused fields (such as the IP identification field) so that when the packet gets sent out, it doesn't give out any information that may have been laying around in memory.
-> — from <http://www.antionline.com/showthread.php?221887.html>
+> In addition to his post, I heard a very good explanation of why they *intentionally* coded it this way. The simplest way to create a packet is to simply set aside a section of memory for the packet and start filling in the necessary fields. For something like a UDP packet, there are some spaces in the packet that just aren't normally used. So if the field is left alne, is simply contains some data from whatever was stored in that section of memory previously. So instead of leaving those sections alone, they intentionally zeroed out the unused fields (such as the IP identification field) so that when the packet gets sent out, it doesn't give out any information that may have been laying around in memory. --- from <http://www.antionline.com/showthread.php?221887.html>
+
 
 # Building Kernels
 
-```bash
+```shell
 dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison flex kernel-devel glibc-static grubby
 ```
 
-TODO - add bison flex to <https://fedoraproject.org/wiki/Building_a_custom_kernel>
 
 ### Building a user-mode linux kernel
 
@@ -312,26 +324,28 @@ CONFIG_64BIT=y
 CONFIG_X86_64=y
 ```
 
-```bash
+```shell
 # build the config
 make ARCH=um allnoconfig KCONFIG_ALLCONFIG=mini.config
 # make the kernel
 make ARCH=um
 ```
 
-If missing gnu/stubs-32.h, means you're building a 32-bit kernel and need
-glibc-devel.i686 (or to specify CONFIG_X86_64=y)
+If missing gnu/stubs-32.h, means you're building a 32-bit kernel and need glibc-devel.i686 (or to specify `CONFIG_X86_64=y`)
 
 Running:
-```bash
+
+```shell
 ./linux root=/dev/root init=/bin/bash
 ```
+
 
 # cgroups
 
 - <https://www.kernel.org/doc/Documentation/cgroup-v1/>
 - <https://www.kernel.org/doc/Documentation/cgroup-v2.txt>
 - <https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/>
+
 
 # drgn
 

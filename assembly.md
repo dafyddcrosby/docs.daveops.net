@@ -1,7 +1,9 @@
 # Assembly
+
+
 ## Intel Syntax
 
-* Assembler detects type of symbols (no need to add sigil)
+- Assembler detects type of symbols (no need to add sigil)
 
 ```
 mnemonic  destination, source
@@ -9,10 +11,11 @@ mnemonic  destination, source
 
 Arithmetic expressions in square brackets
 
+
 ## AT&T Syntax
 
-* Register names have a % prefix
-* Literal values have a $ prefix
+- Register names have a % prefix
+- Literal values have a $ prefix
 
 ```
 mnemonic  source, destination
@@ -20,28 +23,30 @@ mnemonic  source, destination
 
 The mnemonic has a suffix indicating the size
 
-suffix | desc
----    | ---
-q      | qword
-l      | lword
-w      | word
-b      | byte
+| suffix | desc  |
+|------ |----- |
+| q      | qword |
+| l      | lword |
+| w      | word  |
+| b      | byte  |
 
 
 # VASM assembler
 
-http://sun.hasenbraten.de/vasm/
+<http://sun.hasenbraten.de/vasm/>
+
+
 ## Building
 
-```bash
+```shell
 # Build assembler for 68000 with motorola syntax
 make CPU=m68k SYNTAX=mot
 ```
 
 
-
 # nasm
-```bash
+
+```shell
 # Valid output formats
 nasm -hf
 # don't preprocess (assemble only)
@@ -58,7 +63,10 @@ nasm -f macho64 example.asm
 ; Set to 32-bit
 BITS 32
 ```
+
+
 # shellcode
+
 
 ## Dealing with null bytes
 

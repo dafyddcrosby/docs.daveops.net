@@ -1,40 +1,48 @@
 # Configuration Management
+
+
 # Ansible
+
 
 ## Run a playbook
 
-```bash
+```shell
 ansible-playbook -i ./inventory.yml playbook.yml
 ```
 
 
 # Chef
 
+
 ## Handle EC2 instance
 
 ec2 plugin installed with
 
-```bash
+```shell
 knife ec2 server create "role[ubuntu]" -I ami_id -f instance_type -S knife -i ~/.ssh/knife.pem --ssh-user ubuntu --region eu-west-1 -Z eu-west-1a
 ```
+
 
 ## Install chef on RHEL 6 using gems
 
 Use the omnibus installer if you can!
 
-```bash
+```shell
 sudo rpm -Uvh <http://rbel.frameos.org/rbel6>
 yum install ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow gcc gcc-c++ automake autoconf make curl dmidecode
 gem install chef --no-ri --no-rdoc
 ```
 
+
 ## Using chef-solo
+
 
 ### /etc/chef/solo.rb
 
 ```ruby
 json_attribs "/etc/chef/node.json"
 ```
+
 
 ### /etc/chef/node.json
 
@@ -48,18 +56,21 @@ json_attribs "/etc/chef/node.json"
 }
 ```
 
+
 ## knife search
 
-```bash
+```shell
 knife search -a ATTR
 ```
 
+
 ## common node attributes
 
-description         | attribute
----                 | ---
-version of chef     | chef_packages.chef.version
-nodes's environment | chef.environment
+| description         | attribute                    |
+|------------------- |---------------------------- |
+| version of chef     | `chef_packages.chef.version` |
+| nodes's environment | chef.environment             |
+
 
 ## Compile time notes
 
@@ -67,7 +78,9 @@ Use `lazy` so that the code block isn't evaluated until execution phase.
 
 
 # Inspec
-https://www.inspec.io/
+
+<https://www.inspec.io/>
+
 
 # Chef shell
 
@@ -83,6 +96,7 @@ help resource
 pp node.debug_value('system', 'repo')
 ```
 
+
 ## Get the resources used
 
 ```ruby
@@ -94,15 +108,15 @@ resources
 
 # ChefSpec
 
-* [Chef docs](https://docs.chef.io/workstation/chefspec/)
-* [Github repo](https://github.com/chefspec/chefspec)
+- [Chef docs](https://docs.chef.io/workstation/chefspec/)
+- [Github repo](https://github.com/chefspec/chefspec)
 
 
 # Foodcritic
 
 Has been replaced by cookstyle
 
-```bash
+```shell
 # Run rules that match the tags
 foodcritic -t annoyances,deprecated,correctness
 ```
@@ -110,67 +124,78 @@ foodcritic -t annoyances,deprecated,correctness
 
 # Chef Handlers
 
+
 ## Handler types
+
 
 ### exception
 
 Loaded when run fails
 
-exception handler runs when the `failed?` property for the run_status object returns true.
+exception handler runs when the `failed?` property for the run<sub>status</sub> object returns true.
+
 
 ### report
 
 Reports details of run success
 
-report handler runs when the `success?` property for the run_status object returns true.
+report handler runs when the `success?` property for the run<sub>status</sub> object returns true.
+
 
 ### start
 
 Starts at chef client run
+
 
 ## Resources
 
 <https://docs.chef.io/handlers.html>
 
 
-
 # Knife
+
 
 ## Bootstrap a node
 
-```bash
+```shell
 knife bootstrap FQDN_OR_IP -E ENVIRONMENT -N NAME -x USER -r RUN_LIST [ --sudo | -G GATEWAY ]
 ```
 
+
 ## Return chef versions
 
-```bash
+```shell
 knife search node "name:*" -a chef_packages.chef.version
 ```
 
+
 ## Remove recipe from all nodes
 
-```bash
+```shell
 knife exec -E 'nodes.transform("chef_environment:dev") {|n| puts n.run_list.remove("recipe[chef-client::upgrade]"); n.save }'
 ```
 
+
 ## Find non 64-bit nodes
 
-```bash
+```shell
 knife search node "(NOT kernel_machine:x86_64)"
 ```
 
+
 ## Generate new keypair for client
 
-```bash
+```shell
 knife client reregister CLIENT
 ```
 
 
 # provisioning
+
+
 ## CLI
 
-```bash
+```shell
 chef provision --no-policy
 # debug mode
 chef provision --no-policy -D
@@ -178,12 +203,15 @@ chef provision --no-policy -D
 
 
 # Berkshelf
+
+
 ## CLI
 
-```bash
+```shell
 # Install cookbooks
 berks install
 ```
+
 
 ## Berksfile
 
@@ -203,6 +231,7 @@ cookbook "rightscale", git: "https://github.com/rightscale/rightscale_cookbooks.
 
 # Test Kitchen
 
+
 ## Setting RAM on Vagrant
 
 ```yaml
@@ -211,6 +240,7 @@ driver:
   customize:
     memory: 2048
 ```
+
 
 ## Setting environment in chef-zero
 
@@ -224,6 +254,7 @@ provisioner:
   client_rb:
     environment: production
 ```
+
 
 ## kitchen-dokken
 
@@ -255,6 +286,7 @@ suites:
     - recipe[hello_dokken::default]
 ```
 
+
 ## Using chef-vault
 
 ```yaml
@@ -269,17 +301,19 @@ suites:
     - recipe[chef-vault]
 ```
 
+
 ## Links
 
-* [Test Kitchen website](https://kitchen.ci)
-* <https://github.com/someara/kitchen-dokken>
-
+- [Test Kitchen website](https://kitchen.ci)
+- <https://github.com/someara/kitchen-dokken>
 
 
 # Server
+
+
 ## Users
 
-```bash
+```shell
 # Create a user
 chef-server-ctl user-create USER_NAME FIRST_NAME [MIDDLE_NAME] LAST_NAME EMAIL PASSWORD (options)
 # Edit a user
@@ -288,9 +322,10 @@ chef-server-ctl user-edit USER_NAME
 chef-server-ctl user-delete USER_NAME
 ```
 
+
 ## Organizations
 
-```bash
+```shell
 # List orgs
 chef-server-ctl org-list
 # Create an org
@@ -299,25 +334,29 @@ chef-server-ctl org-create ORG_NAME ORG_FULL_NAME
 chef-server-ctl org-user-add ORG_NAME USER_NAME [--admin]
 ```
 
+
 ## Groups
 
 [knife acl plugin](https://github.com/chef/knife-acl)
 
-```bash
+```shell
 knife group create GROUP
 knife group add MEMBERTYPE MEMBER GROUP
 ```
 
+
 ## Links
 
-* [chef-server-ctl](https://docs.chef.io/ctl_chef_server.html)
-* [Air-gapped servers](https://docs.chef.io/install_chef_air_gap.html)
+- [chef-server-ctl](https://docs.chef.io/ctl_chef_server.html)
+- [Air-gapped servers](https://docs.chef.io/install_chef_air_gap.html)
 
 
 # Chef-Vault
+
+
 ## Knife
 
-```bash
+```shell
 # Create a vault
 knife vault create passwords root '{"username": "root", "password": "mypassword"}' -S "role:webserver"
 
@@ -334,7 +373,9 @@ knife vault create certs example.com --file example.crt
 knife data bag show VAULT ITEM_keys -Fjson | jq .search_query
 ```
 
+
 ## Code
+
 
 ### chef-vault cookbook
 
@@ -342,6 +383,7 @@ knife data bag show VAULT ITEM_keys -Fjson | jq .search_query
 include_recipe "chef-vault"
 vault = chef_vault_item(DATABAG, ITEM)
 ```
+
 
 ### chef-vault gem
 
@@ -356,18 +398,23 @@ item = ChefVault::Item.load("passwords", "root")
 item["password"]
 ```
 
+
 ## Links
 
-* [chef vault gem](https://github.com/chef/chef-vault)
-* [chef vault cookbook](https://github.com/chef-cookbooks/chef-vault)
+- [chef vault gem](https://github.com/chef/chef-vault)
 
-* <http://www.pburkholder.com/blog/2015/12/04/why-chef-vault-and-autoscaling-dont-mix/>
-* <http://engineering.ooyala.com/blog/keeping-secrets-chef>
+- [chef vault cookbook](https://github.com/chef-cookbooks/chef-vault)
+
+- <http://www.pburkholder.com/blog/2015/12/04/why-chef-vault-and-autoscaling-dont-mix/>
+
+- <http://engineering.ooyala.com/blog/keeping-secrets-chef>
+
+
 # Concepts - Idempotency
 
 Something that should always have the same result, no matter how many times it runs.
 
-```bash
+```shell
 # /tmp/thing should exist no matter how many times you run this:
 mkdir -p /tmp/thing
 ```

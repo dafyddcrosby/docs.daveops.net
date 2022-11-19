@@ -30,14 +30,14 @@ update-grub
 
 ## GRUB 1
 
--   `/boot/grub/grub.conf`
+- `/boot/grub/grub.conf`
 
 
 # LILO
 
 The Linux Loader, which is reinstalled with each config change (by running `lilo`)
 
--   `/etc/lilo.conf`
+- `/etc/lilo.conf`
 
 | arg          | desc                        |
 |------------ |--------------------------- |

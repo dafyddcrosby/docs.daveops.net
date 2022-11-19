@@ -38,5 +38,5 @@ s/search/replace/
 
 ## Links
 
--   [Emoticons list](https://www.hipchat.com/emoticons)
--   <https://community.atlassian.com/t5/Hipchat-articles/A-Simple-Hack-Sorting-rooms-and-people/ba-p/650964>
+- [Emoticons list](https://www.hipchat.com/emoticons)
+- <https://community.atlassian.com/t5/Hipchat-articles/A-Simple-Hack-Sorting-rooms-and-people/ba-p/650964>

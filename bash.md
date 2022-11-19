@@ -2,115 +2,125 @@
 
 You should try to stay in bash as long as possible without dropping into a subshell (ie running another program).
 
-- https://github.com/dylanaraps/pure-bash-bible
-- https://github.com/dylanaraps/pure-sh-bible
+- <https://github.com/dylanaraps/pure-bash-bible>
+- <https://github.com/dylanaraps/pure-sh-bible>
+
 
 ## Go immediately to $EDITOR
 
 <kbd>ctrl</kbd>-x, e
 
+
 ## Most commonly used commands
 
-```bash
+```shell
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 ```
 
+
 ## Delete files that are not extension
 
-```bash
+```shell
 rm !(*.foo|*.bar|*.baz)
 ```
 
+
 ## Find, delete empty directories
 
-```bash
+```shell
 find . -type d -empty -exec rmdir {} \;
 ```
 
+
 ## Show your shell from a port
 
-```bash
+```shell
 script -qf | tee >(nc -kl 5000) >(nc -kl 5001) >(nc -kl 5002)
 ```
 
+
 ## Replace filename spaces with underscores
 
-```bash
+```shell
 # util-linux-ng
 rename " " _ *
 ```
 
+
 ## Search for Unicode use in a tree
 
-TODO - I think this could be done with one 'find' command, no need to loop...
-
-```bash
+```shell
 for FILE in $(find . -type f) ; do echo File: ${FILE}; perl -ane '{ if(m/[[:^ascii:]]/) {print  } } ' ${FILE}; done
 ```
 
+
 ## "Press any key to continue"
 
-```bash
+```shell
 read -sn 1 -p "Press any key to continue..."
 ```
 
+
 ## Arrays
 
-code           | desc
----            | ---
-arr=()         | Create an empty array
-arr=(1 2 3)    | Initialize array
-${arr[N]}      | Retrieve Nth element
-${arr[@]}      | Retrieve all elements
-${!arr[@]}     | Retrieve array indices
-${#arr[@]}     | Calculate array size
-arr[N]=foo     | Overwrite Nth element
-arr+=(bar)     | Append value 'bar'
-arr=( $(cmd) ) | Save `cmd` output as an array
-unset arr[N]   | Delete element at N
-${arr[@]:x:n}  | Retrieve n elements starting at index x
-read -a arr    | Read STDIN as an array to arr variable
+| code           | desc                                    |
+|-------------- |--------------------------------------- |
+| arr=()         | Create an empty array                   |
+| arr=(1 2 3)    | Initialize array                        |
+| ${arr[N]}      | Retrieve Nth element                    |
+| ${arr[@]}      | Retrieve all elements                   |
+| ${!arr[@]}     | Retrieve array indices                  |
+| ${#arr[@]}     | Calculate array size                    |
+| arr[N]=foo     | Overwrite Nth element                   |
+| arr+=(bar)     | Append value 'bar'                      |
+| arr=( $(cmd) ) | Save `cmd` output as an array           |
+| unset arr[N]   | Delete element at N                     |
+| ${arr[@]:x:n}  | Retrieve n elements starting at index x |
+| read -a arr    | Read STDIN as an array to arr variable  |
+
 
 ## Conditional Expressions
 
-code      | desc
----       | ---
--a file   | file exists
--d file   | file exists and is a directory
--h file   | file exists and is a symbolic link
--r file   | file exists and is readable
--w file   | file exists and is writeable
--x file   | file exists and is executable
--S file   | file exists and is a socket
--n string | true if length of string is non-zero
--z string | true if length of string is zero
+| code      | desc                                 |
+|--------- |------------------------------------ |
+| -a file   | file exists                          |
+| -d file   | file exists and is a directory       |
+| -h file   | file exists and is a symbolic link   |
+| -r file   | file exists and is readable          |
+| -w file   | file exists and is writeable         |
+| -x file   | file exists and is executable        |
+| -S file   | file exists and is a socket          |
+| -n string | true if length of string is non-zero |
+| -z string | true if length of string is zero     |
 
-- <https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html>
-- <https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html>
+- [[Bash manual] Conditional Expressions](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
+- [[Bash manual] Conditional Constructs](https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html)
+
 
 ## Process Substitution
 
 A temporary named pipe
 
-```bash
+```shell
 diff <(grep lines file1) <(grep lines file2)
 thing --output >(gzip > output.txt.gz)
 ```
 
+
 ## Syntax cheatsheet
 
-```bash
+```shell
 fun () { echo "totes a function"; exit 1 ; } #Don't forget trailing colon if one line
 
 if [ -e file ] ; then
-	echo "file exists"
+    echo "file exists"
 fi
 
 case expression in
        pattern1 )
-       	statements ;;
+        statements ;;
        pattern2 )
-       	statements ;;
+        statements ;;
        ...
 esac
 
@@ -118,45 +128,48 @@ esac
 # for VARIABLE in 1 2 3 4 5
 for VARIABLE in {1..5}
 do
-       	command1
-       	command2
-       	commandN
+        command1
+        command2
+        commandN
 done
 # to do stepping, use {1..99..2}
 ```
 
+
 ## set
 
-<https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
+[[Bash manual] set builtin](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
 
-flag        | desc
----         | ---
--e          | exit if a pipeline returns non-zero
--o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status
--o posix    | match POSIX standard behaviour (<https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode>)
--n          | read commands but do not execute (used for checking syntax)
--u          | treat unset variables and parameters as an error when performing parameter expansion
--x          | print trace of commands as they are executed
--C          | prevent output redirection using ‘>’, ‘>&’, and ‘<>’ from overwriting existing files
+| flag        | desc                                                                                                                       |
+|----------- |-------------------------------------------------------------------------------------------------------------------------- |
+| -e          | exit if a pipeline returns non-zero                                                                                        |
+| -o pipefail | return value of a pipeline is the value of the last (rightmost) command to exit with a non-zero status                     |
+| -o posix    | match POSIX standard behaviour (<https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html#Bash-POSIX-Mode>) |
+| -n          | read commands but do not execute (used for checking syntax)                                                                |
+| -u          | treat unset variables and parameters as an error when performing parameter expansion                                       |
+| -x          | print trace of commands as they are executed                                                                               |
+| -C          | prevent output redirection using '>', '>&', and '<>' from overwriting existing files                                       |
 
 
 ## Using regex for variable testing
 
-```bash
+```shell
 if [[ $HOSTNAME =~ host[0-9].example.com ]]; then
     echo "yay"
 fi
 ```
 
+
 ## Temporary directory/file
 
-```bash
+```shell
 mktemp -d
 ```
 
+
 ## Variables / functions
 
-```bash
+```shell
 # Set an environment variable
 declare -x BLARG=5
 # Show the functions declared in the shell
@@ -165,35 +178,38 @@ declare -F
 typeset -F
 ```
 
+
 ## Use heredocs
 
-```bash
+```shell
 cat <<EOM > file.out
 blah
 blah
 EOM
 ```
 
+
 ## Quit without saving history
 
-```bash
+```shell
 unset HISFILE && exit
 ```
 
+
 ## Regex change over files returned from grep
 
-```bash
+```shell
 # macOS
 grep -l ... | xargs -I% sed -i".bkp" -e "s/old/new/" %
 ```
 
+
 ## I/O Redirection
 
-code | description
----  | ---
-&>   | Redirect both stderr and stdout
-1>   | Redirect stdout
-2>   | Redirect stderr
-2>&1 | Redirect stderr to stdout
-<    | Redirect stdin to a process
-
+| code | description                     |
+|---- |------------------------------- |
+| &>   | Redirect both stderr and stdout |
+| 1>   | Redirect stdout                 |
+| 2>   | Redirect stderr                 |
+| 2>&1 | Redirect stderr to stdout       |
+| <    | Redirect stdin to a process     |

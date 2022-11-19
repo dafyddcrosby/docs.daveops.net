@@ -1,11 +1,11 @@
 # Systems Performance
+
+
 # "Systems Performance by Brendan Gregg"
 
-## 60 second Linux perf troubleshooting
+[60 second Linux perf troubleshooting](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)
 
-<https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55>
-
-```bash
+```shell
 uptime
 dmesg | tail
 vmstat 1
@@ -18,56 +18,65 @@ sar -n TCP,ETCP 1
 top
 ```
 
+
 ## Performance tuning
 
 Most to least effective
 
-* Don’t do it
-* Do it, but don’t do it again
-* Do it less
-* Do it later
-* Do it when they’re not looking
-* Do it concurrently
-* Do it more cheaply
+- Don't do it
+- Do it, but don't do it again
+- Do it less
+- Do it later
+- Do it when they're not looking
+- Do it concurrently
+- Do it more cheaply
+
 
 # sysbench
 
+
 ## benchmark CPU
 
-```bash
+```shell
 sysbench --test=cpu --cpu-max-prime=20000 run
 ```
 
+
 ## benchmark I/O
- 
-```bash
+
+```shell
 sysbench --test=fileio --file-total-size=10G prepare
 sysbench --test=fileio --file-total-size=10G --file-test-mode=rndrw --init-rnd=on --max-time=300 --max_requests=0 run
 sysbench --test=fileio --file-total-size=10G cleanup
 ```
 
+
 # ftrace
+
 
 ## trace-cmd
 
-```bash
+```shell
 # list available plugins/events
 trace-cmd list
 ```
+
+
 # perf
 
 <https://perf.wiki.kernel.org/index.php/Main_Page>
 
+
 # benchmarking
 
-* Don't run off battery power (use mains)
-* Disable things like TurboBoost (which temporarily increases CPU speed)
-* Disable background processes (like backups)
-* Run many times to get a stable measurement
-* It might not hurt to reboot and try again
+- Don't run off battery power (use mains)
+- Disable things like TurboBoost (which temporarily increases CPU speed)
+- Disable background processes (like backups)
+- Run many times to get a stable measurement
+- It might not hurt to reboot and try again
 
-Be aware of subtle floating point rounding errors that can occur from code path
-changes (eg hitting the CPU registers vs main memory)
+Be aware of subtle floating point rounding errors that can occur from code path changes (eg hitting the CPU registers vs main memory)
+
 
 # eBPF
 
@@ -76,9 +85,10 @@ changes (eg hitting the CPU registers vs main memory)
 - USDT (user-level statically defined tracing) - a designated trace point for operations to allow for function name changes/inlining
 - tracepoint - a kernel-level USDT
 
+
 ## bpftrace
 
-```bash
+```shell
 # list all syscall tracepoints
 bpftrace -l 'tracepoint:syscalls:*'
 
@@ -95,39 +105,40 @@ probe /filter/ { action }
 
 builtins:
 
-var         | desc
----         | ---
-pid         | process id
-tid         | thread id
-uid         | user id
-username    | username
-comm        | process or command name
-curtask     | current task_struct as u64
-nsecs       | current time in nanoseconds
-elapsed     | time in nanoseconds since bpftrace start
-kstack      | kernel stack trace
-ustack      | user-level stack trace
-arg0...argn | function arguments
-args        | tracepoint arguments
-retval      | function return value
-func        | function name
-probe       | full probe name
+| var         | desc                                     |
+|----------- |---------------------------------------- |
+| pid         | process id                               |
+| tid         | thread id                                |
+| uid         | user id                                  |
+| username    | username                                 |
+| comm        | process or command name                  |
+| curtask     | current task<sub>struct</sub> as u64     |
+| nsecs       | current time in nanoseconds              |
+| elapsed     | time in nanoseconds since bpftrace start |
+| kstack      | kernel stack trace                       |
+| ustack      | user-level stack trace                   |
+| arg0...argn | function arguments                       |
+| args        | tracepoint arguments                     |
+| retval      | function return value                    |
+| func        | function name                            |
+| probe       | full probe name                          |
 
 types:
 
-var        | desc
----        | ---
-@name      | global
-@name[key] | hash (map)
-@name[tid] | thread-local
-$name      | scratch
+| var         | desc         |
+|----------- |------------ |
+| @name       | global       |
+| @name [key] | hash (map)   |
+| @name [tid] | thread-local |
+| $name       | scratch      |
 
 - [bpftrace reference guide](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md)
 - [Brendan Gregg bpftrace cheatsheet](https://brendangregg.com/BPF/bpftrace-cheat-sheet.html)
 
+
 ## bpftool
 
-```bash
+```shell
 # show loaded bpf programs
 bpftool prog show
 

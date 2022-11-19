@@ -1,7 +1,9 @@
 # Graphing
+
+
 # gnuplot
 
-http://www.gnuplot.info/
+<http://www.gnuplot.info/>
 
 ```
 plot "filename" with lines title "This is a file"
@@ -15,15 +17,19 @@ set ylabel "bar"
 ```
 set datafile separator ","
 ```
+
+
 # Graphviz
 
 <http://graphviz.org>
 
+
 ## Output SVG
 
-```bash
+```shell
 dot file.dot -Tsvg -o output.svg
 ```
+
 
 ## Plain graph
 
@@ -36,21 +42,20 @@ digraph graph_name {
 }
 ```
 
+
 ## Common attributes
 
-name         | desc
----          | ---
-bgcolor      | background color
-tooltip      | mouseover functionality for SVG
-URL          | clickable link
-label        | node content
-labelURL     |
-image        | sets image as node content - JPEG, PNG, GIF, BMP, SVG, or Postscript, image must contain size info
-shape        | shape of the node
+| name     | desc                                                                                               |
+|-------- |-------------------------------------------------------------------------------------------------- |
+| bgcolor  | background color                                                                                   |
+| tooltip  | mouseover functionality for SVG                                                                    |
+| URL      | clickable link                                                                                     |
+| label    | node content                                                                                       |
+| labelURL |                                                                                                    |
+| image    | sets image as node content - JPEG, PNG, GIF, BMP, SVG, or Postscript, image must contain size info |
+| shape    | shape of the node                                                                                  |
+
 
 ## graphing
 
-
-<http://jsongraphformat.info/>
-<http://js.cytoscape.org/>
-
+<http://jsongraphformat.info/> <http://js.cytoscape.org/>

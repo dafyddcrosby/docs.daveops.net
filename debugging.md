@@ -113,8 +113,8 @@ gdb executable coredump
 
 [The Three Best Debugging Tools](https://www.mikeperham.com/2013/09/12/the-three-best-debugging-tools/)
 
-1.  Your coworker
-2.  Your 'creative side'
-3.  Your Mental Model of the System
+1. Your coworker
+2. Your 'creative side'
+3. Your Mental Model of the System
 
 I agree a lot with #3 - often when I'm helping someone debugging, it's helping them establish this mental model.

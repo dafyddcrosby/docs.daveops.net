@@ -1,21 +1,23 @@
 # EMail
 
-## See also
 
-* [+smtp](./email/smtp.md)
+## See also
 
 
 ## Videos
 
-* [Email Hatest the Living (Ricardo Signes, rjbs)](https://www.youtube.com/watch?v=4s9IjkMAmns)
+- [Email Hatest the Living (Ricardo Signes, rjbs)](https://www.youtube.com/watch?v=4s9IjkMAmns)
+
+
 ## Links
 
-* [jwz: "HTML email, was that your fault?"](https://www.jwz.org/blog/2017/09/html-email-was-that-your-fault/)
-* [blacklist checking](https://mxtoolbox.com/SuperTool.aspx)
+- [jwz: "HTML email, was that your fault?"](https://www.jwz.org/blog/2017/09/html-email-was-that-your-fault/)
+- [blacklist checking](https://mxtoolbox.com/SuperTool.aspx)
+
 
 ## Connect via command line
 
-```bash
+```shell
 # Connect via telnet
 telnet example.com 25
 # Encrypted connection
@@ -33,20 +35,19 @@ Blah blah
 <CR-LF>
 ```
 
+
 ## Ports
 
-* 25: SMTP, typically used for MTA to MTA
-* 465: SMTPS
-* 587
-
-
-
+- 25: SMTP, typically used for MTA to MTA
+- 465: SMTPS
+- 587
 
 
 # OfflineIMAP
 
 - [OfflineIMAP Manual](http://docs.offlineimap.org/en/latest/MANUAL.html)
 - [Setting up Launchd for OfflineIMAP](http://grantlucas.com/posts/2012/10/setting-launchd-offlineimap)
+
 
 ## Signals
 
@@ -57,17 +58,20 @@ Blah blah
 
 [Manual](http://www.mutt.org/doc/manual/)
 
+
 ## Open system mail spool
 
-```bash
+```shell
 mutt -f /var/mail/USERNAME
 ```
+
 
 ## Add header to messages
 
 ```
 my_hdr X-Operating-System: TempleOS
 ```
+
 
 ## Whitelist TLS fingerprint
 
@@ -76,18 +80,21 @@ tls on
 tls_fingerprint <fingerprint>
 ```
 
+
 ## Search
 
-command        | desc
----            | ---
-~b EXPR        | Search for messages containing EXPR in the body
-~C EXPR        | To: or CC:
-~f EXPR        | From:
-~d [MIN]-[MAX] | messages with date-sent in date range
-~l             | mailing lists
-~s             | Subject:
+| command        | desc                                            |
+|-------------- |----------------------------------------------- |
+| ~b EXPR        | Search for messages containing EXPR in the body |
+| ~C EXPR        | To: or CC:                                      |
+| ~f EXPR        | From:                                           |
+| ~d [MIN]-[MAX] | messages with date-sent in date range           |
+| ~l             | mailing lists                                   |
+| ~s             | Subject:                                        |
+
 
 # Postfix
+
 
 # Retry delivery
 
@@ -95,11 +102,13 @@ command        | desc
 postqueue -f
 ```
 
+
 # Drop queue
 
 ```
 postsuper -d ALL
 ```
+
 
 # Print non-default configuration values
 
@@ -115,4 +124,3 @@ Mailing list
 5,000 subscriber limit
 
 <https://tinyletter.com/>
-

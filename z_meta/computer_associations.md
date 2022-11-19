@@ -3,7 +3,7 @@
 
 ## IEEE
 
--   [Certification](https://www.computer.org/education/certifications)
+- [Certification](https://www.computer.org/education/certifications)
 
 Standards:
 

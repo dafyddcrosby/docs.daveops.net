@@ -1,11 +1,13 @@
 # Workload Orchestration
 
+
 # Twine
 
-- https://engineering.fb.com/2019/06/06/data-center-engineering/twine/
+- <https://engineering.fb.com/2019/06/06/data-center-engineering/twine/>
 
 
 # Kubernetes
+
 - <https://kubernetes.io/>
 - <https://kubernetes.io/docs/concepts/configuration/overview/#general-config-tips>
 - [Kubernetes post-mortems](https://k8s.af/)
@@ -14,31 +16,37 @@ Master -> Node + Node processes
 
 Deployment -> (service -> ) pod (on a node) -> containers/volumes
 
+
 # Kubectl
+
 [kubectl reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+
 
 ## Cluster
 
-```bash
+```shell
 # get cluster info
 kubectl cluster-info
 # get list of nodes
 kubectl get nodes
 ```
 
+
 ## Deployments
 
-```bash
+```shell
 # create a deployment
 kubectl run NAME --image=...
 # see deployments
 kubectl get deployments
 ```
 
+
 ## Pods
+
 Think of a pod as a logical host
 
-```bash
+```shell
 # list pods
 kubectl get pods
 # run a command on a pod
@@ -47,9 +55,10 @@ kubectl exec $POD_NAME COMMAND
 kubectl label pod $POD_NAME app=v1
 ```
 
+
 ## Networking
 
-```bash
+```shell
 # Open a proxy to the internal network
 kubectl proxy
 
@@ -59,36 +68,41 @@ kubectl expose TYPE/NAME
 kubectl port-forward deployment/foobar 8082
 ```
 
+
 ## Logs
 
-```bash
+```shell
 kubectl logs $POD_NAME
 ```
+
 
 ## Services
 
 A logical collection of pods
 
-Type         | Description
----          | ---
-ClusterIP    |
-NodePort     |
-LoadBalancer | A load balancer
-ExternalName |
+| Type         | Description     |
+|------------ |--------------- |
+| ClusterIP    |                 |
+| NodePort     |                 |
+| LoadBalancer | A load balancer |
+| ExternalName |                 |
 
-```bash
+```shell
 # list services
 kubectl get services
 # delete services
 kubectl delete service
 ```
 
+
 ## DaemonSets
-Long-running processes, generally monitoring/logging. Can come up first, and go down safely at reboot/shutdown.	
+
+Long-running processes, generally monitoring/logging. Can come up first, and go down safely at reboot/shutdown.
+
 
 ## Namespaces
 
-```bash
+```shell
 # list namespaces
 kubectl get namespaces
 # get detailed namespace info
@@ -101,76 +115,75 @@ kubectl config use-context NAMESPACE
 kubectl config current-context
 ```
 
+
 ## Secrets
 
-```bash
+```shell
 # Create generic secret from literal value
 kubectl create secret generic OBJECTNAME --from-literal=KEYNAME=LITERAL_VALUE
 ```
 
 <https://kubernetes.io/docs/concepts/configuration/secret/>
 
+
 ## Misc
 
-```bash
+```shell
 # Check control plane health
 kubectl get componentstatus
 ```
 
 
-
 # minikube
+
 <https://github.com/kubernetes/minikube>
 
 Master -> Node -> Node processes
 
-	minikube start
-
+```shell
+minikube start
+```
 
 
 # k3
-* https://github.com/rancher/k3s
-* https://github.com/rancher/k3d
 
-
-# k3s
-* https://github.com/rancher/k3s
-* https://github.com/rancher/k3d
+- <https://github.com/rancher/k3s>
+- <https://github.com/rancher/k3d>
 
 
 # metrics-server
 
-<https://github.com/kubernetes-incubator/metrics-server>
-<https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/>
-
+<https://github.com/kubernetes-incubator/metrics-server> <https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/>
 
 
 # heapster
 
 <https://github.com/kubernetes/heapster>
+
 deprecated Kubernetes 1.11, retired in Kubernetes 1.13
+
 collects metrics from cadvisor
-to be replaced by [[kubernetes]]
 
 
 # cadvisor
 
 <https://hub.docker.com/r/google/cadvisor/>
+
 collects resource/perf metrics from running containers
+
 UI - port was 4194
+
 in Kubernetes 1.11, UI turned off by default
 
 
-
 # Mesos
-<https://mesos.apache.org/>
 
+<https://mesos.apache.org/>
 
 
 # Nomad
 
-
-```bash
+```shell
 # view registered nodes
 nomad node status
 
@@ -187,16 +200,21 @@ nomad run JOBNAME.nomad
 Default web UI port is 4646
 
 - [CLI reference](https://www.nomadproject.io/docs/commands/index.html)
+
+
 # cron
+
+- <https://crontab.guru/>
+
 
 ## crontab
 
-flag    | description
----     | ---
--u USER | select different user
--l      | display current crontab
--r      | remove current crontab
--e      | edit current crontab with VISUAL or EDITOR
+| flag    | description                                |
+|------- |------------------------------------------ |
+| -u USER | select different user                      |
+| -l      | display current crontab                    |
+| -r      | remove current crontab                     |
+| -e      | edit current crontab with VISUAL or EDITOR |
 
 
 ## Syntax
@@ -211,7 +229,3 @@ flag    | description
 │ │ │ │ │
 * * * * *  command to execute
 ```
-
-## Links
-
-* https://crontab.guru/

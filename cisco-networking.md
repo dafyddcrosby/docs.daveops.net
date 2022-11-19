@@ -1,10 +1,13 @@
 # Cisco
 
+
 # Firepower Threat Defense - Firepower Management Center
+
 
 ## Enabling the REST API
 
 System>Configuration>REST API Preferences>Enable REST API
+
 
 ## CLI Modes
 
@@ -14,7 +17,7 @@ Regular Firepower Threat Defense CLI:
 >
 ```
 
-To enter Diagnostic Mode, type ``system support diagnostic-cli``
+To enter Diagnostic Mode, type `system support diagnostic-cli`
 
 user exec:
 
@@ -28,11 +31,12 @@ privileged exec:
 firepower#
 ```
 
-To enter Expert Mode, type ``expert``
+To enter Expert Mode, type `expert`
 
 ```
 admin@firepower:$
 ```
+
 
 ## CA certs
 
@@ -60,36 +64,38 @@ Get details of installed SFP/SFP+'s:
 show interface transceiver details
 ```
 
+
 # Cisco IOS
 
-Mode          | Description
----           | ---
-User          | generally no breaking changes allowed
-Enable        | Allows privileged access to the equipment
-Configuration | Allows privileged access to the equipment
+| Mode          | Description                               |
+|------------- |----------------------------------------- |
+| User          | generally no breaking changes allowed     |
+| Enable        | Allows privileged access to the equipment |
+| Configuration | Allows privileged access to the equipment |
 
-Command                            | Description
----                                | ---
-[command] ?                        | help mode
-enable                             | enter Enable (privileged) mode
-configure terminal                 | Move to global configuration mode
-reload                             | reboot IOS
-show running-config                | Get current config
-show startup-config                | Get startup config
-copy running-config startup-config | Save running config as startup config
-erase startup-config               | erase startup-config file
-show mac address-table [dynamic]   | show the MAC address table
-show mac address-table count       | get MAC address space available
+| Command                            | Description                           |
+|---------------------------------- |------------------------------------- |
+| [command] ?                        | help mode                             |
+| enable                             | enter Enable (privileged) mode        |
+| configure terminal                 | Move to global configuration mode     |
+| reload                             | reboot IOS                            |
+| show running-config                | Get current config                    |
+| show startup-config                | Get startup config                    |
+| copy running-config startup-config | Save running config as startup config |
+| erase startup-config               | erase startup-config file             |
+| show mac address-table [dynamic]   | show the MAC address table            |
+| show mac address-table count       | get MAC address space available       |
 
-Command     | Description
----         | ---
-show ip ssh | show SSH configuration
-show ssh    | show active SSH sessions
-show ip bgp summary | get quick info on BGP sessions
+| Command             | Description                    |
+|------------------- |------------------------------ |
+| show ip ssh         | show SSH configuration         |
+| show ssh            | show active SSH sessions       |
+| show ip bgp summary | get quick info on BGP sessions |
+
 
 ## User access
 
-```ios
+```
 ! Set an enable mode secret
 enable secret <PASSWORD>
 
@@ -108,6 +114,7 @@ line vty 0 15
   transport input ssh
 ```
 
+
 ### SSH
 
 ```
@@ -122,6 +129,7 @@ username NAME
 key-hash ssh-rsa HASH KEYNAME
 ```
 
+
 ## SFP
 
 Get DOM
@@ -129,6 +137,7 @@ Get DOM
 ```
 show hw-module subslot 0/1 transceiver 0 status
 ```
+
 
 ## factory reset switch
 
@@ -142,6 +151,7 @@ reload
 
 also `write erase`
 
+
 ## Reset port to default config
 
 in config mode:
@@ -149,6 +159,7 @@ in config mode:
 ```
 default interface FastEthernet 1/0/1
 ```
+
 
 ## file system commands
 
@@ -163,15 +174,16 @@ default interface FastEthernet 1/0/1
 - mkdir
 - rmdir
 
+
 # CIMC
 
 [CIMC CLI config guide](http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/cli/config/guide/b_Cisco_CIMC_CLI_Configuration_Guide.pdf)
 
+
 # ASA
 
-A higher security-level can always talk to a lower security-level, but not
-vice-versa. If you have an internet-facing ASA, the inside port is 100, a DMZ
-is 50, internet-facing is 0.
+A higher security-level can always talk to a lower security-level, but not vice-versa. If you have an internet-facing ASA, the inside port is 100, a DMZ is 50, internet-facing is 0.
+
 
 # Common serial configuration defaults
 
@@ -181,7 +193,7 @@ is 50, internet-facing is 0.
 - 1 stop bit
 - no flow control
 
+
 # RANCID
 
-https://shrubbery.net/rancid/
-
+<https://shrubbery.net/rancid/>

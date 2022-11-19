@@ -1,24 +1,31 @@
 # Package management
+
+
 # YUM
+
 "Yellowdog Updater, Modified"
+
+
 ## Create a group
 
-```bash
+```shell
 yum-groups-manager -n "My Group" --id=mygroup --save=mygroups.xml --mandatory yum glibc rpm
 createrepo -g /path/to/mygroups.xml /srv/my/repo
 ```
 
+
 ## Find the package that provides a library
 
-```bash
+```shell
 yum whatprovides *Xlib.h
 ```
+
 
 ## versionlock
 
 RPM is either yum-versionlock or yum-plugin-versionlock
 
-```bash
+```shell
 # add lock at current version 
 yum versionlock add PACKAGE
 # list locked version
@@ -32,37 +39,42 @@ yum versionlock clear
 
 # Homebrew
 
+
 ## CLI
 
-command  | desc
----      | ---
-outdated | list outdated homebrew packages
-pin      | pin to a particular version
-services | formulae integration with launchctl
-cleanup  | remove old versions of packages
-switch   | switch between installed versions
-leaves   | Show installed formulae with no deps
+| command  | desc                                 |
+|-------- |------------------------------------ |
+| outdated | list outdated homebrew packages      |
+| pin      | pin to a particular version          |
+| services | formulae integration with launchctl  |
+| cleanup  | remove old versions of packages      |
+| switch   | switch between installed versions    |
+| leaves   | Show installed formulae with no deps |
+
 
 ## Services
 
-```bash
+```shell
 brew services list
 brew services start foo
 ```
 
+
 ## Installing from source
 
-```bash
+```shell
 brew install FORMULA.rb --build-from-source
 ```
 
+
 ## Links
 
-* <https://brew.sh/>
-* <http://formulae.brew.sh/>
+- <https://brew.sh/>
+- <http://formulae.brew.sh/>
 
 
 # pkgin
+
 
 ## Update pkgin database
 
@@ -72,13 +84,17 @@ pkgin -y up
 
 DB located at /var/db/pkg
 
+
 ## Links
 
-* <https://wiki.smartos.org/display/DOC/Working+with+Packages>
-* <https://pkgsrc.joyent.com>
-* <https://www.pkgsrc.org/>
-* <http://pkgin.net>
+- <https://wiki.smartos.org/display/DOC/Working+with+Packages>
+- <https://pkgsrc.joyent.com>
+- <https://www.pkgsrc.org/>
+- <http://pkgin.net>
+
+
 # APK
+
 Used in Alpine Linux
 
 ```
@@ -88,13 +104,11 @@ apk --no-cache
 ```
 
 
-
-
-#  RPM
+# RPM
 
 [List of RPM macros](http://www.zarb.org/~jasonc/macros.php)
 
-```bash
+```shell
 # List files in an RPM
 rpm -qlp file.rpm
 
@@ -119,9 +133,10 @@ rpm -i --nodeps ./RPM
 rpm -q --changelog <package>
 ```
 
+
 ## Rebuild SRPM
 
-```bash
+```shell
 # Centos 6
 rpmbuild --rebuild <SRPM>
 # also
@@ -129,11 +144,13 @@ rpm -i <SRPM>
 rpmbuild -ba rpmbuild/SPECS/<spec file>
 ```
 
+
 ## Extract RPM contents
 
-```bash
+```shell
 rpm2cpio php-5.1.4-1.esp1.x86_64.rpm | cpio -idmv
 ```
+
 
 ## Signing RPM's with GPG
 
@@ -144,18 +161,21 @@ In `.rpmmacros`
 %_gpg_name Joe Example <joe@example.org>
 ```
 
-```bash
+```shell
 # Replace existing signature
 rpm --resign package1.rpm package2.rpm ...
 # Add additional sig (pre-4.1 ?)
 rpm --resign package1.rpm package2.rpm ...
 ```
 
+
 ## RPM DB rebuild
 
-```bash
+```shell
 rm -f /var/lib/rpm/__db* && rpm --rebuilddb
 ```
+
+
 # dnf
 
 The CLI is generally the same as YUM.

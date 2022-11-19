@@ -42,8 +42,8 @@ Miscalculation of trajectory because of rounding error
 
 Floating point instruction halts processor
 
--   <https://en.wikipedia.org/wiki/Pentium_F00F_bug>
--   <https://willamette.edu/~mjaneba/pentprob.html>
+- <https://en.wikipedia.org/wiki/Pentium_F00F_bug>
+- <https://willamette.edu/~mjaneba/pentprob.html>
 
 
 ## Cyrix Coma bug

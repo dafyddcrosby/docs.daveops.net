@@ -1,10 +1,5 @@
 # Data Structures
 
-<!---
-TODO - add more love, this could be really good
-TODO - Trees
-TODO - Graphs
--->
 
 ## Primitives
 
@@ -15,10 +10,12 @@ TODO - Graphs
 - int
 - enumerated type
 
+
 ## Arrays
 
 - Contiguous in RAM
-- Faster indexing than linked lists -  Θ(1)
+- Faster indexing than linked lists - Θ(1)
+
 
 ## Linked Lists
 
@@ -27,27 +24,23 @@ TODO - Graphs
 - Requires scanning the list sequentially to find element (no random access) Θ(n)
 - Faster insertion and removal than a dynamic array Θ(1) (plus search time if in the middle), where a dynamic array may need to reallocate its memory to stay contiguous.
 
+
 ## Stack
 
 - Last in-first out
 
+
 ## Queue
 
 - First in-first out
+
 
 ## Skip lists
 
 - Hierarchical linked lists that allow for faster indexing and insert/delete (Θ(log n) average, Θ(n) worst case)
 
 
-## Vectors
-
-## Trees
-
-## Graphs
-
 ## Hash Table
-
 
 - A data structure used to implement associative arrays
 - Can provide near-constant time insertion, deletion, and lookup

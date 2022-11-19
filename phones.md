@@ -1,54 +1,73 @@
 # Phones
 
+
 # Systems
 
-https://en.wikipedia.org/wiki/Signalling_System_No._7
+<https://en.wikipedia.org/wiki/Signalling_System_No._7>
 
 
 # Numbers
 
-TODO - verify
+| 00       | International operator |
+| 555-1212 | directory assistance   |
 
-00 - International operator
-555-1212 - directory assistance
+
 # BlackBerry
+
 
 ## Compile via command-line
 
-```bash
+```shell
 source bbndk-env.sh
 export PROJECT_DIR=<project directory>
 qcc main.c -o main
 ```
 
+
 ## View logs via SSH
 
-```bash
+```shell
 blackberry-connect 169.254.0.1 -password <pass>
 ssh devuser@169.254.0.1
 ```
 
+
 ## Create developer certificate
 
- blackberry-keytool -genkeypair -keystore ~/.rim/author.p12 -storepass <pw> -author <author>
+```shell
+blackberry-keytool -genkeypair -keystore ~/.rim/author.p12 -storepass $PW -author $AUTHOR
+```
+
 
 ## Create debug token
 
- blackberry-debugtokenrequest -bbidtoken ~/.rim/bbidtoken.csk -storepass <store_pw> -deviceid <device_id> ~/.rim/debug_token.bar
+```shell
+blackberry-debugtokenrequest -bbidtoken ~/.rim/bbidtoken.csk -storepass $PW -deviceid $DEVICEID ~/.rim/debug_token.bar
+```
+
 
 ## Deploy debug token
 
- blackberry-deploy -installDebugToken ~/.rim/debug_token.bar -device <IP address> -password <device password>
+```shell
+blackberry-deploy -installDebugToken ~/.rim/debug_token.bar -device $IP -password $DEVICEPW
+```
+
 
 ## Build a native package
 
- # build with a debug token
- blackberry-nativepackager -package <package>.bar bar-descriptor.xml -devMode -debugToken ~/.rim/debug_token.bar
+```shell
+# build with a debug token
+blackberry-nativepackager -package $PKG.bar bar-descriptor.xml -devMode -debugToken ~/.rim/debug_token.bar
+```
+
 
 ## Deploy native app
 
- blackberry-deploy -installApp 169.254.0.1 -password <device_pw> <package>.bar
+```shell
+blackberry-deploy -installApp 169.254.0.1 -password $PW $PKG.bar
+```
+
 
 ## Reference documentation
 
-* [Native API Reference](https://developer.blackberry.com/playbook/native/reference/)
+- [Native API Reference](https://developer.blackberry.com/playbook/native/reference/)

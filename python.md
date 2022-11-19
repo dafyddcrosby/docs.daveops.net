@@ -1,13 +1,5 @@
 # Python
 
-<!--
-TODO - ConfigParser
-TODO - gdchart
-TODO - asyncore/asynchat
-TODO - shlex
-TODO - paramiko
-TODO - threading, multiprocessing
--->
 
 # Syntax cheatsheet
 
@@ -26,10 +18,12 @@ if __name__ == "__main__":
     main()
 ```
 
+
 # Essential third-party tools
 
-* [mypy](http://mypy-lang.org/)
-* [autopep8](http://pypi.python.org/pypi/autopep8)
+- [mypy](http://mypy-lang.org/)
+- [autopep8](http://pypi.python.org/pypi/autopep8)
+
 
 # Getopts
 
@@ -53,6 +47,7 @@ for opt, val in opts:
         server = val
 ```
 
+
 # Opening a file
 
 ```python
@@ -63,6 +58,7 @@ try:
     except IOError, err:
         print(err)
 ```
+
 
 # String formatting
 
@@ -77,11 +73,13 @@ print("hello {}".format(user))
 print("hello %s" % user)
 ```
 
+
 # Remove duplicates from a list
 
 ```python
 the_list = list(set(the_list))
 ```
+
 
 # Profile a program
 
@@ -92,12 +90,14 @@ import profile
 profile.run("main()")
 ```
 
+
 # Launch REPL when line is hit
 
 ```python
 import code
 code.interact(local=locals())
 ```
+
 
 # Logging
 
@@ -106,6 +106,7 @@ import logging
 logging.basicConfig(filename='myapp.log', level=logging.INFO)
 logging.warning('%s before you %s', 'Look', 'leap!')
 ```
+
 
 # Named tuples (ghetto classes)
 
@@ -122,6 +123,7 @@ for prisoner in [ hogan, lebeau ]:
     print '%s is a %d, serial: %s' % prisoner
 ```
 
+
 # Tab completion in Python shell
 
 If you don't have access to IPython,
@@ -130,6 +132,7 @@ If you don't have access to IPython,
 import rlcompleter, readline
 readline.parse_and_bind('tab: complete')
 ```
+
 
 # Tar a bunch of files
 
@@ -141,33 +144,36 @@ tar.add(name)
 tar.close()
 ```
 
+
 # Run a simple webserver
 
-```bash
+```shell
 # Python 3
 python -m http.server
 # Python 2
 python -m SimpleHTTPServer
 ```
 
+
 # Check Python version
 
 ```python
- if sys.hexversion >= 0x020502F0:
- # use some advanced feature
- ...
- else:
- # use an alternative implementation or warn the user
- ...
+if sys.hexversion >= 0x020502F0:
+# use some advanced feature
+...
+else:
+# use an alternative implementation or warn the user
+...
 ```
 
-bit   | description
----   | ---
-1-8   | PY_MAJOR_VERSION (the 2 in 2.1.0a3)
-9-16  | PY_MINOR_VERSION (the 1 in 2.1.0a3)
-17-24 | PY_MICRO_VERSION (the 0 in 2.1.0a3)
-25-28 | PY_RELEASE_LEVEL (0xA for alpha, 0xB for beta, 0xC for release candidate and 0xF for final)
-29-32 | PY_RELEASE_SERIAL (the 3 in 2.1.0a3, zero for final releases)
+| bit   | description                                                                                   |
+|----- |--------------------------------------------------------------------------------------------- |
+| 1-8   | `PY_MAJOR_VERSION` (the 2 in 2.1.0a3)                                                         |
+| 9-16  | `PY_MINOR_VERSION` (the 1 in 2.1.0a3)                                                         |
+| 17-24 | `PY_MICRO_VERSION` (the 0 in 2.1.0a3)                                                         |
+| 25-28 | `PY_RELEASE_LEVEL` (0xA for alpha, 0xB for beta, 0xC for release candidate and 0xF for final) |
+| 29-32 | `PY_RELEASE_SERIAL` (the 3 in 2.1.0a3, zero for final releases)                               |
+
 
 # Get Linux distribution
 
@@ -178,6 +184,7 @@ else:
 platform.linux_distribution()
 ```
 
+
 # Inspect the stack
 
 ```python
@@ -185,14 +192,12 @@ import inspect
 print " << ".join([i[3] for i in inspect.stack()])
 ```
 
+
 # Get Python documentation through the browser
 
-```bash
+```shell
 pydoc -p $PORT
 ```
-
-<!-- vim: set nospell: -->
-
 
 
 # Disassemble a code object
@@ -205,12 +210,9 @@ dis.dis(func)
 <http://akaptur.com/blog/2013/08/14/python-bytecode-fun-with-dis/>
 
 
-
-
-
 # Create virtual environment
 
-```bash
+```shell
 python3 -m venv path/to/new/env
 ```
 
@@ -223,11 +225,6 @@ import this
 
 
 # enums
-
-<!--
-http://xion.io/post/code/python-enums-are-ok.html
-https://docs.python.org/3/library/enum.html#module-enum
--->
 
 ```python
 from enum import Enum
@@ -251,13 +248,16 @@ platform.linux_distribution()
 
 
 # unittest
-Up to 2.7, use ``unittest2`` since it's got more assert tests than ``unittest`` (they were all backported from the 2.7 release).
+
+Up to 2.7, use `unittest2` since it's got more assert tests than `unittest` (they were all backported from the 2.7 release).
+
 
 ## Running tests
 
-```bash
+```shell
 python -m unittest discover -s project_directory -p '*_test.py'
 ```
+
 
 ## Example
 
@@ -296,91 +296,91 @@ if __name__ == '__main__':
 
 # Python 3 Upgrading
 
-- https://caniusepython3.com/
-- https://pypi.org/project/caniusepython3/
-- https://docs.python.org/3/library/2to3.html
-- http://python-future.org/futurize.html
-- https://pypi.org/project/six/
-- https://python-modernize.readthedocs.io/en/latest/
+- <https://caniusepython3.com/>
+- <https://pypi.org/project/caniusepython3/>
+- <https://docs.python.org/3/library/2to3.html>
+- <http://python-future.org/futurize.html>
+- <https://pypi.org/project/six/>
+- <https://python-modernize.readthedocs.io/en/latest/>
+
+
 ## 2to3
 
-```bash
+```shell
 # Auto-correct files
 2to3 -w whatever.py
 ```
-
 
 
 # daemonizing
 
 ```python
 
- import sys, os
- def daemonize(stdin='/dev/null', stdout='/dev/null', stderr='/dev/null'):
- try:
- pid = os.fork()
- if pid > 0:
- sys.exit(0)
- except OSError, e:
- sys.stderr.write("fork #1 failed: (%d) %s\n" % (e.errno, e.strerror))
- 
- os.chdir("/")
- os.umask(0)
- os.setsid()
- 
- try:
- pid = os.fork()
- if pid > 0:
- sys.exit(0)
- except OSError, e:
- sys.stderr.write("fork #2 failed: (%d) %s\n" % (e.errno, e.strerror))
- sys.exit(1)
- 
- for f in sys.stdout, sys.stderr: f.flush()
- si = file(stdin, 'r')
- so = file(stdout, 'a+')
- se = file(stderr, 'a+', 0)
- os.dup2(si.fileno(), sys.stdin.fileno())
- os.dup2(so.fileno(), sys.stdout.fileno())
- os.dup2(se.fileno(), sys.stdout.fileno())
+import sys, os
+def daemonize(stdin='/dev/null', stdout='/dev/null', stderr='/dev/null'):
+try:
+pid = os.fork()
+if pid > 0:
+sys.exit(0)
+except OSError, e:
+sys.stderr.write("fork #1 failed: (%d) %s\n" % (e.errno, e.strerror))
+
+os.chdir("/")
+os.umask(0)
+os.setsid()
+
+try:
+pid = os.fork()
+if pid > 0:
+sys.exit(0)
+except OSError, e:
+sys.stderr.write("fork #2 failed: (%d) %s\n" % (e.errno, e.strerror))
+sys.exit(1)
+
+for f in sys.stdout, sys.stderr: f.flush()
+si = file(stdin, 'r')
+so = file(stdout, 'a+')
+se = file(stderr, 'a+', 0)
+os.dup2(si.fileno(), sys.stdin.fileno())
+os.dup2(so.fileno(), sys.stdout.fileno())
+os.dup2(se.fileno(), sys.stdout.fileno())
 ```
 
 
 # email
 
+
 ## Run a simple SMTP server
 
+python -m smtpd -n -c DebuggingServer localhost:1025
 
-
- python -m smtpd -n -c DebuggingServer localhost:1025
 
 ## Send email
 
 ```python
 
- import smtplib
- mail_server = 'localhost'
- mail_server_port = 25
- 
- from_addr = 'sender@example.com'
- to_addr = 'receiver@example.com'
- 
- from_header = 'From: %s\r\n' %from_addr
- to_header = 'To: %s\r\n\r\n' %to_addr
- subject_header = 'Subject: nothing interesting'
- 
- body = 'This is a not-very-interesting email'
- 
- email_message = '%s\n%s\n%s\n\n%s' % (from_header, to_header, subject_header, body)
- 
- s = smtplib.SMTP(mail_server, mail_server_port)
- s.sendmail(from_addr, to_addr, email_message)
- s.quit()
+import smtplib
+mail_server = 'localhost'
+mail_server_port = 25
+
+from_addr = 'sender@example.com'
+to_addr = 'receiver@example.com'
+
+from_header = 'From: %s\r\n' %from_addr
+to_header = 'To: %s\r\n\r\n' %to_addr
+subject_header = 'Subject: nothing interesting'
+
+body = 'This is a not-very-interesting email'
+
+email_message = '%s\n%s\n%s\n\n%s' % (from_header, to_header, subject_header, body)
+
+s = smtplib.SMTP(mail_server, mail_server_port)
+s.sendmail(from_addr, to_addr, email_message)
+s.quit()
 ```
 
-## Retrieve mail with imaplib
 
-<!-- TODO - ensure this works... -->
+## Retrieve mail with imaplib
 
 ```python
 import imaplib
@@ -403,7 +403,6 @@ i.logout()
 ```
 
 
-
 # ftplib
 
 ```python
@@ -420,36 +419,35 @@ server.login()
 
 ```python
 
- from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
- from SocketServer import ThreadingMixIn
- 
- class RedirectHandler(BaseHTTPRequestHandler):
- def do_HEAD(self):
- self.send_response(200)
- self.send_header("Content-type", "text/html")
- self.end_headers()
- 
- def do_GET(self):
- self.send_response(200)
- self.send_header("Content-type", "text/html")
- self.end_headers()
- self.wfile.write("<html><head><title>Example</title></head>")
- self.wfile.write("<body>%s</body></html>" % self.path)
- 
- class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
- """
- Thread the responses
- """
- if __name__ == '__main__':
- host = "0.0.0.0"
- port = 8080
- try:
- httpd = ThreadedHTTPServer((host, port), RedirectHandler)
- httpd.serve_forever()
- except:
- print "Could not bind to host %s port %i\n" % (host, port)
-```
+from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
+from SocketServer import ThreadingMixIn
 
+class RedirectHandler(BaseHTTPRequestHandler):
+def do_HEAD(self):
+self.send_response(200)
+self.send_header("Content-type", "text/html")
+self.end_headers()
+
+def do_GET(self):
+self.send_response(200)
+self.send_header("Content-type", "text/html")
+self.end_headers()
+self.wfile.write("<html><head><title>Example</title></head>")
+self.wfile.write("<body>%s</body></html>" % self.path)
+
+class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+"""
+Thread the responses
+"""
+if __name__ == '__main__':
+host = "0.0.0.0"
+port = 8080
+try:
+httpd = ThreadedHTTPServer((host, port), RedirectHandler)
+httpd.serve_forever()
+except:
+print "Could not bind to host %s port %i\n" % (host, port)
+```
 
 
 ## subprocess with Popen
@@ -462,7 +460,7 @@ output - pipe.communicate()[0]
 
 ## Installing virtualenv by source (Python 2)
 
-```bash
+```shell
 wget <http://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.8.4.tar.gz>
 tar zxvf virtualenv-1.8.4.tar.gz
 python setup.py install
@@ -470,22 +468,25 @@ python setup.py install
 
 
 # pdb
-cmd | desc
---- | ---
-h   | help
-w   | (where) stacktrace
-l   | list source
-s   | step
-n   | next
-d   | down frame
-b   | breakpoint
-tb  | temporary breakpoint
+
+| cmd | desc                 |
+|--- |-------------------- |
+| h   | help                 |
+| w   | (where) stacktrace   |
+| l   | list source          |
+| s   | step                 |
+| n   | next                 |
+| d   | down frame           |
+| b   | breakpoint           |
+| tb  | temporary breakpoint |
+
 
 ## CLI
 
-```bash
+```shell
 python -m pdb file.py
 ```
+
 
 ## Invoke debugger when line is hit
 
@@ -500,7 +501,8 @@ pdb.set_trace()
 
 
 # pydoc
-```bash
+
+```shell
 # Read module docs in terminal
 pydoc $MODULE
 
@@ -510,55 +512,63 @@ pydoc -b
 # Start documentation server at port 1234
 pydoc -p 1234
 ```
+
+
 # Django
+
 
 ## Start project
 
+```shell
+django-admin.py startproject project_name
+```
 
-
- django-admin.py startproject project_name
 
 ## Start demo server
 
+```shell
+python manage.py runserver
+```
 
-
- python manage.py runserver
 
 ## Check for construction errors in models
 
+```shell
+python manage.py validate
+```
 
-
- python manage.py validate
 
 ## Put models in database
 
+```shell
+python manage.py syncdb
+```
 
-
- python manage.py syncdb
 
 ## Shell
 
+```shell
+python manage.py shell
+```
 
-
- python manage.py shell
 
 ## Permanent redirect
 
 in urls.py's urlpatterns
 
 ```python
-url(r'^$', lambda x: HttpResponsePermanentRedirect('/n
+url(r'^$', lambda x: HttpResponsePermanentRedirect('/n')
 ```
 
 
 ## Django - taggit
 
+
 ### Installing in a project
 
-* ``pip install django-taggit``
-* add 'taggit' to ~INSTALLED_APPS
-* ``./manage.py syncdb``
-
+- `pip install django-taggit`
+- add 'taggit' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
 
 ```python
 from django.db import models
@@ -569,48 +579,47 @@ class Thing(models.Model):
 
 tags = TaggableManager()
 ```
+
+
 ## South
+
 
 ### Installing in a project
 
-
-* ``pip install South``
-* add 'south' to ~INSTALLED_APPS
-* ``./manage.py syncdb``
+- `pip install South`
+- add 'south' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
 
 
 ### Adding South to an existing project
 
-
-* add 'south' to ~INSTALLED_APPS
-* ``./manage.py syncdb``
-* ``./manage.py convert_to_south myapp``
+- add 'south' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
+- `./manage.py convert_to_south myapp`
 
 
 ### Initial migrate schema creation
 
+```shell
+./manage.py schemamigration app --initial
+./manage.py migrate app
+```
 
-
- ./manage.py schemamigration app --initial
- ./manage.py migrate app
 
 ### Change schema
 
-
-
- ./manage.py schemamigration app --auto
- ./manage.py migrate app
-
-
-
+```shell
+./manage.py schemamigration app --auto
+./manage.py migrate app
+```
 
 
 ## Enabling admin mode
 
-* Uncomment "django.contrib.admin" in the ~INSTALLED_APPS setting.
-* `./manage.py syncdb`
-* Uncomment admin lines in urls.py
-* Create admin.py in your app:
+- Uncomment "django.contrib.admin" in the ~INSTALLED<sub>APPS</sub> setting.
+- `./manage.py syncdb`
+- Uncomment admin lines in urls.py
+- Create admin.py in your app:
 
 ```python
 from django.contrib import admin
@@ -619,9 +628,10 @@ from app.models import Thing
 admin.site.register(Thing)
 ```
 
+
 ## Reset admin password w/o password reset
 
-```bash
+```shell
 ./manage.py shell
 ```
 
@@ -634,54 +644,64 @@ users[0].save()
 ```
 
 
-
 # Pyre
 
 Requires Python 3.6+ and [watchman](https://facebook.github.io/watchman/)
 
-```bash
+```shell
 # Install pyre
 pip install pyre-check
 pyre init
 pyre
 ```
+
+
 # pip
+
 
 ## Create a package list
 
-```bash
+```shell
 pip freeze > requirements.txt
 ```
 
+
 ## Upgrade package
 
-```bash
+```shell
 pip install -U package
 ```
 
+
 ## Install a package list
 
-```bash
+```shell
 pip install -r requirements.txt
 ```
 
+
 ## Dreamhost pip3 usage
 
-```bash
+```shell
 virtualenv -p python3 env
 . env/bin/activate
 pip3 install #...
 ```
+
+
 # PyPI
 
-* [List of classifiers](https://pypi.org/classifiers/)
+- [List of classifiers](https://pypi.org/classifiers/)
+
 
 ## Uploading a new package
 
-```bash
+```shell
 python setup.py register
 python setup.py sdist upload
 ```
+
+
 # Python - D-Bus
 
 
@@ -696,74 +716,83 @@ try:
 except:
     print("Oh snap, couldn't connect")
 ```
+
+
 # Python - PyGTK
 
 ```python
 
- import pygtk
- pygtk.require('2.0')
- import gtk
- 
- class PyGUI():
- def __init__(self):
- try:
- builder = gtk.Builder()
- builder.add_from_file("gui.glade") 
- except:
- self.stderr("Failed to load Glade template file")
- sys.exit(1)
- 
- self.main_window = builder.get_object("main_window")
- 
- builder.connect_signals(self)
- 
- def main(self):
- self.main_window.show()
- gtk.main()
+import pygtk
+pygtk.require('2.0')
+import gtk
+
+class PyGUI():
+def __init__(self):
+try:
+builder = gtk.Builder()
+builder.add_from_file("gui.glade") 
+except:
+self.stderr("Failed to load Glade template file")
+sys.exit(1)
+
+self.main_window = builder.get_object("main_window")
+
+builder.connect_signals(self)
+
+def main(self):
+self.main_window.show()
+gtk.main()
 ```
+
+
 # Python - Tkinter
 
 ```python
 
- from Tkinter import *
- 
- class MyDialog:
- def __init__(self, parent):
- self.top = Frame(parent)
- self.top.pack()
- 
- Label(self.top, text="Value").pack()
- 
- self.e = Entry(self.top)
- self.e.pack(padx=5)
- 
- b = Button(self.top, text="OK", command=self.ok)
- b.pack(pady=5)
- 
- def ok(self):
- print "value is", self.e.get()
- self.top.destroy()
- 
- root = Tk()
- root.title("Some title!")
- d = MyDialog(root)
- root.wait_window(d.top)
+from Tkinter import *
+
+class MyDialog:
+def __init__(self, parent):
+self.top = Frame(parent)
+self.top.pack()
+
+Label(self.top, text="Value").pack()
+
+self.e = Entry(self.top)
+self.e.pack(padx=5)
+
+b = Button(self.top, text="OK", command=self.ok)
+b.pack(pady=5)
+
+def ok(self):
+print "value is", self.e.get()
+self.top.destroy()
+
+root = Tk()
+root.title("Some title!")
+d = MyDialog(root)
+root.wait_window(d.top)
 ```
+
+
 # Python - XMLRPC
+
 
 ## Connecting to an XMLRPC server
 
 ```python
 
- import xmlrpclib
- 
- server = '<http://blah.com/XMLRPC>'
- svr = xmlrpclib.Server(server)
- 
- session_id = '2'
- params = { "session_id" : int(session_id)}
- response = svr.foo.bar(params)
+import xmlrpclib
+
+server = '<http://blah.com/XMLRPC>'
+svr = xmlrpclib.Server(server)
+
+session_id = '2'
+params = { "session_id" : int(session_id)}
+response = svr.foo.bar(params)
 ```
+
+
 # Tornado
 
 Using SSL:
@@ -778,17 +807,18 @@ server.start(0)
 tornado.ioloop.IOLoop.instance().start()
 ```
 
+
 # Conda
 
-https://www.anaconda.com/products/individual
+<https://www.anaconda.com/products/individual>
 
 Fedora:
 
-```bash
+```shell
 sudo dnf install conda
 ```
 
-```bash
+```shell
 # Create an env
 conda create -n ENVNAME
 # Activate the env

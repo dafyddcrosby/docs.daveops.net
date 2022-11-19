@@ -1,9 +1,9 @@
 # File Archiving
 
+
 # Tar
 
-
-```bash
+```shell
 # Clean a tar-bombed directory
 tar -tf <file.tar.gz> | xargs rm -r
 
@@ -25,27 +25,21 @@ tar ... -C /send/to/
 
 
 # cpio
-Not POSIX 1996, but 2001
-* predates tar!
 
+- Not POSIX 1996, but 2001
+- predates tar!
 
-flag | description
----  | ---
--i   | input
--o   | output
--p   | pass-through
+| flag | description  |
+|---- |------------ |
+| -i   | input        |
+| -o   | output       |
+| -p   | pass-through |
 
-```
-# Copy-out mode
-# diffoscope
+[Diffoscope home page](https://diffoscope.org/)
 
-- [home page](https://diffoscope.org/)
-# Backups
-# Restic
+[Restic docs](https://restic.readthedocs.io/en/stable/index.html)
 
-- https://restic.readthedocs.io/en/stable/index.html
-
-```bash
+```shell
 # Initialize the repo
 restic init -r $REPO_PATH
 
@@ -55,4 +49,3 @@ restic backup -r $REPO_PATH $PATH_TO_BACKUP
 # List snapshots
 restic snapshots -r $REPO_PATH
 ```
-
