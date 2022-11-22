@@ -69,16 +69,6 @@
 | M-x doctor           | "doctor" chatbot   |
 
 
-## evil mode
-
-| keystrokes | desc                         |
-|---------- |---------------------------- |
-| C-z        | toggle evil mode             |
-| C-x C-z    | put emacs to background mode |
-
-- [Emacs standing alone on a Linux Kernel](http://www.informatimago.com/linux/emacs-on-user-mode-linux.html)
-
-
 ## packages
 
 | keystrokes                   | desc                                                       |
@@ -92,49 +82,6 @@
 | i   | mark for installation     |
 | u   | unmark                    |
 | x   | execute action on package |
-
-
-## macOS daemon
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
- <plist version="1.0">
-  <dict>
-    <key>Label</key>
-    <string>emacs.daemon</string>
-    <key>ProgramArguments</key>
-    <array>
-      <string>/usr/local/bin/emacs</string>
-      <string>--daemon</string>
-    </array>
-   <key>RunAtLoad</key>
-   <true/>
-   <key>ServiceDescription</key>
-   <string>Emacs Daemon</string>
-  </dict>
-</plist>
-```
-
-```shell
-launchctl load -w ~/Library/LaunchAgents/emacs.daemon.plist
-```
-
-
-## Emacs Lisp
-
-| ks      | desc                    |
-|------- |----------------------- |
-| C-x C-e | execute line            |
-| C-j     | execute, dump in buffer |
-
-
-## SLIME
-
-| ks      | desc         |
-|------- |------------ |
-| C-c C-e | execute line |
 
 
 # VSCode
