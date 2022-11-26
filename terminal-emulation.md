@@ -36,6 +36,14 @@ tmux -S /tmp/tmsession attach
 | C-b .            | Move window                |
 
 
+## Adding to tmux buffers from shell
+
+```shell
+echo "hello" | tmux loadb -
+tmux saveb - | sed 's,hello,hi,'
+```
+
+
 # SSH
 
 
