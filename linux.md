@@ -698,7 +698,7 @@ systemd-analyze
 
 ## See also
 
-- [journalctl](../../log-management.md#journalctl)
+- [journalctl](log-management.md)
 - [hostnamectl](hostnamectl.md)
 
 

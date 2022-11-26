@@ -195,8 +195,8 @@ International calling code is required
 </head>
 ```
 
-- [OpenGraph](web_programming/opengraph.md)
-- [Web Services:Twitter](twitter.md)
+- [OpenGraph](web-programming.md)
+- [Web Services:Twitter](web-programming.md)
 
 <http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013>
 

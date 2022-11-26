@@ -1287,53 +1287,55 @@ $bc->draw($_GET['bctext'], "int25", "png");
 
 ### SQLite
 
--   Initializing
 
-    ```
-    <?php
-    /**
-     * Simple example of extending the SQLite3 class and changing the __construct
-     * parameters, then using the open method to initialize the DB.
-     */
-    class MyDB extends SQLite3
-    {
-        function __construct()
-        {
-            $this->open('mysqlitedb.db');
-        }
-    }
-    
-    $db = new MyDB();
-    
-    $db->exec('CREATE TABLE foo (bar STRING)');
-    $db->exec("INSERT INTO foo (bar) VALUES ('This is a test')");
-    
-    $result = $db->query('SELECT bar FROM foo');
-    var_dump($result->fetchArray());
-    ?>
-    ```
+#### Initializing
 
--   Reading values
+```
+<?php
+/**
+ * Simple example of extending the SQLite3 class and changing the __construct
+ * parameters, then using the open method to initialize the DB.
+ */
+class MyDB extends SQLite3
+{
+    function __construct()
+    {
+        $this->open('mysqlitedb.db');
+    }
+}
 
-    ```
-    <?php
-    //read data from database
-    $query = "SELECT * FROM Movies";
-    if($result = $database->query($query, SQLITE_BOTH, $error))
-    {
-      while($row = $result->fetch())
-      {
-        print("Title: {$row['Title']} <br />" .
-              "Director: {$row['Director']} <br />".
-              "Year: {$row['Year']} <br /><br />");
-      }
-    }
-    else
-    {
-      die($error);
-    }
-    ?>
-    ```
+$db = new MyDB();
+
+$db->exec('CREATE TABLE foo (bar STRING)');
+$db->exec("INSERT INTO foo (bar) VALUES ('This is a test')");
+
+$result = $db->query('SELECT bar FROM foo');
+var_dump($result->fetchArray());
+?>
+```
+
+
+#### Reading values
+
+```
+<?php
+//read data from database
+$query = "SELECT * FROM Movies";
+if($result = $database->query($query, SQLITE_BOTH, $error))
+{
+  while($row = $result->fetch())
+  {
+    print("Title: {$row['Title']} <br />" .
+          "Director: {$row['Director']} <br />".
+          "Year: {$row['Year']} <br /><br />");
+  }
+}
+else
+{
+  die($error);
+}
+?>
+```
 
 
 # node.js
@@ -1362,44 +1364,49 @@ Debug directly with `node inspect file.js`
 
 Inserting `debugger;` in your code sets a breakpoint
 
--   Stepping
 
-    | cont, c | Continue execution                                        |
-    | next, n | Step next                                                 |
-    | step, s | Step in                                                   |
-    | out, o  | Step out                                                  |
-    | pause   | Pause running code (like pause button in Developer Tools) |
+#### Stepping
 
--   Breakpoints
+| cont, c | Continue execution                                        |
+| next, n | Step next                                                 |
+| step, s | Step in                                                   |
+| out, o  | Step out                                                  |
+| pause   | Pause running code (like pause button in Developer Tools) |
 
-    | setBreakpoint(), sb()                    | Set breakpoint on current line                        |
-    | setBreakpoint(line), sb(line)            | Set breakpoint on specific line                       |
-    | setBreakpoint('fn()'), sb(...)           | Set breakpoint on a first statement in functions body |
-    | setBreakpoint('script.js', 1), sb(...)   | Set breakpoint on first line of script.js             |
-    | clearBreakpoint('script.js', 1), cb(...) | Clear breakpoint in script.js on line 1               |
 
--   Information
+#### Breakpoints
 
-    | backtrace, bt | Print backtrace of current execution frame                                   |
-    | list(5)       | List scripts source code with 5 line context (5 lines before and after)      |
-    | watch(expr)   | Add expression to watch list                                                 |
-    | unwatch(expr) | Remove expression from watch list                                            |
-    | watchers      | List all watchers and their values (automatically listed on each breakpoint) |
-    | repl          | Open debugger's repl for evaluation in debugging script's context            |
-    | exec expr     | Execute an expression in debugging script's context                          |
+| setBreakpoint(), sb()                    | Set breakpoint on current line                        |
+| setBreakpoint(line), sb(line)            | Set breakpoint on specific line                       |
+| setBreakpoint('fn()'), sb(...)           | Set breakpoint on a first statement in functions body |
+| setBreakpoint('script.js', 1), sb(...)   | Set breakpoint on first line of script.js             |
+| clearBreakpoint('script.js', 1), cb(...) | Clear breakpoint in script.js on line 1               |
 
--   Execution control
 
-    | run     | Run script (automatically runs on debugger's start) |
-    | restart | Restart script                                      |
-    | kill    | Kill script                                         |
+#### Information
 
--   Various
+| backtrace, bt | Print backtrace of current execution frame                                   |
+| list(5)       | List scripts source code with 5 line context (5 lines before and after)      |
+| watch(expr)   | Add expression to watch list                                                 |
+| unwatch(expr) | Remove expression from watch list                                            |
+| watchers      | List all watchers and their values (automatically listed on each breakpoint) |
+| repl          | Open debugger's repl for evaluation in debugging script's context            |
+| exec expr     | Execute an expression in debugging script's context                          |
 
-    <p class="verse">
-    | scripts | List all loaded scripts<br />
-    | version | Display V8's version<br />
-    </p>
+
+#### Execution control
+
+| run     | Run script (automatically runs on debugger's start) |
+| restart | Restart script                                      |
+| kill    | Kill script                                         |
+
+
+#### Various
+
+<p class="verse">
+| scripts | List all loaded scripts<br />
+| version | Display V8's version<br />
+</p>
 
 
 ## Links

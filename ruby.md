@@ -1185,11 +1185,12 @@ class Post < ActiveRecord::Base
 end
 ```
 
--   Ensure uniqueness at the db level
 
-    1. `rails generate migration add_index_to_users_email`
-    2. add to migration file under def change: `add_index :users, :email, unique: true`
-    3. `bundle exec rake db:migrate`
+#### Ensure uniqueness at the db level
+
+1. `rails generate migration add_index_to_users_email`
+2. add to migration file under def change: `add_index :users, :email, unique: true`
+3. `bundle exec rake db:migrate`
 
 
 ### Database

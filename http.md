@@ -185,28 +185,31 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
--   Allow password protected directories without WordPress 404
 
-    ```
-    RewriteCond %{REQUEST_URI} ^/(failed_auth\.html).*$ [NC]
-    RewriteRule . - [L]
-    ```
+#### Allow password protected directories without WordPress 404
 
--   Do a 301 redirect
+```
+RewriteCond %{REQUEST_URI} ^/(failed_auth\.html).*$ [NC]
+RewriteRule . - [L]
+```
 
-    ```
-    RewriteCond %{REQUEST_FILENAME} /tascam688
-    RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
-    RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
-    ```
 
--   Deny hotlinking of images
+#### Do a 301 redirect
 
-    ```
-    RewriteCond %{HTTP_REFERER} !^$
-    RewriteCond %{HTTP_REFERER} !^http://(www\.)?lonesomecosmonaut.com/.*$ [NC]
-    RewriteRule .(gif|jpg|bmp)$ - [F]
-    ```
+```
+RewriteCond %{REQUEST_FILENAME} /tascam688
+RewriteCond %{REQUEST_FILENAME} /tascam688/(.*)
+RewriteRule (.*) http://www.lonesomecosmonaut.com/2009/tascam-688/ [R=301,L]
+```
+
+
+#### Deny hotlinking of images
+
+```
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?lonesomecosmonaut.com/.*$ [NC]
+RewriteRule .(gif|jpg|bmp)$ - [F]
+```
 
 
 ### `mod_alias`

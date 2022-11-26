@@ -33,7 +33,7 @@ Add a `.desktop` file to `/usr/share/xsessions`
 
 - [X and NeWS history](http://minnie.tuhs.org/pipermail/tuhs/2017-September/010471.html)
 
-[XTerm](./terminal-emulation.md#xterm)
+[XTerm](terminal-emulation.md)
 
 
 # xrandr
