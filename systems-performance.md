@@ -145,3 +145,19 @@ bpftool prog show
 # dump BPF instructions of a program (here 123)
 bpftool prog dump xlated id 123
 ```
+
+
+# Don't make changes until you've profiled
+
+Assuming code performance is a power law, a small percentage of LOC will actually affect the over runtime of the program. If you aren't profiling your code, you have a small percentage chance of affecting the runtime performance.
+
+
+# Using `time`
+
+| desc                   | field |
+|---------------------- |----- |
+| time spent in kernel   | sys   |
+| time spent in userland | user  |
+| stopwatch time         | real  |
+
+note that sys and user combined don't necessarily equal real (CPU has other processes to deal with, etc)

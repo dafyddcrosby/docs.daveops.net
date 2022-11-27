@@ -14,10 +14,10 @@ To enable lexical-binding in a file:
 
 ## Keystrokes
 
-| ks      | desc                    |
-|------- |----------------------- |
-| C-x C-e | execute line            |
-| C-j     | execute, dump in buffer |
+| desc                    | keystroke |
+|----------------------- |--------- |
+| execute line            | C-x C-e   |
+| execute, dump in buffer | C-j       |
 
 
 ## Limitations

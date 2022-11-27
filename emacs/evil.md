@@ -1,6 +1,6 @@
 # Evil mode
 
-| keystrokes | desc                         |
-|---------- |---------------------------- |
-| C-z        | toggle evil mode             |
-| C-x C-z    | put emacs to background mode |
+| desc                         | keystrokes |
+|---------------------------- |---------- |
+| toggle evil mode             | C-z        |
+| put emacs to background mode | C-x C-z    |

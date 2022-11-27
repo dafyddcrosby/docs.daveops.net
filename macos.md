@@ -3,12 +3,12 @@
 
 ## Keyboard shortcuts
 
-| Shortcut              | Desc                                    |
-|--------------------- |--------------------------------------- |
-| cmd + option + escape | bring up 'force quit applications' menu |
-| cmd + shift + 3       | take screenshot of all screens          |
-| cmd + shift + 4       | take a partial screenshot               |
-| cmd + shift + eject   | lock screen                             |
+| Desc                                    | Shortcut              |
+|--------------------------------------- |--------------------- |
+| bring up 'force quit applications' menu | cmd + option + escape |
+| take screenshot of all screens          | cmd + shift + 3       |
+| take a partial screenshot               | cmd + shift + 4       |
+| lock screen                             | cmd + shift + eject   |
 
 
 ## Open application bundle
@@ -103,18 +103,18 @@ diskutil erasevolume HFS+ 'RAM Disk' `hdiutil attach -nomount <ram://XXXXX>`
 
 ## Boot Options
 
-| keypress             | action                             |
-|-------------------- |---------------------------------- |
-| Cmd + r              | Recovery Mode                      |
-| Option + Cmd + r     | Upgrade to latest compatible macOS |
-| Cmd + v              | Verbose Mode                       |
-| Cmd + s              | Single-user Mode                   |
-| Shift                | Safe Mode                          |
-| D                    | Apple Diagnostics / Hardware Test  |
-| C                    | Boot removable device              |
-| N                    | Boot from network                  |
-| Option               | Startup Manager                    |
-| Cmd + Option + P + R | Reset NVRAM                        |
+| action                             | keypress             |
+|---------------------------------- |-------------------- |
+| Recovery Mode                      | Cmd + r              |
+| Upgrade to latest compatible macOS | Option + Cmd + r     |
+| Verbose Mode                       | Cmd + v              |
+| Single-user Mode                   | Cmd + s              |
+| Safe Mode                          | Shift                |
+| Apple Diagnostics / Hardware Test  | D                    |
+| Boot removable device              | C                    |
+| Boot from network                  | N                    |
+| Startup Manager                    | Option               |
+| Reset NVRAM                        | Cmd + Option + P + R |
 
 
 ## Wireless diagnostics
@@ -238,6 +238,8 @@ nvram boot-args="amfi_get_out_of_my_way=1"
 
 ## Type accent marks
 
+| character            | description           |
+| ---                  | ---                   |
 | á                    | Option + e, a         |
 | Á                    | Option + e, Shift + a |
 | é                    | Option + e, e         |
@@ -354,11 +356,13 @@ Called by launchd to execute shell scripts (very cron)
 
 Spotlight
 
-| mdutil     | manages the metadata for spotlight |
-| mdfind     | query the spotlight indexes        |
-| mdimport   | test/list spotlight plugins        |
-| mdls       | list the metadata of a file        |
-| mddiagnose | diagnose Spotlight issues          |
+| desc                               | command    |
+| ---                                | ---        |
+| manages the metadata for spotlight | mdutil     |
+| query the spotlight indexes        | mdfind     |
+| test/list spotlight plugins        | mdimport   |
+| list the metadata of a file        | mdls       |
+| diagnose Spotlight issues          | mddiagnose |
 
 
 ## Ignore a directory for indexing

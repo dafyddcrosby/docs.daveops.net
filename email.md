@@ -124,3 +124,16 @@ Mailing list
 5,000 subscriber limit
 
 <https://tinyletter.com/>
+
+
+# Gmail shortcuts
+
+| x    | select         |
+| e    | archive        |
+| #    | delete         |
+| S-r  | mark as read   |
+| \*-a | select all     |
+| gi   | go to inbox    |
+| ga   | go to all mail |
+| gp   | go to previous |
+| gn   | go to next     |

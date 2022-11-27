@@ -139,7 +139,9 @@ sdc-fwapi /rules
 
 ## Update resolvers
 
-sdc-vmapi *vms*?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"] }'
+```shell
+sdc-vmapi /vms/?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"]}'
+```
 
 
 # OmniOS
@@ -351,6 +353,10 @@ ifconfig pfsync0 up
 
 - [AsiaBSDCon](http://asiabsdcon.org)
 - BSDCan
+- All Systems Go
+
+
+# iOS (Apple)
 
 
 ### View lifecycle

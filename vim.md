@@ -68,12 +68,12 @@ ctrl-l
 
 # Search and replace
 
-| letter | desc                                                      |
-|------ |--------------------------------------------------------- |
-| c      | Confirm substitutions                                     |
-| g      | Replace all line occurrences in the line (not just first) |
-| i      | Ignore case                                               |
-| I      | Case insensitive                                          |
+| desc                                                      | letter |
+|--------------------------------------------------------- |------ |
+| Confirm substitutions                                     | c      |
+| Replace all line occurrences in the line (not just first) | g      |
+| Ignore case                                               | i      |
+| Case insensitive                                          | I      |
 
 
 # Character classes
@@ -82,22 +82,22 @@ ctrl-l
 
 Uppercase for inverse
 
-| mc | desc                          |
-|--- |----------------------------- |
-| .  | any character except new line |
-| \s | tab or space character        |
-| \p | printable character           |
-| \f | filename character            |
-| \k | keyword character             |
-| \i | identifier character          |
-| \d | digit                         |
-| \x | hex digit                     |
-| \o | octal digit                   |
-| \w | word character [a-zA-Z\_]     |
-| \h | head of word character        |
-| \a | alphabetic character          |
-| \l | lowercase character           |
-| \u | uppercase character           |
+| desc                          | mc |
+|----------------------------- |--- |
+| any character except new line | .  |
+| tab or space character        | \s |
+| printable character           | \p |
+| filename character            | \f |
+| keyword character             | \k |
+| identifier character          | \i |
+| digit                         | \d |
+| hex digit                     | \x |
+| octal digit                   | \o |
+| word character [a-zA-Z\_]     | \w |
+| head of word character        | \h |
+| alphabetic character          | \a |
+| lowercase character           | \l |
+| uppercase character           | \u |
 
 
 ## Delete all lines containing a pattern
@@ -110,16 +110,16 @@ Uppercase for inverse
 
 # slimv
 
-| key | desc                                |
-|--- |----------------------------------- |
-| ,c  | connect to SWANK server             |
-| ,d  | evaluate defun                      |
-| ,b  | evaluate buffer                     |
-| ,r  | evaluate region                     |
-| ,e  | evaluate current expression         |
-| ,s  | open symbol documentation           |
-| ,h  | open symbol underneath in HyperSpec |
-| ,,  | Slimv menu                          |
+| desc                                | key |
+|----------------------------------- |--- |
+| connect to SWANK server             | ,c  |
+| evaluate defun                      | ,d  |
+| evaluate buffer                     | ,b  |
+| evaluate region                     | ,r  |
+| evaluate current expression         | ,e  |
+| open symbol documentation           | ,s  |
+| open symbol underneath in HyperSpec | ,h  |
+| Slimv menu                          | ,,  |
 
 - <https://github.com/kovisoft/slimv>
 - <https://kovisoft.github.io/slimv-tutorial/>
@@ -132,10 +132,10 @@ Uppercase for inverse
 vim -S session.vim
 ```
 
-| keys | desc         |
-|---- |------------ |
-| gt   | next tab     |
-| gT   | previous tab |
+| desc         | keys |
+|------------ |---- |
+| next tab     | gt   |
+| previous tab | gT   |
 
 
 # Modelines

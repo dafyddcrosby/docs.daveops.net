@@ -1,7 +1,7 @@
 # Data Structures
 
 
-## Primitives
+# Primitives
 
 - boolean
 - char
@@ -11,10 +11,7 @@
 - enumerated type
 
 
-## Arrays
-
-- Contiguous in RAM
-- Faster indexing than linked lists - Θ(1)
+# Linked structures
 
 
 ## Linked Lists
@@ -25,22 +22,28 @@
 - Faster insertion and removal than a dynamic array Θ(1) (plus search time if in the middle), where a dynamic array may need to reallocate its memory to stay contiguous.
 
 
-## Stack
-
-- Last in-first out
-
-
-## Queue
-
-- First in-first out
-
-
-## Skip lists
+# Skip lists
 
 - Hierarchical linked lists that allow for faster indexing and insert/delete (Θ(log n) average, Θ(n) worst case)
 
 
-## Hash Table
+# Arrays
+
+- Contiguous in RAM
+- Faster indexing than linked lists - Θ(1)
+
+
+# Stack
+
+- Last in-first out
+
+
+# Queue
+
+- First in-first out
+
+
+# Hash Table
 
 - A data structure used to implement associative arrays
 - Can provide near-constant time insertion, deletion, and lookup

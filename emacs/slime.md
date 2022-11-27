@@ -1,5 +1,5 @@
 # SLIME
 
-| ks      | desc         |
-|------- |------------ |
-| C-c C-e | execute line |
+| desc         | keystroke |
+|------------ |--------- |
+| execute line | C-c C-e   |
