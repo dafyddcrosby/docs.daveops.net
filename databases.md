@@ -1,25 +1,15 @@
 # Databases
 
 
-## Michael Stonebreaker
+# What makes Big Data?
 
-<http://slideshot.epfl.ch/play/suri_stonebraker>
-
-
-## Column store
-
-50-100 times faster (according to Stonebraker) (data?) Only reads the columns needed, not the entire store
+- Volume
+- Variety
+- Velocity
+- Veracity
 
 
-## OLTP (Online Transaction Processing)
-
-
-## High-Availability
-
-CAP theorem - consistency, availability, partition tolerance
-
-
-## Log-Structured Merge Trees
+# Log-Structured Merge Trees
 
 Record data and changes in immutable segments.
 

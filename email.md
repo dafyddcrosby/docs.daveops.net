@@ -128,12 +128,14 @@ Mailing list
 
 # Gmail shortcuts
 
-| x    | select         |
-| e    | archive        |
-| #    | delete         |
-| S-r  | mark as read   |
-| \*-a | select all     |
-| gi   | go to inbox    |
-| ga   | go to all mail |
-| gp   | go to previous |
-| gn   | go to next     |
+| desc           | key  |
+| ---            | ---  |
+| select         | x    |
+| archive        | e    |
+| delete         | #    |
+| mark as read   | S-r  |
+| select all     | \*-a |
+| go to inbox    | gi   |
+| go to all mail | ga   |
+| go to previous | gp   |
+| go to next     | gn   |
