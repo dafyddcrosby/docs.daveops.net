@@ -1,6 +1,6 @@
 # Personal Information Management
 
-A good PIM always has the right information to meet our needs.
+A good PIM always has the right information to meet your needs.
 
 How do you avoid information fragmentation where you have the information, but no means of finding it? How do you keep found things found?
 
