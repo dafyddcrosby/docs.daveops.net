@@ -11,6 +11,11 @@
 # GNOME
 
 
+## Move windows
+
+Alt-F7 to move a finicky window
+
+
 ## Turn caps lock into control key
 
 ```shell
@@ -24,9 +29,6 @@ dconf write /org/gnome/desktop/input-sources/xkb-options "['ctrl:nocaps']"
 ## Add a WM to GDM dropdown
 
 Add a `.desktop` file to `/usr/share/xsessions`
-
-
-# X Windows
 
 
 # X Windows

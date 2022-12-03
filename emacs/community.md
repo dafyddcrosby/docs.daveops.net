@@ -1,4 +1,4 @@
-# Community / Development
+# Community and Development
 
 | key     | command         | desc         |
 | ---     | ---             | ---          |
