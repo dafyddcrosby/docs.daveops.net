@@ -690,6 +690,10 @@ decode_json($json);
 
 <http://www.smalltalk.org>
 
+[Strongtalk (Smalltalk with a strong static type system)](http://www.strongtalk.org/)
+
+[Pharo](https://pharo.org)
+
 
 # "R"
 
@@ -1909,95 +1913,95 @@ Use `let`, since it limits the scope to the block. `const` is also block-scoped.
 - [Esoteric variant](http://www.jsfuck.com/)
 
 
-# jQuery
+## jQuery
 
 <https://jquery.com>
 
 
-## No-conflict mode
+### No-conflict mode
 
 ```
 var $j = jQuery.noConflict();
 ```
 
 
-## Append a node to the DOM
+### Append a node to the DOM
 
 ```
 $('#thing').append('<p>blerg</p>');'</p>')
 ```
 
 
-## Get first element of several
+### Get first element of several
 
 CSS pseudo-selectors $(".stuff li:first");
 
 DOM traversal $(".stuff").first();
 
 
-## Searches for the closest ancestor that matches
+### Searches for the closest ancestor that matches
 
 ```
 .closest()
 ```
 
 
-## Objects
+### Objects
 
 Use $(this) instead of this - it's a jQuery object
 
 
-## Get custom data attributes from the DOM
+### Get custom data attributes from the DOM
 
 date(name)
 
 
-## Get direct children from an element
+### Get direct children from an element
 
 ```
 $("ul").children("li");
 ```
 
 
-## Get parent element of a node
+### Get parent element of a node
 
 ```
 $("#thing").parent();
 ```
 
 
-# Tangle
+## Tangle
 
 <http://worrydream.com/Tangle/guide.html>
 
 
-# CoffeeScript
+## CoffeeScript
 
 <http://coffeescript.org/> <http://www.coffeelint.org/>
 
 
-# Typescript
+## Typescript
 
 <https://www.typescriptlang.org/>
 
 
-# React
+## React
 
 <https://reactjs.org/>
 
 
-# React Native
+## React Native
 
 <http://facebook.github.io/react-native/> <https://reactnative.dev/>
 
 
-# jq
+## jq
 
 - <https://jqplay.org/>
 - <https://stedolan.github.io/jq/>
 - [jid - interactive JSON manipulation](https://github.com/simeji/jid)
 
 
-# d3js
+## d3js
 
 <https://d3js.org/>

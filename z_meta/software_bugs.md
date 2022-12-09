@@ -53,3 +53,29 @@
 - Failed to notice or report problem
 - Failed to run automated tests first
 - Failure to verify fixes
+
+
+# Time bugs
+
+
+## TOPS-10
+
+Has a clock for <span class="timestamp-wrapper"><span class="timestamp">[1964-01-01 Wed] </span></span> to <span class="timestamp-wrapper"><span class="timestamp">[1975-01-04 Sat]</span></span>. It was given another 3 bits to go to <span class="timestamp-wrapper"><span class="timestamp">[2052-02-01 Thu]</span></span>, but this crept into other data structures in use causing weird bugs
+
+
+## NTP overflow
+
+
+## Unix 32-bit
+
+2038
+
+
+## World Computer Corporation
+
+2028
+
+
+## GPS epoch
+
+Last was in 2019 - happens every 1024 weeks

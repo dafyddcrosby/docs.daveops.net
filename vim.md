@@ -143,3 +143,12 @@ vim -S session.vim
 ```
 <!-- vim: set nospell: -->
 ```
+
+
+# Non-greedy regex matching
+
+Note the `\{`
+
+```
+s/function(.\{-})//
+```
