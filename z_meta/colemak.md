@@ -17,12 +17,12 @@ pip install --user amphetype
 [Old Google site](https://code.google.com/archive/p/amphetype/)
 
 
-## Tarmak
+# Tarmak
 
 [Tarmak](https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/) is a way to transition incrementally to Colemak. Doesn't come standard with macOS.
 
 
-## Colemak-DH
+# Colemak-DH
 
 There's a slightly more ergonomic typing layout called [Colemak-DH](https://colemakmods.github.io/mod-dh/)
 

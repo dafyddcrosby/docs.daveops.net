@@ -44,3 +44,10 @@ From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 
 > - Memory consumption gets out-of-hand REAL FAST if you don’t pay attention. If you’re writing a new library, be sure to turn on garbage collection messages by setting ‘garbage-collection-messages’ to t. If you see the collection messages every few seconds, you can be sure that your library is eating up and spitting out cons cells and strings at a furious rate.
+
+
+# Emacs Lisp
+
+| ielm                  | Emacs Lisp REPL                                   |
+| lisp-interaction-mode | Enable Lispl interaction mode                     |
+| scratch-buffer        | creates new scratch buffer for Emacs Lisp testing |
