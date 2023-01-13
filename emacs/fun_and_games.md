@@ -5,6 +5,6 @@
 
 # EmacsConf
 
-Conference is December 3-4, 2022
+Conference typically in December
 
 <https://emacsconf.org/>
