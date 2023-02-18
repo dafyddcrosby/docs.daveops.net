@@ -296,20 +296,27 @@ if __name__ == '__main__':
 
 # Python 3 Upgrading
 
-- <https://caniusepython3.com/>
-- <https://pypi.org/project/caniusepython3/>
-- <https://docs.python.org/3/library/2to3.html>
 - <http://python-future.org/futurize.html>
-- <https://pypi.org/project/six/>
 - <https://python-modernize.readthedocs.io/en/latest/>
 
 
+## [six](https://pypi.org/project/six/)
+
+
 ## 2to3
+
+- <https://docs.python.org/3/library/2to3.html>
 
 ```shell
 # Auto-correct files
 2to3 -w whatever.py
 ```
+
+
+## caniusepython3
+
+- <https://caniusepython3.com/>
+- <https://pypi.org/project/caniusepython3/>
 
 
 # daemonizing

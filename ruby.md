@@ -75,6 +75,32 @@ u&.profile&.thumbnails&.large
 ```
 
 
+## % Notation
+
+| Modifier | Meaning                                                            |
+|-------- |------------------------------------------------------------------ |
+| %i[ ]    | Non-interpolated symbol array (Ruby 2+)                            |
+| %I[ ]    | Interpolated symbol array (Ruby 2+)                                |
+| %q[ ]    | Non-interpolated String (except for \\ [ and ])                    |
+| %Q[ ]    | Interpolated String (default)                                      |
+| %r[ ]    | Interpolated Regexp (flags can appear after the closing delimiter) |
+| %s[ ]    | Non-interpolated Symbol                                            |
+| %w[ ]    | Non-interpolated Array of words, separated by whitespace           |
+| %W[ ]    | Interpolated Array of words, separated by whitespace               |
+| %x[ ]    | Interpolated shell command                                         |
+
+
+## Read individual chars
+
+```ruby
+fp = File.open(filename, mode)
+fp.each_char do |char|
+      puts char
+end
+fp.close
+```
+
+
 # Threads
 
 ```ruby
@@ -98,25 +124,10 @@ end
 - [exec()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-exec) - replace current process by running command
 
 
-# % Notation
-
-| Modifier | Meaning                                                            |
-|-------- |------------------------------------------------------------------ |
-| %i[ ]    | Non-interpolated symbol array (Ruby 2+)                            |
-| %I[ ]    | Interpolated symbol array (Ruby 2+)                                |
-| %q[ ]    | Non-interpolated String (except for \\ [ and ])                    |
-| %Q[ ]    | Interpolated String (default)                                      |
-| %r[ ]    | Interpolated Regexp (flags can appear after the closing delimiter) |
-| %s[ ]    | Non-interpolated Symbol                                            |
-| %w[ ]    | Non-interpolated Array of words, separated by whitespace           |
-| %W[ ]    | Interpolated Array of words, separated by whitespace               |
-| %x[ ]    | Interpolated shell command                                         |
-
-
 # Extending and Embedding
 
 
-### C
+## C
 
 Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
 
@@ -124,25 +135,34 @@ Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/mas
 - [Embedding a Ruby interpreter](https://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Extending_Ruby_Embedding_a_Ruby_Interpreter.html)
 
 
-### C++
+## C++
 
 [Rice](https://github.com/jasonroelofs/rice)
 
 
-### Rust
+## Rust
 
 Can use C bindings...
 
 
-### Java
+## Java
 
 - <https://www.jruby.org>
 
 
-### Embedded C
+## Embedded C
 
-- <https://github.com/mruby/mruby/>
-- <https://github.com/picoruby/picoruby>
+
+### picoruby
+
+<https://github.com/picoruby/picoruby>
+
+
+### mruby
+
+<https://github.com/mruby/mruby/>
+
+compile with mrbc
 
 
 # Neat Ruby source files to look at
@@ -184,8 +204,8 @@ pp Ripper.sexp(f)
 
 ### ast and parser gems
 
-- <https://github.com/whitequark/ast>
-- <https://github.com/whitequark/parser>
+- [whitequark/ast](https://github.com/whitequark/ast)
+- [whitequark/parser](https://github.com/whitequark/parser)
 
 
 ### code reconstruction from AST
@@ -234,33 +254,11 @@ $global
 ```
 
 
-# CSV
-
-- [CSV documentation](https://docs.ruby-lang.org/en/master/CSV.html)
-- [gem source](https://github.com/ruby/csv)
-
-```ruby
-require 'csv'
-data = CSV.read('path/to/file', headers: true)
-```
-
-
 # Write to a file
 
 ```ruby
 fp = File.open(filename, mode)
 fp.write('bloop')
-fp.close
-```
-
-
-# Read individual chars
-
-```ruby
-fp = File.open(filename, mode)
-fp.each_char do |char|
-      puts char
-end
 fp.close
 ```
 
@@ -758,11 +756,6 @@ From `contributing.rdoc`:
 - [async gem](https://github.com/socketry/async)
 
 
-# mruby
-
-compile with mrbc
-
-
 # Ruby net/http
 
 ```shell
@@ -874,6 +867,17 @@ Misc:
 
 
 # Ruby Gems
+
+
+## CSV
+
+- [CSV documentation](https://docs.ruby-lang.org/en/master/CSV.html)
+- [gem source](https://github.com/ruby/csv)
+
+```ruby
+require 'csv'
+data = CSV.read('path/to/file', headers: true)
+```
 
 
 ## Rack
