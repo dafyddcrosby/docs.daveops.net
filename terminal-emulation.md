@@ -158,7 +158,7 @@ As silly as some of these seem, I've seen them all apply at one point or another
 
 ## xterm
 
-Comes with [X Windows](x_windows.md)
+Comes with [X Windows](graphics-libraries.md)
 
 | Command         | Keys               |
 |--------------- |------------------ |
@@ -239,7 +239,7 @@ minicom -s
 
 ## Neat things to connect to
 
-- <http://www.livingcomputermuseum.org>
+- <https://www.livingcomputermuseum.org>
 - <http://www.telnet.org/htm/places.htm>
 - towel.blinkenlights.nl - ASCII Star Wars
 - nyancat.dakko.us - Nyan cat

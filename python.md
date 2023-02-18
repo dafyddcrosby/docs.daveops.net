@@ -108,7 +108,7 @@ logging.warning('%s before you %s', 'Look', 'leap!')
 ```
 
 
-# Named tuples (ghetto classes)
+# Named tuples (pseudo-classes)
 
 ```python
 import collections
@@ -140,8 +140,8 @@ readline.parse_and_bind('tab: complete')
 import tarfile
 tar = tarfile.open("sample.tar", "w")
 for name in ["foo", "bar", "quux"]:
-tar.add(name)
-tar.close()
+    tar.add(name)
+    tar.close()
 ```
 
 
@@ -159,11 +159,11 @@ python -m SimpleHTTPServer
 
 ```python
 if sys.hexversion >= 0x020502F0:
-# use some advanced feature
-...
+    # use some advanced feature
+    ...
 else:
-# use an alternative implementation or warn the user
-...
+    # use an alternative implementation or warn the user
+    ...
 ```
 
 | bit   | description                                                                                   |
@@ -179,9 +179,9 @@ else:
 
 ```python
 if sys.hexversion < 0x020600F0:
-platform.dist()
+    platform.dist()
 else:
-platform.linux_distribution()
+    platform.linux_distribution()
 ```
 
 
@@ -190,13 +190,6 @@ platform.linux_distribution()
 ```python
 import inspect
 print " << ".join([i[3] for i in inspect.stack()])
-```
-
-
-# Get Python documentation through the browser
-
-```shell
-pydoc -p $PORT
 ```
 
 
