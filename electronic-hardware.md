@@ -110,7 +110,7 @@ stop /SYS
 ```
 
 
-# usb
+# USB
 
 
 ## Cable

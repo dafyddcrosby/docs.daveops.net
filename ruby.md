@@ -354,71 +354,71 @@ This is a list of interesting bits from Ruby versions
 - [multiple assignment evaluation order changes](https://bugs.ruby-lang.org/issues/4443)
 
 
-# [3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/)
+## [3.0](https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/)
 
 
-# [2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
+## [2.7](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
 
 
-# [2.6](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
+## [2.6](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/)
 
 
-# [2.5](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
+## [2.5](https://www.ruby-lang.org/en/news/2017/12/25/ruby-2-5-0-released/)
 
 
-# [2.4](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/)
+## [2.4](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/)
 
 - binding.irb
 
 
-# [2.3](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
+## [2.3](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
 
 - frozen string literal pragma
 
 
-# [2.2](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
+## [2.2](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
 
 - incremental garbage collector
 
 
-# [2.1](https://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/)
+## [2.1](https://www.ruby-lang.org/en/news/2013/12/25/ruby-2-1-0-is-released/)
 
 - First release with [semantic versioning](https://www.ruby-lang.org/en/news/2013/12/21/ruby-version-policy-changes-with-2-1-0/)
 - generational garbage collector
 
 
-# [2.0](https://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/)
+## [2.0](https://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/)
 
 - copy-on-write friendly memory management
 
 
-# [1.9.3](https://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/)
+## [1.9.3](https://www.ruby-lang.org/en/news/2011/10/31/ruby-1-9-3-p0-is-released/)
 
 
-# [1.9.2](https://www.ruby-lang.org/en/news/2010/08/18/ruby-1-9-2-released/)
+## [1.9.2](https://www.ruby-lang.org/en/news/2010/08/18/ruby-1-9-2-released/)
 
 
-# [1.9.1](https://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/)
+## [1.9.1](https://www.ruby-lang.org/en/news/2009/01/30/ruby-1-9-1-released/)
 
 
-# [1.9.0](https://www.ruby-lang.org/en/news/2007/12/25/ruby-1-9-0-released/)
+## [1.9.0](https://www.ruby-lang.org/en/news/2007/12/25/ruby-1-9-0-released/)
 
 - added the Ruby Virtual Machine
 
 
-# [1.8.7](https://www.ruby-lang.org/en/news/2008/05/31/ruby-1-8-7-has-been-released/)
+## [1.8.7](https://www.ruby-lang.org/en/news/2008/05/31/ruby-1-8-7-has-been-released/)
 
 - securerandom library
 - Array handles recursive data properly
 - Lots of new base class methods
 
 
-# [1.8.6](https://www.ruby-lang.org/en/news/2007/03/12/ruby-1-8-6-released/)
+## [1.8.6](https://www.ruby-lang.org/en/news/2007/03/12/ruby-1-8-6-released/)
 
 - First release with NEWS file
 
 
-# [List of end-of-life Ruby versions](https://endoflife.date/ruby)
+## [List of end-of-life Ruby versions](https://endoflife.date/ruby)
 
 
 # Rdoc
