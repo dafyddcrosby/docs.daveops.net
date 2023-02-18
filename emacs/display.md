@@ -1,3 +1,6 @@
+
+# Emacs graphical display
+
 # Emacs Display
 
 

@@ -1,3 +1,4 @@
+
 # Personal Information Management
 
 A good PIM always has the right information to meet your needs.
@@ -18,7 +19,7 @@ How do you manage your:
 Do you know where your personal space of information ends?
 
 
-## Maintenance
+# Maintenance
 
 How do you protect against
 
@@ -55,6 +56,6 @@ Keeping is figuring out what to do with information 'in hand'
 In the creation of a project, does how we categorize and file drive the success of a project?
 
 
-## Resources
+# Resources
 
 - Keeping Found Things Found: The Study and Practice of Personal Information Management by William Jones

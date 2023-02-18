@@ -1,10 +1,11 @@
+
 # Colemak
 
 - [keyzen-colemak](https://first20hours.github.io/keyzen-colemak/)
 - [Colemak.Academy](https://colemak.academy)
 
 
-## amphetype
+# amphetype
 
 Once you've wrapped your head around the keyboard basics it's more interesting to try typing in something other than random words.
 

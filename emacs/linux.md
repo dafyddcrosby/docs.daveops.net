@@ -1,5 +1,5 @@
-# Emacs on Linux
 
+# Emacs on Linux
 
 # Running as a user systemd service
 

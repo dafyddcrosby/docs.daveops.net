@@ -1,5 +1,5 @@
-# Editors
 
+# Editors
 
 # Emacs
 

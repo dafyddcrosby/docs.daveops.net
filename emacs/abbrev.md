@@ -1,3 +1,4 @@
+
 # Abbrev Mode
 
 [EmacsWiki for Abbrev Mode](https://www.emacswiki.org/emacs/AbbrevMode)
@@ -12,7 +13,7 @@
 | save abbrevs when in abbrev mode           | edit-abbrevs-redefine     | C-c C-c   |
 
 
-## Editing abbrevs
+# Editing abbrevs
 
 | desc                                               | command           |
 |-------------------------------------------------- |----------------- |

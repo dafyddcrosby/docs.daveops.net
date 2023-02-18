@@ -1,12 +1,10 @@
+
 # Software Security
-
-
-<a id="viruses"></a>
 
 # Viruses
 
 
-# History
+## History
 
 | Name        | Description                               | When             | Author          |
 |----------- |----------------------------------------- |---------------- |--------------- |
@@ -14,7 +12,7 @@
 | Morris Worm |                                           | November 2, 1988 | Bob Morris, Jr. |
 
 
-# The Art of Computer Virus Research and Defense by Peter Szor
+## The Art of Computer Virus Research and Defense by Peter Szor
 
 Von Neumann machine - no difference between code + data
 
@@ -22,37 +20,24 @@ Von Neumann machine - no difference between code + data
 - A Universal Constructor
 - Information on tape
 
-[Core War](#core-war)
+[Core War](#org6ccbf5b)
 
 > Instead of writing computer viruses, I strongly recommend playing this harmless and interesting game. In fact, if worms fascinate you, a new version of Corw Wars can be created to link battles in different networks and allow warrior programs to jump from one battle to another to fight new enemies on those machines. Evolving the game to be more networked allows for simulating worm-like warrior programs.
 
-[Security:Viruses - history](#viruses)
+
+## Core War
+
+- <http://www.corewar.info/>
 
 
-## Books
+### History
 
-**Kinematic Self-Replicating Machines** by Merkle + Freitas
-
-- ecophagy - like the 'grey goo'?
-
-**Games with Computer** by Antal Csakany + Ferenc Vajda
-
-"Computer Recreation" *Scientific American* Dewdney
-
-
-<a id="core-war"></a>
-
-# Core War
-
-
-## History
-
-Created by Robert Morris Sr. (NSA Chief Scientist), Victor Vyssotsky and Dennis Ritchie (Bell Labs)
+Created by Robert Morris Sr. (NSA Chief Scientist), Victor Vyssotsky and Dennis Ritchie (Bell Labs)
 
 Originally called *Darwin*, ran on a PDP-1 in Bell Labs
 
 
-## Redcode Assembly Language
+### Redcode Assembly Language
 
 10 instructions in original set, 14 in 1999
 
@@ -76,21 +61,15 @@ Originally called *Darwin*, ran on a PDP-1 in Bell Labs
 - <http://www.koth.org/info/icws94.html>
 
 
-## Memory Array Redcode Simulator (MARS)
+### Memory Array Redcode Simulator (MARS)
 
 
-## Types of programs
+### Types of programs
 
 
-### Imp
+#### Imp
 
 Moves 1 address forward each cycle
-
-
-## Sources
-
-- [The Art of Computer Virus Research and Defense by Peter Szor](security/viruses.md#the-art-of-computer-virus-research-and-defense-by-peter-szor)
-- <http://www.corewar.info/>
 
 
 # wargames

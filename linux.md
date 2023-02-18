@@ -699,7 +699,6 @@ systemd-analyze
 ## See also
 
 - [journalctl](log-management.md)
-- [hostnamectl](hostnamectl.md)
 
 
 ## Links
@@ -710,7 +709,7 @@ systemd-analyze
 - [Design documentation](http://0pointer.de/blog/projects/systemd.html)
 
 
-# systemd/hostnamectl
+## hostnamectl
 
 ```shell
 # Set hostname
