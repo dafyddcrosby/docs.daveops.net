@@ -7,6 +7,13 @@
 | jump back            | C-c &      |
 
 
+## Interlinking
+
+```
+[[LINK][[[]]LINK][DESCRIPTION]]
+```
+
+
 ## Link abbreviations (custom link targets)
 
 [orgmode docs on link abbreviations](https://orgmode.org/manual/Link-Abbreviations.html)

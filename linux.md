@@ -86,13 +86,6 @@ find . -ctime -1 -type f
 ```
 
 
-## Disable caps lock
-
-```shell
-setxkbmap -option ctrl:nocaps
-```
-
-
 ## Set time on machine that doesn't have NTP
 
 ```shell
@@ -716,4 +709,35 @@ systemd-analyze
 hostnamectl set-hostname HOSTNAME
 # F32 and below to restart multicast DNS:
 systemctl restart avahi-daemon.service
+```
+
+
+# Keyboards
+
+
+## See keypress events
+
+```bash
+xev -event keyboard
+```
+
+
+## Disable caps lock
+
+```shell
+# Note - this is Pre-Wayland
+setxkbmap -option ctrl:nocaps
+```
+
+
+## XKB
+
+<https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config>
+
+```
+/usr/share/X11/xkb/
+  geometry/  # physical layout of keyboard
+  keycodes/  # mapping of raw codes to symbolic name of key
+  rules/     # configuration of mappings
+  
 ```

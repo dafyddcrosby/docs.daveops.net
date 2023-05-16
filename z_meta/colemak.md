@@ -5,6 +5,13 @@
 - [Colemak.Academy](https://colemak.academy)
 
 
+# Printing out letters with a labelmaker
+
+Not what the typical advice is (which is generally to learn entirely from touch typing).
+
+I think there's a middle road, and that's to print out the letters with a labelmaker. This helps on the pesky lesser-used letters, and gets your brain wrapped around the finger patterns faster. The letters will fall off naturally over time, replace as/if necessary.
+
+
 # amphetype
 
 Once you've wrapped your head around the keyboard basics it's more interesting to try typing in something other than random words.

@@ -1,5 +1,5 @@
-# Graphics Libraries
 
+# Graphics Libraries
 
 # SDL
 
@@ -23,12 +23,17 @@ dconf write /org/gnome/desktop/input-sources/xkb-options "['ctrl:nocaps']"
 ```
 
 
-# GDM
+## GDM
 
 
-## Add a WM to GDM dropdown
+### Add a WM to GDM dropdown
 
 Add a `.desktop` file to `/usr/share/xsessions`
+
+
+# Wayland
+
+- <https://github.com/natpen/awesome-wayland>
 
 
 # X Windows
@@ -38,18 +43,13 @@ Add a `.desktop` file to `/usr/share/xsessions`
 [XTerm](terminal-emulation.md)
 
 
-# xrandr
+## xrandr
 
 
-## Make PAL card output NTSC
+### Make PAL card output NTSC
 
 After the first two lines in `/etc/gdm/Init/Default` , put:
 
 ```
 xrandr --output S-video --set “tv standard” ntsc
 ```
-
-
-# Wayland
-
-- <https://github.com/natpen/awesome-wayland>

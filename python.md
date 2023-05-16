@@ -1,4 +1,11 @@
+
 # Python
+
+# Python zen
+
+```python
+import this
+```
 
 
 # Syntax cheatsheet
@@ -19,10 +26,29 @@ if __name__ == "__main__":
 ```
 
 
-# Essential third-party tools
+## String formatting
 
-- [mypy](http://mypy-lang.org/)
-- [autopep8](http://pypi.python.org/pypi/autopep8)
+```python
+user="world"
+
+# Interpolated (3.6+)
+print(f"hello {user}")
+# New
+print("hello {}".format(user))
+# Old
+print("hello %s" % user)
+```
+
+
+## enums
+
+```python
+from enum import Enum
+class Color(Enum):
+    red = 1
+    green = 2
+    blue = 3
+```
 
 
 # Getopts
@@ -57,20 +83,6 @@ try:
            ...
     except IOError, err:
         print(err)
-```
-
-
-# String formatting
-
-```python
-user="world"
-
-# Interpolated (3.6+)
-print(f"hello {user}")
-# New
-print("hello {}".format(user))
-# Old
-print("hello %s" % user)
 ```
 
 
@@ -207,24 +219,6 @@ dis.dis(func)
 
 ```shell
 python3 -m venv path/to/new/env
-```
-
-
-# Python zen
-
-```python
-import this
-```
-
-
-# enums
-
-```python
-from enum import Enum
-class Color(Enum):
-    red = 1
-    green = 2
-    blue = 3
 ```
 
 
@@ -450,20 +444,11 @@ print "Could not bind to host %s port %i\n" % (host, port)
 ```
 
 
-## subprocess with Popen
+# subprocess with Popen
 
 ```python
 pipe = subprocess.Popen(args_list, shell=True, stdout=subprocess.PIPE)
 output - pipe.communicate()[0]
-```
-
-
-## Installing virtualenv by source (Python 2)
-
-```shell
-wget <http://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.8.4.tar.gz>
-tar zxvf virtualenv-1.8.4.tar.gz
-python setup.py install
 ```
 
 
@@ -514,195 +499,9 @@ pydoc -p 1234
 ```
 
 
-# Django
-
-
-## Start project
-
-```shell
-django-admin.py startproject project_name
-```
-
-
-## Start demo server
-
-```shell
-python manage.py runserver
-```
-
-
-## Check for construction errors in models
-
-```shell
-python manage.py validate
-```
-
-
-## Put models in database
-
-```shell
-python manage.py syncdb
-```
-
-
-## Shell
-
-```shell
-python manage.py shell
-```
-
-
-## Permanent redirect
-
-in urls.py's urlpatterns
-
-```python
-url(r'^$', lambda x: HttpResponsePermanentRedirect('/n')
-```
-
-
-## Django - taggit
-
-
-### Installing in a project
-
-- `pip install django-taggit`
-- add 'taggit' to ~INSTALLED<sub>APPS</sub>
-- `./manage.py syncdb`
-
-```python
-from django.db import models
-from taggit.managers import TaggableManager
-
-class Thing(models.Model):
-# ... fields here
-
-tags = TaggableManager()
-```
-
-
-## South
-
-
-### Installing in a project
-
-- `pip install South`
-- add 'south' to ~INSTALLED<sub>APPS</sub>
-- `./manage.py syncdb`
-
-
-### Adding South to an existing project
-
-- add 'south' to ~INSTALLED<sub>APPS</sub>
-- `./manage.py syncdb`
-- `./manage.py convert_to_south myapp`
-
-
-### Initial migrate schema creation
-
-```shell
-./manage.py schemamigration app --initial
-./manage.py migrate app
-```
-
-
-### Change schema
-
-```shell
-./manage.py schemamigration app --auto
-./manage.py migrate app
-```
-
-
-## Enabling admin mode
-
-- Uncomment "django.contrib.admin" in the ~INSTALLED<sub>APPS</sub> setting.
-- `./manage.py syncdb`
-- Uncomment admin lines in urls.py
-- Create admin.py in your app:
-
-```python
-from django.contrib import admin
-from app.models import Thing
-
-admin.site.register(Thing)
-```
-
-
-## Reset admin password w/o password reset
-
-```shell
-./manage.py shell
-```
-
-```python
-from django.contrib.auth.models import User
-users = User.objects.all()
-users
-users[0].set_password('whatever');
-users[0].save()
-```
-
-
-# Pyre
-
-Requires Python 3.6+ and [watchman](https://facebook.github.io/watchman/)
-
-```shell
-# Install pyre
-pip install pyre-check
-pyre init
-pyre
-```
-
-
-# pip
-
-
-## Create a package list
-
-```shell
-pip freeze > requirements.txt
-```
-
-
-## Upgrade package
-
-```shell
-pip install -U package
-```
-
-
-## Install a package list
-
-```shell
-pip install -r requirements.txt
-```
-
-
-## Dreamhost pip3 usage
-
-```shell
-virtualenv -p python3 env
-. env/bin/activate
-pip3 install #...
-```
-
-
-# PyPI
-
-- [List of classifiers](https://pypi.org/classifiers/)
-
-
-## Uploading a new package
-
-```shell
-python setup.py register
-python setup.py sdist upload
-```
-
-
 # Python - D-Bus
+
+<https://dbus.freedesktop.org/doc/dbus-python/> <https://pypi.org/project/dbus-python/>
 
 
 ## Connecting to D-Bus
@@ -718,55 +517,27 @@ except:
 ```
 
 
-# Python - PyGTK
+# Tkinter
 
 ```python
-
-import pygtk
-pygtk.require('2.0')
-import gtk
-
-class PyGUI():
-def __init__(self):
-try:
-builder = gtk.Builder()
-builder.add_from_file("gui.glade") 
-except:
-self.stderr("Failed to load Glade template file")
-sys.exit(1)
-
-self.main_window = builder.get_object("main_window")
-
-builder.connect_signals(self)
-
-def main(self):
-self.main_window.show()
-gtk.main()
-```
-
-
-# Python - Tkinter
-
-```python
-
 from Tkinter import *
 
 class MyDialog:
-def __init__(self, parent):
-self.top = Frame(parent)
-self.top.pack()
+    def __init__(self, parent):
+        self.top = Frame(parent)
+        self.top.pack()
 
-Label(self.top, text="Value").pack()
+        Label(self.top, text="Value").pack()
 
-self.e = Entry(self.top)
-self.e.pack(padx=5)
+        self.e = Entry(self.top)
+        self.e.pack(padx=5)
 
-b = Button(self.top, text="OK", command=self.ok)
-b.pack(pady=5)
+        b = Button(self.top, text="OK", command=self.ok)
+        b.pack(pady=5)
 
-def ok(self):
-print "value is", self.e.get()
-self.top.destroy()
+    def ok(self):
+        print "value is", self.e.get()
+        self.top.destroy()
 
 root = Tk()
 root.title("Some title!")
@@ -775,10 +546,10 @@ root.wait_window(d.top)
 ```
 
 
-# Python - XMLRPC
+# XMLRPC
 
 
-## Connecting to an XMLRPC server
+## Connecting to an XMLRPC server (Python 2)
 
 ```python
 
@@ -793,22 +564,56 @@ response = svr.foo.bar(params)
 ```
 
 
-# Tornado
+# Packaging
 
-Using SSL:
 
-```python
-server = tornado.httpserver.HTTPServer(application, ssl_options={
-"certfile": "/path/to/ssl/cert.crt",
-"keyfile": "/path/to/ssl/tornado_key.pem",
-})
-server.bind(port)
-server.start(0)
-tornado.ioloop.IOLoop.instance().start()
+## PyPI
+
+- [List of classifiers](https://pypi.org/classifiers/)
+
+
+### Uploading a new package
+
+```shell
+python setup.py register
+python setup.py sdist upload
 ```
 
 
-# Conda
+## pip
+
+
+### Create a package list
+
+```shell
+pip freeze > requirements.txt
+```
+
+
+### Upgrade package
+
+```shell
+pip install -U package
+```
+
+
+### Install a package list
+
+```shell
+pip install -r requirements.txt
+```
+
+
+### Dreamhost pip3 usage
+
+```shell
+virtualenv -p python3 env
+. env/bin/activate
+pip3 install #...
+```
+
+
+## Conda
 
 <https://www.anaconda.com/products/individual>
 
@@ -823,4 +628,200 @@ sudo dnf install conda
 conda create -n ENVNAME
 # Activate the env
 conda activate ENVNAME
+```
+
+
+# Third party
+
+
+## Django
+
+
+### Start project
+
+```shell
+django-admin.py startproject project_name
+```
+
+
+### Start demo server
+
+```shell
+python manage.py runserver
+```
+
+
+### Check for construction errors in models
+
+```shell
+python manage.py validate
+```
+
+
+### Put models in database
+
+```shell
+python manage.py syncdb
+```
+
+
+### Shell
+
+```shell
+python manage.py shell
+```
+
+
+### Permanent redirect
+
+in urls.py's urlpatterns
+
+```python
+url(r'^$', lambda x: HttpResponsePermanentRedirect('/n')
+```
+
+
+### taggit
+
+
+#### Installing in a project
+
+- `pip install django-taggit`
+- add 'taggit' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
+
+```python
+from django.db import models
+from taggit.managers import TaggableManager
+
+class Thing(models.Model):
+    # ... fields here
+
+tags = TaggableManager()
+```
+
+
+### South
+
+
+#### Installing in a project
+
+- `pip install South`
+- add 'south' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
+
+
+#### Adding South to an existing project
+
+- add 'south' to ~INSTALLED<sub>APPS</sub>
+- `./manage.py syncdb`
+- `./manage.py convert_to_south myapp`
+
+
+#### Initial migrate schema creation
+
+```shell
+./manage.py schemamigration app --initial
+./manage.py migrate app
+```
+
+
+#### Change schema
+
+```shell
+./manage.py schemamigration app --auto
+./manage.py migrate app
+```
+
+
+### Enabling admin mode
+
+- Uncomment "django.contrib.admin" in the ~INSTALLED<sub>APPS</sub> setting.
+- `./manage.py syncdb`
+- Uncomment admin lines in urls.py
+- Create admin.py in your app:
+
+```python
+from django.contrib import admin
+from app.models import Thing
+
+admin.site.register(Thing)
+```
+
+
+### Reset admin password w/o password reset
+
+```shell
+./manage.py shell
+```
+
+```python
+from django.contrib.auth.models import User
+users = User.objects.all()
+users
+users[0].set_password('whatever');
+users[0].save()
+```
+
+
+## Tornado
+
+Using SSL:
+
+```python
+server = tornado.httpserver.HTTPServer(application, ssl_options={
+"certfile": "/path/to/ssl/cert.crt",
+"keyfile": "/path/to/ssl/tornado_key.pem",
+})
+server.bind(port)
+server.start(0)
+tornado.ioloop.IOLoop.instance().start()
+```
+
+
+## [autopep8](http://pypi.python.org/pypi/autopep8)
+
+
+## Type-checking
+
+
+### [Pyre](https://pyre-check.org/)
+
+Requires Python 3.6+ and [watchman](https://facebook.github.io/watchman/)
+
+```shell
+# Install pyre
+pip install pyre-check
+pyre init
+pyre
+```
+
+
+### [mypy](http://mypy-lang.org/)
+
+
+## PyGTK
+
+```python
+
+import pygtk
+pygtk.require('2.0')
+import gtk
+
+class PyGUI():
+    def __init__(self):
+        try:
+            builder = gtk.Builder()
+            builder.add_from_file("gui.glade")
+        except:
+            self.stderr("Failed to load Glade template file")
+            sys.exit(1)
+
+        self.main_window = builder.get_object("main_window")
+
+        builder.connect_signals(self)
+
+    def main(self):
+        self.main_window.show()
+        gtk.main()
 ```
