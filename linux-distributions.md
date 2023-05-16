@@ -1,9 +1,13 @@
-# Linux Distributions
 
+# Linux Distributions
 
 # Fedora
 
+
+## Community Code of Conduct
+
 - [Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/)
+- Send violations to <https://pagure.io/CoC/new_issue> or codeofconduct@fedoraproject.org
 
 
 ## Upgrading to new Fedora versions

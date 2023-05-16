@@ -32,16 +32,6 @@
 | C-x t b    | open new tab with buffer    |
 
 
-## help
-
-| keystrokes | desc                   |
-|---------- |---------------------- |
-| C-h C-t    | show Emacs TODO        |
-| C-h m      | show module info       |
-| C-h n      | show version changelog |
-| C-h i      | show manuals           |
-
-
 ## modes
 
 | keystrokes          | desc                                            |
@@ -58,32 +48,6 @@
 | C-x f              | Set fill mode margin (default 70 chars) |
 
 
-## misc
-
-| keystrokes           | desc               |
-|-------------------- |------------------ |
-| M-x telnet           | telnet to a server |
-| M-x report-emacs-bug | report a bug       |
-| M-x calc             | calc mode          |
-| M-x lunar-phases     | phases of the moon |
-| M-x doctor           | "doctor" chatbot   |
-
-
-## packages
-
-| keystrokes                   | desc                                                       |
-|---------------------------- |---------------------------------------------------------- |
-| M-x list-packages            | lists installed packages and packages available from repos |
-| M-x package-refresh-contents | Update package list                                        |
-| C-h P                        | describe package                                           |
-
-| key | desc                      |
-|--- |------------------------- |
-| i   | mark for installation     |
-| u   | unmark                    |
-| x   | execute action on package |
-
-
 # VSCode
 
 
@@ -93,3 +57,25 @@
 |------------- |---------------------- |
 | ctrl-k ctrl-s | keyboard shortcut menu |
 | ctrl-\\       | split pane             |
+
+
+# Obsidian
+
+
+## Shortcuts
+
+| Cmd    | desc            |
+|------ |--------------- |
+| Ctrl-O | open file       |
+| Ctrl-P | command palette |
+
+
+## File formats
+
+- Markdown files: md;
+- Image files: png, jpg, jpeg, gif, bmp, svg;
+- Audio files: mp3, webm, wav, m4a, ogg, 3gp, flac;
+- Video files: mp4, webm, ogv;
+- PDF files: pdf.
+
+<https://help.obsidian.md/Advanced+topics/Accepted+file+formats>

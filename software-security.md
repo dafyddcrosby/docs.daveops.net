@@ -196,3 +196,16 @@ BeyondCorp is a zero-trust approach to building infrastructure, where instead of
 ## STIG
 
 <https://www.stigviewer.com/stigs>
+
+
+# Reflections on Trusting Trust by Ken Thompson
+
+Ken Thompson and Dennis Ritchie both wrote a 20 line assembly program that matched character-for-character :-P
+
+> In college, before video games, we would amuse ourselves by posing programming exercises. One of the favorites was to write the shortest self-reproducing program. Since this is an exercise divorced from reality, the usual vehicle was FORTRAN. Actually, FORTRAN was the language of choice for the same reason that three-legged races are popular.
+
+Since you have to "teach" a bootstrapping compiler new tricks, it's possible to put a deliberate bug in the compiler. By using a quine, you can perpetuate the bug. The lower-level the code, the harder it'll be to find.
+
+> The moral is obvious. You can't trust code that you did not totally create yourself. (Especially code from companies that employ people like me.) No amount of source-level verification or scrutiny will protect you from using untrusted code.
+
+Communication of the ACM, Vol. 27, No. 8, August 1984, pp. 761-763.

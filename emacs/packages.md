@@ -19,6 +19,22 @@ Standard with Emacs 24
 ```
 
 
+## help
+
+| keystrokes | desc             |
+|---------- |---------------- |
+| C-h P      | describe package |
+
+
+## Package
+
+| key | desc                      |
+|--- |------------------------- |
+| i   | mark for installation     |
+| u   | unmark                    |
+| x   | execute action on package |
+
+
 # use-package
 
 Standard with Emacs 29

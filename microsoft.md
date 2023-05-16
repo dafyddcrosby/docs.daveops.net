@@ -47,6 +47,13 @@ Save as FILENAME.bat
 - <http://www.ollydbg.de/>
 
 
+## Procmon
+
+Like strace for Windows
+
+<https://docs.microsoft.com/en-us/sysinternals/downloads/procmon>
+
+
 ## Cool links
 
 - [Cleaning NTFS artifacts with `FSCTL_CLEAN_VOLUME_METADATA`](https://medium.com/@grzegorztworek/cleaning-ntfs-artifacts-with-fsctl-clean-volume-metadata-bd29afef290c)

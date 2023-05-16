@@ -69,7 +69,7 @@ knife search -a ATTR
 | description         | attribute                    |
 |------------------- |---------------------------- |
 | version of chef     | `chef_packages.chef.version` |
-| nodes's environment | chef.environment             |
+| nodes's environment | `chef.environment`           |
 
 
 ## Compile time notes
@@ -402,11 +402,8 @@ item["password"]
 ## Links
 
 - [chef vault gem](https://github.com/chef/chef-vault)
-
 - [chef vault cookbook](https://github.com/chef-cookbooks/chef-vault)
-
 - <http://www.pburkholder.com/blog/2015/12/04/why-chef-vault-and-autoscaling-dont-mix/>
-
 - <http://engineering.ooyala.com/blog/keeping-secrets-chef>
 
 

@@ -1,5 +1,5 @@
-# Networking
 
+# Networking
 
 # Border Gateway Protocol
 
@@ -676,4 +676,17 @@ ssh desthost -L 5900:localhost:5900 x11vnc -display :0 -nopw vncviewer :0
 
 ```shell
 nc -v # should return "RFB ..."
+```
+
+
+# Disabling MAC randomization in NetworkManager
+
+`/etc/NetworkManager/conf.d/wifi_rand_mac.conf`
+
+```
+[connection-mac-randomization]
+# Randomize MAC for every ethernet connection
+ethernet.cloned-mac-address=random
+# Generate a random MAC for each WiFi and associate the two permanently.
+wifi.cloned-mac-address=stable
 ```
