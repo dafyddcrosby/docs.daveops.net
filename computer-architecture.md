@@ -133,24 +133,24 @@ Massively parallel computer architecture comprised of non-uniformly interconnect
 | LAST                  | Refers to the port last read or written using the ANY pseudo-port.                                                             |
 
 
-### TIS-100 Instructions
+### TIS-100 Instruction Set
 
-| Instruction      | Description                                                                                   |
-|---------------- |--------------------------------------------------------------------------------------------- |
-| NOP              | pseudo-intruction converted to ADD NIL.                                                       |
-| MOV <SRC>, <DST> | SRC is read and written to DST.                                                               |
-| SWP              | Exchange ACC and BAK.                                                                         |
-| SAV              | Write ACC to BAK.                                                                             |
-| ADD <SRC>        | Add SRC to ACC, store result in ACC. (TODO - overflow behaviour?)                             |
-| SUB <SRC>        | Subtract SRC from ACC, store result in ACC. (TODO - underflow behaviour?)                     |
-| NEG              | The value of ACC is arithmetically negated. Zero remains the same.                            |
-| JMP <LABEL>      | Transfer execution to instruction after LABEL.                                                |
-| JEZ <LABEL>      | Transfer execution to instruction after LABEL if value of ACC is zero.                        |
-| JNZ <LABEL>      | Transfer execution to instruction after LABEL if value of ACC is not zero.                    |
-| JGZ <LABEL>      | Transfer execution to instruction after LABEL if value of ACC is greater than zero.           |
-| JLZ <LABEL>      | Transfer execution to instruction after LABEL if value of ACC is less than zero.              |
-| JRO <SRC>        | Transfer execution to instruction at offset specified by SRC relative to current instruction. |
-| HCF              | Halt and Catch Fire (undocumented)                                                            |
+| Instruction  | Description                                                                                   |
+|------------ |--------------------------------------------------------------------------------------------- |
+| NOP          | pseudo-instruction converted to ADD NIL                                                       |
+| MOV SRC, DST | SRC is read and written to DST                                                                |
+| SWP          | Exchange ACC and BAK                                                                          |
+| SAV          | Write ACC to BAK                                                                              |
+| ADD SRC      | Add SRC to ACC, store result in ACC                                                           |
+| SUB SRC      | Subtract SRC from ACC, store result in ACC                                                    |
+| NEG          | The value of ACC is arithmetically negated                                                    |
+| JMP LABEL    | Transfer execution to instruction after LABEL                                                 |
+| JEZ LABEL    | Transfer execution to instruction after LABEL if value of ACC is zero.                        |
+| JNZ LABEL    | Transfer execution to instruction after LABEL if value of ACC is not zero.                    |
+| JGZ LABEL    | Transfer execution to instruction after LABEL if value of ACC is greater than zero.           |
+| JLZ LABEL    | Transfer execution to instruction after LABEL if value of ACC is less than zero.              |
+| JRO SRC      | Transfer execution to instruction at offset specified by SRC relative to current instruction. |
+| HCF          | Halt and Catch Fire (undocumented)                                                            |
 
 
 ## Node Type T30 - Stack Memory Node

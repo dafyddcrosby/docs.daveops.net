@@ -101,6 +101,28 @@ fp.close
 ```
 
 
+## heredoc
+
+[heredoc documentation](https://docs.ruby-lang.org/en/master/doc/syntax/literals_rdoc.html#label-Here+Document+Literals)
+
+```ruby
+  message1 = <<EOM
+  This string starts at line start
+EOM # Needs to be at 0 position
+
+  message2 = <<-EOM
+While the terminator is indented, text is left flush
+  EOM
+
+  message3 = <<~EOM
+    This one removes space before first printable character 
+      of the least indented line. Empty lines ignored
+
+    Available in Ruby 2.3+
+  EOM
+```
+
+
 # Threads
 
 ```ruby
@@ -173,7 +195,37 @@ compile with mrbc
 | defs/keywords | The reserved keywords of Ruby          |
 
 
-# parsing
+# Compilers
+
+
+## scanning
+
+
+### strscan
+
+[ruby/strscan](https://github.com/ruby/strscan)
+
+
+### rexical
+
+[tenderlove/rexical](https://github.com/tenderlove/rexical)
+
+
+### oedipus<sub>lex</sub>
+
+[seattlerb/oedipus<sub>lex</sub>](https://github.com/seattlerb/oedipus_lex)
+
+
+## parsing
+
+
+### racc
+
+[ruby/racc](https://github.com/ruby/racc)
+
+Built-in to Ruby
+
+Need a scanner/tokenizer, use rexical or oedipus<sub>rex</sub> (or yyparse and an iterator to extract tokens from your string)
 
 
 ### parsetree (CLI)
@@ -183,6 +235,18 @@ ruby --dump parsetree
 ```
 
 This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in CRuby source (output not usable in other implementations)
+
+
+### parser gem
+
+- [whitequark/parser](https://github.com/whitequark/parser)
+
+Despite the generic sounding name, it's not generic. Parser handles Ruby (and Ruby-ish) code.
+
+A lot of the tree-rewriter code is in here (though a bit of a shame that's not abstracted out, in the same way that NodePattern should be)
+
+
+## AST
 
 
 ### Ripper
@@ -202,10 +266,12 @@ pp Ripper.sexp(f)
 <http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html>
 
 
-### ast and parser gems
+### ast gem
 
 - [whitequark/ast](https://github.com/whitequark/ast)
-- [whitequark/parser](https://github.com/whitequark/parser)
+
+- [Node class](https://github.com/whitequark/ast/blob/master/lib/ast/node.rb)
+- [Processing mixin](https://github.com/whitequark/ast/blob/master/lib/ast/processor/mixin.rb)
 
 
 ### code reconstruction from AST
@@ -260,28 +326,6 @@ $global
 fp = File.open(filename, mode)
 fp.write('bloop')
 fp.close
-```
-
-
-# heredoc
-
-[heredoc documentation](https://docs.ruby-lang.org/en/master/doc/syntax/literals_rdoc.html#label-Here+Document+Literals)
-
-```ruby
-  message1 = <<EOM
-  This string starts at line start
-EOM # Needs to be at 0 position
-
-  message2 = <<-EOM
-While the terminator is indented, text is left flush
-  EOM
-
-  message3 = <<~EOM
-    This one removes space before first printable character 
-      of the least indented line. Empty lines ignored
-
-    Available in Ruby 2.3+
-  EOM
 ```
 
 
@@ -1092,6 +1136,8 @@ RuboCop::NodePattern.new('(int ...)').match(node)
 # Generating AST on the command line
 ruby-parse -e '2 + 2'
 ```
+
+Racc compiles the NodePattern. See [lib/rubocop/ast/nodepattern/parser.y](https://github.com/rubocop/rubocop-ast/blob/master/lib/rubocop/ast/node_pattern/parser.y)
 
 - [RuboCop development guide](https://docs.rubocop.org/rubocop/development.html)
 - [NodePattern doc](https://github.com/rubocop/rubocop-ast/blob/master/docs/modules/ROOT/pages/node_pattern.adoc)

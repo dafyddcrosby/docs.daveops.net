@@ -46,6 +46,12 @@ Standard with Emacs 29
 
 [Quelpa](https://github.com/quelpa/quelpa) uses the MELPA package recipes and builds them locally from source
 
+`quelpa-upgrade-all` to upgrade all packages
+
+`quelpa RET package_name` to install a package
+
+`(quelpa 'package-name)` to use in Emacs lisp
+
 
 # Repositories
 

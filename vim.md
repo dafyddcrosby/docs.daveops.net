@@ -1,9 +1,10 @@
-# vim
+
+# Vim
 
 <http://www.vimninjas.com/>
 
 
-## profile Vim startup time
+# profile Vim startup time
 
 Requires vim 7.2.269+
 
@@ -12,28 +13,28 @@ vim --startuptime start.log
 ```
 
 
-## Sort on a virtual column
+# Sort on a virtual column
 
 ```
 :sort /.*\%10v/
 ```
 
 
-## Get filetype
+# Get filetype
 
 ```
 :set filetype?
 ```
 
 
-## Show line numbers
+# Show line numbers
 
 ```
 :set number
 ```
 
 
-## Inserting glyphs
+# Inserting glyphs
 
 ctrl-k starts digraph mode
 
@@ -42,19 +43,19 @@ ctrl-k starts digraph mode
 g8 - see bytes for UTF-8 character
 
 
-## Omnicompletion
+# Omnicompletion
 
 <C-X><C-O>
 
 
-## Set shell
+# Set shell
 
 ```
 :set shell=/bin/bash
 ```
 
 
-## Redraw shell
+# Redraw shell
 
 ctrl-l
 

@@ -48,6 +48,14 @@
 | C-x f              | Set fill mode margin (default 70 chars) |
 
 
+## shells
+
+| keystrokes    | desc                   |
+|------------- |---------------------- |
+| M-x shell     | comint-driven shell    |
+| M-x ansi-term | ANSI terminal emulator |
+
+
 # VSCode
 
 

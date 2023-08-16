@@ -49,6 +49,8 @@ From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 
 # Emacs Lisp
 
+| M-x                   | desc                                              |
+|--------------------- |------------------------------------------------- |
 | ielm                  | Emacs Lisp REPL                                   |
 | lisp-interaction-mode | Enable Lispl interaction mode                     |
 | scratch-buffer        | creates new scratch buffer for Emacs Lisp testing |

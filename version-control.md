@@ -373,6 +373,12 @@ ghe-webhook-logs -f -a YYYYMMDD
 - <https://docs.github.com/en/enterprise-server@2.22/user/github>
 
 
+# Sapling
+
+- [Homepage](https://sapling-scm.com/)
+- [Sapling GH](https://github.com/facebook/sapling)
+
+
 # Fossil
 
 - <https://www.fossil-scm.org>
@@ -424,7 +430,7 @@ git fast-export --all | fossil import --git new-repo.fossil
 
 # mercurial
 
-- <https://www.mercurial-scm.org/>
+- [Mercurial home page](https://www.mercurial-scm.org/)
 
 ```shell
 # New repo
@@ -468,9 +474,8 @@ cvsync cvsync://<host>[:<port>]/</port></host>
 
 # SVN
 
-Get information about a repo:
-
 ```shell
+# Get information about a repo
 svnlookup info /path/to/repo
 # latest revision number
 svnlookup youngest /path/to/repo
@@ -483,7 +488,12 @@ svnlookup youngest /path/to/repo
 --patience  # use the patience algorithm
 ```
 
-<http://bramcohen.livejournal.com/73318.html>
+> 1. Match the first lines of both if they're identical, then match the second, third, etc. until a pair doesn't match.
+> 2. Match the last lines of both if they're identical, then match the next to last, second to last, etc. until a pair doesn't match.
+> 3. Find all lines which occur exactly once on both sides, then do longest common subsequence on those lines, matching them up.
+> 4. Do steps 1-2 on each section between matched lines
+
+From <https://bramcohen.livejournal.com/73318.html>
 
 
 # patch

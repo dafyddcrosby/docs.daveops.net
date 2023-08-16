@@ -1586,6 +1586,14 @@ rustup target add aarch64-apple-ios x86_64-apple-ios
 ```
 
 
+## Macros
+
+| Macro            | Description                                  |
+|---------------- |-------------------------------------------- |
+| print!("text")   | Print a line to STDOUT                       |
+| println!("text") | Print a line to STDOUT followed by a newline |
+
+
 ## Rust Webassembly
 
 

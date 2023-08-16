@@ -212,16 +212,22 @@ readelf -l ./program
 fdisk -l <disk>
 ```
 
-| description            | command |
-|---------------------- |------- |
-| show menu              | m       |
-| show partition table   | p       |
-| create a new partition | n       |
-| change filesystem type | t       |
-| list filesystem types  | l       |
-| write partition table  | w       |
+Use `sfdisk` to script disk formatting
 
-Use `sfdisk` to script disk formatting # User Management
+| description                       | command |
+|--------------------------------- |------- |
+| change filesystem type            | t       |
+| create a new partition            | n       |
+| delete a partition                | d       |
+| list filesystem types             | l       |
+| quit without saving changes       | q       |
+| show menu                         | m       |
+| show partition table              | p       |
+| toggle bootable flag on partition | a       |
+| write partition table             | w       |
+
+
+# User Management
 
 
 ## Users
@@ -741,3 +747,20 @@ setxkbmap -option ctrl:nocaps
   rules/     # configuration of mappings
   
 ```
+
+
+# Daemontools
+
+| Flag | Signal    | Description                                                                                                 |
+|---- |--------- |----------------------------------------------------------------------------------------------------------- |
+| -u   | Up        | If the service is not running, start it. If the service stops, restart it.                                  |
+| -d   | Down      | If the service is running, send it a TERM signal and then a CONT signal. After it stops, do not restart it. |
+| -o   | Once      | If the service is not running, start it. Do not restart it if it stops.                                     |
+| -p   | Pause     | Send the service a STOP signal.                                                                             |
+| -c   | Continue  | Send the service a CONT signal.                                                                             |
+| -h   | Hangup    | Send the service a HUP signal.                                                                              |
+| -a   | Alarm     | Send the service an ALRM signal.                                                                            |
+| -i   | Interrupt | Send the service an INT signal.                                                                             |
+| -t   | Terminate | Send the service a TERM signal.                                                                             |
+| -k   | Kill      | Send the service a KILL signal.                                                                             |
+| -x   | Exit      | supervise will exit as soon as the service is down. Note: supervise is designed to run forever.             |
