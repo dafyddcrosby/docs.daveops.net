@@ -91,16 +91,6 @@ net rpc shutdown -I ipAddressOfWindowsPC -U username%password
 ```
 
 
-# ncdu
-
-
-## Only count files on same mounted filesystem
-
-```shell
-ncdu -x $MOUNT_POINT
-```
-
-
 # IPFS
 
 - <https://ipfs.io>
@@ -108,4 +98,19 @@ ncdu -x $MOUNT_POINT
 ```shell
 # Initialize an IPFS system
 ipfs init
+```
+
+
+# bcachefs
+
+<https://bcachefs.org/>
+
+
+# ncdu
+
+
+## Only count files on same mounted filesystem
+
+```shell
+ncdu -x $MOUNT_POINT
 ```

@@ -46,3 +46,15 @@ Categories=Development;TextEditor;
 StartupNotify=true
 StartupWMClass=Emacs
 ```
+
+
+# Build from source (Fedora)
+
+```sh
+sudo dnf install texinfo gnutls-devel autoconf make gcc ncurses-devel sqlite-devel
+sudo dnf install gtk3-devel giflib-devel libXpm-devel # Graphical install
+git clone git://git.sv.gnu.org/emacs.git
+cd emacs
+sh autogen.sh
+./configure
+```

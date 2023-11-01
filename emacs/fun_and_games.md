@@ -12,9 +12,10 @@ Conference typically in December
 
 # Misc modes
 
-| keystrokes       | desc               |
-|---------------- |------------------ |
-| M-x telnet       | telnet to a server |
-| M-x calc         | calc mode          |
-| M-x lunar-phases | phases of the moon |
-| M-x doctor       | "doctor" chatbot   |
+| M-x          | desc                 |
+|------------ |-------------------- |
+| telnet       | telnet to a server   |
+| calc         | calc mode            |
+| lunar-phases | phases of the moon   |
+| doctor       | "doctor" chatbot     |
+| emacs-uptime | Emacs uptime counter |

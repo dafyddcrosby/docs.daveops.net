@@ -1,10 +1,25 @@
 
 # Emacs Lisp
 
+# Documentation
+
 [An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html)
 
+C-h R eintr C-h R elisp
 
-## Lexical binding
+
+# Emacs Lisp
+
+| M-x                   | desc                                      |
+|--------------------- |----------------------------------------- |
+| ielm                  | Emacs Lisp REPL                           |
+| lisp-interaction-mode | Enable Lisp interaction mode              |
+| scratch-buffer        | new scratch buffer for Emacs Lisp testing |
+| eval-buffer           | evaluate entire buffer                    |
+| eval-region           | evaluate marked region                    |
+
+
+# Lexical binding
 
 To enable lexical-binding in a file:
 
@@ -13,7 +28,7 @@ To enable lexical-binding in a file:
 ```
 
 
-## Keystrokes
+# Keystrokes
 
 | desc                    | keystroke |
 |----------------------- |--------- |
@@ -21,7 +36,7 @@ To enable lexical-binding in a file:
 | execute, dump in buffer | C-j       |
 
 
-## Limitations
+# Limitations
 
 From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 
@@ -40,17 +55,8 @@ From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 > - Emacs Lisp is not Scheme. See SchemeAndLisp.
 
 
-### Memory consumption
+## Memory consumption
 
 From <https://www.emacswiki.org/emacs/EmacsLispLimitations>
 
 > - Memory consumption gets out-of-hand REAL FAST if you don’t pay attention. If you’re writing a new library, be sure to turn on garbage collection messages by setting ‘garbage-collection-messages’ to t. If you see the collection messages every few seconds, you can be sure that your library is eating up and spitting out cons cells and strings at a furious rate.
-
-
-# Emacs Lisp
-
-| M-x                   | desc                                              |
-|--------------------- |------------------------------------------------- |
-| ielm                  | Emacs Lisp REPL                                   |
-| lisp-interaction-mode | Enable Lispl interaction mode                     |
-| scratch-buffer        | creates new scratch buffer for Emacs Lisp testing |

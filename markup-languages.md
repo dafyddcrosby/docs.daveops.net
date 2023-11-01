@@ -1,7 +1,53 @@
+
 # Markup languages
 
-
 # HTML
+
+
+## Entities
+
+| Tag        | Name                       | Description                                                                                                                                                                                                                                                                 |
+|---------- |-------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <!-->      | comment                    | Used for commenting out code                                                                                                                                                                                                                                                |
+| <html>     | HTML                       | Represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.                                                                                                         |
+| <head>     | head                       | contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.                                                                                                                                                             |
+| <meta>     | meta                       | represents metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.                                                                                                                                                |
+| <style>    | style                      | contains style information for a document, or part of a document.                                                                                                                                                                                                           |
+| <title>    | title                      | defines the document's title that is shown in a browser's title bar or a page's tab                                                                                                                                                                                         |
+| <body>     | body                       | represents the content of an HTML document. There can be only one <body> element in a document.                                                                                                                                                                             |
+| <h1>-<h6>  | h1-h6                      | represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest.                                                                                                                                                                         |
+| <nav>      | nav                        | represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.                                                   |
+| <div>      | content division           | the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).                                  |
+| <hr>       | horizontal rule            | represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.                                                                                                                              |
+| <li>       | list item                  | used to represent an item in a list                                                                                                                                                                                                                                         |
+| <ol>       | ordered list               | represents an ordered list of items — typically rendered as a numbered list.                                                                                                                                                                                                |
+| <ul>       | unordered list             | represents an unordered list of items, typically rendered as a bulleted list.                                                                                                                                                                                               |
+| <p>        | paragraph                  | represents a paragraph                                                                                                                                                                                                                                                      |
+| <pre>      | preformatted text          | represents preformatted text which is to be presented exactly as written in the HTML file                                                                                                                                                                                   |
+| <a>        | anchor                     | with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address                                                                                                                           |
+| <b>        | Bring attention to         | used to draw the reader's attention to the element's contents, which are not otherwise granted special importance                                                                                                                                                           |
+| <br>       | line break                 | produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.                                                                                                                                 |
+| <code>     | code                       | displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code                                                                                                                                                           |
+| <i>        | idiomatic                  | represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others                                                                                                            |
+| <kbd>      | keyboard input             | represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device                                                                                                                                                   |
+| <s>        | strikethrough              | renders text with a strikethrough, or a line through it. Use the <s> element to represent things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating document edits; for that, use the del and ins elements, as appropriate. |
+| <audio>    | audio                      | used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the source element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.       |
+| <img>      | image                      | embeds an image into the document                                                                                                                                                                                                                                           |
+| <video>    | video                      | embeds a media player which supports video playback into the document. You can use <video> for audio content as well, but the audio element may provide a more appropriate user experience.                                                                                 |
+| <iframe>   | inline frame               | represents a nested browsing context, embedding another HTML page into the current one                                                                                                                                                                                      |
+| <script>   | script                     | used to embed executable code or data; this is typically used to embed or refer to JavaScript code.                                                                                                                                                                         |
+| <table>    | table                      | represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.                                                                                                                                 |
+| <th>       | th                         | defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.                                                                                                                                          |
+| <tr>       | table row                  | defines a row of cells in a table. The row's cells can then be established using a mix of td (data cell) and th (header cell) elements.                                                                                                                                     |
+| <td>       | table data cell            | defines a cell of a table that contains data. It participates in the table model.                                                                                                                                                                                           |
+| <form>     | form                       | represents a document section containing interactive controls for submitting information                                                                                                                                                                                    |
+| <textarea> | text area                  | represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.                                                                                   |
+| <blink>    | blink                      | Deprecated. Causes the enclosed text to flash slowly.                                                                                                                                                                                                                       |
+| <bgsound>  | Background sound           | Deprecated, IE only. Sets up a sound file to play in the background while the page is used; use audio instead.                                                                                                                                                              |
+| <frameset> | frameset                   | Deprecated. Used to hold frames                                                                                                                                                                                                                                             |
+| <frame>    | frame                      | an HTML element which defines a particular area in which another HTML document can be displayed. A frame should be used within a frameset                                                                                                                                   |
+| <marquee>  | scrolling text             | Deprecated. Used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.                                                                                                                 |
+| <noframes> | No frames / Frame fallback | Provides content to be presented in browsers that don't support (or have disabled support for) the frame element                                                                                                                                                            |
 
 
 ## Application cache
@@ -341,6 +387,24 @@ xmllint --noout --dtdvalid ./local.dtd $FILE
 # LaTeX
 
 
+## Cheatsheet
+
+| Description                    | Command         | LaTeX                 |
+|------------------------------ |--------------- |--------------------- |
+| Show a fraction                | \frac{1}{2}     | [$]\frac{1}{2}[/$]    |
+| Show multiplication            | &times;         | [$]\times[/$]         |
+| Show a square root             | \sqrt{abc}      | [$]\sqrt{abc}[/$]     |
+| Infinity symbol                | &infin;         | [$]\infty[/$]         |
+| Plus-minus symbol              | &plusmn;        | [$]\pm[/$]            |
+| Pi symbol                      | &pi;            | [$]\pi[/$]            |
+| Sum symbol                     | &sum;           | [$]\sum[/$]           |
+| Show x to the nth root         | \sqrt[n]{x}     | [$]\sqrt[n]{x}[/$]    |
+| Create an exponent             | x<sup>y-1</sup> | [$]x^{y-1}[/$]        |
+| Symbol to show proportionality | &prop;          | [$]\propto[/$]        |
+| Approximate symbol             | &asymp;         | [$]\approx[/$]        |
+| LaTeX logo                     | \LaTeX          | [latex]\LaTeX[/latex] |
+
+
 ## adding quotes
 
 ```
@@ -651,6 +715,8 @@ Security Assertion Markup Language <https://samltest.id/>
 
 # Mermaid
 
+<https://mermaid-js.github.io/mermaid/>
+
 ```
 <div class="mermaid">
 journey
@@ -663,4 +729,16 @@ journey
       Go downstairs: 5: Me
       Sit down: 5: Me
 </div>
+```
+
+```
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
 ```

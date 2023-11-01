@@ -1,5 +1,5 @@
-# Configuration Management
 
+# Configuration Management
 
 # Ansible
 
@@ -28,7 +28,7 @@ knife ec2 server create "role[ubuntu]" -I ami_id -f instance_type -S knife -i ~/
 Use the omnibus installer if you can!
 
 ```shell
-sudo rpm -Uvh <http://rbel.frameos.org/rbel6>
+sudo rpm -Uvh http://rbel.frameos.org/rbel6
 yum install ruby ruby-devel ruby-ri ruby-rdoc ruby-shadow gcc gcc-c++ automake autoconf make curl dmidecode
 gem install chef --no-ri --no-rdoc
 ```
@@ -77,12 +77,7 @@ knife search -a ATTR
 Use `lazy` so that the code block isn't evaluated until execution phase.
 
 
-# Inspec
-
-<https://www.inspec.io/>
-
-
-# Chef shell
+## Chef shell
 
 ```ruby
 # list resources
@@ -90,14 +85,14 @@ help resource
 ```
 
 
-## Debug attributes
+### Debug attributes
 
 ```ruby
 pp node.debug_value('system', 'repo')
 ```
 
 
-## Get the resources used
+### Get the resources used
 
 ```ruby
 # in chef-shell
@@ -106,13 +101,7 @@ resources
 ```
 
 
-# ChefSpec
-
-- [Chef docs](https://docs.chef.io/workstation/chefspec/)
-- [Github repo](https://github.com/chefspec/chefspec)
-
-
-# Foodcritic
+## Foodcritic
 
 Has been replaced by cookstyle
 
@@ -122,78 +111,84 @@ foodcritic -t annoyances,deprecated,correctness
 ```
 
 
-# Chef Handlers
+## ChefSpec
+
+- [Chef docs](https://docs.chef.io/workstation/chefspec/)
+- [Github repo](https://github.com/chefspec/chefspec)
 
 
-## Handler types
+## Chef Handlers
 
 
-### exception
+### Handler types
+
+
+#### exception
 
 Loaded when run fails
 
 exception handler runs when the `failed?` property for the run<sub>status</sub> object returns true.
 
 
-### report
+#### report
 
 Reports details of run success
 
 report handler runs when the `success?` property for the run<sub>status</sub> object returns true.
 
 
-### start
+#### start
 
 Starts at chef client run
 
 
-## Resources
+### Resources
 
 <https://docs.chef.io/handlers.html>
 
 
-# Knife
+## Knife
 
 
-## Bootstrap a node
+### Bootstrap a node
 
 ```shell
 knife bootstrap FQDN_OR_IP -E ENVIRONMENT -N NAME -x USER -r RUN_LIST [ --sudo | -G GATEWAY ]
 ```
 
 
-## Return chef versions
+### Return chef versions
 
 ```shell
 knife search node "name:*" -a chef_packages.chef.version
 ```
 
 
-## Remove recipe from all nodes
+### Remove recipe from all nodes
 
 ```shell
 knife exec -E 'nodes.transform("chef_environment:dev") {|n| puts n.run_list.remove("recipe[chef-client::upgrade]"); n.save }'
 ```
 
 
-## Find non 64-bit nodes
+### Find non 64-bit nodes
 
 ```shell
 knife search node "(NOT kernel_machine:x86_64)"
 ```
 
 
-## Generate new keypair for client
+### Generate new keypair for client
 
 ```shell
 knife client reregister CLIENT
 ```
 
 
-# provisioning
+## provisioning
 
 
-## CLI
+### CLI
 
 ```shell
 chef provision --no-policy
@@ -202,10 +197,10 @@ chef provision --no-policy -D
 ```
 
 
-# Berkshelf
+## Berkshelf
 
 
-## CLI
+### CLI
 
 ```shell
 # Install cookbooks
@@ -213,7 +208,7 @@ berks install
 ```
 
 
-## Berksfile
+### Berksfile
 
 ```ruby
 ## In case you're developing on a bunch of cookbooks
@@ -229,10 +224,10 @@ cookbook "rightscale", git: "https://github.com/rightscale/rightscale_cookbooks.
 ```
 
 
-# Test Kitchen
+## Test Kitchen
 
 
-## Setting RAM on Vagrant
+### Setting RAM on Vagrant
 
 ```yaml
 driver:
@@ -242,7 +237,7 @@ driver:
 ```
 
 
-## Setting environment in chef-zero
+### Setting environment in chef-zero
 
 ```yaml
 driver:
@@ -256,7 +251,7 @@ provisioner:
 ```
 
 
-## kitchen-dokken
+### kitchen-dokken
 
 Pre-installed with ChefDK
 
@@ -287,7 +282,7 @@ suites:
 ```
 
 
-## Using chef-vault
+### Using chef-vault
 
 ```yaml
 suites:
@@ -302,16 +297,16 @@ suites:
 ```
 
 
-## Links
+### Links
 
 - [Test Kitchen website](https://kitchen.ci)
 - <https://github.com/someara/kitchen-dokken>
 
 
-# Server
+## Server
 
 
-## Users
+### Users
 
 ```shell
 # Create a user
@@ -323,7 +318,7 @@ chef-server-ctl user-delete USER_NAME
 ```
 
 
-## Organizations
+### Organizations
 
 ```shell
 # List orgs
@@ -335,7 +330,7 @@ chef-server-ctl org-user-add ORG_NAME USER_NAME [--admin]
 ```
 
 
-## Groups
+### Groups
 
 [knife acl plugin](https://github.com/chef/knife-acl)
 
@@ -345,16 +340,16 @@ knife group add MEMBERTYPE MEMBER GROUP
 ```
 
 
-## Links
+### Links
 
 - [chef-server-ctl](https://docs.chef.io/ctl_chef_server.html)
 - [Air-gapped servers](https://docs.chef.io/install_chef_air_gap.html)
 
 
-# Chef-Vault
+## Chef-Vault
 
 
-## Knife
+### Knife
 
 ```shell
 # Create a vault
@@ -374,10 +369,10 @@ knife data bag show VAULT ITEM_keys -Fjson | jq .search_query
 ```
 
 
-## Code
+### Code
 
 
-### chef-vault cookbook
+#### chef-vault cookbook
 
 ```ruby
 include_recipe "chef-vault"
@@ -385,7 +380,7 @@ vault = chef_vault_item(DATABAG, ITEM)
 ```
 
 
-### chef-vault gem
+#### chef-vault gem
 
 ```ruby
 chef_gem 'chef-vault' do
@@ -399,7 +394,7 @@ item["password"]
 ```
 
 
-## Links
+### Links
 
 - [chef vault gem](https://github.com/chef/chef-vault)
 - [chef vault cookbook](https://github.com/chef-cookbooks/chef-vault)
@@ -415,3 +410,8 @@ Something that should always have the same result, no matter how many times it r
 # /tmp/thing should exist no matter how many times you run this:
 mkdir -p /tmp/thing
 ```
+
+
+# Inspec
+
+<https://www.inspec.io/>

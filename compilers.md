@@ -159,3 +159,27 @@ Add `/hotpatch` to the compiler flags.
 # Compilers Explorer
 
 <https://godbolt.org/>
+
+
+# Papers/books
+
+
+## A Nanopass Framework for Compiler Education
+
+Dipanwita Sarkar, Oscar Waddell, R. Kent Dybvig
+
+<https://legacy.cs.indiana.edu/~dyb/pubs/nano-jfp.pdf>
+
+Each pass of a micropass compiler performs a single specific task:
+
+- simplify (eg relaxing the AST)
+- verify (eg check compiler invariants that are hard to express in grammar)
+- convert (eg makes abstractions explicit into lower-level target language)
+- analyze (eg collect program information and annotate the output program)
+- improve (eg decrease run time/resource utilization)
+
+A nanopass compiler differs from a micropass compiler in three ways:
+
+1. the intermediate-language grammars are formally specified and enforced
+2. each pass needs to contain traversal code only for forms that undergo meaningful transformation
+3. the intermediate code is represented more efficiently as records, although all interaction with the programmer is still via the s-expression syntax

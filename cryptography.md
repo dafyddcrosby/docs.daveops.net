@@ -1,10 +1,10 @@
+
 # Cryptography
 
+# XOR
 
-## XOR
 
-
-## Frequency analysis
+# Frequency analysis
 
 Certain letters show up more frequently in natural language. This leads to cryptographic weakness in classic ciphers
 
@@ -45,7 +45,7 @@ Common triplets of text are THE, EST, FOR, AND, HIS, ENT or THA.
 
 # Cryptopals
 
-<http://cryptopals.com>
+<https://cryptopals.com>
 
 
 ## Set 1

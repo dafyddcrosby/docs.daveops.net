@@ -5,6 +5,8 @@
 
 Standard with Emacs 24
 
+| desc                             | M-x                      |
+|-------------------------------- |------------------------ |
 | install a package                | package-install          |
 | remove unused dependent packages | package-autoremove       |
 | get list of installable packages | package-list-packages    |
@@ -36,6 +38,8 @@ Standard with Emacs 24
 
 
 # use-package
+
+Nice way to keep configuration of emacs packages tidy
 
 Standard with Emacs 29
 

@@ -330,17 +330,17 @@ $ORIGIN subdomain.example.com.
 - [Criticism of DNSSEC](https://sockpuppet.org/blog/2015/01/15/against-dnssec/)
 
 
-# SPF
+## SPF
 
 
-## Check the SPF record of a domain
+### Check the SPF record of a domain
 
 ```
 dig -t TXT example.com +short | grep spf
 ```
 
 
-## SPF null record
+### SPF null record
 
 If the domain should not be sending any email
 
@@ -349,16 +349,16 @@ www.example.com.   IN  TXT  "v=spf1 -all"
 ```
 
 
-## Links
+### Links
 
 - <http://www.openspf.org/>
 - <http://www.spfwizard.net/>
 
 
-# BIND
+## BIND
 
 
-## Production ready
+### Production ready
 
 - Rate limiting is set in the options
 - Recursion is disabled on the authoritative servers
