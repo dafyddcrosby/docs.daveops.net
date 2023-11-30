@@ -1,16 +1,19 @@
 
 # Linux Distributions
 
-# Fedora
+# Red Hat
 
 
-## Community Code of Conduct
+## Fedora
+
+
+### Community Code of Conduct
 
 - [Code of Conduct](https://docs.fedoraproject.org/en-US/project/code-of-conduct/)
 - Send violations to <https://pagure.io/CoC/new_issue> or codeofconduct@fedoraproject.org
 
 
-## Upgrading to new Fedora versions
+### Upgrading to new Fedora versions
 
 ```shell
 sudo dnf upgrade --refresh
@@ -21,7 +24,7 @@ sudo dnf system-upgrade download --refresh --releasever=37
 <https://fedoraproject.org/wiki/DNF_system_upgrade>
 
 
-## Building live images
+### Building live images
 
 ```shell
 # Install the tooling
@@ -41,18 +44,26 @@ sudo qemu-kvm -m 2048 -vga qxl -cdrom filename.iso
 <https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/#proc_creating-and-using-live-cd>
 
 
-# CentOS
+## CentOS
 
 - [RPM package sources](https://git.centos.org/project/rpms)
 - [kernel sources](https://git.centos.org/sources/kernel/)
 - <https://www.centos.org/download/>
 
 
-## Building AMIs
+### Building AMIs
 
 - <https://github.com/CentOS/sig-cloud-instance-build/>
 - [Images repository](https://cloud.centos.org/centos)
 - [AWS instructions on importing VMs](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html)
+
+
+## Remove older kernels
+
+```shell
+# (RHEL) Install yum-utils and run:
+package-cleanup --oldkernels --count=1
+```
 
 
 # NixOS

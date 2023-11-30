@@ -1,13 +1,5 @@
+
 # Linux kernel
-
-
-# Remove older kernels
-
-```shell
-# (RHEL) Install yum-utils and run:
-package-cleanup --oldkernels --count=1
-```
-
 
 # Kernel Analysis
 
@@ -302,12 +294,15 @@ UDP fingerprinting:
 
 # Building Kernels
 
+
+## Building on Fedora
+
 ```shell
 dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign bison flex kernel-devel glibc-static grubby
 ```
 
 
-### Building a user-mode linux kernel
+## Building a user-mode linux kernel
 
 ```
 # TODO add a saner config

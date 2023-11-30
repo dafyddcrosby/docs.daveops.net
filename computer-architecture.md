@@ -1,5 +1,5 @@
-# Computer Architecture
 
+# Computer Architecture
 
 # Unicorn CPU emulator
 
@@ -338,3 +338,10 @@ The Genesis (Mega Drive in Japan) has 2 on-board processors, a 68000 @ 8MHz and 
 | MISD    | Multiple instruction, single data   | Fault-tolerant architectures, somewhat uncommon |
 | SIMD    | Single instruction, multiple data   | array processors, GPUs                          |
 | MIMD    | Multiple instruction, multiple data | Multi-core superscalar, distributed systems     |
+
+
+# Dennard Scaling
+
+<https://en.wikipedia.org/wiki/Dennard_scaling>
+
+Voltage and power scale down in length. If transistor density doubles, power consumption remains the same. However, at smaller sizes (started to see around 2006) current leakage is harder to deal with, which creates thermal runaway.

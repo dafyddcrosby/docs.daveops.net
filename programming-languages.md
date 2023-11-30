@@ -1852,3 +1852,13 @@ $("#thing").parent();
 ## d3js
 
 <https://d3js.org/>
+
+
+# Elixer
+
+Ruby/Lisp-alike run on Erlang BEAM
+
+
+# OCaml
+
+<https://ocaml.org/>

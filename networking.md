@@ -679,7 +679,10 @@ nc -v # should return "RFB ..."
 ```
 
 
-# Disabling MAC randomization in NetworkManager
+# NetworkManager
+
+
+## Disabling MAC randomization in NetworkManager
 
 `/etc/NetworkManager/conf.d/wifi_rand_mac.conf`
 

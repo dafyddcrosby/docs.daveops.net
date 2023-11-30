@@ -1,5 +1,5 @@
-# Operating Systems
 
+# Operating Systems
 
 # Writing operating systems
 
@@ -49,102 +49,102 @@ key.alias=alias_name
 This includes Solaris derivatives as well, such as OpenSolaris and the Illumos project <http://www.brendangregg.com/blog/2017-09-05/solaris-to-linux-2017.html>
 
 
-# Solaris
+## Solaris
 
 
-## SMF (Service Management Facility)
+### SMF (Service Management Facility)
 
 
-## Clear maintenance mode and restart
+### Clear maintenance mode and restart
 
 ```shell
 svcadm clear <FMRI>
 ```
 
 
-## List services
+### List services
 
 ```shell
 svcs -a
 ```
 
 
-## Logs
+### Logs
 
 /var/svc/log
 
 
-## Links
+### Links
 
 - <http://bnsmb.de/solaris/My_Little_SMF_FAQ.html>
 - [Ben Rockwood's cheatsheet](http://www.cuddletech.com/blog/pivot/entry.php?id=182)
 
 
-## Sun OpenBoot
+### Sun OpenBoot
 
 
-## Boot from CDROM
+### Boot from CDROM
 
 ```
 boot cdrom
 ```
 
 
-## Test hardware
+### Test hardware
 
 ```
 test-all
 ```
 
 
-## Show banner
+### Show banner
 
 ```
 banner
 ```
 
 
-## Get ethernet address
+### Get ethernet address
 
 ```
 .enet-addr
 ```
 
 
-## Show hardware devices
+### Show hardware devices
 
 ```
 show-devs
 ```
 
 
-# SmartOS
+## SmartOS
 
 - vmadm - start, stop, etc virtual machines
 - imgadm - find, download, install images
 
 
-## SmartDataCenter
+### SmartDataCenter
 
 
-## Find VM by alias
+### Find VM by alias
 
 sdc-vmapi *vms | json -H -c "this.alias && this.alias.match(/riak*)"
 
 
-## Output fwapi rules
+### Output fwapi rules
 
 sdc-fwapi /rules
 
 
-## Update resolvers
+### Update resolvers
 
 ```shell
 sdc-vmapi /vms/?action=update -d '{ "resolvers": ["8.8.8.8", "8.8.4.4"]}'
 ```
 
 
-# OmniOS
+## OmniOS
 
 <https://omnios.org/>
 
@@ -356,10 +356,13 @@ ifconfig pfsync0 up
 - All Systems Go
 
 
-# iOS (Apple)
+# Darwin
 
 
-### View lifecycle
+## iOS (Apple)
+
+
+#### View lifecycle
 
 - viewDidLoad
 - viewWillAppear
@@ -368,30 +371,28 @@ ifconfig pfsync0 up
 - viewDidDisappear
 
 
-# iOS web programming
+### iOS web programming
 
 
-## Web Inspector
+#### Web Inspector
+
+-   On Mac
+
+    Safari -> Preferences -> Advanced -> Show Develop in menu bar
+
+-   On iPhone
+
+    Settings -> Safari -> Advanced -> Web Inspector
 
 
-### On Mac
-
-Safari -> Preferences -> Advanced -> Show Develop in menu bar
-
-
-### On iPhone
-
-Settings -> Safari -> Advanced -> Web Inspector
-
-
-## Application Name
+#### Application Name
 
 ```
 <title>WebApp</title>
 ```
 
 
-## Launcher icon (iOS 1.1.3+)
+#### Launcher icon (iOS 1.1.3+)
 
 Rounded corners, no added shiny (iOS 4.2):
 
@@ -412,7 +413,7 @@ With no sizes the default is 57x57 px
 (Multiple sizes iOS 4.2+)
 
 
-## Startup Image (iOS 3.0+)
+#### Startup Image (iOS 3.0+)
 
 ```
 <link rel="apple-touch-startup-image" href="/startup.png">
@@ -421,7 +422,7 @@ With no sizes the default is 57x57 px
 320x460 px, portrait
 
 
-## Have standalone look
+#### Have standalone look
 
 ```
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -432,7 +433,7 @@ With no sizes the default is 57x57 px
 > That will involve: a) adding back navigation everywhere, b) create a SPA experience or use location.href instead of links for internal navigation, c) if the load process is done in fullscreen mode (navigator.standalone==true), always load the home screen not matter what the stored URL says and please d) don't suggest me to "download an app" if I'm already inside an app-like experience.
 
 
-## Hide top status bar
+#### Hide top status bar
 
 NB - must have standalone mode on.
 
@@ -441,7 +442,7 @@ NB - must have standalone mode on.
 ```
 
 
-## Prevent zooming
+#### Prevent zooming
 
 ```
 <meta name="viewport" content="initial-scale=1.0">
@@ -451,17 +452,17 @@ NB - must have standalone mode on.
 ```
 
 
-## Links
+#### Links
 
 <https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html>
 
 
-# watchOS
+## watchOS
 
 watchOS app bundled in iOS app ![img](https://developer.apple.com/library/content/documentation/General/Conceptual/WatchKitProgrammingGuide/Art/architecture_compared_2x.png)
 
 
-## Complications
+### Complications
 
 The visual element on the watchface
 
@@ -471,15 +472,15 @@ The visual element on the watchface
 - Aople recommends creating a complication, even if it is only a button to launch the app
 
 
-## Notifications
+### Notifications
 
 short look - glanceable version of notification content if the wrist remains raised, goes to long look
 
 
-## UI
+### UI
 
 
-### Key color
+#### Key color
 
 - The title string in the status bar
 - App name in short-look notifications
@@ -487,18 +488,18 @@ short look - glanceable version of notification content if the wrist remains rai
 stored in Global Tint property of an app's storyboad
 
 
-### Page-based navigation
+#### Page-based navigation
 
 Add interface controllers
 
 
-## Links
+### Links
 
 - [WatchKitProgrammingGuide](https://developer.apple.com/library/content/documentation/General/Conceptual/WatchKitProgrammingGuide/)
 - [Human Interface Guidelines](https://developer.apple.com/watchos/human-interface-guidelines/)
 
 
-# tvOS
+## tvOS
 
 <https://developer.apple.com/documentation/tvservices> <https://developer.apple.com/documentation/avkit> <https://developer.apple.com/documentation/mediaplayer> <https://developer.apple.com/documentation/tvmljs>
 
