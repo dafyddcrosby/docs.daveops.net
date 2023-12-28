@@ -23,7 +23,8 @@ Google Remote Procedure Calling
 
 ## Cap'n Proto
 
-<https://github.com/cstrahan/capnp-ruby>
+- <https://capnproto.org/>
+- <https://github.com/cstrahan/capnp-ruby>
 
 
 ## Thrift

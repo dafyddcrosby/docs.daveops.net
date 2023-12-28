@@ -6,7 +6,7 @@
 
 ## Outside of work
 
-- [Sleep](./sleep.md) is precious. Invest in a nice bed, keep light out of the room, keep [caffeinated substance consumption](./coffee.md) to a minimum.
+- [Sleep](life_stuff.md) is precious. Invest in a nice bed, keep light out of the room, keep [caffeinated substance consumption](life_stuff.md) to a minimum.
 - If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier - the most inconvenient time. Schedule accordingly.
 
 

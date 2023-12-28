@@ -242,7 +242,6 @@ International calling code is required
 ```
 
 - [OpenGraph](web-programming.md)
-- [Web Services:Twitter](web-programming.md)
 
 <http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013>
 

@@ -14,7 +14,7 @@
 ## Mail
 
 - [Mutt](email.md)
-- [Alpine](http://www.washington.edu/alpine/)
+- [Alpine](https://alpineapp.email/)
 - Elm
 
 
@@ -67,7 +67,6 @@
 - links
 - w3m
 - elinks
-- [http](http.md)
 
 
 ## spreadsheet

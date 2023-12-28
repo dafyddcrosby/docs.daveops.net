@@ -156,7 +156,7 @@ As silly as some of these seem, I've seen them all apply at one point or another
 - [GitHub](https://github.com/alacritty/alacritty)
 
 
-## xterm
+## XTerm
 
 Comes with [X Windows](graphics-libraries.md)
 

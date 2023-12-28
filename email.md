@@ -1,9 +1,6 @@
 # EMail
 
 
-## See also
-
-
 ## Videos
 
 - [Email Hatest the Living (Ricardo Signes, rjbs)](https://www.youtube.com/watch?v=4s9IjkMAmns)
@@ -96,21 +93,21 @@ tls_fingerprint <fingerprint>
 # Postfix
 
 
-# Retry delivery
+## Retry delivery
 
 ```
 postqueue -f
 ```
 
 
-# Drop queue
+## Drop queue
 
 ```
 postsuper -d ALL
 ```
 
 
-# Print non-default configuration values
+## Print non-default configuration values
 
 ```
 postconf -n

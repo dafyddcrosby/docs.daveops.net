@@ -29,9 +29,6 @@
 [Github](https://github.com/llvm/llvm-project)
 
 
-## Intermediate Representation
-
-
 ## List available targets
 
 ```shell
@@ -161,25 +158,35 @@ Add `/hotpatch` to the compiler flags.
 <https://godbolt.org/>
 
 
-# Papers/books
+# Linkers
 
 
-## A Nanopass Framework for Compiler Education
+## The GNU linker
 
-Dipanwita Sarkar, Oscar Waddell, R. Kent Dybvig
+- `/etc/ld.so.conf` configures directories to search
+- `/etc/ld.so.cache` is the binary cache used by ld.so
 
-<https://legacy.cs.indiana.edu/~dyb/pubs/nano-jfp.pdf>
+```shell
+# Reload ld cache
+ldconfig
+# See which libraries are utilized
+ldconfig -v
 
-Each pass of a micropass compiler performs a single specific task:
+# See what an executable links to
+ldd ./executablefile
 
-- simplify (eg relaxing the AST)
-- verify (eg check compiler invariants that are hard to express in grammar)
-- convert (eg makes abstractions explicit into lower-level target language)
-- analyze (eg collect program information and annotate the output program)
-- improve (eg decrease run time/resource utilization)
+# Specify an alternate library path
+export LD_LIBRARY_PATH=/path/to/dir ...
 
-A nanopass compiler differs from a micropass compiler in three ways:
+# Link object file into an executable file
+ld -o example example.o
+# Strip all binary symbol information
+ld -s ...
+# Strip debug binary symbol information
+ld -S ...
+# Mark stack as non executable
+ld -z noexecstack
+```
 
-1. the intermediate-language grammars are formally specified and enforced
-2. each pass needs to contain traversal code only for forms that undergo meaningful transformation
-3. the intermediate code is represented more efficiently as records, although all interaction with the programmer is still via the s-expression syntax
+
+## LLD

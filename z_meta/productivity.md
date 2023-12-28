@@ -14,7 +14,7 @@ Spend the first 30 minutes of your day on what you want to accomplish the most
 
 Use 'bright lines' to avoid ambiguities that keep you doing things you don't want. "I don't do X. I only drink Y twice a week."
 
-Get enough [sleep](./sleep.md). Seriously.
+Get enough [sleep](life_stuff.md). Seriously.
 
 - <https://timemanagementninja.com/2015/01/10-productivity-questions-to-ask-yourself-every-day/>
 - <https://www.inc.com/john-rampton/15-ways-to-increase-productivity-at-work.html>

@@ -4,14 +4,7 @@
 # C
 
 
-## Install tooling in Fedora
-
-```shell
-sudo yum groupinstall "C Development Tools and Libraries"
-```
-
-
-## Resources
+## resources
 
 - <http://splint.org>
 - <http://c-faq.com/>
@@ -20,39 +13,13 @@ sudo yum groupinstall "C Development Tools and Libraries"
 - <http://www.slideshare.net/olvemaudal/deep-c/24-What_will_happen_if_you>
 
 
-## Misc Notes
-
-- Don't cast returned pointers from malloc. (void \*) should get automatically promoted to any pointer type, and casting just makes it likely you'll get it wrong.
-- Free allocated memory when you are done with it, don't assume that OS will clean up your mess.
+## libraries
 
 
-## Open and read file
-
-```C
-const char *filename = "file.txt";
-unsigned char byte;
-FILE *fp;
-
-fp = fopen(filename, "rb");
-
-if (!fp) {
-        printf("Couldn't open file\n");
-        return 1;
-}
-
-while(!feof(fp)) {
-        fread(&byte, sizeof(int), 1, fp);
-        printf("%i\n",byte);
-}
-
-fclose(fp);
-```
+### glibc
 
 
-## glibc
-
-
-### Get version
+#### Get version
 
 ```shell
 /lib/libc.so.6
@@ -67,10 +34,40 @@ int main (void) { puts (gnu_get_libc_version ()); return 0; }
 ```
 
 
+# C++
+
+
+## resources
+
+<https://en.cppreference.com/>
+
+
 # Go
 
 
-## Syntax cheatsheet
+## resources
+
+
+### [official website](https://golang.org/)
+
+
+### docs
+
+```shell
+godoc -http=:8080
+```
+
+
+### [Language Specification](https://golang.org/ref/spec)
+
+
+### [Go Koans](https://github.com/cdarwin/go-koans)
+
+
+## overview
+
+
+### syntax cheatsheet
 
 ```
 package main
@@ -98,73 +95,16 @@ func main() {
 ```
 
 
-## Go modules
+### Modules
 
 ```shell
-go mod init <module_name>
+go mod init $MODULE_NAME
 go mod vendor
 go get -u
 ```
 
 
-## Cross-compilation
-
-```shell
-# Compile for AMD64 Linux
-GOOS=linux GOARCH=amd64 go build
-```
-
-[https://golang.org/doc/install/source#environment](List%20of%20compilation%20targets)
-
-
-## Static linking
-
-If you're not using CGo, you can statically link with `CGO_ENABLED`.
-
-In Fedora this appears to be [on by default](https://src.fedoraproject.org/rpms/golang//blob/rawhide/f/golang.spec)
-
-```shell
-CGO_ENABLED=0 go build
-```
-
-
-## Resources
-
-```shell
-godoc -http=:8080
-```
-
-- <https://golang.org/>
-- [Language Specification](https://golang.org/ref/spec)
-- [Go Koans](https://github.com/cdarwin/go-koans)
-
-
-## Looking into
-
-- <https://www.kablamo.com.au/blog-1/2018/12/10/just-tell-me-how-to-use-go-modules>
-- <https://cryptic.io/go-http/>
-- <https://medium.com/@nate510/don-t-use-go-s-default-http-client-4804cb19f779>
-- [TinyGo](https://tinygo.org/)
-
-
-## Templating
-
-{% raw %}
-
-```
-{{/* comment */}}  Defines a comment
-{{.}}              Renders root element
-{{.Foo}}           Renders the "Foo"-field in a nested element
-
-{{if .Done}} {{else}} {{end}}   Defines an if-statement
-{{range .Items}} {{.}} {{end}}  Loops over all “Items” and renders each using {{.}}
-{{block "bar" .}} {{end}}       Defines a block with the name "bar"
-```
-
-{% endraw %}
-
-
-## Go - FastCGI
+### FastCGI
 
 ```
 package main
@@ -190,7 +130,48 @@ func main() {
 ```
 
 
-## Mage
+### Templating
+
+{% raw %}
+
+```
+{{/* comment */}}  Defines a comment
+{{.}}              Renders root element
+{{.Foo}}           Renders the "Foo"-field in a nested element
+
+{{if .Done}} {{else}} {{end}}   Defines an if-statement
+{{range .Items}} {{.}} {{end}}  Loops over all “Items” and renders each using {{.}}
+{{block "bar" .}} {{end}}       Defines a block with the name "bar"
+```
+
+{% endraw %}
+
+
+### Static linking
+
+If you're not using CGo, you can statically link with `CGO_ENABLED`.
+
+In Fedora this appears to be [on by default](https://src.fedoraproject.org/rpms/golang//blob/rawhide/f/golang.spec)
+
+```shell
+CGO_ENABLED=0 go build
+```
+
+
+### Cross-compilation
+
+```shell
+# Compile for AMD64 Linux
+GOOS=linux GOARCH=amd64 go build
+```
+
+[https://golang.org/doc/install/source#environment](List%20of%20compilation%20targets)
+
+
+## libraries
+
+
+### Mage
 
 <https://magefile.org/>
 
@@ -198,7 +179,10 @@ func main() {
 # Java
 
 
-## Types
+## overview
+
+
+### Types
 
 | type    | note                                            |
 |------- |----------------------------------------------- |
@@ -211,12 +195,36 @@ func main() {
 | boolean | the size isn't precisely defined                |
 
 
-## Numeric literals
+### SSL
+
+
+#### Debugging
+
+```
+# print each handshake message
+java -Djavax.net.debug=ssl:handshake MyApp
+```
+
+
+#### Links
+
+- <https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html>
+- <https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/JSSERefGuide.html#Debug>
+
+
+### Numeric literals
 
 You can use underscore characters in SE7+ example: `long hexBytes = 0xFF_CC_DA_B5;`
 
 
-## AES intrinsics
+### Zero copy
+
+Avoid copying the file data across user/kernel boundary, instead have the kernel put the file in a buffer and use DMA to pass the data directly.
+
+<https://www.ibm.com/developerworks/linux/library/j-zerocopy/>
+
+
+### AES intrinsics
 
 Requires Java 8 and Intel 2010+ Westmere
 
@@ -225,45 +233,27 @@ Requires Java 8 and Intel 2010+ Westmere
 ```
 
 
-## Zero copy
-
-Avoid copying the file data across user/kernel boundary, instead have the kernel put the file in a buffer and use DMA to pass the data directly.
-
-<https://www.ibm.com/developerworks/linux/library/j-zerocopy/>
+## libraries
 
 
-## SSL
+### Maven
+
+<https://maven.apache.org/>
 
 
-### Debugging
-
-```
-# print each handshake message
-java -Djavax.net.debug=ssl:handshake MyApp
-```
+# Zig
 
 
-### Links
-
-- <https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/ReadDebug.html>
-- <https://docs.oracle.com/javase/7/docs/technotes/guides/security/jsse/JSSERefGuide.html#Debug>
+## resources
 
 
-## Maven
-
-<https://maven.apache.org/what-is-maven.html>
+### [Official website](https://ziglang.org/)
 
 
-# zig
-
-<https://ziglang.org/>
-
-Versions:
-
-- 0.5.0 - async
+## overview
 
 
-## CLI
+### CLI
 
 ```shell
 # Get Clang version
@@ -273,26 +263,42 @@ zig targets
 ```
 
 
+### releases
+
+
+#### 0.5.0 - async
+
+
 # Julia
 
-<https://julialang.org/>
+
+## resources
+
+
+### [official website](https://julialang.org/)
 
 
 # Forth
+
+
+## overview
+
+
+### syntax
 
 | words | action                        |
 |----- |----------------------------- |
 | .     | pop an element off the stack  |
 | .s    | display the contents of stack |
 | drop  | drop top of stack             |
-|  ...  | comment                       |
+| \\    | comment                       |
 | see   | decompile                     |
 
 | words   | action                       |
 | include | includes a forth source file |
 
 
-## colon definitions
+#### colon definitions
 
 ```forth
 : funcname ( stack effect comment )
@@ -306,10 +312,17 @@ zig targets
 
 # Kotlin
 
-<http://kotlinlang.org/>
+
+## resources
+
+
+### [official website](http://kotlinlang.org/)
 
 
 # Prolog
+
+
+## resources
 
 <https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/>
 
@@ -317,10 +330,10 @@ zig targets
 # Tcl
 
 
-## Tcl
+## overview
 
 
-## Syntax cheatsheet
+### syntax cheatsheet
 
 ```tcl
 
@@ -348,14 +361,7 @@ zig targets
 ```
 
 
-## Namespaces
-
-```tcl
-namespace eval blah {}
-```
-
-
-## Profiling statements
+### profiling statements
 
 ```tcl
 puts "unbraced: [time { expr 15 * 20 } 1000]"
@@ -363,17 +369,7 @@ puts "braced:   [time { expr {15 * 20} } 1000]"
 ```
 
 
-## Disassemble statement
-
-This is fun, because it shows just how much of a difference there is in optimizing statements
-
-```tcl
-::tcl::unsupported::disassemble script {expr $a eq $b}
-::tcl::unsupported::disassemble script {expr {$a eq $b}}
-```
-
-
-## Creating tests
+### testing
 
 ```tcl
 package require tcltest
@@ -400,10 +396,30 @@ cleanupTests
 ```
 
 
-## OpenACS
+### disassemble statement
+
+This is fun, because it shows just how much of a difference there is in optimizing statements
+
+```tcl
+::tcl::unsupported::disassemble script {expr $a eq $b}
+::tcl::unsupported::disassemble script {expr {$a eq $b}}
+```
 
 
-### `ad_proc` documentation metadata
+### namespaces
+
+```tcl
+namespace eval blah {}
+```
+
+
+## libraries
+
+
+### OpenACS
+
+
+#### `ad_proc` documentation metadata
 
 - @return
 - @see
@@ -412,7 +428,7 @@ cleanupTests
 - @error
 
 
-### Return a file
+#### Return a file
 
 ```tcl
 set file [open $file_path "r"]
@@ -421,7 +437,7 @@ ns_returnfile 200 [ns_guesstype $file] $file_path
 ```
 
 
-### Make your OpenACS form's checkbox be selected by default
+#### Make your OpenACS form's checkbox be selected by default
 
 In `ad_page_contract`:
 
@@ -444,7 +460,7 @@ In `ad_form`:
 {% endraw %}
 
 
-### ADP tags
+#### ADP tags
 
 ```
 <if @datasource.variable@ eq "blue">
@@ -462,12 +478,23 @@ In `ad_form`:
 # Objective C
 
 
-## Classes
+## overview
+
+
+### i18n
+
+| NSLocalizedString | strings          |
+| NSNumberFormatter | numerical values |
+| NSDateFormatter   | format dates     |
+| NSLocale          |                  |
+
+
+### Classes
 
 Categories extend classes
 
 
-### Interface
+#### Interface
 
 ```
 /* #import is like #include, but only included once during compilation */
@@ -490,7 +517,7 @@ Categories extend classes
 ```
 
 
-### Implementation
+#### Implementation
 
 ```
 // If you enable modules for iOS >= 7.0 or OS X >= 10.9 projects in
@@ -523,7 +550,7 @@ MyClass *thing = [MyClass new]
 ```
 
 
-## Objects
+### Objects
 
 ```
 // setter methods are set + property name
@@ -533,7 +560,7 @@ person.firstName = @"Bob";
 ```
 
 
-## Protocols
+### Protocols
 
 ```
 @protocol XYZProto
@@ -556,10 +583,10 @@ if ([self.dataSource respondsToSelector:@selector(stringThing)]) {
 ```
 
 
-## Collections
+### Collections
 
 
-### Arrays
+#### Arrays
 
 ```
 // Trailing nil needed
@@ -575,7 +602,7 @@ if ([someArray count] > 0) {
 ```
 
 
-### Dictionaries
+#### Dictionaries
 
 ```
 NSDictionary *dictionary = @{
@@ -591,7 +618,7 @@ NSNumber *storedNumber = dictionary[@"magicNumber"];
 ```
 
 
-## Blocks
+### Blocks
 
 Like closures/lambdas in other languages
 
@@ -600,7 +627,7 @@ Like closures/lambdas in other languages
 ```
 
 
-## Error Handling
+### Error Handling
 
 [Error Handling Programming Guide for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/)
 
@@ -615,7 +642,7 @@ NSError *error = [NSError errorWithDomain:domain
 ```
 
 
-### Exceptions
+#### Exceptions
 
 ```
 @try {
@@ -631,18 +658,22 @@ NSError *error = [NSError errorWithDomain:domain
 ```
 
 
-## i18n
+# Self
 
-| NSLocalizedString | strings          |
-| NSNumberFormatter | numerical values |
-| NSDateFormatter   | format dates     |
-| NSLocale          |                  |
+
+## resources
+
+
+### [official website](https://selflanguage.org/)
 
 
 # Perl
 
 
-## Syntax Cheatsheet
+## overview
+
+
+### syntax Cheatsheet
 
 ```perl
 #!/usr/local/bin/perl -wT
@@ -661,24 +692,7 @@ hw();
 ```
 
 
-## LWP - HTTP Get
-
-`get($url)`
-
-
-### To save to a file
-
-`getstore($url, $file)`
-
-
-### See if LWP is installed
-
-```shell
-perl -MLWP -le "print(LWP->VERSION)"
-```
-
-
-## Parsing JSON
+### Parsing JSON
 
 ```perl
 use JSON;
@@ -686,7 +700,27 @@ decode_json($json);
 ```
 
 
+### LWP - HTTP Get
+
+`get($url)`
+
+
+#### To save to a file
+
+`getstore($url, $file)`
+
+
+#### See if LWP is installed
+
+```shell
+perl -MLWP -le "print(LWP->VERSION)"
+```
+
+
 # Smalltalk
+
+
+## resources
 
 <http://www.smalltalk.org>
 
@@ -697,10 +731,17 @@ decode_json($json);
 
 # "R"
 
-<https://www.r-project.org/>
+
+## resources
 
 
-## Syntax cheatsheet
+### [official website](https://www.r-project.org/)
+
+
+## overview
+
+
+### syntax cheatsheet
 
 ```R
 # create a vector
@@ -708,10 +749,17 @@ things <- c('foo', 'bar', 'baz')
 ```
 
 
-## plotting
+### import a CSV
+
+```R
+dat <- read.csv(file="foobar.csv", header=TRUE, sep=",")
+```
 
 
-### bar chart
+### plotting
+
+
+#### bar chart
 
 ```R
 png(file="output.png")
@@ -720,21 +768,22 @@ dev.off()
 ```
 
 
-## import a CSV
-
-```R
-dat <- read.csv(file="foobar.csv", header=TRUE, sep=",")
-```
-
-
 # COBOL
 
-- [COBOL on Cogs](http://www.coboloncogs.org)
+
+## libraries
+
+
+### [COBOL on Cogs](http://www.coboloncogs.org)
 
 
 # Fortran
 
-- <https://fortran.io/>
+
+## libraries
+
+
+### [Fortran.io web framework](https://fortran.io/)
 
 
 # ML
@@ -744,22 +793,14 @@ dat <- read.csv(file="foobar.csv", header=TRUE, sep=",")
 
 # Erlang
 
+
+## overview
+
+
+### syntax cheatsheet
+
 - All statements must end with a period and whitespace
 - Atoms are like Ruby symbols
-
-
-## Shell
-
-```
-help().
-q().
-
-f(Variable). % drop a variable
-f(). % drop all variables
-```
-
-
-## Syntax cheatsheet
 
 ```
 % division
@@ -776,31 +817,30 @@ f(). % drop all variables
 ```
 
 
-# swift
+### Shell
+
+```
+help().
+q().
+
+f(Variable). % drop a variable
+f(). % drop all variables
+```
 
 
-## Benefits
-
-Variables initialized before use
-
-- var for variable, let for constant
-- specify type after variable with :
-
-- Check for array out-of-bounds
-- Check for integer overflow
-- Explicit nil handling
-- Auto memory management
-- Error handling
+# Swift
 
 
-## CLI
-
-swift - start up a Swift REPL (backed by LLDB)
-
-swiftc - compile swift code
+## resources
 
 
-## Syntax cheatsheet
+### [official website](https://swift.org)
+
+
+## overview
+
+
+### syntax cheatsheet
 
 No semicolons needed
 
@@ -832,204 +872,50 @@ var optionalString: String? = "Maybe hello?"
 ```
 
 
-## Links
+### CLI
 
-- <https://swift.org>
+swift - start up a Swift REPL (backed by LLDB)
+
+swiftc - compile swift code
+
+
+### Benefits
+
+Variables initialized before use
+
+- var for variable, let for constant
+- specify type after variable with :
+
+- Check for array out-of-bounds
+- Check for integer overflow
+- Explicit nil handling
+- Auto memory management
+- Error handling
 
 
 # PHP
 
 
-## Run a server instance with a script
-
-Requires PHP >= 5.4 - <http://php.net/manual/en/features.commandline.webserver.php>
-
-```shell
-php -S localhost:8000 router.php
-```
+## resources
 
 
-## Datestamps
-
-```
-<?php
-//mktime(hour,minute,second,month,day,year)
-
-echo date("Y/m/d", mktime(0,0,0,11,11,2011));
-//2011/11/11
-?> 
-```
+### [official website](https://www.php.net/)
 
 
-## Autogenerate a file download
-
-```
-<?php
-header("Content-Type: text/calendar; charset=utf-8");
-header("Content-Disposition: attachment; filename=test.ics");
-// render file...
-```
+### [manual](https://www.php.net/manual/en/)
 
 
-## Turn off error reporting
-
-```
-<?php
-error_reporting(0)
-?>
-```
-
-
-## Check if domain resolves
-
-```
-<?php
-checkdnsrr($host)
-?>
-```
-
-
-## Authenticating users
-
-```
-<?php
-session_start();
-// Check for session injection
-if (isset($_REQUEST['_SESSION'])) {
-    session_destroy();
-    die('');
-} elseif (isset($_SESSION['HTTP_USER_AGENT'])) {
-    if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
-     session_destroy();
-     die('');
-    }
-}
-// At end of page, let's regenerate the session ID
-if(isset($_SESSION['username'])) {
-    session_regenerate_id(TRUE);
-} 
-?>
-```
-
-
-## Validation
-
-```
-<?php
-// Numeric validation
-is_int($var)
-is_numeric($var)
-?>
-```
-
-
-## Export to CSV
-
-```
-<?php
-header("Expires: 0");
-header("Cache-control: private");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header("Content-Description: File Transfer");
-header("Content-Type: text/csv");
-header("Content-disposition: attachment; filename=rawlogs.csv");
-?>
-```
-
-
-## Get filename
-
-```
-<?php
-$FILE_NAME = basename($_SERVER["PHP_SELF"]);
-?>
-```
-
-
-## Return multiple values
-
-```
-<?php
-function mult() {
-    return array(0, 1);
-}
-
-list ($zero, $one) = mult();
-?>
-```
-
-
-## Create an array of objects
-
-```
-<?php
-$allCars=array();
-$result = mysql_query($SQL);
-
-while ($rowInfo = mysql_fetch_assoc($result))
-{ 
-     $tempCar=new Car();
-
-     $tempCar->setMake($rowInfo['car_make']);
-     $tempCar->setModel($rowInfo['car_model']);
-     $tempCar->setColor($rowInfo['car_color']);
-
-     $allCars[]=$tempCar;
-}
-?>
-```
-
-
-## Include PEAR (Dreamhost)
-
-```
-<?php
-//Include my PEAR path
-set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
-?>
-```
-
-
-### Scrape `$_GET` parameters
-
-If `mod_rewrite` or some other mechanism is preventing the filling of the `$_GET` array, use this:
-
-```
-<?php
-parse_str($_SERVER['QUERY_STRING'], $_GET);
-?>
-```
-
-
-## Convert command line arguments into GET variables
-
-```
-<?php
-parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
-?>
-```
-
-
-## Get PHP config info
+### [source code](https://github.com/php/php-src)
 
 ```shell
-# Get configuration (like phpinfo())
-php -i
-# Get location of php.ini
-php --ini
+git clone git@github.com:php/php-src.git
 ```
 
 
-## Redirect to a different URL
-
-```
-<?php
-header("Location: https://example.org/"); 
-?>
-```
+## overview
 
 
-### Syntax cheatsheet
+### syntax cheatsheet
 
 ```
 <?php
@@ -1069,60 +955,34 @@ function foo () {
 ```
 
 
-## composer
-
-[Composer homepage](https://getcomposer.org/)
+### CLI
 
 
-### Require a package
+#### Get PHP config info
 
 ```shell
-composer require repo/package
-```
-
-Will drop `composer.json` and `composer.lock`
-
-
-### Load vendor directory
-
-```
-<?php
-require __DIR__ . '/vendor/autoload.php';
+# Get configuration (like phpinfo())
+php -i
+# Get location of php.ini
+php --ini
 ```
 
 
-## Insecurity
+#### Run a server instance with a script
 
-PHP has more than a few security pitfalls, this is just a quick list of ways it can bite you.
+Requires PHP >= 5.4
 
+<http://php.net/manual/en/features.commandline.webserver.php>
 
-### $FILES `tmp_name` usage
-
-`tmp_name` is untrusted input and should be sanitized before doing any file operations (like `move_uploaded_file`)
-
-
-### `exif_imagetype` is not validation
-
-If you're testing a file to ensure it's an image, `exif_imagetype` alone is inadequate, as it can be easily bypassed with a magic string like "BM" (for bitmap)
-
-
-## PDO
-
-```
-// simple query
-<?php
-$sql = "SELECT max(id) FROM table";
-$sth = $DB->prepare($sql);
-$sth->execute();
-$max_id= $sth->fetchColumn();
-?>
+```shell
+php -S localhost:8000 router.php
 ```
 
 
-## Versions
+### releases
 
 
-### [8.1](https://www.php.net/releases/8.1/en.php)
+#### [8.1](https://www.php.net/releases/8.1/en.php)
 
 - Enums
 - Read-only properties
@@ -1136,121 +996,133 @@ $max_id= $sth->fetchColumn();
 - Sodium XChaCha20 functions
 
 
-## Binary
-
-
-### Read a binary file
+### Datestamps
 
 ```
 <?php
-$handle = fopen('/path/to/file', 'rb');
-$contents = fread($handle, filesize($filename));
-fclose($handle);
+//mktime(hour,minute,second,month,day,year)
+
+echo date("Y/m/d", mktime(0,0,0,11,11,2011));
+//2011/11/11
+?> 
+```
+
+
+### Autogenerate a file download
+
+```
+<?php
+header("Content-Type: text/calendar; charset=utf-8");
+header("Content-Disposition: attachment; filename=test.ics");
+// render file...
+```
+
+
+### Turn off error reporting
+
+```
+<?php
+error_reporting(0)
 ?>
 ```
 
 
-### Binary craziness
+### Check if domain resolves
 
 ```
 <?php
-bindec();
-decbin();
+checkdnsrr($host)
 ?>
 ```
 
 
-### Playing with endianness
+### Authenticating users
 
 ```
 <?php
-// For changing endianness, just use strrev()
-// %016b for 16-bit, %032b for 32-bit
-strrev(sprintf("%016b", $int));
-?>
-```
-
-
-### Unpacking binary file formats
-
-```
-<?php
-// For parsing binary file formats,
-// use pack/unpack
-function get_gif_header($image_file)
-{
-
-    /* Open the image file in binary mode */
-    if(!$fp = fopen ($image_file, 'rb')) return 0;
-
-    /* Read 20 bytes from the top of the file */
-    if(!$data = fread ($fp, 20)) return 0;
-
-    /* Create a format specifier */
-    $header_format = 
-            'A6Version/' . # Get the first 6 bytes
-            'C2Width/' .   # Get the next 2 bytes
-            'C2Height/' .  # Get the next 2 bytes
-            'C1Flag/' .    # Get the next 1 byte
-            '@11/' .       # Jump to the 12th byte
-            'C1Aspect';    # Get the next 1 byte
-
-    /* Unpack the header data */
-    $header = unpack ($header_format, $data);
-
-    $ver = $header['Version'];
-
-    if($ver == 'GIF87a' || $ver == 'GIF89a') {
-        return $header;
-    } else {
-        return 0;
+session_start();
+// Check for session injection
+if (isset($_REQUEST['_SESSION'])) {
+    session_destroy();
+    die('');
+} elseif (isset($_SESSION['HTTP_USER_AGENT'])) {
+    if ($_SESSION['HTTP_USER_AGENT'] != md5($_SERVER['HTTP_USER_AGENT'])) {
+     session_destroy();
+     die('');
     }
 }
-
-/* Run our example */
-print_r(get_gif_header("aboutus.gif"));
-
-/*
-Array
-(
-    [Version] => GIF89a
-    [Width1] => 97
-    [Width2] => 0
-    [Height1] => 33
-    [Height2] => 0
-    [Flag] => 247
-    [Aspect] => 0
-)
-*/
+// At end of page, let's regenerate the session ID
+if(isset($_SESSION['username'])) {
+    session_regenerate_id(TRUE);
+} 
 ?>
 ```
 
 
-## Barcodes
-
-
-### Get a UPC check digit
+### Validation
 
 ```
 <?php
-function get_ean_checkdigit($barcode){
-        $sum = 0;
-        for($i=(strlen($barcode));$i>0;$i--){
-         $sum += (($i % 2) * 2 + 1 ) * substr($barcode,$i-1,1);
-        }
-        return (10 - ($sum % 10));
+// Numeric validation
+is_int($var)
+is_numeric($var)
+?>
+```
+
+
+### Export to CSV
+
+```
+<?php
+header("Expires: 0");
+header("Cache-control: private");
+header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+header("Content-Description: File Transfer");
+header("Content-Type: text/csv");
+header("Content-disposition: attachment; filename=rawlogs.csv");
+?>
+```
+
+
+### Get filename
+
+```
+<?php
+$FILE_NAME = basename($_SERVER["PHP_SELF"]);
+?>
+```
+
+
+### Return multiple values
+
+```
+<?php
+function mult() {
+    return array(0, 1);
 }
+
+list ($zero, $one) = mult();
 ?>
 ```
 
 
-### Create a barcode with `Image_Barcode2` (PEAR)
+### Create an array of objects
 
 ```
 <?php
-require_once 'Image/Barcode2.php';
-$bc = new Image_Barcode2;
-$bc->draw($_GET['bctext'], "int25", "png");
+$allCars=array();
+$result = mysql_query($SQL);
+
+while ($rowInfo = mysql_fetch_assoc($result))
+{ 
+     $tempCar=new Car();
+
+     $tempCar->setMake($rowInfo['car_make']);
+     $tempCar->setModel($rowInfo['car_model']);
+     $tempCar->setColor($rowInfo['car_color']);
+
+     $allCars[]=$tempCar;
+}
 ?>
 ```
 
@@ -1308,12 +1180,226 @@ else
 ```
 
 
+### Scrape `$_GET` parameters
+
+If `mod_rewrite` or some other mechanism is preventing the filling of the `$_GET` array, use this:
+
+```
+<?php
+parse_str($_SERVER['QUERY_STRING'], $_GET);
+?>
+```
+
+
+### Convert command line arguments into GET variables
+
+```
+<?php
+parse_str(implode('&amp;', array_slice($argv, 1)), $_GET);
+?>
+```
+
+
+### Redirect to a different URL
+
+```
+<?php
+header("Location: https://example.org/"); 
+?>
+```
+
+
+### Insecurity
+
+PHP has more than a few security pitfalls, this is just a quick list of ways it can bite you.
+
+
+#### $FILES `tmp_name` usage
+
+`tmp_name` is untrusted input and should be sanitized before doing any file operations (like `move_uploaded_file`)
+
+
+#### `exif_imagetype` is not validation
+
+If you're testing a file to ensure it's an image, `exif_imagetype` alone is inadequate, as it can be easily bypassed with a magic string like "BM" (for bitmap)
+
+
+### PDO
+
+```
+// simple query
+<?php
+$sql = "SELECT max(id) FROM table";
+$sth = $DB->prepare($sql);
+$sth->execute();
+$max_id= $sth->fetchColumn();
+?>
+```
+
+
+### Binary
+
+
+#### Read a binary file
+
+```
+<?php
+$handle = fopen('/path/to/file', 'rb');
+$contents = fread($handle, filesize($filename));
+fclose($handle);
+?>
+```
+
+
+#### Binary craziness
+
+```
+<?php
+bindec();
+decbin();
+?>
+```
+
+
+#### Playing with endianness
+
+```
+<?php
+// For changing endianness, just use strrev()
+// %016b for 16-bit, %032b for 32-bit
+strrev(sprintf("%016b", $int));
+?>
+```
+
+
+#### Unpacking binary file formats
+
+```
+<?php
+// For parsing binary file formats,
+// use pack/unpack
+function get_gif_header($image_file)
+{
+
+    /* Open the image file in binary mode */
+    if(!$fp = fopen ($image_file, 'rb')) return 0;
+
+    /* Read 20 bytes from the top of the file */
+    if(!$data = fread ($fp, 20)) return 0;
+
+    /* Create a format specifier */
+    $header_format = 
+            'A6Version/' . # Get the first 6 bytes
+            'C2Width/' .   # Get the next 2 bytes
+            'C2Height/' .  # Get the next 2 bytes
+            'C1Flag/' .    # Get the next 1 byte
+            '@11/' .       # Jump to the 12th byte
+            'C1Aspect';    # Get the next 1 byte
+
+    /* Unpack the header data */
+    $header = unpack ($header_format, $data);
+
+    $ver = $header['Version'];
+
+    if($ver == 'GIF87a' || $ver == 'GIF89a') {
+        return $header;
+    } else {
+        return 0;
+    }
+}
+
+/* Run our example */
+print_r(get_gif_header("aboutus.gif"));
+
+/*
+Array
+(
+    [Version] => GIF89a
+    [Width1] => 97
+    [Width2] => 0
+    [Height1] => 33
+    [Height2] => 0
+    [Flag] => 247
+    [Aspect] => 0
+)
+*/
+?>
+```
+
+
+### Barcodes
+
+
+#### Get a UPC check digit
+
+```
+<?php
+function get_ean_checkdigit($barcode){
+        $sum = 0;
+        for($i=(strlen($barcode));$i>0;$i--){
+         $sum += (($i % 2) * 2 + 1 ) * substr($barcode,$i-1,1);
+        }
+        return (10 - ($sum % 10));
+}
+?>
+```
+
+
+## libraries
+
+
+### composer
+
+[Composer homepage](https://getcomposer.org/)
+
+
+#### Require a package
+
+```shell
+composer require repo/package
+```
+
+Will drop `composer.json` and `composer.lock`
+
+
+#### Load vendor directory
+
+```
+<?php
+require __DIR__ . '/vendor/autoload.php';
+```
+
+
+### Create a barcode with `Image_Barcode2` (PEAR)
+
+```
+<?php
+require_once 'Image/Barcode2.php';
+$bc = new Image_Barcode2;
+$bc->draw($_GET['bctext'], "int25", "png");
+?>
+```
+
+
+### Include PEAR (Dreamhost)
+
+```
+<?php
+//Include my PEAR path
+set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
+?>
+```
+
+
 # node.js
 
 [NodeJS ECMAScript Support](http://node.green/)
 
 
-## Debugging
+## overview
+
+
+### Debugging
 
 ```shell
 node --inspect ...
@@ -1373,13 +1459,11 @@ Inserting `debugger;` in your code sets a breakpoint
 
 #### Various
 
-<p class="verse">
-| scripts | List all loaded scripts<br />
-| version | Display V8's version<br />
-</p>
+| scripts | List all loaded scripts |
+| version | Display V8's version    |
 
 
-## Links
+### left-pad
 
 - <http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm>
 
@@ -1387,28 +1471,35 @@ Inserting `debugger;` in your code sets a breakpoint
 # Rust
 
 
-## Writing tests
-
-If the function passes, the test passes
-
-```
-#[test]
-fn this_tests_code(){
-  println!("");
-  if 1 == 0 {
-    fail!("This should never happen");
-  }
-}
-```
-
-To compile the tests and replace main with test runner:
-
-`rustc --test test.rs`
-
-<https://doc.rust-lang.org/stable/book/testing.html>
+## resources
 
 
-## Syntax cheatsheet
+### [official website](https://www.rust-lang.org/)
+
+
+### docs website
+
+- [Rust Programming Language Book](https://doc.rust-lang.org/stable/book/)
+    - [Stack-Only Data: Copy](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html#stack-only-data-copy)
+- <https://doc.rust-lang.org/core/>
+- <https://www.rust-lang.org/documentation.html>
+- <https://doc.rust-lang.org/stable/rust-by-example/>
+
+
+### editor support
+
+- [vim plugin](https://github.com/rust-lang/rust.vim)
+
+
+### Ferris the crab
+
+<https://rustacean.net/>
+
+
+## overview
+
+
+### syntax cheatsheet
 
 ```
 //! You can create a description for your crate using two slashes and an exclamation mark
@@ -1493,7 +1584,10 @@ fn main() {
 ```
 
 
-## Cargo
+### CLI
+
+
+#### Cargo
 
 ```shell
 # New project
@@ -1509,7 +1603,7 @@ cargo run
 ```
 
 
-## rustc
+#### rustc
 
 ```shell
 # Build a library
@@ -1517,7 +1611,59 @@ rustc --crate-type=lib thing.rs
 ```
 
 
-## Cross-compilation
+### testing
+
+If the function passes, the test passes
+
+```
+#[test]
+fn this_tests_code(){
+  println!("");
+  if 1 == 0 {
+    fail!("This should never happen");
+  }
+}
+```
+
+To compile the tests and replace main with test runner:
+
+`rustc --test test.rs`
+
+<https://doc.rust-lang.org/stable/book/testing.html>
+
+
+### Macros
+
+| Macro            | Description                                  |
+|---------------- |-------------------------------------------- |
+| print!("text")   | Print a line to STDOUT                       |
+| println!("text") | Print a line to STDOUT followed by a newline |
+
+
+### Nightly rust
+
+```shell
+# Install nightly toolchain
+rustup toolchain install nightly
+# Use nightly toolchain by default
+rustup default nightly
+```
+
+
+### Cargo
+
+
+#### Cargo watch
+
+```shell
+cargo watch -x check -x test
+```
+
+
+### Platform support
+
+
+#### Cross-compilation
 
 - <https://blog.rust-lang.org/2016/05/13/rustup.html>
 - <https://sigmaris.info/blog/2019/02/cross-compiling-rust-on-mac-os-for-an-arm-linux-router/>
@@ -1542,41 +1688,7 @@ linker = "x86_64-elf-ld"
 ```
 
 
-## Nightly rust
-
-```shell
-# Install nightly toolchain
-rustup toolchain install nightly
-# Use nightly toolchain by default
-rustup default nightly
-```
-
-
-## Resources
-
-- [Rust Programming Language Book](https://doc.rust-lang.org/stable/book/)
-    - [Stack-Only Data: Copy](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html#stack-only-data-copy)
-
-- <https://doc.rust-lang.org/core/>
-- <https://areweasyncyet.rs/>
-- <https://www.rust-lang.org/documentation.html>
-- <https://doc.rust-lang.org/stable/rust-by-example/>
-- [vim plugin](https://github.com/rust-lang/rust.vim)
-- <https://rustacean.net/>
-- [Rust on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/rust/)
-
-
-## Cargo
-
-
-### Cargo watch
-
-```shell
-cargo watch -x check -x test
-```
-
-
-## Rust for iOS
+#### iOS
 
 ```shell
 # Be able to create iOS executables
@@ -1586,94 +1698,91 @@ rustup target add aarch64-apple-ios x86_64-apple-ios
 ```
 
 
-## Macros
+#### Windows
 
-| Macro            | Description                                  |
-|---------------- |-------------------------------------------- |
-| print!("text")   | Print a line to STDOUT                       |
-| println!("text") | Print a line to STDOUT followed by a newline |
+[Rust on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/rust/)
 
 
-## Rust Webassembly
+#### Webassembly
+
+-   Using --target web
+
+    ```shell
+    wasm-pack build --target web
+    ```
+    
+    ```
+    <html>
+      <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+      </head>
+      <body>
+        <!-- Note the usage of `type=module` here as this is an ES6 module -->
+        <script type="module">
+          // Use ES module import syntax to import functionality from the module
+          // that we have compiled.
+          //
+          // Note that the `default` import is an initialization function which
+          // will "boot" the module and make it ready to use. Currently browsers
+          // don't support natively imported WebAssembly as an ES module, but
+          // eventually the manual initialization won't be required!
+          import init, { add } from './pkg/without_a_bundler.js';
+    
+          async function run() {
+            // First up we need to actually load the wasm file, so we use the
+            // default export to inform it where the wasm file is located on the
+            // server, and then we wait on the returned promise to wait for the
+            // wasm to be loaded.
+            //
+            // It may look like this: `await init('./pkg/without_a_bundler_bg.wasm');`,
+            // but there is also a handy default inside `init` function, which uses
+            // `import.meta` to locate the wasm file relatively to js file.
+            //
+            // Note that instead of a string you can also pass in any of the
+            // following things:
+            //
+            // * `WebAssembly.Module`
+            //
+            // * `ArrayBuffer`
+            //
+            // * `Response`
+            //
+            // * `Promise` which returns any of the above, e.g. `fetch("./path/to/wasm")`
+            //
+            // This gives you complete control over how the module is loaded
+            // and compiled.
+            //
+            // Also note that the promise, when resolved, yields the wasm module's
+            // exports which is the same as importing the `*_bg` module in other
+            // modes
+            await init();
+    
+            // And afterwards we can use all the functionality defined in wasm.
+            const result = add(1, 2);
+            console.log(`1 + 2 = ${result}`);
+            if (result !== 3)
+              throw new Error("wasm addition doesn't work!");
+          }
+    
+          run();
+        </script>
+      </body>
+    </html>
+    ```
 
 
-### Using --target web
+### async
 
-```shell
-wasm-pack build --target web
-```
-
-```
-<html>
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-  </head>
-  <body>
-    <!-- Note the usage of `type=module` here as this is an ES6 module -->
-    <script type="module">
-      // Use ES module import syntax to import functionality from the module
-      // that we have compiled.
-      //
-      // Note that the `default` import is an initialization function which
-      // will "boot" the module and make it ready to use. Currently browsers
-      // don't support natively imported WebAssembly as an ES module, but
-      // eventually the manual initialization won't be required!
-      import init, { add } from './pkg/without_a_bundler.js';
-
-      async function run() {
-        // First up we need to actually load the wasm file, so we use the
-        // default export to inform it where the wasm file is located on the
-        // server, and then we wait on the returned promise to wait for the
-        // wasm to be loaded.
-        //
-        // It may look like this: `await init('./pkg/without_a_bundler_bg.wasm');`,
-        // but there is also a handy default inside `init` function, which uses
-        // `import.meta` to locate the wasm file relatively to js file.
-        //
-        // Note that instead of a string you can also pass in any of the
-        // following things:
-        //
-        // * `WebAssembly.Module`
-        //
-        // * `ArrayBuffer`
-        //
-        // * `Response`
-        //
-        // * `Promise` which returns any of the above, e.g. `fetch("./path/to/wasm")`
-        //
-        // This gives you complete control over how the module is loaded
-        // and compiled.
-        //
-        // Also note that the promise, when resolved, yields the wasm module's
-        // exports which is the same as importing the `*_bg` module in other
-        // modes
-        await init();
-
-        // And afterwards we can use all the functionality defined in wasm.
-        const result = add(1, 2);
-        console.log(`1 + 2 = ${result}`);
-        if (result !== 3)
-          throw new Error("wasm addition doesn't work!");
-      }
-
-      run();
-    </script>
-  </body>
-</html>
-```
+<https://areweasyncyet.rs/>
 
 
 # Lua
 
 
-## Iterate through file
-
-```
-for line in io.lines("my.txt") do print(line) end
-```
+## overview
 
 
-## Syntax cheatsheet
+### syntax cheatsheet
 
 ```
 function function_name ( args ) body end
@@ -1689,6 +1798,13 @@ if exp then block { elseif exp then block } [ else block ] end
 ```
 
 
+### Iterate through file
+
+```
+for line in io.lines("my.txt") do print(line) end
+```
+
+
 # Rexx
 
 <https://en.wikipedia.org/wiki/Rexx>
@@ -1697,43 +1813,60 @@ if exp then block { elseif exp then block } [ else block ] end
 # JavaScript
 
 
-## Strict Mode
-
-```
-'use strict'
-```
-
-[MDN Strict Mode docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+## resources
 
 
-## Debugger
+### specifications
 
-```
-debugger;
-```
+- [JavaScript specification](https://tc39.github.io/)
 
 
-## Classes
+### [JavaScript deobfuscator](https://lelinhtinh.github.io/de4js/)
 
 
-### Pre-ES5 classes
+### Links
 
-```
-function Building(x,y,z) {
-  this.x = x;
-  this.y = y;
-  this.z = z;
-}
-
-Building.prototype.area = function () {
-  return x * y * z;
-}
-
-var house = Building(20,20,10);
-```
+- [Esoteric variant](http://www.jsfuck.com/)
 
 
-## ES6 Modules
+### jq
+
+- <https://jqplay.org/>
+- <https://stedolan.github.io/jq/>
+- [jid - interactive JSON manipulation](https://github.com/simeji/jid)
+
+
+## overview
+
+
+### syntax
+
+
+#### var vs. let
+
+Use `let`, since it limits the scope to the block. `const` is also block-scoped.
+
+
+#### Classes
+
+-   Pre-ES5 classes
+
+    ```
+    function Building(x,y,z) {
+      this.x = x;
+      this.y = y;
+      this.z = z;
+    }
+    
+    Building.prototype.area = function () {
+      return x * y * z;
+    }
+    
+    var house = Building(20,20,10);
+    ```
+
+
+#### ES6 Modules
 
 ```
 <script type="module">
@@ -1748,110 +1881,109 @@ All modules are parsed with strict mode
 [MDN Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 
-## var vs. let
+### Strict Mode
 
-Use `let`, since it limits the scope to the block. `const` is also block-scoped.
+```
+'use strict'
+```
 
-
-## Links
-
-- [JavaScript specification](https://tc39.github.io/)
-- [JavaScript deobfuscator](https://lelinhtinh.github.io/de4js/)
-- [Esoteric variant](http://www.jsfuck.com/)
+[MDN Strict Mode docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 
-## jQuery
+### Debugger
+
+```
+debugger;
+```
+
+
+## libraries
+
+
+### jQuery
 
 <https://jquery.com>
 
 
-### No-conflict mode
+#### No-conflict mode
 
 ```
 var $j = jQuery.noConflict();
 ```
 
 
-### Append a node to the DOM
+#### Append a node to the DOM
 
 ```
 $('#thing').append('<p>blerg</p>');'</p>')
 ```
 
 
-### Get first element of several
+#### Get first element of several
 
 CSS pseudo-selectors $(".stuff li:first");
 
 DOM traversal $(".stuff").first();
 
 
-### Searches for the closest ancestor that matches
+#### Searches for the closest ancestor that matches
 
 ```
 .closest()
 ```
 
 
-### Objects
+#### Objects
 
 Use $(this) instead of this - it's a jQuery object
 
 
-### Get custom data attributes from the DOM
+#### Get custom data attributes from the DOM
 
 date(name)
 
 
-### Get direct children from an element
+#### Get direct children from an element
 
 ```
 $("ul").children("li");
 ```
 
 
-### Get parent element of a node
+#### Get parent element of a node
 
 ```
 $("#thing").parent();
 ```
 
 
-## Tangle
+### [d3js](https://d3js.org/)
+
+
+### Tangle
 
 <http://worrydream.com/Tangle/guide.html>
 
 
-## CoffeeScript
-
-<http://coffeescript.org/> <http://www.coffeelint.org/>
-
-
-## Typescript
-
-<https://www.typescriptlang.org/>
-
-
-## React
+### React
 
 <https://reactjs.org/>
 
 
-## React Native
+#### React Native
 
-<http://facebook.github.io/react-native/> <https://reactnative.dev/>
-
-
-## jq
-
-- <https://jqplay.org/>
-- <https://stedolan.github.io/jq/>
-- [jid - interactive JSON manipulation](https://github.com/simeji/jid)
+- <http://facebook.github.io/react-native/>
+- <https://reactnative.dev/>
 
 
-## d3js
+### Typescript
 
-<https://d3js.org/>
+- <https://www.typescriptlang.org/>
+
+
+### CoffeeScript
+
+- <https://coffeescript.org/>
 
 
 # Elixer
@@ -1859,6 +1991,60 @@ $("#thing").parent();
 Ruby/Lisp-alike run on Erlang BEAM
 
 
+# Crystal
+
+
+## resources
+
+
+### [official website](https://crystal-lang.org/)
+
+
+## libraries
+
+
+### [Kemal](https://kemalcr.com/)
+
+Sinatra-ish web framework
+
+<https://kemalcr.com/guide/>
+
+
 # OCaml
 
-<https://ocaml.org/>
+
+## resources
+
+
+### [official website](https://ocaml.org/)
+
+
+# Clojure
+
+
+## resources
+
+
+### [official website](https://clojure.org/)
+
+
+### [language reference](https://clojure.org/reference/reader)
+
+
+### community
+
+
+#### [The Clojure Toolbox](https://www.clojure-toolbox.com/)
+
+
+# Starlark
+
+A subset of Python intended as a configuration language
+
+
+## resources
+
+
+### specifications
+
+- [Starlark specification](https://github.com/bazelbuild/starlark/blob/master/spec.md)

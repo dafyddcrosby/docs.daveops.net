@@ -1,18 +1,75 @@
 
 # Ruby
 
-# CLI
+# Resources
 
-```shell
-# Print warnings
-ruby -w ...
 
-# get machine instructions
-ruby --dump insns script.rb
+## [official website](https://www.ruby-lang.org/en/)
 
-# See how commands are parsed
-ruby --dump parsetree_with_comment script.rb
-```
+
+## [docs website](https://docs.ruby-lang.org/en/)
+
+
+## specification
+
+[Ruby Spec Suite](https://github.com/ruby/spec)
+
+ISO/IEC 30170:2012 <https://www.iso.org/standard/59579.html> (not free, though)
+
+
+## [Github source mirror](https://github.com/ruby/ruby)
+
+
+## community
+
+
+### MINASWAN
+
+"Matz is Nice And So We Are Nice"
+
+
+## Academic papers on Ruby
+
+[The Ruby Bibliography](https://rubybib.org/)
+
+
+## Contributing upstream
+
+- [Bug tracker](https://redmine.ruby-lang.org/)
+
+
+### Template for feature proposals
+
+From `contributing.rdoc`:
+
+<p class="verse">
+[Abstract]<br />
+&#xa0;&#xa0;Summary of your feature<br />
+[Background]<br />
+&#xa0;&#xa0;Describe current behavior and why it is problem. Related work, such as<br />
+&#xa0;&#xa0;solutions in other language helps us to understand the problem.<br />
+[Proposal]<br />
+&#xa0;&#xa0;Describe your proposal in details<br />
+[Details]<br />
+&#xa0;&#xa0;If it has complicated feature, describe it<br />
+[Usecase]<br />
+&#xa0;&#xa0;How would your feature be used? Who will benefit from it?<br />
+[Discussion]<br />
+&#xa0;&#xa0;Discuss about this proposal. A list of pros and cons will help start<br />
+&#xa0;&#xa0;discussion.<br />
+[Limitation]<br />
+&#xa0;&#xa0;Limitation of your proposal<br />
+[Another alternative proposal]<br />
+&#xa0;&#xa0;If there are alternative proposals, show them.<br />
+[See also]<br />
+&#xa0;&#xa0;Links to the other related resources<br />
+</p>
+
+
+## Conferences
+
+- [Ruby Kaigi](https://rubykaigi.org/)
+- [Rails Conf](https://rubyconf.org/)
 
 
 # Syntax cheatsheet
@@ -95,7 +152,7 @@ u&.profile&.thumbnails&.large
 ```ruby
 fp = File.open(filename, mode)
 fp.each_char do |char|
-      puts char
+  puts char
 end
 fp.close
 ```
@@ -123,191 +180,7 @@ While the terminator is indented, text is left flush
 ```
 
 
-# Threads
-
-```ruby
-# Abort on thread errors
-Thread.abort_on_exception = true
-
-Thread.new do
-  fail 'Cannot continue'
-end
-
-loop do
-  sleep
-end
-```
-
-
-# Running processes
-
-- [system()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
-- [backticks](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
-- [exec()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-exec) - replace current process by running command
-
-
-# Extending and Embedding
-
-
-## C
-
-Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
-
-- [Running Ruby in C](https://silverhammermba.github.io/emberb/embed/)
-- [Embedding a Ruby interpreter](https://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Extending_Ruby_Embedding_a_Ruby_Interpreter.html)
-
-
-## C++
-
-[Rice](https://github.com/jasonroelofs/rice)
-
-
-## Rust
-
-Can use C bindings...
-
-
-## Java
-
-- <https://www.jruby.org>
-
-
-## Embedded C
-
-
-### picoruby
-
-<https://github.com/picoruby/picoruby>
-
-
-### mruby
-
-<https://github.com/mruby/mruby/>
-
-compile with mrbc
-
-
-# Neat Ruby source files to look at
-
-| file          | desc                                   |
-|------------- |-------------------------------------- |
-| parse.y       | The lexing/parsing of Ruby source code |
-| defs/keywords | The reserved keywords of Ruby          |
-
-
-# Compilers
-
-
-## scanning
-
-
-### strscan
-
-[ruby/strscan](https://github.com/ruby/strscan)
-
-
-### rexical
-
-[tenderlove/rexical](https://github.com/tenderlove/rexical)
-
-
-### oedipus<sub>lex</sub>
-
-[seattlerb/oedipus<sub>lex</sub>](https://github.com/seattlerb/oedipus_lex)
-
-
-## parsing
-
-
-### racc
-
-[ruby/racc](https://github.com/ruby/racc)
-
-Built-in to Ruby
-
-Need a scanner/tokenizer, use rexical or oedipus<sub>rex</sub> (or yyparse and an iterator to extract tokens from your string)
-
-
-### parsetree (CLI)
-
-```shell
-ruby --dump parsetree
-```
-
-This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in CRuby source (output not usable in other implementations)
-
-
-### parser gem
-
-- [whitequark/parser](https://github.com/whitequark/parser)
-
-Despite the generic sounding name, it's not generic. Parser handles Ruby (and Ruby-ish) code.
-
-A lot of the tree-rewriter code is in here (though a bit of a shame that's not abstracted out, in the same way that NodePattern should be)
-
-
-## AST
-
-
-### Ripper
-
-Built-in since Ruby 1.9
-
-Dumps S-expressions
-
-```ruby
-require 'ripper'
-require 'pp'
-
-f = File.read('foo.rb')
-pp Ripper.sexp(f)
-```
-
-<http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html>
-
-
-### ast gem
-
-- [whitequark/ast](https://github.com/whitequark/ast)
-
-- [Node class](https://github.com/whitequark/ast/blob/master/lib/ast/node.rb)
-- [Processing mixin](https://github.com/whitequark/ast/blob/master/lib/ast/processor/mixin.rb)
-
-
-### code reconstruction from AST
-
-- [unparser](https://github.com/mbj/unparser)
-- [sorcerer](https://github.com/jimweirich/sorcerer)
-
-
-# Ractors
-
-Ractors are Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
-
-```ruby
-ract = Ractor.new do
-  puts "hello"
-end
-
-ract.take
-```
-
-- [Ruby Ractor Reference](https://docs.ruby-lang.org/en/master/Ractor.html)
-- [Good intro to Ractors [ScoutAPM](https://scoutapm.com/blog/ruby-ractor)]
-- [Koichi's 'guild' slides that Ractor was based off](https://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf)
-
-
-# JSON
-
-```ruby
-require 'json'
-obj = JSON.parse(File.read('./thing.json'))
-obj.to_json
-JSON.pretty_generate(obj)
-```
-
-
-# Naming idioms
+## Naming idioms
 
 ```ruby
 local_variable
@@ -320,62 +193,41 @@ $global
 ```
 
 
-# Write to a file
+# concepts, design, terminology
+
+
+## Nakayoshi fork
+
+"Friendly fork"
+
+Runs the GC several times before forking to make a clean heap for copy-on-write benefit, reduced memory usage.
 
 ```ruby
-fp = File.open(filename, mode)
-fp.write('bloop')
-fp.close
+# looks a bit like this
+4.times { GC.start }
+GC.compact
 ```
 
 
-# Gems
+# CLI
 
 ```shell
-# Build a gem
-gem build name.gemspec
+# Print warnings
+ruby -w ...
 
-# upload gem to rubygems.org or other host
-gem push name-0.0.1.gem [--host HOST]
+# get machine instructions
+ruby --dump insns script.rb
 
-# add a gem source
-gem source -a SOURCE
-# remove a source
-gem source -r SOURCE
-# update source cache
-gem source -u
-
-# add an owner
-gem owner GEM --add EMAIL
-# remove an owner
-gem owner GEM --remove EMAIL
+# See how commands are parsed
+ruby --dump parsetree_with_comment script.rb
 ```
 
-Environment variables:
 
-| var        | description              |
-|---------- |------------------------ |
-| `GEM_PATH` | where gems can be loaded |
-| `GEM_HOME` | where gems are installed |
-
-- [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
-- <http://rakeroutes.com/blog/lets-write-a-gem-part-one/>
-
-
-# ObjectSpace
-
-This module is useful for understanding the memory size of what you're working with, as well as seeing what objects are still alive at a given time
-
-```ruby
-ObjectSpace.count_objects
-```
-
-[ObjectSpace docs](https://docs.ruby-lang.org/en/master/ObjectSpace.html)
-
-
-# Versions
+# Releases
 
 This is a list of interesting bits from Ruby versions
+
+[Ruby Changes](https://rubyreferences.github.io/rubychanges/)
 
 
 ## [3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/)
@@ -384,10 +236,8 @@ This is a list of interesting bits from Ruby versions
     - Moreover, what *really* impressed me is how quickly Maxime was welcomed into the core community and YJIT merged into the upstream.
     - [Redmine: Proposal to merge YJIT](https://bugs.ruby-lang.org/issues/18229)
     - [Maxime's blog post](https://pointersgonewild.com/2021/06/02/yjit-building-a-new-jit-compiler-inside-cruby/)
-
 - [New debugger](https://github.com/ruby/debug)
     - [Sneak preview of Ruby's new debugger](https://dev.to/st0012/a-sneak-peek-of-ruby-s-new-debugger-5caa)
-
 - [Error highlighting](https://github.com/ruby/error_highlight)
 - Irb autocompletion with tab, documentation with alt-d
 - pin operator in pattern matching can take an expression, parentheses optional in one-line matching
@@ -463,7 +313,328 @@ This is a list of interesting bits from Ruby versions
 ## [List of end-of-life Ruby versions](https://endoflife.date/ruby)
 
 
-# Rdoc
+# Execution
+
+
+## Threads
+
+```ruby
+# Abort on thread errors
+Thread.abort_on_exception = true
+
+Thread.new do
+  fail 'Cannot continue'
+end
+
+loop do
+  sleep
+end
+```
+
+
+## Fibers
+
+A fiber is an independent execution context that can be paused and resumed programmatically. There's always a currently active fiber, which is created by the runtime for each thread. Fibers are managed in the userspace program, using cooperative multitasking (the fiber must voluntarily give up control) instead of the OS' pre-emptive multitasking.
+
+A fiber always starts in a suspended state, it will not run until you switch to it with #transfer.
+
+States: `:running`, `:waiting`, `:runnable`, `:dead`
+
+- [Core fiber readme](https://docs.ruby-lang.org/en/master/doc/fiber_md.html)
+- [Fiber class](https://docs.ruby-lang.org/en/master/Fiber.html)
+- [Fiber::SchedulerInterface](https://docs.ruby-lang.org/en/master/Fiber/SchedulerInterface.html)
+- <https://noteflakes.com/articles/2021-10-20-explaining-ruby-fibers>
+
+
+## Running processes
+
+- [system()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-system) - return value of true (zero exit), false (non-zero), and nil (failed execution)
+- [backticks](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-60) - returns STDOUT, sets $? to the process status
+- [exec()](https://docs.ruby-lang.org/en/master/Kernel.html#method-i-exec) - replace current process by running command
+
+
+## Ractors
+
+Ruby's take on the Actor Model. The main Ruby thread is a Ractor.
+
+```ruby
+ract = Ractor.new do
+  puts "hello"
+end
+
+ract.take
+```
+
+- [Ruby Ractor Reference](https://docs.ruby-lang.org/en/master/Ractor.html)
+- [Good intro to Ractors [ScoutAPM](https://scoutapm.com/blog/ruby-ractor)]
+- [Koichi's 'guild' slides that Ractor was based off](https://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf)
+
+
+## Async
+
+- <https://brunosutic.com/blog/async-ruby>
+- [async gem](https://github.com/socketry/async)
+
+
+# Extending and Embedding
+
+
+## C
+
+Take a look at doc/extension.rdoc in [MRI](https://github.com/ruby/ruby/blob/master/doc/extension.rdoc)
+
+- [Running Ruby in C](https://silverhammermba.github.io/emberb/embed/)
+- [Embedding a Ruby interpreter](https://www.linuxtopia.org/online_books/programming_books/ruby_tutorial/Extending_Ruby_Embedding_a_Ruby_Interpreter.html)
+
+
+## C++
+
+[Rice](https://github.com/jasonroelofs/rice)
+
+
+## Rust
+
+Can use C bindings...
+
+
+## Java
+
+Use [JRuby](https://www.jruby.org)
+
+
+# Implementations
+
+
+## [CRuby](https://github.com/ruby/ruby)
+
+AKA Matz Ruby Implementation
+
+
+### Neat Ruby source files to look at
+
+| file          | desc                                   |
+|------------- |-------------------------------------- |
+| parse.y       | The lexing/parsing of Ruby source code |
+| defs/keywords | The reserved keywords of Ruby          |
+
+
+## [JRuby](https://www.jruby.org)
+
+
+## [mruby](https://github.com/mruby/mruby/)
+
+compile with mrbc
+
+
+## [PicoRuby](https://github.com/picoruby/picoruby)
+
+
+## [TruffleRuby](https://github.com/oracle/truffleruby)
+
+
+# Standard Library and Extensions
+
+
+## Bundler
+
+- <https://bundler.io>
+
+
+### Writing a Gemfile
+
+```ruby
+source 'https://example.org' do
+  # If you have private gems, put them here so that someone doesn't spoof them on rubygems.org !
+end
+
+source 'https://rubygems.org' do
+  # Gems here
+end
+
+# Using a git repository
+gem 'rack', git: 'https://github.com/rack/rack'
+
+# Make a gem group optional
+# use `bundle config set --local with GROUP` to install
+group :development, optional: true do
+  gem 'guard'
+end
+```
+
+<https://bundler.io/v2.2/guides/git.html>
+
+
+### Install gems to dir
+
+```shell
+bundle config set --local path 'vendor'
+
+# Deprecated way:
+bundle install --path dir
+```
+
+
+### Using an http proxy
+
+```shell
+http_proxy=http://proxy bundle install
+```
+
+
+## CSV
+
+- [CSV documentation](https://docs.ruby-lang.org/en/master/CSV.html)
+- [gem source](https://github.com/ruby/csv)
+
+```ruby
+require 'csv'
+data = CSV.read('path/to/file', headers: true)
+```
+
+
+## debug
+
+
+### -r debug
+
+```shell
+ruby -r debug example.rb
+```
+
+
+## ERB
+
+[Core ERB documentation](https://docs.ruby-lang.org/en/master/ERB.html)
+
+Tags:
+
+```
+<% Ruby code -- inline with output %>
+<%= Ruby expression -- replace with result %>
+<%# comment -- ignored -- useful in testing %>
+% a line of Ruby code -- treated as <% line %> (optional -- see ERB.new)
+%% replaced with % if first thing on a line and % processing is used
+<%% or %%> -- replace with <% or %> respectively
+```
+
+Trim mode:
+
+| code | desc                                                     |
+|---- |-------------------------------------------------------- |
+| %    | enables Ruby code processing for lines beginning with %  |
+| <>   | omit newline for lines starting with <% and ending in %> |
+| >    | omit newline for lines ending in %>                      |
+| -    | omit blank lines ending in -%>                           |
+
+
+## Gem
+
+```shell
+# Build a gem
+gem build name.gemspec
+
+# upload gem to rubygems.org or other host
+gem push name-0.0.1.gem [--host HOST]
+
+# add a gem source
+gem source -a SOURCE
+# remove a source
+gem source -r SOURCE
+# update source cache
+gem source -u
+
+# add an owner
+gem owner GEM --add EMAIL
+# remove an owner
+gem owner GEM --remove EMAIL
+```
+
+Environment variables:
+
+| var        | description              |
+|---------- |------------------------ |
+| `GEM_PATH` | where gems can be loaded |
+| `GEM_HOME` | where gems are installed |
+
+- [Gem packaging best practices](http://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/)
+- <http://rakeroutes.com/blog/lets-write-a-gem-part-one/>
+
+
+## Irb
+
+As of Ruby 2.4+, you can use `binding.irb` for an experience similar to Pry
+
+
+## JSON
+
+```ruby
+require 'json'
+obj = JSON.parse(File.read('./thing.json'))
+obj.to_json
+JSON.pretty_generate(obj)
+```
+
+
+## Minitest
+
+- <http://docs.seattlerb.org/minitest/>
+
+
+### Mocking methods
+
+```ruby
+# method mocking is done with a block
+ClassName.stub :method_name, method_value do
+  ClassName.method_to_run_against
+end
+```
+
+
+## Net::HTTP
+
+```shell
+require 'net/http'
+
+uri = URI('http://example.com')
+```
+
+
+## Net::SMTP
+
+[gem source](https://github.com/ruby/net-smtp)
+
+```ruby
+# Gemfile
+gem 'net-smtp'
+```
+
+```ruby
+# Using starttls
+smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
+smtp.enable_starttls_auto
+smtp.start(
+  smtp_options[:helo_domain],
+  smtp_options[:user_name],
+  smtp_options[:password],
+  smtp_options[:authentication]
+) do |smtp|
+  smtp.send_message msgstr, "from@example.org", [ "to@example.org" ]
+end
+```
+
+
+## ObjectSpace
+
+This module is useful for understanding the memory size of what you're working with, as well as seeing what objects are still alive at a given time
+
+```ruby
+ObjectSpace.count_objects
+```
+
+[ObjectSpace docs](https://docs.ruby-lang.org/en/master/ObjectSpace.html)
+
+
+## Rdoc
 
 - [Core documentation](https://docs.ruby-lang.org/en/master/RDoc.html)
 - [Core markup documentation](https://docs.ruby-lang.org/en/master/RDoc/Markup.html)
@@ -509,7 +680,7 @@ mailto:user@example.com
 ```
 
 
-## Using `ri` on Fedora
+### Using `ri` on Fedora
 
 To get the system ruby library documentation, you'll need to install `ruby-doc`
 
@@ -518,95 +689,90 @@ sudo dnf install rubygem-rdoc ruby-doc
 ```
 
 
-## Get list of undocumented code
+### Get list of undocumented code
 
 ```
 rdoc -C1 > documentation_coverage.txt
 ```
 
 
-### Links
+#### Links
 
 - <http://documenting-ruby.org/>
 
 
-# ERB
+## racc
 
-[Core ERB documentation](https://docs.ruby-lang.org/en/master/ERB.html)
+- [ruby/racc](https://github.com/ruby/racc)
 
-Tags:
+Built-in to Ruby
 
-```
-<% Ruby code -- inline with output %>
-<%= Ruby expression -- replace with result %>
-<%# comment -- ignored -- useful in testing %>
-% a line of Ruby code -- treated as <% line %> (optional -- see ERB.new)
-%% replaced with % if first thing on a line and % processing is used
-<%% or %%> -- replace with <% or %> respectively
-```
-
-Trim mode:
-
-| code | desc                                                     |
-|---- |-------------------------------------------------------- |
-| %    | enables Ruby code processing for lines beginning with %  |
-| <>   | omit newline for lines starting with <% and ending in %> |
-| >    | omit newline for lines ending in %>                      |
-| -    | omit blank lines ending in -%>                           |
+Need a scanner/tokenizer, use rexical or oedipus<sub>rex</sub> (or yyparse and an iterator to extract tokens from your string)
 
 
-# Fibers
+## RubyVM
 
-A fiber is an independent execution context that can be paused and resumed programmatically. There's always a currently active fiber, which is created by the runtime for each thread. Fibers are managed in the userspace program, using cooperative multitasking (the fiber must voluntarily give up control) instead of the OS' pre-emptive multitasking.
-
-A fiber always starts in a suspended state, it will not run until you switch to it with #transfer.
-
-States: `:running`, `:waiting`, `:runnable`, `:dead`
-
-- [Core fiber readme](https://docs.ruby-lang.org/en/master/doc/fiber_md.html)
-- [Fiber class](https://docs.ruby-lang.org/en/master/Fiber.html)
-- [Fiber::SchedulerInterface](https://docs.ruby-lang.org/en/master/Fiber/SchedulerInterface.html)
-- <https://noteflakes.com/articles/2021-10-20-explaining-ruby-fibers>
+Only exists in MRI <https://docs.ruby-lang.org/en/master/RubyVM.html>
 
 
-# Debugging
+## strscan
+
+[ruby/strscan](https://github.com/ruby/strscan)
 
 
-## -r debug
+## Set
 
-```shell
-ruby -r debug example.rb
-```
+- [ruby/set](https://github.com/ruby/set)
 
 
-## Irb
+## Ripper
 
-As of Ruby 2.4+, you can use `binding.irb` for an experience similar to Pry
+Built-in since Ruby 1.9
 
-
-## Pry
-
-<http://pryrepl.org/>
+Dumps S-expressions
 
 ```ruby
-require 'pry'
+require 'ripper'
+require 'pp'
 
-# start REPL
-binding.pry
+f = File.read('foo.rb')
+pp Ripper.sexp(f)
 ```
 
-```
-# get list of commands
-repl> help
+<http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html>
 
-# quit program
-repl> !!!
+
+<a id="org859dfda"></a>
+
+## Benchmark
+
+[ruby/benchmark](https://github.com/ruby/benchmark)
+
+```ruby
+require 'benchmark'
+
+n = 50000
+
+# this gives you a Benchmark::Tms object
+tms = Benchmark.measure { for i in 1..n; a = "1"; end }
+
+# Returns [@label, @utime, @stime, @cutime, @cstime, @real]
+tms.to_a
+```
+
+
+# Write to a file
+
+```ruby
+fp = File.open(filename, mode)
+fp.write('bloop')
+fp.close
 ```
 
 
 # Performance
 
-As with any system performance advice, don't forget to [benchmark](ruby.md)
+As with any system performance advice, don't forget to [benchmark](#org859dfda)
 
 
 ## Frozen string literals
@@ -687,6 +853,11 @@ end
 ```
 
 
+### Execution context copying
+
+When Ruby converts something into a Proc object, it stores references to all objects in the block's execution context. This can leak memory, since the GC can't sweep those references.
+
+
 ## Use in-place operations whenever possible
 
 The difference between `sort` and `sort!` can be pretty significant, especially when you're dealing with loops and big objects, since you're copying the object with `sort`. If you don't need to re-use the value, use a mutating (`!`) function.
@@ -726,111 +897,19 @@ If you know in advance what your time format is, don't use Date#parse, since the
 
 ## Running the profiler
 
+[ruby/profile](https://github.com/ruby/profile)
+
+The profile gem was removed from the standard library in Ruby 2.7
+
 ```shell
 ruby -r profile script.rb
 ```
 
 
-## Benchmarking
-
-```ruby
-require 'benchmark'
-
-n = 50000
-
-# this gives you a Benchmark::Tms object
-tms = Benchmark.measure { for i in 1..n; a = "1"; end }
-
-# Returns [@label, @utime, @stime, @cutime, @cstime, @real]
-tms.to_a
-```
+## Third-party benchmarking
 
 - <https://github.com/evanphx/benchmark-ips>
 - <https://github.com/davy/benchmark-bigo>
-
-
-# Contributing
-
-- [Github source mirror](https://github.com/ruby/ruby)
-- [Bug tracker](https://redmine.ruby-lang.org/)
-
-
-## Template for feature proposals
-
-From `contributing.rdoc`:
-
-<p class="verse">
-[Abstract]<br />
-&#xa0;&#xa0;Summary of your feature<br />
-[Background]<br />
-&#xa0;&#xa0;Describe current behavior and why it is problem. Related work, such as<br />
-&#xa0;&#xa0;solutions in other language helps us to understand the problem.<br />
-[Proposal]<br />
-&#xa0;&#xa0;Describe your proposal in details<br />
-[Details]<br />
-&#xa0;&#xa0;If it has complicated feature, describe it<br />
-[Usecase]<br />
-&#xa0;&#xa0;How would your feature be used? Who will benefit from it?<br />
-[Discussion]<br />
-&#xa0;&#xa0;Discuss about this proposal. A list of pros and cons will help start<br />
-&#xa0;&#xa0;discussion.<br />
-[Limitation]<br />
-&#xa0;&#xa0;Limitation of your proposal<br />
-[Another alternative proposal]<br />
-&#xa0;&#xa0;If there are alternative proposals, show them.<br />
-[See also]<br />
-&#xa0;&#xa0;Links to the other related resources<br />
-</p>
-
-
-# RubyVM
-
-<https://docs.ruby-lang.org/en/master/RubyVM.html>
-
-
-# Conferences
-
-- [Ruby Kaigi](https://rubykaigi.org/)
-- [Rails Conf](https://rubyconf.org/)
-
-
-# async
-
-- <https://brunosutic.com/blog/async-ruby>
-- [async gem](https://github.com/socketry/async)
-
-
-# Ruby net/http
-
-```shell
-require 'net/http'
-
-uri = URI('http://example.com')
-```
-
-
-# Net::SMTP
-
-[gem source](https://github.com/ruby/net-smtp)
-
-```ruby
-# Gemfile
-gem 'net-smtp'
-```
-
-```ruby
-# Using starttls
-smtp = Net::SMTP.new smtp_options[:address], smtp_options[:port]
-smtp.enable_starttls_auto
-smtp.start(
-  smtp_options[:helo_domain],
-  smtp_options[:user_name],
-  smtp_options[:password],
-  smtp_options[:authentication]
-) do |smtp|
-  smtp.send_message msgstr, "from@example.org", [ "to@example.org" ]
-end
-```
 
 
 # Binary manipulation with ::Array#pack / ::String#unpack
@@ -911,17 +990,6 @@ Misc:
 
 
 # Ruby Gems
-
-
-## CSV
-
-- [CSV documentation](https://docs.ruby-lang.org/en/master/CSV.html)
-- [gem source](https://github.com/ruby/csv)
-
-```ruby
-require 'csv'
-data = CSV.read('path/to/file', headers: true)
-```
 
 
 ## Rack
@@ -1426,6 +1494,93 @@ def gravatar_for(user, options = { size: 50 })
   image_tag(gravatar_url, alt: user.name, class: "gravatar")
 end
 ```
+
+
+## Pry
+
+<http://pryrepl.org/>
+
+```ruby
+require 'pry'
+
+# start REPL
+binding.pry
+```
+
+```
+# get list of commands
+repl> help
+
+# quit program
+repl> !!!
+```
+
+
+## [dalli](https://github.com/petergoldstein/dalli)
+
+Memcached client - fast!
+
+
+## [FrozenRecord](https://github.com/byroot/frozen_record)
+
+Read-only ActiveRecord interface over YAML (and JSON) files
+
+
+## [icalendar](https://github.com/icalendar/icalendar)
+
+
+## Compilers
+
+
+### scanning
+
+
+#### rexical
+
+[tenderlove/rexical](https://github.com/tenderlove/rexical)
+
+
+#### oedipus<sub>lex</sub>
+
+[seattlerb/oedipus<sub>lex</sub>](https://github.com/seattlerb/oedipus_lex)
+
+
+### parsing
+
+
+#### parsetree (CLI)
+
+```shell
+ruby --dump parsetree
+```
+
+This gives the names for the node objects used in ast.c/compile.c/node.c/vm.c in CRuby source (output not usable in other implementations)
+
+
+#### parser gem
+
+- [whitequark/parser](https://github.com/whitequark/parser)
+
+Despite the generic sounding name, it's not generic. Parser handles Ruby (and Ruby-ish) code.
+
+A lot of the tree-rewriter code is in here (though a bit of a shame that's not abstracted out, in the same way that NodePattern should be)
+
+
+### AST
+
+
+#### ast gem
+
+- [whitequark/ast](https://github.com/whitequark/ast)
+
+- [Node class](https://github.com/whitequark/ast/blob/master/lib/ast/node.rb)
+- [Processing mixin](https://github.com/whitequark/ast/blob/master/lib/ast/processor/mixin.rb)
+
+
+#### code reconstruction from AST
+
+- [unparser](https://github.com/mbj/unparser)
+- [sorcerer](https://github.com/jimweirich/sorcerer)
 
 
 # Ruby-Next

@@ -379,6 +379,18 @@ ghe-webhook-logs -f -a YYYYMMDD
 - [Sapling GH](https://github.com/facebook/sapling)
 
 
+## Cloning git repos
+
+```shell
+sl clone --git $REPO $DIR
+```
+
+
+## Following remotes
+
+> [remotenames] publicheads=
+
+
 # Fossil
 
 - <https://www.fossil-scm.org>
