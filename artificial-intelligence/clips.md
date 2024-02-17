@@ -123,7 +123,7 @@ CLIPS is case-sensitive.
 
 Special characters: " ( ) & | <~ ; ? $
 
-The “&”, “|”, and “~” may not be used as stand-alone symbols or as any part of a symbol.
+The "&", "|", and "~" may not be used as stand-alone symbols or as any part of a symbol.
 
 Some characters act as delimiters by ending a symbol. The following characters act as delimiters for symbols.
 

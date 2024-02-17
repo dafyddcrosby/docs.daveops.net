@@ -1,3 +1,13 @@
+
+# Org Mode
+
+Possibly the killer app for Emacs
+
+[Org Mode Website](https://orgmode.org/)
+
+[Org Mode Manual](https://orgmode.org/manual/)
+
+
 # Hyperlinking
 
 | desc                 | keystrokes |
@@ -24,3 +34,10 @@
         ("wp"         . "https://en.wikipedia.org/wiki/%s")
         ("omap"       . "https://nominatim.openstreetmap.org/ui/search.html?q=%s&polygon=1")))
 ```
+
+
+# Agenda
+
+| desc             | keystroke |
+| ---              | ---       |
+| open agenda mode | C-c a     |

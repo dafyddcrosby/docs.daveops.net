@@ -1,3 +1,6 @@
+
+# Culture
+
 # Abstraction Comics
 
 There's some webcomics that have a tidy way of explaining a concept.
