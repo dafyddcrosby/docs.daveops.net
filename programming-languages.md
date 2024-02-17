@@ -13,6 +13,122 @@
 - <http://www.slideshare.net/olvemaudal/deep-c/24-What_will_happen_if_you>
 
 
+## overview
+
+
+### Memory
+
+- Free allocated memory when you are done with it, don't assume that OS will clean up your mess.
+
+
+### Casting
+
+- Don't cast returned pointers from malloc. `(void *)` should get automatically promoted to any pointer type, and casting just makes it likely you'll get it wrong.
+
+
+### keywords
+
+- \_Alignas (C11)
+- \_Alignof (C11)
+- \_Atomic (C11)
+- \_Bool (C99)
+- \_Complex (C99)
+- \_Decimal128 (C23)
+- \_Decimal32 (C23)
+- \_Decimal64 (C23)
+- \_Generic (C11)
+- \_Imaginary (C99)
+- \_Noreturn (C11)
+- \_Static<sub>assert</sub> (C11)
+- \_Thread<sub>local</sub> (C11)
+- alignas (C23)
+- alignof (C23)
+- auto
+- bool (C23)
+- break
+- case
+- char
+- const
+- constexpr (C23)
+- continue
+- default
+- do
+- double
+- else
+- enum
+- extern
+- false (C23)
+- float
+- for
+- goto
+- if
+- inline (C99)
+- int
+- long
+- nullptr (C23)
+- register
+- restrict (C99)
+- return
+- short
+- signed
+- sizeof
+- static
+- static<sub>assert</sub> (C23)
+- struct
+- switch
+- thread<sub>local</sub> (C23)
+- true (C23)
+- typedef
+- typeof (C23)
+- typeof<sub>unqual</sub> (C23)
+- union
+- unsigned
+- void
+- volatile
+- while
+
+
+### Standards
+
+
+#### C23
+
+-   links
+
+    - <https://queue.acm.org/detail.cfm?id=3588242>
+    - <https://lemire.me/blog/2024/01/21/c23-a-slightly-better-c/>
+
+
+### Install tooling in Fedora
+
+```shell
+sudo yum groupinstall "C Development Tools and Libraries"
+```
+
+
+### Open and read file
+
+```C
+const char *filename = "file.txt";
+unsigned char byte;
+FILE *fp;
+
+fp = fopen(filename, "rb");
+
+if (!fp) {
+        printf("Couldn't open file\n");
+        return 1;
+}
+
+while(!feof(fp)) {
+        fread(&byte, sizeof(int), 1, fp);
+        printf("%i\n",byte);
+}
+
+fclose(fp);
+```
+
+
 ## libraries
 
 
@@ -165,7 +281,7 @@ CGO_ENABLED=0 go build
 GOOS=linux GOARCH=amd64 go build
 ```
 
-[https://golang.org/doc/install/source#environment](List%20of%20compilation%20targets)
+<https://golang.org/doc/install/source#environment>
 
 
 ## libraries
@@ -2048,3 +2164,12 @@ A subset of Python intended as a configuration language
 ### specifications
 
 - [Starlark specification](https://github.com/bazelbuild/starlark/blob/master/spec.md)
+
+
+# Nim
+
+
+## resources
+
+
+### [official website](https://nim-lang.org)

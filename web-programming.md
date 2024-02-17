@@ -31,18 +31,12 @@ og:image
 # Speed Optimization
 
 - Enable caching
-
 - Minify your resources
-
 - Optimize your images
-
 - Check out your database
     - When was it last vacuumed?
-
 - Use a CDN
-
 - Consider preloading
-
 - Use the latest language/server/platform/library versions?
 
 
@@ -116,3 +110,8 @@ og:image
 - The ceaseless pursuit of data to quantify the value of any endeavour is catastrophic to true understanding
 - The barrier between public and private must remain unbreachable
 - We must all have the right to disappear
+
+
+# Accessibility
+
+[W3C Web Accessibility Initiative](https://www.w3.org/WAI/)

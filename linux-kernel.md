@@ -339,3 +339,18 @@ Running:
 
 - [Meta blog post](https://developers.facebook.com/blog/post/2021/12/09/drgn-how-linux-kernel-team-meta-debugs-kernel-scale/)
 - [Github](https://github.com/osandov/drgn)
+
+
+# cgroups
+
+
+# cgroupsv2
+
+- <https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html>
+- <https://www.kernel.org/doc/Documentation/cgroup-v2.txt>
+- <https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/>
+
+
+# cgroupsv1
+
+- <https://www.kernel.org/doc/Documentation/cgroup-v1/>

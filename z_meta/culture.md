@@ -1,3 +1,41 @@
+# Abstraction Comics
+
+There's some webcomics that have a tidy way of explaining a concept.
+
+- [Nerdsniping (XKCD)](https://xkcd.com/356/)
+- [Information half-life (Abstruse Goose)](https://abstrusegoose.com/531)
+
+
+# Anonymity
+
+
+# The Circle by Dave Eggers
+
+
+## The Rights of Humans in a Digital Age
+
+- We must all have the right to anonymity
+- Not every human activity can be measured
+- The ceaseless pursuit of data to quantify the value of any endeavour is catastrophic to true understanding
+- The barrier between public and private must remain unbreachable
+- We must all have the right to disappear
+
+
+# Privacy
+
+- [Office of the Privacy Commissioner of Canada](https://www.priv.gc.ca/en/)
+
+
+## [Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)
+
+Canadian guidelines
+
+- [10 Fair Information Principles](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/)
+
+
+# [GDPR](https://gdpr.eu/)
+
+
 # Hilarity
 
 
@@ -43,3 +81,51 @@
 > 20. Not decryptable by exhaustive application of possible one time pads.
 > 
 > Due to the severity of the restrictions, if the password is entered incorrectly three (3) times at login time, you will be asked if you would like to pick a new one.
+
+
+# Grim Meathook Future
+
+
+## Greyball
+
+Uber created a program to deliberately avoid individuals/institutions critical of Uber
+
+<https://en.wikipedia.org/wiki/Greyball>
+
+
+# Movies
+
+Good movies for the computer geek
+
+- Hackers
+- The Net
+- Sneakers
+- Pirates of Silicon Valley
+- Swordfish
+- Johnny Mnemonic
+- Freedom Downtime
+- Tron
+- 2001: A Space Odyssey
+- Blade Runner
+- War Games
+- The Matrix
+
+
+# Cyberpunk
+
+
+## Books
+
+- Neuromancer by William Gibson
+- Burning Chrome by William Gibson
+- Simulacron-3 by Daniel F. Galouye
+
+
+# code of conduct
+
+<https://www.contributor-covenant.org/>
+
+
+# Retrocomputing
+
+<https://computer-literacy-project.pilots.bbcconnectedstudio.co.uk/beeb>

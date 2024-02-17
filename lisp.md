@@ -1,3 +1,37 @@
+# Lisp
+
+(This is more a directory of interesting Lisp artifacts and sites I've stumbled across, and don't want to have to find again).
+
+- [ISLISP](http://www.islisp.info) - a Lisp standard
+
+
+## Quotes
+
+> "LISP is a high-level language, but you can still feel the bits sliding between your toes." -Guy Steele
+
+
+# Scheme
+
+- <https://www.scheme.com>
+
+
+## Syntax cheatsheet
+
+```scheme
+"This is a string"
+CaseSensitiveIdentifiers
+
+(define add2 
+  (lambda (n)
+    (+ n 2)))
+;; syntactic sugar:
+(define (add2 n)
+  (+ n 2))
+
+(load "filename.ss")
+```
+
+
 # Common Lisp
 
 
@@ -97,6 +131,55 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 - <https://www.onlineprogrammingbooks.com/free-lisp-books/>
 
 
+## Quicklisp
+
+<https://www.quicklisp.org/beta/>
+
+
+### download
+
+```shell
+curl -O https://beta.quicklisp.org/quicklisp.lisp
+curl -O https://beta.quicklisp.org/quicklisp.lisp.asc
+gpg --verify quicklisp.lisp.asc quicklisp.lisp
+```
+
+
+### initial install
+
+```lisp
+(load "quicklisp.lisp")
+```
+
+
+### get software update
+
+```lisp
+(ql:update-dist "quicklisp")
+```
+
+
+### Load a system
+
+```lisp
+(ql:quickload "system-name")
+```
+
+
+### Find a system
+
+```lisp
+(ql:system-apropos "term")
+```
+
+
+### Load Quicklisp every time Lisp starts
+
+```lisp
+(ql:add-to-init-file)
+```
+
+
 # Clozure
 
 [Clozure homepage](https://ccl.clozure.com/)
@@ -104,3 +187,22 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 ```lisp
 (external-call "getpid" :pid_t)
 ```
+
+
+# Interlisp
+
+- <https://interlisp.org/>
+- <https://github.com/interlisp>
+
+
+## Prominent Interlisp Programs
+
+
+### Automated Mathematician
+
+<https://github.com/white-flame/am>
+
+
+### EURISKO
+
+<https://github.com/white-flame/eurisko>

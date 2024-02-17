@@ -1,5 +1,5 @@
-# People
 
+# People
 
 # Akira Kitamura
 
@@ -150,9 +150,8 @@ When faced with two or more alternatives that deliver roughly the same value, ta
 
 # G. Mark Hardy
 
-<http://gmark.com>
 
-G Mark's Observations on Life:
+## G Mark's Observations on Life:
 
 - Just ask.
 - Don't wait for perfection.
@@ -357,7 +356,7 @@ Inventor of Xanadu
 
 Inventory of Ruby language
 
-> "...computers don't mind if I must make effort to communicate with them or if it is easy to communicate with them. They don't care if I put the numbers of instruction byte sequences in a file and feed it to them to run, or if a very high level language generated the instructions. The computers don't care. We humans care about the effort we pay. Often people, especially computer engineers, focus on the machines. They think,"By doing this, the machine will run faster. By doing this, the machine will run more effectively. By doing this, the machine will something something something.” They are focusing on machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines. We are the masters. They are the slaves.”
+> ...computers don't mind if I must make effort to communicate with them or if it is easy to communicate with them. They don't care if I put the numbers of instruction byte sequences in a file and feed it to them to run, or if a very high level language generated the instructions. The computers don't care. We humans care about the effort we pay. Often people, especially computer engineers, focus on the machines. They think, "By doing this, the machine will run faster. By doing this, the machine will run more effectively. By doing this, the machine will something something something." They are focusing on machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines.
 
 
 # Paul Graham
@@ -372,3 +371,6 @@ The day job to pay the bills, and the fun/beautiful work after hours
 When you're small and nimble, try to get as much technical ground between you and the competition. They're bigger, so it will take longer for them to reach feature parity. Natural barrier to entry.
 
 > "Start by picking a hard problem, and then at every decision point, take the harder choice."
+
+
+# Leslie Lamport

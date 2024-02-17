@@ -8,12 +8,16 @@
 - Memento mori - don't waste your life on stupid shit.
 
 
+<a id="org99f1ab5"></a>
+
 # Coffee
 
 If coffee is sour, it's under-extracted.
 
 - <http://brewmethods.com/>
 
+
+<a id="org810c0f9"></a>
 
 # Sleep
 
@@ -40,3 +44,95 @@ If coffee is sour, it's under-extracted.
 - [CIPS Code of Ethics](http://www.cips.ca/ethics)
 - [IEEE Computer Society Code of Ethics](https://www.computer.org/education/code-of-ethics)
 - [Computer Professionals for Social Responsibility](http://cpsr.org/)
+
+
+# Sysadmin Life
+
+- Write great documentation, not necessarily for others, but for your own sanity
+- Assume that you typing something in is the weakest link in any chain. If it can be automated, it should be.
+
+
+## Outside of work
+
+- [Sleep](#org810c0f9) is precious. Invest in a nice bed, keep light out of the room, keep [caffeinated substance consumption](#org99f1ab5) to a minimum.
+- If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier - the most inconvenient time. Schedule accordingly.
+
+
+## Staying current
+
+- [League of Professional System Administrators](https://lopsa.org/)
+- [System Administration Book of Knowledge](http://sabok.org/)
+
+
+## Links
+
+- <https://www.netmeister.org/blog/ops-lessons.html>
+
+
+# Public Speaking
+
+- Don't make hesitation noises ("ummm"), just pause
+- Rotate eye contact between 3 people
+- Avoid the podium
+- Use gestures. Don't fidget
+- Don't read from notes
+
+
+# Canada-specific resources
+
+- [Innovation, Science and Economic Development Canada](http://www.ic.gc.ca)
+- [Canada Intellectual Property Office](http://www.ic.gc.ca/eic/site/cipointernet-internetopic.nsf/eng/home)
+- [Canadian whistle-blower laws](http://www.canadianlawsite.ca/whistle-blower.htm)
+- [Canada Labour Code](https://laws-lois.justice.gc.ca/eng/acts/L-2/)
+- [Occupational Health and Safety](https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety.html)
+- [International Development Research Centre](https://www.idrc.ca/)
+
+
+# Labour Market
+
+- [Information and Communications Technology Council](https://www.ictc-ctic.ca)
+
+
+# Skill Aggregation
+
+
+## level 1: beginner
+
+- Little or no previous experience
+- Doesn't want to learn: wants to accomplish a goal
+- No discretionary judgement
+- Rigid adherence to rules
+
+
+## Level 2: Advanced Beginner
+
+- Starts trying tasks on their own
+- Has difficulty troubleshooting
+- Wants information fast
+- Can place some advice in context required
+- Uses guidelines, but without holistic understanding
+
+
+## Level 3: Competent
+
+- Develops conceptual models
+- Troubleshoots on their own
+- Seeks out expert advice
+- Sees actions at least partially in terms of long-term plans and goals
+
+
+## Level 4: Proficient
+
+- Guided by maxims applied to the current situation
+- Sees situations holistically
+- Will self-correct based on previous performance
+- Learns from the experience of others
+- Frustrated by oversimplified information
+
+
+## Level 5: Expert
+
+- No longer relies on rules, guidelines, or maxims
+- Works primarily from intuition
+- Analytic approaches only used in novel situations or when problems occur
+- When forced to follow set rules, performance is degraded

@@ -205,3 +205,15 @@ Answer support queries quickly. Good customer service can disarm a customer.
 # Selling software
 
 Customers want *benefits*, not features. Users do not have a "software" problem
+
+
+# Landing Pages
+
+- Have one conversion goal, and only one goal
+- Point out why you're unique
+- Use testimonial language
+- Use simple language
+- Paint a picture of the customer's pain
+- Clear benefits
+- Let customers know when to expect when they engage
+- Set up analytics and event tracking - and actually use it
