@@ -1,38 +1,47 @@
+
 # Lisp
 
 (This is more a directory of interesting Lisp artifacts and sites I've stumbled across, and don't want to have to find again).
 
-- [ISLISP](http://www.islisp.info) - a Lisp standard
+
+# Common Lisp
 
 
-## Quotes
+## Resources
 
-> "LISP is a high-level language, but you can still feel the bits sliding between your toes." -Guy Steele
+- [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
+- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
+- <https://github.com/CodyReichert/awesome-cl>
+- <http://www.adamtornhill.com/articles/lispweb.htm>
+- <https://edicl.github.io/hunchentoot/#teen-age>
+- <https://edicl.github.io/cl-who/>
+- <https://lisp-lang.org/books/>
+- <https://www.onlineprogrammingbooks.com/free-lisp-books/>
 
 
-# Scheme
-
-- <https://www.scheme.com>
+### Implementations
 
 
-## Syntax cheatsheet
+#### [GNU Common Lisp](https://www.gnu.org/software/gcl/)
 
-```scheme
-"This is a string"
-CaseSensitiveIdentifiers
 
-(define add2 
-  (lambda (n)
-    (+ n 2)))
-;; syntactic sugar:
-(define (add2 n)
-  (+ n 2))
+#### [Steel Bank Common Lisp](https://sbcl.org)
 
-(load "filename.ss")
+
+#### [CLISP](https://clisp.org)
+
+
+#### [Carnegie Mellon University Common Lisp](https://www.cons.org/cmucl/)
+
+
+#### [Clozure Common Lisp](https://ccl.clozure.com/)
+
+```lisp
+(external-call "getpid" :pid_t)
 ```
 
 
-# Common Lisp
+#### [Embeddable Common Lisp](https://ecl.common-lisp.dev/)
 
 
 ## Basics
@@ -119,18 +128,6 @@ destination can be nil, t (ie STDOUT), a stream, or string w/ fill pointer
 ```
 
 
-## Resources
-
-- [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
-- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
-- <https://github.com/CodyReichert/awesome-cl>
-- <http://www.adamtornhill.com/articles/lispweb.htm>
-- <https://edicl.github.io/hunchentoot/#teen-age>
-- <https://edicl.github.io/cl-who/>
-- <https://lisp-lang.org/books/>
-- <https://www.onlineprogrammingbooks.com/free-lisp-books/>
-
-
 ## Quicklisp
 
 <https://www.quicklisp.org/beta/>
@@ -180,12 +177,52 @@ gpg --verify quicklisp.lisp.asc quicklisp.lisp
 ```
 
 
-# Clozure
+## Common Lisp Hyper Spec
 
-[Clozure homepage](https://ccl.clozure.com/)
+[LispWorks HyperSpec](https://www.lispworks.com/reference/HyperSpec/)
 
-```lisp
-(external-call "getpid" :pid_t)
+<https://novaspec.org/cl/> - a prettier version of CLHS
+
+
+# Scheme
+
+
+## resources
+
+
+### Implementations
+
+
+#### [Chez Scheme](https://www.scheme.com)
+
+
+### docs websites
+
+- [The Scheme Programming Language (R. Kent Dybvig)](https://www.scheme.com/tspl4/)
+
+
+### standards/specifications
+
+<https://standards.scheme.org/>
+
+
+## overview
+
+
+### Syntax cheatsheet
+
+```scheme
+"This is a string"
+CaseSensitiveIdentifiers
+
+(define add2 
+  (lambda (n)
+    (+ n 2)))
+;; syntactic sugar:
+(define (add2 n)
+  (+ n 2))
+
+(load "filename.ss")
 ```
 
 
@@ -206,3 +243,16 @@ gpg --verify quicklisp.lisp.asc quicklisp.lisp
 ### EURISKO
 
 <https://github.com/white-flame/eurisko>
+
+
+# [ISLISP](http://www.islisp.info)
+
+A Lisp standard to bridge a bunch of Lisp standards
+
+
+# Quotes
+
+> "LISP is a high-level language, but you can still feel the bits sliding between your toes." -Guy Steele
+
+
+# [Shen](https://shenlanguage.org)

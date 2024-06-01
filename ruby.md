@@ -432,6 +432,11 @@ compile with mrbc
 ## [TruffleRuby](https://github.com/oracle/truffleruby)
 
 
+## [Artichoke](https://github.com/artichoke/artichoke)
+
+A Ruby made with Rust
+
+
 # Standard Library and Extensions
 
 
@@ -1581,6 +1586,15 @@ A lot of the tree-rewriter code is in here (though a bit of a shame that's not a
 
 - [unparser](https://github.com/mbj/unparser)
 - [sorcerer](https://github.com/jimweirich/sorcerer)
+
+
+## Solargraph
+
+```
+gem install solargraph
+# get core
+solargraph download-core
+```
 
 
 # Ruby-Next

@@ -222,6 +222,10 @@ docker run --name some-cassandra -v ~/my/own/datadir:/var/lib/cassandra -d cassa
 
 # CouchDB
 
+<https://couchdb.apache.org/>
+
+- [Docker image](https://hub.docker.com/_/couchdb)
+
 
 ## get list of databases
 
@@ -242,11 +246,6 @@ curl localhost:5984/db_name
 ```
 curl localhost:5984/_utils
 ```
-
-
-## Links
-
-- [Docker image](https://hub.docker.com/_/couchdb)
 
 
 # Couchbase
