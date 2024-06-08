@@ -15,10 +15,10 @@
 
 ### Upgrading to new Fedora versions
 
-```shell
+```sh
 sudo dnf upgrade --refresh
 sudo dnf install dnf-plugin-system-upgrade
-sudo dnf system-upgrade download --refresh --releasever=37
+sudo dnf system-upgrade download --refresh --releasever=40
 ```
 
 <https://fedoraproject.org/wiki/DNF_system_upgrade>
@@ -26,7 +26,7 @@ sudo dnf system-upgrade download --refresh --releasever=37
 
 ### Building live images
 
-```shell
+```sh
 # Install the tooling
 sudo dnf install livecd-tools spin-kickstarts
 # Kickstart files are located in /usr/share/spin-kickstarts
@@ -60,7 +60,7 @@ sudo qemu-kvm -m 2048 -vga qxl -cdrom filename.iso
 
 ## Remove older kernels
 
-```shell
+```sh
 # (RHEL) Install yum-utils and run:
 package-cleanup --oldkernels --count=1
 ```
@@ -68,7 +68,7 @@ package-cleanup --oldkernels --count=1
 
 # NixOS
 
-Uses /etc/nixos/configuration.nix for machine config
+Uses `/etc/nixos/configuration.nix` for machine config
 
 nixos-rebuild to use it
 
@@ -102,7 +102,7 @@ nixos-container start foo
 
 - `/etc/apt/sources.list` - list of APT repositories
 
-```shell
+```sh
 # Install a package
 dpkg -i file.deb
 # Remove a package
@@ -147,7 +147,7 @@ Default run level is 2
 
 # SUSE
 
-```shell
+```sh
 # Install a package
 zypper install PACKAGE
 # Search for a package
@@ -157,7 +157,7 @@ zypper search -t PACKAGE
 
 # Arch Linux
 
-```shell
+```sh
 # Installing packages
 pacman -S [package]
 ```

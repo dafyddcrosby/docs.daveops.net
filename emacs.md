@@ -187,7 +187,7 @@ Append C-h to a prefix key for combination documentation
 | text-mode       | Text mode (intended for human language)         |
 
 
-## Customize
+## Customize Mode
 
 `M-x customize` to customize settings, `M-x customize-browse` for tree mode, `M-x customize-themes` for themes
 
@@ -197,9 +197,6 @@ Append C-h to a prefix key for combination documentation
 Possibly the killer app for Emacs
 
 [Org Mode Website](https://orgmode.org/)
-
-
-### Documentation
 
 [Org Mode Manual](https://orgmode.org/manual/)
 
@@ -286,7 +283,7 @@ Built-in in version 28.2
 | read definitions file                              | read-abbrev-file  |
 
 
-## Help mode
+## Help Mode
 
 | desc                            | command          | key   |
 | ---                             | ---              | ---   |
@@ -304,7 +301,7 @@ Built-in in version 28.2
 | up            | u   |
 
 
-## BibTeX
+## BibTeX Mode
 
 | C-c C-e a | bibtex-article        | Add an article                               |
 | C-c C-e b | bibtex-book           | Add a book                                   |
@@ -413,6 +410,44 @@ To enable lexical-binding in a file:
 |----------------------- |--------- |
 | execute line            | C-x C-e   |
 | execute, dump in buffer | C-j       |
+
+
+## Debugging
+
+<https://www.gnu.org/software/emacs/manual/html_node/elisp/Debugging.html>
+
+
+### Profiling
+
+> To begin profiling, type `M-x profiler-start`. You can choose to sample CPU usage periodically (‘cpu’), when memory is allocated (‘memory’), or both. Then run the code you’d like to speed up. After that, type `M-x profiler-report` to display a summary buffer for CPU usage sampled by each type (cpu and memory) that you chose to profile. The names of the report buffers include the times at which the reports were generated, so you can generate another report later on without erasing previous results. When you have finished profiling, type `M-x profiler-stop` (there is a small overhead associated with profiling, so we don’t recommend leaving it active except when you are actually running the code you want to examine).
+
+
+### Edebug
+
+<https://www.gnu.org/software/emacs/manual/html_node/elisp/Using-Edebug.html>
+
+- toggle-debug-on-error
+- toggle-debug-on-quit
+
+| n | next step                                                   |
+| c | skip to end                                                 |
+| d | display backtrace                                           |
+| q | Return to top level editor command loop                     |
+| h | Proceed to stop point near where point is                   |
+| o | Move out of the containing sexp. Useful in loops.           |
+| i | Step into the function/macro called by the form after point |
+
+what you can do by just hitting d to step deeper into the structure, and then c to quickly get out. You can also jump around a bit with j, and evaluate expressions under an environment as if you were inside the function with e.
+
+```elisp
+(debug) ; enter debugger when reached
+(debug-on-entry FUNCTION) ; invoke debugger when FUNCTION called
+```
+
+Use M-x cancel-debug-on-entry to cancel the effect of `debug-on-entry`. Redefining FUNCTION also cancels it.
+
+- Go to the function definition. You can usually do that with C-h f (which calls describe function) or just M-x find-function.
+- Enable Edebug on the function with `C-u C-M-x`, then invoke it
 
 
 # Platform support
@@ -610,6 +645,14 @@ Emacs Lisp Package Archive
 # Third-Party Packages
 
 
+## Emacs toolkits
+
+- [Doom Emacs](https://github.com/doomemacs/doomemacs)
+- [Spacemacs](https://spacemacs.org)
+- [Purcell's emacs.d](https://github.com/purcell/emacs.d)
+- [bbatsov's prelude](https://github.com/bbatsov/prelude)
+
+
 ## Evil Mode
 
 | desc                         | keystrokes |
@@ -633,3 +676,21 @@ Text-to-speech interface
 
 - <https://emacspeak.sourceforge.net/>
 - <http://tvraman.github.io/emacspeak/manual/>
+
+
+## Emacs Multimedia System
+
+<https://www.gnu.org/software/emms/>
+
+
+## Smex
+
+show frequently used M-x modes <https://github.com/nonsequitur/smex/>
+
+
+## Projectile
+
+Project interaction library
+
+- <https://docs.projectile.mx/>
+- <https://github.com/bbatsov/projectile>

@@ -362,6 +362,13 @@ ifconfig pfsync0 up
 ## iOS (Apple)
 
 
+#### Reboot phone (iPhone 8+)
+
+- Quickly press and let go of the volume up button
+- Quickly press and let go of the volume down button
+- Press and hold the right side button until reboot
+
+
 #### View lifecycle
 
 - viewDidLoad
