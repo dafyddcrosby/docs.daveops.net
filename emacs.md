@@ -7,21 +7,27 @@
 - M-x - Execute Extended Command (Named command eXtend). Followed by a long name
 - M-S-x - Execute Extended Command for Buffer - show/run commands relevant to current buffer (Emacs 28+)
 
-| keystrokes | M-x                        | desc         |
-|---------- |-------------------------- |------------ |
-| C-x C-c    | save-buffers-kill-terminal | quit         |
-| C-g        | keyboard-exit              | stop command |
-| M-x        | execute-extended-command   |              |
+| keys    | M-x                        | desc         |
+|------- |-------------------------- |------------ |
+| C-x C-c | save-buffers-kill-terminal | quit         |
+| C-g     | keyboard-exit              | stop command |
+| M-x     | execute-extended-command   |              |
 
 
 # files
 
 | keys    | M-x               | desc                                |
 |------- |----------------- |----------------------------------- |
-| C-x C-f |                   | find file                           |
-| C-x C-s |                   | save file                           |
-| C-x s   |                   | save buffers to files               |
+| C-x C-f | ido-find-file     | find file                           |
+| C-x C-s | save-buffer       | save file                           |
+| C-x s   | save-some-buffers | save buffers to files               |
 |         | recover-this-file | Recover file from an auto-save file |
+| M-g M-g | goto-line         | go to line in file                  |
+|         | buffer-name       |                                     |
+|         | buffer-file-name  |                                     |
+|         | other-buffer      |                                     |
+|         | set-buffer        | change buffer (in scripts)          |
+|         | switch-to-buffer  | changes buffer, loads it in window  |
 
 
 ## File local variables
@@ -47,10 +53,14 @@ End:
 
 ## buffers
 
-| keys    | desc           |
-|------- |-------------- |
-| C-x b   | switch buffers |
-| C-x C-b | list buffers   |
+| keys    | M-x                     | desc                                |
+|------- |----------------------- |----------------------------------- |
+| C-x b   | ido-switch-buffer       | switch buffers                      |
+| C-x C-b | list-buffers            | list buffers                        |
+| C-space | set-mark-command        |                                     |
+| C-x C-x | exchange-point-and-mark |                                     |
+| C-x n n | narrow-to-region        | narrow view of buffer to the region |
+| C-x n w | widen                   | removes narrowing                   |
 
 
 ## Tabs
@@ -371,10 +381,10 @@ Conference typically in December
 
 The extensibility of EMACS is the point, not the key commands. Any editor where interpreter facilities are always available at runtime could (more or less) do the same thing.
 
-One argument made was that because Emacs was written in Lisp, it pulled Lisp from the ivory towers into systems programming. Not sure I agree with that one totally (especially given the jankiness of [Emacs Lisp](#org1c4e854)), but it's an interesting use of it.
+One argument made was that because Emacs was written in Lisp, it pulled Lisp from the ivory towers into systems programming. Not sure I agree with that one totally (especially given the jankiness of [Emacs Lisp](#org8642265)), but it's an interesting use of it.
 
 
-<a id="org1c4e854"></a>
+<a id="org8642265"></a>
 
 # Emacs Lisp
 
@@ -404,12 +414,23 @@ To enable lexical-binding in a file:
 ```
 
 
-## Keystrokes
+## Evaluation
 
-| desc                    | keystroke |
-|----------------------- |--------- |
-| execute line            | C-x C-e   |
-| execute, dump in buffer | C-j       |
+| keys    | command         | desc                              |
+|------- |--------------- |--------------------------------- |
+| C-x C-e | eval-last-sexp  | evaluate last S-expression        |
+| C-j     |                 | execute, dump in buffer           |
+| M-:     | eval-expression | evaluate expression in minibuffer |
+
+
+## Definining functions
+
+```elisp
+(defun FUNCTION-NAME (ARGUMENTS...)
+  "OPTIONAL-DOCUMENTATION..."
+  (interactive ARGUMENT-PASSING-INFO)     ; optional
+  BODY...)
+```
 
 
 ## Debugging
@@ -518,6 +539,8 @@ git clone git://git.sv.gnu.org/emacs.git
 cd emacs
 sh autogen.sh
 ./configure
+make bootstrap
+sudo make install
 ```
 
 

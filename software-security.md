@@ -20,7 +20,7 @@ Von Neumann machine - no difference between code + data
 - A Universal Constructor
 - Information on tape
 
-[Core War](#org6ccbf5b)
+[Core War](#orgba5327d)
 
 > Instead of writing computer viruses, I strongly recommend playing this harmless and interesting game. In fact, if worms fascinate you, a new version of Corw Wars can be created to link battles in different networks and allow warrior programs to jump from one battle to another to fight new enemies on those machines. Evolving the game to be more networked allows for simulating worm-like warrior programs.
 
@@ -72,16 +72,42 @@ Originally called *Darwin*, ran on a PDP-1 in Bell Labs
 Moves 1 address forward each cycle
 
 
-# wargames
+# Wargames
 
 Learning how to break software helps you build more robust software.
 
-- [Microcorruption](https://microcorruption.com)
-- [OverTheWire](http://overthewire.org/wargames/)
-- [Stockfighter](https://www.stockfighter.io/#jailbreak)
-- [Cryptopals](https://cryptopals.com/)
-- <https://pwn.college/>
-- <https://ctftime.org/>
+
+## [OverTheWire](http://overthewire.org/wargames/)
+
+
+### manpage0
+
+
+## [Microcorruption](https://microcorruption.com)
+
+
+## [Stockfighter](https://www.stockfighter.io/#jailbreak)
+
+
+## [Cryptopals](https://cryptopals.com/)
+
+
+## <https://pwn.college/>
+
+
+## CTF resources
+
+
+### [WeChall CTF scoreboard](https://www.wechall.net)
+
+
+### <https://ctf101.org>
+
+
+### <https://ctftime.org/>
+
+
+### <https://www.crypto101.io/>
 
 
 # Concepts
@@ -145,12 +171,12 @@ Logs and alerts on anomalies, malicious activity, puts it into "single pane of g
 - S. Bhatt, P. K. Manadhata and L. Zomlot, "The Operational Role of Security Information and Event Management Systems," in IEEE Security & Privacy, vol. 12, no. 5, pp. 35-41, Sept.-Oct. 2014, doi: 10.1109/MSP.2014.103.
 
 
-# Return-Oriented Programming
+## Return-Oriented Programming
 
 Looks for 'gadgets' in code, snippets of code in libc and elsewhere in lieu of providing the code itself.
 
 
-## Other links
+### Other links
 
 - [AntiJOP](http://zsmith.co/antijop.html)
 
@@ -167,18 +193,22 @@ BeyondCorp is a zero-trust approach to building infrastructure, where instead of
 - At a certain point, you'll look into the void, and realize that there is no way to secure software, only raise the cost of exploitation, and that there's always someone willing to pay that cost. Learn to be fine with that.
 
 
-# Resources
-
-- <http://lcamtuf.blogspot.com/2016/08/so-you-want-to-work-in-security-but-are.html>
-
-
 # Security Conferences
 
-- DefCon
-- BlackHat
-- ShmooCon
-- HOPE
-- CanSecWest
+
+## DefCon
+
+
+## BlackHat
+
+
+## ShmooCon
+
+
+## HOPE
+
+
+## CanSecWest
 
 
 # Resources

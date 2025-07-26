@@ -1,7 +1,7 @@
 # Virtual Reality
 
 
-## Best Practices
+# Best Practices
 
 [Oculus VR best practices](https://developer.oculus.com/design/latest/concepts/book-bp/?_fb_noscript=1) [ISO 9241-391:2016](https://www.iso.org/standard/56350.html)
 

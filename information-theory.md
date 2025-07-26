@@ -9,7 +9,7 @@
 # People
 
 
-<a id="orgfdb97b9"></a>
+<a id="orgd03a9c5"></a>
 
 ## Claude Shannon
 
@@ -38,4 +38,4 @@ The hartley unit (one decimal digit) is named after him
 
 Coined "transistor"
 
-Worked on Pulse Code Modulation with [Shannon](#orgfdb97b9)
+Worked on Pulse Code Modulation with [Shannon](#orgd03a9c5)

@@ -7,13 +7,13 @@
 
 Google Remote Procedure Calling
 
-[Protobufs](#org58dc29f) over HTTP/2
+[Protobufs](#org001f11f) over HTTP/2
 
 
 # Serialization formats
 
 
-<a id="org58dc29f"></a>
+<a id="org001f11f"></a>
 
 ## Protobuf
 

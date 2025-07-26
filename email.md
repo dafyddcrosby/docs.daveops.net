@@ -1,18 +1,18 @@
 # EMail
 
 
-## Videos
+# Videos
 
 - [Email Hatest the Living (Ricardo Signes, rjbs)](https://www.youtube.com/watch?v=4s9IjkMAmns)
 
 
-## Links
+# Links
 
 - [jwz: "HTML email, was that your fault?"](https://www.jwz.org/blog/2017/09/html-email-was-that-your-fault/)
 - [blacklist checking](https://mxtoolbox.com/SuperTool.aspx)
 
 
-## Connect via command line
+# Connect via command line
 
 ```shell
 # Connect via telnet
@@ -33,7 +33,7 @@ Blah blah
 ```
 
 
-## Ports
+# Ports
 
 - 25: SMTP, typically used for MTA to MTA
 - 465: SMTPS

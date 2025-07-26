@@ -181,14 +181,14 @@ Massively parallel computer architecture comprised of non-uniformly interconnect
 
 ## Bootstrapping
 
-Starts in 16-bit [Real Mode](#org54b0b9b), for compatibility reasons
+Starts in 16-bit [Real Mode](#org76a8bbb), for compatibility reasons
 
 Zero the data segment registers first thing, since their content is unknown.
 
 The BIOS transfers the first 512 bytes of data from the device into 0x7c00. The last two bytes need to be 0x55 and then 0xAA to be considered a valid bootsector.
 
 
-<a id="org54b0b9b"></a>
+<a id="org76a8bbb"></a>
 
 ## Real Mode
 

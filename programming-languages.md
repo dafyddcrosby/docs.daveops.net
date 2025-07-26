@@ -442,6 +442,21 @@ zig targets
 
 <https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/>
 
+<https://www.swi-prolog.org/Links.html>
+
+
+### SWI-Prolog
+
+<https://swi-prolog.org/>
+
+
+### GNU Prolog
+
+<http://www.gprolog.org/>
+
+
+## overview
+
 
 # Tcl
 
@@ -1600,14 +1615,19 @@ Inserting `debugger;` in your code sets a breakpoint
 
 - [Rust Programming Language Book](https://doc.rust-lang.org/stable/book/)
     - [Stack-Only Data: Copy](https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html#stack-only-data-copy)
-- <https://doc.rust-lang.org/core/>
-- <https://www.rust-lang.org/documentation.html>
-- <https://doc.rust-lang.org/stable/rust-by-example/>
+- [The Rust Core Library](https://doc.rust-lang.org/core/)
+- [Learn Rust](https://www.rust-lang.org/learn)
+- [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [The Rust Reference](https://doc.rust-lang.org/reference/)
+
+
+### [source code](https://github.com/rust-lang/rust)
 
 
 ### editor support
 
 - [vim plugin](https://github.com/rust-lang/rust.vim)
+- [Emacs (rust-mode)](https://github.com/rust-lang/rust-mode)
 
 
 ### Ferris the crab
@@ -2161,7 +2181,7 @@ Sinatra-ish web framework
 
 # Starlark
 
-A subset of Python intended as a configuration language
+A subset of [Python](python.md) intended as a configuration language
 
 
 ## resources

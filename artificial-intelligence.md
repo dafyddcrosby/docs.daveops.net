@@ -32,9 +32,6 @@ Machine learning is the automation of automation.
 <https://www.tensorflow.org/>
 
 
-# Society of Mind by Marvin Minsky
-
-
 # Neural Networks
 
 Input layer -> Hidden Layer -> Output Layer

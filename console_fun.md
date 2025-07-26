@@ -23,12 +23,6 @@
 - abook
 
 
-## Twitter
-
-- turses
-- t
-
-
 ## RSS
 
 - newsbeuter

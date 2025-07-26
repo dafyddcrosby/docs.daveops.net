@@ -8,7 +8,7 @@
 - Memento mori - don't waste your life on stupid shit.
 
 
-<a id="org99f1ab5"></a>
+<a id="orgc40aada"></a>
 
 # Coffee
 
@@ -17,7 +17,7 @@ If coffee is sour, it's under-extracted.
 - <http://brewmethods.com/>
 
 
-<a id="org810c0f9"></a>
+<a id="org74a2d68"></a>
 
 # Sleep
 
@@ -54,7 +54,7 @@ If coffee is sour, it's under-extracted.
 
 ## Outside of work
 
-- [Sleep](#org810c0f9) is precious. Invest in a nice bed, keep light out of the room, keep [caffeinated substance consumption](#org99f1ab5) to a minimum.
+- [Sleep](#org74a2d68) is precious. Invest in a nice bed, keep light out of the room, keep [caffeinated substance consumption](#orgc40aada) to a minimum.
 - If you're on-call, assume things will break any minute. Shower, middle of a meal, while you're hanging a chandelier - the most inconvenient time. Schedule accordingly.
 
 

@@ -3,11 +3,11 @@
 
 Statistics is about organizing data in a way that can allow further meaning and inferences.
 
-One of the means for organizing data is [frequency distribution](#orgce70972)
+One of the means for organizing data is [frequency distribution](#org128dd88)
 
 When using pictograms, beware of the possibility of giving a false impression with the data.
 
-When describing the data, it is good to have the [measures of central tendency](#org5cf38d9) and [measures of dispersion](#org2e4c99f)
+When describing the data, it is good to have the [measures of central tendency](#org96ab6e5) and [measures of dispersion](#orgc69926f)
 
 
 # Statistical hypothesis testing
@@ -24,22 +24,22 @@ Type 2 - False negative. The mistaken acceptance of an actually false null hypot
 A crossover error rate (CER) is the point at which both types are equal. A lower CER means something is more accurate.
 
 
-<a id="orgce70972"></a>
+<a id="org128dd88"></a>
 
 # Frequency distribution
 
 Frequency distribution is where the you take each possible value of data and enumerate the total number of times that data has appeared (the *frequency*)
 
-Where the number of different of data points becomes difficult (eg the income of every individual in Canada), consider [grouping data](#org797ee13).
+Where the number of different of data points becomes difficult (eg the income of every individual in Canada), consider [grouping data](#org0bbbbeb).
 
 Frequency distribution lends itself well to [statistics](statistics.md)
 
 
-<a id="org797ee13"></a>
+<a id="org0bbbbeb"></a>
 
 # Grouping data
 
-When making a [frequency distribution](#orgce70972), it can sometimes make the information clearer by grouping data. An example for this is "income per individual." Instead of having thousands of individual points, you can group them like so:
+When making a [frequency distribution](#org128dd88), it can sometimes make the information clearer by grouping data. An example for this is "income per individual." Instead of having thousands of individual points, you can group them like so:
 
 | Income    | Frequency |
 | 120k-159k | 45        |
@@ -62,7 +62,7 @@ One way to handle this is to take the range from highest to lowest, then divide 
 Don't mistake probability for reality
 
 
-<a id="org5cf38d9"></a>
+<a id="org96ab6e5"></a>
 
 # Measures of central tendency
 
@@ -79,7 +79,7 @@ If the number of values in a set is even, the median of the set is the average o
 range = highest value - lowest value (obvious, but worth stating)
 
 
-<a id="org2e4c99f"></a>
+<a id="orgc69926f"></a>
 
 # Measures of dispersion
 
@@ -97,6 +97,6 @@ The percentile of a set is the number of n percent of the set.
 
 # Bar graphs
 
-Bar graphs are a way of visualizing data that can make numbers more obvious, for example showing [frequency distribution](#orgce70972).
+Bar graphs are a way of visualizing data that can make numbers more obvious, for example showing [frequency distribution](#org128dd88).
 
 A histogram is similar to a bar graph, but the variables are broken into intervals.

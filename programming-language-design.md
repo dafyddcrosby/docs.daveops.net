@@ -5,9 +5,9 @@
 
 A compiler transforms one language into another (eg High-Level Language -> Machine Code)
 
-A [lexer](#org48676fa) tokenizes a file
+A [lexer](#org023366b) tokenizes a file
 
-A [parser](Parsers) takes the tokens and creates an abstract syntax tree
+A [parser](#org286a75e) takes the tokens and creates an abstract syntax tree
 
 
 ## Self-hosting
@@ -39,13 +39,13 @@ You can create a simple compiler that parses the source, analyzes the code, and 
 An assembler translates a program into machine code. There is no fancy changing of code like you would get with a compiler - this is an easier way to read machine code.
 
 
-<a id="org48676fa"></a>
+<a id="org023366b"></a>
 
 # Lexers
 
 AKA Scanners
 
-Convert strings of characters into groups of [tokens](#orgd7d2eeb)
+Convert strings of characters into groups of [tokens](#org7865770)
 
 After lexical analysis, something like
 
@@ -62,40 +62,40 @@ Would become something like
 A lexer will use multiple pointers in the file to know
 
 - the line number
-- the starting location of a [lexeme](#org2325e30)
+- the starting location of a [lexeme](#orgee1d433)
 - where in the lexeme it is as it is scanning
 
 Not all tokens can be determined by the first character (take for example `!=` - if you're too agressive, instead of 'not equal' you could get 'not' and 'assign' - different semantics!)
 
 
-<a id="org2325e30"></a>
+<a id="orgee1d433"></a>
 
 ## Lexemes
 
-A sequence of characters that matches a [token](#orgd7d2eeb) pattern
+A sequence of characters that matches a [token](#org7865770) pattern
 
 
-<a id="orgd7d2eeb"></a>
+<a id="org7865770"></a>
 
 ## Tokens
 
-A token is a data structure that conveys the meaning of a [lexeme](#org2325e30)
+A token is a data structure that conveys the meaning of a [lexeme](#orgee1d433)
 
 
-<a id="orgfb82f31"></a>
+<a id="org23cdbc9"></a>
 
 ## Expressions
 
-An expression, in contrast to [statements](#org0046328), will return a value. `2 + 2` is an example of an expression.
+An expression, in contrast to [statements](#orgf0cf9a5), will return a value. `2 + 2` is an example of an expression.
 
 In languages like Ruby/Lisp/etc where "everything is an expression", you have to decide what a control flow (if, while) evaluates as, a variable declation evaluates to, a block. In exchange for making a few critical choices up front, you cut out redundancy and get implicit returns (ie last expression is the return value) cheaply.
 
 
-<a id="org0046328"></a>
+<a id="orgf0cf9a5"></a>
 
 ## Statements
 
-A statement, in contrast to an [expressions](#orgfb82f31), does not produce a value. This is often something like a conditional.
+A statement, in contrast to an [expressions](#org23cdbc9), does not produce a value. This is often something like a conditional.
 
 
 # Static analysis
@@ -104,10 +104,10 @@ Binding/resolution is where an identifier (eg a variable name) is defined and th
 
 In statically-typed languages, this is where the type is checked.
 
-The information from an identified node can be stored as an **attribute** within the AST tree node. It can also be put in a **symbol table** (a key-value lookup). The tree can also be transformed into an **[Intermediate Representation](#org3d37664)**.
+The information from an identified node can be stored as an **attribute** within the AST tree node. It can also be put in a **symbol table** (a key-value lookup). The tree can also be transformed into an **[Intermediate Representation](#orga77ede2)**.
 
 
-<a id="org3d37664"></a>
+<a id="orga77ede2"></a>
 
 ## Intermediate Representation
 
@@ -132,19 +132,21 @@ Static dispatch is when method lookup happens at compile time based on the stati
 Dynamic dispatch looks up the class of the actual instance object at runtime. Virtual methods are a form of dynamic dispatch
 
 
+<a id="org286a75e"></a>
+
 # Parsers
 
-A parser works through a list of [tokens](#orgd7d2eeb) to create an [abstract syntax tree](#org97a93ac). It uses multiple pointers to track the state of the input (eg. the tokens inside of matching brackets (which are also tokens))
+A parser works through a list of [tokens](#org7865770) to create an [abstract syntax tree](#org4c2f5ea). It uses multiple pointers to track the state of the input (eg. the tokens inside of matching brackets (which are also tokens))
 
-A parser will determine if something is a [statement](#org0046328) or an [expression](#orgfb82f31)
+A parser will determine if something is a [statement](#orgf0cf9a5) or an [expression](#org23cdbc9)
 
 When parsing, you will need to decide how to handle unrecognized tokens (generally best to throw an error)
 
-- [Syntactical sugar](#org2a9a2ff)
-- [Abstract Syntax Trees](#org97a93ac)
+- [Syntactical sugar](#orgb7d600e)
+- [Abstract Syntax Trees](#org4c2f5ea)
 
 
-<a id="org97a93ac"></a>
+<a id="org4c2f5ea"></a>
 
 ## Abstract Syntax Trees
 
@@ -162,12 +164,12 @@ The interpreter will need to track the output and the environment (eg variable a
 
 ## Tree-walking interpreter
 
-A tree-walking interpreter walks each leaf of an [AST](#org97a93ac) to execute - this can be kind of slow.
+A tree-walking interpreter walks each leaf of an [AST](#org4c2f5ea) to execute - this can be kind of slow.
 
 Early Ruby versions using the Matz Ruby Interpreter did this, before being replaced by Yet Another Ruby VM (YARV)
 
 
-<a id="org2a9a2ff"></a>
+<a id="orgb7d600e"></a>
 
 # Syntactical Sugar
 
@@ -246,12 +248,12 @@ Resources:
 
 ## tracing garbage collection
 
-Trickier to debug than [reference counting](#org0267e9b)
+Trickier to debug than [reference counting](#org39c861e)
 
 > In practice, ref counting and tracing are more ends of a continuum than opposing sides. Most ref counting systems end up doing some tracing to handle cycles, and the write barriers of a generational collector look a bit like retain calls if you squint.
 
 
-<a id="org0267e9b"></a>
+<a id="org39c861e"></a>
 
 ## Reference counting
 

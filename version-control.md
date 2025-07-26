@@ -395,6 +395,8 @@ sl clone --git $REPO $DIR
 
 - <https://www.fossil-scm.org>
 
+Uses a single [SQLite](sql-database.md) database to hold the repository info
+
 ```shell
 # initialize repo
 fossil init foo.repo

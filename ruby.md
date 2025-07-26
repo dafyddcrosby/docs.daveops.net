@@ -747,7 +747,7 @@ pp Ripper.sexp(f)
 <http://www.rubyinside.com/using-ripper-to-see-how-ruby-is-parsing-your-code-5270.html>
 
 
-<a id="org859dfda"></a>
+<a id="orgafa25a8"></a>
 
 ## Benchmark
 
@@ -777,7 +777,7 @@ fp.close
 
 # Performance
 
-As with any system performance advice, don't forget to [benchmark](#org859dfda)
+As with any system performance advice, don't forget to [benchmark](#orgafa25a8)
 
 
 ## Frozen string literals

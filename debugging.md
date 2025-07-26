@@ -1,7 +1,7 @@
 # Debugging
 
 
-# GDB
+## GDB
 
 Execution
 
@@ -84,7 +84,7 @@ gdb executable coredump
 <http://rr-project.org/>
 
 
-# LLDB
+## LLDB
 
 [LLDB <-> GDB Cheatsheet](https://lldb.llvm.org/lldb-gdb.html)
 
